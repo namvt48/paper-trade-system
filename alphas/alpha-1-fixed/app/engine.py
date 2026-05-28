@@ -197,15 +197,16 @@ class Alpha1FixedEngine(BaseEngine):
                 gbe = close < poc * (1 - poc_filter)
                 ce = (trend and gb) or (not trend and gbe)
                 if ce:
-                    self._close_position(symbol, pos, close, "REV")
-                    self._open_new_position(symbol, trend, close, high, low, atr, poc)
+                    rev_detail = f"acol={acol_prev:.3f}→{acol:.3f} trend→{'BULL' if trend else 'BEAR'} | close/poc={close/poc:.4f}"
+                    self._close_position(symbol, pos, close, "REV", rev_detail)
+                    self._open_new_position(symbol, trend, close, high, low, atr, poc, acol, acol_prev)
         else:
             if trend_changed and trend is not None:
                 gb = close > poc * (1 + poc_filter)
                 gbe = close < poc * (1 - poc_filter)
                 ce = (trend and gb) or (not trend and gbe)
                 if ce and len(self._open_positions) < settings.MAX_CONCURRENT_POSITIONS:
-                    self._open_new_position(symbol, trend, close, high, low, atr, poc)
+                    self._open_new_position(symbol, trend, close, high, low, atr, poc, acol, acol_prev)
 
     def _manage_existing_position(
         self,
@@ -222,13 +223,17 @@ class Alpha1FixedEngine(BaseEngine):
         side = pos["side"]
 
         # 1. CUT — counter-trend signal fires before SL/TP check
-        cut = False
-        if side == "LONG" and (acol < -threshold or close < poc * (1 - poc_filter)):
-            cut = True
-        elif side == "SHORT" and (acol > threshold or close > poc * (1 + poc_filter)):
-            cut = True
-        if cut:
-            self._close_position(symbol, pos, close, "CUT")
+        if side == "LONG" and acol < -threshold:
+            self._close_position(symbol, pos, close, "CUT", f"acol={acol:.3f} < -{threshold:.3f}")
+            return
+        if side == "LONG" and close < poc * (1 - poc_filter):
+            self._close_position(symbol, pos, close, "CUT", f"close={close:.6f} < poc*(1-{poc_filter})={poc*(1-poc_filter):.6f}")
+            return
+        if side == "SHORT" and acol > threshold:
+            self._close_position(symbol, pos, close, "CUT", f"acol={acol:.3f} > +{threshold:.3f}")
+            return
+        if side == "SHORT" and close > poc * (1 + poc_filter):
+            self._close_position(symbol, pos, close, "CUT", f"close={close:.6f} > poc*(1+{poc_filter})={poc*(1+poc_filter):.6f}")
             return
 
         trail_dist = pos["trail_distance"]
@@ -237,32 +242,36 @@ class Alpha1FixedEngine(BaseEngine):
         #    This mirrors backtest_v5: trailing is updated AFTER the hit check each bar.
         if side == "LONG":
             if low <= pos["sl"]:
-                self._close_position(symbol, pos, pos["sl"], "SL")
+                self._close_position(symbol, pos, pos["sl"], "SL", f"low={low:.6f} <= sl={pos['sl']:.6f}")
                 return
             if high >= pos["tp"]:
-                self._close_position(symbol, pos, pos["tp"], "TP")
+                self._close_position(symbol, pos, pos["tp"], "TP", f"high={high:.6f} >= tp={pos['tp']:.6f}")
                 return
             # 3. Raise trailing SL for the NEXT bar
+            old_hse = pos["hse"]
+            old_sl = pos["sl"]
             pos["hse"] = max(pos["hse"], high)
             new_sl = pos["hse"] - trail_dist
             if new_sl > pos["sl"]:
                 pos["sl"] = new_sl
                 self.push_signal("MODIFY", position_id=pos["position_id"], sl=new_sl)
-                logger.debug("[MODIFY] %s LONG new_sl=%.6f", symbol, new_sl)
+                logger.info("[MODIFY] %s LONG sl %.6f→%.6f | high=%.6f hse %.6f→%.6f", symbol, old_sl, new_sl, high, old_hse, pos["hse"])
         else:
             if high >= pos["sl"]:
-                self._close_position(symbol, pos, pos["sl"], "SL")
+                self._close_position(symbol, pos, pos["sl"], "SL", f"high={high:.6f} >= sl={pos['sl']:.6f}")
                 return
             if low <= pos["tp"]:
-                self._close_position(symbol, pos, pos["tp"], "TP")
+                self._close_position(symbol, pos, pos["tp"], "TP", f"low={low:.6f} <= tp={pos['tp']:.6f}")
                 return
             # 3. Lower trailing SL for the NEXT bar
+            old_lse = pos["lse"]
+            old_sl = pos["sl"]
             pos["lse"] = min(pos["lse"], low)
             new_sl = pos["lse"] + trail_dist
             if new_sl < pos["sl"]:
                 pos["sl"] = new_sl
                 self.push_signal("MODIFY", position_id=pos["position_id"], sl=new_sl)
-                logger.debug("[MODIFY] %s SHORT new_sl=%.6f", symbol, new_sl)
+                logger.info("[MODIFY] %s SHORT sl %.6f→%.6f | low=%.6f lse %.6f→%.6f", symbol, old_sl, new_sl, low, old_lse, pos["lse"])
 
     def _open_new_position(
         self,
@@ -273,6 +282,8 @@ class Alpha1FixedEngine(BaseEngine):
         low: float,
         atr: float,
         poc: float,
+        acol: float,
+        acol_prev: float,
     ) -> None:
         side = "LONG" if trend else "SHORT"
         trail_dist = settings.TRAIL_ATR_MULT * atr
@@ -287,7 +298,6 @@ class Alpha1FixedEngine(BaseEngine):
             tp = entry - tp_dist
 
         symbol_lev = self._get_symbol_leverage(symbol)
-        # notional = INVEST_PER_TRADE; margin = INVEST_PER_TRADE / symbol_lev
         qty = settings.INVEST_PER_TRADE / entry
         position_id = str(uuid.uuid4())
         timestamp = datetime.now(timezone.utc).isoformat()
@@ -326,12 +336,14 @@ class Alpha1FixedEngine(BaseEngine):
             timestamp=timestamp,
         )
 
+        thr = settings.THRESHOLD
         logger.info(
-            "[OPEN] %s %s @ %.4f sl=%.4f tp=%.4f lev=%dx margin=%.2f",
+            "[OPEN] %s %s @ %.6f sl=%.6f tp=%.6f lev=%dx margin=%.2f | acol=%.3f→%.3f crossed %+.3f | close/poc=%.4f",
             side, symbol, entry, sl, tp, symbol_lev, settings.INVEST_PER_TRADE / symbol_lev,
+            acol_prev, acol, thr if trend else -thr, close / poc,
         )
 
-    def _close_position(self, symbol: str, pos: dict, exit_price: float, reason: str) -> None:
+    def _close_position(self, symbol: str, pos: dict, exit_price: float, reason: str, detail: str = "") -> None:
         self.push_signal(
             "CLOSE",
             position_id=pos["position_id"],
@@ -339,4 +351,4 @@ class Alpha1FixedEngine(BaseEngine):
             reason=reason,
         )
         self._open_positions.pop(symbol, None)
-        logger.info("[CLOSE] %s reason=%s @ %.6f", symbol, reason, exit_price)
+        logger.info("[CLOSE] %s reason=%s @ %.6f%s", symbol, reason, exit_price, f" | {detail}" if detail else "")

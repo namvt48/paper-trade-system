@@ -111,16 +111,18 @@ deploy: package
 	scp $(ZIP_PATH) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
-		echo "[1/5] Extracting..."; \
+		echo "[1/7] Extracting..."; \
 		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
 		cd $(REMOTE_DIR); \
-		echo "[2/5] Backing up DB..."; \
+		echo "[2/7] Backing up DB..."; \
 		[ -f data/paper-trade.db ] && cp data/paper-trade.db data/paper-trade.db.bak || true; \
-		echo "[3/5] Stopping core..."; \
+		echo "[3/7] Stopping alphas..."; \
+		make alphas-down; \
+		echo "[4/7] Stopping core..."; \
 		docker compose down --timeout 30 -v; \
-		echo "[4/5] Starting core..."; \
+		echo "[5/7] Starting core..."; \
 		docker compose up -d --build; \
-		echo "[5/5] Checking DB health..."; \
+		echo "[6/7] Checking DB health..."; \
 		sleep 3; \
 		if docker compose exec -T worker python3 -c \
 			"import sqlite3; sqlite3.connect(\"/app/data/paper-trade.db\").execute(\"PRAGMA integrity_check\")" \
@@ -133,6 +135,8 @@ deploy: package
 			[ -f data/paper-trade.db.bak ] && cp data/paper-trade.db.bak data/paper-trade.db || true; \
 			docker compose up -d; \
 		fi; \
+		echo "[7/7] Starting alphas..."; \
+		make alphas-up; \
 		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
 		echo "Dashboard → http://167.86.101.228:$$WEB_PORT"; \
 	'
