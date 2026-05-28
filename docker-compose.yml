@@ -1,0 +1,88 @@
+networks:
+  paper-trade:
+    name: paper-trade
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "${REDIS_PORT:-6382}:6379"
+    volumes:
+      - redis_data:/data
+      - ./logs/redis:/logs
+    command: sh -c "touch /logs/redis.log && chmod 0644 /logs/redis.log && redis-server --appendonly yes 2>&1 | tee -a /logs/redis.log"
+    networks:
+      - paper-trade
+
+  market-data-service:
+    build: ./market-data-service
+    depends_on:
+      - redis
+    env_file: ./market-data-service/.env
+    volumes:
+      - ./logs/market-data:/app/logs
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - LOG_DIR=/app/logs
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    networks:
+      - paper-trade
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 120s
+
+  worker:
+    build: ./worker
+    depends_on:
+      - redis
+      - market-data-service
+    env_file: ./worker/.env
+    volumes:
+      - ./data:/app/data
+      - ./logs/worker:/app/logs
+    environment:
+      - REDIS_URL=redis://redis:6379
+      - DB_PATH=/app/data/paper-trade.db
+      - LOG_DIR=/app/logs
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - SLIPPAGE_PCT=${SLIPPAGE_PCT:-0.05}
+      - DUPLICATE_POSITION_POLICY=${DUPLICATE_POSITION_POLICY:-reject}
+      - REGISTERED_ALPHAS=${REGISTERED_ALPHAS:-}
+    networks:
+      - paper-trade
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 20s
+
+  web:
+    build: ./web
+    ports:
+      - "${WEB_PORT:-8097}:3000"
+    depends_on:
+      - redis
+    volumes:
+      - ./data:/app/data
+      - ./logs/web:/app/logs
+      - ./alphas:/app/alphas:ro
+    environment:
+      - DB_PATH=/app/data/paper-trade.db
+      - ALPHAS_DIR=/app/alphas
+      - REDIS_URL=redis://redis:6379
+      - HOSTNAME=0.0.0.0
+      - PORT=3000
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
+    networks:
+      - paper-trade
+    restart: unless-stopped
+
+volumes:
+  redis_data:

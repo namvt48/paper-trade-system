@@ -1,0 +1,24 @@
+# Data
+data/paper-trade.db
+data/paper-trade.db-shm
+data/paper-trade.db-wal
+data/paper-trade.db.bak
+data/paper-trade.db.corrupt
+
+# Logs (keep directory structure via .gitkeep)
+logs/**/*.log
+
+# Python
+**/__pycache__/
+**/*.pyc
+**/.venv/
+**/.pytest_cache/
+
+# Node / Next.js
+**/node_modules/
+**/.next/
+
+# OS
+.DS_Store
+
+alphas/logs/

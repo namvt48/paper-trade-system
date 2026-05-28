@@ -1,0 +1,7 @@
+redis[hiredis]>=5.0
+pydantic-settings>=2.0
+numpy>=1.24
+pandas>=2.0
+pandas-ta==0.4.71b0
+python-binance>=1.0
+requests>=2.31

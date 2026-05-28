@@ -1,0 +1,318 @@
+{
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_models.py": {
+    "mtime": 1779422155.5281258,
+    "hash": "80478aa27a5b79590cd5d5d2fa29c19b"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/__init__.py": {
+    "mtime": 1779422073.085535,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/conftest.py": {
+    "mtime": 1779422084.7305532,
+    "hash": "99f593ea70e88ed395021e189f8f392b"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_config.py": {
+    "mtime": 1779422089.336955,
+    "hash": "a3e386e76003ddce05f6f17daa25c249"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_main.py": {
+    "mtime": 1779422476.9643574,
+    "hash": "5572ace8cd1fa6e9ac255449ef7c458f"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_executor.py": {
+    "mtime": 1779857244.6512365,
+    "hash": "fc0e3159baf64765aded9fea977456f4"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_db.py": {
+    "mtime": 1779434238.9071412,
+    "hash": "6355774dafe24ff9be18f91ab9a7c339"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_ticker_cache.py": {
+    "mtime": 1779856490.6051326,
+    "hash": "5e0ee2b424d16bb812c8cf1c4695d84a"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/tests/test_integration.py": {
+    "mtime": 1779856490.1861331,
+    "hash": "54b9b75937cee34cf979cd83a72c0cc2"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/__init__.py": {
+    "mtime": 1779422072.0614455,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/models.py": {
+    "mtime": 1779715158.9445503,
+    "hash": "5807810e133f533273e1d01e1ae5d663"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/executor.py": {
+    "mtime": 1779856489.5911338,
+    "hash": "939b82ba0d3f6aac2f42a5e9b77fe3da"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/config.py": {
+    "mtime": 1779440256.2847552,
+    "hash": "822ad8fc884043a0a55d6dea709f3593"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/main.py": {
+    "mtime": 1779857412.9620368,
+    "hash": "8d98ad7b7b2a354d6a1caed74e2f2193"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/app/db.py": {
+    "mtime": 1779715252.9474766,
+    "hash": "d71c96a208fd0543b3040954b03b2a30"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/main.py": {
+    "mtime": 1779676672.5104923,
+    "hash": "714b1e0bfa49583023642473dc590fa2"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/app/__init__.py": {
+    "mtime": 1779676573.1827078,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/app/engine.py": {
+    "mtime": 1779857357.368103,
+    "hash": "361e11c2816f23b0d413035309efcf6a"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/app/config.py": {
+    "mtime": 1779856379.5522602,
+    "hash": "c087f504b6b558b36cd9c512ba255ce6"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/app/strategy.py": {
+    "mtime": 1779676599.6506853,
+    "hash": "284da61e82c604b92bbd107173214aa3"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/__init__.py": {
+    "mtime": 1779425047.240143,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/engine.py": {
+    "mtime": 1779857403.8920476,
+    "hash": "b78ca41ba608131b8016eb8f13bc3279"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/signal_push.py": {
+    "mtime": 1779425055.163024,
+    "hash": "a921baf309b6b85d818e994e60e84b2e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/models.py": {
+    "mtime": 1779425051.6133885,
+    "hash": "a6eb898c92e72d4096ec724b757150d3"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/config.py": {
+    "mtime": 1779857200.5332885,
+    "hash": "9c3d81cc637ce6192e7de82f246ad0de"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/base/tests/test_engine.py": {
+    "mtime": 1779856269.5683842,
+    "hash": "4299a89e6ce8cdc0b8808fe67df9609f"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/main.py": {
+    "mtime": 1779676817.3114996,
+    "hash": "f4f5c2fe260b8289627e8550a59c5bd3"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/app/__init__.py": {
+    "mtime": 1779676707.1935937,
+    "hash": "d41d8cd98f00b204e9800998ecf8427e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/app/engine.py": {
+    "mtime": 1779857357.5391028,
+    "hash": "a37fb2c95fc929ee31a4e46a450f26fe"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/app/config.py": {
+    "mtime": 1779856380.8462586,
+    "hash": "2244adb79741fd378abe35add3e1ec3e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/app/strategy.py": {
+    "mtime": 1779676743.4995627,
+    "hash": "dee11af17ba5ace53081e61d61e3d9d5"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/postcss.config.mjs": {
+    "mtime": 1779422513.4016585,
+    "hash": "4ae674cb9a5e6dc8c6afe2598c150776"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/next.config.ts": {
+    "mtime": 1779422509.8373635,
+    "hash": "24b5dd234ad38eb42778bed0765a8aec"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/next-env.d.ts": {
+    "mtime": 1779422752.2767193,
+    "hash": "ba64ff7d54714a8f64db89b1003207d8"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/lib/types.ts": {
+    "mtime": 1779442143.0749,
+    "hash": "2971a9c2d49d77132dfa3ef828e7d01c"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/lib/api.ts": {
+    "mtime": 1779443309.8826342,
+    "hash": "458a61a989fef241a0bb7e946911dea9"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/lib/logger.ts": {
+    "mtime": 1779443280.8790698,
+    "hash": "907c0b706a08e0282c5feda738fc94b7"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/lib/db.ts": {
+    "mtime": 1779684916.6527917,
+    "hash": "9d2555c5b691e31c73fdd10688f536ca"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/layout.tsx": {
+    "mtime": 1779443805.5023422,
+    "hash": "8f2053c93e3e275c87ef9053162b2b29"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/page.tsx": {
+    "mtime": 1779444365.3317955,
+    "hash": "c20f801bcd6cd263d25a82db29511b8c"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/icon.tsx": {
+    "mtime": 1779680327.7253907,
+    "hash": "fed3c71e3c3d1ab2353933f627c4d4d9"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/compare/page.tsx": {
+    "mtime": 1779443871.702278,
+    "hash": "60635618619569aef19388d64beb18b3"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/trades/route.ts": {
+    "mtime": 1779443330.7656283,
+    "hash": "eb36e7bceb3d5a4ce742f6cdb41630b8"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/equity/route.ts": {
+    "mtime": 1779443336.6573486,
+    "hash": "7ed6100a723b57203795d1c0207f2cbc"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/events/route.ts": {
+    "mtime": 1779422676.9844074,
+    "hash": "6f9902b9c6edf11768bab8e611181d01"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/alphas/route.ts": {
+    "mtime": 1779443316.1863282,
+    "hash": "09bb31e14e1a3ccae1e5a3989c935e4a"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/dashboard/route.ts": {
+    "mtime": 1779443320.6091146,
+    "hash": "f2f6c26214719eb52bf883ebb1701583"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/api/positions/route.ts": {
+    "mtime": 1779443325.0339022,
+    "hash": "34c6d8d8be18141f147391cf23fb7084"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/app/alpha/[id]/page.tsx": {
+    "mtime": 1779443853.1008496,
+    "hash": "e369c4aa50a7e3fb9425b7c71d5233d3"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/components/stats-panel.tsx": {
+    "mtime": 1779443812.2281287,
+    "hash": "7e43899943166691a40d364251001e59"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/components/utc-clock.tsx": {
+    "mtime": 1779442829.7406294,
+    "hash": "cf19fe5ac119249d208d6a12a8a7b6f9"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/components/equity-chart.tsx": {
+    "mtime": 1779443862.8115504,
+    "hash": "a018ce94ed2304d9feac46c815e61753"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/components/trade-table.tsx": {
+    "mtime": 1779443838.013318,
+    "hash": "e113ab8094a14d952cdd674c086f620e"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/web/src/components/position-card.tsx": {
+    "mtime": 1779443826.4526799,
+    "hash": "0a60a5220fbc9b25d277da1157e77910"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_kline_feed.py": {
+    "mtime": 1779857296.6421752,
+    "hash": "e8e55191ca813a1f5223a8660e9ea6d6"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_models.py": {
+    "mtime": 1779856558.7376149,
+    "hash": "382ab7fe4d4c2f1ff3ce98f9f2a67be5"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_reconciler.py": {
+    "mtime": 1779856558.7379475,
+    "hash": "69aeff96fc66f631136613fb4a34b5ca"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_ticker_feed.py": {
+    "mtime": 1779856558.7378674,
+    "hash": "14f9c1aee46218d1ccc5a54eb41aea8f"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_publisher.py": {
+    "mtime": 1779857072.0514393,
+    "hash": "448f301282ba961f83211358bb102d60"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_aggregator.py": {
+    "mtime": 1779856558.737699,
+    "hash": "05c7fcf8641f27378a36fc7efd3e24f1"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/tests/test_integration.py": {
+    "mtime": 1779857072.225439,
+    "hash": "f7ee529c3701ce0fc5fe21128e9bce50"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/__init__.py": {
+    "mtime": 1779856558.736435,
+    "hash": "68b329da9893e34099c7d8ad5cb9c940"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/aggregator.py": {
+    "mtime": 1779856558.736728,
+    "hash": "13e9eb7d05ad83b7cbb0e806bd9ff5be"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/reconciler.py": {
+    "mtime": 1779856558.737089,
+    "hash": "a2ad39d377d8feb45b78e0eb97f2cfb0"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/publisher.py": {
+    "mtime": 1779856558.7368135,
+    "hash": "1dcb78ec5faad187d57333c86a7529e8"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/ticker_feed.py": {
+    "mtime": 1779856558.736998,
+    "hash": "919bf188f588b92480ae59c05f1ac134"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/models.py": {
+    "mtime": 1779856558.7365463,
+    "hash": "b32fb9a60235b4455da0832a76600311"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/config.py": {
+    "mtime": 1779856558.736638,
+    "hash": "f8dcd4911f64fc090e20a399691b5d9a"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/main.py": {
+    "mtime": 1779857379.271077,
+    "hash": "2c37b569454e29e392777304d642a2e4"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/app/kline_feed.py": {
+    "mtime": 1779857316.116152,
+    "hash": "71320f2d12003216313af0ecc1a94ee4"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/docker-compose.yml": {
+    "mtime": 1779856430.3312023,
+    "hash": "bd70c7e6a227827549161448f7c58fcb"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/docs/superpowers/specs/2026-05-27-market-data-service-design.md": {
+    "mtime": 1779853847.3143723,
+    "hash": "34042138553bbd7f7cb68853be588fdf"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/docs/superpowers/plans/2026-05-27-market-data-service.md": {
+    "mtime": 1779855538.8600817,
+    "hash": "4bd0bac22baf0e087399514ee0acb35f"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/worker/requirements.txt": {
+    "mtime": 1779856490.0091333,
+    "hash": "2a001069558c251f0dbe2aa80e9032a2"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/requirements.txt": {
+    "mtime": 1779676676.7220569,
+    "hash": "f898cb0e34702c3f223e519a83de1992"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/adx-trend-follow/docker-compose.yml": {
+    "mtime": 1779856430.507202,
+    "hash": "e6da4561ab35c8e03dd65f97abe51634"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/requirements.txt": {
+    "mtime": 1779676822.21222,
+    "hash": "f898cb0e34702c3f223e519a83de1992"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/alphas/wilder/docker-compose.yml": {
+    "mtime": 1779856430.6792018,
+    "hash": "fcad0d71c2220d2e29935f7e12fa1cbb"
+  },
+  "/home/namvt/Desktop/quant-space/system/paper-trade-system/market-data-service/requirements.txt": {
+    "mtime": 1779856558.7373078,
+    "hash": "34d2ce03a4b4ade7818d640403d1b894"
+  }
+}
