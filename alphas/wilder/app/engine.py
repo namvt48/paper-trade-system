@@ -26,6 +26,9 @@ class WilderEngine(BaseEngine):
         super().__init__(settings)
         self._open_positions: dict[str, dict] = {}
 
+    def _has_open_positions(self) -> bool:
+        return bool(self._open_positions)
+
     def get_required_channels(self) -> list[str]:
         return [f"kline:{self.config.TF}"]
 
@@ -109,12 +112,24 @@ class WilderEngine(BaseEngine):
 
             sl_hit = (side == "LONG" and low <= current_sl) or (side == "SHORT" and high >= current_sl)
             if sl_hit:
+                fill = low if side == "LONG" else high
                 to_close.append(
                     {
                         "symbol": symbol,
                         "position_id": position_id,
-                        "exit_price": current_sl,
+                        "exit_price": fill,
                         "reason": "SL_HIT",
+                        "metadata": json.dumps({
+                            "close_model": "candle_fallback_conservative",
+                            "reason": "SL_HIT",
+                            "stop_price": current_sl,
+                            "trigger_price": fill,
+                            "raw_fill_price": fill,
+                            "candle_high": high,
+                            "candle_low": low,
+                            "tf": self.config.TF,
+                            "source": "kline",
+                        }),
                     }
                 )
                 to_remove.append(symbol)
@@ -122,12 +137,24 @@ class WilderEngine(BaseEngine):
 
             tp_hit = (side == "LONG" and high >= current_tp) or (side == "SHORT" and low <= current_tp)
             if tp_hit:
+                trigger = high if side == "LONG" else low
                 to_close.append(
                     {
                         "symbol": symbol,
                         "position_id": position_id,
                         "exit_price": current_tp,
                         "reason": "TP_HIT",
+                        "metadata": json.dumps({
+                            "close_model": "candle_fallback_conservative",
+                            "reason": "TP_HIT",
+                            "stop_price": current_tp,
+                            "trigger_price": trigger,
+                            "raw_fill_price": current_tp,
+                            "candle_high": high,
+                            "candle_low": low,
+                            "tf": self.config.TF,
+                            "source": "kline",
+                        }),
                     }
                 )
                 to_remove.append(symbol)
@@ -156,13 +183,18 @@ class WilderEngine(BaseEngine):
                 position_id=item["position_id"],
                 exit_price=item["exit_price"],
                 reason=item["reason"],
+                metadata=item.get("metadata"),
             )
             logger.info("[CLOSE] %s reason=%s @ %s", item["symbol"], item["reason"], item["exit_price"])
 
         for symbol in to_remove:
             self._open_positions.pop(symbol, None)
+        if to_remove:
+            self.mark_positions_changed()
 
     async def _scan_new_signals(self) -> None:
+        if not self.can_open_new_trades():
+            return
         if len(self._open_positions) >= self.config.MAX_CONCURRENT_POSITIONS:
             return
 
@@ -241,6 +273,7 @@ class WilderEngine(BaseEngine):
                 "sl": sl,
                 "tp": tp,
             }
+            self.mark_positions_changed()
             logger.info(
                 "[SIGNAL] OPEN %s %s @ %.4f sl=%.4f tp=%.4f atr=%.4f regime=%s",
                 side,

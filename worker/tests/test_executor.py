@@ -1,7 +1,8 @@
+import json
 import pytest
 from app.db import Database
 from app.executor import Executor
-from app.models import OpenSignal, ModifySignal, CloseSignal, SignalType
+from app.models import OpenSignal, ModifySignal, CloseSignal, RegisterColumnsSignal, SignalType
 
 
 @pytest.fixture
@@ -223,7 +224,7 @@ async def test_process_close_signal(executor):
     pos = await executor.db.get_position(result["position_id"])
     assert pos is None
     trade = await executor.db.get_trade(result["position_id"])
-    assert trade["pnl"] == pytest.approx(1.0)
+    assert trade["pnl"] == pytest.approx(10.0)
     assert trade["reason"] == "SIGNAL"
 
 
@@ -307,6 +308,174 @@ async def test_check_tpsl_no_price_for_symbol(executor):
 
 
 @pytest.mark.asyncio
+async def test_process_register_columns(executor):
+    signal = RegisterColumnsSignal(
+        type=SignalType.REGISTER_COLUMNS,
+        alpha_id="test-alpha",
+        signal_id="sig-reg-001",
+        columns='[{"key": "atr", "label": "ATR", "type": "number", "decimals": 6}]',
+    )
+    result = await executor.process_register_columns(signal)
+    assert result["columns_registered"] == 1
+    cols = await executor.db.get_alpha_columns("test-alpha")
+    assert len(cols) == 1
+    assert cols[0]["column_key"] == "atr"
+
+
+@pytest.mark.asyncio
+async def test_process_register_columns_invalid_json(executor):
+    signal = RegisterColumnsSignal(
+        type=SignalType.REGISTER_COLUMNS,
+        alpha_id="test-alpha",
+        signal_id="sig-reg-002",
+        columns="not-json",
+    )
+    with pytest.raises(ValueError, match="Invalid columns JSON"):
+        await executor.process_register_columns(signal)
+
+
+@pytest.mark.asyncio
+async def test_process_close_persists_close_metadata(executor):
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="WALUSDT",
+        side="LONG",
+        entry=0.062,
+        qty=100.0,
+        sl=0.061485511,
+        leverage=5,
+        timestamp="2026-06-01T10:00:00Z",
+        metadata='{"atr": 0.0003, "poc": 0.062}',
+    )
+    result = await executor.process_open(open_signal)
+
+    close_meta_in = {
+        "close_model": "price_alert_side_aware",
+        "reason": "SL",
+        "stop_price": 0.061485511,
+        "trigger_price": 0.058865,
+        "raw_fill_price": 0.058865,
+        "bid": 0.058865,
+        "ask": 0.058875,
+    }
+    close_signal = CloseSignal(
+        type=SignalType.CLOSE,
+        alpha_id="test-alpha",
+        signal_id="sig-002",
+        position_id=result["position_id"],
+        reason="SL",
+        exit_price=0.058865,
+        timestamp="2026-06-01T11:00:00Z",
+        metadata=json.dumps(close_meta_in),
+    )
+    close_result = await executor.process_close(close_signal)
+
+    # fill_price should equal exit_price (slippage=0.0 in fixture)
+    assert close_result["exit_price"] == pytest.approx(0.058865)
+
+    trade = await executor.db.get_trade(result["position_id"])
+    assert trade is not None
+    meta = json.loads(trade["metadata"])
+    # Open metadata keys preserved at top level
+    assert meta["atr"] == pytest.approx(0.0003)
+    assert meta["poc"] == pytest.approx(0.062)
+    # Close metadata nested under 'close'
+    assert meta["close"]["close_model"] == "price_alert_side_aware"
+    assert meta["close"]["stop_price"] == pytest.approx(0.061485511)
+    assert meta["close"]["trigger_price"] == pytest.approx(0.058865)
+    # fill_price injected by worker (post-slippage)
+    assert meta["close"]["fill_price"] == pytest.approx(0.058865)
+
+
+@pytest.mark.asyncio
+async def test_close_exit_price_equals_trigger_not_stop(executor):
+    """LONG SL: exit_price must be bid (0.058865), not sl (0.061485511)."""
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="WALUSDT",
+        side="LONG",
+        entry=0.062,
+        qty=100.0,
+        sl=0.061485511,
+        leverage=5,
+        timestamp="2026-06-01T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+    close_signal = CloseSignal(
+        type=SignalType.CLOSE,
+        alpha_id="test-alpha",
+        signal_id="sig-002",
+        position_id=result["position_id"],
+        reason="SL",
+        exit_price=0.058865,  # trigger_price (bid), NOT sl level
+        timestamp="2026-06-01T11:00:00Z",
+    )
+    await executor.process_close(close_signal)
+    trade = await executor.db.get_trade(result["position_id"])
+    assert trade["exit_price"] == pytest.approx(0.058865)
+    assert trade["exit_price"] != pytest.approx(0.061485511)
+
+
+@pytest.mark.asyncio
+async def test_check_tpsl_fills_at_market_price_not_stop_level(executor):
+    """Worker auto TP/SL should fill at current market price, not sl/tp level."""
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry=95000.0,
+        qty=0.01,
+        tp=97000.0,
+        sl=94000.0,
+        leverage=10,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+    # Market price jumped through SL (market at 93000, below sl=94000)
+    hits = await executor.check_tpsl_hits({"BTCUSDT": 93000.0})
+    assert len(hits) == 1
+    assert hits[0]["reason"] == "SL_HIT"
+    # Fill should be at market price (93000), not stop level (94000)
+    assert hits[0]["exit_price"] == pytest.approx(93000.0)
+
+    trade = await executor.db.get_trade(result["position_id"])
+    meta = json.loads(trade["metadata"])
+    assert meta["close"]["close_model"] == "worker_tpsl_auto"
+    assert meta["close"]["stop_price"] == pytest.approx(94000.0)
+    assert meta["close"]["trigger_price"] == pytest.approx(93000.0)
+
+
+@pytest.mark.asyncio
+async def test_check_tpsl_short_sl_fills_at_market_price(executor):
+    """SHORT SL: fill at market ask price, not sl level."""
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="SHORT",
+        entry=95000.0,
+        qty=0.01,
+        tp=94000.0,
+        sl=96000.0,
+        leverage=10,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+    # Market blew through SL (97000 > 96000)
+    hits = await executor.check_tpsl_hits({"BTCUSDT": 97000.0})
+    assert len(hits) == 1
+    assert hits[0]["reason"] == "SL_HIT"
+    assert hits[0]["exit_price"] == pytest.approx(97000.0)
+
+
+@pytest.mark.asyncio
 async def test_full_lifecycle(executor):
     open_signal = OpenSignal(
         type=SignalType.OPEN,
@@ -344,6 +513,6 @@ async def test_full_lifecycle(executor):
     await executor.process_close(close_signal)
 
     trade = await executor.db.get_trade(result["position_id"])
-    assert trade["pnl"] == pytest.approx(2.0)
+    assert trade["pnl"] == pytest.approx(20.0)
     assert trade["sl"] == 94500.0
     assert trade["reason"] == "TP_HIT"

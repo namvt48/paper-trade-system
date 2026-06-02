@@ -13,12 +13,16 @@ class Settings(BaseSettings):
     CONSUMER_GROUP: str = "paper-executor"
     CONSUMER_NAME: str = "worker-1"
     DB_PATH: str = "data/paper-trade.db"
-    SLIPPAGE_PCT: float = 0.05
+    SLIPPAGE_PCT: float = 0.5
     DUPLICATE_POSITION_POLICY: str = "reject"
     LOG_LEVEL: str = "INFO"
     PRICE_CHECK_INTERVAL: float = 1.0
     LOG_DIR: str = "logs"
     REGISTERED_ALPHAS: str = ""
+    ENABLE_WORKER_TPSL_AUTO_CLOSE: bool = False
+    REDIS_READ_COUNT: int = 100
+    REDIS_BLOCK_MS: int = 1000
+    SIGNAL_RETENTION_DAYS: int = 0
 
 
 settings = Settings()

@@ -17,6 +17,11 @@ class BaseConfig(BaseSettings):
     INITIAL_DATA_TIMEOUT_SEC: float = 30.0
     WARMUP_BARS: int = 50
     SYMBOL_BLACKLIST: str = ""
+    MANAGE_INTERVAL_SEC: float = 60.0
+    MDS_REDIS_URL: str = ""
+    MDS_EXCHANGE: str = ""
+    PRICE_ALERT_SYNC_INTERVAL_SEC: float = 5.0
+    PRICE_ALERT_STALE_SEC: float = 15.0
 
     model_config = SettingsConfigDict(
         env_file=".env",

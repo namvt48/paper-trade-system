@@ -12,34 +12,14 @@ services:
       - ./logs/redis:/logs
     command: sh -c "touch /logs/redis.log && chmod 0644 /logs/redis.log && redis-server --appendonly yes 2>&1 | tee -a /logs/redis.log"
     networks:
-      - paper-trade
-
-  market-data-service:
-    build: ./market-data-service
-    depends_on:
-      - redis
-    env_file: ./market-data-service/.env
-    volumes:
-      - ./logs/market-data:/app/logs
-    environment:
-      - REDIS_URL=redis://redis:6379
-      - LOG_DIR=/app/logs
-      - LOG_LEVEL=${LOG_LEVEL:-INFO}
-    networks:
-      - paper-trade
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
-      interval: 30s
-      timeout: 10s
-      retries: 3
-      start_period: 120s
+      paper-trade:
+        aliases:
+          - paper-redis
 
   worker:
     build: ./worker
     depends_on:
       - redis
-      - market-data-service
     env_file: ./worker/.env
     volumes:
       - ./data:/app/data
@@ -52,6 +32,9 @@ services:
       - SLIPPAGE_PCT=${SLIPPAGE_PCT:-0.05}
       - DUPLICATE_POSITION_POLICY=${DUPLICATE_POSITION_POLICY:-reject}
       - REGISTERED_ALPHAS=${REGISTERED_ALPHAS:-}
+      - REDIS_READ_COUNT=${REDIS_READ_COUNT:-100}
+      - REDIS_BLOCK_MS=${REDIS_BLOCK_MS:-1000}
+      - SIGNAL_RETENTION_DAYS=${SIGNAL_RETENTION_DAYS:-0}
     networks:
       - paper-trade
     restart: unless-stopped
@@ -79,6 +62,7 @@ services:
       - HOSTNAME=0.0.0.0
       - PORT=3000
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
+      - DASHBOARD_CACHE_MS=${DASHBOARD_CACHE_MS:-1000}
     command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
     networks:
       - paper-trade

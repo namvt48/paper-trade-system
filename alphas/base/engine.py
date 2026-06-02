@@ -1,14 +1,17 @@
 import asyncio
-import json
+from bisect import bisect_left
 import logging
 import os
 import signal as sig
+import time
+import uuid
 from abc import ABC, abstractmethod
 
 import redis as redis_lib
 
 from base import signal_push
 from base.config import BaseConfig
+from base.json_utils import dumps as json_dumps, loads as json_loads
 from base.models import SymbolData
 
 
@@ -22,6 +25,16 @@ class BaseEngine(ABC):
         self._blacklist: set[str] = {
             s.strip().upper() for s in config.SYMBOL_BLACKLIST.split(",") if s.strip()
         }
+        self._columns_config_path: str | None = None
+        self.runtime_state = "STARTING"
+        self.last_price_alert_at: dict[str, dict[str, float]] = {}
+        self.last_kline_at: dict[str, dict[str, dict[str, float]]] = {}
+        self.last_warmup_ok_at: dict[str, dict[str, dict[str, float]]] = {}
+        self.last_redis_message_at: float = 0.0
+        self.latest_price_alert: dict[str, dict] = {}
+        self._positions_changed = asyncio.Event()
+        self._subscribed_price_alert_symbols: set[str] = set()
+        self._symbol_universe_cache: list[str] = []
 
     @abstractmethod
     def get_required_channels(self) -> list[str]:
@@ -35,16 +48,232 @@ class BaseEngine(ABC):
     def _get_warmup_symbols(self) -> list[str]:
         """Return symbols to request warmup data for (already filtered for blacklist)."""
 
+    @abstractmethod
+    async def _manage_positions(self) -> None:
+        """Manage open positions using 1m kline data. Called by manage_loop."""
+
+    @abstractmethod
+    def _has_open_positions(self) -> bool:
+        """Return True if there are open positions to manage."""
+
     async def on_warmup_complete(self) -> None:
         """Called after warmup data is loaded. Override to reconstruct in-memory state."""
+
+    async def manage_loop(self) -> None:
+        while not self.shutdown_event.is_set():
+            await asyncio.sleep(self.config.MANAGE_INTERVAL_SEC)
+            if not self._has_open_positions():
+                continue
+            try:
+                await self._manage_positions()
+            except Exception as exc:
+                self._logger.error("Manage error: %s", exc, exc_info=True)
+
+    @property
+    def _mds_url(self) -> str:
+        """Redis URL for market data (kline pub/sub + warmup). Falls back to REDIS_URL."""
+        return self.config.MDS_REDIS_URL or self.config.REDIS_URL
+
+    def _kline_channel(self, tf: str) -> str:
+        """Build kline channel name respecting external MDS exchange prefix."""
+        exchange = self._mds_exchange()
+        return f"kline:{exchange}:{tf}" if exchange else f"kline:{tf}"
+
+    def _warmup_stream(self) -> str:
+        """Warmup request stream name — exchange-specific for external MDS."""
+        exchange = self._mds_exchange()
+        return f"warmup:request:{exchange}" if exchange else "warmup:request"
+
+    def _mds_exchange(self) -> str:
+        return str(getattr(self.config, "MDS_EXCHANGE", "") or "").strip()
+
+    def _price_alert_subscribe_channel(self) -> str | None:
+        exchange = self._mds_exchange()
+        return f"price_alert:subscribe:{exchange}" if exchange else None
+
+    def _price_alert_channel(self, symbol: str) -> str | None:
+        exchange = self._mds_exchange()
+        return f"price_alert:{exchange}:{symbol}" if exchange and symbol else None
+
+    def on_ticker_message(self, msg: dict) -> None:
+        """Called for every ticker update from MDS (bookTicker mid-price).
+        Override in subclasses to manage SL/TP on real-time price ticks.
+        msg = {"symbol": "BTCUSDT", "price": 65432.1, ...}
+        """
+
+    def on_price_alert_message(self, msg: dict) -> None:
+        """Called for every side-aware price_alert tick from MDS."""
+
+    def on_symbol_universe_message(self, msg: dict) -> None:
+        """Called when MDS publishes the symbol universe for an exchange.
+        msg = {"symbols": ["BTCUSDT", "ETHUSDT", ...]}
+        Caches the universe so warmup reconnects avoid repeated Binance API calls.
+        Override to extend behavior.
+        """
+        symbols = msg.get("symbols", [])
+        if symbols:
+            self._symbol_universe_cache = [s for s in symbols if not self._is_blacklisted(s)]
+            self._logger.info(
+                "[%s] Symbol universe cached: %d symbols from MDS",
+                self.config.ALPHA_ID, len(self._symbol_universe_cache),
+            )
+
+    @staticmethod
+    def _tf_to_ms(tf: str) -> int:
+        if tf.endswith("m"):
+            return int(tf[:-1]) * 60_000
+        if tf.endswith("h"):
+            return int(tf[:-1]) * 3_600_000
+        if tf.endswith("d"):
+            return int(tf[:-1]) * 86_400_000
+        return 60_000
+
+    @classmethod
+    def _tf_to_seconds(cls, tf: str) -> float:
+        return cls._tf_to_ms(tf) / 1000.0
+
+    def _max_subscribed_kline_interval_sec(self) -> float:
+        intervals = []
+        for channel in self._build_channels():
+            if not channel.startswith("kline:"):
+                continue
+            tf = channel.rsplit(":", 1)[-1]
+            intervals.append(self._tf_to_seconds(tf))
+        return max(intervals, default=0.0)
+
+    def _stale_threshold_seconds(self) -> float:
+        price_alert_threshold = self.config.PRICE_ALERT_STALE_SEC * 8
+        kline_threshold = self._max_subscribed_kline_interval_sec() * 2.5
+        return max(120.0, price_alert_threshold, kline_threshold)
+
+    def _build_channels(self) -> list[str]:
+        # Translate bare "kline:{tf}" from get_required_channels() to the
+        # correct exchange-prefixed channel if external MDS is configured.
+        raw = self.get_required_channels()
+        channels = []
+        for ch in raw:
+            if ch.startswith("kline:"):
+                tf = ch.rsplit(":", 1)[-1]
+                channels.append(self._kline_channel(tf))
+            else:
+                channels.append(ch)
+
+        exchange = self._mds_exchange()
+        if exchange:
+            # P3.11: subscribe symbol universe channel to detect MDS restarts
+            symbols_ch = f"symbols:{exchange}"
+            if symbols_ch not in channels:
+                channels.append(symbols_ch)
+        else:
+            # Internal/legacy MDS: fall back to 1m kline for position management
+            manage_1m = self._kline_channel("1m")
+            if self.config.MANAGE_INTERVAL_SEC > 0 and manage_1m not in channels:
+                channels.append(manage_1m)
+        return channels
 
     def _is_blacklisted(self, symbol: str) -> bool:
         return symbol in self._blacklist
 
+    def _get_active_position_symbols(self) -> set[str]:
+        positions = getattr(self, "_open_positions", {})
+        if isinstance(positions, dict):
+            return {str(symbol) for symbol in positions.keys() if symbol}
+        return set()
+
+    def mark_positions_changed(self) -> None:
+        self._positions_changed.set()
+
+    def _trigger_price(self, side: str, tick: dict) -> float | None:
+        keys = ("bid", "last", "price") if side.upper() == "LONG" else ("ask", "last", "price")
+        for key in keys:
+            value = tick.get(key)
+            if value is None:
+                continue
+            try:
+                price = float(value)
+            except (TypeError, ValueError):
+                continue
+            if price > 0:
+                return price
+        return None
+
+    def _build_candle_close_metadata(
+        self,
+        *,
+        reason: str,
+        stop_price: float,
+        trigger_price: float,
+        fill_price: float,
+        candle_high: float,
+        candle_low: float,
+        tf: str = "1m",
+    ) -> str:
+        return json_dumps({
+            "close_model": "candle_fallback_conservative",
+            "reason": reason,
+            "stop_price": stop_price,
+            "trigger_price": trigger_price,
+            "raw_fill_price": fill_price,
+            "candle_high": candle_high,
+            "candle_low": candle_low,
+            "tf": tf,
+            "source": "kline",
+        })
+
+    def _build_close_metadata(
+        self,
+        *,
+        reason: str,
+        stop_price: float,
+        trigger_price: float,
+        tick: dict,
+        close_model: str = "price_alert_side_aware",
+    ) -> str:
+        return json_dumps({
+            "close_model": close_model,
+            "reason": reason,
+            "stop_price": stop_price,
+            "trigger_price": trigger_price,
+            "raw_fill_price": trigger_price,
+            "bid": tick.get("bid"),
+            "ask": tick.get("ask"),
+            "last": tick.get("last"),
+            "price": tick.get("price"),
+            "tick_timestamp": tick.get("timestamp"),
+            "source": tick.get("source"),
+        })
+
+    def can_open_new_trades(self) -> bool:
+        return self.runtime_state == "LIVE"
+
+    def is_symbol_data_ready(self, symbol: str, tf: str) -> bool:
+        tf_map = self.symbol_data.get(symbol)
+        if not tf_map:
+            return False
+        sd = tf_map.get(tf)
+        return bool(sd and sd.price_list)
+
+    def is_position_price_ready(self, symbol: str) -> bool:
+        exchange = self._mds_exchange()
+        if not exchange:
+            return True
+        last = self.last_price_alert_at.get(exchange, {}).get(symbol, 0.0)
+        return time.time() - last < self.config.PRICE_ALERT_STALE_SEC
+
     def on_kline_message(self, msg: dict) -> None:
         symbol = msg.get("symbol", "")
         tf = msg.get("tf", "")
+        exchange = self._mds_exchange()
+        msg_exchange = str(msg.get("exchange", "") or "")
+        if exchange and msg_exchange and msg_exchange != exchange:
+            return
         if not symbol or not tf:
+            return
+        try:
+            open_time = int(msg.get("open_time", 0))
+        except (TypeError, ValueError):
+            return
+        if open_time <= 0:
             return
 
         if self._is_blacklisted(symbol):
@@ -53,41 +282,26 @@ class BaseEngine(ABC):
         if symbol not in self.symbol_data:
             self.symbol_data[symbol] = {}
         if tf not in self.symbol_data[symbol]:
-            self.symbol_data[symbol][tf] = SymbolData()
+                self.symbol_data[symbol][tf] = SymbolData()
 
         sd = self.symbol_data[symbol][tf]
-        open_time = int(msg.get("open_time", 0))
-        is_correction = bool(msg.get("correction", False))
-
-        if is_correction:
-            for index in range(len(sd.time_list) - 1, -1, -1):
-                if sd.time_list[index] == open_time:
-                    self._replace_candle(sd, index, msg)
-                    return
-
-        if sd.time_list and open_time <= sd.time_list[-1]:
-            return
-
-        sd.time_list.append(open_time)
-        sd.open_list.append(float(msg.get("open", 0.0)))
-        sd.high_list.append(float(msg.get("high", 0.0)))
-        sd.low_list.append(float(msg.get("low", 0.0)))
-        sd.price_list.append(float(msg.get("close", 0.0)))
-        sd.volume_list.append(float(msg.get("volume", 0.0)))
+        self._upsert_candle(sd, msg, open_time)
+        self.last_kline_at.setdefault(exchange or "default", {}).setdefault(tf, {})[symbol] = time.time()
+        self.last_redis_message_at = time.time()
         self._trim_symbol_data(sd)
 
-    def _load_warmup_candles(self, data: dict) -> None:
+    def _load_warmup_candles(self, data: dict) -> bool:
         symbol = data.get("symbol", "")
         tf = data.get("tf", "")
         if not symbol or not tf:
-            return
+            return False
         if self._is_blacklisted(symbol):
-            return
+            return False
 
         candles_raw = data.get("candles", "[]")
-        candles = json.loads(candles_raw) if isinstance(candles_raw, str) else candles_raw
+        candles = json_loads(candles_raw) if isinstance(candles_raw, str) else candles_raw
         if not candles:
-            return
+            return False
 
         if symbol not in self.symbol_data:
             self.symbol_data[symbol] = {}
@@ -96,138 +310,412 @@ class BaseEngine(ABC):
 
         sd = self.symbol_data[symbol][tf]
         for candle in candles:
-            open_time = int(candle.get("open_time", 0))
-            if sd.time_list and open_time <= sd.time_list[-1]:
+            try:
+                open_time = int(candle.get("open_time", 0))
+            except (TypeError, ValueError):
                 continue
-            sd.time_list.append(open_time)
-            sd.open_list.append(float(candle.get("open", 0.0)))
-            sd.high_list.append(float(candle.get("high", 0.0)))
-            sd.low_list.append(float(candle.get("low", 0.0)))
-            sd.price_list.append(float(candle.get("close", 0.0)))
-            sd.volume_list.append(float(candle.get("volume", 0.0)))
+            if open_time <= 0:
+                continue
+            self._upsert_candle(sd, candle, open_time)
 
         self._trim_symbol_data(sd)
+        return bool(sd.time_list)
 
-    async def _request_warmup(self) -> None:
-        symbols = self._get_warmup_symbols()
-        if not symbols:
-            self._logger.warning("[%s] No warmup symbols, skipping warmup", self.config.ALPHA_ID)
-            return
+    def _make_warmup_request_id(self, tf: str) -> str:
+        exchange = self._mds_exchange()
+        return f"{self.config.ALPHA_ID}:warmup:{exchange or 'default'}:{tf}:{uuid.uuid4().hex}"
 
-        tf = getattr(self.config, "TF", "")
-        bars = self.config.WARMUP_BARS
+    async def _try_snapshot_warmup(
+        self,
+        redis_client: redis_lib.Redis,
+        symbols: list[str],
+        tf: str,
+        required_bars: int,
+    ) -> set[str]:
+        """Load candles from kline_snapshot:{exchange}:{tf}:{symbol} Hash.
 
-        redis_client = await self._connect_redis()
-        try:
-            response_stream = f"warmup:response:{self.config.ALPHA_ID}"
-            # Create group BEFORE sending the request to avoid the race condition where
-            # MDS responds before the group exists. id="$" ensures we only receive
-            # responses to THIS request, not stale messages from previous runs.
+        Only used when external MDS is configured and required_bars <= 500.
+        Freshness check: latest open_time must be within 2 candle durations of now.
+        Returns set of symbols successfully loaded.
+        """
+        exchange = self._mds_exchange()
+        if not exchange:
+            return set()
+
+        now_ms = int(time.time() * 1000)
+        candle_ms = self._tf_to_ms(tf)
+        stale_threshold_ms = candle_ms * 2
+
+        loaded: set[str] = set()
+        for symbol in symbols:
+            key = f"kline_snapshot:{exchange}:{tf}:{symbol}"
             try:
-                redis_client.xgroup_create(response_stream, "alpha_consumer", id="$", mkstream=True)
-            except redis_lib.ResponseError:
-                redis_client.xtrim(response_stream, maxlen=0)
+                raw: dict = await asyncio.to_thread(redis_client.hgetall, key)
+            except Exception:
+                continue
 
-            redis_client.xadd(
-                "warmup:request",
-                {
-                    "alpha_id": self.config.ALPHA_ID,
-                    "tf": tf,
-                    "bars": str(bars),
-                    "symbols": ",".join(symbols),
-                },
-            )
+            if not raw or len(raw) < required_bars:
+                continue
 
-            timeout_sec = float(getattr(self.config, "INITIAL_DATA_TIMEOUT_SEC", 30.0))
-            deadline = asyncio.get_running_loop().time() + timeout_sec
-            received_symbols: set[str] = set()
-            expected = set(symbols)
-
-            while received_symbols != expected:
-                remaining = deadline - asyncio.get_running_loop().time()
-                if remaining <= 0:
-                    self._logger.warning(
-                        "[%s] Warmup timeout: %d/%d symbols received",
-                        self.config.ALPHA_ID,
-                        len(received_symbols),
-                        len(expected),
-                    )
-                    break
-
-                messages = await asyncio.to_thread(
-                    redis_client.xreadgroup,
-                    "alpha_consumer",
-                    self.config.ALPHA_ID,
-                    {response_stream: ">"},
-                    count=len(expected),
-                    block=int(min(remaining, 5) * 1000),
-                )
-
-                if not messages:
+            candles = []
+            for candle_json in raw.values():
+                try:
+                    candles.append(json_loads(candle_json))
+                except Exception:
                     continue
 
-                for _stream, entries in messages:
-                    for _msg_id, fields in entries:
-                        self._load_warmup_candles(fields)
-                        sym = fields.get("symbol", "")
-                        if sym:
-                            received_symbols.add(sym)
+            if len(candles) < required_bars:
+                continue
 
-            self._logger.info(
-                "[%s] Warmup complete: %d/%d symbols loaded",
-                self.config.ALPHA_ID,
-                len(received_symbols),
-                len(expected),
-            )
+            candles.sort(key=lambda c: int(c.get("open_time", 0)))
+            latest_open_time = int(candles[-1].get("open_time", 0))
+
+            if now_ms - latest_open_time > stale_threshold_ms:
+                self._logger.debug(
+                    "[%s] Snapshot stale for %s/%s: age=%ds threshold=%ds",
+                    self.config.ALPHA_ID, symbol, tf,
+                    (now_ms - latest_open_time) // 1000,
+                    stale_threshold_ms // 1000,
+                )
+                continue
+
+            ok = self._load_warmup_candles({
+                "symbol": symbol,
+                "tf": tf,
+                "candles": json_dumps(candles[-required_bars:]),
+            })
+            if ok:
+                loaded.add(symbol)
+
+        return loaded
+
+    async def _discover_snapshot_symbols(self, redis_client: redis_lib.Redis, tf: str) -> list[str]:
+        """Scan MDS Redis for available snapshot keys; returns symbol list without API calls."""
+        exchange = self._mds_exchange()
+        if not exchange:
+            return []
+        pattern = f"kline_snapshot:{exchange}:{tf}:*"
+        prefix_len = len(f"kline_snapshot:{exchange}:{tf}:")
+        symbols: list[str] = []
+        cursor = 0
+        while True:
+            cursor, keys = await asyncio.to_thread(redis_client.scan, cursor, match=pattern, count=500)
+            for key in keys:
+                symbol = key[prefix_len:]
+                if symbol and not self._is_blacklisted(symbol):
+                    symbols.append(symbol)
+            if cursor == 0:
+                break
+        return symbols
+
+    async def _request_warmup(self) -> bool:
+        all_symbols = self._get_warmup_symbols()
+        tf = getattr(self.config, "TF", "")
+        bars = self.config.WARMUP_BARS
+        exchange = self._mds_exchange()
+        snapshot_only = False  # when True, skip stream fallback
+
+        if not all_symbols:
+            if self._symbol_universe_cache:
+                all_symbols = self._symbol_universe_cache
+                snapshot_only = True
+                self._logger.info(
+                    "[%s] Symbol fetch failed, using cached MDS universe: %d symbols (snapshot-only)",
+                    self.config.ALPHA_ID, len(all_symbols),
+                )
+            elif exchange and bars <= 500:
+                # Last resort: discover symbols directly from MDS snapshot keys
+                rc = await self._connect_redis(self._mds_url)
+                try:
+                    all_symbols = await self._discover_snapshot_symbols(rc, tf)
+                finally:
+                    rc.close()
+                if all_symbols:
+                    snapshot_only = True
+                    self._logger.info(
+                        "[%s] Symbol fetch failed, discovered %d symbols from MDS snapshots (snapshot-only)",
+                        self.config.ALPHA_ID, len(all_symbols),
+                    )
+                else:
+                    self._logger.warning("[%s] No warmup symbols, skipping warmup", self.config.ALPHA_ID)
+                    return False
+            else:
+                self._logger.warning("[%s] No warmup symbols, skipping warmup", self.config.ALPHA_ID)
+                return False
+
+        received_symbols: set[str] = set()
+
+        # P3.10: snapshot fast path — skip stream roundtrip when bars <= 500
+        if exchange and bars <= 500:
+            rc = await self._connect_redis(self._mds_url)
             try:
-                redis_client.delete(response_stream)
-            except Exception:
-                pass
-        finally:
-            redis_client.close()
+                snapshot_loaded = await self._try_snapshot_warmup(rc, all_symbols, tf, bars)
+                received_symbols |= snapshot_loaded
+            finally:
+                rc.close()
+            if snapshot_loaded:
+                self._logger.info(
+                    "[%s] Snapshot fast path: %d/%d symbols loaded",
+                    self.config.ALPHA_ID, len(snapshot_loaded), len(all_symbols),
+                )
+
+        stream_symbols = [] if snapshot_only else [s for s in all_symbols if s not in received_symbols]
+
+        if stream_symbols:
+            request_id = self._make_warmup_request_id(tf)
+            redis_client = await self._connect_redis(self._mds_url)
+            try:
+                response_stream = f"warmup:response:{request_id}"
+                redis_client.xadd(
+                    self._warmup_stream(),
+                    {
+                        "alpha_id": request_id,
+                        "tf": tf,
+                        "bars": str(bars),
+                        "symbols": ",".join(stream_symbols),
+                    },
+                )
+
+                timeout_sec = float(getattr(self.config, "INITIAL_DATA_TIMEOUT_SEC", 30.0))
+                deadline = asyncio.get_running_loop().time() + timeout_sec
+                expected_stream = set(stream_symbols)
+                last_response_id = "0-0"
+
+                while expected_stream - received_symbols:
+                    remaining = deadline - asyncio.get_running_loop().time()
+                    if remaining <= 0:
+                        self._logger.warning(
+                            "[%s] Warmup timeout: %d/%d symbols received",
+                            self.config.ALPHA_ID,
+                            len(received_symbols),
+                            len(all_symbols),
+                        )
+                        break
+
+                    messages = await asyncio.to_thread(
+                        redis_client.xread,
+                        {response_stream: last_response_id},
+                        count=len(expected_stream),
+                        block=int(min(remaining, 5) * 1000),
+                    )
+
+                    if not messages:
+                        continue
+
+                    for _stream, entries in messages:
+                        for msg_id, fields in entries:
+                            last_response_id = msg_id
+                            loaded = self._load_warmup_candles(fields)
+                            sym = fields.get("symbol", "")
+                            if sym and loaded:
+                                received_symbols.add(sym)
+
+                try:
+                    redis_client.delete(response_stream)
+                except Exception:
+                    pass
+            finally:
+                redis_client.close()
+
+        ok = bool(received_symbols) if snapshot_only else received_symbols >= set(all_symbols)
+        if received_symbols:
+            now = time.time()
+            for sym in received_symbols:
+                self.last_warmup_ok_at.setdefault(exchange or "default", {}).setdefault(tf, {})[sym] = now
+        self._logger.info(
+            "[%s] Warmup complete: %d/%d symbols loaded",
+            self.config.ALPHA_ID, len(received_symbols), len(all_symbols),
+        )
+        return ok
 
     async def subscribe_data_feeds(self) -> asyncio.Task:
-        redis_client = await self._connect_redis()
-        channels = self.get_required_channels()
-
-        pubsub = redis_client.pubsub()
-        pubsub.subscribe(*channels)
-        self._logger.info("[%s] Subscribed to data channels: %s", self.config.ALPHA_ID, channels)
-
         async def _listen() -> None:
-            try:
-                while not self.shutdown_event.is_set():
-                    try:
+            connect_count = 0
+            warmup_fail_streak = 0
+            while not self.shutdown_event.is_set():
+                redis_client = await self._connect_redis(self._mds_url)
+                pubsub = redis_client.pubsub()
+                self._subscribed_price_alert_symbols = set()
+                channels = self._build_channels()
+
+                async def _refresh_price_alert_subscriptions() -> None:
+                    desired = self._get_active_position_symbols()
+                    to_subscribe = desired - self._subscribed_price_alert_symbols
+                    to_unsubscribe = self._subscribed_price_alert_symbols - desired
+
+                    sub_channels = [ch for sym in sorted(to_subscribe) if (ch := self._price_alert_channel(sym))]
+                    unsub_channels = [ch for sym in sorted(to_unsubscribe) if (ch := self._price_alert_channel(sym))]
+
+                    if sub_channels:
+                        await asyncio.to_thread(pubsub.subscribe, *sub_channels)
+                    if unsub_channels:
+                        await asyncio.to_thread(pubsub.unsubscribe, *unsub_channels)
+
+                    self._subscribed_price_alert_symbols = set(desired)
+
+                try:
+                    await asyncio.to_thread(pubsub.subscribe, *channels)
+                    connect_count += 1
+                    self._logger.info("[%s] Subscribed to data channels: %s", self.config.ALPHA_ID, channels)
+                    await _refresh_price_alert_subscriptions()
+                    self._publish_price_alert_sync(redis_client, self._get_active_position_symbols())
+
+                    # On reconnect (not the initial startup connect), rewarmup to cover the gap.
+                    if connect_count > 1:
+                        self.runtime_state = "RECOVERING"
+                        try:
+                            warmup_ok = await self._request_warmup()
+                            self.runtime_state = "LIVE" if warmup_ok else "STALE"
+                        except Exception as exc:
+                            self._logger.warning("[%s] Rewarmup error: %s", self.config.ALPHA_ID, exc)
+                            self.runtime_state = "STALE"
+                        if self.runtime_state == "STALE":
+                            warmup_fail_streak += 1
+                            # Exponential backoff: 5s, 10s, 20s, 40s … capped at 120s
+                            backoff = min(5 * (2 ** (warmup_fail_streak - 1)), 120)
+                            self._logger.info(
+                                "[%s] Warmup STALE (streak=%d), retrying in %ds",
+                                self.config.ALPHA_ID, warmup_fail_streak, backoff,
+                            )
+                            await asyncio.sleep(backoff)
+                        else:
+                            warmup_fail_streak = 0
+
+                    while not self.shutdown_event.is_set():
+                        # Allow stale monitor (or reconnect failure) to trigger reconnect.
+                        if self.runtime_state == "STALE":
+                            await asyncio.sleep(1)
+                            break
+                        if self._positions_changed.is_set():
+                            self._positions_changed.clear()
+                            await _refresh_price_alert_subscriptions()
+                            self._publish_price_alert_sync(redis_client, self._get_active_position_symbols())
                         msg = await asyncio.to_thread(pubsub.get_message, timeout=1.0)
                         if not msg or msg["type"] != "message":
                             continue
                         channel = msg["channel"]
                         if isinstance(channel, bytes):
                             channel = channel.decode()
+                        data = json_loads(msg["data"])
+                        self.last_redis_message_at = time.time()
                         if channel.startswith("kline:"):
-                            self.on_kline_message(json.loads(msg["data"]))
-                    except Exception as exc:
-                        self._logger.debug("Redis subscriber error: %s", exc)
-                        await asyncio.sleep(1)
-            finally:
-                pubsub.unsubscribe()
-                pubsub.close()
-                redis_client.close()
+                            self.on_kline_message(data)
+                        elif channel.startswith("price_alert:"):
+                            self._handle_price_alert_message(data)
+                        elif channel.startswith("symbols:"):
+                            self.on_symbol_universe_message(data)
+                except redis_lib.RedisError as exc:
+                    self.runtime_state = "STALE"
+                    self._logger.warning("[%s] Redis Pub/Sub error: %s. Reconnecting.", self.config.ALPHA_ID, exc)
+                    await asyncio.sleep(1)
+                except Exception as exc:
+                    self._logger.debug("Redis subscriber error: %s", exc)
+                    await asyncio.sleep(1)
+                finally:
+                    try:
+                        pubsub.unsubscribe()
+                    except Exception:
+                        pass
+                    pubsub.close()
+                    redis_client.close()
 
         return asyncio.create_task(_listen())
 
-    async def _connect_redis(self) -> redis_lib.Redis:
+    def _handle_price_alert_message(self, data: dict) -> None:
+        symbol = str(data.get("symbol", "") or "")
+        exchange = self._mds_exchange()
+        msg_exchange = str(data.get("exchange", "") or "")
+        if not symbol:
+            return
+        if exchange and msg_exchange and msg_exchange != exchange:
+            return
+        now = time.time()
+        self.last_price_alert_at.setdefault(exchange or "default", {})[symbol] = now
+        self.latest_price_alert[symbol] = data
+        self.on_price_alert_message(data)
+
+    def _publish_price_alert_sync(self, redis_client: redis_lib.Redis, symbols: set[str]) -> None:
+        channel = self._price_alert_subscribe_channel()
+        if not channel:
+            return
+        payload = {
+            "consumer_id": self.config.ALPHA_ID,
+            "action": "sync",
+            "symbols": sorted(symbols),
+        }
+        redis_client.publish(channel, json_dumps(payload))
+
+    async def _price_alert_sync_loop(self) -> None:
+        if not self._price_alert_subscribe_channel():
+            return
+
+        redis_client = await self._connect_redis(self._mds_url)
+        interval = float(self.config.PRICE_ALERT_SYNC_INTERVAL_SEC)
+        try:
+            while not self.shutdown_event.is_set():
+                try:
+                    self._publish_price_alert_sync(redis_client, self._get_active_position_symbols())
+                except redis_lib.RedisError as exc:
+                    self.runtime_state = "STALE"
+                    self._logger.warning("[%s] Price alert sync failed: %s", self.config.ALPHA_ID, exc)
+                    redis_client.close()
+                    redis_client = await self._connect_redis(self._mds_url)
+                await asyncio.sleep(interval)
+        finally:
+            try:
+                self._publish_price_alert_sync(redis_client, set())
+            except Exception:
+                pass
+            redis_client.close()
+
+    async def _stale_monitor_loop(self) -> None:
+        """Marks engine STALE when no Redis message has arrived within the stale window.
+
+        Only active in external MDS mode (MDS_EXCHANGE is set). Uses a conservative
+        threshold (8x PRICE_ALERT_STALE_SEC, min 120s) to avoid false positives from
+        quiet market periods. The subscribe_data_feeds inner loop detects STALE and
+        breaks to trigger reconnect + rewarmup.
+        """
+        if not self._mds_exchange():
+            return
+        stale_threshold = self._stale_threshold_seconds()
+        while not self.shutdown_event.is_set():
+            await asyncio.sleep(30)
+            if self.runtime_state != "LIVE":
+                continue
+            if self.last_redis_message_at <= 0:
+                continue
+            gap = time.time() - self.last_redis_message_at
+            if gap > stale_threshold:
+                self.runtime_state = "STALE"
+                self._logger.warning(
+                    "[%s] Stale: no Redis message for %.0fs (threshold=%.0fs), marking STALE",
+                    self.config.ALPHA_ID, gap, stale_threshold,
+                )
+
+    async def _publish_empty_price_alert_sync(self) -> None:
+        if not self._price_alert_subscribe_channel():
+            return
+        redis_client = redis_lib.from_url(self._mds_url, decode_responses=True)
+        try:
+            await asyncio.to_thread(redis_client.ping)
+            self._publish_price_alert_sync(redis_client, set())
+        finally:
+            redis_client.close()
+
+    async def _connect_redis(self, url: str | None = None) -> redis_lib.Redis:
+        target_url = url or self.config.REDIS_URL
         attempt = 0
         while not self.shutdown_event.is_set():
             attempt += 1
-            redis_client = redis_lib.from_url(self.config.REDIS_URL, decode_responses=True)
+            redis_client = redis_lib.from_url(target_url, decode_responses=True)
             try:
                 redis_client.ping()
                 return redis_client
             except redis_lib.RedisError as exc:
                 redis_client.close()
                 wait = min(attempt, 10)
-                self._logger.warning("Redis unavailable: %s. Retry in %ss", exc, wait)
+                self._logger.warning("Redis [%s] unavailable: %s. Retry in %ss", target_url, exc, wait)
                 await asyncio.sleep(wait)
         raise asyncio.CancelledError
 
@@ -249,6 +737,9 @@ class BaseEngine(ABC):
 
         signal_push.init(self.config.REDIS_URL, self.config.REDIS_STREAM)
 
+        if self._columns_config_path:
+            self.load_columns_config(self._columns_config_path)
+
         loop = asyncio.get_running_loop()
         for signal_name in (sig.SIGTERM, sig.SIGINT):
             loop.add_signal_handler(signal_name, self.shutdown_event.set)
@@ -256,8 +747,11 @@ class BaseEngine(ABC):
         self._logger.info("[%s] Starting alpha engine", self.config.ALPHA_ID)
 
         try:
-            await self._request_warmup()
+            self.runtime_state = "WARMING_UP"
+            warmup_ok = await self._request_warmup()
+            self.runtime_state = "LIVE" if warmup_ok else "STALE"
         except Exception as exc:
+            self.runtime_state = "STALE"
             self._logger.warning("[%s] Warmup failed: %s", self.config.ALPHA_ID, exc)
 
         try:
@@ -295,17 +789,25 @@ class BaseEngine(ABC):
             )
 
         scan_task = asyncio.create_task(self.scan_loop())
+        manage_task = asyncio.create_task(self.manage_loop())
         health_task = asyncio.create_task(self._health_loop())
+        price_alert_sync_task = asyncio.create_task(self._price_alert_sync_loop())
+        stale_task = asyncio.create_task(self._stale_monitor_loop())
 
         try:
-            await asyncio.gather(scan_task, health_task, sub_task)
+            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task)
         except asyncio.CancelledError:
             pass
         finally:
+            self.runtime_state = "SHUTTING_DOWN"
             self.shutdown_event.set()
-            for task in (scan_task, health_task, sub_task):
+            for task in (scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task):
                 task.cancel()
-            await asyncio.gather(scan_task, health_task, sub_task, return_exceptions=True)
+            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task, return_exceptions=True)
+            try:
+                await self._publish_empty_price_alert_sync()
+            except Exception as exc:
+                self._logger.warning("[%s] Empty price_alert sync failed during shutdown: %s", self.config.ALPHA_ID, exc)
             self._logger.info("[%s] Shutting down", self.config.ALPHA_ID)
 
     async def _health_loop(self) -> None:
@@ -320,12 +822,55 @@ class BaseEngine(ABC):
     def push_signal(self, signal_type: str, **kwargs) -> None:
         signal_push.push_signal(signal_type, self.config.ALPHA_ID, **kwargs)
 
+    def register_columns(self, columns: list[dict]) -> None:
+        self.push_signal("REGISTER_COLUMNS", columns=json_dumps(columns))
+
+    def load_columns_config(self, path: str) -> None:
+        import tomllib
+        try:
+            with open(path, "rb") as f:
+                data = tomllib.load(f)
+        except FileNotFoundError:
+            return
+        columns = data.get("columns", [])
+        if columns:
+            self.register_columns(columns)
+
     def _replace_candle(self, sd: SymbolData, index: int, msg: dict) -> None:
         sd.open_list[index] = float(msg.get("open", 0.0))
         sd.high_list[index] = float(msg.get("high", 0.0))
         sd.low_list[index] = float(msg.get("low", 0.0))
         sd.price_list[index] = float(msg.get("close", 0.0))
         sd.volume_list[index] = float(msg.get("volume", 0.0))
+
+    def _upsert_candle(self, sd: SymbolData, msg: dict, open_time: int) -> None:
+        if sd.time_list:
+            last = sd.time_list[-1]
+            if open_time == last:
+                self._replace_candle(sd, len(sd.time_list) - 1, msg)
+                return
+            if open_time > last:
+                sd.time_list.append(open_time)
+                sd.open_list.append(float(msg.get("open", 0.0)))
+                sd.high_list.append(float(msg.get("high", 0.0)))
+                sd.low_list.append(float(msg.get("low", 0.0)))
+                sd.price_list.append(float(msg.get("close", 0.0)))
+                sd.volume_list.append(float(msg.get("volume", 0.0)))
+                return
+
+            index = bisect_left(sd.time_list, open_time)
+            if index < len(sd.time_list) and sd.time_list[index] == open_time:
+                self._replace_candle(sd, index, msg)
+                return
+        else:
+            index = 0
+
+        sd.time_list.insert(index, open_time)
+        sd.open_list.insert(index, float(msg.get("open", 0.0)))
+        sd.high_list.insert(index, float(msg.get("high", 0.0)))
+        sd.low_list.insert(index, float(msg.get("low", 0.0)))
+        sd.price_list.insert(index, float(msg.get("close", 0.0)))
+        sd.volume_list.insert(index, float(msg.get("volume", 0.0)))
 
     def _trim_symbol_data(self, sd: SymbolData) -> None:
         max_candles = getattr(self.config, "DATA_MAX_CANDLES", 1000)

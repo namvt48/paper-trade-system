@@ -1,6 +1,10 @@
 from unittest.mock import patch
 
-from base.symbol_utils import get_binance_perp_symbols, get_top_n_binance_perps
+from base.symbol_utils import (
+    get_binance_perp_symbols,
+    get_binance_perp_symbols_by_volume_rank,
+    get_top_n_binance_perps,
+)
 
 
 @patch("base.symbol_utils.requests.get")
@@ -37,3 +41,25 @@ def test_get_top_n_binance_perps_all(mock_get_symbols):
     mock_get_symbols.return_value = ["AAAUSDT", "BBBUSDT"]
     result = get_top_n_binance_perps(10)
     assert result == ["AAAUSDT", "BBBUSDT"]
+
+
+@patch("base.symbol_utils.requests.get")
+@patch("base.symbol_utils.get_binance_perp_symbols")
+def test_get_binance_perp_symbols_by_volume_rank(mock_get_symbols, mock_get):
+    mock_get_symbols.return_value = ["AAAUSDT", "BBBUSDT", "CCCUSDT"]
+    mock_get.return_value.json.return_value = [
+        {"symbol": "AAAUSDT", "quoteVolume": "10"},
+        {"symbol": "BBBUSDT", "quoteVolume": "30"},
+        {"symbol": "CCCUSDT", "quoteVolume": "20"},
+    ]
+    result = get_binance_perp_symbols_by_volume_rank(0, 2)
+    assert result == ["BBBUSDT", "CCCUSDT"]
+
+
+@patch("base.symbol_utils.requests.get")
+@patch("base.symbol_utils.get_binance_perp_symbols")
+def test_get_binance_perp_symbols_by_volume_rank_fallback(mock_get_symbols, mock_get):
+    mock_get_symbols.return_value = ["AAAUSDT", "BBBUSDT", "CCCUSDT"]
+    mock_get.side_effect = Exception("network error")
+    result = get_binance_perp_symbols_by_volume_rank(1, 3)
+    assert result == ["BBBUSDT", "CCCUSDT"]

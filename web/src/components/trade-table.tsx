@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react";
-import type { Trade } from "@/lib/types";
+import type { Trade, ColumnSpec } from "@/lib/types";
 
 const PAGE_SIZE = 50;
 
 interface TradeTableProps {
   trades: Trade[];
+  columnSpecs?: ColumnSpec[];
 }
 
 function fmtDate(iso: string) {
@@ -17,6 +18,7 @@ function fmtDate(iso: string) {
     month: "short",
     hour: "2-digit",
     minute: "2-digit",
+    second: "2-digit",
     hour12: false,
   });
 }
@@ -28,7 +30,13 @@ function fmtPrice(v: number | null | undefined): string {
 
 function fmtDuration(h: number | null | undefined): string {
   if (h == null) return "—";
-  if (h < 1) return `${Math.round(h * 60)}m`;
+  const totalSec = Math.round(h * 3600);
+  if (totalSec < 60) return `${totalSec}s`;
+  if (totalSec < 3600) {
+    const m = Math.floor(totalSec / 60);
+    const s = totalSec % 60;
+    return s > 0 ? `${m}m ${s}s` : `${m}m`;
+  }
   if (h < 24) return `${h.toFixed(1)}h`;
   return `${(h / 24).toFixed(1)}d`;
 }
@@ -90,10 +98,13 @@ function Pagination({
   );
 }
 
-function downloadCsv(trades: Trade[]) {
+function downloadCsv(trades: Trade[], columnSpecs?: ColumnSpec[]) {
+  const customHeaders = (columnSpecs ?? []).map((c) => c.label);
+  const customKeys = (columnSpecs ?? []).map((c) => c.key);
   const headers = [
     "trade_id", "symbol", "side", "entry_price", "exit_price", "qty",
     "leverage", "tp", "sl", "pnl", "pnl_percent", "fee",
+    ...customHeaders,
     "reason", "duration_hours", "opened_at", "closed_at",
   ];
   const escape = (v: unknown) => {
@@ -102,14 +113,22 @@ function downloadCsv(trades: Trade[]) {
       ? `"${s.replace(/"/g, '""')}"`
       : s;
   };
-  const rows = trades.map((t) =>
-    [
+  const rows = trades.map((t) => {
+    let meta: Record<string, unknown> = {};
+    try { meta = JSON.parse(t.metadata || "{}"); } catch {}
+    const customValues = customKeys.map((key) => {
+      const val = meta[key];
+      if (val == null) return "";
+      return String(val);
+    });
+    return [
       t.trade_id, t.symbol, t.side, t.entry_price, t.exit_price, t.qty,
       t.leverage, t.tp ?? "", t.sl ?? "", t.pnl, t.pnl_percent,
       (t as any).fee ?? "",
+      ...customValues,
       t.reason, t.duration_hours, t.opened_at, t.closed_at,
-    ].map(escape).join(",")
-  );
+    ].map(escape).join(",");
+  });
   const csv = [headers.join(","), ...rows].join("\n");
   const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
   const url = URL.createObjectURL(blob);
@@ -120,7 +139,7 @@ function downloadCsv(trades: Trade[]) {
   URL.revokeObjectURL(url);
 }
 
-export function TradeTable({ trades }: TradeTableProps) {
+export function TradeTable({ trades, columnSpecs }: TradeTableProps) {
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(trades.length / PAGE_SIZE);
   const visible = trades.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -133,7 +152,7 @@ export function TradeTable({ trades }: TradeTableProps) {
     <div className="rounded-xl border border-slate-700/60 overflow-hidden">
       <div className="flex justify-end px-4 py-2 border-b border-slate-700/60 bg-slate-800/60">
         <button
-          onClick={() => downloadCsv(trades)}
+          onClick={() => downloadCsv(trades, columnSpecs)}
           className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 px-3 py-1.5 rounded-lg transition-colors"
         >
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,13 +169,16 @@ export function TradeTable({ trades }: TradeTableProps) {
               <th className="text-left py-3 px-3 whitespace-nowrap">Side</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">Entry</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">Exit</th>
+              <th className="text-right py-3 px-3 whitespace-nowrap">Move %</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">Qty</th>
-              <th className="text-right py-3 px-3 whitespace-nowrap">Leverage</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">TP</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">SL</th>
-              <th className="text-right py-3 px-3 whitespace-nowrap">PnL</th>
+              <th className="text-right py-3 px-3 whitespace-nowrap">Net PnL</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">PnL %</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">Fee</th>
+              {(columnSpecs ?? []).map((spec) => (
+                <th key={spec.key} className="text-right py-3 px-3 whitespace-nowrap">{spec.label}</th>
+              ))}
               <th className="text-left py-3 px-3 whitespace-nowrap">Reason</th>
               <th className="text-right py-3 px-3 whitespace-nowrap">Duration</th>
               <th className="text-left py-3 px-3 whitespace-nowrap">Opened (UTC)</th>
@@ -164,7 +186,10 @@ export function TradeTable({ trades }: TradeTableProps) {
             </tr>
           </thead>
           <tbody>
-            {visible.map((t, i) => (
+            {visible.map((t, i) => {
+              let meta: Record<string, unknown> = {};
+              try { meta = JSON.parse(t.metadata || "{}"); } catch {}
+              return (
               <tr
                 key={t.trade_id}
                 className={`border-b border-slate-700/40 hover:bg-slate-700/30 transition-colors ${i % 2 === 0 ? "" : "bg-slate-800/30"}`}
@@ -173,8 +198,16 @@ export function TradeTable({ trades }: TradeTableProps) {
                 <td className={`py-2 px-3 font-semibold text-xs whitespace-nowrap ${t.side === "LONG" ? "text-emerald-400" : "text-rose-400"}`}>{t.side}</td>
                 <td className="py-2 px-3 text-right font-mono text-slate-300 whitespace-nowrap">{fmtPrice(t.entry_price)}</td>
                 <td className="py-2 px-3 text-right font-mono text-slate-300 whitespace-nowrap">{fmtPrice(t.exit_price)}</td>
+                {(() => {
+                  const dir = t.side === "LONG" ? 1 : -1;
+                  const movePct = dir * (t.exit_price - t.entry_price) / t.entry_price * 100;
+                  return (
+                    <td className={`py-2 px-3 text-right font-mono text-xs whitespace-nowrap ${movePct >= 0 ? "text-emerald-400/80" : "text-rose-400/80"}`}>
+                      {movePct >= 0 ? "+" : ""}{movePct.toFixed(3)}%
+                    </td>
+                  );
+                })()}
                 <td className="py-2 px-3 text-right font-mono text-slate-400 whitespace-nowrap text-xs">{parseFloat(t.qty.toPrecision(6)).toString()}</td>
-                <td className="py-2 px-3 text-right font-mono text-indigo-300 whitespace-nowrap">{t.leverage}x</td>
                 <td className="py-2 px-3 text-right font-mono text-emerald-400/80 whitespace-nowrap">{fmtPrice(t.tp)}</td>
                 <td className="py-2 px-3 text-right font-mono text-rose-400/80 whitespace-nowrap">{fmtPrice(t.sl)}</td>
                 <td className={`py-2 px-3 text-right font-mono font-semibold whitespace-nowrap ${t.pnl >= 0 ? "text-emerald-400" : "text-rose-400"}`}>
@@ -186,12 +219,21 @@ export function TradeTable({ trades }: TradeTableProps) {
                 <td className="py-2 px-3 text-right font-mono text-slate-500 text-xs whitespace-nowrap">
                   {(t as any).fee != null ? (t as any).fee.toFixed(4) : "—"}
                 </td>
+                {(columnSpecs ?? []).map((spec) => {
+                  const val = meta[spec.key];
+                  if (val == null) return <td key={spec.key} className="py-2 px-3 text-right font-mono text-slate-500 text-xs whitespace-nowrap">—</td>;
+                  if (spec.type === "number" && typeof val === "number") {
+                    return <td key={spec.key} className="py-2 px-3 text-right font-mono text-slate-300 text-xs whitespace-nowrap">{val.toFixed(spec.decimals ?? 0)}</td>;
+                  }
+                  return <td key={spec.key} className="py-2 px-3 text-right font-mono text-slate-300 text-xs whitespace-nowrap">{String(val)}</td>;
+                })}
                 <td className="py-2 px-3 text-slate-400 text-xs whitespace-nowrap">{t.reason}</td>
                 <td className="py-2 px-3 text-right font-mono text-slate-400 text-xs whitespace-nowrap">{fmtDuration(t.duration_hours)}</td>
                 <td className="py-2 px-3 text-slate-400 font-mono text-xs whitespace-nowrap">{fmtDate(t.opened_at)}</td>
                 <td className="py-2 px-3 text-slate-400 font-mono text-xs whitespace-nowrap">{fmtDate(t.closed_at)}</td>
               </tr>
-            ))}
+              );
+            })}
           </tbody>
         </table>
       </div>

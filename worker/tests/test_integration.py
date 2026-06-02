@@ -71,7 +71,7 @@ async def test_full_signal_lifecycle(integration_setup):
     assert result["closed"] is True
 
     trade = await db.get_trade(pos_id)
-    assert trade["pnl"] == pytest.approx(2.0)
+    assert trade["pnl"] == pytest.approx(20.0)
     assert trade["reason"] == "TP_HIT"
     assert trade["sl"] == 94500.0
 

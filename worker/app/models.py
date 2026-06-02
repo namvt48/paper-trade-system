@@ -7,6 +7,7 @@ class SignalType(str, Enum):
     OPEN = "OPEN"
     MODIFY = "MODIFY"
     CLOSE = "CLOSE"
+    REGISTER_COLUMNS = "REGISTER_COLUMNS"
 
 
 @dataclass
@@ -50,6 +51,14 @@ class CloseSignal:
     timestamp: str
     exit_price: Optional[float] = None
     metadata: str = "{}"
+
+
+@dataclass
+class RegisterColumnsSignal:
+    type: SignalType
+    alpha_id: str
+    signal_id: str
+    columns: str
 
 
 def _to_float(data: dict, key: str) -> Optional[float]:
@@ -112,4 +121,11 @@ def parse_signal(data: dict):
             timestamp=data.get("timestamp", ""),
             exit_price=_to_float(data, "exit_price"),
             metadata=data.get("metadata", "{}"),
+        )
+    elif st == SignalType.REGISTER_COLUMNS:
+        return RegisterColumnsSignal(
+            type=st,
+            alpha_id=data["alpha_id"],
+            signal_id=data.get("signal_id", ""),
+            columns=data.get("columns", "[]"),
         )

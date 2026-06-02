@@ -63,6 +63,14 @@ export interface AlphaStats {
   consecutive_losses: number;
 }
 
+export interface ColumnSpec {
+  key: string;
+  label: string;
+  type: "number" | "text";
+  decimals?: number;
+  sort_order: number;
+}
+
 export type AlphaConfigValue = string | number | boolean | null;
 
 export type AlphaConfig = Record<string, AlphaConfigValue>;

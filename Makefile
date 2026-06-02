@@ -1,52 +1,89 @@
-ZIP_NAME   = paper-trade-system
-ZIP_PATH   = /tmp/$(ZIP_NAME).zip
-SERVER     = root@167.86.101.228
-REMOTE_DIR = /root/paper-trade-system
+SHELL := /bin/sh
+
+ZIP_NAME   := paper-trade-system
+ZIP_PATH   := /tmp/$(ZIP_NAME).zip
+SERVER     ?= root@167.86.101.228
+SERVER_HOST ?= $(shell printf '%s' '$(SERVER)' | sed 's/.*@//')
+REMOTE_DIR ?= /root/paper-trade-system
+COMPOSE    := docker compose
+MDS_REDIS_URL ?= redis://mds-redis:6379
+MDS_EXCHANGE  ?= binance
 
 # Read REGISTERED_ALPHAS from .env
-ALPHAS = $(shell grep ^REGISTERED_ALPHAS .env | cut -d= -f2 | tr ',' ' ')
+ALPHAS = $(shell [ -f .env ] && sed -n 's/^REGISTERED_ALPHAS=//p' .env | head -n1 | tr ',' ' ' || true)
 
 # Optional: specify single alpha, e.g. make alpha-up ALPHA=wilder
 ALPHA ?= undefined
 
+.PHONY: help prepare up run down restart build logs logs-tail ps health clean shell \
+	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
+	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-restart deploy-logs deploy-ps deploy-prune \
+	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
+
+help:
+	@echo "Paper trade targets:"
+	@echo "  make up              Build/start Redis + worker + web"
+	@echo "  make alphas-up       Build/start REGISTERED_ALPHAS from .env"
+	@echo "  make alpha-up ALPHA=<name>"
+	@echo "  make health          Check core, stream, DB, and configured alphas"
+	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
+	@echo "  make deploy          Upload, start core, then start alphas on SERVER=$(SERVER)"
+	@echo "  make deploy-core     Upload and start only Redis + worker + web; do not start alphas"
+	@echo "  make deploy-logs     Follow remote core logs"
+	@echo "  make deploy-ps       Remote core + alpha status"
+
 # ─── Core system (redis + worker + web) ──────────────────────────────────────
 
-up:
-	docker compose up -d
+prepare:
+	mkdir -p data logs/redis logs/worker logs/web logs/alphas
+
+up run: prepare
+	$(COMPOSE) up -d --build --remove-orphans
 
 down:
-	docker compose down --timeout 30
+	$(COMPOSE) down --timeout 30
 
 restart:
-	docker compose restart
+	$(COMPOSE) restart
 
 build:
-	docker compose build
+	$(COMPOSE) build
 
 logs:
-	docker compose logs -f
+	$(COMPOSE) logs -f
+
+logs-tail:
+	$(COMPOSE) logs --tail=200
 
 ps:
-	docker compose ps
+	$(COMPOSE) ps
 
 health:
-	docker compose exec worker test -f /tmp/bot_health && echo "OK" || echo "UNHEALTHY"
+	$(COMPOSE) ps
+	@$(COMPOSE) exec -T redis redis-cli ping
+	@$(COMPOSE) exec -T worker test -f /tmp/bot_health && echo "worker OK" || (echo "worker UNHEALTHY"; exit 1)
+	@$(COMPOSE) exec -T redis redis-cli XINFO GROUPS paper-signals >/dev/null 2>&1 && $(COMPOSE) exec -T redis redis-cli XINFO GROUPS paper-signals || true
+	@$(COMPOSE) exec -T worker python -c "import sqlite3; con=sqlite3.connect('/app/data/paper-trade.db'); print('db', con.execute('PRAGMA integrity_check').fetchone()[0]); print('alphas', con.execute('select alpha_id,status from alphas order by alpha_id').fetchall())"
+	@$(COMPOSE) exec -T web node -e "fetch('http://127.0.0.1:3000/api/dashboard').then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log('web OK', j.alphas.length, 'alphas')).catch(e=>{console.error(e); process.exit(1)})"
+	@$(MAKE) --no-print-directory alphas-health
 
 clean:
-	docker compose down --timeout 30 -v
+	$(COMPOSE) down --timeout 30 -v
 	rm -rf data/paper-trade.db
 
 shell:
-	docker compose exec worker /bin/bash
+	$(COMPOSE) exec worker /bin/bash
 
 # ─── Alpha management ────────────────────────────────────────────────────────
 
+require-mds-network:
+	@docker network inspect market-data >/dev/null 2>&1 || (echo "Missing Docker network 'market-data'. Deploy/start market-data-service first."; exit 1)
+
 # Start all alphas listed in REGISTERED_ALPHAS
-alphas-up:
+alphas-up: require-mds-network
 	@for alpha in $(ALPHAS); do \
 		echo "→ Starting $$alpha..."; \
-		mkdir -p logs/alphas/$$alpha; \
-		docker compose -f alphas/$$alpha/docker-compose.yml \
+		MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" $(COMPOSE) -f alphas/$$alpha/docker-compose.yml \
 			-p $$alpha up -d --build; \
 	done
 
@@ -54,53 +91,66 @@ alphas-up:
 alphas-down:
 	@for alpha in $(ALPHAS); do \
 		echo "→ Stopping $$alpha..."; \
-		docker compose -f alphas/$$alpha/docker-compose.yml \
+		$(COMPOSE) -f alphas/$$alpha/docker-compose.yml \
 			-p $$alpha down --timeout 30; \
 	done
 
 # Start a single alpha: make alpha-up ALPHA=wilder
-alpha-up:
+alpha-up: require-mds-network
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-up ALPHA=<name>"; exit 1)
-	mkdir -p logs/alphas/$(ALPHA)
-	docker compose -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) up -d --build
+	@[ -f alphas/$(ALPHA)/docker-compose.yml ] || (echo "Alpha '$(ALPHA)' not found"; exit 1)
+	MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" $(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) up -d --build
 
 # Stop a single alpha: make alpha-down ALPHA=wilder
 alpha-down:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-down ALPHA=<name>"; exit 1)
-	docker compose -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) down --timeout 30
+	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) down --timeout 30
 
 # Restart a single alpha
 alpha-restart:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-restart ALPHA=<name>"; exit 1)
-	docker compose -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) restart
+	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) restart
 
 # Logs for a single alpha
 alpha-logs:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-logs ALPHA=<name>"; exit 1)
-	docker compose -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) logs -f
+	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) logs -f
 
 # Status of all alphas
 alphas-ps:
 	@for alpha in $(ALPHAS); do \
 		echo "=== $$alpha ==="; \
-		docker compose -f alphas/$$alpha/docker-compose.yml -p $$alpha ps 2>/dev/null; \
+		$(COMPOSE) -f alphas/$$alpha/docker-compose.yml -p $$alpha ps 2>/dev/null; \
+	done
+
+alphas-health:
+	@for alpha in $(ALPHAS); do \
+		echo "=== $$alpha health ==="; \
+		$(COMPOSE) -f alphas/$$alpha/docker-compose.yml -p $$alpha ps; \
 	done
 
 # ─── Package ─────────────────────────────────────────────────────────────────
 
 package:
+	rm -f $(ZIP_PATH)
 	cd .. && zip -r $(ZIP_PATH) $(ZIP_NAME)/ \
 		-x "$(ZIP_NAME)/.git/*" \
+		-x "$(ZIP_NAME)/.pytest_cache/*" \
 		-x "$(ZIP_NAME)/**/__pycache__/*" \
 		-x "$(ZIP_NAME)/**/.venv/*" \
+		-x "$(ZIP_NAME)/**/.pytest_cache/*" \
+		-x "$(ZIP_NAME)/**/.mypy_cache/*" \
+		-x "$(ZIP_NAME)/**/.ruff_cache/*" \
 		-x "$(ZIP_NAME)/**/node_modules/*" \
 		-x "$(ZIP_NAME)/**/.next/*" \
 		-x "$(ZIP_NAME)/data/paper-trade.db" \
 		-x "$(ZIP_NAME)/data/paper-trade.db-shm" \
 		-x "$(ZIP_NAME)/data/paper-trade.db-wal" \
 		-x "$(ZIP_NAME)/logs/*" \
-		-x "$(ZIP_NAME)/alphas/logs/*" \
-		-x "$(ZIP_NAME)/graphify-out/*"
+		-x "$(ZIP_NAME)/benchmarks/results/*" \
+		-x "$(ZIP_NAME)/graphify-out/*" \
+		-x "$(ZIP_NAME)/*.log" \
+		-x "$(ZIP_NAME)/**/*.log"
 	@echo "Packaged → $(ZIP_PATH)"
 	@zip -sf $(ZIP_PATH) | grep "\.env" && echo "✓ .env files included" || true
 
@@ -111,21 +161,27 @@ deploy: package
 	scp $(ZIP_PATH) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
-		echo "[1/7] Extracting..."; \
+		echo "[1/8] Extracting..."; \
+		mkdir -p $(REMOTE_DIR); \
 		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
 		cd $(REMOTE_DIR); \
-		echo "[2/7] Backing up DB..."; \
+		echo "[2/8] Preparing runtime dirs..."; \
+		make prepare; \
+		echo "[3/8] Backing up DB..."; \
 		[ -f data/paper-trade.db ] && cp data/paper-trade.db data/paper-trade.db.bak || true; \
-		echo "[3/7] Stopping alphas..."; \
+		echo "[4/8] Stopping alphas..."; \
 		make alphas-down; \
-		echo "[4/7] Stopping core..."; \
-		docker compose down --timeout 30 -v; \
-		echo "[5/7] Starting core..."; \
-		docker compose up -d --build; \
-		echo "[6/7] Checking DB health..."; \
-		sleep 3; \
+		echo "[5/8] Starting core..."; \
+		docker compose up -d --build --remove-orphans; \
+		echo "[6/8] Checking DB health..."; \
+		i=0; \
+		until docker compose exec -T worker test -f /tmp/bot_health >/dev/null 2>&1; do \
+			i=$$((i+1)); \
+			[ $$i -lt 30 ] || (docker compose logs --tail=120 worker; exit 1); \
+			sleep 2; \
+		done; \
 		if docker compose exec -T worker python3 -c \
-			"import sqlite3; sqlite3.connect(\"/app/data/paper-trade.db\").execute(\"PRAGMA integrity_check\")" \
+			"import sqlite3; con=sqlite3.connect(\"/app/data/paper-trade.db\"); assert con.execute(\"PRAGMA integrity_check\").fetchone()[0] == \"ok\"" \
 			2>/dev/null; then \
 			echo "DB OK."; \
 		else \
@@ -133,12 +189,51 @@ deploy: package
 			docker compose down --timeout 10; \
 			mv data/paper-trade.db data/paper-trade.db.corrupt; \
 			[ -f data/paper-trade.db.bak ] && cp data/paper-trade.db.bak data/paper-trade.db || true; \
-			docker compose up -d; \
+			docker compose up -d --build; \
 		fi; \
-		echo "[7/7] Starting alphas..."; \
+		echo "[7/8] Starting alphas..."; \
 		make alphas-up; \
+		echo "[8/8] Status"; \
+		make health; \
 		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
-		echo "Dashboard → http://167.86.101.228:$$WEB_PORT"; \
+		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
+	'
+
+# Deploy only the core system (redis + worker + web). This intentionally stops
+# configured alphas and does not start them again.
+deploy-core deploy-system: package
+	@echo "→ Uploading to $(SERVER)..."
+	scp $(ZIP_PATH) $(SERVER):/tmp/
+	ssh $(SERVER) '\
+		set -e; \
+		echo "[1/7] Extracting..."; \
+		mkdir -p $(REMOTE_DIR); \
+		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
+		cd $(REMOTE_DIR); \
+		echo "[2/7] Preparing runtime dirs..."; \
+		make prepare; \
+		echo "[3/7] Backing up DB..."; \
+		[ -f data/paper-trade.db ] && cp data/paper-trade.db data/paper-trade.db.bak || true; \
+		echo "[4/7] Stopping alphas..."; \
+		make alphas-down || true; \
+		echo "[5/7] Starting core only..."; \
+		docker compose up -d --build --remove-orphans; \
+		echo "[6/7] Checking core health..."; \
+		i=0; \
+		until docker compose exec -T worker test -f /tmp/bot_health >/dev/null 2>&1; do \
+			i=$$((i+1)); \
+			[ $$i -lt 30 ] || (docker compose logs --tail=120 worker; exit 1); \
+			sleep 2; \
+		done; \
+		docker compose exec -T worker python3 -c \
+			"import sqlite3; con=sqlite3.connect(\"/app/data/paper-trade.db\"); assert con.execute(\"PRAGMA integrity_check\").fetchone()[0] == \"ok\"; print(\"DB OK\")"; \
+		docker compose exec -T web node -e \
+			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; \
+		echo "[7/7] Core status"; \
+		docker compose ps; \
+		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
+		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
+		echo "Alphas are stopped. Start later with: make alpha-up ALPHA=<name>"; \
 	'
 
 # Deploy + start all alphas
@@ -152,20 +247,22 @@ deploy-alpha:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make deploy-alpha ALPHA=<name>"; exit 1)
 	@[ -d alphas/$(ALPHA) ] || (echo "Alpha '$(ALPHA)' not found"; exit 1)
 	@echo "→ Packaging alpha: $(ALPHA)..."
+	rm -f $(ALPHA_ZIP)
 	cd .. && zip -r $(ALPHA_ZIP) \
 		$(ZIP_NAME)/alphas/$(ALPHA)/ \
-		$(ZIP_NAME)/base/ \
+		$(ZIP_NAME)/alphas/base/ \
 		$(ZIP_NAME)/.env \
 		-x "$(ZIP_NAME)/**/__pycache__/*" \
-		-x "$(ZIP_NAME)/**/.venv/*"
+		-x "$(ZIP_NAME)/**/.venv/*" \
+		-x "$(ZIP_NAME)/**/*.log"
 	scp $(ALPHA_ZIP) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
 		echo "[1/3] Extracting..."; \
 		unzip -o /tmp/alpha-$(ALPHA).zip -d /root/ > /dev/null; \
-		mkdir -p $(REMOTE_DIR)/logs/alphas/$(ALPHA); \
+		docker network inspect market-data >/dev/null 2>&1 || (echo "Missing Docker network market-data. Deploy/start market-data-service first."; exit 1); \
 		echo "[2/3] Building & starting $(ALPHA)..."; \
-		cd $(REMOTE_DIR) && docker compose -f alphas/$(ALPHA)/docker-compose.yml \
+		cd $(REMOTE_DIR) && MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" docker compose -f alphas/$(ALPHA)/docker-compose.yml \
 			-p $(ALPHA) up -d --build; \
 		echo "[3/3] Reloading worker..."; \
 		docker compose up -d --force-recreate worker; \
@@ -182,7 +279,7 @@ deploy-ps:
 	ssh $(SERVER) 'cd $(REMOTE_DIR) && docker compose ps && make alphas-ps'
 
 deploy-prune:
-	ssh $(SERVER) 'docker system prune -af --volumes'
+	ssh $(SERVER) 'docker system prune -af'
 
 # ─── Trade history ───────────────────────────────────────────────────────────
 #  Usage:

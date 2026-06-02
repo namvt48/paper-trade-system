@@ -1,4 +1,4 @@
-import { getAlpha, getAlphaStats, getTrades, getEquityCurve, getOpenPositions, getAlphaConfig } from "@/lib/db";
+import { getAlpha, getAlphaStats, getTrades, getEquityCurve, getOpenPositions, getAlphaConfig, getAlphaColumns } from "@/lib/db";
 import { EquityChart } from "@/components/equity-chart";
 import { TradeTable } from "@/components/trade-table";
 import { PositionCard } from "@/components/position-card";
@@ -32,9 +32,10 @@ export default async function AlphaDetailPage({ params }: { params: Promise<{ id
 
   const stats = getAlphaStats(id);
   const positions = getOpenPositions(id);
-  const trades = getTrades(id, 5000);
+  const trades = getTrades(id, 500);
   const equity = getEquityCurve(id);
   const config = getAlphaConfig(id);
+  const columnSpecs = getAlphaColumns(id);
   const configEntries = Object.entries(config);
 
   return (
@@ -102,7 +103,7 @@ export default async function AlphaDetailPage({ params }: { params: Promise<{ id
 
       <div>
         <SectionHeader>Trade History</SectionHeader>
-        <TradeTable trades={trades} />
+        <TradeTable trades={trades} columnSpecs={columnSpecs} />
       </div>
     </div>
   );

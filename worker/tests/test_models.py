@@ -1,5 +1,5 @@
 import pytest
-from app.models import parse_signal, OpenSignal, ModifySignal, CloseSignal, SignalType
+from app.models import parse_signal, OpenSignal, ModifySignal, CloseSignal, SignalType, RegisterColumnsSignal
 
 
 def test_parse_open_signal(sample_open_signal):
@@ -65,3 +65,16 @@ def test_parse_close_signal_no_exit_price():
 def test_parse_unknown_type():
     with pytest.raises(ValueError, match="Unknown signal type"):
         parse_signal({"type": "UNKNOWN", "alpha_id": "x"})
+
+
+def test_parse_register_columns_signal():
+    data = {
+        "type": "REGISTER_COLUMNS",
+        "alpha_id": "alpha-1-v5b",
+        "signal_id": "sig-reg-001",
+        "columns": '[{"key": "atr", "label": "ATR", "type": "number", "decimals": 6}]',
+    }
+    signal = parse_signal(data)
+    assert isinstance(signal, RegisterColumnsSignal)
+    assert signal.alpha_id == "alpha-1-v5b"
+    assert signal.columns == '[{"key": "atr", "label": "ATR", "type": "number", "decimals": 6}]'

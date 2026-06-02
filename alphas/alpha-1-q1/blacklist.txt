@@ -1,0 +1,1 @@
+# No blacklist for alpha-1-q1 (Q alphas use volume rank filtering only)

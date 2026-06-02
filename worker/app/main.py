@@ -3,14 +3,22 @@ import json
 import logging
 import os
 
-import redis as redis_lib
+import redis.asyncio as redis_lib
 
 from app.config import settings
 from app.db import Database
 from app.executor import Executor
-from app.models import SignalType, parse_signal
+from app.models import SignalType, parse_signal, RegisterColumnsSignal
 
 logger = logging.getLogger(__name__)
+
+
+def install_uvloop_if_available() -> None:
+    try:
+        import uvloop
+    except ImportError:
+        return
+    uvloop.install()
 
 
 class TickerPriceCache:
@@ -50,44 +58,47 @@ async def process_signal_message(data: dict, db: Database, executor: Executor) -
     alpha_id = data.get("alpha_id", "unknown")
     signal_type = data.get("type", "unknown")
 
-    await db.log_signal(
-        signal_id=signal_id,
-        alpha_id=alpha_id,
-        signal_type=signal_type,
-        payload=json.dumps(data),
-    )
+    async with db.transaction():
+        await db.log_signal(
+            signal_id=signal_id,
+            alpha_id=alpha_id,
+            signal_type=signal_type,
+            payload=json.dumps(data),
+        )
 
-    try:
-        signal = parse_signal(data)
+        try:
+            signal = parse_signal(data)
 
-        if signal.type == SignalType.OPEN:
-            result = await executor.process_open(signal)
-        elif signal.type == SignalType.MODIFY:
-            result = await executor.process_modify(signal)
-        elif signal.type == SignalType.CLOSE:
-            result = await executor.process_close(signal)
-        else:
-            result = None
+            if signal.type == SignalType.OPEN:
+                result = await executor.process_open(signal)
+            elif signal.type == SignalType.MODIFY:
+                result = await executor.process_modify(signal)
+            elif signal.type == SignalType.CLOSE:
+                result = await executor.process_close(signal)
+            elif signal.type == SignalType.REGISTER_COLUMNS:
+                result = await executor.process_register_columns(signal)
+            else:
+                result = None
 
-        await db.mark_signal_processed(signal_id)
-        return result
+            await db.mark_signal_processed(signal_id)
+            return result
 
-    except Exception as exc:
-        logger.error("Error processing signal %s: %s", signal_id, exc)
-        await db.mark_signal_processed(signal_id, error=str(exc))
-        return None
+        except Exception as exc:
+            logger.error("Error processing signal %s: %s", signal_id, exc)
+            await db.mark_signal_processed(signal_id, error=str(exc))
+            return None
 
 
 async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
     redis_client = await connect_redis()
     pubsub = redis_client.pubsub()
-    pubsub.subscribe("ticker")
+    await pubsub.subscribe("ticker")
     logger.info("[TICKER] Subscribed to Redis ticker channel")
 
     try:
         while True:
             try:
-                msg = await asyncio.to_thread(pubsub.get_message, timeout=1.0)
+                msg = await pubsub.get_message(timeout=1.0)
                 if not msg or msg["type"] != "message":
                     continue
 
@@ -102,9 +113,9 @@ async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
                 logger.error("Ticker subscriber error: %s", exc)
                 await asyncio.sleep(5)
     finally:
-        pubsub.unsubscribe()
-        pubsub.close()
-        redis_client.close()
+        await pubsub.unsubscribe()
+        await pubsub.aclose()
+        await redis_client.aclose()
 
 
 async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache) -> None:
@@ -153,10 +164,10 @@ async def connect_redis() -> redis_lib.Redis:
         attempt += 1
         redis_client = redis_lib.from_url(settings.REDIS_URL, decode_responses=True)
         try:
-            redis_client.ping()
+            await redis_client.ping()
             return redis_client
         except redis_lib.RedisError as exc:
-            redis_client.close()
+            await redis_client.aclose()
             wait = min(attempt, 10)
             logger.warning("Redis unavailable: %s. Retry in %ss", exc, wait)
             await asyncio.sleep(wait)
@@ -168,6 +179,9 @@ async def run_consumer():
     db = Database(settings.DB_PATH)
     await db.init()
     await register_configured_alphas(db)
+    pruned = await db.prune_signals(settings.SIGNAL_RETENTION_DAYS)
+    if pruned:
+        logger.info("Pruned %d old signals", pruned)
 
     executor = Executor(
         db,
@@ -183,24 +197,26 @@ async def run_consumer():
 
     try:
         try:
-            redis_client.xgroup_create(settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True)
+            await redis_client.xgroup_create(settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True)
         except redis_lib.ResponseError:
             pass
 
-        ticker_task = asyncio.create_task(run_ticker_subscriber(cache))
-        price_check_task = asyncio.create_task(run_price_check_loop(db, executor, cache))
+        if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
+            ticker_task = asyncio.create_task(run_ticker_subscriber(cache))
+            price_check_task = asyncio.create_task(run_price_check_loop(db, executor, cache))
+        else:
+            logger.info("Worker auto TP/SL disabled (ENABLE_WORKER_TPSL_AUTO_CLOSE=False); alphas manage SL/TP via MDS price_alert")
         health_task = asyncio.create_task(run_health_loop())
 
         logger.info("Consumer started: stream=%s group=%s", settings.REDIS_STREAM, settings.CONSUMER_GROUP)
 
         while True:
-            messages = await asyncio.to_thread(
-                redis_client.xreadgroup,
+            messages = await redis_client.xreadgroup(
                 settings.CONSUMER_GROUP,
                 settings.CONSUMER_NAME,
                 {settings.REDIS_STREAM: ">"},
-                count=10,
-                block=1000,
+                count=settings.REDIS_READ_COUNT,
+                block=settings.REDIS_BLOCK_MS,
             )
 
             if not messages:
@@ -211,8 +227,7 @@ async def run_consumer():
                     result = await process_signal_message(data, db, executor)
                     if result is not None:
                         logger.info("Processed %s signal: %s", data.get("type"), result)
-                    await asyncio.to_thread(
-                        redis_client.xack,
+                    await redis_client.xack(
                         settings.REDIS_STREAM,
                         settings.CONSUMER_GROUP,
                         msg_id,
@@ -227,8 +242,9 @@ async def run_consumer():
         if tasks:
             await asyncio.gather(*tasks, return_exceptions=True)
         await db.close()
-        redis_client.close()
+        await redis_client.aclose()
 
 
 if __name__ == "__main__":
+    install_uvloop_if_available()
     asyncio.run(run_consumer())

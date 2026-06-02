@@ -1,6 +1,8 @@
 networks:
   paper-trade:
     external: true
+  market-data:
+    external: true
 
 services:
   wilder:
@@ -11,11 +13,13 @@ services:
     volumes:
       - ../../logs/alphas/wilder:/app/logs
     environment:
-      - REDIS_URL=redis://redis:6379
+      - REDIS_URL=redis://paper-redis:6379
+      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - LOG_DIR=/app/logs
       - DATA_CHANNELS=kline:1h
     networks:
       - paper-trade
+      - market-data
     restart: unless-stopped
     healthcheck:
       test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
