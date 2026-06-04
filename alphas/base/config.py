@@ -14,7 +14,8 @@ class BaseConfig(BaseSettings):
     FEE_PCT: float = 0.0005
     DATA_CHANNELS: str = ""
     DATA_MAX_CANDLES: int = 1000
-    INITIAL_DATA_TIMEOUT_SEC: float = 30.0
+    # Large universe warmups are deliberately rate-limited by MDS and may queue.
+    INITIAL_DATA_TIMEOUT_SEC: float = 300.0
     WARMUP_BARS: int = 50
     SYMBOL_BLACKLIST: str = ""
     MANAGE_INTERVAL_SEC: float = 60.0

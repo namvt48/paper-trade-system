@@ -496,10 +496,13 @@ class BaseEngine(ABC):
                         redis_client.xread,
                         {response_stream: last_response_id},
                         count=len(expected_stream),
-                        block=int(min(remaining, 5) * 1000),
+                        # Redis interprets BLOCK 0 as "wait forever".
+                        block=max(50, int(min(remaining, 5) * 1000)),
                     )
 
                     if not messages:
+                        # Real Redis blocks, but mocks/proxies may return immediately.
+                        await asyncio.sleep(min(0.05, max(remaining, 0)))
                         continue
 
                     for _stream, entries in messages:

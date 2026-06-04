@@ -1,9 +1,5 @@
 # Data
-data/paper-trade.db
-data/paper-trade.db-shm
-data/paper-trade.db-wal
-data/paper-trade.db.bak
-data/paper-trade.db.corrupt
+data/
 
 # Logs (keep directory structure via .gitkeep)
 logs/**/*.log
