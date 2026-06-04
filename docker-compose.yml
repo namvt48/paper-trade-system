@@ -1,6 +1,8 @@
 networks:
   paper-trade:
     name: paper-trade
+  market-data:
+    external: true
 
 services:
   redis:
@@ -59,6 +61,7 @@ services:
       - DB_PATH=/app/data/paper-trade.db
       - ALPHAS_DIR=/app/alphas
       - REDIS_URL=redis://redis:6379
+      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - HOSTNAME=0.0.0.0
       - PORT=3000
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
@@ -66,6 +69,7 @@ services:
     command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
     networks:
       - paper-trade
+      - market-data
     restart: unless-stopped
 
 volumes:

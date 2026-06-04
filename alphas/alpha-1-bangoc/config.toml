@@ -1,0 +1,21 @@
+[[columns]]
+key = "indi1_color"
+label = "Indi1"
+type = "text"
+
+[[columns]]
+key = "indi2_color"
+label = "Indi2"
+type = "text"
+
+[[columns]]
+key = "indi1_acol"
+label = "ACol"
+type = "number"
+decimals = 4
+
+[[columns]]
+key = "indi2_poc"
+label = "POC"
+type = "number"
+decimals = 2

@@ -1,0 +1,3 @@
+# Binance Futures perpetual symbols to exclude from alpha-1-v5b-5pct
+# Format: one symbol per line, e.g. BTCUSDT
+# Blank lines and lines starting with # are ignored.

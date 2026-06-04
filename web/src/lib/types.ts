@@ -18,6 +18,8 @@ export interface Position {
   leverage: number;
   opened_at: string;
   metadata: string;
+  exchange: string;
+  fee_pct: number;
 }
 
 export interface Trade {

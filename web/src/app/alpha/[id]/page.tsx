@@ -98,7 +98,7 @@ export default async function AlphaDetailPage({ params }: { params: Promise<{ id
 
       <div>
         <SectionHeader>Open Positions <span className="ml-1.5 text-indigo-400 font-mono text-base">({positions.length})</span></SectionHeader>
-        <PositionCard positions={positions} />
+        <PositionCard alphaId={id} positions={positions} />
       </div>
 
       <div>

@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Position } from "@/lib/types";
 
 const PAGE_SIZE = 50;
 
 interface PositionCardProps {
+  alphaId: string;
   positions: Position[];
+}
+
+interface PositionTick {
+  symbol: string;
+  exchange?: string;
+  price: number;
+  bid?: number | null;
+  ask?: number | null;
+  last?: number | null;
 }
 
 function fmtTime(iso: string) {
@@ -33,6 +43,33 @@ function elapsed(iso: string) {
 function fmtPrice(v: number | null | undefined): string {
   if (v == null) return "—";
   return parseFloat(v.toPrecision(8)).toString();
+}
+
+function tickKey(exchange: string | undefined, symbol: string) {
+  return `${exchange || "binance"}:${symbol}`;
+}
+
+function firstPrice(...values: Array<number | null | undefined>) {
+  return values.find((value): value is number => typeof value === "number" && Number.isFinite(value));
+}
+
+function livePnl(position: Position, tick: PositionTick | undefined) {
+  if (!tick) return null;
+  const currentPrice = position.side === "LONG"
+    ? firstPrice(tick.bid, tick.last, tick.price)
+    : firstPrice(tick.ask, tick.last, tick.price);
+  if (currentPrice == null) return null;
+
+  const direction = position.side === "LONG" ? 1 : -1;
+  const grossPnl = (currentPrice - position.entry_price) * position.qty * direction;
+  const estimatedFee = (position.entry_price + currentPrice) * position.qty * (position.fee_pct || 0);
+  const pnl = grossPnl - estimatedFee;
+  const capital = position.entry_price * position.qty;
+
+  return {
+    pnl,
+    pnlPercent: capital ? pnl / capital * 100 : 0,
+  };
 }
 
 function Pagination({
@@ -92,9 +129,38 @@ function Pagination({
   );
 }
 
-export function PositionCard({ positions }: PositionCardProps) {
+export function PositionCard({ alphaId, positions }: PositionCardProps) {
   const [page, setPage] = useState(1);
+  const [ticks, setTicks] = useState<Record<string, PositionTick>>({});
+  const pendingTicks = useRef<Record<string, PositionTick>>({});
   const visible = positions.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
+
+  useEffect(() => {
+    const events = new EventSource(`/api/position-ticks?alpha_id=${encodeURIComponent(alphaId)}`);
+    const flush = setInterval(() => {
+      const pending = pendingTicks.current;
+      if (Object.keys(pending).length === 0) return;
+      pendingTicks.current = {};
+      setTicks((current) => ({ ...current, ...pending }));
+    }, 250);
+
+    const onTick = (event: Event) => {
+      try {
+        const tick = JSON.parse((event as MessageEvent<string>).data) as PositionTick;
+        if (!tick.symbol || !Number.isFinite(tick.price)) return;
+        pendingTicks.current[tickKey(tick.exchange, tick.symbol)] = tick;
+      } catch {
+        // Ignore malformed ticker messages and keep the live stream running.
+      }
+    };
+
+    events.addEventListener("tick", onTick);
+    return () => {
+      clearInterval(flush);
+      events.removeEventListener("tick", onTick);
+      events.close();
+    };
+  }, [alphaId]);
 
   if (positions.length === 0) {
     return <div className="text-slate-500 text-center py-6 text-sm">No open positions</div>;
@@ -113,29 +179,43 @@ export function PositionCard({ positions }: PositionCardProps) {
               <th className="text-right py-3 px-4 whitespace-nowrap">TP</th>
               <th className="text-right py-3 px-4 whitespace-nowrap">SL</th>
               <th className="text-right py-3 px-4 whitespace-nowrap">Leverage</th>
+              <th className="text-right py-3 px-4 whitespace-nowrap">Live PnL</th>
               <th className="text-left py-3 px-4 whitespace-nowrap">Opened (UTC)</th>
               <th className="text-right py-3 px-4 whitespace-nowrap">Duration</th>
             </tr>
           </thead>
           <tbody>
-            {visible.map((p, i) => (
-              <tr
-                key={p.position_id}
-                className={`border-b border-slate-700/40 hover:bg-slate-700/30 transition-colors ${i % 2 === 0 ? "" : "bg-slate-800/30"}`}
-              >
-                <td className="py-2.5 px-4 font-mono font-bold text-white whitespace-nowrap">{p.symbol}</td>
-                <td className={`py-2.5 px-4 font-semibold text-xs whitespace-nowrap ${p.side === "LONG" ? "text-emerald-400" : "text-rose-400"}`}>
-                  {p.side}
-                </td>
-                <td className="py-2.5 px-4 text-right font-mono text-slate-200 whitespace-nowrap">{fmtPrice(p.entry_price)}</td>
-                <td className="py-2.5 px-4 text-right font-mono text-slate-400 text-xs whitespace-nowrap">{parseFloat(p.qty.toPrecision(6)).toString()}</td>
-                <td className="py-2.5 px-4 text-right font-mono text-emerald-400 whitespace-nowrap">{fmtPrice(p.tp)}</td>
-                <td className="py-2.5 px-4 text-right font-mono text-rose-400 whitespace-nowrap">{fmtPrice(p.sl)}</td>
-                <td className="py-2.5 px-4 text-right font-mono text-indigo-300 whitespace-nowrap">{p.leverage}x</td>
-                <td className="py-2.5 px-4 font-mono text-slate-400 text-xs whitespace-nowrap">{fmtTime(p.opened_at)}</td>
-                <td className="py-2.5 px-4 text-right font-mono text-indigo-400 text-xs whitespace-nowrap">{elapsed(p.opened_at)}</td>
-              </tr>
-            ))}
+            {visible.map((p, i) => {
+              const metrics = livePnl(p, ticks[tickKey(p.exchange, p.symbol)]);
+              return (
+                <tr
+                  key={p.position_id}
+                  className={`border-b border-slate-700/40 hover:bg-slate-700/30 transition-colors ${i % 2 === 0 ? "" : "bg-slate-800/30"}`}
+                >
+                  <td className="py-2.5 px-4 font-mono font-bold text-white whitespace-nowrap">{p.symbol}</td>
+                  <td className={`py-2.5 px-4 font-semibold text-xs whitespace-nowrap ${p.side === "LONG" ? "text-emerald-400" : "text-rose-400"}`}>
+                    {p.side}
+                  </td>
+                  <td className="py-2.5 px-4 text-right font-mono text-slate-200 whitespace-nowrap">{fmtPrice(p.entry_price)}</td>
+                  <td className="py-2.5 px-4 text-right font-mono text-slate-400 text-xs whitespace-nowrap">{parseFloat(p.qty.toPrecision(6)).toString()}</td>
+                  <td className="py-2.5 px-4 text-right font-mono text-emerald-400 whitespace-nowrap">{fmtPrice(p.tp)}</td>
+                  <td className="py-2.5 px-4 text-right font-mono text-rose-400 whitespace-nowrap">{fmtPrice(p.sl)}</td>
+                  <td className="py-2.5 px-4 text-right font-mono text-indigo-300 whitespace-nowrap">{p.leverage}x</td>
+                  <td className={`py-2.5 px-4 text-right font-mono font-semibold whitespace-nowrap ${
+                    metrics == null ? "text-slate-500" : metrics.pnl >= 0 ? "text-emerald-400" : "text-rose-400"
+                  }`}>
+                    {metrics == null ? "—" : (
+                      <>
+                        <div>{metrics.pnl >= 0 ? "+" : ""}{metrics.pnl.toFixed(4)}</div>
+                        <div className="text-[10px] opacity-75">{metrics.pnlPercent >= 0 ? "+" : ""}{metrics.pnlPercent.toFixed(2)}%</div>
+                      </>
+                    )}
+                  </td>
+                  <td className="py-2.5 px-4 font-mono text-slate-400 text-xs whitespace-nowrap">{fmtTime(p.opened_at)}</td>
+                  <td className="py-2.5 px-4 text-right font-mono text-indigo-400 text-xs whitespace-nowrap">{elapsed(p.opened_at)}</td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
