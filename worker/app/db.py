@@ -1,5 +1,6 @@
 import aiosqlite
 import json
+import uuid
 from datetime import datetime
 from contextlib import asynccontextmanager
 from typing import Optional
@@ -257,19 +258,26 @@ class Database:
         reason: str,
         closed_at: str,
         close_metadata: str | None = None,
+        qty: float | None = None,
     ):
         pos = await self.get_position(position_id)
         if not pos:
             return
 
+        close_qty = pos["qty"] if qty is None else min(qty, pos["qty"])
+        if close_qty <= 0:
+            return
+        remaining_qty = max(pos["qty"] - close_qty, 0.0)
+        fully_closed = remaining_qty <= 1e-12
+
         direction = 1.0 if pos["side"] == "LONG" else -1.0
         leverage = pos["leverage"] or 1
         fee_pct = pos.get("fee_pct") or 0.0
         exchange = pos.get("exchange") or "binance"
-        gross_pnl = (exit_price - pos["entry_price"]) * pos["qty"] * direction
-        fee = (pos["entry_price"] + exit_price) * pos["qty"] * fee_pct
+        gross_pnl = (exit_price - pos["entry_price"]) * close_qty * direction
+        fee = (pos["entry_price"] + exit_price) * close_qty * fee_pct
         pnl = gross_pnl - fee
-        capital = pos["entry_price"] * pos["qty"]
+        capital = pos["entry_price"] * close_qty
         pnl_percent = pnl / capital * 100.0 if capital else 0.0
 
         opened = datetime.fromisoformat(pos["opened_at"].replace("Z", "+00:00"))
@@ -277,6 +285,7 @@ class Database:
         duration_hours = (closed - opened).total_seconds() / 3600.0
 
         trade_metadata = merge_trade_metadata(pos.get("metadata"), close_metadata)
+        trade_id = pos["position_id"] if fully_closed else str(uuid.uuid4())
 
         await self._conn.execute(
             """INSERT INTO trades
@@ -285,7 +294,7 @@ class Database:
                 tp, sl, reason, duration_hours, opened_at, closed_at, metadata, fee, exchange)
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
             (
-                pos["position_id"],
+                trade_id,
                 pos["position_id"],
                 pos["alpha_id"],
                 pos["signal_id"],
@@ -293,7 +302,7 @@ class Database:
                 pos["side"],
                 pos["entry_price"],
                 exit_price,
-                pos["qty"],
+                close_qty,
                 pnl,
                 pnl_percent,
                 pos["leverage"],
@@ -308,9 +317,15 @@ class Database:
                 exchange,
             ),
         )
-        await self._conn.execute(
-            "DELETE FROM positions WHERE position_id = ?", (position_id,)
-        )
+        if fully_closed:
+            await self._conn.execute(
+                "DELETE FROM positions WHERE position_id = ?", (position_id,)
+            )
+        else:
+            await self._conn.execute(
+                "UPDATE positions SET qty = ? WHERE position_id = ?",
+                (remaining_qty, position_id),
+            )
         await self._commit()
 
     async def get_trade(self, position_id: str):

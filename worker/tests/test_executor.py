@@ -229,6 +229,118 @@ async def test_process_close_signal(executor):
 
 
 @pytest.mark.asyncio
+async def test_process_partial_close_signal(executor):
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry=95000.0,
+        qty=0.01,
+        leverage=10,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+    close_signal = CloseSignal(
+        type=SignalType.CLOSE,
+        alpha_id="test-alpha",
+        signal_id="sig-002",
+        position_id=result["position_id"],
+        reason="TP1",
+        exit_price=96000.0,
+        qty=0.0075,
+        timestamp="2026-05-22T11:00:00Z",
+    )
+
+    close_result = await executor.process_close(close_signal)
+
+    pos = await executor.db.get_position(result["position_id"])
+    assert pos["qty"] == pytest.approx(0.0025)
+    assert close_result["closed"] is False
+    assert close_result["remaining_qty"] == pytest.approx(0.0025)
+    trades = await executor.db.get_trades_by_alpha("test-alpha")
+    assert len(trades) == 1
+    assert trades[0]["position_id"] == result["position_id"]
+    assert trades[0]["qty"] == pytest.approx(0.0075)
+    assert trades[0]["reason"] == "TP1"
+
+
+@pytest.mark.asyncio
+async def test_process_partial_close_rejects_qty_above_position(executor):
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry=95000.0,
+        qty=0.01,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+    close_signal = CloseSignal(
+        type=SignalType.CLOSE,
+        alpha_id="test-alpha",
+        signal_id="sig-002",
+        position_id=result["position_id"],
+        reason="TP1",
+        exit_price=96000.0,
+        qty=0.02,
+        timestamp="2026-05-22T11:00:00Z",
+    )
+
+    with pytest.raises(ValueError, match="exceeds open qty"):
+        await executor.process_close(close_signal)
+
+
+@pytest.mark.asyncio
+async def test_partial_close_legs_then_full_close(executor):
+    open_signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="hyper-turbo",
+        signal_id="sig-open",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry=100.0,
+        qty=30.0,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    result = await executor.process_open(open_signal)
+
+    for signal_id, reason, qty, price in (
+        ("sig-tp1", "TP1", 22.5, 110.0),
+        ("sig-tp2", "TP2", 3.75, 112.0),
+    ):
+        await executor.process_close(CloseSignal(
+            type=SignalType.CLOSE,
+            alpha_id="hyper-turbo",
+            signal_id=signal_id,
+            position_id=result["position_id"],
+            reason=reason,
+            exit_price=price,
+            qty=qty,
+            timestamp="2026-05-22T11:00:00Z",
+        ))
+
+    final = await executor.process_close(CloseSignal(
+        type=SignalType.CLOSE,
+        alpha_id="hyper-turbo",
+        signal_id="sig-tp3",
+        position_id=result["position_id"],
+        reason="TP3",
+        exit_price=114.0,
+        timestamp="2026-05-22T12:00:00Z",
+    ))
+
+    assert final["closed"] is True
+    assert await executor.db.get_position(result["position_id"]) is None
+    trades = await executor.db.get_trades_by_alpha("hyper-turbo")
+    assert len(trades) == 3
+    assert sum(trade["qty"] for trade in trades) == pytest.approx(30.0)
+
+
+@pytest.mark.asyncio
 async def test_process_close_position_not_found(executor):
     close_signal = CloseSignal(
         type=SignalType.CLOSE,

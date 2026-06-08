@@ -132,6 +132,38 @@ async def test_close_position(db):
 
 
 @pytest.mark.asyncio
+async def test_partial_close_position_keeps_remainder(db):
+    await db.register_alpha("test-alpha")
+    await db.create_position(
+        position_id="pos-partial",
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry_price=95000.0,
+        qty=0.01,
+        leverage=10,
+        opened_at="2026-05-22T10:00:00Z",
+    )
+
+    await db.close_position(
+        position_id="pos-partial",
+        exit_price=96000.0,
+        reason="TP1",
+        closed_at="2026-05-22T11:00:00Z",
+        qty=0.0075,
+    )
+
+    pos = await db.get_position("pos-partial")
+    assert pos["qty"] == pytest.approx(0.0025)
+    trades = await db.get_trades_by_alpha("test-alpha")
+    assert len(trades) == 1
+    assert trades[0]["position_id"] == "pos-partial"
+    assert trades[0]["qty"] == pytest.approx(0.0075)
+    assert trades[0]["pnl"] == pytest.approx(7.5)
+
+
+@pytest.mark.asyncio
 async def test_close_position_short(db):
     await db.register_alpha("test-alpha")
     await db.create_position(

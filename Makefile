@@ -17,7 +17,8 @@ ALPHA ?= undefined
 
 .PHONY: help prepare up run down restart build logs logs-tail ps health clean shell \
 	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
-	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-restart deploy-logs deploy-ps deploy-prune \
+	alpha-deregister \
+	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
 help:
@@ -25,10 +26,12 @@ help:
 	@echo "  make up              Build/start Redis + worker + web"
 	@echo "  make alphas-up       Build/start REGISTERED_ALPHAS from .env"
 	@echo "  make alpha-up ALPHA=<name>"
+	@echo "  make alpha-deregister ALPHA=<name>          Stop + remove from DB and .env (local)"
 	@echo "  make health          Check core, stream, DB, and configured alphas"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
 	@echo "  make deploy          Upload, start core, then start alphas on SERVER=$(SERVER)"
 	@echo "  make deploy-core     Upload and start only Redis + worker + web; do not start alphas"
+	@echo "  make deploy-alpha-deregister ALPHA=<name>   Stop + remove from DB and .env on SERVER"
 	@echo "  make deploy-logs     Follow remote core logs"
 	@echo "  make deploy-ps       Remote core + alpha status"
 
@@ -105,6 +108,21 @@ alpha-up: require-mds-network
 alpha-down:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-down ALPHA=<name>"; exit 1)
 	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) down --timeout 30
+
+# Fully stop an alpha and remove it from REGISTERED_ALPHAS + DB.
+# Deletes open positions, the registry row, and alpha_columns. Trade history is kept.
+# Usage: make alpha-deregister ALPHA=wilder
+alpha-deregister:
+	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-deregister ALPHA=<name>"; exit 1)
+	@echo "→ Stopping $(ALPHA)..."
+	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) down --timeout 30 || true
+	@echo "→ Removing $(ALPHA) from REGISTERED_ALPHAS..."
+	@sed -i 's/,$(ALPHA)//' .env
+	@sed -i 's/$(ALPHA),//' .env
+	@sed -i 's/^\(REGISTERED_ALPHAS=\)$(ALPHA)$$/\1/' .env
+	@echo "→ Removing $(ALPHA) from database..."
+	@$(COMPOSE) exec -T worker python3 -c "import sqlite3; con=sqlite3.connect('/app/data/paper-trade.db'); n=con.execute('SELECT COUNT(*) FROM positions WHERE alpha_id=?',('$(ALPHA)',)).fetchone()[0]; n and print(f'  removing {n} open position(s)'); [con.execute(s,('$(ALPHA)',)) for s in ['DELETE FROM positions WHERE alpha_id=?','DELETE FROM alphas WHERE alpha_id=?','DELETE FROM alpha_columns WHERE alpha_id=?']]; con.commit(); print('  DB updated')"
+	@echo "$(ALPHA) stopped and deregistered."
 
 # Restart a single alpha
 alpha-restart:
@@ -267,6 +285,25 @@ deploy-alpha:
 		echo "[3/3] Reloading worker..."; \
 		docker compose up -d --force-recreate worker; \
 		echo "Done. Alpha $(ALPHA) is live."; \
+	'
+
+# Stop a single alpha on the server and remove it from REGISTERED_ALPHAS + DB.
+# Deletes open positions, the registry row, and alpha_columns. Trade history is kept.
+# Usage: make deploy-alpha-deregister ALPHA=wilder
+deploy-alpha-deregister:
+	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make deploy-alpha-deregister ALPHA=<name>"; exit 1)
+	@echo "→ Deregistering $(ALPHA) on $(SERVER)..."
+	ssh $(SERVER) '\
+		set -e; cd $(REMOTE_DIR); \
+		echo "[1/3] Stopping $(ALPHA)..."; \
+		docker compose -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) down --timeout 30 || true; \
+		echo "[2/3] Removing from REGISTERED_ALPHAS..."; \
+		sed -i "s/,$(ALPHA)//" .env; \
+		sed -i "s/$(ALPHA),//" .env; \
+		sed -i "s/^\(REGISTERED_ALPHAS=\)$(ALPHA)$$/\1/" .env; \
+		echo "[3/3] Removing from DB..."; \
+		docker compose exec -T worker python3 -c "import sqlite3; alpha=\"$(ALPHA)\"; con=sqlite3.connect(\"/app/data/paper-trade.db\"); n=con.execute(\"SELECT COUNT(*) FROM positions WHERE alpha_id=?\",(alpha,)).fetchone()[0]; n and print(f\"  removing {n} open position(s)\"); [con.execute(f\"DELETE FROM {t} WHERE alpha_id=?\",(alpha,)) for t in [\"positions\",\"alphas\",\"alpha_columns\"]]; con.commit(); print(\"  DB updated\")"; \
+		echo "$(ALPHA) fully deregistered."; \
 	'
 
 deploy-restart:

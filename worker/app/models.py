@@ -50,6 +50,7 @@ class CloseSignal:
     reason: str
     timestamp: str
     exit_price: Optional[float] = None
+    qty: Optional[float] = None
     metadata: str = "{}"
 
 
@@ -120,6 +121,7 @@ def parse_signal(data: dict):
             reason=data.get("reason", "SIGNAL"),
             timestamp=data.get("timestamp", ""),
             exit_price=_to_float(data, "exit_price"),
+            qty=_to_float(data, "qty"),
             metadata=data.get("metadata", "{}"),
         )
     elif st == SignalType.REGISTER_COLUMNS:

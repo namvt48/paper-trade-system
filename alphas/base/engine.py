@@ -711,7 +711,11 @@ class BaseEngine(ABC):
         attempt = 0
         while not self.shutdown_event.is_set():
             attempt += 1
-            redis_client = redis_lib.from_url(target_url, decode_responses=True)
+            redis_client = redis_lib.from_url(
+                target_url,
+                decode_responses=True,
+                socket_timeout=None,
+            )
             try:
                 redis_client.ping()
                 return redis_client

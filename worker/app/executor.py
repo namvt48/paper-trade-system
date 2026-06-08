@@ -75,6 +75,14 @@ class Executor:
         if not pos:
             raise ValueError(f"Position not found: {signal.position_id}")
 
+        close_qty = pos["qty"] if signal.qty is None else signal.qty
+        if close_qty <= 0:
+            raise ValueError(f"Close qty must be positive: {close_qty}")
+        if close_qty > pos["qty"] + 1e-12:
+            raise ValueError(
+                f"Close qty exceeds open qty: {close_qty} > {pos['qty']}"
+            )
+
         raw_exit = signal.exit_price or pos["entry_price"]
         exit_price = self._apply_slippage(raw_exit, pos["side"], is_close=True)
 
@@ -94,13 +102,23 @@ class Executor:
             reason=signal.reason,
             closed_at=signal.timestamp,
             close_metadata=close_metadata,
+            qty=close_qty,
         )
 
+        remaining_qty = max(pos["qty"] - close_qty, 0.0)
+        fully_closed = remaining_qty <= 1e-12
         logger.info(
-            "[CLOSE] %s %s reason=%s raw_fill=%.6f fill=%.6f",
-            signal.alpha_id, signal.position_id, signal.reason, raw_exit, exit_price,
+            "[CLOSE] %s %s reason=%s qty=%.8f remaining=%.8f raw_fill=%.6f fill=%.6f",
+            signal.alpha_id, signal.position_id, signal.reason, close_qty,
+            remaining_qty, raw_exit, exit_price,
         )
-        return {"position_id": signal.position_id, "exit_price": exit_price, "closed": True}
+        return {
+            "position_id": signal.position_id,
+            "exit_price": exit_price,
+            "closed": fully_closed,
+            "closed_qty": close_qty,
+            "remaining_qty": remaining_qty,
+        }
 
     async def process_register_columns(self, signal: RegisterColumnsSignal) -> dict:
         import json

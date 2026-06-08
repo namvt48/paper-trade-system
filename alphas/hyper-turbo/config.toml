@@ -1,0 +1,23 @@
+[[columns]]
+key = "trend"
+label = "Trend"
+type = "number"
+decimals = 0
+
+[[columns]]
+key = "basis"
+label = "Basis"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "upper_tp"
+label = "Upper TP"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "lower_tp"
+label = "Lower TP"
+type = "number"
+decimals = 6

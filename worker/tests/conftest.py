@@ -42,6 +42,7 @@ def sample_close_signal():
         "position_id": "",
         "reason": "SIGNAL",
         "exit_price": "96000.0",
+        "qty": "",
         "metadata": "{}",
         "timestamp": "2026-05-22T11:00:00Z",
     }

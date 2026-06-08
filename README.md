@@ -250,7 +250,8 @@ against the position.
 
 Closes an existing `position_id`, records the exit reason, applies configured
 slippage, calculates fees and PnL, and moves the row from `positions` to
-`trades`.
+`trades`. An optional `qty` closes only that amount, records a trade leg, and
+keeps the remaining quantity open.
 
 ### REGISTER_COLUMNS
 

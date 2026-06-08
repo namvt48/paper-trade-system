@@ -46,6 +46,13 @@ def test_parse_close_signal(sample_close_signal):
     assert isinstance(signal, CloseSignal)
     assert signal.reason == "SIGNAL"
     assert signal.exit_price == 96000.0
+    assert signal.qty is None
+
+
+def test_parse_partial_close_signal(sample_close_signal):
+    sample_close_signal["qty"] = "0.0025"
+    signal = parse_signal(sample_close_signal)
+    assert signal.qty == pytest.approx(0.0025)
 
 
 def test_parse_close_signal_no_exit_price():
