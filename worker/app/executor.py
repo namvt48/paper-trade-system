@@ -3,6 +3,7 @@ import uuid
 import logging
 from datetime import datetime, timezone
 from app.models import OpenSignal, ModifySignal, CloseSignal, RegisterColumnsSignal, SignalType
+from app.fill import fixed_pct_fill
 
 logger = logging.getLogger(__name__)
 
@@ -202,8 +203,4 @@ class Executor:
         return await self.check_tpsl_hits({symbol: price})
 
     def _apply_slippage(self, price: float, side: str, is_close: bool = False) -> float:
-        slippage = price * (self.slippage_pct / 1000.0)
-        if side == "LONG":
-            return (price - slippage) if is_close else (price + slippage)
-        else:
-            return (price + slippage) if is_close else (price - slippage)
+        return fixed_pct_fill(price, side, self.slippage_pct, is_close)
