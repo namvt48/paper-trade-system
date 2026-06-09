@@ -14,7 +14,7 @@ class Executor:
         self.slippage_pct = slippage_pct
         self.duplicate_policy = duplicate_policy
 
-    async def process_open(self, signal: OpenSignal) -> dict:
+    async def process_open(self, signal: OpenSignal, fill_price: float | None = None) -> dict:
         await self.db.register_alpha(signal.alpha_id)
 
         existing = await self.db.get_open_position_by_alpha_symbol(
@@ -26,7 +26,10 @@ class Executor:
                     f"Alpha {signal.alpha_id} already has an open position on {signal.symbol}"
                 )
 
-        fill_price = self._apply_slippage(signal.entry, signal.side)
+        fill_price = (
+            fill_price if fill_price is not None
+            else self._apply_slippage(signal.entry, signal.side)
+        )
         position_id = signal.position_id if signal.position_id else str(uuid.uuid4())
 
         await self.db.create_position(
@@ -71,7 +74,7 @@ class Executor:
 
         return {"position_id": signal.position_id, "modified": True}
 
-    async def process_close(self, signal: CloseSignal) -> dict:
+    async def process_close(self, signal: CloseSignal, fill_price: float | None = None) -> dict:
         pos = await self.db.get_position(signal.position_id)
         if not pos:
             raise ValueError(f"Position not found: {signal.position_id}")
@@ -85,7 +88,10 @@ class Executor:
             )
 
         raw_exit = signal.exit_price or pos["entry_price"]
-        exit_price = self._apply_slippage(raw_exit, pos["side"], is_close=True)
+        exit_price = (
+            fill_price if fill_price is not None
+            else self._apply_slippage(raw_exit, pos["side"], is_close=True)
+        )
 
         close_metadata = None
         if signal.metadata and signal.metadata not in ("{}", ""):
