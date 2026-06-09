@@ -141,12 +141,19 @@ class Executor:
         await self.db.register_alpha_columns(signal.alpha_id, columns)
         return {"alpha_id": signal.alpha_id, "columns_registered": len(columns)}
 
-    async def check_tpsl_hits(self, prices: dict[str, float]) -> list[dict]:
+    @staticmethod
+    def _as_price_fn(price_source):
+        if callable(price_source):
+            return price_source
+        return lambda symbol, side: price_source.get(symbol)
+
+    async def check_tpsl_hits(self, price_source, fill_resolver=None) -> list[dict]:
+        price_fn = self._as_price_fn(price_source)
         positions = await self.db.get_positions_with_tpsl()
         hits = []
 
         for pos in positions:
-            current_price = prices.get(pos["symbol"])
+            current_price = price_fn(pos["symbol"], pos["side"])
             if current_price is None:
                 continue
 
@@ -179,7 +186,13 @@ class Executor:
                     exit_price = current_price
 
             if closed and exit_price is not None:
-                fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
+                if fill_resolver is None:
+                    fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
+                else:
+                    fill_exit = await fill_resolver(
+                        pos.get("exchange", "binance"), pos["symbol"], pos["side"],
+                        pos["qty"], exit_price, True,
+                    )
                 now = datetime.now(timezone.utc).isoformat()
                 close_meta = json.dumps({
                     "close_model": "worker_tpsl_auto",
