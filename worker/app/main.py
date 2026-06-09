@@ -9,6 +9,9 @@ from app.config import settings
 from app.db import Database
 from app.executor import Executor
 from app.models import SignalType, parse_signal, RegisterColumnsSignal
+from app.ob_exec import ObExecCache, make_exit_price_fn, run_ob_exec_subscriber
+from app.ob_subscribe import publish_subscribe, run_orderbook_sync_loop
+from app.slippage_client import SlippageClient, FillService
 
 logger = logging.getLogger(__name__)
 
@@ -53,36 +56,61 @@ def configure_logging() -> None:
         logging.getLogger(name).setLevel(app_level)
 
 
-async def process_signal_message(data: dict, db: Database, executor: Executor) -> dict | None:
+async def process_signal_message(data: dict, db: Database, executor: Executor,
+                                  fill_service=None) -> dict | None:
     signal_id = data.get("signal_id", "unknown")
     alpha_id = data.get("alpha_id", "unknown")
     signal_type = data.get("type", "unknown")
 
-    async with db.transaction():
-        await db.log_signal(
-            signal_id=signal_id,
-            alpha_id=alpha_id,
-            signal_type=signal_type,
-            payload=json.dumps(data),
-        )
+    try:
+        signal = parse_signal(data)
+    except Exception as exc:
+        logger.error("Error parsing signal %s: %s", signal_id, exc)
+        async with db.transaction():
+            await db.log_signal(signal_id=signal_id, alpha_id=alpha_id,
+                                signal_type=signal_type, payload=json.dumps(data))
+            await db.mark_signal_processed(signal_id, error=str(exc))
+        return None
 
+    # Resolve the book-walked fill price OUTSIDE the DB transaction (spec §8.2): an RPC
+    # BLPOP must never be held inside the SQLite writer lock.
+    fill_price = None
+    if fill_service is not None:
         try:
-            signal = parse_signal(data)
-
             if signal.type == SignalType.OPEN:
-                result = await executor.process_open(signal)
+                fill_price = await fill_service.resolve(
+                    signal.exchange, signal.symbol, signal.side, signal.qty,
+                    ref_price=signal.entry, is_close=False,
+                )
+            elif signal.type == SignalType.CLOSE:
+                pos = await db.get_position(signal.position_id)
+                if pos:
+                    raw_exit = signal.exit_price or pos["entry_price"]
+                    qty = signal.qty if signal.qty is not None else pos["qty"]
+                    fill_price = await fill_service.resolve(
+                        pos.get("exchange", "binance"), pos["symbol"], pos["side"], qty,
+                        ref_price=raw_exit, is_close=True,
+                    )
+        except Exception as exc:
+            logger.warning("Fill resolve failed for %s: %s", signal_id, exc)
+            fill_price = None  # executor falls back to fixed-pct
+
+    async with db.transaction():
+        await db.log_signal(signal_id=signal_id, alpha_id=alpha_id,
+                            signal_type=signal_type, payload=json.dumps(data))
+        try:
+            if signal.type == SignalType.OPEN:
+                result = await executor.process_open(signal, fill_price=fill_price)
             elif signal.type == SignalType.MODIFY:
                 result = await executor.process_modify(signal)
             elif signal.type == SignalType.CLOSE:
-                result = await executor.process_close(signal)
+                result = await executor.process_close(signal, fill_price=fill_price)
             elif signal.type == SignalType.REGISTER_COLUMNS:
                 result = await executor.process_register_columns(signal)
             else:
                 result = None
-
             await db.mark_signal_processed(signal_id)
             return result
-
         except Exception as exc:
             logger.error("Error processing signal %s: %s", signal_id, exc)
             await db.mark_signal_processed(signal_id, error=str(exc))
@@ -118,16 +146,18 @@ async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
         await redis_client.aclose()
 
 
-async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache) -> None:
+async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache,
+                               ob_cache: ObExecCache, fill_service) -> None:
+    exit_price_fn = make_exit_price_fn(ob_cache, cache)
+    fill_resolver = fill_service.resolve if fill_service is not None else None
     while True:
         try:
             await asyncio.sleep(settings.PRICE_CHECK_INTERVAL)
             symbols = await db.get_symbols_with_open_positions()
-            prices = cache.get_prices(symbols)
-            if not prices:
+            if not symbols:
                 continue
 
-            hits = await executor.check_tpsl_hits(prices)
+            hits = await executor.check_tpsl_hits(exit_price_fn, fill_resolver=fill_resolver)
             for hit in hits:
                 logger.info("[TPSL] Auto-closed: %s", hit)
         except asyncio.CancelledError:
@@ -189,11 +219,21 @@ async def run_consumer():
         duplicate_policy=settings.DUPLICATE_POSITION_POLICY,
     )
     cache = TickerPriceCache()
+    ob_cache = ObExecCache()
 
     redis_client = await connect_redis()
+    fill_service = None
+    if settings.ENABLE_ORDERBOOK_SLIPPAGE:
+        fill_service = FillService(
+            SlippageClient(redis_client),
+            slippage_pct=settings.SLIPPAGE_PCT,
+            timeout=settings.SLIPPAGE_RPC_TIMEOUT,
+        )
     ticker_task = None
     price_check_task = None
     health_task = None
+    ob_exec_task = None
+    ob_sync_task = None
 
     try:
         try:
@@ -201,9 +241,20 @@ async def run_consumer():
         except redis_lib.ResponseError:
             pass
 
+        if settings.ENABLE_ORDERBOOK_SLIPPAGE:
+            ob_exec_task = asyncio.create_task(
+                run_ob_exec_subscriber(ob_cache, connect_redis, settings.ORDERBOOK_EXCHANGE)
+            )
+            ob_sync_task = asyncio.create_task(
+                run_orderbook_sync_loop(db, redis_client, settings.CONSUMER_NAME,
+                                        settings.ORDERBOOK_EXCHANGE, settings.ORDERBOOK_SYNC_INTERVAL)
+            )
+
         if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
             ticker_task = asyncio.create_task(run_ticker_subscriber(cache))
-            price_check_task = asyncio.create_task(run_price_check_loop(db, executor, cache))
+            price_check_task = asyncio.create_task(
+                run_price_check_loop(db, executor, cache, ob_cache, fill_service)
+            )
         else:
             logger.info("Worker auto TP/SL disabled (ENABLE_WORKER_TPSL_AUTO_CLOSE=False); alphas manage SL/TP via MDS price_alert")
         health_task = asyncio.create_task(run_health_loop())
@@ -224,9 +275,15 @@ async def run_consumer():
 
             for _, msgs in messages:
                 for msg_id, data in msgs:
-                    result = await process_signal_message(data, db, executor)
+                    result = await process_signal_message(data, db, executor, fill_service=fill_service)
                     if result is not None:
                         logger.info("Processed %s signal: %s", data.get("type"), result)
+                    if result is not None and data.get("type") == "OPEN" and settings.ENABLE_ORDERBOOK_SLIPPAGE:
+                        try:
+                            await publish_subscribe(redis_client, settings.ORDERBOOK_EXCHANGE,
+                                                    settings.CONSUMER_NAME, data.get("symbol", ""))
+                        except Exception as exc:
+                            logger.warning("orderbook subscribe publish failed: %s", exc)
                     await redis_client.xack(
                         settings.REDIS_STREAM,
                         settings.CONSUMER_GROUP,
@@ -236,7 +293,8 @@ async def run_consumer():
     except KeyboardInterrupt:
         logger.info("Shutting down")
     finally:
-        tasks = [task for task in (ticker_task, price_check_task, health_task) if task is not None]
+        tasks = [task for task in (ticker_task, price_check_task, health_task,
+                                   ob_exec_task, ob_sync_task) if task is not None]
         for task in tasks:
             task.cancel()
         if tasks:

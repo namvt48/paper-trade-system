@@ -23,6 +23,10 @@ class Settings(BaseSettings):
     REDIS_READ_COUNT: int = 100
     REDIS_BLOCK_MS: int = 1000
     SIGNAL_RETENTION_DAYS: int = 0
+    ENABLE_ORDERBOOK_SLIPPAGE: bool = True
+    ORDERBOOK_EXCHANGE: str = "binance"
+    SLIPPAGE_RPC_TIMEOUT: float = 0.2
+    ORDERBOOK_SYNC_INTERVAL: float = 5.0
 
 
 settings = Settings()
