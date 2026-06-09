@@ -10,6 +10,10 @@ const DB_PATH = process.env.DB_PATH || path.join(process.cwd(), "data", "paper-t
 const ALPHAS_DIR = process.env.ALPHAS_DIR || path.join(process.cwd(), "alphas");
 const DASHBOARD_CACHE_MS = Number(process.env.DASHBOARD_CACHE_MS || "1000");
 const EQUITY_MAX_POINTS = Number(process.env.EQUITY_MAX_POINTS || "1000");
+const configuredTradeHistoryLimit = Number(process.env.TRADE_HISTORY_LIMIT || "500");
+export const TRADE_HISTORY_LIMIT = Number.isInteger(configuredTradeHistoryLimit) && configuredTradeHistoryLimit > 0
+  ? configuredTradeHistoryLimit
+  : 500;
 
 declare global {
   // eslint-disable-next-line no-var
@@ -111,6 +115,12 @@ export function getTrades(alphaId: string, limit = 100, offset = 0): Trade[] {
   const db = tryGetDb();
   if (!db) return [];
   return db.prepare("SELECT * FROM trades WHERE alpha_id = ? ORDER BY closed_at DESC LIMIT ? OFFSET ?").all(alphaId, limit, offset) as Trade[];
+}
+
+export function getAllTrades(alphaId: string): Trade[] {
+  const db = tryGetDb();
+  if (!db) return [];
+  return db.prepare("SELECT * FROM trades WHERE alpha_id = ? ORDER BY closed_at DESC").all(alphaId) as Trade[];
 }
 
 function downsampleEquity(rows: EquityPoint[], maxPoints: number): EquityPoint[] {

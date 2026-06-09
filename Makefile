@@ -2,6 +2,7 @@ SHELL := /bin/sh
 
 ZIP_NAME   := paper-trade-system
 ZIP_PATH   := /tmp/$(ZIP_NAME).zip
+WEB_ZIP_PATH := /tmp/$(ZIP_NAME)-web.zip
 SERVER     ?= root@167.86.101.228
 SERVER_HOST ?= $(shell printf '%s' '$(SERVER)' | sed 's/.*@//')
 REMOTE_DIR ?= /root/paper-trade-system
@@ -18,7 +19,7 @@ ALPHA ?= undefined
 .PHONY: help prepare up run down restart build logs logs-tail ps health clean shell \
 	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
 	alpha-deregister \
-	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
+	package deploy deploy-web deploy-core deploy-system deploy-all deploy-alpha deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
 help:
@@ -30,6 +31,7 @@ help:
 	@echo "  make health          Check core, stream, DB, and configured alphas"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
 	@echo "  make deploy          Upload, start core, then start alphas on SERVER=$(SERVER)"
+	@echo "  make deploy-web      Upload and recreate only web; leave Redis, worker, and alphas running"
 	@echo "  make deploy-core     Upload and start only Redis + worker + web; do not start alphas"
 	@echo "  make deploy-alpha-deregister ALPHA=<name>   Stop + remove from DB and .env on SERVER"
 	@echo "  make deploy-logs     Follow remote core logs"
@@ -173,6 +175,40 @@ package:
 	@zip -sf $(ZIP_PATH) | grep "\.env" && echo "✓ .env files included" || true
 
 # ─── Deploy ──────────────────────────────────────────────────────────────────
+
+deploy-web:
+	@echo "→ Packaging web..."
+	rm -f $(WEB_ZIP_PATH)
+	cd .. && zip -r $(WEB_ZIP_PATH) \
+		$(ZIP_NAME)/web/ \
+		$(ZIP_NAME)/docker-compose.yml \
+		$(ZIP_NAME)/.env \
+		-x "$(ZIP_NAME)/web/node_modules/*" \
+		-x "$(ZIP_NAME)/web/.next/*" \
+		-x "$(ZIP_NAME)/web/tsconfig.tsbuildinfo"
+	@echo "→ Uploading web to $(SERVER)..."
+	scp $(WEB_ZIP_PATH) $(SERVER):/tmp/
+	ssh $(SERVER) '\
+		set -e; \
+		echo "[1/3] Extracting web..."; \
+		mkdir -p $(REMOTE_DIR); \
+		unzip -o $(WEB_ZIP_PATH) -d /root/ > /dev/null; \
+		cd $(REMOTE_DIR); \
+		mkdir -p data logs/web; \
+		echo "[2/3] Building and recreating web only..."; \
+		docker compose up -d --build --no-deps web; \
+		echo "[3/3] Checking web..."; \
+		i=0; \
+		until docker compose exec -T web node -e \
+			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; do \
+			i=$$((i+1)); \
+			[ $$i -lt 30 ] || (docker compose logs --tail=120 web; exit 1); \
+			sleep 2; \
+		done; \
+		docker compose ps web; \
+		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
+		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
+	'
 
 deploy: package
 	@echo "→ Uploading to $(SERVER)..."

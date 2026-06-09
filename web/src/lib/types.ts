@@ -34,6 +34,7 @@ export interface Trade {
   qty: number;
   pnl: number;
   pnl_percent: number;
+  fee?: number;
   leverage: number;
   tp: number | null;
   sl: number | null;

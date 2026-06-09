@@ -41,7 +41,13 @@ services:
       - paper-trade
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)",
+        ]
       interval: 30s
       timeout: 10s
       retries: 3
@@ -66,6 +72,7 @@ services:
       - PORT=3000
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - DASHBOARD_CACHE_MS=${DASHBOARD_CACHE_MS:-1000}
+      - TRADE_HISTORY_LIMIT=${TRADE_HISTORY_LIMIT:-200}
     command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
     networks:
       - paper-trade

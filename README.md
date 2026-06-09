@@ -98,6 +98,7 @@ LOG_LEVEL=INFO
 
 REGISTERED_ALPHAS=alpha-1-v5b,alpha-1-q1
 DASHBOARD_CACHE_MS=1000
+TRADE_HISTORY_LIMIT=500
 SIGNAL_RETENTION_DAYS=0
 
 SLIPPAGE_PCT=0.05
@@ -124,6 +125,7 @@ MDS_EXCHANGE=binance
 | `REDIS_BLOCK_MS` | `1000` | Signal-stream blocking read timeout |
 | `SIGNAL_RETENTION_DAYS` | `0` | Signal audit retention; `0` disables pruning |
 | `DASHBOARD_CACHE_MS` | `1000` | Dashboard API cache duration |
+| `TRADE_HISTORY_LIMIT` | `500` | Maximum recent trades shown per alpha; CSV downloads always include all trades |
 | `LOG_LEVEL` | `INFO` | Core service log level |
 
 Each alpha also has its own `.env`, strategy config class, optional
@@ -312,6 +314,7 @@ The web service exposes:
 | `GET /api/alphas?id={alpha_id}` | Single alpha |
 | `GET /api/positions?alpha_id={alpha_id}` | Open positions |
 | `GET /api/trades?alpha_id={alpha_id}` | Paginated trades |
+| `GET /api/trades/export?alpha_id={alpha_id}` | Download all alpha trades as CSV |
 | `GET /api/trades?alpha_id={alpha_id}&stats=1` | Alpha trade statistics |
 | `GET /api/equity?alpha_id={alpha_id}` | Alpha equity curve |
 | `GET /api/equity?alphas=a,b` | Compared equity curves |
@@ -411,6 +414,12 @@ Deploy core and all configured alphas:
 
 ```bash
 make deploy SERVER=root@example-host
+```
+
+Deploy only the web dashboard without restarting Redis, worker, or alpha containers:
+
+```bash
+make deploy-web SERVER=root@example-host
 ```
 
 Deploy only Redis, worker, and web:

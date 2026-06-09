@@ -6,7 +6,9 @@ import type { Trade, ColumnSpec } from "@/lib/types";
 const PAGE_SIZE = 50;
 
 interface TradeTableProps {
+  alphaId: string;
   trades: Trade[];
+  totalTrades: number;
   columnSpecs?: ColumnSpec[];
 }
 
@@ -98,48 +100,7 @@ function Pagination({
   );
 }
 
-function downloadCsv(trades: Trade[], columnSpecs?: ColumnSpec[]) {
-  const customHeaders = (columnSpecs ?? []).map((c) => c.label);
-  const customKeys = (columnSpecs ?? []).map((c) => c.key);
-  const headers = [
-    "trade_id", "symbol", "side", "entry_price", "exit_price", "qty",
-    "leverage", "tp", "sl", "pnl", "pnl_percent", "fee",
-    ...customHeaders,
-    "reason", "duration_hours", "opened_at", "closed_at",
-  ];
-  const escape = (v: unknown) => {
-    const s = v == null ? "" : String(v);
-    return s.includes(",") || s.includes('"') || s.includes("\n")
-      ? `"${s.replace(/"/g, '""')}"`
-      : s;
-  };
-  const rows = trades.map((t) => {
-    let meta: Record<string, unknown> = {};
-    try { meta = JSON.parse(t.metadata || "{}"); } catch {}
-    const customValues = customKeys.map((key) => {
-      const val = meta[key];
-      if (val == null) return "";
-      return String(val);
-    });
-    return [
-      t.trade_id, t.symbol, t.side, t.entry_price, t.exit_price, t.qty,
-      t.leverage, t.tp ?? "", t.sl ?? "", t.pnl, t.pnl_percent,
-      (t as any).fee ?? "",
-      ...customValues,
-      t.reason, t.duration_hours, t.opened_at, t.closed_at,
-    ].map(escape).join(",");
-  });
-  const csv = [headers.join(","), ...rows].join("\n");
-  const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = `trades-${new Date().toISOString().slice(0, 10)}.csv`;
-  a.click();
-  URL.revokeObjectURL(url);
-}
-
-export function TradeTable({ trades, columnSpecs }: TradeTableProps) {
+export function TradeTable({ alphaId, trades, totalTrades, columnSpecs }: TradeTableProps) {
   const [page, setPage] = useState(1);
   const totalPages = Math.ceil(trades.length / PAGE_SIZE);
   const visible = trades.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
@@ -151,15 +112,15 @@ export function TradeTable({ trades, columnSpecs }: TradeTableProps) {
   return (
     <div className="rounded-xl border border-slate-700/60 overflow-hidden">
       <div className="flex justify-end px-4 py-2 border-b border-slate-700/60 bg-slate-800/60">
-        <button
-          onClick={() => downloadCsv(trades, columnSpecs)}
+        <a
+          href={`/api/trades/export?alpha_id=${encodeURIComponent(alphaId)}`}
           className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 px-3 py-1.5 rounded-lg transition-colors"
         >
           <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
           </svg>
-          Download CSV ({trades.length})
-        </button>
+          Download CSV ({totalTrades})
+        </a>
       </div>
       <div className="overflow-x-auto">
         <table className="w-full text-sm">
@@ -217,7 +178,7 @@ export function TradeTable({ trades, columnSpecs }: TradeTableProps) {
                   {t.pnl_percent >= 0 ? "+" : ""}{t.pnl_percent.toFixed(2)}%
                 </td>
                 <td className="py-2 px-3 text-right font-mono text-slate-500 text-xs whitespace-nowrap">
-                  {(t as any).fee != null ? (t as any).fee.toFixed(4) : "—"}
+                  {t.fee != null ? t.fee.toFixed(4) : "—"}
                 </td>
                 {(columnSpecs ?? []).map((spec) => {
                   const val = meta[spec.key];
