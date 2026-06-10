@@ -89,7 +89,7 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
                 pos = await db.get_position(signal.position_id)
                 if pos:
                     raw_exit = signal.exit_price or pos["entry_price"]
-                    qty = signal.qty if signal.qty is not None else pos["qty"]
+                    qty = signal.qty if (signal.qty is not None and signal.qty > 0) else pos["qty"]
                     fill_price = await fill_service.resolve(
                         pos.get("exchange", "binance"), pos["symbol"], pos["side"], qty,
                         ref_price=raw_exit, is_close=True,
@@ -152,7 +152,17 @@ async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
 async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache,
                                ob_cache: ObExecCache, fill_service) -> None:
     exit_price_fn = make_exit_price_fn(ob_cache, cache)
-    fill_resolver = fill_service.resolve if fill_service is not None else None
+
+    fill_resolver = None
+    if fill_service is not None:
+        async def fill_resolver(exchange, symbol, position_side, qty, ref_price, is_close):
+            # When the trigger/ref came from the book (best bid/ask), it is already the
+            # executable price, so the RPC fallback must not add fixed-pct on top.
+            ref_is_executable = ob_cache.side_price(symbol, position_side) is not None
+            return await fill_service.resolve(
+                exchange, symbol, position_side, qty, ref_price, is_close,
+                ref_is_executable=ref_is_executable,
+            )
     while True:
         try:
             await asyncio.sleep(settings.PRICE_CHECK_INTERVAL)

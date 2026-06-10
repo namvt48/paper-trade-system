@@ -64,10 +64,12 @@ class FillService:
         self._timeout = timeout
 
     async def resolve(self, exchange: str, symbol: str, position_side: str, qty: float,
-                      ref_price: float, is_close: bool, request_id: str | None = None) -> float:
+                      ref_price: float, is_close: bool, request_id: str | None = None,
+                      ref_is_executable: bool = False) -> float:
         order_side = order_side_for(position_side, is_close)
         resp = await self._client.query(
             exchange, symbol, order_side, qty,
             fallback_pct=self._slippage_pct, timeout=self._timeout, request_id=request_id,
         )
-        return resolve_fill_price(resp, ref_price, position_side, is_close, self._slippage_pct)
+        return resolve_fill_price(resp, ref_price, position_side, is_close, self._slippage_pct,
+                                  ref_is_executable=ref_is_executable)

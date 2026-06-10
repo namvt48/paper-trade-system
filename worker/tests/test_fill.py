@@ -1,3 +1,5 @@
+import pytest
+
 from app.fill import fixed_pct_fill, resolve_fill_price
 
 
@@ -34,3 +36,10 @@ def test_resolve_blends_partial_fill():
     resp = {"fallback_used": False, "filled_qty": 1.0, "requested_qty": 2.0, "avg_exec_price": 100.0}
     # ref 200, pct 0 -> fixed=200 ; blend = (1*100 + 1*200)/2 = 150
     assert resolve_fill_price(resp, 200.0, "LONG", False, 0.0) == 150.0
+
+
+def test_resolve_executable_ref_skips_extra_slippage_on_fallback():
+    # ref already executable-side (book best_bid): fallback must NOT add fixed-pct on top.
+    assert resolve_fill_price(None, 100.0, "LONG", True, 0.5, ref_is_executable=True) == 100.0
+    # non-executable ref (default): fixed-pct still applies (LONG close 100 -> 99.95).
+    assert resolve_fill_price(None, 100.0, "LONG", True, 0.5) == pytest.approx(99.95)
