@@ -47,6 +47,20 @@ async def test_fill_service_uses_book_avg():
 
 
 @pytest.mark.asyncio
+async def test_fill_service_preserves_rest_source():
+    r = fakeredis.aioredis.FakeRedis(decode_responses=True)
+    await r.lpush("orderbook:slip:resp:rest-1", json.dumps({
+        "fallback_used": False, "filled_qty": 1.0, "requested_qty": 1.0,
+        "avg_exec_price": 101.0, "source": "rest", "book_state": "REST_SNAPSHOT",
+    }))
+    svc = FillService(SlippageClient(r), slippage_pct=0.5, timeout=1)
+    result = await svc.resolve("binance", "BTCUSDT", "LONG", 1.0, 100.0, False,
+                               request_id="rest-1")
+    assert result.initial_source == "rest"
+    assert result.initial_book_state == "REST_SNAPSHOT"
+
+
+@pytest.mark.asyncio
 async def test_breaker_short_circuits_after_consecutive_failures():
     r = fakeredis.aioredis.FakeRedis(decode_responses=True)
     client = SlippageClient(r, failure_threshold=2, cooldown_sec=100.0)
@@ -107,3 +121,36 @@ async def test_query_rejects_mismatched_response_id():
     assert await client.query(
         "binance", "BTCUSDT", "BUY", 1.0, timeout=1, request_id="expected",
     ) is None
+
+
+class _StubQueryClient:
+    """Minimal SlippageClient stand-in: query() returns a fixed RPC response."""
+    def __init__(self, resp):
+        self._resp = resp
+    async def query(self, *args, **kwargs):
+        return self._resp
+
+
+@pytest.mark.asyncio
+async def test_resolve_populates_book_slippage_bps():
+    from app.slippage_client import FillService
+    resp = {
+        "source": "live_book", "slippage_bps": 8.4, "avg_exec_price": 100.0,
+        "reference_price": 100.0, "filled_qty": 1.0, "requested_qty": 1.0,
+        "book_state": "READY",
+    }
+    svc = FillService(_StubQueryClient(resp), slippage_pct=0.05, supported_exchanges={"binance"})
+    res = await svc.resolve("binance", "BTCUSDT.P", "LONG", 1.0, ref_price=100.0, is_close=False)
+    assert res.book_slippage_bps == 8.4
+
+
+@pytest.mark.asyncio
+async def test_resolve_book_slippage_none_on_fallback():
+    from app.slippage_client import FillService
+    resp = {
+        "source": "fallback", "fallback_used": True, "slippage_bps": 0.0,
+        "avg_exec_price": 0.0, "filled_qty": 0.0, "requested_qty": 1.0,
+    }
+    svc = FillService(_StubQueryClient(resp), slippage_pct=0.05, supported_exchanges={"binance"})
+    res = await svc.resolve("binance", "BTCUSDT.P", "LONG", 1.0, ref_price=100.0, is_close=False)
+    assert res.book_slippage_bps is None
