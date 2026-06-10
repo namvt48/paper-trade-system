@@ -4,8 +4,9 @@ import logging
 import inspect
 from datetime import datetime, timezone
 from app.models import OpenSignal, ModifySignal, CloseSignal, RegisterColumnsSignal, SignalType
-from app.fill import fixed_pct_fill
+from app.fill import fixed_pct_fill, book_slippage_suffix
 from app.ob_exec import PriceQuote
+from app.slippage_client import FillResolution
 
 logger = logging.getLogger(__name__)
 
@@ -16,7 +17,24 @@ class Executor:
         self.slippage_pct = slippage_pct
         self.duplicate_policy = duplicate_policy
 
-    async def process_open(self, signal: OpenSignal, fill_price: float | None = None) -> dict:
+    @staticmethod
+    def _fill_value_and_metadata(fill_price):
+        if isinstance(fill_price, FillResolution):
+            return fill_price.final_price, {"execution": fill_price.metadata()}
+        return fill_price, {}
+
+    @staticmethod
+    def _merge_metadata(raw: str | None, extra: dict) -> str:
+        try:
+            metadata = json.loads(raw or "{}")
+        except (TypeError, json.JSONDecodeError):
+            metadata = {}
+        if not isinstance(metadata, dict):
+            metadata = {}
+        metadata.update(extra)
+        return json.dumps(metadata)
+
+    async def process_open(self, signal: OpenSignal, fill_price: float | FillResolution | None = None) -> dict:
         await self.db.register_alpha(signal.alpha_id)
 
         existing = await self.db.get_open_position_by_alpha_symbol(
@@ -32,6 +50,7 @@ class Executor:
             fill_price if fill_price is not None
             else self._apply_slippage(signal.entry, signal.side)
         )
+        fill_price, execution_metadata = self._fill_value_and_metadata(fill_price)
         position_id = signal.position_id if signal.position_id else str(uuid.uuid4())
 
         await self.db.create_position(
@@ -46,11 +65,20 @@ class Executor:
             sl=signal.sl,
             leverage=signal.leverage,
             opened_at=signal.timestamp,
-            metadata=signal.metadata,
+            metadata=self._merge_metadata(signal.metadata, {
+                "decision_price": signal.entry,
+                "recorded_fill_price": fill_price,
+                **execution_metadata,
+            }),
             exchange=signal.exchange,
             fee_pct=signal.fee_pct,
         )
 
+        logger.info(
+            "[OPEN] %s %s %s qty=%.8f fill=%.6f%s",
+            signal.alpha_id, signal.side, signal.symbol, signal.qty, fill_price,
+            book_slippage_suffix(execution_metadata),
+        )
         return {"position_id": position_id, "fill_price": fill_price}
 
     async def process_modify(self, signal: ModifySignal) -> dict:
@@ -72,6 +100,7 @@ class Executor:
             position_id=signal.position_id,
             tp=signal.tp,
             sl=signal.sl,
+            metadata=signal.metadata,
         )
 
         return {"position_id": signal.position_id, "modified": True}
@@ -91,7 +120,7 @@ class Executor:
             return False
         return bool(metadata.get("ref_is_executable")) if isinstance(metadata, dict) else False
 
-    async def process_close(self, signal: CloseSignal, fill_price: float | None = None) -> dict:
+    async def process_close(self, signal: CloseSignal, fill_price: float | FillResolution | None = None) -> dict:
         pos = await self.db.get_position(signal.position_id)
         if not pos:
             raise ValueError(f"Position not found: {signal.position_id}")
@@ -110,16 +139,14 @@ class Executor:
             else raw_exit if self.close_ref_is_executable(signal)
             else self._apply_slippage(raw_exit, pos["side"], is_close=True)
         )
+        exit_price, execution_metadata = self._fill_value_and_metadata(exit_price)
 
-        close_metadata = None
-        if signal.metadata and signal.metadata not in ("{}", ""):
-            try:
-                close_meta = json.loads(signal.metadata)
-                if isinstance(close_meta, dict):
-                    close_meta["fill_price"] = exit_price
-                    close_metadata = json.dumps(close_meta)
-            except (json.JSONDecodeError, TypeError):
-                pass
+        close_metadata = self._merge_metadata(signal.metadata, {
+            "decision_price": raw_exit,
+            "recorded_fill_price": exit_price,
+            "fill_price": exit_price,
+            **execution_metadata,
+        })
 
         await self.db.close_position(
             position_id=signal.position_id,
@@ -133,9 +160,10 @@ class Executor:
         remaining_qty = max(pos["qty"] - close_qty, 0.0)
         fully_closed = remaining_qty <= 1e-12
         logger.info(
-            "[CLOSE] %s %s reason=%s qty=%.8f remaining=%.8f raw_fill=%.6f fill=%.6f",
+            "[CLOSE] %s %s reason=%s qty=%.8f remaining=%.8f raw_fill=%.6f fill=%.6f%s",
             signal.alpha_id, signal.position_id, signal.reason, close_qty,
             remaining_qty, raw_exit, exit_price,
+            book_slippage_suffix(execution_metadata),
         )
         return {
             "position_id": signal.position_id,
@@ -230,6 +258,7 @@ class Executor:
                         logger.warning("[TPSL] fill_resolver failed for %s: %s; using fixed-pct",
                                        pos["symbol"], exc)
                         fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
+                fill_exit, execution_metadata = self._fill_value_and_metadata(fill_exit)
                 now = datetime.now(timezone.utc).isoformat()
                 close_meta = json.dumps({
                     "close_model": "worker_tpsl_auto",
@@ -240,6 +269,7 @@ class Executor:
                     "fill_price": fill_exit,
                     "fill_reference_source": quote.source,
                     "ref_is_executable": quote.is_executable,
+                    **execution_metadata,
                 })
                 await self.db.close_position(
                     position_id=pos["position_id"],
@@ -250,9 +280,10 @@ class Executor:
                 )
                 hits.append({"position_id": pos["position_id"], "reason": reason, "exit_price": fill_exit})
                 logger.info(
-                    "[%s] %s %s %s stop=%.6f trigger=%.6f fill=%.6f",
+                    "[%s] %s %s %s stop=%.6f trigger=%.6f fill=%.6f%s",
                     reason, pos["alpha_id"], pos["side"], pos["symbol"],
                     stop_price, current_price, fill_exit,
+                    book_slippage_suffix(execution_metadata),
                 )
 
         return hits
