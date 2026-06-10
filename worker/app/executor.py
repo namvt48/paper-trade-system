@@ -1,9 +1,11 @@
 import json
 import uuid
 import logging
+import inspect
 from datetime import datetime, timezone
 from app.models import OpenSignal, ModifySignal, CloseSignal, RegisterColumnsSignal, SignalType
 from app.fill import fixed_pct_fill
+from app.ob_exec import PriceQuote
 
 logger = logging.getLogger(__name__)
 
@@ -81,6 +83,14 @@ class Executor:
         price are always derived the same way."""
         return signal.exit_price or pos["entry_price"]
 
+    @staticmethod
+    def close_ref_is_executable(signal: CloseSignal) -> bool:
+        try:
+            metadata = json.loads(signal.metadata or "{}")
+        except (TypeError, json.JSONDecodeError):
+            return False
+        return bool(metadata.get("ref_is_executable")) if isinstance(metadata, dict) else False
+
     async def process_close(self, signal: CloseSignal, fill_price: float | None = None) -> dict:
         pos = await self.db.get_position(signal.position_id)
         if not pos:
@@ -97,6 +107,7 @@ class Executor:
         raw_exit = self.close_ref_price(signal, pos)
         exit_price = (
             fill_price if fill_price is not None
+            else raw_exit if self.close_ref_is_executable(signal)
             else self._apply_slippage(raw_exit, pos["side"], is_close=True)
         )
 
@@ -160,9 +171,14 @@ class Executor:
         hits = []
 
         for pos in positions:
-            current_price = price_fn(pos["symbol"], pos["side"])
-            if current_price is None:
+            raw_quote = price_fn(pos["symbol"], pos["side"])
+            if raw_quote is None:
                 continue
+            quote = (
+                raw_quote if isinstance(raw_quote, PriceQuote)
+                else PriceQuote(float(raw_quote), "legacy", False)
+            )
+            current_price = quote.price
 
             closed = False
             reason = None
@@ -197,10 +213,17 @@ class Executor:
                     fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
                 else:
                     try:
-                        fill_exit = await fill_resolver(
-                            pos.get("exchange", "binance"), pos["symbol"], pos["side"],
-                            pos["qty"], exit_price, True,
-                        )
+                        parameters = inspect.signature(fill_resolver).parameters
+                        if "ref_is_executable" in parameters or len(parameters) >= 7:
+                            fill_exit = await fill_resolver(
+                                pos.get("exchange", "binance"), pos["symbol"], pos["side"],
+                                pos["qty"], exit_price, True, quote.is_executable,
+                            )
+                        else:
+                            fill_exit = await fill_resolver(
+                                pos.get("exchange", "binance"), pos["symbol"], pos["side"],
+                                pos["qty"], exit_price, True,
+                            )
                     except Exception as exc:
                         # One symbol's fill failure must not abort the whole auto-close
                         # pass; fall back to fixed-pct for this position.
@@ -215,6 +238,8 @@ class Executor:
                     "trigger_price": current_price,
                     "raw_fill_price": exit_price,
                     "fill_price": fill_exit,
+                    "fill_reference_source": quote.source,
+                    "ref_is_executable": quote.is_executable,
                 })
                 await self.db.close_position(
                     position_id=pos["position_id"],

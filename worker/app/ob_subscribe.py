@@ -25,14 +25,24 @@ async def publish_subscribe(redis_client, exchange: str, consumer_id: str, symbo
     )
 
 
+async def publish_empty_syncs(redis_client, consumer_id: str, exchanges: set[str]) -> None:
+    for exchange in sorted(exchanges):
+        await publish_sync(redis_client, exchange, consumer_id, [])
+
+
 async def run_orderbook_sync_loop(db, redis_client, consumer_id: str,
-                                  exchange: str = "binance", interval: float = 5.0) -> None:
+                                  supported_exchanges: set[str],
+                                  interval: float = 5.0) -> None:
     """Periodically tell MDS which open-position symbols need a depth book."""
     while True:
         try:
             await asyncio.sleep(interval)
-            symbols = await db.get_symbols_with_open_positions()
-            await publish_sync(redis_client, exchange, consumer_id, symbols)
+            by_exchange = await db.get_open_symbols_by_exchange()
+            for exchange in sorted(supported_exchanges):
+                await publish_sync(
+                    redis_client, exchange, consumer_id,
+                    sorted(by_exchange.get(exchange, set())),
+                )
         except asyncio.CancelledError:
             break
         except Exception as exc:

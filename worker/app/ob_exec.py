@@ -4,8 +4,16 @@ import asyncio
 import json
 import logging
 import time
+from dataclasses import dataclass
 
 logger = logging.getLogger(__name__)
+
+
+@dataclass(frozen=True)
+class PriceQuote:
+    price: float
+    source: str
+    is_executable: bool
 
 
 class ObExecCache:
@@ -27,6 +35,10 @@ class ObExecCache:
         self._data[symbol] = (best_bid, best_ask, state, self._clock())
 
     def side_price(self, symbol: str, position_side: str) -> float | None:
+        quote = self.side_quote(symbol, position_side)
+        return quote.price if quote is not None else None
+
+    def side_quote(self, symbol: str, position_side: str) -> PriceQuote | None:
         item = self._data.get(symbol)
         if item is None:
             return None
@@ -38,17 +50,17 @@ class ObExecCache:
         price = bid if position_side.upper() == "LONG" else ask
         if not price or price <= 0:
             return None  # missing/zero price is not a usable executable price
-        return price
+        return PriceQuote(price=price, source="ob_exec", is_executable=True)
 
 
 def make_exit_price_fn(ob_cache: ObExecCache, ticker_cache):
     """Side-aware price provider: book best bid/ask when READY, else ticker mid."""
 
     def price_fn(symbol: str, position_side: str) -> float | None:
-        book_price = ob_cache.side_price(symbol, position_side)
-        if book_price is not None:
-            return book_price
-        return ticker_cache.get_price(symbol)
+        quote = ob_cache.side_quote(symbol, position_side)
+        if quote is not None:
+            return quote
+        return ticker_cache.get_quote(symbol)
 
     return price_fn
 
@@ -59,14 +71,16 @@ async def run_ob_exec_subscriber(cache: ObExecCache, connect_redis, exchange: st
     MDS only publishes ob_exec for symbols it has WS depth for (i.e. the open-position
     symbols this worker subscribed), so the pattern naturally scopes to those.
     """
-    redis_client = await connect_redis()
-    pubsub = redis_client.pubsub()
     pattern = f"ob_exec:{exchange}:*"
-    await pubsub.psubscribe(pattern)
-    logger.info("[OB-EXEC] psubscribed %s", pattern)
-    try:
-        while True:
-            try:
+    while True:
+        redis_client = None
+        pubsub = None
+        try:
+            redis_client = await connect_redis()
+            pubsub = redis_client.pubsub()
+            await pubsub.psubscribe(pattern)
+            logger.info("[OB-EXEC] psubscribed %s", pattern)
+            while True:
                 msg = await pubsub.get_message(ignore_subscribe_messages=True, timeout=1.0)
                 if not msg or msg.get("type") != "pmessage":
                     continue
@@ -80,12 +94,14 @@ async def run_ob_exec_subscriber(cache: ObExecCache, connect_redis, exchange: st
                     best_ask=float(data.get("best_ask", 0.0)),
                     state=data.get("book_state", ""),
                 )
-            except asyncio.CancelledError:
-                break
-            except Exception as exc:
-                logger.error("[OB-EXEC] subscriber error: %s", exc)
-                await asyncio.sleep(5)
-    finally:
-        await pubsub.punsubscribe()
-        await pubsub.aclose()
-        await redis_client.aclose()
+        except asyncio.CancelledError:
+            break
+        except Exception as exc:
+            logger.error("[OB-EXEC] subscriber error: %s", exc)
+            await asyncio.sleep(5)
+        finally:
+            if pubsub is not None:
+                await pubsub.punsubscribe()
+                await pubsub.aclose()
+            if redis_client is not None:
+                await redis_client.aclose()

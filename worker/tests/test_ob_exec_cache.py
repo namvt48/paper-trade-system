@@ -14,6 +14,12 @@ class _TickerCache:
     def get_price(self, symbol):
         return self._p.get(symbol)
 
+    def get_quote(self, symbol):
+        from app.ob_exec import PriceQuote
+
+        price = self._p.get(symbol)
+        return PriceQuote(price, "ticker_mid", False) if price is not None else None
+
 
 def test_side_price_ready_long_uses_bid():
     c = ObExecCache()
@@ -51,8 +57,12 @@ def test_exit_price_fn_prefers_book_then_ticker():
     ob.update("BTCUSDT", best_bid=100.0, best_ask=101.0, state="READY")
     ticker = _TickerCache({"BTCUSDT": 100.5, "ETHUSDT": 3000.0})
     fn = make_exit_price_fn(ob, ticker)
-    assert fn("BTCUSDT", "LONG") == 100.0       # book best_bid
-    assert fn("ETHUSDT", "LONG") == 3000.0      # ticker fallback (no book)
+    book_quote = fn("BTCUSDT", "LONG")
+    ticker_quote = fn("ETHUSDT", "LONG")
+    assert (book_quote.price, book_quote.source, book_quote.is_executable) == (
+        100.0, "ob_exec", True)
+    assert (ticker_quote.price, ticker_quote.source, ticker_quote.is_executable) == (
+        3000.0, "ticker_mid", False)
 
 
 @pytest.mark.asyncio

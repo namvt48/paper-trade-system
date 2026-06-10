@@ -241,6 +241,7 @@ class BaseEngine(ABC):
             "price": tick.get("price"),
             "tick_timestamp": tick.get("timestamp"),
             "source": tick.get("source"),
+            "ref_is_executable": close_model == "price_alert_side_aware",
         })
 
     def can_open_new_trades(self) -> bool:

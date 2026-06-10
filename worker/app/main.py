@@ -2,6 +2,7 @@ import asyncio
 import json
 import logging
 import os
+import time
 
 import redis.asyncio as redis_lib
 
@@ -9,8 +10,13 @@ from app.config import settings
 from app.db import Database
 from app.executor import Executor
 from app.models import SignalType, parse_signal, RegisterColumnsSignal
-from app.ob_exec import ObExecCache, make_exit_price_fn, run_ob_exec_subscriber
-from app.ob_subscribe import publish_subscribe, run_orderbook_sync_loop
+from app.ob_exec import ObExecCache, PriceQuote, make_exit_price_fn, run_ob_exec_subscriber
+from app.ob_subscribe import (
+    publish_empty_syncs,
+    publish_subscribe,
+    run_orderbook_sync_loop,
+)
+from app.redis_clients import connect_mds_redis, connect_paper_redis, make_mds_redis_client
 from app.slippage_client import SlippageClient, FillService
 
 logger = logging.getLogger(__name__)
@@ -25,19 +31,39 @@ def install_uvloop_if_available() -> None:
 
 
 class TickerPriceCache:
-    def __init__(self):
-        self._prices: dict[str, float] = {}
+    def __init__(self, staleness_sec: float = 5.0, clock=time.monotonic):
+        self._prices: dict[str, tuple[float, float]] = {}
+        self._staleness_sec = staleness_sec
+        self._clock = clock
 
     def update_price(self, symbol: str, price: float) -> None:
-        self._prices[symbol] = price
+        if price > 0:
+            self._prices[symbol] = (price, self._clock())
 
     def get_prices(self, symbols: list[str] | None = None) -> dict[str, float]:
-        if symbols is None:
-            return dict(self._prices)
-        return {symbol: self._prices[symbol] for symbol in symbols if symbol in self._prices}
+        selected = symbols if symbols is not None else list(self._prices)
+        return {
+            symbol: quote.price
+            for symbol in selected
+            if (quote := self.get_quote(symbol)) is not None
+        }
 
     def get_price(self, symbol: str) -> float | None:
-        return self._prices.get(symbol)
+        quote = self.get_quote(symbol)
+        return quote.price if quote is not None else None
+
+    def get_quote(self, symbol: str) -> PriceQuote | None:
+        item = self._prices.get(symbol)
+        if item is None:
+            return None
+        price, ts = item
+        if self._clock() - ts > self._staleness_sec:
+            return None
+        return PriceQuote(price=price, source="ticker_mid", is_executable=False)
+
+
+def close_ref_is_executable(signal) -> bool:
+    return Executor.close_ref_is_executable(signal)
 
 
 def configure_logging() -> None:
@@ -93,6 +119,7 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
                     fill_price = await fill_service.resolve(
                         pos.get("exchange", "binance"), pos["symbol"], pos["side"], qty,
                         ref_price=raw_exit, is_close=True,
+                        ref_is_executable=close_ref_is_executable(signal),
                     )
         except Exception as exc:
             logger.warning("Fill resolve failed for %s: %s", signal_id, exc)
@@ -120,15 +147,18 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
             return None
 
 
-async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
-    redis_client = await connect_redis()
-    pubsub = redis_client.pubsub()
-    await pubsub.subscribe("ticker")
-    logger.info("[TICKER] Subscribed to Redis ticker channel")
-
-    try:
-        while True:
-            try:
+async def run_ticker_subscriber(cache: TickerPriceCache, connect_redis,
+                                exchanges: set[str]) -> None:
+    channels = [f"ticker:{exchange}" for exchange in sorted(exchanges)]
+    while True:
+        redis_client = None
+        pubsub = None
+        try:
+            redis_client = await connect_redis()
+            pubsub = redis_client.pubsub()
+            await pubsub.subscribe(*channels)
+            logger.info("[TICKER] Subscribed to MDS channels: %s", channels)
+            while True:
                 msg = await pubsub.get_message(timeout=1.0)
                 if not msg or msg["type"] != "message":
                     continue
@@ -138,15 +168,17 @@ async def run_ticker_subscriber(cache: TickerPriceCache) -> None:
                 price = data.get("price")
                 if symbol and price is not None:
                     cache.update_price(symbol, float(price))
-            except asyncio.CancelledError:
-                break
-            except Exception as exc:
-                logger.error("Ticker subscriber error: %s", exc)
-                await asyncio.sleep(5)
-    finally:
-        await pubsub.unsubscribe()
-        await pubsub.aclose()
-        await redis_client.aclose()
+        except asyncio.CancelledError:
+            break
+        except Exception as exc:
+            logger.error("Ticker subscriber error: %s", exc)
+            await asyncio.sleep(5)
+        finally:
+            if pubsub is not None:
+                await pubsub.unsubscribe()
+                await pubsub.aclose()
+            if redis_client is not None:
+                await redis_client.aclose()
 
 
 async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache,
@@ -155,10 +187,8 @@ async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPr
 
     fill_resolver = None
     if fill_service is not None:
-        async def fill_resolver(exchange, symbol, position_side, qty, ref_price, is_close):
-            # When the trigger/ref came from the book (best bid/ask), it is already the
-            # executable price, so the RPC fallback must not add fixed-pct on top.
-            ref_is_executable = ob_cache.side_price(symbol, position_side) is not None
+        async def fill_resolver(exchange, symbol, position_side, qty, ref_price, is_close,
+                                ref_is_executable=False):
             return await fill_service.resolve(
                 exchange, symbol, position_side, qty, ref_price, is_close,
                 ref_is_executable=ref_is_executable,
@@ -201,23 +231,13 @@ async def register_configured_alphas(db: Database) -> None:
         logger.info("Registered alpha from config: %s", alpha_id)
 
 
-async def connect_redis() -> redis_lib.Redis:
-    attempt = 0
-    while True:
-        attempt += 1
-        redis_client = redis_lib.from_url(settings.REDIS_URL, decode_responses=True)
-        try:
-            await redis_client.ping()
-            return redis_client
-        except redis_lib.RedisError as exc:
-            await redis_client.aclose()
-            wait = min(attempt, 10)
-            logger.warning("Redis unavailable: %s. Retry in %ss", exc, wait)
-            await asyncio.sleep(wait)
-
-
 async def run_consumer():
     configure_logging()
+    settings.validate_runtime()
+    try:
+        os.remove("/tmp/bot_health")
+    except FileNotFoundError:
+        pass
 
     db = Database(settings.DB_PATH)
     await db.init()
@@ -231,40 +251,48 @@ async def run_consumer():
         slippage_pct=settings.SLIPPAGE_PCT,
         duplicate_policy=settings.DUPLICATE_POSITION_POLICY,
     )
-    cache = TickerPriceCache()
+    supported_exchanges = settings.get_orderbook_exchanges()
+    cache = TickerPriceCache(staleness_sec=settings.TICKER_STALENESS_SEC)
     ob_cache = ObExecCache()
 
-    redis_client = await connect_redis()
+    paper_redis = await connect_paper_redis()
+    mds_redis = make_mds_redis_client() if (
+        settings.ENABLE_ORDERBOOK_SLIPPAGE or settings.ENABLE_WORKER_TPSL_AUTO_CLOSE
+    ) else None
     fill_service = None
-    if settings.ENABLE_ORDERBOOK_SLIPPAGE:
+    if settings.ENABLE_ORDERBOOK_SLIPPAGE and mds_redis is not None:
         fill_service = FillService(
-            SlippageClient(redis_client),
+            SlippageClient(mds_redis),
             slippage_pct=settings.SLIPPAGE_PCT,
             timeout=settings.SLIPPAGE_RPC_TIMEOUT,
+            supported_exchanges=supported_exchanges,
         )
     ticker_task = None
     price_check_task = None
     health_task = None
-    ob_exec_task = None
+    ob_exec_tasks = []
     ob_sync_task = None
 
     try:
         try:
-            await redis_client.xgroup_create(settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True)
+            await paper_redis.xgroup_create(settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True)
         except redis_lib.ResponseError:
             pass
 
         if settings.ENABLE_ORDERBOOK_SLIPPAGE:
-            ob_exec_task = asyncio.create_task(
-                run_ob_exec_subscriber(ob_cache, connect_redis, settings.ORDERBOOK_EXCHANGE)
-            )
+            ob_exec_tasks = [
+                asyncio.create_task(run_ob_exec_subscriber(ob_cache, connect_mds_redis, exchange))
+                for exchange in sorted(supported_exchanges)
+            ]
             ob_sync_task = asyncio.create_task(
-                run_orderbook_sync_loop(db, redis_client, settings.CONSUMER_NAME,
-                                        settings.ORDERBOOK_EXCHANGE, settings.ORDERBOOK_SYNC_INTERVAL)
+                run_orderbook_sync_loop(db, mds_redis, settings.CONSUMER_NAME,
+                                        supported_exchanges, settings.ORDERBOOK_SYNC_INTERVAL)
             )
 
         if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
-            ticker_task = asyncio.create_task(run_ticker_subscriber(cache))
+            ticker_task = asyncio.create_task(
+                run_ticker_subscriber(cache, connect_mds_redis, supported_exchanges)
+            )
             price_check_task = asyncio.create_task(
                 run_price_check_loop(db, executor, cache, ob_cache, fill_service)
             )
@@ -275,7 +303,7 @@ async def run_consumer():
         logger.info("Consumer started: stream=%s group=%s", settings.REDIS_STREAM, settings.CONSUMER_GROUP)
 
         while True:
-            messages = await redis_client.xreadgroup(
+            messages = await paper_redis.xreadgroup(
                 settings.CONSUMER_GROUP,
                 settings.CONSUMER_NAME,
                 {settings.REDIS_STREAM: ">"},
@@ -291,17 +319,23 @@ async def run_consumer():
                     result = await process_signal_message(data, db, executor, fill_service=fill_service)
                     if result is not None:
                         logger.info("Processed %s signal: %s", data.get("type"), result)
-                    if result is not None and data.get("type") == "OPEN" and settings.ENABLE_ORDERBOOK_SLIPPAGE:
+                    exchange = str(data.get("exchange", "binance")).lower()
+                    if (
+                        result is not None
+                        and data.get("type") == "OPEN"
+                        and settings.ENABLE_ORDERBOOK_SLIPPAGE
+                        and exchange in supported_exchanges
+                    ):
                         try:
                             # Bounded so a stalled publish can't freeze the consumer loop.
                             await asyncio.wait_for(
-                                publish_subscribe(redis_client, settings.ORDERBOOK_EXCHANGE,
+                                publish_subscribe(mds_redis, exchange,
                                                   settings.CONSUMER_NAME, data.get("symbol", "")),
                                 timeout=2.0,
                             )
                         except Exception as exc:
                             logger.warning("orderbook subscribe publish failed: %s", exc)
-                    await redis_client.xack(
+                    await paper_redis.xack(
                         settings.REDIS_STREAM,
                         settings.CONSUMER_GROUP,
                         msg_id,
@@ -311,13 +345,20 @@ async def run_consumer():
         logger.info("Shutting down")
     finally:
         tasks = [task for task in (ticker_task, price_check_task, health_task,
-                                   ob_exec_task, ob_sync_task) if task is not None]
+                                   ob_sync_task) if task is not None]
+        tasks.extend(ob_exec_tasks)
         for task in tasks:
             task.cancel()
         if tasks:
             await asyncio.gather(*tasks, return_exceptions=True)
+        if mds_redis is not None:
+            try:
+                await publish_empty_syncs(mds_redis, settings.CONSUMER_NAME, supported_exchanges)
+            except Exception as exc:
+                logger.warning("orderbook empty sync failed during shutdown: %s", exc)
+            await mds_redis.aclose()
         await db.close()
-        await redis_client.aclose()
+        await paper_redis.aclose()
 
 
 if __name__ == "__main__":

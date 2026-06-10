@@ -606,6 +606,7 @@ def test_engine_build_close_metadata_price_alert(engine):
     assert meta["ask"] == pytest.approx(0.058875)
     assert meta["tick_timestamp"] == 1780290087000
     assert meta["source"] == "bookTicker"
+    assert meta["ref_is_executable"] is True
 
 
 def test_engine_build_close_metadata_custom_model(engine):
@@ -618,6 +619,7 @@ def test_engine_build_close_metadata_custom_model(engine):
         close_model="candle_fallback_conservative",
     ))
     assert meta["close_model"] == "candle_fallback_conservative"
+    assert meta["ref_is_executable"] is False
 
 
 def test_engine_long_sl_trigger_uses_bid(engine):

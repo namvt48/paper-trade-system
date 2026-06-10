@@ -3,6 +3,7 @@ import pytest
 from app.db import Database
 from app.executor import Executor
 from app.models import OpenSignal, SignalType
+from app.ob_exec import PriceQuote
 
 
 async def _open(ex, side, entry, tp=None, sl=None):
@@ -73,4 +74,25 @@ async def test_legacy_dict_still_works(tmp_path):
     await _open(ex, "LONG", 95000.0, tp=97000.0)
     hits = await ex.check_tpsl_hits({"BTCUSDT": 97500.0})  # no resolver -> fixed-pct
     assert hits[0]["exit_price"] == pytest.approx(97500.0)  # pct 0
+    await db.close()
+
+
+@pytest.mark.asyncio
+async def test_executable_quote_provenance_reaches_fill_resolver(tmp_path):
+    db = Database(str(tmp_path / "t.db"))
+    await db.init()
+    ex = Executor(db, slippage_pct=0.0)
+    await _open(ex, "LONG", 95000.0, tp=97000.0)
+    seen = {}
+
+    async def fill_resolver(exchange, symbol, side, qty, ref_price, is_close,
+                            ref_is_executable):
+        seen["ref_is_executable"] = ref_is_executable
+        return ref_price
+
+    await ex.check_tpsl_hits(
+        lambda symbol, side: PriceQuote(97500.0, "ob_exec", True),
+        fill_resolver=fill_resolver,
+    )
+    assert seen["ref_is_executable"] is True
     await db.close()

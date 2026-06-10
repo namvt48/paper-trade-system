@@ -76,3 +76,34 @@ async def test_fill_service_falls_back_on_timeout():
     price = await svc.resolve("binance", "BTCUSDT", "LONG", 1.0, ref_price=100.0,
                               is_close=False, request_id="rid-y")
     assert price == 100.05
+
+
+@pytest.mark.asyncio
+async def test_fill_service_skips_rpc_for_unsupported_exchange():
+    r = fakeredis.aioredis.FakeRedis(decode_responses=True)
+    svc = FillService(
+        SlippageClient(r), slippage_pct=0.5, timeout=0.01,
+        supported_exchanges={"binance"},
+    )
+    price = await svc.resolve(
+        "okx", "BTCUSDT", "LONG", 1.0, ref_price=100.0,
+        is_close=False, request_id="unsupported",
+    )
+    assert price == 100.05
+    assert await r.llen("orderbook:slip:req:okx") == 0
+
+
+@pytest.mark.asyncio
+async def test_query_rejects_mismatched_response_id():
+    r = fakeredis.aioredis.FakeRedis(decode_responses=True)
+    await r.lpush("orderbook:slip:resp:expected", json.dumps({
+        "request_id": "wrong",
+        "fallback_used": False,
+        "filled_qty": 1.0,
+        "requested_qty": 1.0,
+        "avg_exec_price": 101.0,
+    }))
+    client = SlippageClient(r)
+    assert await client.query(
+        "binance", "BTCUSDT", "BUY", 1.0, timeout=1, request_id="expected",
+    ) is None

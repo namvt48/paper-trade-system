@@ -403,6 +403,16 @@ class Database:
         rows = await cursor.fetchall()
         return {row[0]: row[1] or "binance" for row in rows}
 
+    async def get_open_symbols_by_exchange(self) -> dict[str, set[str]]:
+        cursor = await self._conn.execute(
+            "SELECT DISTINCT exchange, symbol FROM positions"
+        )
+        rows = await cursor.fetchall()
+        result: dict[str, set[str]] = {}
+        for exchange, symbol in rows:
+            result.setdefault((exchange or "binance").lower(), set()).add(symbol)
+        return result
+
     async def get_positions_with_tpsl(self) -> list[dict]:
         cursor = await self._conn.execute(
             "SELECT * FROM positions WHERE tp IS NOT NULL OR sl IS NOT NULL"

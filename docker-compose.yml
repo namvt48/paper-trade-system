@@ -17,17 +17,25 @@ services:
       paper-trade:
         aliases:
           - paper-redis
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   worker:
     build: ./worker
     depends_on:
-      - redis
+      redis:
+        condition: service_healthy
     env_file: ./worker/.env
     volumes:
       - ./data:/app/data
       - ./logs/worker:/app/logs
     environment:
-      - REDIS_URL=redis://redis:6379
+      - REDIS_URL=redis://paper-redis:6379
+      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - DB_PATH=/app/data/paper-trade.db
       - LOG_DIR=/app/logs
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
@@ -39,6 +47,7 @@ services:
       - SIGNAL_RETENTION_DAYS=${SIGNAL_RETENTION_DAYS:-0}
     networks:
       - paper-trade
+      - market-data
     restart: unless-stopped
     healthcheck:
       test:
@@ -46,7 +55,7 @@ services:
           "CMD",
           "python",
           "-c",
-          "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)",
+          "import os,time; p='/tmp/bot_health'; exit(0 if os.path.exists(p) and time.time()-os.path.getmtime(p)<30 else 1)",
         ]
       interval: 30s
       timeout: 10s

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import json
 import logging
+import math
 import time
 import uuid
 
@@ -88,29 +89,46 @@ class SlippageClient:
         if not item:
             self._record_failure()
             return None
-        self._record_success()
         _, raw = item
         try:
-            return json.loads(raw)
-        except Exception:
+            resp = json.loads(raw)
+            if not isinstance(resp, dict):
+                raise ValueError("response is not an object")
+            if resp.get("request_id") not in (None, rid):
+                raise ValueError("response request_id mismatch")
+            for key in ("avg_exec_price", "filled_qty", "requested_qty"):
+                value = float(resp.get(key, 0.0))
+                if not math.isfinite(value) or value < 0:
+                    raise ValueError(f"invalid {key}")
+        except Exception as exc:
+            logger.warning("[SLIP-RPC] invalid response for %s: %s", symbol, exc)
+            self._record_failure()
             return None
+        self._record_success()
+        return resp
 
 
 class FillService:
     """Resolves a fill price: RPC walk if available, else fixed-pct fallback."""
 
-    def __init__(self, client: SlippageClient, slippage_pct: float, timeout: float = 0.2) -> None:
+    def __init__(self, client: SlippageClient, slippage_pct: float, timeout: float = 0.2,
+                 supported_exchanges: set[str] | None = None) -> None:
         self._client = client
         self._slippage_pct = slippage_pct
         self._timeout = timeout
+        self._supported_exchanges = {
+            exchange.lower() for exchange in (supported_exchanges or {"binance"})
+        }
 
     async def resolve(self, exchange: str, symbol: str, position_side: str, qty: float,
                       ref_price: float, is_close: bool, request_id: str | None = None,
                       ref_is_executable: bool = False) -> float:
         order_side = order_side_for(position_side, is_close)
-        resp = await self._client.query(
-            exchange, symbol, order_side, qty,
-            fallback_pct=self._slippage_pct, timeout=self._timeout, request_id=request_id,
-        )
+        resp = None
+        if exchange.lower() in self._supported_exchanges:
+            resp = await self._client.query(
+                exchange.lower(), symbol, order_side, qty,
+                fallback_pct=self._slippage_pct, timeout=self._timeout, request_id=request_id,
+            )
         return resolve_fill_price(resp, ref_price, position_side, is_close, self._slippage_pct,
                                   ref_is_executable=ref_is_executable)
