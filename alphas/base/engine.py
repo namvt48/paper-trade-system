@@ -6,6 +6,7 @@ import signal as sig
 import time
 import uuid
 from abc import ABC, abstractmethod
+from datetime import datetime, timezone
 
 import redis as redis_lib
 
@@ -13,6 +14,7 @@ from base import signal_push
 from base.config import BaseConfig
 from base.json_utils import dumps as json_dumps, loads as json_loads
 from base.models import SymbolData
+from base.position_reconcile import normalize_position, parse_snapshot, snapshot_age_sec
 
 
 class BaseEngine(ABC):
@@ -35,6 +37,12 @@ class BaseEngine(ABC):
         self._positions_changed = asyncio.Event()
         self._subscribed_price_alert_symbols: set[str] = set()
         self._symbol_universe_cache: list[str] = []
+        self._authoritative_revision: int | None = None
+        self._authoritative_position_ids: set[str] = set()
+        self._snapshot_age_sec = float("inf")
+        self._heartbeat_ok = False
+        self._last_reconcile_at: float = 0.0
+        self._position_reconcile_stale = False
 
     @abstractmethod
     def get_required_channels(self) -> list[str]:
@@ -58,6 +66,152 @@ class BaseEngine(ABC):
 
     async def on_warmup_complete(self) -> None:
         """Called after warmup data is loaded. Override to reconstruct in-memory state."""
+
+    def restore_position(self, snapshot_position: dict) -> dict | None:
+        """Restore a worker-owned position conservatively.
+
+        Strategies may override this to reconstruct richer runtime state. The default
+        preserves authoritative fields and any namespaced strategy_runtime metadata.
+        """
+        return normalize_position(snapshot_position)
+
+    def serialize_position_runtime(self, position: dict) -> dict:
+        worker_owned = {
+            "position_id", "alpha_id", "symbol", "side", "entry", "entry_price",
+            "qty", "tp", "sl", "leverage", "opened_at", "exchange", "metadata",
+        }
+        return {
+            key: value for key, value in position.items()
+            if key not in worker_owned and isinstance(value, (str, int, float, bool, type(None)))
+        }
+
+    def on_position_reconciled(self, position: dict, mode: str) -> None:
+        pass
+
+    def _local_positions_by_id(self) -> dict[str, tuple[str, dict]]:
+        positions = getattr(self, "_open_positions", {})
+        if not isinstance(positions, dict):
+            return {}
+        return {
+            str(pos.get("position_id")): (str(symbol), pos)
+            for symbol, pos in positions.items()
+            if isinstance(pos, dict) and pos.get("position_id")
+        }
+
+    async def reconcile_positions(self, redis_client=None) -> bool:
+        owned_client = redis_client is None
+        client = redis_client or await self._connect_redis(self.config.REDIS_URL)
+        try:
+            raw = client.get(f"paper:positions:snapshot:{self.config.ALPHA_ID}")
+            snapshot = parse_snapshot(raw)
+            if snapshot is None:
+                return False
+            age = snapshot_age_sec(snapshot)
+            self._snapshot_age_sec = age
+            if age > float(self.config.POSITION_SNAPSHOT_MAX_AGE_SEC):
+                return False
+            revision = int(snapshot.get("revision", 0))
+            local = self._local_positions_by_id()
+            authoritative = {
+                str(pos["position_id"]): pos for pos in snapshot["positions"]
+                if isinstance(pos, dict) and pos.get("position_id")
+            }
+            open_positions = getattr(self, "_open_positions", None)
+            if not isinstance(open_positions, dict):
+                return not authoritative
+
+            for position_id, (symbol, _) in list(local.items()):
+                if position_id not in authoritative:
+                    open_positions.pop(symbol, None)
+            for position_id, raw_position in authoritative.items():
+                restored = self.restore_position(raw_position)
+                if restored is None:
+                    return False
+                symbol = restored["symbol"]
+                mode = "RESTORED" if position_id not in local else "AUTHORITATIVE_REFRESH"
+                metadata = raw_position.get("metadata")
+                if not isinstance(metadata, dict) or not isinstance(metadata.get("strategy_runtime"), dict):
+                    mode = "RECOVERED_CONSERVATIVE"
+                open_positions[symbol] = restored
+                self.on_position_reconciled(restored, mode)
+
+            self._authoritative_revision = revision
+            self._authoritative_position_ids = set(authoritative)
+            self._last_reconcile_at = time.time()
+            self.mark_positions_changed()
+            await self._publish_runtime_heartbeat(client)
+            return True
+        finally:
+            if owned_client:
+                client.close()
+
+    async def _publish_runtime_heartbeat(self, redis_client=None) -> None:
+        owned_client = redis_client is None
+        client = redis_client or await self._connect_redis(self.config.REDIS_URL)
+        positions = self._local_positions_by_id()
+        symbols = self._get_active_position_symbols()
+        payload = {
+            "alpha_id": self.config.ALPHA_ID,
+            "authoritative_revision": self._authoritative_revision,
+            "managed_position_ids": sorted(positions),
+            "managed_symbols": sorted(symbols),
+            "desired_price_alert_symbols": sorted(symbols),
+            "runtime_state": self.runtime_state,
+            "reconciled_at": datetime.now(timezone.utc).isoformat(),
+        }
+        try:
+            client.set(
+                f"paper:alpha-runtime:{self.config.ALPHA_ID}",
+                json_dumps(payload),
+                ex=int(self.config.ALPHA_RUNTIME_HEARTBEAT_TTL_SEC),
+            )
+            self._heartbeat_ok = True
+        except Exception:
+            self._heartbeat_ok = False
+            raise
+        finally:
+            if owned_client:
+                client.close()
+
+    async def _position_reconcile_loop(self) -> None:
+        while not self.shutdown_event.is_set():
+            try:
+                ok = await self.reconcile_positions()
+                if not ok:
+                    self._position_reconcile_stale = True
+                    self.runtime_state = "STALE"
+                elif self._position_reconcile_stale:
+                    self._position_reconcile_stale = False
+                    self.runtime_state = "LIVE"
+            except Exception as exc:
+                self._position_reconcile_stale = True
+                self.runtime_state = "STALE"
+                self._logger.warning("[%s] Position reconcile failed: %s", self.config.ALPHA_ID, exc)
+            await asyncio.sleep(float(self.config.POSITION_RECONCILE_INTERVAL_SEC))
+
+    async def _startup_reconcile(self) -> bool:
+        deadline = asyncio.get_running_loop().time() + float(
+            self.config.POSITION_RECONCILE_STARTUP_TIMEOUT_SEC
+        )
+        while not self.shutdown_event.is_set():
+            try:
+                if await self.reconcile_positions():
+                    return True
+            except Exception as exc:
+                self._logger.warning("[%s] Startup reconcile failed: %s", self.config.ALPHA_ID, exc)
+            if asyncio.get_running_loop().time() >= deadline:
+                return False
+            await asyncio.sleep(min(1.0, float(self.config.POSITION_RECONCILE_INTERVAL_SEC)))
+        return False
+
+    def _ownership_healthy(self) -> bool:
+        return (
+            self.runtime_state == "LIVE"
+            and self._snapshot_age_sec <= float(self.config.POSITION_SNAPSHOT_MAX_AGE_SEC)
+            and set(self._local_positions_by_id()) == self._authoritative_position_ids
+            and self._heartbeat_ok
+            and self._get_active_position_symbols() <= self._subscribed_price_alert_symbols
+        )
 
     async def manage_loop(self) -> None:
         while not self.shutdown_event.is_set():
@@ -753,6 +907,10 @@ class BaseEngine(ABC):
             loop.add_signal_handler(signal_name, self.shutdown_event.set)
 
         self._logger.info("[%s] Starting alpha engine", self.config.ALPHA_ID)
+        try:
+            os.remove("/tmp/bot_health")
+        except FileNotFoundError:
+            pass
 
         try:
             self.runtime_state = "WARMING_UP"
@@ -766,6 +924,10 @@ class BaseEngine(ABC):
             await self.on_warmup_complete()
         except Exception as exc:
             self._logger.warning("[%s] on_warmup_complete error: %s", self.config.ALPHA_ID, exc)
+
+        reconcile_ok = await self._startup_reconcile()
+        if not reconcile_ok:
+            self.runtime_state = "STALE"
 
         sub_task = await self.subscribe_data_feeds()
 
@@ -801,17 +963,18 @@ class BaseEngine(ABC):
         health_task = asyncio.create_task(self._health_loop())
         price_alert_sync_task = asyncio.create_task(self._price_alert_sync_loop())
         stale_task = asyncio.create_task(self._stale_monitor_loop())
+        reconcile_task = asyncio.create_task(self._position_reconcile_loop())
 
         try:
-            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task)
+            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task, reconcile_task)
         except asyncio.CancelledError:
             pass
         finally:
             self.runtime_state = "SHUTTING_DOWN"
             self.shutdown_event.set()
-            for task in (scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task):
+            for task in (scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task, reconcile_task):
                 task.cancel()
-            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task, return_exceptions=True)
+            await asyncio.gather(scan_task, manage_task, health_task, sub_task, price_alert_sync_task, stale_task, reconcile_task, return_exceptions=True)
             try:
                 await self._publish_empty_price_alert_sync()
             except Exception as exc:
@@ -821,13 +984,41 @@ class BaseEngine(ABC):
     async def _health_loop(self) -> None:
         while not self.shutdown_event.is_set():
             try:
-                with open("/tmp/bot_health", "w") as health_file:
-                    health_file.write("ok")
+                if self._ownership_healthy():
+                    with open("/tmp/bot_health", "w") as health_file:
+                        health_file.write(json_dumps({
+                            "timestamp": time.time(),
+                            "runtime_state": self.runtime_state,
+                            "authoritative_revision": self._authoritative_revision,
+                            "managed_position_ids": sorted(self._local_positions_by_id()),
+                        }))
+                else:
+                    try:
+                        os.remove("/tmp/bot_health")
+                    except FileNotFoundError:
+                        pass
             except Exception:
                 pass
             await asyncio.sleep(10)
 
     def push_signal(self, signal_type: str, **kwargs) -> None:
+        if signal_type in {"OPEN", "MODIFY", "CLOSE"}:
+            position = None
+            position_id = kwargs.get("position_id")
+            for _symbol, candidate in getattr(self, "_open_positions", {}).items():
+                if isinstance(candidate, dict) and candidate.get("position_id") == position_id:
+                    position = candidate
+                    break
+            if position is not None:
+                try:
+                    metadata = json_loads(kwargs.get("metadata", "{}"))
+                except Exception:
+                    metadata = {}
+                if not isinstance(metadata, dict):
+                    metadata = {}
+                metadata["strategy_runtime_version"] = 1
+                metadata["strategy_runtime"] = self.serialize_position_runtime(position)
+                kwargs["metadata"] = json_dumps(metadata)
         signal_push.push_signal(signal_type, self.config.ALPHA_ID, **kwargs)
 
     def register_columns(self, columns: list[dict]) -> None:

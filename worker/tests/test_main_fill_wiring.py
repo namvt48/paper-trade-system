@@ -65,6 +65,32 @@ async def test_open_signal_without_fill_service_is_unchanged(tmp_path):
 
 
 @pytest.mark.asyncio
+async def test_duplicate_open_skips_pre_subscribe_and_fill(tmp_path):
+    db = Database(str(tmp_path / "t.db"))
+    await db.init()
+    await db.register_alpha("a")
+    await db.create_position(
+        "p1", "a", "open", "BTCUSDT", "LONG", 95000.0, 0.01,
+        "2026-05-22T10:00:00Z",
+    )
+    ex = Executor(db)
+    fs = _FillService(price=95222.0)
+    pre_calls = []
+
+    async def pre_open(signal):
+        pre_calls.append(signal.symbol)
+        return "became_ready"
+
+    data = {"type": "OPEN", "alpha_id": "a", "signal_id": "duplicate",
+            "symbol": "BTCUSDT", "side": "LONG", "entry": "95000", "qty": "0.01",
+            "timestamp": "2026-05-22T10:01:00Z"}
+    assert await process_signal_message(data, db, ex, fill_service=fs, pre_open=pre_open) is None
+    assert pre_calls == []
+    assert fs.calls == []
+    await db.close()
+
+
+@pytest.mark.asyncio
 async def test_executable_close_without_fill_service_is_not_slipped_again(tmp_path):
     db = Database(str(tmp_path / "t.db"))
     await db.init()

@@ -18,6 +18,8 @@ from app.ob_subscribe import (
 )
 from app.redis_clients import connect_mds_redis, connect_paper_redis, make_mds_redis_client
 from app.slippage_client import SlippageClient, FillService
+from app.position_snapshots import PositionSnapshotPublisher
+from app.position_ownership import PositionOwnershipMonitor
 
 logger = logging.getLogger(__name__)
 
@@ -86,7 +88,8 @@ def configure_logging() -> None:
 
 
 async def process_signal_message(data: dict, db: Database, executor: Executor,
-                                  fill_service=None) -> dict | None:
+                                  fill_service=None, snapshot_publisher=None,
+                                  pre_open=None) -> dict | None:
     signal_id = data.get("signal_id", "unknown")
     alpha_id = data.get("alpha_id", "unknown")
     signal_type = data.get("type", "unknown")
@@ -107,10 +110,17 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
     if fill_service is not None:
         try:
             if signal.type == SignalType.OPEN:
-                fill_price = await fill_service.resolve(
-                    signal.exchange, signal.symbol, signal.side, signal.qty,
-                    ref_price=signal.entry, is_close=False,
+                existing = await db.get_open_position_by_alpha_symbol(
+                    signal.alpha_id, signal.symbol
                 )
+                if existing is None:
+                    pre_subscribe_outcome = await pre_open(signal) if pre_open is not None else None
+                    fill_price = await fill_service.resolve(
+                        signal.exchange, signal.symbol, signal.side, signal.qty,
+                        ref_price=signal.entry, is_close=False,
+                    )
+                    if pre_subscribe_outcome and hasattr(fill_price, "metadata"):
+                        fill_price.pre_subscribe_outcome = pre_subscribe_outcome
             elif signal.type == SignalType.CLOSE:
                 pos = await db.get_position(signal.position_id)
                 if pos:
@@ -140,11 +150,16 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
             else:
                 result = None
             await db.mark_signal_processed(signal_id)
-            return result
+            committed_result = result
         except Exception as exc:
             logger.error("Error processing signal %s: %s", signal_id, exc)
             await db.mark_signal_processed(signal_id, error=str(exc))
             return None
+    if snapshot_publisher is not None and committed_result is not None and signal.type in {
+        SignalType.OPEN, SignalType.MODIFY, SignalType.CLOSE
+    }:
+        await snapshot_publisher.publish_after_commit(signal.alpha_id)
+    return committed_result
 
 
 async def run_ticker_subscriber(cache: TickerPriceCache, connect_redis,
@@ -210,11 +225,21 @@ async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPr
             await asyncio.sleep(5)
 
 
-async def run_health_loop() -> None:
+async def run_health_loop(ownership_monitor=None) -> None:
     while True:
         try:
-            with open("/tmp/bot_health", "w") as health_file:
-                health_file.write("ok")
+            healthy = ownership_monitor is None or ownership_monitor.last_report.get("healthy", False)
+            if healthy:
+                with open("/tmp/bot_health", "w") as health_file:
+                    health_file.write(json.dumps({
+                        "timestamp": time.time(),
+                        "ownership": ownership_monitor.last_report if ownership_monitor else {},
+                    }))
+            else:
+                try:
+                    os.remove("/tmp/bot_health")
+                except FileNotFoundError:
+                    pass
         except Exception:
             logger.warning("Failed to write worker health file", exc_info=True)
         await asyncio.sleep(10)
@@ -253,11 +278,12 @@ async def run_consumer():
     )
     supported_exchanges = settings.get_orderbook_exchanges()
     cache = TickerPriceCache(staleness_sec=settings.TICKER_STALENESS_SEC)
-    ob_cache = ObExecCache()
+    ob_cache = ObExecCache(staleness_sec=settings.OPEN_BOOK_MAX_AGE_MS / 1000.0)
 
     paper_redis = await connect_paper_redis()
     mds_redis = make_mds_redis_client() if (
         settings.ENABLE_ORDERBOOK_SLIPPAGE or settings.ENABLE_WORKER_TPSL_AUTO_CLOSE
+        or settings.ENABLE_POSITION_OWNERSHIP_MONITOR
     ) else None
     fill_service = None
     if settings.ENABLE_ORDERBOOK_SLIPPAGE and mds_redis is not None:
@@ -266,12 +292,26 @@ async def run_consumer():
             slippage_pct=settings.SLIPPAGE_PCT,
             timeout=settings.SLIPPAGE_RPC_TIMEOUT,
             supported_exchanges=supported_exchanges,
+            latency_model_enabled=settings.EXECUTION_LATENCY_MODEL_ENABLED,
+            latency_ms=settings.EXECUTION_LATENCY_MS,
+            min_adverse_bps=settings.EXECUTION_MIN_ADVERSE_BPS,
+            second_quote_timeout=settings.EXECUTION_SECOND_QUOTE_TIMEOUT_MS / 1000.0,
         )
+    snapshot_publisher = PositionSnapshotPublisher(
+        db, paper_redis, settings.POSITION_SNAPSHOT_SYNC_INTERVAL_SEC
+    )
+    ownership_monitor = PositionOwnershipMonitor(
+        db, paper_redis, mds_redis,
+        settings.POSITION_OWNERSHIP_GRACE_SEC,
+        settings.POSITION_OWNERSHIP_CHECK_INTERVAL_SEC,
+    ) if settings.ENABLE_POSITION_OWNERSHIP_MONITOR and mds_redis is not None else None
     ticker_task = None
     price_check_task = None
     health_task = None
     ob_exec_tasks = []
     ob_sync_task = None
+    snapshot_task = None
+    ownership_task = None
 
     try:
         try:
@@ -288,6 +328,10 @@ async def run_consumer():
                 run_orderbook_sync_loop(db, mds_redis, settings.CONSUMER_NAME,
                                         supported_exchanges, settings.ORDERBOOK_SYNC_INTERVAL)
             )
+        await snapshot_publisher.publish_all()
+        snapshot_task = asyncio.create_task(snapshot_publisher.run())
+        if ownership_monitor is not None:
+            ownership_task = asyncio.create_task(ownership_monitor.run())
 
         if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
             ticker_task = asyncio.create_task(
@@ -298,7 +342,7 @@ async def run_consumer():
             )
         else:
             logger.info("Worker auto TP/SL disabled (ENABLE_WORKER_TPSL_AUTO_CLOSE=False); alphas manage SL/TP via MDS price_alert")
-        health_task = asyncio.create_task(run_health_loop())
+        health_task = asyncio.create_task(run_health_loop(ownership_monitor))
 
         logger.info("Consumer started: stream=%s group=%s", settings.REDIS_STREAM, settings.CONSUMER_GROUP)
 
@@ -316,7 +360,23 @@ async def run_consumer():
 
             for _, msgs in messages:
                 for msg_id, data in msgs:
-                    result = await process_signal_message(data, db, executor, fill_service=fill_service)
+                    async def pre_open(signal):
+                        exchange = str(signal.exchange).lower()
+                        if not settings.OPEN_BOOK_PRE_SUBSCRIBE_ENABLED or exchange not in supported_exchanges:
+                            return "unsupported_exchange"
+                        try:
+                            await publish_subscribe(mds_redis, exchange, settings.CONSUMER_NAME, signal.symbol)
+                        except Exception:
+                            logger.exception("[OPEN-PRE-SUBSCRIBE] publish failed symbol=%s", signal.symbol)
+                            return "pre_subscribe_publish_failed"
+                        return await ob_cache.wait_ready(
+                            exchange, signal.symbol, settings.OPEN_BOOK_READY_TIMEOUT_MS / 1000.0
+                        )
+
+                    result = await process_signal_message(
+                        data, db, executor, fill_service=fill_service,
+                        snapshot_publisher=snapshot_publisher, pre_open=pre_open,
+                    )
                     if result is not None:
                         logger.info("Processed %s signal: %s", data.get("type"), result)
                     exchange = str(data.get("exchange", "binance")).lower()
@@ -345,7 +405,7 @@ async def run_consumer():
         logger.info("Shutting down")
     finally:
         tasks = [task for task in (ticker_task, price_check_task, health_task,
-                                   ob_sync_task) if task is not None]
+                                   ob_sync_task, snapshot_task, ownership_task) if task is not None]
         tasks.extend(ob_exec_tasks)
         for task in tasks:
             task.cancel()

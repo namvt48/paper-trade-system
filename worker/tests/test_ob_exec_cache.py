@@ -87,3 +87,16 @@ async def test_subscriber_updates_cache_from_pmessage():
     finally:
         task.cancel()
         await asyncio.gather(task, return_exceptions=True)
+
+
+@pytest.mark.asyncio
+async def test_wait_ready_is_exchange_scoped_and_cleans_waiter():
+    cache = ObExecCache()
+    waiter = asyncio.create_task(cache.wait_ready("binance", "BTCUSDT", 1))
+    await asyncio.sleep(0)
+    cache.update("BTCUSDT", 100, 101, "READY", exchange="okx")
+    await asyncio.sleep(0)
+    assert not waiter.done()
+    cache.update("BTCUSDT", 100, 101, "READY", exchange="binance")
+    assert await waiter == "became_ready"
+    assert cache._waiters == {}

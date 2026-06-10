@@ -1,7 +1,5 @@
 networks:
-  paper-trade:
-    external: true
-  market-data:
+  redis-net:
     external: true
 
 services:
@@ -23,11 +21,10 @@ services:
       - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - MDS_EXCHANGE=${MDS_EXCHANGE:-binance}
     networks:
-      - paper-trade
-      - market-data
+      - redis-net
     restart: unless-stopped
     healthcheck:
-      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
+      test: ["CMD", "python", "-c", "import os,time; p='/tmp/bot_health'; exit(0 if os.path.exists(p) and time.time()-os.path.getmtime(p)<30 else 1)"]
       interval: 30s
       timeout: 10s
       retries: 3

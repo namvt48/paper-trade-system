@@ -1,34 +1,11 @@
+# Redis now lives in the central infra/redis stack on the external `redis-net`.
 networks:
-  paper-trade:
-    name: paper-trade
-  market-data:
+  redis-net:
     external: true
 
 services:
-  redis:
-    image: redis:7-alpine
-    ports:
-      - "${REDIS_PORT:-6382}:6379"
-    volumes:
-      - redis_data:/data
-      - ./logs/redis:/logs
-    command: sh -c "touch /logs/redis.log && chmod 0644 /logs/redis.log && redis-server --appendonly yes 2>&1 | tee -a /logs/redis.log"
-    networks:
-      paper-trade:
-        aliases:
-          - paper-redis
-    restart: unless-stopped
-    healthcheck:
-      test: ["CMD", "redis-cli", "ping"]
-      interval: 10s
-      timeout: 5s
-      retries: 5
-
   worker:
     build: ./worker
-    depends_on:
-      redis:
-        condition: service_healthy
     env_file: ./worker/.env
     volumes:
       - ./data:/app/data
@@ -45,9 +22,19 @@ services:
       - REDIS_READ_COUNT=${REDIS_READ_COUNT:-100}
       - REDIS_BLOCK_MS=${REDIS_BLOCK_MS:-1000}
       - SIGNAL_RETENTION_DAYS=${SIGNAL_RETENTION_DAYS:-0}
+      - POSITION_SNAPSHOT_SYNC_INTERVAL_SEC=${POSITION_SNAPSHOT_SYNC_INTERVAL_SEC:-5}
+      - POSITION_OWNERSHIP_GRACE_SEC=${POSITION_OWNERSHIP_GRACE_SEC:-30}
+      - POSITION_OWNERSHIP_CHECK_INTERVAL_SEC=${POSITION_OWNERSHIP_CHECK_INTERVAL_SEC:-5}
+      - ENABLE_POSITION_OWNERSHIP_MONITOR=${ENABLE_POSITION_OWNERSHIP_MONITOR:-true}
+      - OPEN_BOOK_PRE_SUBSCRIBE_ENABLED=${OPEN_BOOK_PRE_SUBSCRIBE_ENABLED:-true}
+      - OPEN_BOOK_READY_TIMEOUT_MS=${OPEN_BOOK_READY_TIMEOUT_MS:-750}
+      - OPEN_BOOK_MAX_AGE_MS=${OPEN_BOOK_MAX_AGE_MS:-500}
+      - EXECUTION_LATENCY_MODEL_ENABLED=${EXECUTION_LATENCY_MODEL_ENABLED:-false}
+      - EXECUTION_LATENCY_MS=${EXECUTION_LATENCY_MS:-50}
+      - EXECUTION_MIN_ADVERSE_BPS=${EXECUTION_MIN_ADVERSE_BPS:-0}
+      - EXECUTION_SECOND_QUOTE_TIMEOUT_MS=${EXECUTION_SECOND_QUOTE_TIMEOUT_MS:-200}
     networks:
-      - paper-trade
-      - market-data
+      - redis-net
     restart: unless-stopped
     healthcheck:
       test:
@@ -66,8 +53,6 @@ services:
     build: ./web
     ports:
       - "${WEB_PORT:-8097}:3000"
-    depends_on:
-      - redis
     volumes:
       - ./data:/app/data
       - ./logs/web:/app/logs
@@ -75,7 +60,7 @@ services:
     environment:
       - DB_PATH=/app/data/paper-trade.db
       - ALPHAS_DIR=/app/alphas
-      - REDIS_URL=redis://redis:6379
+      - REDIS_URL=redis://paper-redis:6379
       - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - HOSTNAME=0.0.0.0
       - PORT=3000
@@ -84,9 +69,5 @@ services:
       - TRADE_HISTORY_LIMIT=${TRADE_HISTORY_LIMIT:-200}
     command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
     networks:
-      - paper-trade
-      - market-data
+      - redis-net
     restart: unless-stopped
-
-volumes:
-  redis_data:

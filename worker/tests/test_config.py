@@ -32,5 +32,6 @@ def test_runtime_allows_no_mds_redis_when_mds_features_disabled():
         MDS_REDIS_URL="",
         ENABLE_ORDERBOOK_SLIPPAGE=False,
         ENABLE_WORKER_TPSL_AUTO_CLOSE=False,
+        ENABLE_POSITION_OWNERSHIP_MONITOR=False,
     )
     s.validate_runtime()

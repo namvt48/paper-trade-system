@@ -168,6 +168,7 @@ class HyperTurboEngine(BaseEngine):
     ) -> None:
         if qty <= 0:
             return
+        pos["remaining_qty"] = max(pos["remaining_qty"] - qty, 0.0)
         self.push_signal(
             "CLOSE",
             position_id=pos["position_id"],
@@ -180,7 +181,6 @@ class HyperTurboEngine(BaseEngine):
                 "reason": reason,
             }),
         )
-        pos["remaining_qty"] = max(pos["remaining_qty"] - qty, 0.0)
         logger.info(
             "[%s] %s @ %.6f qty=%.8f remaining=%.8f",
             reason, settings.SYMBOL, exit_price, qty, pos["remaining_qty"],

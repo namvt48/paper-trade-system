@@ -26,20 +26,27 @@ class ObExecCache:
     """
 
     def __init__(self, staleness_sec: float = 2.0, clock=time.monotonic) -> None:
-        # symbol -> (bid, ask, state, last_update_ts)
-        self._data: dict[str, tuple[float, float, str, float]] = {}
+        # (exchange, symbol) -> (bid, ask, state, last_update_ts)
+        self._data: dict[tuple[str, str], tuple[float, float, str, float]] = {}
+        self._waiters: dict[tuple[str, str], set[asyncio.Future]] = {}
         self._staleness_sec = staleness_sec
         self._clock = clock
 
-    def update(self, symbol: str, best_bid: float, best_ask: float, state: str) -> None:
-        self._data[symbol] = (best_bid, best_ask, state, self._clock())
+    def update(self, symbol: str, best_bid: float, best_ask: float, state: str,
+               exchange: str = "binance") -> None:
+        key = (exchange.lower(), symbol)
+        self._data[key] = (best_bid, best_ask, state, self._clock())
+        if self.is_ready(exchange, symbol):
+            for waiter in self._waiters.pop(key, set()):
+                if not waiter.done():
+                    waiter.set_result(True)
 
-    def side_price(self, symbol: str, position_side: str) -> float | None:
-        quote = self.side_quote(symbol, position_side)
+    def side_price(self, symbol: str, position_side: str, exchange: str = "binance") -> float | None:
+        quote = self.side_quote(symbol, position_side, exchange)
         return quote.price if quote is not None else None
 
-    def side_quote(self, symbol: str, position_side: str) -> PriceQuote | None:
-        item = self._data.get(symbol)
+    def side_quote(self, symbol: str, position_side: str, exchange: str = "binance") -> PriceQuote | None:
+        item = self._data.get((exchange.lower(), symbol))
         if item is None:
             return None
         bid, ask, state, ts = item
@@ -51,6 +58,31 @@ class ObExecCache:
         if not price or price <= 0:
             return None  # missing/zero price is not a usable executable price
         return PriceQuote(price=price, source="ob_exec", is_executable=True)
+
+    def is_ready(self, exchange: str, symbol: str) -> bool:
+        item = self._data.get((exchange.lower(), symbol))
+        if item is None:
+            return False
+        bid, ask, state, ts = item
+        return state == "READY" and bid > 0 and ask > 0 and self._clock() - ts <= self._staleness_sec
+
+    async def wait_ready(self, exchange: str, symbol: str, timeout: float) -> str:
+        if self.is_ready(exchange, symbol):
+            return "already_ready"
+        key = (exchange.lower(), symbol)
+        future = asyncio.get_running_loop().create_future()
+        self._waiters.setdefault(key, set()).add(future)
+        try:
+            await asyncio.wait_for(future, timeout)
+            return "became_ready"
+        except asyncio.TimeoutError:
+            return "timed_out"
+        finally:
+            waiters = self._waiters.get(key)
+            if waiters is not None:
+                waiters.discard(future)
+                if not waiters:
+                    self._waiters.pop(key, None)
 
 
 def make_exit_price_fn(ob_cache: ObExecCache, ticker_cache):
@@ -93,6 +125,7 @@ async def run_ob_exec_subscriber(cache: ObExecCache, connect_redis, exchange: st
                     best_bid=float(data.get("best_bid", 0.0)),
                     best_ask=float(data.get("best_ask", 0.0)),
                     state=data.get("book_state", ""),
+                    exchange=exchange,
                 )
         except asyncio.CancelledError:
             break

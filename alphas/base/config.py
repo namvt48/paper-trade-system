@@ -23,6 +23,10 @@ class BaseConfig(BaseSettings):
     MDS_EXCHANGE: str = ""
     PRICE_ALERT_SYNC_INTERVAL_SEC: float = 5.0
     PRICE_ALERT_STALE_SEC: float = 15.0
+    POSITION_RECONCILE_INTERVAL_SEC: float = 5.0
+    POSITION_SNAPSHOT_MAX_AGE_SEC: float = 15.0
+    ALPHA_RUNTIME_HEARTBEAT_TTL_SEC: int = 20
+    POSITION_RECONCILE_STARTUP_TIMEOUT_SEC: float = 30.0
 
     model_config = SettingsConfigDict(
         env_file=".env",

@@ -37,6 +37,31 @@ def merge_trade_metadata(open_metadata: str | None, close_metadata: str | None) 
     return json.dumps(result)
 
 
+def merge_position_runtime_metadata(current: str | None, update: str | None) -> str:
+    try:
+        base = json.loads(current or "{}")
+    except (TypeError, json.JSONDecodeError):
+        base = {}
+    if not isinstance(base, dict):
+        base = {}
+    try:
+        incoming = json.loads(update or "{}")
+    except (TypeError, json.JSONDecodeError):
+        incoming = {}
+    if not isinstance(incoming, dict):
+        incoming = {}
+    runtime = incoming.get("strategy_runtime")
+    if isinstance(runtime, dict):
+        existing = base.get("strategy_runtime")
+        merged = dict(existing) if isinstance(existing, dict) else {}
+        merged.update(runtime)
+        base["strategy_runtime"] = merged
+        base["strategy_runtime_version"] = int(
+            incoming.get("strategy_runtime_version", base.get("strategy_runtime_version", 1))
+        )
+    return json.dumps(base)
+
+
 class Database:
     def __init__(self, db_path: str):
         self.db_path = db_path
@@ -233,7 +258,8 @@ class Database:
         row = await cursor.fetchone()
         return dict(row) if row else None
 
-    async def modify_position(self, position_id: str, tp: float = None, sl: float = None):
+    async def modify_position(self, position_id: str, tp: float = None, sl: float = None,
+                              metadata: str | None = None):
         updates = []
         params = []
         if tp is not None:
@@ -242,6 +268,10 @@ class Database:
         if sl is not None:
             updates.append("sl = ?")
             params.append(sl)
+        if metadata and metadata not in ("{}", ""):
+            pos = await self.get_position(position_id)
+            updates.append("metadata = ?")
+            params.append(merge_position_runtime_metadata(pos.get("metadata") if pos else None, metadata))
         if not updates:
             return
         params.append(position_id)
@@ -323,8 +353,12 @@ class Database:
             )
         else:
             await self._conn.execute(
-                "UPDATE positions SET qty = ? WHERE position_id = ?",
-                (remaining_qty, position_id),
+                "UPDATE positions SET qty = ?, metadata = ? WHERE position_id = ?",
+                (
+                    remaining_qty,
+                    merge_position_runtime_metadata(pos.get("metadata"), close_metadata),
+                    position_id,
+                ),
             )
         await self._commit()
 

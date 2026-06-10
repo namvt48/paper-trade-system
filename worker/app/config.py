@@ -30,6 +30,17 @@ class Settings(BaseSettings):
     MDS_REDIS_CONNECT_TIMEOUT: float = 1.0
     ORDERBOOK_SYNC_INTERVAL: float = 5.0
     TICKER_STALENESS_SEC: float = 5.0
+    POSITION_SNAPSHOT_SYNC_INTERVAL_SEC: float = 5.0
+    POSITION_OWNERSHIP_GRACE_SEC: float = 30.0
+    POSITION_OWNERSHIP_CHECK_INTERVAL_SEC: float = 5.0
+    ENABLE_POSITION_OWNERSHIP_MONITOR: bool = True
+    OPEN_BOOK_PRE_SUBSCRIBE_ENABLED: bool = True
+    OPEN_BOOK_READY_TIMEOUT_MS: int = 750
+    OPEN_BOOK_MAX_AGE_MS: int = 500
+    EXECUTION_LATENCY_MODEL_ENABLED: bool = False
+    EXECUTION_LATENCY_MS: int = 50
+    EXECUTION_MIN_ADVERSE_BPS: float = 0.0
+    EXECUTION_SECOND_QUOTE_TIMEOUT_MS: int = 200
 
     def get_orderbook_exchanges(self) -> set[str]:
         return {
@@ -43,6 +54,7 @@ class Settings(BaseSettings):
             raise ValueError("REDIS_URL is required")
         if (
             self.ENABLE_ORDERBOOK_SLIPPAGE or self.ENABLE_WORKER_TPSL_AUTO_CLOSE
+            or self.ENABLE_POSITION_OWNERSHIP_MONITOR
         ) and not self.MDS_REDIS_URL.strip():
             raise ValueError(
                 "MDS_REDIS_URL is required when orderbook slippage or worker TP/SL is enabled"
