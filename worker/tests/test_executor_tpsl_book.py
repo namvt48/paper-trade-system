@@ -48,6 +48,24 @@ async def test_fill_resolver_overrides_exit(tmp_path):
 
 
 @pytest.mark.asyncio
+async def test_fill_resolver_error_falls_back_to_fixed_pct(tmp_path):
+    db = Database(str(tmp_path / "t.db"))
+    await db.init()
+    ex = Executor(db, slippage_pct=0.0)
+    await _open(ex, "LONG", 95000.0, tp=97000.0)
+
+    async def bad_resolver(exchange, symbol, side, qty, ref_price, is_close):
+        raise RuntimeError("rpc down")
+
+    # A failing resolver must not abort the auto-close pass; the hit still closes
+    # via fixed-pct (pct 0 -> trigger price).
+    hits = await ex.check_tpsl_hits({"BTCUSDT": 97500.0}, fill_resolver=bad_resolver)
+    assert len(hits) == 1
+    assert hits[0]["exit_price"] == pytest.approx(97500.0)
+    await db.close()
+
+
+@pytest.mark.asyncio
 async def test_legacy_dict_still_works(tmp_path):
     db = Database(str(tmp_path / "t.db"))
     await db.init()

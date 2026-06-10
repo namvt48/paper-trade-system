@@ -189,10 +189,17 @@ class Executor:
                 if fill_resolver is None:
                     fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
                 else:
-                    fill_exit = await fill_resolver(
-                        pos.get("exchange", "binance"), pos["symbol"], pos["side"],
-                        pos["qty"], exit_price, True,
-                    )
+                    try:
+                        fill_exit = await fill_resolver(
+                            pos.get("exchange", "binance"), pos["symbol"], pos["side"],
+                            pos["qty"], exit_price, True,
+                        )
+                    except Exception as exc:
+                        # One symbol's fill failure must not abort the whole auto-close
+                        # pass; fall back to fixed-pct for this position.
+                        logger.warning("[TPSL] fill_resolver failed for %s: %s; using fixed-pct",
+                                       pos["symbol"], exc)
+                        fill_exit = self._apply_slippage(exit_price, pos["side"], is_close=True)
                 now = datetime.now(timezone.utc).isoformat()
                 close_meta = json.dumps({
                     "close_model": "worker_tpsl_auto",

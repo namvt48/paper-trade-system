@@ -36,6 +36,9 @@ class TickerPriceCache:
             return dict(self._prices)
         return {symbol: self._prices[symbol] for symbol in symbols if symbol in self._prices}
 
+    def get_price(self, symbol: str) -> float | None:
+        return self._prices.get(symbol)
+
 
 def configure_logging() -> None:
     os.makedirs(settings.LOG_DIR, exist_ok=True)

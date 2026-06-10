@@ -11,10 +11,8 @@ class _TickerCache:
     def __init__(self, prices):
         self._p = prices
 
-    def get_prices(self, symbols=None):
-        if symbols is None:
-            return dict(self._p)
-        return {s: self._p[s] for s in symbols if s in self._p}
+    def get_price(self, symbol):
+        return self._p.get(symbol)
 
 
 def test_side_price_ready_long_uses_bid():
@@ -28,6 +26,24 @@ def test_side_price_returns_none_when_not_ready():
     c = ObExecCache()
     c.update("BTCUSDT", best_bid=100.0, best_ask=101.0, state="STALE")
     assert c.side_price("BTCUSDT", "LONG") is None
+
+
+def test_side_price_none_when_price_missing_or_zero():
+    # A READY message with a missing/zero price must NOT be treated as a valid book
+    # price (else side_price returns 0.0 and triggers a spurious TP/SL close at ~0).
+    c = ObExecCache()
+    c.update("BTCUSDT", best_bid=0.0, best_ask=101.0, state="READY")
+    assert c.side_price("BTCUSDT", "LONG") is None     # bid unusable
+    assert c.side_price("BTCUSDT", "SHORT") == 101.0   # ask still good
+
+
+def test_side_price_none_when_stale():
+    now = [1000.0]
+    c = ObExecCache(staleness_sec=2.0, clock=lambda: now[0])
+    c.update("BTCUSDT", best_bid=100.0, best_ask=101.0, state="READY")
+    assert c.side_price("BTCUSDT", "LONG") == 100.0    # fresh
+    now[0] += 5.0                                       # MDS stopped publishing
+    assert c.side_price("BTCUSDT", "LONG") is None      # stale -> unavailable
 
 
 def test_exit_price_fn_prefers_book_then_ticker():
