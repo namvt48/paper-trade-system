@@ -88,7 +88,7 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
             elif signal.type == SignalType.CLOSE:
                 pos = await db.get_position(signal.position_id)
                 if pos:
-                    raw_exit = signal.exit_price or pos["entry_price"]
+                    raw_exit = Executor.close_ref_price(signal, pos)
                     qty = signal.qty if (signal.qty is not None and signal.qty > 0) else pos["qty"]
                     fill_price = await fill_service.resolve(
                         pos.get("exchange", "binance"), pos["symbol"], pos["side"], qty,
@@ -293,8 +293,12 @@ async def run_consumer():
                         logger.info("Processed %s signal: %s", data.get("type"), result)
                     if result is not None and data.get("type") == "OPEN" and settings.ENABLE_ORDERBOOK_SLIPPAGE:
                         try:
-                            await publish_subscribe(redis_client, settings.ORDERBOOK_EXCHANGE,
-                                                    settings.CONSUMER_NAME, data.get("symbol", ""))
+                            # Bounded so a stalled publish can't freeze the consumer loop.
+                            await asyncio.wait_for(
+                                publish_subscribe(redis_client, settings.ORDERBOOK_EXCHANGE,
+                                                  settings.CONSUMER_NAME, data.get("symbol", "")),
+                                timeout=2.0,
+                            )
                         except Exception as exc:
                             logger.warning("orderbook subscribe publish failed: %s", exc)
                     await redis_client.xack(

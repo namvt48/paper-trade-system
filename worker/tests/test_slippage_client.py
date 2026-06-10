@@ -47,6 +47,28 @@ async def test_fill_service_uses_book_avg():
 
 
 @pytest.mark.asyncio
+async def test_breaker_short_circuits_after_consecutive_failures():
+    r = fakeredis.aioredis.FakeRedis(decode_responses=True)
+    client = SlippageClient(r, failure_threshold=2, cooldown_sec=100.0)
+    # two timeouts (no response seeded) -> breaker opens
+    assert await client.query("binance", "BTCUSDT", "BUY", 1.0, timeout=0.05, request_id="a") is None
+    assert await client.query("binance", "BTCUSDT", "BUY", 1.0, timeout=0.05, request_id="b") is None
+    # breaker now open: next call returns None immediately WITHOUT pushing a request
+    await r.delete("orderbook:slip:req:binance")
+    assert await client.query("binance", "BTCUSDT", "BUY", 1.0, timeout=0.05, request_id="c") is None
+    assert await r.llen("orderbook:slip:req:binance") == 0
+
+
+@pytest.mark.asyncio
+async def test_request_list_is_capped():
+    r = fakeredis.aioredis.FakeRedis(decode_responses=True)
+    client = SlippageClient(r, max_req_backlog=3, failure_threshold=100)  # breaker won't open
+    for i in range(6):
+        await client.query("binance", "BTCUSDT", "BUY", 1.0, timeout=0.02, request_id=f"r{i}")
+    assert await r.llen("orderbook:slip:req:binance") <= 3
+
+
+@pytest.mark.asyncio
 async def test_fill_service_falls_back_on_timeout():
     r = fakeredis.aioredis.FakeRedis(decode_responses=True)
     svc = FillService(SlippageClient(r), slippage_pct=0.5, timeout=1)

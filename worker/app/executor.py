@@ -74,6 +74,13 @@ class Executor:
 
         return {"position_id": signal.position_id, "modified": True}
 
+    @staticmethod
+    def close_ref_price(signal: CloseSignal, pos) -> float:
+        """Reference exit price for a close: the signal's exit_price, else the entry price.
+        Shared with main.process_signal_message so the RPC ref and the recorded close
+        price are always derived the same way."""
+        return signal.exit_price or pos["entry_price"]
+
     async def process_close(self, signal: CloseSignal, fill_price: float | None = None) -> dict:
         pos = await self.db.get_position(signal.position_id)
         if not pos:
@@ -87,7 +94,7 @@ class Executor:
                 f"Close qty exceeds open qty: {close_qty} > {pos['qty']}"
             )
 
-        raw_exit = signal.exit_price or pos["entry_price"]
+        raw_exit = self.close_ref_price(signal, pos)
         exit_price = (
             fill_price if fill_price is not None
             else self._apply_slippage(raw_exit, pos["side"], is_close=True)
