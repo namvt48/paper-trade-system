@@ -48,3 +48,21 @@ def resolve_fill_price(
         return avg
     remainder = requested - filled
     return (filled * avg + remainder * _fallback()) / requested
+
+
+def book_slippage_suffix(execution_metadata: dict | None) -> str:
+    """Render the order-book slippage as a log suffix from an executor's
+    execution_metadata ({"execution": <FillResolution asdict>} or {}). Returns an
+    empty string when there is no execution metadata (e.g. a plain float fill)."""
+    execution = (execution_metadata or {}).get("execution")
+    if not execution:
+        return ""
+    bps = execution.get("book_slippage_bps")
+    source = execution.get("initial_source", "unknown")
+    if bps is None:
+        reason = execution.get("fallback_reason")
+        tail = f"{source}({reason})" if reason else source
+        return f" | book_slip=n/a src={tail}"
+    state = execution.get("initial_book_state")
+    state_part = f" state={state}" if state else ""
+    return f" | book_slip={bps:.1f}bps src={source}{state_part}"

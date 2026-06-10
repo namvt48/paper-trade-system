@@ -43,3 +43,25 @@ def test_resolve_executable_ref_skips_extra_slippage_on_fallback():
     assert resolve_fill_price(None, 100.0, "LONG", True, 0.5, ref_is_executable=True) == 100.0
     # non-executable ref (default): fixed-pct still applies (LONG close 100 -> 99.95).
     assert resolve_fill_price(None, 100.0, "LONG", True, 0.5) == pytest.approx(99.95)
+
+
+def test_book_slippage_suffix_book_sourced():
+    from app.fill import book_slippage_suffix
+    md = {"execution": {
+        "book_slippage_bps": 8.4, "initial_source": "live_book", "initial_book_state": "READY",
+    }}
+    assert book_slippage_suffix(md) == " | book_slip=8.4bps src=live_book state=READY"
+
+
+def test_book_slippage_suffix_fallback():
+    from app.fill import book_slippage_suffix
+    md = {"execution": {
+        "book_slippage_bps": None, "initial_source": "fixed_pct", "fallback_reason": "rpc_unavailable",
+    }}
+    assert book_slippage_suffix(md) == " | book_slip=n/a src=fixed_pct(rpc_unavailable)"
+
+
+def test_book_slippage_suffix_empty():
+    from app.fill import book_slippage_suffix
+    assert book_slippage_suffix({}) == ""
+    assert book_slippage_suffix(None) == ""
