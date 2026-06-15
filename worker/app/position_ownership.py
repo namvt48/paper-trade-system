@@ -10,14 +10,18 @@ logger = logging.getLogger(__name__)
 
 class PositionOwnershipMonitor:
     def __init__(self, db, paper_redis, mds_redis, grace_sec: float = 30.0,
-                 interval_sec: float = 5.0, clock=time.monotonic) -> None:
+                 interval_sec: float = 5.0, clock=time.monotonic,
+                 summary_interval_sec: float = 300.0) -> None:
         self.db = db
         self.paper_redis = paper_redis
         self.mds_redis = mds_redis
         self.grace_sec = grace_sec
         self.interval_sec = interval_sec
         self.clock = clock
+        self.summary_interval_sec = summary_interval_sec
         self._mismatch_since: float | None = None
+        self._last_log_signature: str | None = None
+        self._last_log_at: float | None = None
         self.last_report = {"healthy": True, "mismatch_count": 0, "details": []}
 
     async def check(self) -> dict:
@@ -81,7 +85,19 @@ class PositionOwnershipMonitor:
             "details": details,
         }
         if details:
-            logger.warning("[POSITION-OWNERSHIP] %s", json.dumps(self.last_report, sort_keys=True))
+            signature = json.dumps(details, sort_keys=True)
+            if (
+                signature != self._last_log_signature
+                or self._last_log_at is None
+                or now - self._last_log_at >= self.summary_interval_sec
+            ):
+                logger.warning("[POSITION-OWNERSHIP] %s", json.dumps(self.last_report, sort_keys=True))
+                self._last_log_signature = signature
+                self._last_log_at = now
+        elif self._last_log_signature is not None:
+            logger.info("[POSITION-OWNERSHIP] recovered")
+            self._last_log_signature = None
+            self._last_log_at = now
         return self.last_report
 
     async def run(self) -> None:

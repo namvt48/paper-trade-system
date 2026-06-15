@@ -6,6 +6,7 @@ import pytest
 
 from base.config import BaseConfig
 from base.engine import BaseEngine
+from base.position_reconcile import normalize_position
 
 
 class FakeRedis:
@@ -34,6 +35,28 @@ class Engine(BaseEngine):
     def _get_warmup_symbols(self): return []
     async def _manage_positions(self): pass
     def _has_open_positions(self): return bool(self._open_positions)
+
+
+def test_normalize_position_restores_last_strategy_candle():
+    position = normalize_position({
+        "position_id": "p1",
+        "alpha_id": "a",
+        "symbol": "BTCUSDT",
+        "side": "LONG",
+        "entry_price": 100,
+        "qty": 2,
+        "tp": 110,
+        "sl": 95,
+        "metadata": {
+            "strategy_runtime": {
+                "entry_candle_open_ms": 1_000_000,
+                "signal_candle_close_ms": 1_900_000,
+                "last_strategy_candle_ms": 2_800_000,
+            },
+        },
+    })
+
+    assert position["last_strategy_candle_ms"] == 2_800_000
 
 
 @pytest.mark.asyncio

@@ -256,6 +256,16 @@ async def register_configured_alphas(db: Database) -> None:
         logger.info("Registered alpha from config: %s", alpha_id)
 
 
+async def ensure_consumer_group(redis_client) -> None:
+    try:
+        await redis_client.xgroup_create(
+            settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True
+        )
+    except redis_lib.ResponseError as exc:
+        if "BUSYGROUP" not in str(exc):
+            raise
+
+
 async def run_consumer():
     configure_logging()
     settings.validate_runtime()
@@ -314,10 +324,7 @@ async def run_consumer():
     ownership_task = None
 
     try:
-        try:
-            await paper_redis.xgroup_create(settings.REDIS_STREAM, settings.CONSUMER_GROUP, id="0", mkstream=True)
-        except redis_lib.ResponseError:
-            pass
+        await ensure_consumer_group(paper_redis)
 
         if settings.ENABLE_ORDERBOOK_SLIPPAGE:
             ob_exec_tasks = [

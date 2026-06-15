@@ -70,6 +70,8 @@ class Alpha1BangocEngine(BaseEngine):
 
         symbol = settings.SYMBOL
         pos = self._open_positions.get(symbol)
+        if pos and not self._claim_position_candle(pos, signal_open_time_ms):
+            return
         if pos and pos["side"] == indic.side:
             return
 

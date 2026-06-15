@@ -269,6 +269,8 @@ class Alpha1V5bReverseEngine(BaseEngine):
         side = pos["side"] if pos else None
 
         if pos is not None:
+            if not self._claim_position_candle(pos, signal_open_time_ms):
+                return
             bars = self._bars_held(pos, signal_open_time_ms)
 
             # TIME exit — force close regardless of trend or hold period

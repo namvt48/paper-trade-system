@@ -334,6 +334,39 @@ class BaseEngine(ABC):
             return {str(symbol) for symbol in positions.keys() if symbol}
         return set()
 
+    def _claim_position_candle(self, position: dict, candle_open_ms: int) -> bool:
+        """Claim one closed strategy candle for position management.
+
+        The entry candle predates the position and must never drive an exit. A
+        repeated latest candle must also be ignored when MDS has not published
+        the next timeframe candle before the alpha's boundary scan.
+        """
+        try:
+            candle_open_ms = int(candle_open_ms)
+            entry_open_ms = int(position.get("entry_candle_open_ms", 0) or 0)
+            entry_close_ms = int(position.get("signal_candle_close_ms", 0) or 0)
+            last_processed_ms = int(
+                position.get(
+                    "last_strategy_candle_ms",
+                    entry_open_ms if entry_open_ms > 0 else entry_close_ms - 1,
+                )
+                or 0
+            )
+        except (TypeError, ValueError):
+            return False
+
+        if candle_open_ms <= 0:
+            return False
+        if entry_close_ms > 0 and candle_open_ms < entry_close_ms:
+            return False
+        if entry_close_ms <= 0 and entry_open_ms > 0 and candle_open_ms <= entry_open_ms:
+            return False
+        if candle_open_ms <= last_processed_ms:
+            return False
+
+        position["last_strategy_candle_ms"] = candle_open_ms
+        return True
+
     def mark_positions_changed(self) -> None:
         self._positions_changed.set()
 

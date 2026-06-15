@@ -1,8 +1,10 @@
 import pytest
 import json
+from unittest.mock import AsyncMock
+from redis.exceptions import ResponseError
 from app.db import Database
 from app.executor import Executor
-from app.main import process_signal_message
+from app.main import ensure_consumer_group, process_signal_message
 
 
 @pytest.fixture
@@ -176,6 +178,23 @@ async def test_worker_tpsl_disabled_by_default(setup):
     """When ENABLE_WORKER_TPSL_AUTO_CLOSE is False, no ticker subscription is created."""
     from app.config import settings
     assert settings.ENABLE_WORKER_TPSL_AUTO_CLOSE is False
+
+
+@pytest.mark.asyncio
+async def test_ensure_consumer_group_ignores_busygroup():
+    redis = AsyncMock()
+    redis.xgroup_create.side_effect = ResponseError("BUSYGROUP Consumer Group name already exists")
+
+    await ensure_consumer_group(redis)
+
+
+@pytest.mark.asyncio
+async def test_ensure_consumer_group_surfaces_other_redis_errors():
+    redis = AsyncMock()
+    redis.xgroup_create.side_effect = ResponseError("NOAUTH Authentication required")
+
+    with pytest.raises(ResponseError, match="NOAUTH"):
+        await ensure_consumer_group(redis)
 
 
 @pytest.mark.asyncio

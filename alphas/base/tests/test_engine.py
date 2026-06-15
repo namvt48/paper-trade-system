@@ -77,6 +77,31 @@ def test_engine_symbol_data_is_multi_tf(engine):
     assert isinstance(engine.symbol_data, dict)
 
 
+def test_claim_position_candle_rejects_entry_candle_and_duplicates(engine):
+    entry_open_ms = 1_000_000
+    candle_ms = 900_000
+    position = {
+        "entry_candle_open_ms": entry_open_ms,
+        "signal_candle_close_ms": entry_open_ms + candle_ms,
+    }
+
+    assert engine._claim_position_candle(position, entry_open_ms) is False
+    assert "last_strategy_candle_ms" not in position
+
+    next_candle_ms = entry_open_ms + candle_ms
+    assert engine._claim_position_candle(position, next_candle_ms) is True
+    assert position["last_strategy_candle_ms"] == next_candle_ms
+    assert engine._claim_position_candle(position, next_candle_ms) is False
+    assert engine._claim_position_candle(position, next_candle_ms + candle_ms) is True
+
+
+def test_claim_position_candle_supports_legacy_position_without_timing(engine):
+    position = {}
+
+    assert engine._claim_position_candle(position, 1_000_000) is True
+    assert engine._claim_position_candle(position, 1_000_000) is False
+
+
 def test_engine_stale_threshold_respects_kline_timeframe(mds_engine):
     assert mds_engine._stale_threshold_seconds() == pytest.approx(2250.0)
 
