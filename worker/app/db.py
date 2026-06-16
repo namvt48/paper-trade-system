@@ -393,6 +393,13 @@ class Database:
         )
         await self._commit()
 
+    async def signal_processed(self, signal_id: str) -> bool:
+        cursor = await self._conn.execute(
+            "SELECT 1 FROM signals WHERE signal_id = ? AND processed = 1 LIMIT 1",
+            (signal_id,),
+        )
+        return await cursor.fetchone() is not None
+
     async def get_signals(self, alpha_id: str = None, limit: int = 100):
         if alpha_id:
             cursor = await self._conn.execute(

@@ -4,6 +4,7 @@ from unittest.mock import AsyncMock, MagicMock, patch
 
 import pytest
 
+import redis as redis_lib
 from base.config import BaseConfig
 from base.engine import BaseEngine
 from base.models import SymbolData
@@ -36,6 +37,7 @@ def engine():
     config.LOG_DIR = "/tmp/test_logs"
     config.DATA_MAX_CANDLES = 1000
     config.WARMUP_BARS = 50
+    config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
     config.SYMBOL_BLACKLIST = ""
     config.TF = "15m"
     config.MANAGE_INTERVAL_SEC = 60.0
@@ -43,6 +45,15 @@ def engine():
     config.MDS_EXCHANGE = ""
     config.PRICE_ALERT_SYNC_INTERVAL_SEC = 5.0
     config.PRICE_ALERT_STALE_SEC = 15.0
+    config.POSITION_RECONCILE_INTERVAL_SEC = 5.0
+    config.POSITION_SNAPSHOT_MAX_AGE_SEC = 15.0
+    config.ALPHA_RUNTIME_HEARTBEAT_TTL_SEC = 20
+    config.POSITION_RECONCILE_STARTUP_TIMEOUT_SEC = 30.0
+    config.RECONNECT_WARMUP_SKIP_IF_FRESH_SEC = 300.0
+    config.RECONCILE_NO_POSITION_IS_OK = True
+    config.RECONCILE_STALE_SUSPEND_NEW_ENTRIES = True
+    config.DATA_STALE_SUSPEND_NEW_ENTRIES = True
+    config.PRICE_ALERT_SYNC_SUSPEND_NEW_ENTRIES = True
     return MockEngine(config)
 
 
@@ -56,6 +67,7 @@ def engine_with_blacklist():
     config.LOG_DIR = "/tmp/test_logs"
     config.DATA_MAX_CANDLES = 1000
     config.WARMUP_BARS = 50
+    config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
     config.SYMBOL_BLACKLIST = "BTCUSDT,DOGEUSDT"
     config.TF = "15m"
     config.MANAGE_INTERVAL_SEC = 60.0
@@ -63,6 +75,15 @@ def engine_with_blacklist():
     config.MDS_EXCHANGE = ""
     config.PRICE_ALERT_SYNC_INTERVAL_SEC = 5.0
     config.PRICE_ALERT_STALE_SEC = 15.0
+    config.POSITION_RECONCILE_INTERVAL_SEC = 5.0
+    config.POSITION_SNAPSHOT_MAX_AGE_SEC = 15.0
+    config.ALPHA_RUNTIME_HEARTBEAT_TTL_SEC = 20
+    config.POSITION_RECONCILE_STARTUP_TIMEOUT_SEC = 30.0
+    config.RECONNECT_WARMUP_SKIP_IF_FRESH_SEC = 300.0
+    config.RECONCILE_NO_POSITION_IS_OK = True
+    config.RECONCILE_STALE_SUSPEND_NEW_ENTRIES = True
+    config.DATA_STALE_SUSPEND_NEW_ENTRIES = True
+    config.PRICE_ALERT_SYNC_SUSPEND_NEW_ENTRIES = True
     return MockEngine(config)
 
 
@@ -75,6 +96,14 @@ def mds_engine(engine):
 
 def test_engine_symbol_data_is_multi_tf(engine):
     assert isinstance(engine.symbol_data, dict)
+
+
+def test_engine_config_has_runtime_safety_fields():
+    assert "RECONNECT_WARMUP_SKIP_IF_FRESH_SEC" in BaseConfig.model_fields
+    assert "RECONCILE_NO_POSITION_IS_OK" in BaseConfig.model_fields
+    assert "RECONCILE_STALE_SUSPEND_NEW_ENTRIES" in BaseConfig.model_fields
+    assert "DATA_STALE_SUSPEND_NEW_ENTRIES" in BaseConfig.model_fields
+    assert "PRICE_ALERT_SYNC_SUSPEND_NEW_ENTRIES" in BaseConfig.model_fields
 
 
 def test_claim_position_candle_rejects_entry_candle_and_duplicates(engine):
@@ -431,6 +460,85 @@ def test_engine_can_open_new_trades_only_when_live(engine):
     assert engine.can_open_new_trades() is True
 
 
+def test_engine_can_open_new_trades_requires_all_safety_flags_clear(mds_engine):
+    mds_engine.runtime_state = "LIVE"
+    mds_engine._data_stale = False
+    mds_engine._position_reconcile_stale = False
+    mds_engine._price_alert_sync_stale = False
+    assert mds_engine.can_open_new_trades() is True
+
+    mds_engine._data_stale = True
+    assert mds_engine.can_open_new_trades() is False
+    mds_engine._data_stale = False
+
+    mds_engine._position_reconcile_stale = True
+    assert mds_engine.can_open_new_trades() is False
+    mds_engine._position_reconcile_stale = False
+
+    mds_engine._price_alert_sync_stale = True
+    assert mds_engine.can_open_new_trades() is False
+
+
+def test_engine_reconnect_skip_uses_tf_aware_freshness(mds_engine):
+    mds_engine.config.TF = "15m"
+    mds_engine.config.RECONNECT_WARMUP_SKIP_IF_FRESH_SEC = 300.0
+    mds_engine.config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
+    now_ms = int(time.time() * 1000)
+    ten_minutes_ago_ms = now_ms - 600_000
+    mds_engine.symbols = ["BTCUSDT"]
+    mds_engine.symbol_data["BTCUSDT"] = {"15m": SymbolData(
+        price_list=[1.0], volume_list=[1.0], high_list=[1.0],
+        low_list=[1.0], open_list=[1.0], time_list=[ten_minutes_ago_ms],
+    )}
+    mds_engine.last_redis_message_at = time.time()
+    assert mds_engine._should_skip_reconnect_warmup("15m") is True
+
+
+def test_engine_reconnect_does_not_skip_when_coverage_below_required(mds_engine):
+    mds_engine.config.TF = "15m"
+    mds_engine.config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
+    mds_engine.symbols = ["BTCUSDT", "ETHUSDT"]
+    now_ms = int(time.time() * 1000)
+    mds_engine.symbol_data["BTCUSDT"] = {"15m": SymbolData(
+        price_list=[1.0], volume_list=[1.0], high_list=[1.0],
+        low_list=[1.0], open_list=[1.0], time_list=[now_ms],
+    )}
+    mds_engine.last_redis_message_at = time.time()
+    assert mds_engine._should_skip_reconnect_warmup("15m") is False
+
+
+def test_engine_data_stale_suspends_entries_but_does_not_break_listener(mds_engine):
+    mds_engine.runtime_state = "LIVE"
+    mds_engine._data_stale = True
+    assert mds_engine.can_open_new_trades() is False
+    assert mds_engine._stale_should_break_listener() is False
+
+
+def test_engine_transport_failure_can_break_listener(mds_engine):
+    mds_engine._transport_reconnect_requested = True
+    assert mds_engine._stale_should_break_listener() is True
+
+
+def test_price_alert_sync_failure_only_sets_price_alert_flag(mds_engine):
+    mds_engine.runtime_state = "LIVE"
+    mds_engine._mark_price_alert_sync_failed(redis_lib.RedisError("boom"))
+    assert mds_engine._price_alert_sync_stale is True
+    assert mds_engine._data_stale is False
+    assert mds_engine._position_reconcile_stale is False
+    assert mds_engine.runtime_state == "LIVE"
+    assert mds_engine.can_open_new_trades() is False
+
+
+def test_price_alert_sync_recovery_only_clears_price_alert_flag(mds_engine):
+    mds_engine.runtime_state = "STALE"
+    mds_engine._data_stale = True
+    mds_engine._price_alert_sync_stale = True
+    mds_engine._mark_price_alert_sync_recovered()
+    assert mds_engine._price_alert_sync_stale is False
+    assert mds_engine._data_stale is True
+    assert mds_engine.runtime_state == "STALE"
+
+
 def test_engine_mds_ignores_wrong_exchange_kline(mds_engine):
     mds_engine.on_kline_message(
         {
@@ -511,6 +619,7 @@ async def test_engine_snapshot_loads_fresh_candles(mds_engine):
         })
 
     redis_mock = MagicMock()
+    redis_mock.lrange.return_value = []
     redis_mock.hgetall.return_value = {str(c["open_time"]): json.dumps(c) for c in candles}
 
     loaded = await mds_engine._try_snapshot_warmup(redis_mock, ["BTCUSDT"], tf, 50)
@@ -518,6 +627,88 @@ async def test_engine_snapshot_loads_fresh_candles(mds_engine):
     assert "BTCUSDT" in loaded
     assert "BTCUSDT" in mds_engine.symbol_data
     assert len(mds_engine.symbol_data["BTCUSDT"][tf].time_list) == 50
+
+
+@pytest.mark.asyncio
+async def test_engine_snapshot_prefers_v2_list(mds_engine):
+    tf = "15m"
+    candle_ms = 900_000
+    now_ms = int(time.time() * 1000)
+    v2_candles = []
+    legacy_candles = []
+    for i in range(50):
+        open_time = now_ms - (50 - i) * candle_ms
+        v2_candles.append({
+            "symbol": "BTCUSDT", "tf": tf, "open_time": open_time,
+            "open": 60000.0, "high": 60100.0, "low": 59900.0, "close": 60050.0, "volume": 100.0,
+        })
+        legacy_candles.append({
+            "symbol": "BTCUSDT", "tf": tf, "open_time": open_time,
+            "open": 61000.0, "high": 61100.0, "low": 60900.0, "close": 61050.0, "volume": 100.0,
+        })
+
+    redis_mock = MagicMock()
+    redis_mock.lrange.return_value = [json.dumps(c) for c in reversed(v2_candles)]
+    redis_mock.hgetall.return_value = {str(c["open_time"]): json.dumps(c) for c in legacy_candles}
+
+    loaded = await mds_engine._try_snapshot_warmup(redis_mock, ["BTCUSDT"], tf, 50)
+
+    assert loaded == {"BTCUSDT"}
+    assert mds_engine.symbol_data["BTCUSDT"][tf].price_list[-1] == pytest.approx(60050.0)
+    redis_mock.hgetall.assert_not_called()
+
+
+@pytest.mark.asyncio
+async def test_engine_snapshot_falls_back_to_legacy_hash(mds_engine):
+    tf = "15m"
+    candle_ms = 900_000
+    now_ms = int(time.time() * 1000)
+    candles = []
+    for i in range(50):
+        open_time = now_ms - (50 - i) * candle_ms
+        candles.append({
+            "symbol": "BTCUSDT", "tf": tf, "open_time": open_time,
+            "open": 61000.0, "high": 61100.0, "low": 60900.0, "close": 61050.0, "volume": 100.0,
+        })
+
+    redis_mock = MagicMock()
+    redis_mock.lrange.return_value = []
+    redis_mock.hgetall.return_value = {str(c["open_time"]): json.dumps(c) for c in candles}
+
+    loaded = await mds_engine._try_snapshot_warmup(redis_mock, ["BTCUSDT"], tf, 50)
+
+    assert loaded == {"BTCUSDT"}
+    assert len(mds_engine.symbol_data["BTCUSDT"][tf].time_list) == 50
+    assert mds_engine.symbol_data["BTCUSDT"][tf].price_list[-1] == pytest.approx(61050.0)
+
+
+@pytest.mark.asyncio
+async def test_request_warmup_uses_snapshot_fast_path_for_large_bars(mds_engine, monkeypatch):
+    mds_engine.config.WARMUP_BARS = 8641
+    mds_engine.config.WARMUP_TIMEOUT_SEC = 1
+    mds_engine.config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
+
+    redis_mock = MagicMock()
+    redis_mock.ping.return_value = True
+
+    async def fake_connect(url):
+        return redis_mock
+
+    async def fake_snapshot(redis_client, symbols, tf, bars):
+        assert symbols == ["BTCUSDT"]
+        assert bars == 8641
+        now_ms = int(time.time() * 1000)
+        mds_engine.symbol_data["BTCUSDT"] = {"15m": SymbolData(
+            price_list=[1.0], volume_list=[1.0], high_list=[1.0],
+            low_list=[1.0], open_list=[1.0], time_list=[now_ms],
+        )}
+        return {"BTCUSDT"}
+
+    monkeypatch.setattr(mds_engine, "_get_warmup_symbols", lambda: ["BTCUSDT"])
+    monkeypatch.setattr(mds_engine, "_connect_redis", fake_connect)
+    monkeypatch.setattr(mds_engine, "_try_snapshot_warmup", fake_snapshot)
+    result = await mds_engine._request_warmup()
+    assert result is True
 
 
 @pytest.mark.asyncio
@@ -536,6 +727,7 @@ async def test_engine_snapshot_ignores_stale(mds_engine):
         })
 
     redis_mock = MagicMock()
+    redis_mock.lrange.return_value = []
     redis_mock.hgetall.return_value = {str(c["open_time"]): json.dumps(c) for c in candles}
 
     loaded = await mds_engine._try_snapshot_warmup(redis_mock, ["BTCUSDT"], tf, 50)
@@ -681,6 +873,7 @@ async def test_engine_snapshot_skips_if_insufficient_bars(mds_engine):
                for i in range(10)]
 
     redis_mock = MagicMock()
+    redis_mock.lrange.return_value = []
     redis_mock.hgetall.return_value = {str(c["open_time"]): json.dumps(c) for c in candles}
 
     loaded = await mds_engine._try_snapshot_warmup(redis_mock, ["BTCUSDT"], tf, 50)
@@ -696,16 +889,39 @@ async def test_engine_warmup_timeout_returns_false(mds_engine):
     mds_engine.config.INITIAL_DATA_TIMEOUT_SEC = 0.1
     mds_engine.config.WARMUP_BARS = 501  # above snapshot threshold to force stream path
 
-    redis_mock = MagicMock()
-    redis_mock.ping.return_value = True
-    redis_mock.xadd.return_value = "1-0"
-    redis_mock.xread.return_value = []  # stream never responds
-    redis_mock.delete.return_value = 1
+    class RedisNoWarmupResponse:
+        def ping(self):
+            return True
 
-    with patch.object(mds_engine, "_connect_redis", new=AsyncMock(return_value=redis_mock)):
+        def xadd(self, *args, **kwargs):
+            return "1-0"
+
+        def xread(self, *args, **kwargs):
+            return []
+
+        def delete(self, *args, **kwargs):
+            return 1
+
+        def close(self):
+            pass
+
+    redis_mock = RedisNoWarmupResponse()
+
+    with (
+        patch.object(mds_engine, "_try_snapshot_warmup", new=AsyncMock(return_value=set())),
+        patch.object(mds_engine, "_connect_redis", new=AsyncMock(return_value=redis_mock)),
+    ):
         warmup_ok = await mds_engine._request_warmup()
 
     assert warmup_ok is False
     mds_engine.runtime_state = "LIVE" if warmup_ok else "STALE"
     assert mds_engine.runtime_state == "STALE"
     assert not mds_engine.can_open_new_trades()
+
+
+def test_engine_warmup_coverage_accepts_90_percent(engine):
+    engine.config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
+
+    assert engine._warmup_coverage(9, 10) == (True, 9, 0.90)
+    assert engine._warmup_coverage(8, 10) == (False, 9, 0.90)
+    assert engine._warmup_coverage(180, 199) == (True, 180, 0.90)

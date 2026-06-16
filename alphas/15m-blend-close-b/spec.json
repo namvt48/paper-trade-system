@@ -1,0 +1,21 @@
+{
+  "alpha_id": "15m-blend-close-b",
+  "timeframe": "15m",
+  "signal": "blend_momvol_skew",
+  "params": {
+    "momentum_window": 1920,
+    "std_window": 1920,
+    "skew_window": 3840
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 192,
+  "exec_lag": 1,
+  "vol_lookback": 480,
+  "ppy": 35040,
+  "long_threshold": 0.9,
+  "short_threshold": 0.1,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0
+}

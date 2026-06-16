@@ -91,6 +91,26 @@ async def test_duplicate_open_skips_pre_subscribe_and_fill(tmp_path):
 
 
 @pytest.mark.asyncio
+async def test_duplicate_signal_id_skips_processing_after_restart(tmp_path):
+    db = Database(str(tmp_path / "t.db"))
+    await db.init()
+    ex = Executor(db, slippage_pct=0.1)
+    fs = _FillService(price=95222.0)
+    data = {"type": "OPEN", "alpha_id": "a", "signal_id": "same-signal", "symbol": "BTCUSDT",
+            "side": "LONG", "entry": "95000.0", "qty": "0.01", "timestamp": "2026-05-22T10:00:00Z"}
+
+    first = await process_signal_message(data, db, ex, fill_service=fs)
+    second = await process_signal_message({**data, "entry": "96000.0"}, db, ex, fill_service=fs)
+    signals = await db.get_signals(alpha_id="a")
+
+    assert first is not None
+    assert second is None
+    assert len(signals) == 1
+    assert len(fs.calls) == 1
+    await db.close()
+
+
+@pytest.mark.asyncio
 async def test_executable_close_without_fill_service_is_not_slipped_again(tmp_path):
     db = Database(str(tmp_path / "t.db"))
     await db.init()

@@ -19,6 +19,7 @@ ALPHA ?= undefined
 .PHONY: help prepare up run down restart build logs logs-tail ps health clean shell \
 	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
 	alpha-deregister \
+	runner-build runner-up runner-down runner-scale runner-logs shadow-up shadow-down shadow-logs \
 	package deploy deploy-web deploy-core deploy-system deploy-all deploy-alpha deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
@@ -27,6 +28,9 @@ help:
 	@echo "  make up              Build/start Redis + worker + web"
 	@echo "  make alphas-up       Build/start REGISTERED_ALPHAS from .env"
 	@echo "  make alpha-up ALPHA=<name>"
+	@echo "  make runner-build     Build alpha-runner image"
+	@echo "  make shadow-up        Start alpha-runner in shadow mode + shadow-worker"
+	@echo "  make runner-scale N=3 Scale alpha-runner replicas"
 	@echo "  make alpha-deregister ALPHA=<name>          Stop + remove from DB and .env (local)"
 	@echo "  make health          Check core, stream, DB, and configured alphas"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
@@ -40,7 +44,7 @@ help:
 # ─── Core system (redis + worker + web) ──────────────────────────────────────
 
 prepare:
-	mkdir -p data logs/redis logs/worker logs/web logs/alphas
+	mkdir -p data logs/redis logs/worker logs/web logs/alphas logs/runner
 
 up run: prepare
 	$(COMPOSE) up -d --build --remove-orphans
@@ -65,9 +69,9 @@ ps:
 
 health:
 	$(COMPOSE) ps
-	@$(COMPOSE) exec -T redis redis-cli ping
+	@$(COMPOSE) exec -T worker python -c "import redis; r=redis.Redis.from_url('redis://paper-redis:6379'); print('paper-redis', r.ping())"
 	@$(COMPOSE) exec -T worker test -f /tmp/bot_health && echo "worker OK" || (echo "worker UNHEALTHY"; exit 1)
-	@$(COMPOSE) exec -T redis redis-cli XINFO GROUPS paper-signals >/dev/null 2>&1 && $(COMPOSE) exec -T redis redis-cli XINFO GROUPS paper-signals || true
+	@$(COMPOSE) exec -T worker python -c "import redis; r=redis.Redis.from_url('redis://paper-redis:6379', decode_responses=True); print('paper-signals groups', r.xinfo_groups('paper-signals') if r.exists('paper-signals') else [])" || true
 	@$(COMPOSE) exec -T worker python -c "import sqlite3; con=sqlite3.connect('/app/data/paper-trade.db'); print('db', con.execute('PRAGMA integrity_check').fetchone()[0]); print('alphas', con.execute('select alpha_id,status from alphas order by alpha_id').fetchall())"
 	@$(COMPOSE) exec -T web node -e "fetch('http://127.0.0.1:3000/api/dashboard').then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log('web OK', j.alphas.length, 'alphas')).catch(e=>{console.error(e); process.exit(1)})"
 	@$(MAKE) --no-print-directory alphas-health
@@ -79,10 +83,40 @@ clean:
 shell:
 	$(COMPOSE) exec worker /bin/bash
 
+# ─── Alpha runner / shadow rollout ───────────────────────────────────────────
+
+runner-build:
+	$(COMPOSE) --profile runner build alpha-runner
+
+runner-up: prepare
+	$(COMPOSE) --profile runner up -d alpha-runner
+
+runner-down:
+	$(COMPOSE) --profile runner stop alpha-runner
+	$(COMPOSE) --profile runner rm -f alpha-runner
+
+runner-scale: prepare
+	@[ -n "$(N)" ] || (echo "Usage: make runner-scale N=<replicas>"; exit 1)
+	$(COMPOSE) --profile runner up -d --scale alpha-runner=$(N) alpha-runner
+
+runner-logs:
+	$(COMPOSE) --profile runner logs -f alpha-runner
+
+shadow-up: prepare
+	RUNNER_CONFIG_FILE=$${RUNNER_CONFIG_FILE:-./runner-config.shadow.yaml} \
+	$(COMPOSE) --profile runner --profile shadow up -d alpha-runner shadow-worker
+
+shadow-down:
+	$(COMPOSE) --profile runner --profile shadow stop alpha-runner shadow-worker
+	$(COMPOSE) --profile runner --profile shadow rm -f alpha-runner shadow-worker
+
+shadow-logs:
+	$(COMPOSE) --profile shadow logs -f shadow-worker
+
 # ─── Alpha management ────────────────────────────────────────────────────────
 
 require-mds-network:
-	@docker network inspect market-data >/dev/null 2>&1 || (echo "Missing Docker network 'market-data'. Deploy/start market-data-service first."; exit 1)
+	@docker network inspect redis-net >/dev/null 2>&1 || (echo "Missing Docker network 'redis-net'. Deploy/start infra/redis first."; exit 1)
 
 # Start all alphas listed in REGISTERED_ALPHAS
 alphas-up: require-mds-network

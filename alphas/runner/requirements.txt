@@ -1,0 +1,7 @@
+aiohttp
+numpy
+pandas
+psutil
+PyYAML
+redis
+requests

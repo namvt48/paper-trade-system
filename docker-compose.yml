@@ -71,3 +71,38 @@ services:
     networks:
       - redis-net
     restart: unless-stopped
+
+  alpha-runner:
+    build:
+      context: ./alphas
+      dockerfile: runner/Dockerfile
+    environment:
+      REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
+      MDS_REDIS_URL: ${MDS_REDIS_URL:-redis://mds-redis:6379}
+      MDS_EXCHANGE: ${MDS_EXCHANGE:-binance}
+      RUNNER_CONFIG: /config/runner-config.yaml
+      RUNNER_ID: ${RUNNER_ID:-}
+      RUNNER_METRICS_HOST: 0.0.0.0
+      RUNNER_METRICS_PORT: 9091
+    volumes:
+      - ${RUNNER_CONFIG_FILE:-./runner-config.yaml}:/config/runner-config.yaml:ro
+      - ./logs/runner:/app/logs
+    networks:
+      - redis-net
+    restart: unless-stopped
+    profiles:
+      - runner
+
+  shadow-worker:
+    build:
+      context: ./shadow-worker
+    environment:
+      REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
+      PRODUCTION_STREAM: paper-signals
+      SHADOW_STREAM: paper-signals-shadow
+      SHADOW_TTL_SEC: ${SHADOW_TTL_SEC:-300}
+    networks:
+      - redis-net
+    restart: unless-stopped
+    profiles:
+      - shadow

@@ -94,6 +94,10 @@ async def process_signal_message(data: dict, db: Database, executor: Executor,
     alpha_id = data.get("alpha_id", "unknown")
     signal_type = data.get("type", "unknown")
 
+    if signal_id != "unknown" and await db.signal_processed(signal_id):
+        logger.warning("Duplicate signal %s skipped before processing", signal_id)
+        return None
+
     try:
         signal = parse_signal(data)
     except Exception as exc:

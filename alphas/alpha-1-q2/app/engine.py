@@ -229,8 +229,6 @@ class Alpha1Q2Engine(BaseEngine):
         side = pos["side"] if pos else None
 
         if pos is not None:
-            if not self._claim_position_candle(pos, signal_open_time_ms):
-                return
             bars = self._bars_held(pos, signal_open_time_ms)
 
             if bars >= settings.MAX_TRADE_BARS:

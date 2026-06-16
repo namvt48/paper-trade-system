@@ -1,0 +1,23 @@
+[[columns]]
+key = "score"
+label = "Score"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "rank"
+label = "Rank"
+type = "number"
+decimals = 4
+
+[[columns]]
+key = "weight"
+label = "Weight"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "strategy_leverage"
+label = "Strategy Lev"
+type = "number"
+decimals = 4

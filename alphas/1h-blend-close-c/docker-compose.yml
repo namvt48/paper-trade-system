@@ -1,0 +1,30 @@
+networks:
+  redis-net:
+    external: true
+
+services:
+  1h-blend-close-c:
+    build:
+      context: ..
+      dockerfile: 1h-blend-close-c/Dockerfile
+    env_file: .env
+    volumes:
+      - ../../logs/alphas/1h-blend-close-c:/app/logs
+      - ./blacklist.txt:/app/blacklist.txt:ro
+      - ./data:/app/data:ro
+      - ./spec.json:/app/spec.json:ro
+      - ./config.toml:/app/config.toml:ro
+    environment:
+      - REDIS_URL=redis://paper-redis:6379
+      - LOG_DIR=/app/logs
+      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
+      - MDS_EXCHANGE=${MDS_EXCHANGE:-binance}
+    networks:
+      - redis-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os; exit(0 if os.path.exists('/tmp/bot_health') else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s

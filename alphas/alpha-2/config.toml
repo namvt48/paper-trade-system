@@ -1,0 +1,34 @@
+[[columns]]
+key = "hbias"
+label = "HTF Bias"
+type = "text"
+
+[[columns]]
+key = "latest_size"
+label = "Size %"
+type = "number"
+decimals = 3
+
+[[columns]]
+key = "trade_size"
+label = "Size"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "leverage"
+label = "Lev"
+type = "number"
+decimals = 0
+
+[[columns]]
+key = "margin"
+label = "Margin"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "cur_equity"
+label = "Equity"
+type = "number"
+decimals = 2
