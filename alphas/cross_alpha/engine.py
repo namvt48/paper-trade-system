@@ -32,6 +32,8 @@ class CrossSectionalEngine(BaseEngine):
         self._base_weights: dict[str, float] = {}
         self._pending_cost = 0.0
         self._strategy_leverage = 0.0
+        self._last_pnl_publish: dict[str, float] = {}
+        self._pnl_channel = f"pnl:{self.alpha_id}"
         self._columns_config_path = os.path.join(os.path.dirname(settings.SPEC_FILE), "config.toml")
 
     def get_required_channels(self) -> list[str]:
@@ -67,6 +69,45 @@ class CrossSectionalEngine(BaseEngine):
     async def _manage_positions(self) -> None:
         # The specs explicitly have no TP, SL, time stop, or intrabar exits.
         return
+
+    def on_price_alert_message(self, msg: dict) -> None:
+        symbol = str(msg.get("symbol", ""))
+        pos = self._open_positions.get(symbol)
+        if pos is None:
+            return
+        pos_side = str(pos.get("side", ""))
+        price = self._trigger_price(pos_side, msg)
+        if price is None or price <= 0:
+            return
+        now = time.time()
+        if now - self._last_pnl_publish.get(symbol, 0.0) < 0.5:
+            return
+        entry = float(pos.get("entry", 0.0))
+        if entry <= 0:
+            return
+        if pos_side == "LONG":
+            pnl_pct = (price - entry) / entry
+        elif pos_side == "SHORT":
+            pnl_pct = (entry - price) / entry
+        else:
+            return
+        payload = json.dumps({
+            "alpha_id": self.alpha_id,
+            "symbol": symbol,
+            "side": pos_side,
+            "entry_price": entry,
+            "current_price": price,
+            "pnl_pct": round(pnl_pct, 6),
+            "weight": float(pos.get("weight", 0.0)),
+            "timestamp": int(now * 1000),
+        })
+        from base import signal_push
+        if signal_push._r is not None:
+            try:
+                signal_push._r.publish(self._pnl_channel, payload)
+            except Exception:
+                logger.debug("[PNL] publish failed for %s", symbol)
+        self._last_pnl_publish[symbol] = now
 
     async def scan_loop(self) -> None:
         while not self.shutdown_event.is_set():
@@ -120,6 +161,22 @@ class CrossSectionalEngine(BaseEngine):
         bar_number = latest // self._tf_to_ms(self.spec.timeframe)
         is_rebalance = bar_number % self.spec.rebalance_bars == 0
         panel = build_panel(snapshot)
+
+        # DIAGNOSTIC: log panel shape and NaN counts before signal computation
+        close_df = panel["close"]
+        self._logger.info(
+            "[DIAG] panel shape=%s symbols=%d total_nan_close=%d rows_with_all_nan=%d",
+            close_df.shape, len(close_df.columns), int(close_df.isna().sum().sum()),
+            int((close_df.notna().sum(axis=1) == 0).sum()),
+        )
+        if close_df.shape[0] > 1920:
+            row_neg1921 = close_df.iloc[-1921]
+            self._logger.info(
+                "[DIAG] row[-1921] valid=%d/%d sample_nan=%s",
+                int(row_neg1921.notna().sum()), len(row_neg1921),
+                sorted(row_neg1921[row_neg1921.isna()].index.tolist())[:5],
+            )
+
         selection = select_positions(panel, self.spec)
         self._logger.info(
             "[SIGNAL_AUDIT] %s",
