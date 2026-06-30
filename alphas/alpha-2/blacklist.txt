@@ -1,3 +1,0 @@
-# Binance Futures perpetual symbols to exclude from alpha-2
-# Format: one symbol per line, e.g. BTCUSDT
-# Blank lines and lines starting with # are ignored.
