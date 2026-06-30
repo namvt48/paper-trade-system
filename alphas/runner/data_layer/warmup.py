@@ -15,6 +15,12 @@ from runner.metrics import RunnerMetrics
 
 logger = logging.getLogger(__name__)
 
+_TF_MINUTES = {"1m": 1, "5m": 5, "15m": 15, "30m": 30, "1h": 60, "4h": 240, "1d": 1440}
+
+
+def _tf_ms(tf: str) -> int:
+    return _TF_MINUTES.get(tf, 1) * 60 * 1000
+
 
 @dataclass(frozen=True, order=True)
 class WarmupRequirement:
@@ -175,8 +181,13 @@ class WarmupManager:
         self._request_times: list[float] = []
         self._now = now_func or time.monotonic
         self._sleep = sleep_func or asyncio.sleep
+        self._excluded_symbols: set[str] = set()
+        self._requirements: dict[tuple[str, str], int] = {}
+        self._warmup_baseline_ts: dict[str, int] = {}
+        self._strategies = None
 
     def collect_requirements(self, strategies: Iterable) -> dict[tuple[str, str], int]:
+        self._strategies = strategies
         result: dict[tuple[str, str], int] = {}
         for strategy in strategies:
             symbols = strategy.get_warmup_symbols()
@@ -194,6 +205,7 @@ class WarmupManager:
                         retain_bars=retain_bars,
                         retain_buffer_bars=retain_buffer_bars,
                     )
+        self._requirements = result
         return result
 
     def strategy_ready(
@@ -202,7 +214,7 @@ class WarmupManager:
         min_coverage: float = 0.90,
         max_age_sec: float | None = None,
     ) -> bool:
-        symbols = strategy.get_warmup_symbols()
+        symbols = [s for s in strategy.get_warmup_symbols() if s not in self._excluded_symbols]
         alpha_id = getattr(getattr(strategy, "ctx", None), "alpha_id", None) or getattr(strategy, "alpha_id", "")
         if not symbols:
             if alpha_id:
@@ -212,7 +224,13 @@ class WarmupManager:
         coverages: list[float] = []
         for tf in strategy.get_warmup_tfs():
             bars = int(strategy.get_warmup_bars(tf))
-            loaded, total, pct = self.cache.coverage(symbols, tf, bars, max_age_sec)
+            loaded = sum(
+                1
+                for symbol in symbols
+                if self._cache_satisfies_symbol(symbol, tf, bars, max_age_sec)
+            )
+            total = len(symbols)
+            pct = loaded / total if total else 0.0
             required = max(1, int(total * min_coverage + 0.999999))
             ready_any = ready_any and loaded >= required and pct >= min_coverage
             coverages.append(pct)
@@ -227,9 +245,9 @@ class WarmupManager:
     ) -> tuple[WarmupRequirement, ...]:
         missing = []
         for (symbol, tf), bars in requirements.items():
-            ok = self.cache.has_required_bars(symbol, tf, bars)
-            if ok and max_age_sec is not None:
-                ok = self.cache.has_fresh_data(symbol, tf, bars, max_age_sec)
+            if symbol in self._excluded_symbols:
+                continue
+            ok = self._cache_satisfies_symbol(symbol, tf, bars, max_age_sec)
             if ok:
                 self.metrics.inc("warmup_cache_hits_total")
             else:
@@ -256,6 +274,7 @@ class WarmupManager:
         self,
         requirements: Mapping[tuple[str, str], int],
         max_age_sec: float | None = None,
+        stop_when_ready_pct: float | None = None,
     ) -> set[tuple[str, str]]:
         for (symbol, tf), bars in requirements.items():
             self.cache.register_data_requirement(symbol, tf, warmup_bars=int(bars), retain_bars=int(bars))
@@ -264,6 +283,11 @@ class WarmupManager:
             return set()
 
         loaded = self._load_from_snapshots(missing, max_age_sec)
+        if self._all_strategies_ready(stop_when_ready_pct, max_age_sec):
+            logger.info(
+                "[RUNNER-WARMUP] Coverage target reached after snapshot/cache restore; skipping direct fill"
+            )
+            return loaded
         remaining = [
             req for req in missing
             if (req.symbol, req.tf) not in loaded
@@ -272,10 +296,25 @@ class WarmupManager:
         if not remaining:
             return loaded
 
+        all_chunks: list[tuple[WarmupRequirement, ...]] = []
         for batch in self.group_missing_by_bucket(remaining).values():
-            for chunk in self._chunk_requirements(batch):
-                batch_loaded = await self._ensure_batch(chunk, max_age_sec)
+            all_chunks.extend(self._chunk_requirements(batch))
+        if all_chunks:
+            tasks = [
+                asyncio.create_task(self._ensure_batch(chunk, max_age_sec))
+                for chunk in all_chunks
+            ]
+            for coro in asyncio.as_completed(tasks):
+                batch_loaded = await coro
                 loaded.update(batch_loaded)
+                if self._all_strategies_ready(stop_when_ready_pct, max_age_sec):
+                    logger.info(
+                        "[RUNNER-WARMUP] Coverage target reached; skipping remaining direct fill"
+                    )
+                    for t in tasks:
+                        if not t.done():
+                            t.cancel()
+                    return loaded
         return loaded
 
     def _chunk_requirements(
@@ -295,6 +334,21 @@ class WarmupManager:
         max_age_sec: float | None = None,
     ) -> set[tuple[str, str]]:
         return await self.request_warmup(requirements, max_age_sec)
+
+    def _all_strategies_ready(
+        self,
+        min_coverage: float | None,
+        max_age_sec: float | None,
+    ) -> bool:
+        if min_coverage is None or self._strategies is None:
+            return False
+        strategies = list(self._strategies)
+        if not strategies:
+            return False
+        return all(
+            self.strategy_ready(strategy, min_coverage=min_coverage, max_age_sec=max_age_sec)
+            for strategy in strategies
+        )
 
     def _load_from_snapshots(
         self,
@@ -352,8 +406,16 @@ class WarmupManager:
         async with self._semaphore:
             await self._wait_for_rate_limit()
             start = self._now()
+            tf = requirements[0].tf
+            bars = max(req.bars for req in requirements)
             self.metrics.inc("warmup_mds_requests_total")
             self.metrics.inc("warmup_mds_symbols_requested_total", len(requirements))
+            logger.info(
+                "[RUNNER-WARMUP] Requesting MDS tf=%s bars=%d symbols=%d",
+                tf,
+                bars,
+                len(requirements),
+            )
             try:
                 if getattr(self.backend, "handles_timeout", False):
                     result = await self.backend(requirements)
@@ -363,8 +425,8 @@ class WarmupManager:
                 self.metrics.inc("warmup_timeouts_total")
                 logger.warning(
                     "[RUNNER-WARMUP] MDS request timed out tf=%s bars=%d symbols=%d",
-                    requirements[0].tf,
-                    max(req.bars for req in requirements),
+                    tf,
+                    bars,
                     len(requirements),
                 )
                 return set()
@@ -375,6 +437,14 @@ class WarmupManager:
                 self.metrics.observe_duration(max(0.0, self._now() - start))
 
         loaded = self._apply_backend_result(requirements, result)
+        logger.info(
+            "[RUNNER-WARMUP] MDS response applied tf=%s bars=%d loaded=%d/%d duration=%.2fs",
+            requirements[0].tf,
+            max(req.bars for req in requirements),
+            len(loaded),
+            len(requirements),
+            self.metrics.warmup_request_duration_sec[-1] if self.metrics.warmup_request_duration_sec else 0.0,
+        )
         if loaded:
             self._response_cache[key] = self._now() + self.response_cache_ttl_sec
         requested = {(req.symbol, req.tf) for req in requirements}
@@ -418,7 +488,7 @@ class WarmupManager:
                 if isinstance(candle, dict):
                     self.cache.upsert_candle(symbol, tf, candle)
             req = req_by_key.get((symbol, tf))
-            if req is not None and self.cache.has_required_bars(symbol, tf, req.bars):
+            if req is not None and self._cache_satisfies(req, None):
                 loaded.add((symbol, tf))
         return loaded
 
@@ -435,7 +505,180 @@ class WarmupManager:
         return all(self._cache_satisfies(req, max_age_sec) for req in requirements)
 
     def _cache_satisfies(self, req: WarmupRequirement, max_age_sec: float | None) -> bool:
-        ok = self.cache.has_required_bars(req.symbol, req.tf, req.bars)
+        return self._cache_satisfies_symbol(req.symbol, req.tf, req.bars, max_age_sec)
+
+    def _cache_satisfies_symbol(
+        self,
+        symbol: str,
+        tf: str,
+        bars: int,
+        max_age_sec: float | None,
+    ) -> bool:
+        ok = self.cache.has_required_bars(symbol, tf, bars)
         if ok and max_age_sec is not None:
-            ok = self.cache.has_fresh_data(req.symbol, req.tf, req.bars, max_age_sec)
+            ok = self.cache.has_fresh_data(symbol, tf, bars, max_age_sec)
+        if ok:
+            ok = self.cache.verify_no_gaps(symbol, tf).is_clean
         return ok
+
+    def _verify_timestamp_sync(self, sync_tolerance_candles: int = 1, _depth: int = 0) -> bool:
+        if _depth > 2:
+            return False
+        for tf in self._get_required_tfs():
+            latest_timestamps: dict[str, int] = {}
+            for symbol in self.cache.get_symbols_with_data(tf):
+                if symbol in self._excluded_symbols:
+                    continue
+                ts = self.cache.get_latest_timestamp(symbol, tf)
+                if ts is not None:
+                    latest_timestamps[symbol] = ts
+
+            if not latest_timestamps:
+                continue
+
+            max_ts = max(latest_timestamps.values())
+            min_ts = min(latest_timestamps.values())
+            tolerance_ms = _tf_ms(tf) * sync_tolerance_candles
+
+            if max_ts - min_ts > tolerance_ms:
+                stale = [s for s, ts in latest_timestamps.items()
+                         if max_ts - ts > tolerance_ms]
+                logger.warning(
+                    "[WARMUP-SYNC] Timestamp spread %dms > %dms for %s. Re-reading %d stale symbol(s): %s",
+                    max_ts - min_ts, tolerance_ms, tf, len(stale), stale[:10],
+                )
+                if self.snapshot_reader:
+                    for symbol in stale:
+                        bars = self._requirements.get((symbol, tf), 0)
+                        candles = self.snapshot_reader.load(symbol, tf, bars)
+                        if candles:
+                            for candle in candles:
+                                self.cache.upsert_candle(symbol, tf, candle)
+                return self._verify_timestamp_sync(sync_tolerance_candles, _depth + 1)
+
+        return True
+
+    def _classify_symbols(
+        self,
+        signals: dict[str, "ReadySignal"],
+        min_warmup_coverage_pct: float = 0.60,
+    ) -> None:
+        from runner.data_layer.mds_ready import ReadySignal
+
+        insufficient_excluded: list[tuple[str, str]] = []
+        low_coverage_excluded: list[tuple[str, str, float]] = []
+        partial_accepted: list[tuple[str, str, float]] = []
+        for tf, signal in signals.items():
+            for symbol in signal.insufficient_symbols:
+                self._excluded_symbols.add(symbol)
+                insufficient_excluded.append((symbol, tf))
+            for symbol, pct in signal.partial_symbols.items():
+                if pct >= min_warmup_coverage_pct:
+                    partial_accepted.append((symbol, tf, pct))
+                else:
+                    self._excluded_symbols.add(symbol)
+                    low_coverage_excluded.append((symbol, tf, pct))
+
+        if insufficient_excluded:
+            logger.warning(
+                "[WARMUP-CLASSIFY] Excluding insufficient-history symbols: count=%d sample=%s",
+                len(insufficient_excluded),
+                insufficient_excluded[:10],
+            )
+        if low_coverage_excluded:
+            logger.warning(
+                "[WARMUP-CLASSIFY] Excluding low-coverage symbols: count=%d sample=%s",
+                len(low_coverage_excluded),
+                [(s, tf, round(pct, 3)) for s, tf, pct in low_coverage_excluded[:10]],
+            )
+        if partial_accepted:
+            logger.info(
+                "[WARMUP-CLASSIFY] Accepted partial warmup symbols: count=%d sample=%s",
+                len(partial_accepted),
+                [(s, tf, round(pct, 3)) for s, tf, pct in partial_accepted[:10]],
+            )
+
+    def _get_required_tfs(self) -> list[str]:
+        return sorted(set(tf for _sym, tf in self._requirements))
+
+    @property
+    def excluded_symbols(self) -> set[str]:
+        return set(self._excluded_symbols)
+
+    @property
+    def warmup_baseline_ts(self) -> dict[str, int]:
+        return dict(self._warmup_baseline_ts)
+
+    async def wait_for_mds_ready(
+        self,
+        ready_watcher: "MDSReadyWatcher",
+        required_tfs: list[str],
+        timeout_sec: float = 900.0,
+    ) -> dict[str, "ReadySignal"]:
+        signals = await ready_watcher.wait_for_ready(required_tfs, timeout_sec)
+        return signals
+
+    async def run_synced_warmup(
+        self,
+        ready_watcher: "MDSReadyWatcher" | None = None,
+        mds_ready_timeout_sec: float = 900.0,
+        min_warmup_coverage_pct: float = 0.60,
+        sync_tolerance_candles: int = 1,
+        max_staleness_sec: float | None = None,
+    ) -> bool:
+        required_tfs = self._get_required_tfs()
+
+        if ready_watcher and required_tfs:
+            signals = await self.wait_for_mds_ready(
+                ready_watcher, required_tfs, mds_ready_timeout_sec
+            )
+            if len(signals) < len(required_tfs):
+                logger.warning("[WARMUP] MDS ready signals incomplete — falling back to direct warmup")
+            else:
+                self._classify_symbols(signals, min_warmup_coverage_pct)
+
+        active_requirements = {
+            key: bars
+            for key, bars in self._requirements.items()
+            if key[0] not in self._excluded_symbols
+        }
+        await self.request_warmup(
+            active_requirements,
+            max_age_sec=max_staleness_sec,
+            stop_when_ready_pct=min_warmup_coverage_pct,
+        )
+
+        if not self._verify_timestamp_sync(sync_tolerance_candles):
+            logger.warning("[WARMUP] Timestamp sync check failed — some symbols may have stale data")
+
+        for tf in required_tfs:
+            max_ts = 0
+            for symbol in self.cache.get_symbols_with_data(tf):
+                if symbol in self._excluded_symbols:
+                    continue
+                ts = self.cache.get_latest_timestamp(symbol, tf)
+                if ts and ts > max_ts:
+                    max_ts = ts
+            if max_ts > 0:
+                self.cache.set_warmup_baseline(tf, max_ts)
+                self._warmup_baseline_ts[tf] = max_ts
+
+        for tf in required_tfs:
+            reports = self.cache.verify_all_no_gaps(tf)
+            gapped = [r for r in reports if not r.is_clean and r.symbol not in self._excluded_symbols]
+            if gapped:
+                logger.warning(
+                    "[WARMUP-GAP-CHECK] %d/%d symbols have gaps in %s",
+                    len(gapped), len(reports), tf,
+                )
+                for report in gapped[:5]:
+                    logger.debug(
+                        "[WARMUP-GAP-CHECK] %s %s: %d gaps, %d missing ranges",
+                        report.symbol, report.tf, report.gap_count,
+                        len(report.missing_ranges),
+                    )
+
+        return True
+
+    def get_required_tfs(self) -> list[str]:
+        return self._get_required_tfs()

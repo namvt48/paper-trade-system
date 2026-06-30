@@ -2,8 +2,10 @@ from __future__ import annotations
 
 import json
 import asyncio
+import time
 
 import pytest
+from unittest.mock import MagicMock
 
 from runner.data_layer.cache import SharedCandleCache
 from runner.data_layer.pubsub import SharedPubSubManager
@@ -35,6 +37,18 @@ class FakeRedis:
 
     def pubsub(self):
         return self.ps
+
+
+def test_pubsub_initializes_last_message_time():
+    manager = SharedPubSubManager(FakeRedis(), SharedCandleCache())
+    assert hasattr(manager, '_last_message_time')
+    assert isinstance(manager._last_message_time, float)
+
+
+def test_pubsub_initializes_stale_check_interval():
+    manager = SharedPubSubManager(FakeRedis(), SharedCandleCache())
+    assert hasattr(manager, '_stale_check_interval')
+    assert manager._stale_check_interval == 30.0
 
 
 @pytest.mark.asyncio
@@ -89,3 +103,174 @@ async def test_pubsub_run_pumps_messages_into_strategy_queue_and_cache():
     assert event.kind == "kline"
     assert event.symbol == "BTCUSDT"
     assert manager.cache.get_closes("BTCUSDT", "15m") == (1.5,)
+
+
+@pytest.mark.asyncio
+async def test_run_triggers_on_reconnect_when_data_stale_on_empty_polls():
+    redis = FakeRedis()
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1m", warmup_bars=5, retain_bars=10)
+
+    manager = SharedPubSubManager(redis, cache)
+    manager._stale_check_interval = 0.01
+
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["1m"])
+    manager.set_reconnect_handler(warmup_mock, staleness_candles=1)
+
+    stale_ts = int(time.time() * 1000) - 900_000
+    cache.upsert_candle("BTCUSDT", "1m", {
+        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    reconnect_called = False
+
+    async def mock_reconnect(warmup_manager=None, staleness_candles=None):
+        nonlocal reconnect_called
+        reconnect_called = True
+
+    manager._on_reconnect = mock_reconnect
+
+    stop = asyncio.Event()
+    task = asyncio.create_task(manager.run(stop, poll_timeout=0.001))
+    await asyncio.sleep(0.2)
+    stop.set()
+    await task
+
+    assert reconnect_called is True
+
+
+@pytest.mark.asyncio
+async def test_is_data_stale_returns_true_when_data_old():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "15m", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["15m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    stale_ts = int(time.time() * 1000) - 900_000 * 10
+    cache.upsert_candle("BTCUSDT", "15m", {
+        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    assert manager._is_data_stale(warmup_mock, staleness_candles=5) is True
+
+
+@pytest.mark.asyncio
+async def test_is_data_stale_returns_false_when_data_fresh():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "15m", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["15m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    fresh_ts = int(time.time() * 1000) - 100
+    cache.upsert_candle("BTCUSDT", "15m", {
+        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    assert manager._is_data_stale(warmup_mock, staleness_candles=5) is False
+
+
+@pytest.mark.asyncio
+async def test_is_data_stale_uses_tf_scaled_silence_threshold():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1m", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["1m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    fresh_ts = int(time.time() * 1000) - 100
+    cache.upsert_candle("BTCUSDT", "1m", {
+        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    manager._last_message_time = time.monotonic() - 301
+
+    assert manager._is_data_stale(warmup_mock, staleness_candles=5) is True
+
+
+@pytest.mark.asyncio
+async def test_is_data_stale_does_not_mark_hourly_silent_for_60s():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1h", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["1h"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    fresh_ts = int(time.time() * 1000) - 100
+    cache.upsert_candle("BTCUSDT", "1h", {
+        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    manager._last_message_time = time.monotonic() - 61
+
+    assert manager._is_data_stale(warmup_mock, staleness_candles=5) is False
+
+
+@pytest.mark.asyncio
+async def test_is_data_stale_returns_false_when_messages_recent():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1m", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["1m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    fresh_ts = int(time.time() * 1000) - 100
+    cache.upsert_candle("BTCUSDT", "1m", {
+        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    manager._last_message_time = time.monotonic() - 5
+
+    assert manager._is_data_stale(warmup_mock, staleness_candles=5) is False
+
+
+@pytest.mark.asyncio
+async def test_find_stale_symbols_identifies_symbols_with_old_data():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1m", warmup_bars=5, retain_bars=10)
+    cache.register_data_requirement("ETHUSDT", "1m", warmup_bars=5, retain_bars=10)
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["1m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+
+    stale_ts = int(time.time() * 1000) - 900_000
+    cache.upsert_candle("BTCUSDT", "1m", {
+        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+    fresh_ts = int(time.time() * 1000) - 100
+    cache.upsert_candle("ETHUSDT", "1m", {
+        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    stale = manager._find_stale_symbols(warmup_mock, staleness_candles=5)
+    stale_keys = [(s, t) for s, t in stale]
+    assert ("BTCUSDT", "1m") in stale_keys
+    assert ("ETHUSDT", "1m") not in stale_keys

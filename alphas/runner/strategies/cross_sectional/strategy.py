@@ -5,6 +5,7 @@ import json
 import logging
 import math
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
@@ -15,6 +16,8 @@ from runner.shared_panel_feature_cache import PanelBundle, SharedPanelFeatureCac
 from runner.strategy.base import Strategy
 
 logger = logging.getLogger(__name__)
+
+_WARMUP_GAP_RESET_CANDLES = 5
 
 
 class CrossSectionalRunnerStrategy(Strategy):
@@ -39,13 +42,14 @@ class CrossSectionalRunnerStrategy(Strategy):
             self.get_warmup_bars(self.spec.timeframe),
         )
         self._last_processed_candle = 0
+        self._warmup_complete = False
         self._pending: tuple[int, Selection] | None = None
         self._open_positions: dict[str, dict[str, Any]] = self.ctx.load_positions()
         self._portfolio_returns: list[float] = []
         self._last_prices: dict[str, float] = {}
         self._base_weights: dict[str, float] = {}
         self._pending_cost = 0.0
-        self._strategy_leverage = float(params.get("initial_strategy_leverage", 0.0))
+        self._strategy_leverage = float(params.get("initial_strategy_leverage", 1.0))
         self._last_pnl_publish: dict[str, float] = {}
         self._pnl_channel = f"pnl:{self.alpha_id}"
 
@@ -138,8 +142,31 @@ class CrossSectionalRunnerStrategy(Strategy):
             return False
         candle_open_ms = self.ctx.cache.get_latest_timestamp(symbol, self.spec.timeframe)
         if candle_open_ms is None or candle_open_ms <= self._last_processed_candle:
+            logger.debug(
+                "[%s] should_scan SKIP: symbol=%s candle_open_ms=%s last_processed=%s",
+                self.alpha_id, symbol, candle_open_ms, self._last_processed_candle,
+            )
             return False
-        return self._candle_coverage(candle_open_ms) >= self.scan_min_symbol_coverage
+        if self._warmup_complete:
+            gap_candles = (candle_open_ms - self._last_processed_candle) // self._tf_to_ms(self.spec.timeframe)
+            if gap_candles > _WARMUP_GAP_RESET_CANDLES:
+                logger.info(
+                    "[%s] should_scan: large gap (%d candles) — resetting warmup_complete",
+                    self.alpha_id, gap_candles,
+                )
+                self._warmup_complete = False
+        # Always check coverage — scanning before enough symbols have the new
+        # candle produces a panel whose latest timestamp equals the previous
+        # bar, causing scan() to early-return without emitting signals.
+        coverage = self._candle_coverage(candle_open_ms)
+        if coverage < self.scan_min_symbol_coverage:
+            logger.debug(
+                "[%s] should_scan SKIP: symbol=%s coverage=%.2f < %.2f",
+                self.alpha_id, symbol, coverage, self.scan_min_symbol_coverage,
+            )
+            return False
+        self._warmup_complete = True
+        return True
 
     async def scan(self) -> None:
         if not self.ctx.state.ready:
@@ -150,6 +177,12 @@ class CrossSectionalRunnerStrategy(Strategy):
         panel = bundle.panel
         compute_context = bundle.context
         latest = bundle.latest
+        # Fallback: panel build (snapshot + build_panel) may not include the
+        # newest candle if not all symbols have it yet. Use the actual latest
+        # timestamp from the per-symbol cache to avoid stale early-return.
+        cache_latest = self._latest_cached_timestamp(self.spec.timeframe, tuple(self._symbols))
+        if cache_latest > latest:
+            latest = cache_latest
         if latest <= self._last_processed_candle:
             return
 
@@ -166,6 +199,18 @@ class CrossSectionalRunnerStrategy(Strategy):
 
         bar_number = latest // self._tf_to_ms(self.spec.timeframe)
         is_rebalance = bar_number % self.spec.rebalance_bars == 0
+        has_positions = bool(self._open_positions)
+
+        if not is_rebalance and has_positions:
+            logger.debug(
+                "[%s] scan SKIP: not rebalance bar (bar_number=%d, rebalance_bars=%d)",
+                self.alpha_id, bar_number, self.spec.rebalance_bars,
+                extra={"alpha_id": self.alpha_id},
+            )
+            self._last_prices = prices
+            self._last_processed_candle = latest
+            return
+
         started = time.perf_counter()
         selection = await asyncio.to_thread(self._select_positions, bundle)
         if self.ctx.panel_feature_cache is not None:
@@ -194,17 +239,21 @@ class CrossSectionalRunnerStrategy(Strategy):
             }, separators=(",", ":"), allow_nan=False),
             extra={"alpha_id": self.alpha_id},
         )
-        if is_rebalance:
-            execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
+        execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
+        if execute_at <= latest:
+            # exec_lag == 0: apply immediately
+            await self._apply_selection(selection, prices, latest)
+        else:
             self._pending = (execute_at, selection)
             logger.info(
-                "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f",
+                "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
                 self.spec.alpha_id,
                 execute_at,
                 len(selection.longs),
                 len(selection.shorts),
                 selection.diagnostics["gross"],
                 selection.diagnostics["net"],
+                is_rebalance,
                 extra={"alpha_id": self.alpha_id},
             )
 
@@ -342,6 +391,12 @@ class CrossSectionalRunnerStrategy(Strategy):
         return min(self.spec.max_leverage, self.spec.target_vol / rv)
 
     async def _apply_selection(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+        logger.info(
+            "[%s] _apply_selection at %d: longs=%d shorts=%d",
+            self.alpha_id, candle_open_ms,
+            len(selection.longs), len(selection.shorts),
+            extra={"alpha_id": self.alpha_id},
+        )
         for symbol, pos in list(self._open_positions.items()):
             await self.ctx.emit_signal(
                 "CLOSE",
@@ -360,16 +415,37 @@ class CrossSectionalRunnerStrategy(Strategy):
         self._strategy_leverage = self._vol_target_leverage()
         self._base_weights = dict(selection.weights)
         if self._strategy_leverage <= 0 or not self.ctx.can_open_trades():
+            logger.info(
+                "[%s] _apply_selection SKIP: leverage=%.4f can_open=%s",
+                self.alpha_id, self._strategy_leverage, self.ctx.can_open_trades(),
+                extra={"alpha_id": self.alpha_id},
+            )
             self.ctx.save_positions(self._open_positions)
             return
 
-        for symbol, weight in selection.weights.items():
-            price = prices.get(symbol)
-            if not price or price <= 0:
-                continue
+        # Pre-filter to symbols with valid prices, then re-balance LONG = SHORT.
+        # select_positions already balances, but missing prices can re-introduce
+        # an odd total — trim the larger side (weakest |weight| first) so the
+        # opened book is always paired.
+        _weights = {
+            s: w for s, w in selection.weights.items()
+            if prices.get(s) and prices.get(s, 0) > 0
+        }
+        _longs = sorted(s for s, w in _weights.items() if w > 0)
+        _shorts = sorted(s for s, w in _weights.items() if w < 0)
+        if _longs and _shorts and len(_longs) != len(_shorts):
+            _target = min(len(_longs), len(_shorts))
+            if len(_longs) > _target:
+                _drop = set(sorted(_longs, key=lambda s: _weights[s])[: len(_longs) - _target])
+            else:
+                _drop = set(sorted(_shorts, key=lambda s: abs(_weights[s]))[: len(_shorts) - _target])
+            _weights = {s: w for s, w in _weights.items() if s not in _drop}
+
+        for symbol, weight in _weights.items():
+            price = prices[symbol]
             side = "LONG" if weight > 0 else "SHORT"
             notional = self.capital * abs(weight) * self._strategy_leverage
-            position_id = f"{self.alpha_id}:{symbol}:{side}:{candle_open_ms}"
+            position_id = str(uuid.uuid4())
             pos = {
                 "position_id": position_id,
                 "symbol": symbol,

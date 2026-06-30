@@ -1,0 +1,7 @@
+redis[hiredis]>=5.0
+pydantic-settings>=2.0
+requests>=2.31
+numpy>=2.0
+pandas>=2.2
+orjson>=3.10
+uvloop>=0.19; sys_platform != "win32"

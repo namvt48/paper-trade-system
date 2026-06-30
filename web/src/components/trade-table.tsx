@@ -67,8 +67,8 @@ function Pagination({
     pages.push(totalPages);
   }
   return (
-    <div className="flex items-center gap-1 justify-end px-4 py-2.5 border-t border-slate-700/60 text-xs text-slate-400 select-none">
-      <span className="mr-2 text-slate-500">{total} trades</span>
+    <div className="flex items-center gap-1 justify-end px-3 py-2.5 sm:px-4 border-t border-slate-700/60 text-xs text-slate-400 select-none">
+      <span className="mr-2 text-slate-500 hidden sm:inline">{total} trades</span>
       <button
         onClick={() => onChange(page - 1)}
         disabled={page === 1}
@@ -111,7 +111,7 @@ export function TradeTable({ alphaId, trades, totalTrades, columnSpecs }: TradeT
 
   return (
     <div className="rounded-xl border border-slate-700/60 overflow-hidden">
-      <div className="flex justify-end px-4 py-2 border-b border-slate-700/60 bg-slate-800/60">
+      <div className="flex justify-end px-3 py-2 sm:px-4 border-b border-slate-700/60 bg-slate-800/60">
         <a
           href={`/api/trades/export?alpha_id=${encodeURIComponent(alphaId)}`}
           className="flex items-center gap-1.5 text-xs text-slate-400 hover:text-slate-200 hover:bg-slate-700/60 px-3 py-1.5 rounded-lg transition-colors"
@@ -123,7 +123,7 @@ export function TradeTable({ alphaId, trades, totalTrades, columnSpecs }: TradeT
         </a>
       </div>
       <div className="overflow-x-auto">
-        <table className="w-full text-sm">
+        <table className="w-full text-sm min-w-[1200px]">
           <thead>
             <tr className="bg-slate-800/80 border-b border-slate-700/60 text-slate-400 text-xs uppercase tracking-wider">
               <th className="text-left py-3 px-3 whitespace-nowrap">Symbol</th>

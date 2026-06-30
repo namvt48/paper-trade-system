@@ -19,23 +19,30 @@ ALPHA ?= undefined
 .PHONY: help prepare up run down restart build logs logs-tail ps health clean shell \
 	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
 	alpha-deregister \
-	runner-build runner-up runner-down runner-scale runner-logs shadow-up shadow-down shadow-logs \
-	package deploy deploy-web deploy-core deploy-system deploy-all deploy-alpha deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
+	runner-build runner-up runner-down runner-scale runner-logs runner-health runner-sync-config runner-status runner-reconcile \
+	test test-indicators test-cross-alpha test-runner \
+	package deploy deploy-web deploy-core deploy-system deploy-all deploy-alpha deploy-legacy-runner deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
 help:
 	@echo "Paper trade targets:"
 	@echo "  make up              Build/start Redis + worker + web"
-	@echo "  make alphas-up       Build/start REGISTERED_ALPHAS from .env"
-	@echo "  make alpha-up ALPHA=<name>"
-	@echo "  make runner-build     Build alpha-runner image"
-	@echo "  make shadow-up        Start alpha-runner in shadow mode + shadow-worker"
+	@echo "  make runner-up       Build/start alpha-runner + alpha-runner-legacy"
+	@echo "  make runner-build    Build runner images"
 	@echo "  make runner-scale N=3 Scale alpha-runner replicas"
+	@echo "  make runner-health   Check alpha-runner container; metrics is best-effort during warmup"
+	@echo "  make runner-reconcile  Remove ghost Redis positions (run before runner-up after deploy-core)"
+	@echo "  make alphas-down     Stop legacy standalone alpha containers, if any"
 	@echo "  make alpha-deregister ALPHA=<name>          Stop + remove from DB and .env (local)"
-	@echo "  make health          Check core, stream, DB, and configured alphas"
+	@echo "  make test            Run all tests (indicators + alphas)"
+	@echo "  make test-indicators Run indicators library tests"
+	@echo "  make test-cross-alpha Run cross-alpha strategy tests"
+	@echo "  make test-runner     Run alpha-runner tests"
+	@echo "  make health          Check core, stream, DB, web, and runner"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
-	@echo "  make deploy          Upload, start core, then start alphas on SERVER=$(SERVER)"
-	@echo "  make deploy-web      Upload and recreate only web; leave Redis, worker, and alphas running"
+	@echo "  make deploy          Upload, start core + runner on SERVER=$(SERVER)"
+	@echo "  make deploy-legacy-runner Upload/start only alpha-runner-legacy; leave core + existing runner running"
+	@echo "  make deploy-web      Upload and recreate only web; leave Redis, worker, and runner running"
 	@echo "  make deploy-core     Upload and start only Redis + worker + web; do not start alphas"
 	@echo "  make deploy-alpha-deregister ALPHA=<name>   Stop + remove from DB and .env on SERVER"
 	@echo "  make deploy-logs     Follow remote core logs"
@@ -74,7 +81,7 @@ health:
 	@$(COMPOSE) exec -T worker python -c "import redis; r=redis.Redis.from_url('redis://paper-redis:6379', decode_responses=True); print('paper-signals groups', r.xinfo_groups('paper-signals') if r.exists('paper-signals') else [])" || true
 	@$(COMPOSE) exec -T worker python -c "import sqlite3; con=sqlite3.connect('/app/data/paper-trade.db'); print('db', con.execute('PRAGMA integrity_check').fetchone()[0]); print('alphas', con.execute('select alpha_id,status from alphas order by alpha_id').fetchall())"
 	@$(COMPOSE) exec -T web node -e "fetch('http://127.0.0.1:3000/api/dashboard').then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log('web OK', j.alphas.length, 'alphas')).catch(e=>{console.error(e); process.exit(1)})"
-	@$(MAKE) --no-print-directory alphas-health
+	@$(MAKE) --no-print-directory runner-health
 
 clean:
 	$(COMPOSE) down --timeout 30 -v
@@ -86,45 +93,50 @@ shell:
 # ─── Alpha runner / shadow rollout ───────────────────────────────────────────
 
 runner-build:
-	$(COMPOSE) --profile runner build alpha-runner
+	$(COMPOSE) --profile runner build alpha-runner alpha-runner-legacy
 
 runner-up: prepare
-	$(COMPOSE) --profile runner up -d alpha-runner
+	$(COMPOSE) --profile runner up -d --build alpha-runner alpha-runner-legacy
 
 runner-down:
-	$(COMPOSE) --profile runner stop alpha-runner
-	$(COMPOSE) --profile runner rm -f alpha-runner
+	$(COMPOSE) --profile runner stop alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner rm -f alpha-runner alpha-runner-legacy
 
 runner-scale: prepare
 	@[ -n "$(N)" ] || (echo "Usage: make runner-scale N=<replicas>"; exit 1)
-	$(COMPOSE) --profile runner up -d --scale alpha-runner=$(N) alpha-runner
+	$(COMPOSE) --profile runner up -d --build --scale alpha-runner=$(N) alpha-runner
 
 runner-logs:
-	$(COMPOSE) --profile runner logs -f alpha-runner
+	$(COMPOSE) --profile runner logs -f alpha-runner alpha-runner-legacy
 
-shadow-up: prepare
-	RUNNER_CONFIG_FILE=$${RUNNER_CONFIG_FILE:-./runner-config.shadow.yaml} \
-	$(COMPOSE) --profile runner --profile shadow up -d alpha-runner shadow-worker
+runner-health:
+	$(COMPOSE) --profile runner ps alpha-runner alpha-runner-legacy
+	@$(COMPOSE) --profile runner exec -T alpha-runner true
+	@$(COMPOSE) --profile runner exec -T alpha-runner python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/health' % os.getenv('RUNNER_METRICS_PORT','9091'), timeout=3).read(); print('alpha-runner metrics OK')" 2>/dev/null || echo "alpha-runner running; metrics not ready yet"
+	@$(COMPOSE) --profile runner exec -T alpha-runner-legacy true
+	@$(COMPOSE) --profile runner exec -T alpha-runner-legacy python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/health' % os.getenv('RUNNER_METRICS_PORT','9092'), timeout=3).read(); print('alpha-runner-legacy metrics OK')" 2>/dev/null || echo "alpha-runner-legacy running; metrics not ready yet"
 
-shadow-down:
-	$(COMPOSE) --profile runner --profile shadow stop alpha-runner shadow-worker
-	$(COMPOSE) --profile runner --profile shadow rm -f alpha-runner shadow-worker
+# --- Multi-runner targets ---
+runner-sync-config: ## Sync runner-config.yaml → Redis
+	docker compose --profile runner run --rm alpha-runner python -m runner.config_sync --config /config/runner-config.yaml --redis-url redis://paper-redis:6379
+	docker compose --profile runner run --rm alpha-runner-legacy python -m runner.config_sync --config /config/runner-config.yaml --redis-url redis://paper-redis:6379 --no-prune
 
-shadow-logs:
-	$(COMPOSE) --profile shadow logs -f shadow-worker
+runner-status: ## Show alpha → runner assignment map
+	docker compose --profile runner run --rm alpha-runner python -m runner.status
+
+runner-reconcile: ## Remove ghost Redis positions (runner:positions:* keys with no DB positions)
+	@echo "→ Reconciling Redis positions with DB..."
+	@docker compose exec -T worker python3 -c "import sqlite3,redis; con=sqlite3.connect('/app/data/paper-trade.db'); db={r[0] for r in con.execute('SELECT DISTINCT alpha_id FROM positions')}; c=redis.from_url('redis://paper-redis:6379',decode_responses=True); removed=sum(c.delete(k) for k in c.scan_iter('runner:positions:*') if k.replace('runner:positions:','') not in db); print(f'Reconciled: removed {removed} ghost position keys')"
 
 # ─── Alpha management ────────────────────────────────────────────────────────
 
 require-mds-network:
 	@docker network inspect redis-net >/dev/null 2>&1 || (echo "Missing Docker network 'redis-net'. Deploy/start infra/redis first."; exit 1)
 
-# Start all alphas listed in REGISTERED_ALPHAS
+# Legacy standalone alpha containers are no longer started directly. Alphas run
+# inside alpha-runner from runner-config.yaml / Redis config.
 alphas-up: require-mds-network
-	@for alpha in $(ALPHAS); do \
-		echo "→ Starting $$alpha..."; \
-		MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" $(COMPOSE) -f alphas/$$alpha/docker-compose.yml \
-			-p $$alpha up -d --build; \
-	done
+	@echo "ERROR: legacy standalone alpha startup is disabled. Use 'make runner-up' or 'make runner-scale N=<replicas>'."; exit 1
 
 # Stop all alphas listed in REGISTERED_ALPHAS
 alphas-down:
@@ -134,11 +146,9 @@ alphas-down:
 			-p $$alpha down --timeout 30; \
 	done
 
-# Start a single alpha: make alpha-up ALPHA=wilder
+# Legacy standalone alpha startup is disabled. Add/enable alpha in runner-config.yaml instead.
 alpha-up: require-mds-network
-	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-up ALPHA=<name>"; exit 1)
-	@[ -f alphas/$(ALPHA)/docker-compose.yml ] || (echo "Alpha '$(ALPHA)' not found"; exit 1)
-	MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" $(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) up -d --build
+	@echo "ERROR: legacy standalone alpha startup is disabled. Use runner config + 'make runner-up'."; exit 1
 
 # Stop a single alpha: make alpha-down ALPHA=wilder
 alpha-down:
@@ -163,25 +173,31 @@ alpha-deregister:
 # Restart a single alpha
 alpha-restart:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-restart ALPHA=<name>"; exit 1)
-	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) restart
+	@echo "ERROR: legacy standalone alpha restart is disabled. Use 'make runner-down && make runner-up' or update runner-config.yaml."; exit 1
 
 # Logs for a single alpha
 alpha-logs:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make alpha-logs ALPHA=<name>"; exit 1)
-	$(COMPOSE) -f alphas/$(ALPHA)/docker-compose.yml -p $(ALPHA) logs -f
+	@echo "ERROR: legacy standalone alpha logs are disabled. Use logs/runner/alphas/$(ALPHA).log or 'make runner-logs'."; exit 1
 
 # Status of all alphas
 alphas-ps:
-	@for alpha in $(ALPHAS); do \
-		echo "=== $$alpha ==="; \
-		$(COMPOSE) -f alphas/$$alpha/docker-compose.yml -p $$alpha ps 2>/dev/null; \
-	done
+	@echo "ERROR: legacy standalone alpha status is disabled. Use 'make runner-status' or 'make runner-health'."; exit 1
 
 alphas-health:
-	@for alpha in $(ALPHAS); do \
-		echo "=== $$alpha health ==="; \
-		$(COMPOSE) -f alphas/$$alpha/docker-compose.yml -p $$alpha ps; \
-	done
+	@echo "ERROR: legacy standalone alpha health is disabled. Use 'make runner-health'."; exit 1
+
+test:
+	PYTHONPATH=.:alphas python -m pytest indicators/ alphas/ -v
+
+test-indicators:
+	python -m pytest indicators/ -v
+
+test-cross-alpha:
+	PYTHONPATH=.:alphas python -m pytest alphas/cross_alpha/ -v
+
+test-runner:
+	PYTHONPATH=.:alphas python -m pytest alphas/runner/ -v
 
 # ─── Package ─────────────────────────────────────────────────────────────────
 
@@ -190,6 +206,7 @@ package:
 	cd .. && zip -r $(ZIP_PATH) $(ZIP_NAME)/ \
 		-x "$(ZIP_NAME)/.git/*" \
 		-x "$(ZIP_NAME)/.pytest_cache/*" \
+		-x "$(ZIP_NAME)/.codegraph/*" \
 		-x "$(ZIP_NAME)/**/__pycache__/*" \
 		-x "$(ZIP_NAME)/**/.venv/*" \
 		-x "$(ZIP_NAME)/**/.pytest_cache/*" \
@@ -249,19 +266,22 @@ deploy: package
 	scp $(ZIP_PATH) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
-		echo "[1/8] Extracting..."; \
+		echo "[1/10] Extracting..."; \
 		mkdir -p $(REMOTE_DIR); \
 		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
 		cd $(REMOTE_DIR); \
-		echo "[2/8] Preparing runtime dirs..."; \
+		echo "[2/10] Preparing runtime dirs..."; \
 		make prepare; \
-		echo "[3/8] Backing up DB..."; \
+		echo "[3/10] Backing up DB..."; \
 		[ -f data/paper-trade.db ] && cp data/paper-trade.db data/paper-trade.db.bak || true; \
-		echo "[4/8] Stopping alphas..."; \
-		make alphas-down; \
-		echo "[5/8] Starting core..."; \
+		echo "[4/10] Stopping legacy standalone alphas and old runner..."; \
+		make alphas-down || true; \
+		make runner-down || true; \
+		echo "[5/10] Clearing old logs..."; \
+		find logs -type f -delete 2>/dev/null || true; \
+		echo "[6/10] Starting core..."; \
 		docker compose up -d --build --remove-orphans; \
-		echo "[6/8] Checking DB health..."; \
+		echo "[7/10] Checking core health..."; \
 		i=0; \
 		until docker compose exec -T worker test -f /tmp/bot_health >/dev/null 2>&1; do \
 			i=$$((i+1)); \
@@ -279,10 +299,19 @@ deploy: package
 			[ -f data/paper-trade.db.bak ] && cp data/paper-trade.db.bak data/paper-trade.db || true; \
 			docker compose up -d --build; \
 		fi; \
-		echo "[7/8] Starting alphas..."; \
-		make alphas-up; \
-		echo "[8/8] Status"; \
+		docker compose exec -T web node -e \
+			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; \
+		echo "[8/10] Reconciling Redis positions with DB..."; \
+		docker compose exec -T worker python3 -c "import sqlite3,redis; con=sqlite3.connect(\"/app/data/paper-trade.db\"); db={r[0] for r in con.execute(\"SELECT DISTINCT alpha_id FROM positions\")}; c=redis.from_url(\"redis://paper-redis:6379\",decode_responses=True); removed=sum(c.delete(k) for k in c.scan_iter(\"runner:positions:*\") if k.replace(\"runner:positions:\",\"\") not in db); print(f\"Reconciled: removed {removed} ghost position keys\")" || echo "Reconcile skipped (worker not ready)"; \
+		echo "[9/10] Starting alpha-runner..."; \
+		make runner-build; \
+		make runner-sync-config; \
+		make runner-up; \
+		docker compose --profile runner exec -T alpha-runner true; \
+		make runner-health; \
+		echo "[10/10] Status"; \
 		make health; \
+		docker compose --profile runner logs --tail=80 alpha-runner alpha-runner-legacy; \
 		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
 		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
 	'
@@ -321,40 +350,40 @@ deploy-core deploy-system: package
 		docker compose ps; \
 		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
 		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
-		echo "Alphas are stopped. Start later with: make alpha-up ALPHA=<name>"; \
+		echo "Legacy standalone alphas are stopped. Start runner later with: make runner-up"; \
 	'
 
-# Deploy + start all alphas
+# Deploy + start core and alpha-runner. Kept as an alias for older muscle memory.
 deploy-all: deploy
-	ssh $(SERVER) 'cd $(REMOTE_DIR) && make alphas-up'
 
 # Deploy a single alpha: make deploy-alpha ALPHA=wilder
 ALPHA_ZIP = /tmp/alpha-$(ALPHA).zip
 
 deploy-alpha:
 	@[ "$(ALPHA)" != "undefined" ] || (echo "Usage: make deploy-alpha ALPHA=<name>"; exit 1)
-	@[ -d alphas/$(ALPHA) ] || (echo "Alpha '$(ALPHA)' not found"; exit 1)
-	@echo "→ Packaging alpha: $(ALPHA)..."
-	rm -f $(ALPHA_ZIP)
-	cd .. && zip -r $(ALPHA_ZIP) \
-		$(ZIP_NAME)/alphas/$(ALPHA)/ \
-		$(ZIP_NAME)/alphas/base/ \
-		$(ZIP_NAME)/.env \
-		-x "$(ZIP_NAME)/**/__pycache__/*" \
-		-x "$(ZIP_NAME)/**/.venv/*" \
-		-x "$(ZIP_NAME)/**/*.log"
-	scp $(ALPHA_ZIP) $(SERVER):/tmp/
+	@echo "ERROR: legacy standalone alpha deploy is disabled. Update runner-config.yaml and run 'make deploy' or 'make runner-up'."; exit 1
+
+deploy-legacy-runner: package
+	@echo "→ Uploading legacy runner update to $(SERVER)..."
+	scp $(ZIP_PATH) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
-		echo "[1/3] Extracting..."; \
-		unzip -o /tmp/alpha-$(ALPHA).zip -d /root/ > /dev/null; \
-		docker network inspect market-data >/dev/null 2>&1 || (echo "Missing Docker network market-data. Deploy/start market-data-service first."; exit 1); \
-		echo "[2/3] Building & starting $(ALPHA)..."; \
-		cd $(REMOTE_DIR) && MDS_REDIS_URL="$(MDS_REDIS_URL)" MDS_EXCHANGE="$(MDS_EXCHANGE)" docker compose -f alphas/$(ALPHA)/docker-compose.yml \
-			-p $(ALPHA) up -d --build; \
-		echo "[3/3] Reloading worker..."; \
-		docker compose up -d --force-recreate worker; \
-		echo "Done. Alpha $(ALPHA) is live."; \
+		echo "[1/6] Extracting files only..."; \
+		mkdir -p $(REMOTE_DIR); \
+		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
+		cd $(REMOTE_DIR); \
+		echo "[2/6] Preparing dirs..."; \
+		make prepare; \
+		mkdir -p logs/runner-legacy logs/runner-legacy/alphas; \
+		echo "[3/6] Registering 7 legacy alpha rows in DB (no worker restart)..."; \
+		docker compose exec -T worker python3 -c "import sqlite3,datetime; alphas=\"alpha-1-bangoc,alpha-1-v5b,alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct,alpha-1-v5b-reverse-blacklist-base-reverse,alpha-2,hyper-turbo,hyper-turbo-v2\".split(\",\"); con=sqlite3.connect(\"/app/data/paper-trade.db\"); now=datetime.datetime.now(datetime.UTC).isoformat(); [con.execute(\"INSERT OR IGNORE INTO alphas (alpha_id, display_name, created_at, status) VALUES (?, ?, ?, ?)\", (a, a, now, \"active\")) for a in alphas]; con.commit(); print(\"registered\", len(alphas), \"legacy alphas\")"; \
+		echo "[4/6] Building alpha-runner-legacy only..."; \
+		docker compose --profile runner build alpha-runner-legacy; \
+		echo "[5/6] Starting alpha-runner-legacy only (no deps, no Redis config sync)..."; \
+		docker compose --profile runner up -d --no-deps alpha-runner-legacy; \
+		echo "[6/6] Status"; \
+		docker compose --profile runner ps alpha-runner alpha-runner-legacy; \
+		docker compose --profile runner logs --tail=80 alpha-runner-legacy; \
 	'
 
 # Stop a single alpha on the server and remove it from REGISTERED_ALPHAS + DB.
@@ -383,7 +412,7 @@ deploy-logs:
 	ssh $(SERVER) 'cd $(REMOTE_DIR) && docker compose logs -f'
 
 deploy-ps:
-	ssh $(SERVER) 'cd $(REMOTE_DIR) && docker compose ps && make alphas-ps'
+	ssh $(SERVER) 'cd $(REMOTE_DIR) && docker compose --profile runner ps && make runner-status || true'
 
 deploy-prune:
 	ssh $(SERVER) 'docker system prune -af'

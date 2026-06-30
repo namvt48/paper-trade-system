@@ -1,0 +1,93 @@
+runner:
+  runner_id: paper-runner-legacy-standalone
+  redis_url: redis://paper-redis:6379
+  mds_redis_url: redis://mds-redis:6379
+  mds_exchange: binance
+  signal_stream: paper-signals
+  shadow_mode: false
+  warmup_min_symbol_coverage: 0.80
+  compute_workers: 4
+  data_queue_maxsize: 1000
+  strategy_event_drop_warn_threshold: 100
+  lease_ttl_sec: 1800
+  lease_renew_interval_sec: 5
+  max_alphas_per_runner: 10
+  claim_interval_sec: 3600
+  warmup:
+    max_concurrent_mds_requests: 3
+    max_mds_requests_per_minute: 15
+    max_symbols_per_mds_request: 30
+    request_timeout_sec: 300
+    response_cache_ttl_sec: 300
+    mds_ready_timeout_sec: 60
+    min_warmup_coverage_pct: 0.80
+    sync_tolerance_candles: 1
+    reconnect_staleness_candles: 5
+  cache:
+    min_retain_bars: 0
+
+modules:
+  - runner.strategies.legacy_standalone
+
+alphas:
+  - alpha_id: alpha-1-bangoc
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha-1-bangoc, tf: 15m, symbols: [BTCUSDT], warmup_bars: 700, retain_bars: 1000, include_1m: false, scan_on_tfs: [15m], exchange: binance}
+  - alpha_id: alpha-1-v5b
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha-1-v5b, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
+  - alpha_id: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
+  - alpha_id: alpha-1-v5b-reverse-blacklist-base-reverse
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha-1-v5b-reverse-blacklist-base-reverse, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
+  - alpha_id: alpha-2
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: false
+    params: {alpha_dir: alpha-2, tf: 4h, htf: 12h, warmup_bars: 900, retain_bars: 1000, htf_warmup_bars: 900, htf_retain_bars: 1000, include_1m: false, scan_on_tfs: [4h], exchange: binance}
+  - alpha_id: hyper-turbo
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: hyper-turbo, tf: 15m, symbols: [BTCUSDT], warmup_bars: 21, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m, 1m], exchange: binance}
+  - alpha_id: hyper-turbo-v2
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: false
+    params:
+      alpha_dir: hyper-turbo-v2
+      tf: 4h
+      symbols: [CAKEUSDT, SEIUSDT, BIOUSDT, FIDAUSDT, ORDIUSDT, INJUSDT, NEARUSDT, OPUSDT, AAVEUSDT, TAOUSDT, DOGEUSDT, SUIUSDT, BNBUSDT, LINKUSDT, TIAUSDT, SUPERUSDT, DYMUSDT, IDUSDT, BTCUSDT]
+      warmup_bars: 360
+      retain_bars: 1000
+      include_1m: true
+      retain_1m_bars: 1000
+      scan_on_tfs: [4h]
+      exchange: binance
+  # ── alpha2-NR-Long-Short: EMA-cross + Hull-Butterfly reversal, BTC only ──
+  - alpha_id: alpha2-NR-Long-Short-M15
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha2-NR-Long-Short-M15, tf: 15m, symbols: [BTCUSDT], warmup_bars: 200, retain_bars: 1000, include_1m: false, scan_on_tfs: [15m], exchange: binance}
+  - alpha_id: alpha2-NR-Long-Short-H1
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: alpha2-NR-Long-Short-H1, tf: 1h, symbols: [BTCUSDT], warmup_bars: 200, retain_bars: 1000, include_1m: false, scan_on_tfs: [1h], exchange: binance}
+  # ── deobietcophaialphakhong: Song Than zone-based mean-reversion (song_than.md) ──
+  - alpha_id: deobietcophaialphakhong
+    strategy: legacy_standalone
+    version: "legacy"
+    enabled: true
+    params: {alpha_dir: deobietcophaialphakhong, tf: 15m, symbols: [BTCUSDT], warmup_bars: 800, retain_bars: 1000, include_1m: false, scan_on_tfs: [15m], exchange: binance}

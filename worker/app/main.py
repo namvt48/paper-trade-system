@@ -17,9 +17,11 @@ from app.ob_subscribe import (
     run_orderbook_sync_loop,
 )
 from app.redis_clients import connect_mds_redis, connect_paper_redis, make_mds_redis_client
-from app.slippage_client import SlippageClient, FillService
+from app.fill import fixed_pct_fill
+from app.slippage_client import SlippageClient, FillService, FillResolution, order_side_for
 from app.position_snapshots import PositionSnapshotPublisher
 from app.position_ownership import PositionOwnershipMonitor
+from app.equity_snapshots import EquitySnapshotCollector
 
 logger = logging.getLogger(__name__)
 
@@ -62,6 +64,41 @@ class TickerPriceCache:
         if self._clock() - ts > self._staleness_sec:
             return None
         return PriceQuote(price=price, source="ticker_mid", is_executable=False)
+
+
+class TickFillService:
+    def __init__(self, cache: TickerPriceCache, slippage_pct: float) -> None:
+        self._cache = cache
+        self._slippage_pct = slippage_pct
+
+    async def resolve(self, exchange: str, symbol: str, position_side: str, qty: float,
+                      ref_price: float, is_close: bool, request_id: str | None = None,
+                      ref_is_executable: bool = False) -> FillResolution:
+        order_side = order_side_for(position_side, is_close)
+        quote = self._cache.get_quote(symbol)
+        if quote is not None:
+            return FillResolution(
+                final_price=quote.price,
+                order_side=order_side,
+                initial_price=quote.price,
+                initial_source=quote.source,
+                requested_qty=qty,
+                filled_qty=qty,
+            )
+
+        fallback_price = (
+            ref_price if ref_is_executable
+            else fixed_pct_fill(ref_price, position_side, self._slippage_pct, is_close)
+        )
+        return FillResolution(
+            final_price=fallback_price,
+            order_side=order_side,
+            initial_price=fallback_price,
+            initial_source="executable_ref" if ref_is_executable else "fixed_pct",
+            requested_qty=qty,
+            filled_qty=0.0,
+            fallback_reason="ticker_unavailable",
+        )
 
 
 def close_ref_is_executable(signal) -> bool:
@@ -232,18 +269,11 @@ async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPr
 async def run_health_loop(ownership_monitor=None) -> None:
     while True:
         try:
-            healthy = ownership_monitor is None or ownership_monitor.last_report.get("healthy", False)
-            if healthy:
-                with open("/tmp/bot_health", "w") as health_file:
-                    health_file.write(json.dumps({
-                        "timestamp": time.time(),
-                        "ownership": ownership_monitor.last_report if ownership_monitor else {},
-                    }))
-            else:
-                try:
-                    os.remove("/tmp/bot_health")
-                except FileNotFoundError:
-                    pass
+            with open("/tmp/bot_health", "w") as health_file:
+                health_file.write(json.dumps({
+                    "timestamp": time.time(),
+                    "ownership": ownership_monitor.last_report if ownership_monitor else {},
+                }))
         except Exception:
             logger.warning("Failed to write worker health file", exc_info=True)
         await asyncio.sleep(10)
@@ -290,17 +320,20 @@ async def run_consumer():
         slippage_pct=settings.SLIPPAGE_PCT,
         duplicate_policy=settings.DUPLICATE_POSITION_POLICY,
     )
+    orderbook_enabled = settings.orderbook_enabled()
     supported_exchanges = settings.get_orderbook_exchanges()
     cache = TickerPriceCache(staleness_sec=settings.TICKER_STALENESS_SEC)
     ob_cache = ObExecCache(staleness_sec=settings.OPEN_BOOK_MAX_AGE_MS / 1000.0)
 
     paper_redis = await connect_paper_redis()
+    needs_tick_execution = not orderbook_enabled
     mds_redis = make_mds_redis_client() if (
-        settings.ENABLE_ORDERBOOK_SLIPPAGE or settings.ENABLE_WORKER_TPSL_AUTO_CLOSE
+        orderbook_enabled or settings.ENABLE_WORKER_TPSL_AUTO_CLOSE
         or settings.ENABLE_POSITION_OWNERSHIP_MONITOR
+        or needs_tick_execution
     ) else None
     fill_service = None
-    if settings.ENABLE_ORDERBOOK_SLIPPAGE and mds_redis is not None:
+    if orderbook_enabled and mds_redis is not None:
         fill_service = FillService(
             SlippageClient(mds_redis),
             slippage_pct=settings.SLIPPAGE_PCT,
@@ -311,6 +344,8 @@ async def run_consumer():
             min_adverse_bps=settings.EXECUTION_MIN_ADVERSE_BPS,
             second_quote_timeout=settings.EXECUTION_SECOND_QUOTE_TIMEOUT_MS / 1000.0,
         )
+    elif needs_tick_execution:
+        fill_service = TickFillService(cache, settings.SLIPPAGE_PCT)
     snapshot_publisher = PositionSnapshotPublisher(
         db, paper_redis, settings.POSITION_SNAPSHOT_SYNC_INTERVAL_SEC
     )
@@ -326,11 +361,19 @@ async def run_consumer():
     ob_sync_task = None
     snapshot_task = None
     ownership_task = None
+    equity_snapshot_collector = None
+    equity_snapshot_task = None
+    if settings.ENABLE_EQUITY_SNAPSHOT:
+        equity_snapshot_collector = EquitySnapshotCollector(
+            db, cache, settings.EQUITY_SNAPSHOT_DB_PATH,
+            settings.EQUITY_SNAPSHOT_INTERVAL_SEC,
+            settings.ALPHAS_DIR,
+        )
 
     try:
         await ensure_consumer_group(paper_redis)
 
-        if settings.ENABLE_ORDERBOOK_SLIPPAGE:
+        if orderbook_enabled:
             ob_exec_tasks = [
                 asyncio.create_task(run_ob_exec_subscriber(ob_cache, connect_mds_redis, exchange))
                 for exchange in sorted(supported_exchanges)
@@ -341,13 +384,17 @@ async def run_consumer():
             )
         await snapshot_publisher.publish_all()
         snapshot_task = asyncio.create_task(snapshot_publisher.run())
+        if equity_snapshot_collector is not None:
+            await equity_snapshot_collector.init()
+            equity_snapshot_task = asyncio.create_task(equity_snapshot_collector.run())
         if ownership_monitor is not None:
             ownership_task = asyncio.create_task(ownership_monitor.run())
 
-        if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
+        if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE or needs_tick_execution:
             ticker_task = asyncio.create_task(
                 run_ticker_subscriber(cache, connect_mds_redis, supported_exchanges)
             )
+        if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
             price_check_task = asyncio.create_task(
                 run_price_check_loop(db, executor, cache, ob_cache, fill_service)
             )
@@ -386,7 +433,8 @@ async def run_consumer():
 
                     result = await process_signal_message(
                         data, db, executor, fill_service=fill_service,
-                        snapshot_publisher=snapshot_publisher, pre_open=pre_open,
+                        snapshot_publisher=snapshot_publisher,
+                        pre_open=pre_open if orderbook_enabled else None,
                     )
                     if result is not None:
                         logger.info("Processed %s signal: %s", data.get("type"), result)
@@ -394,7 +442,7 @@ async def run_consumer():
                     if (
                         result is not None
                         and data.get("type") == "OPEN"
-                        and settings.ENABLE_ORDERBOOK_SLIPPAGE
+                        and orderbook_enabled
                         and exchange in supported_exchanges
                     ):
                         try:
@@ -416,7 +464,8 @@ async def run_consumer():
         logger.info("Shutting down")
     finally:
         tasks = [task for task in (ticker_task, price_check_task, health_task,
-                                   ob_sync_task, snapshot_task, ownership_task) if task is not None]
+                                   ob_sync_task, snapshot_task, ownership_task,
+                                   equity_snapshot_task) if task is not None]
         tasks.extend(ob_exec_tasks)
         for task in tasks:
             task.cancel()
@@ -424,11 +473,14 @@ async def run_consumer():
             await asyncio.gather(*tasks, return_exceptions=True)
         if mds_redis is not None:
             try:
-                await publish_empty_syncs(mds_redis, settings.CONSUMER_NAME, supported_exchanges)
+                if orderbook_enabled:
+                    await publish_empty_syncs(mds_redis, settings.CONSUMER_NAME, supported_exchanges)
             except Exception as exc:
                 logger.warning("orderbook empty sync failed during shutdown: %s", exc)
             await mds_redis.aclose()
         await db.close()
+        if equity_snapshot_collector is not None:
+            await equity_snapshot_collector.close()
         await paper_redis.aclose()
 
 

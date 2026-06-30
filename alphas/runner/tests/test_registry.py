@@ -10,7 +10,7 @@ from runner.strategy.registry import StrategyRegistry
 
 
 class DummyStrategy(Strategy):
-    def get_required_channels(self): return ["kline:binance:15m"]
+    def get_required_channels_instance(self): return ["kline:binance:15m"]
     def get_warmup_symbols(self): return ["BTCUSDT"]
     def get_warmup_tfs(self): return ["15m"]
     def get_warmup_bars(self, tf): return 2

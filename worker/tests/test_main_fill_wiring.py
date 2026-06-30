@@ -1,8 +1,9 @@
 import pytest
+import json
 
 from app.db import Database
 from app.executor import Executor
-from app.main import process_signal_message
+from app.main import TickFillService, TickerPriceCache, process_signal_message
 
 
 class _FillService:
@@ -27,6 +28,23 @@ async def test_open_signal_uses_fill_service(tmp_path):
     result = await process_signal_message(data, db, ex, fill_service=fs)
     assert result["fill_price"] == 95222.0
     assert fs.calls and fs.calls[0][0] == "BTCUSDT"
+    await db.close()
+
+
+@pytest.mark.asyncio
+async def test_open_signal_uses_tick_fill_service_when_orderbook_disabled(tmp_path):
+    db = Database(str(tmp_path / "t.db"))
+    await db.init()
+    ex = Executor(db, slippage_pct=0.1)
+    cache = TickerPriceCache()
+    cache.update_price("BTCUSDT", 95123.0)
+    data = {"type": "OPEN", "alpha_id": "a", "signal_id": "tick-open", "symbol": "BTCUSDT",
+            "side": "LONG", "entry": "95000.0", "qty": "0.01", "timestamp": "2026-05-22T10:00:00Z"}
+    result = await process_signal_message(data, db, ex, fill_service=TickFillService(cache, 0.1))
+    assert result["fill_price"] == 95123.0
+    pos = await db.get_position(result["position_id"])
+    metadata = json.loads(pos["metadata"])
+    assert metadata["execution"]["initial_source"] == "ticker_mid"
     await db.close()
 
 

@@ -22,6 +22,8 @@ declare global {
 
 let alphaConfigCache: { mtime: number; value: Record<string, AlphaConfig> } | null = null;
 let dashboardCache: { expiresAt: number; value: ReturnType<typeof buildDashboardData> } | null = null;
+const statsCache = new Map<string, { expiresAt: number; value: AlphaStats }>();
+const STATS_CACHE_MS = Number(process.env.STATS_CACHE_MS || "2000");
 
 function parseDotEnv(content: string): Record<string, string> {
   const result: Record<string, string> = {};
@@ -153,6 +155,10 @@ export function getCompareEquity(alphaIds: string[]): Map<string, EquityPoint[]>
 }
 
 export function getAlphaStats(alphaId: string): AlphaStats {
+  const now = Date.now();
+  const cached = statsCache.get(alphaId);
+  if (cached && cached.expiresAt > now) return cached.value;
+
   const db = tryGetDb();
   if (!db) return { alpha_id: alphaId, total_trades: 0, win_trades: 0, loss_trades: 0, winrate: 0, total_pnl: 0, avg_pnl: 0, avg_win: 0, avg_loss: 0, max_drawdown: 0, sharpe_ratio: 0, consecutive_wins: 0, consecutive_losses: 0 };
   const row = db.prepare(`
@@ -200,7 +206,7 @@ export function getAlphaStats(alphaId: string): AlphaStats {
     consecutiveLosses = Math.max(consecutiveLosses, currentLosses);
   }
 
-  return {
+  const result: AlphaStats = {
     alpha_id: alphaId,
     total_trades: row.total_trades || 0,
     win_trades: row.win_trades || 0,
@@ -215,6 +221,9 @@ export function getAlphaStats(alphaId: string): AlphaStats {
     consecutive_wins: consecutiveWins,
     consecutive_losses: consecutiveLosses,
   };
+
+  statsCache.set(alphaId, { expiresAt: now + STATS_CACHE_MS, value: result });
+  return result;
 }
 
 export function getAlphaColumns(alphaId: string): ColumnSpec[] {

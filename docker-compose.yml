@@ -22,6 +22,9 @@ services:
       - REDIS_READ_COUNT=${REDIS_READ_COUNT:-100}
       - REDIS_BLOCK_MS=${REDIS_BLOCK_MS:-1000}
       - SIGNAL_RETENTION_DAYS=${SIGNAL_RETENTION_DAYS:-0}
+      - ENABLE_ORDERBOOK=${ENABLE_ORDERBOOK:-true}
+      - ENABLE_ORDERBOOK_SLIPPAGE=${ENABLE_ORDERBOOK_SLIPPAGE:-true}
+      - ORDERBOOK_SUPPORTED_EXCHANGES=${ORDERBOOK_SUPPORTED_EXCHANGES:-binance}
       - POSITION_SNAPSHOT_SYNC_INTERVAL_SEC=${POSITION_SNAPSHOT_SYNC_INTERVAL_SEC:-5}
       - POSITION_OWNERSHIP_GRACE_SEC=${POSITION_OWNERSHIP_GRACE_SEC:-30}
       - POSITION_OWNERSHIP_CHECK_INTERVAL_SEC=${POSITION_OWNERSHIP_CHECK_INTERVAL_SEC:-5}
@@ -33,6 +36,10 @@ services:
       - EXECUTION_LATENCY_MS=${EXECUTION_LATENCY_MS:-50}
       - EXECUTION_MIN_ADVERSE_BPS=${EXECUTION_MIN_ADVERSE_BPS:-0}
       - EXECUTION_SECOND_QUOTE_TIMEOUT_MS=${EXECUTION_SECOND_QUOTE_TIMEOUT_MS:-200}
+      - ENABLE_EQUITY_SNAPSHOT=${ENABLE_EQUITY_SNAPSHOT:-true}
+      - EQUITY_SNAPSHOT_INTERVAL_SEC=${EQUITY_SNAPSHOT_INTERVAL_SEC:-300}
+      - EQUITY_SNAPSHOT_DB_PATH=/app/data/equity-snapshots.db
+      - ALPHAS_DIR=/app/alphas
     networks:
       - redis-net
     restart: unless-stopped
@@ -59,6 +66,7 @@ services:
       - ./alphas:/app/alphas:ro
     environment:
       - DB_PATH=/app/data/paper-trade.db
+      - EQUITY_SNAPSHOT_DB_PATH=/app/data/equity-snapshots.db
       - ALPHAS_DIR=/app/alphas
       - REDIS_URL=redis://paper-redis:6379
       - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
@@ -74,35 +82,71 @@ services:
 
   alpha-runner:
     build:
-      context: ./alphas
-      dockerfile: runner/Dockerfile
+      context: ./
+      dockerfile: alphas/runner/Dockerfile
     environment:
       REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
       MDS_REDIS_URL: ${MDS_REDIS_URL:-redis://mds-redis:6379}
       MDS_EXCHANGE: ${MDS_EXCHANGE:-binance}
       RUNNER_CONFIG: /config/runner-config.yaml
-      RUNNER_ID: ${RUNNER_ID:-}
       RUNNER_METRICS_HOST: 0.0.0.0
       RUNNER_METRICS_PORT: 9091
+      LOG_DIR: /app/logs
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      ALPHA_LOGS_ENABLED: ${ALPHA_LOGS_ENABLED:-true}
+      ALPHA_LOG_DIR: ${ALPHA_LOG_DIR:-/app/logs/alphas}
+      ALPHA_LOG_MAX_BYTES: ${ALPHA_LOG_MAX_BYTES:-20000000}
+      ALPHA_LOG_BACKUP_COUNT: ${ALPHA_LOG_BACKUP_COUNT:-5}
+      MAX_ALPHAS_PER_RUNNER: ${MAX_ALPHAS_PER_RUNNER:-40}
+      RUNNER_COMPUTE_WORKERS: ${RUNNER_COMPUTE_WORKERS:-8}
+      CLAIM_INTERVAL_SEC: ${CLAIM_INTERVAL_SEC:-30}
+      RUNNER_CACHE_DIR: ${RUNNER_CACHE_DIR:-/data/cache}
     volumes:
       - ${RUNNER_CONFIG_FILE:-./runner-config.yaml}:/config/runner-config.yaml:ro
       - ./logs/runner:/app/logs
+      - ../market-data-service/historical_cache:${RUNNER_CACHE_DIR:-/data/cache}:ro
+    depends_on:
+      - worker
     networks:
       - redis-net
     restart: unless-stopped
     profiles:
       - runner
+    deploy:
+      replicas: ${RUNNER_REPLICAS:-1}
 
-  shadow-worker:
+  alpha-runner-legacy:
     build:
-      context: ./shadow-worker
+      context: ./
+      dockerfile: alphas/runner/Dockerfile
     environment:
       REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
-      PRODUCTION_STREAM: paper-signals
-      SHADOW_STREAM: paper-signals-shadow
-      SHADOW_TTL_SEC: ${SHADOW_TTL_SEC:-300}
+      MDS_REDIS_URL: ${MDS_REDIS_URL:-redis://mds-redis:6379}
+      MDS_EXCHANGE: ${MDS_EXCHANGE:-binance}
+      RUNNER_ID: paper-runner-legacy-standalone
+      RUNNER_CONFIG: /config/runner-config.yaml
+      RUNNER_METRICS_HOST: 0.0.0.0
+      RUNNER_METRICS_PORT: 9092
+      LOG_DIR: /app/logs
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      ALPHA_LOGS_ENABLED: ${ALPHA_LOGS_ENABLED:-true}
+      ALPHA_LOG_DIR: ${ALPHA_LOG_DIR:-/app/logs/alphas}
+      ALPHA_LOG_MAX_BYTES: ${ALPHA_LOG_MAX_BYTES:-20000000}
+      ALPHA_LOG_BACKUP_COUNT: ${ALPHA_LOG_BACKUP_COUNT:-5}
+      MAX_ALPHAS_PER_RUNNER: ${LEGACY_MAX_ALPHAS_PER_RUNNER:-10}
+      RUNNER_COMPUTE_WORKERS: ${LEGACY_RUNNER_COMPUTE_WORKERS:-4}
+      CLAIM_INTERVAL_SEC: ${LEGACY_CLAIM_INTERVAL_SEC:-3600}
+      RUNNER_CACHE_DIR: ${RUNNER_CACHE_DIR:-/data/cache}
+    volumes:
+      - ${LEGACY_RUNNER_CONFIG_FILE:-./runner-config-legacy.yaml}:/config/runner-config.yaml:ro
+      - ./logs/runner-legacy:/app/logs
+      - ../market-data-service/historical_cache:${RUNNER_CACHE_DIR:-/data/cache}:ro
+    depends_on:
+      - worker
     networks:
       - redis-net
     restart: unless-stopped
     profiles:
-      - shadow
+      - runner
+    deploy:
+      replicas: ${LEGACY_RUNNER_REPLICAS:-1}

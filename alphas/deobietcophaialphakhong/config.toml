@@ -1,0 +1,40 @@
+[[columns]]
+key = "milestone"
+label = "Milestone"
+type = "number"
+decimals = 0
+
+[[columns]]
+key = "is_reverse"
+label = "Reverse"
+type = "text"
+
+[[columns]]
+key = "zone_green_high"
+label = "Green H"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "zone_red_low"
+label = "Red L"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "trail_up"
+label = "Trail Up"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "trail_dn"
+label = "Trail Dn"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "consecutive_sl"
+label = "Cons SL"
+type = "number"
+decimals = 0

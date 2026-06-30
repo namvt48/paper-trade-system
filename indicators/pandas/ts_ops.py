@@ -28,3 +28,15 @@ def decay_linear(x: pd.DataFrame, d: int) -> pd.DataFrame:
     weights = np.arange(d, 0, -1, dtype=float)
     weights /= weights.sum()
     return sum(weights[k] * x.shift(k) for k in range(d))
+
+
+def ts_range_location(close: pd.DataFrame, low: pd.DataFrame, high: pd.DataFrame, d: int) -> pd.DataFrame:
+    lo = low.rolling(d, min_periods=1).min()
+    hi = high.rolling(d, min_periods=1).max()
+    return (close - lo) / (hi - lo).replace(0, np.nan)
+
+
+def ts_range_location_close(close: pd.DataFrame, d: int) -> pd.DataFrame:
+    lo = close.rolling(d, min_periods=1).min()
+    hi = close.rolling(d, min_periods=1).max()
+    return (close - lo) / (hi - lo).replace(0, np.nan)

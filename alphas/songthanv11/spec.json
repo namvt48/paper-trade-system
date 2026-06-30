@@ -1,0 +1,21 @@
+{
+  "alpha_id": "songthanv11",
+  "timeframe": "15m",
+  "signal": "breakout_hl",
+  "params": {
+    "window": 2880
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 96,
+  "exec_lag": 0,
+  "vol_lookback": 480,
+  "ppy": 35040,
+  "long_threshold": null,
+  "short_threshold": null,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0,
+  "construction": "winsor_cont",
+  "winsor_k": 3.0
+}

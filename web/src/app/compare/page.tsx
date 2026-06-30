@@ -1,4 +1,4 @@
-import { getAllAlphas, getCompareEquity, getAlphaStats } from "@/lib/db";
+import { getAllAlphas, getCompareEquity, getAlphaStats, getOpenPositions } from "@/lib/db";
 import { CompareChart } from "@/components/equity-chart";
 import { StatsPanel } from "@/components/stats-panel";
 import type { EquityPoint } from "@/lib/types";
@@ -68,13 +68,14 @@ export default async function ComparePage({
         {selectedIds.map((id) => {
           const alpha = alphas.find((a) => a.alpha_id === id);
           const stats = getAlphaStats(id);
+          const positions = getOpenPositions(id);
           return (
             <div key={id}>
               <h3 className="text-sm font-semibold mb-3 text-slate-300 uppercase tracking-widest flex items-center gap-2">
                 <span className="w-3 h-px bg-slate-700 inline-block" />
                 {alpha?.display_name ?? id}
               </h3>
-              <StatsPanel stats={stats} />
+              <StatsPanel stats={stats} positions={positions} alphaId={id} />
             </div>
           );
         })}

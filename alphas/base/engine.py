@@ -785,6 +785,7 @@ class BaseEngine(ABC):
                 return False
 
         received_symbols: set[str] = set()
+        loaded_symbols: set[str] = set()
 
         # Snapshot fast path: when MDS has already backfilled Redis history,
         # skip the warmup stream and avoid repeated exchange REST calls.
@@ -793,6 +794,7 @@ class BaseEngine(ABC):
             try:
                 snapshot_loaded = await self._try_snapshot_warmup(rc, all_symbols, tf, bars)
                 received_symbols |= snapshot_loaded
+                loaded_symbols |= snapshot_loaded
             finally:
                 rc.close()
             if snapshot_loaded:
@@ -851,8 +853,10 @@ class BaseEngine(ABC):
                             last_response_id = msg_id
                             loaded = self._load_warmup_candles(fields)
                             sym = fields.get("symbol", "")
-                            if sym and loaded:
+                            if sym:
                                 received_symbols.add(sym)
+                                if loaded:
+                                    loaded_symbols.add(sym)
 
                 try:
                     redis_client.delete(response_stream)
@@ -868,9 +872,9 @@ class BaseEngine(ABC):
         }
         ready_count = len(ready_symbols)
         ok, required_symbols, min_coverage = self._warmup_coverage(ready_count, len(all_symbols))
-        if received_symbols:
+        if loaded_symbols:
             now = time.time()
-            for sym in received_symbols:
+            for sym in loaded_symbols:
                 self.last_warmup_ok_at.setdefault(exchange or "default", {}).setdefault(tf, {})[sym] = now
         if not ok:
             missing = sorted(set(all_symbols) - ready_symbols)

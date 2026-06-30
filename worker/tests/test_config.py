@@ -13,6 +13,7 @@ def test_default_settings():
     assert s.SLIPPAGE_PCT == 0.05
     assert s.MDS_REDIS_CONNECT_TIMEOUT == 1.0
     assert s.DUPLICATE_POSITION_POLICY == "reject"
+    assert s.orderbook_enabled() is True
 
 
 def test_supported_exchanges_are_normalized():
@@ -21,17 +22,23 @@ def test_supported_exchanges_are_normalized():
 
 
 def test_runtime_requires_mds_redis_when_l2_enabled():
-    s = Settings(_env_file=None, MDS_REDIS_URL="", ENABLE_ORDERBOOK_SLIPPAGE=True)
+    s = Settings(_env_file=None, MDS_REDIS_URL="", ENABLE_ORDERBOOK=True)
     with pytest.raises(ValueError, match="MDS_REDIS_URL"):
         s.validate_runtime()
 
 
-def test_runtime_allows_no_mds_redis_when_mds_features_disabled():
+def test_runtime_requires_mds_redis_when_orderbook_disabled_for_tick_execution():
     s = Settings(
         _env_file=None,
         MDS_REDIS_URL="",
-        ENABLE_ORDERBOOK_SLIPPAGE=False,
+        ENABLE_ORDERBOOK=False,
         ENABLE_WORKER_TPSL_AUTO_CLOSE=False,
         ENABLE_POSITION_OWNERSHIP_MONITOR=False,
     )
-    s.validate_runtime()
+    with pytest.raises(ValueError, match="MDS_REDIS_URL"):
+        s.validate_runtime()
+
+
+def test_enable_orderbook_overrides_legacy_slippage_flag():
+    s = Settings(_env_file=None, ENABLE_ORDERBOOK=False, ENABLE_ORDERBOOK_SLIPPAGE=True)
+    assert s.orderbook_enabled() is False

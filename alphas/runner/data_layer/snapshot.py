@@ -96,7 +96,7 @@ class SnapshotReader:
             latest_ms = int(candle.get("open_time", candle.get("time", 0)))
         except (TypeError, ValueError):
             return True
-        max_stale = self.max_stale_sec_by_tf.get(tf, max(2 * _tf_seconds(tf), 300))
+        max_stale = self.max_stale_sec_by_tf.get(tf, max(3 * _tf_seconds(tf), 600))
         return self._now() - (latest_ms / 1000.0) > max_stale
 
     @staticmethod

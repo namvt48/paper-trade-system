@@ -1,0 +1,1 @@
+# alpha2-NR-Long-Short-M15 trades BTCUSDT only; no blacklist needed.

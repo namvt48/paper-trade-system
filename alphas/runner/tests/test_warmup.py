@@ -5,6 +5,7 @@ import json
 
 import pytest
 from redis.exceptions import TimeoutError as RedisTimeoutError
+from unittest.mock import AsyncMock, patch
 
 from runner.data_layer.cache import SharedCandleCache
 from runner.data_layer.warmup import (
@@ -45,10 +46,19 @@ class SnapshotStub:
         return candles[-bars:]
 
 
-def _candles(bars=2, start=1_000_000):
+TF_MS = {
+    "1m": 60_000,
+    "5m": 300_000,
+    "15m": 900_000,
+    "1h": 3_600_000,
+}
+
+
+def _candles(bars=2, start=1_000_000, tf="15m"):
+    step_ms = TF_MS[tf]
     return [
         {
-            "open_time": (start + i * 60) * 1000,
+            "open_time": start + i * step_ms,
             "open": 1,
             "high": 2,
             "low": 0,
@@ -61,7 +71,7 @@ def _candles(bars=2, start=1_000_000):
 
 def _load(cache, symbol, bars=2, tf="15m"):
     cache.register_bars_requirement(symbol, tf, bars)
-    for candle in _candles(bars):
+    for candle in _candles(bars, tf=tf):
         cache.upsert_candle(symbol, tf, candle)
 
 
@@ -103,6 +113,72 @@ async def test_warmup_cache_hit_skips_snapshot_and_backend_and_readiness_is_per_
     await manager.request_warmup({("BTCUSDT", "15m"): 2})
     assert calls == 0
     assert snapshot.calls == []
+
+
+@pytest.mark.asyncio
+async def test_gapped_cache_triggers_mds_request_even_when_bar_count_satisfies():
+    calls = []
+
+    async def backend(reqs):
+        calls.append(reqs)
+        return {(req.symbol, req.tf): _candles(req.bars, tf=req.tf) for req in reqs}
+
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "15m", warmup_bars=3, retain_bars=10)
+    for candle in [
+        *_candles(2, tf="15m"),
+        {
+            "open_time": 1_000_000 + 3 * TF_MS["15m"],
+            "open": 1,
+            "high": 2,
+            "low": 0,
+            "close": 1,
+            "volume": 1,
+        },
+    ]:
+        cache.upsert_candle("BTCUSDT", "15m", candle)
+    assert not cache.verify_no_gaps("BTCUSDT", "15m").is_clean
+
+    manager = WarmupManager(cache, backend, snapshot_reader=SnapshotStub({}))
+
+    loaded = await manager.request_warmup({("BTCUSDT", "15m"): 3})
+
+    assert loaded == {("BTCUSDT", "15m")}
+    assert calls == [(WarmupRequirement("BTCUSDT", "15m", 3),)]
+    assert cache.verify_no_gaps("BTCUSDT", "15m").is_clean
+
+
+@pytest.mark.asyncio
+async def test_gapped_cache_marks_strategy_unready():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "15m", warmup_bars=3, retain_bars=10)
+    for candle in [
+        *_candles(2, tf="15m"),
+        {
+            "open_time": 1_000_000 + 3 * TF_MS["15m"],
+            "open": 1,
+            "high": 2,
+            "low": 0,
+            "close": 1,
+            "volume": 1,
+        },
+    ]:
+        cache.upsert_candle("BTCUSDT", "15m", candle)
+
+    manager = WarmupManager(cache, lambda reqs: None)
+    strategy = StrategyStub(["BTCUSDT"], bars=3)
+
+    assert manager.strategy_ready(strategy, 0.90) is False
+
+    cache.upsert_candle("BTCUSDT", "15m", {
+        "open_time": 1_000_000 + 2 * TF_MS["15m"],
+        "open": 1,
+        "high": 2,
+        "low": 0,
+        "close": 1,
+        "volume": 1,
+    })
+    assert manager.strategy_ready(strategy, 0.90) is True
 
 
 @pytest.mark.asyncio
@@ -511,3 +587,153 @@ async def test_mds_reader_tolerates_transient_redis_socket_timeout():
     result = await backend((WarmupRequirement("BTCUSDT", "15m", 2),))
 
     assert ("BTCUSDT", "15m") in result
+
+
+from runner.data_layer.mds_ready import ReadySignal
+
+
+@pytest.mark.asyncio
+async def test_verify_timestamp_sync_passes_when_within_tolerance():
+    cache = SharedCandleCache()
+    for i in range(10):
+        cache.upsert_candle("BTCUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+        cache.upsert_candle("ETHUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+
+    async def noop_backend(reqs):
+        return set()
+
+    manager = WarmupManager(cache, noop_backend)
+    manager._requirements = {("BTCUSDT", "15m"): 10, ("ETHUSDT", "15m"): 10}
+    assert manager._verify_timestamp_sync(sync_tolerance_candles=1) is True
+
+
+@pytest.mark.asyncio
+async def test_verify_timestamp_sync_detects_skew():
+    cache = SharedCandleCache()
+    for i in range(10):
+        cache.upsert_candle("BTCUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+    cache.upsert_candle("ETHUSDT", "15m", {"open_time": 1000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+
+    async def noop_backend(reqs):
+        return set()
+
+    manager = WarmupManager(cache, noop_backend)
+    manager._requirements = {("BTCUSDT", "15m"): 10, ("ETHUSDT", "15m"): 1}
+    assert manager._verify_timestamp_sync(sync_tolerance_candles=1) is False
+
+
+@pytest.mark.asyncio
+async def test_classify_symbols_excludes_insufficient():
+    cache = SharedCandleCache()
+    async def noop_backend(reqs):
+        return set()
+
+    manager = WarmupManager(cache, noop_backend)
+    signals = {
+        "15m": ReadySignal(
+            tf="15m", exchange="binance", timestamp=0,
+            complete_count=2, partial_count=1, insufficient_count=1,
+            partial_symbols={"SOLUSDT": 0.71},
+            insufficient_symbols=["NEWUSDT"],
+        ),
+    }
+    manager._classify_symbols(signals, min_warmup_coverage_pct=0.60)
+
+    assert "NEWUSDT" in manager._excluded_symbols
+    assert "SOLUSDT" not in manager._excluded_symbols
+
+
+@pytest.mark.asyncio
+async def test_classify_symbols_excludes_low_partial():
+    cache = SharedCandleCache()
+    async def noop_backend(reqs):
+        return set()
+
+    manager = WarmupManager(cache, noop_backend)
+    signals = {
+        "15m": ReadySignal(
+            tf="15m", exchange="binance", timestamp=0,
+            complete_count=2, partial_count=1, insufficient_count=0,
+            partial_symbols={"SOLUSDT": 0.40},
+            insufficient_symbols=[],
+        ),
+    }
+    manager._classify_symbols(signals, min_warmup_coverage_pct=0.60)
+
+    assert "SOLUSDT" in manager._excluded_symbols
+
+
+class FakeWatcher:
+    def __init__(self, signals):
+        self._signals = signals
+
+    async def wait_for_ready(self, required_tfs, timeout_sec=900):
+        return self._signals
+
+
+@pytest.mark.asyncio
+async def test_run_synced_warmup_classifies_and_sets_baseline():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "15m", warmup_bars=3, retain_bars=5)
+    cache.register_data_requirement("ETHUSDT", "15m", warmup_bars=3, retain_bars=5)
+
+    async def backend(reqs):
+        for r in reqs:
+            for i in range(3):
+                cache.upsert_candle(r.symbol, r.tf, {
+                    "open_time": 1000 + i * 900_000, "open": 1, "high": 2,
+                    "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True,
+                })
+        return {(r.symbol, r.tf) for r in reqs}
+
+    manager = WarmupManager(cache, backend)
+
+    signals = {
+        "15m": ReadySignal(
+            tf="15m", exchange="binance", timestamp=0,
+            complete_count=2, partial_count=0, insufficient_count=1,
+            partial_symbols={},
+            insufficient_symbols=["NEWUSDT"],
+        ),
+    }
+
+    manager._requirements = {("BTCUSDT", "15m"): 3, ("ETHUSDT", "15m"): 3}
+    result = await manager.run_synced_warmup(
+        ready_watcher=FakeWatcher(signals),
+        min_warmup_coverage_pct=0.60,
+        sync_tolerance_candles=1,
+    )
+    assert result is True
+    assert "NEWUSDT" in manager.excluded_symbols
+    assert "15m" in manager.warmup_baseline_ts
+
+
+@pytest.mark.asyncio
+async def test_run_synced_warmup_logs_gap_warnings():
+    cache = SharedCandleCache()
+    cache.register_data_requirement("BTCUSDT", "1m", warmup_bars=2, retain_bars=5)
+
+    backend = AsyncMock()
+    backend.handles_timeout = True
+    backend.return_value = {
+        ("BTCUSDT", "1m"): [
+            {"open_time": 60_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100},
+            {"open_time": 240_000, "open": 2, "high": 3, "low": 1.5, "close": 2.5, "volume": 200},
+        ]
+    }
+
+    wm = WarmupManager(cache, backend)
+    wm._requirements = {("BTCUSDT", "1m"): 2}
+
+    with patch("runner.data_layer.warmup.logger") as mock_logger:
+        await wm.run_synced_warmup(
+            ready_watcher=None,
+            min_warmup_coverage_pct=0.0,
+            sync_tolerance_candles=10,
+        )
+
+    gap_calls = [
+        call for call in mock_logger.warning.call_args_list
+        if "GAP-CHECK" in str(call)
+    ]
+    assert len(gap_calls) > 0

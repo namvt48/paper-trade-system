@@ -28,6 +28,13 @@ class StrategyRegistry:
             raise KeyError(f"unknown strategy '{name}' (known: {known})") from exc
         return cls(alpha_id=alpha_id, version=version, params=params, ctx=ctx)
 
+    def get_class(self, name: str) -> type[Strategy]:
+        try:
+            return self._items[name]
+        except KeyError as exc:
+            known = ", ".join(sorted(self._items)) or "<none>"
+            raise KeyError(f"unknown strategy '{name}' (known: {known})") from exc
+
     def names(self) -> tuple[str, ...]:
         return tuple(sorted(self._items))
 

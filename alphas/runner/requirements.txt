@@ -1,7 +1,10 @@
 aiohttp
 numpy
 pandas
+orjson>=3.10
 psutil
+pyarrow>=14.0.0
+pydantic-settings>=2.0
 PyYAML
 redis
 requests

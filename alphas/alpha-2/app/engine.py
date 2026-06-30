@@ -107,27 +107,42 @@ class Alpha2Engine(BaseEngine):
         if wait > 0:
             await asyncio.sleep(wait)
 
+    def _build_symbol_row(self, symbol: str) -> dict | None:
+        """Build row dict for a single symbol (base TF + HTF data)."""
+        tf_map = self.symbol_data.get(symbol)
+        if not tf_map:
+            return None
+        sd_base = tf_map.get(settings.TF)
+        sd_htf = tf_map.get(settings.HTF)
+        if not sd_base or not sd_htf or not sd_base.price_list or not sd_htf.price_list:
+            return None
+        return {
+            "symbol": symbol,
+            "base_close_list": sd_base.price_list,
+            "base_time_list": sd_base.time_list,
+            "htf_close_list": sd_htf.price_list,
+            "htf_time_list": sd_htf.time_list,
+        }
+
     async def _process_all_symbols(self) -> None:
         snapshot: list[dict] = []
         async with self.data_lock:
-            for symbol, tf_map in self.symbol_data.items():
-                sd_base = tf_map.get(settings.TF)
-                sd_htf = tf_map.get(settings.HTF)
-                if not sd_base or not sd_htf or not sd_base.price_list or not sd_htf.price_list:
-                    continue
-                snapshot.append({
-                    "symbol": symbol,
-                    "base_close_list": sd_base.price_list,
-                    "base_time_list": sd_base.time_list,
-                    "htf_close_list": sd_htf.price_list,
-                    "htf_time_list": sd_htf.time_list,
-                })
+            for symbol in self.symbol_data:
+                row = self._build_symbol_row(symbol)
+                if row:
+                    snapshot.append(row)
 
         for row in snapshot:
             self._process_symbol(row)
 
     def _process_symbol(self, row: dict) -> None:
-        symbol = row["symbol"]
+        """Backward-compat wrapper: compute indicators then apply decision."""
+        indic = self._compute_indicators(row)
+        if indic is not None:
+            self._apply_decision(row, indic)
+
+    def _compute_indicators(self, row: dict) -> dict | None:
+        """Pure indicator computation — thread-safe, no side effects."""
         df_base = pd.DataFrame({
             "time": pd.to_datetime(row["base_time_list"], unit="ms", utc=True),
             "close": row["base_close_list"]
@@ -138,7 +153,7 @@ class Alpha2Engine(BaseEngine):
         })
 
         if len(df_base) < settings.DENOM_LEN or len(df_htf) < 5:
-            return
+            return None
 
         tc = np.array(compute_greenred(df_base))
         sc = np.array(compute_strategy(df_base))
@@ -148,12 +163,24 @@ class Alpha2Engine(BaseEngine):
         size_arr = vol_target_scale(df_base)
         hbias = attach_htf_bias(df_base, df_htf, settings.HTF, settings.TF)
 
-        latest_long_sig = bool(long_sig[-1])
-        latest_short_sig = bool(short_sig[-1])
-        latest_hbias = hbias[-1]
-        latest_size = float(size_arr[-1])
-        close = df_base["close"].iloc[-1]
-        signal_open_time_ms = int(df_base["time"].iloc[-1].timestamp() * 1000)
+        return {
+            "latest_long_sig": bool(long_sig[-1]),
+            "latest_short_sig": bool(short_sig[-1]),
+            "latest_hbias": hbias[-1],
+            "latest_size": float(size_arr[-1]),
+            "close": df_base["close"].iloc[-1],
+            "signal_open_time_ms": int(df_base["time"].iloc[-1].timestamp() * 1000),
+        }
+
+    def _apply_decision(self, row: dict, indic: dict) -> None:
+        """Apply trading decisions — mutates state, must run sequentially."""
+        symbol = row["symbol"]
+        latest_long_sig = indic["latest_long_sig"]
+        latest_short_sig = indic["latest_short_sig"]
+        latest_hbias = indic["latest_hbias"]
+        latest_size = indic["latest_size"]
+        close = indic["close"]
+        signal_open_time_ms = indic["signal_open_time_ms"]
 
         pos = self._open_positions.get(symbol)
         current_pos = 1 if (pos and pos["side"] == "LONG") else -1 if (pos and pos["side"] == "SHORT") else 0
@@ -169,7 +196,7 @@ class Alpha2Engine(BaseEngine):
         elif latest_short_sig and current_pos >= 0 and allow_short and latest_size > 0:
             action = "REVERSE->SHORT" if current_pos > 0 else "OPEN_SHORT"
             side = "SHORT"
-        
+
         if action in ("REVERSE->LONG", "REVERSE->SHORT", "OPEN_LONG", "OPEN_SHORT"):
             if pos:
                 self._close_position(symbol, pos, close, "REVERSE", f"action={action}")

@@ -50,55 +50,77 @@ class HyperTurboV2Engine(BaseEngine):
                 logger.error("Scan error: %s", exc, exc_info=True)
                 await asyncio.sleep(1)
 
+    def _build_symbol_row(self, symbol: str) -> dict | None:
+        """Build row dict for a single symbol (execution candle separated)."""
+        sd = self.symbol_data.get(symbol, {}).get(settings.TF)
+        if not sd or len(sd.price_list) < settings.WARMUP_BARS:
+            return None
+        # The newest H4 candle is the execution candle. Indicators only
+        # receive candles before it, preserving close[i] -> open[i+1].
+        return {
+            "symbol": symbol,
+            "closes": list(sd.price_list[:-1]),
+            "highs": list(sd.high_list[:-1]),
+            "lows": list(sd.low_list[:-1]),
+            "times": list(sd.time_list[:-1]),
+            "signal_bar_time": int(sd.time_list[-2]),
+            "execution_bar_time": int(sd.time_list[-1]),
+            "execution_open": float(sd.open_list[-1]),
+        }
+
     async def _process_all_symbols(self) -> None:
         snapshots: list[dict] = []
         async with self.data_lock:
             for symbol in self._symbols:
-                sd = self.symbol_data.get(symbol, {}).get(settings.TF)
-                if not sd or len(sd.price_list) < settings.WARMUP_BARS:
-                    continue
-                # The newest H4 candle is the execution candle. Indicators only
-                # receive candles before it, preserving close[i] -> open[i+1].
-                snapshots.append({
-                    "symbol": symbol,
-                    "closes": list(sd.price_list[:-1]),
-                    "highs": list(sd.high_list[:-1]),
-                    "lows": list(sd.low_list[:-1]),
-                    "times": list(sd.time_list[:-1]),
-                    "signal_bar_time": int(sd.time_list[-2]),
-                    "execution_bar_time": int(sd.time_list[-1]),
-                    "execution_open": float(sd.open_list[-1]),
-                    "market_price": self._latest_market_price(symbol, float(sd.open_list[-1])),
-                })
+                row = self._build_symbol_row(symbol)
+                if row:
+                    snapshots.append(row)
 
         for row in snapshots:
-            signal_bar_time = row["signal_bar_time"]
-            if self._last_signal_bar.get(row["symbol"]) == signal_bar_time:
-                continue
-            signal = compute_hyper_turbo_signal(
-                row["closes"],
-                row["highs"],
-                row["lows"],
-                row["times"],
-                periods=self._periods,
-                atr_period=settings.ATR_PERIOD,
-                daily_ma_period=settings.DAILY_MA_PERIOD,
-            )
-            if signal is None:
-                continue
-            self._last_signal_bar[row["symbol"]] = signal_bar_time
-            self._apply_signal(
-                row["symbol"],
-                signal,
-                signal_bar_time,
-                row["execution_bar_time"],
-                row["execution_open"],
-                market_price=row["market_price"],
-                allow_entry=(
-                    0 <= int(time.time() * 1000) - row["execution_bar_time"]
-                    <= settings.ENTRY_WINDOW_SEC * 1000
-                ),
-            )
+            self._process_symbol(row)
+
+    def _process_symbol(self, row: dict) -> None:
+        """Backward-compat wrapper: compute indicators then apply decision."""
+        indic = self._compute_indicators(row)
+        if indic is not None:
+            self._apply_decision(row, indic)
+
+    def _compute_indicators(self, row: dict) -> dict | None:
+        """Pure indicator computation — thread-safe, no side effects."""
+        signal = compute_hyper_turbo_signal(
+            row["closes"],
+            row["highs"],
+            row["lows"],
+            row["times"],
+            periods=self._periods,
+            atr_period=settings.ATR_PERIOD,
+            daily_ma_period=settings.DAILY_MA_PERIOD,
+        )
+        if signal is None:
+            return None
+        return {"signal": signal}
+
+    def _apply_decision(self, row: dict, indic: dict) -> None:
+        """Apply trading decisions — mutates state, must run sequentially."""
+        symbol = row["symbol"]
+        signal_bar_time = row["signal_bar_time"]
+        if self._last_signal_bar.get(symbol) == signal_bar_time:
+            return
+        signal = indic["signal"]
+        self._last_signal_bar[symbol] = signal_bar_time
+        market_price = self._latest_market_price(symbol, row["execution_open"])
+        self._apply_signal(
+            symbol,
+            signal,
+            signal_bar_time,
+            row["execution_bar_time"],
+            row["execution_open"],
+            market_price=market_price,
+            allow_entry=(
+                0 <= int(time.time() * 1000) - row["execution_bar_time"]
+                <= settings.ENTRY_WINDOW_SEC * 1000
+            ),
+        )
 
     def _apply_signal(
         self,

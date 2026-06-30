@@ -1,0 +1,49 @@
+[[columns]]
+key = "tf"
+label = "TF"
+type = "text"
+
+[[columns]]
+key = "indi1_color"
+label = "Indi1"
+type = "text"
+
+[[columns]]
+key = "indi2_color"
+label = "Indi2"
+type = "text"
+
+[[columns]]
+key = "signal"
+label = "Signal"
+type = "text"
+
+[[columns]]
+key = "ema_fast"
+label = "EMA Fast"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "ema_slow"
+label = "EMA Slow"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "trade_size"
+label = "Size"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "leverage"
+label = "Lev"
+type = "number"
+decimals = 0
+
+[[columns]]
+key = "cur_equity"
+label = "Equity"
+type = "number"
+decimals = 2

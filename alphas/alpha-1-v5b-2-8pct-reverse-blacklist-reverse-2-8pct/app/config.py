@@ -32,8 +32,8 @@ class Alpha1V5b28PctReverseConfig(BaseConfig):
 
     # Dynamic sizing — mirrors backtest_v5 scaling + Kelly WR multiplier
     CAPITAL: float = 10_000.0       # starting equity (tracks running P&L)
-    INVEST_PER_TRADE: float = 1_000.0
-    MIN_INVEST: float = 500.0
+    INVEST_PER_TRADE: float = 100.0
+    MIN_INVEST: float = 50.0
     SCALE_FACTOR: float = 0.30      # 30% of trade PnL adjusts next size
 
     # Kelly sizing — rolling win-rate multiplier applied on top of SCALE_FACTOR sizing.

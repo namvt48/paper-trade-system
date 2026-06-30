@@ -24,6 +24,7 @@ class Settings(BaseSettings):
     REDIS_READ_COUNT: int = 100
     REDIS_BLOCK_MS: int = 1000
     SIGNAL_RETENTION_DAYS: int = 0
+    ENABLE_ORDERBOOK: bool | None = None
     ENABLE_ORDERBOOK_SLIPPAGE: bool = True
     ORDERBOOK_SUPPORTED_EXCHANGES: str = "binance"
     SLIPPAGE_RPC_TIMEOUT: float = 0.2
@@ -42,6 +43,12 @@ class Settings(BaseSettings):
     EXECUTION_MIN_ADVERSE_BPS: float = 0.0
     EXECUTION_SECOND_QUOTE_TIMEOUT_MS: int = 200
 
+    # Equity snapshot collector (live equity curve)
+    ENABLE_EQUITY_SNAPSHOT: bool = True
+    EQUITY_SNAPSHOT_INTERVAL_SEC: float = 300.0
+    EQUITY_SNAPSHOT_DB_PATH: str = "data/equity-snapshots.db"
+    ALPHAS_DIR: str = "alphas"
+
     def get_orderbook_exchanges(self) -> set[str]:
         return {
             exchange.strip().lower()
@@ -49,15 +56,17 @@ class Settings(BaseSettings):
             if exchange.strip()
         }
 
+    def orderbook_enabled(self) -> bool:
+        if self.ENABLE_ORDERBOOK is not None:
+            return bool(self.ENABLE_ORDERBOOK)
+        return bool(self.ENABLE_ORDERBOOK_SLIPPAGE)
+
     def validate_runtime(self) -> None:
         if not self.REDIS_URL.strip():
             raise ValueError("REDIS_URL is required")
-        if (
-            self.ENABLE_ORDERBOOK_SLIPPAGE or self.ENABLE_WORKER_TPSL_AUTO_CLOSE
-            or self.ENABLE_POSITION_OWNERSHIP_MONITOR
-        ) and not self.MDS_REDIS_URL.strip():
+        if not self.MDS_REDIS_URL.strip():
             raise ValueError(
-                "MDS_REDIS_URL is required when orderbook slippage or worker TP/SL is enabled"
+                "MDS_REDIS_URL is required when orderbook, tick execution, worker TP/SL, or ownership monitor is enabled"
             )
 
 

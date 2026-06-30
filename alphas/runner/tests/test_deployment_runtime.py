@@ -1,10 +1,12 @@
 from __future__ import annotations
 
 import asyncio
+import logging
 from types import SimpleNamespace
 
 import pytest
 
+from runner.alpha_logging import AlphaFileLogHandler
 from runner import main as runner_main
 from runner.metrics import RunnerMetrics
 from runner.metrics_http import MetricsServer
@@ -64,3 +66,33 @@ def test_runner_metrics_snapshot_counts_active_and_suspended():
 
     assert snapshot["strategies_active"] == 1
     assert snapshot["strategies_suspended"] == 1
+
+
+def test_alpha_file_log_handler_routes_records_by_alpha_id(tmp_path):
+    handler = AlphaFileLogHandler(tmp_path)
+    handler.setFormatter(logging.Formatter("%(levelname)s:%(message)s"))
+    logger = logging.getLogger("test.alpha_file_log_handler")
+    logger.handlers = [handler]
+    logger.propagate = False
+    logger.setLevel(logging.INFO)
+
+    logger.info("alpha message", extra={"alpha_id": "15m/blend close"})
+    logger.info("runner message")
+    handler.close()
+
+    alpha_log = tmp_path / "15m_blend_close.log"
+    assert alpha_log.exists()
+    assert "INFO:alpha message" in alpha_log.read_text(encoding="utf-8")
+    assert list(tmp_path.glob("runner*.log")) == []
+
+
+def test_setup_logging_uses_queue_and_flushes_alpha_files(tmp_path, monkeypatch):
+    monkeypatch.setenv("LOG_DIR", str(tmp_path))
+    monkeypatch.setenv("ALPHA_LOGS_ENABLED", "true")
+
+    runner_main.setup_logging()
+    logging.getLogger("test.runner_queue").info("queued alpha", extra={"alpha_id": "alpha/one"})
+    runner_main.shutdown_logging()
+
+    assert "queued alpha" in (tmp_path / "runner.log").read_text(encoding="utf-8")
+    assert "queued alpha" in (tmp_path / "alphas" / "alpha_one.log").read_text(encoding="utf-8")

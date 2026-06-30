@@ -1,0 +1,30 @@
+networks:
+  redis-net:
+    external: true
+
+services:
+  deobietcophaialphakhong:
+    build:
+      context: ..
+      dockerfile: deobietcophaialphakhong/Dockerfile
+    env_file: .env
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    volumes:
+      - ../../logs/alphas/deobietcophaialphakhong:/app/logs
+      - ./blacklist.txt:/app/blacklist.txt:ro
+      - ./config.toml:/app/config.toml:ro
+    environment:
+      - REDIS_URL=redis://paper-redis:6379
+      - LOG_DIR=/app/logs
+      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
+      - MDS_EXCHANGE=${MDS_EXCHANGE:-binance}
+    networks:
+      - redis-net
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import os,time; p='/tmp/bot_health'; exit(0 if os.path.exists(p) and time.time()-os.path.getmtime(p)<30 else 1)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s

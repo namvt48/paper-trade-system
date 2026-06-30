@@ -192,14 +192,13 @@ class CrossSectionalEngine(BaseEngine):
                 "symbols": selection.indicators,
             }, separators=(",", ":"), allow_nan=False),
         )
-        if is_rebalance:
-            execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
-            self._pending = (execute_at, selection)
-            self._logger.info(
-                "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f",
-                self.spec.alpha_id, execute_at, len(selection.longs), len(selection.shorts),
-                selection.diagnostics["gross"], selection.diagnostics["net"],
-            )
+        execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
+        self._pending = (execute_at, selection)
+        self._logger.info(
+            "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
+            self.spec.alpha_id, execute_at, len(selection.longs), len(selection.shorts),
+            selection.diagnostics["gross"], selection.diagnostics["net"], is_rebalance,
+        )
 
         self._last_prices = prices
         self._last_processed_candle = latest

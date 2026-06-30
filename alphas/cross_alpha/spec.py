@@ -22,6 +22,8 @@ class AlphaSpec:
     target_vol: float = 0.10
     max_leverage: float = 3.0
     fee_bps: float = 7.0
+    construction: str = "rank"  # "rank" | "winsor_cont"
+    winsor_k: float = 3.0  # clip threshold for winsor_cont
 
     @classmethod
     def load(cls, path: str | Path) -> "AlphaSpec":
@@ -58,4 +60,12 @@ class AlphaSpec:
             return max(int(p["close_window"]) + int(p["decay"]) - 1, int(p["volume_window"]))
         if signal == "absolute_breakout":
             return max(int(p["long_window"]), int(p["short_window"]))
+        if signal == "breakout":
+            return int(p["window"])
+        if signal == "breakout_hl":
+            return int(p["window"])
+        if signal == "blend_zscore_range":
+            return max(int(p["z_window"]), int(p["range_window"]))
+        if signal == "amihud":
+            return int(p["window"]) + 1
         raise ValueError(f"Unsupported signal: {signal}")

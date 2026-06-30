@@ -50,6 +50,11 @@ export interface EquityPoint {
   equity: number;
 }
 
+export interface EquitySnapshot {
+  timestamp: string;
+  balance: number;
+}
+
 export interface AlphaStats {
   alpha_id: string;
   total_trades: number;

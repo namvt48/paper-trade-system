@@ -1,0 +1,22 @@
+{
+  "alpha_id": "15m-trend-vwap-v2",
+  "timeframe": "15m",
+  "signal": "zscore",
+  "params": {
+    "field": "vwap",
+    "window": 8640
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 96,
+  "exec_lag": 0,
+  "vol_lookback": 480,
+  "ppy": 35040,
+  "long_threshold": 0.9,
+  "short_threshold": 0.1,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0,
+  "construction": "rank",
+  "winsor_k": 3.0
+}

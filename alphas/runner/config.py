@@ -20,11 +20,16 @@ class AlphaConfig:
 
 @dataclass(frozen=True)
 class WarmupConfig:
-    max_concurrent_mds_requests: int = 3
-    max_mds_requests_per_minute: int = 20
-    max_symbols_per_mds_request: int = 10
+    max_concurrent_mds_requests: int = 6
+    max_mds_requests_per_minute: int = 60
+    max_symbols_per_mds_request: int = 30
     request_timeout_sec: float = 60.0
     response_cache_ttl_sec: float = 300.0
+    mds_ready_timeout_sec: int = 900
+    min_warmup_coverage_pct: float = 0.60
+    sync_tolerance_candles: int = 1
+    reconnect_staleness_candles: int = 5
+    parquet_max_staleness_sec: float = 7200
 
 
 @dataclass(frozen=True)
@@ -43,8 +48,13 @@ class RunnerConfig:
     warmup_min_symbol_coverage: float = 0.90
     data_queue_maxsize: int = 1000
     strategy_event_drop_warn_threshold: int = 100
+    compute_workers: int = 4
     lease_ttl_sec: int = 20
     lease_renew_interval_sec: float = 5.0
+    max_alphas_per_runner: int = 10
+    claim_interval_sec: int = 30
+    runner_cache_dir: str = ""
+    claim_retry_delay_sec: int = 5
     warmup: WarmupConfig = field(default_factory=WarmupConfig)
     cache: CacheConfig = field(default_factory=CacheConfig)
     modules: tuple[str, ...] = ()
@@ -91,14 +101,24 @@ def load_runner_config(path: str | Path, include_disabled: bool = False) -> Runn
         warmup_min_symbol_coverage=float(merged.get("warmup_min_symbol_coverage", 0.90)),
         data_queue_maxsize=int(merged.get("data_queue_maxsize", 1000)),
         strategy_event_drop_warn_threshold=int(merged.get("strategy_event_drop_warn_threshold", 100)),
+        compute_workers=int(os.getenv("RUNNER_COMPUTE_WORKERS") or merged.get("compute_workers", 4)),
         lease_ttl_sec=int(merged.get("lease_ttl_sec", 20)),
         lease_renew_interval_sec=float(merged.get("lease_renew_interval_sec", 5.0)),
+        max_alphas_per_runner=int(os.getenv("MAX_ALPHAS_PER_RUNNER") or merged.get("max_alphas_per_runner", 10)),
+        claim_interval_sec=int(os.getenv("CLAIM_INTERVAL_SEC") or merged.get("claim_interval_sec", 30)),
+        runner_cache_dir=str(os.getenv("RUNNER_CACHE_DIR") or merged.get("runner_cache_dir", "")),
+        claim_retry_delay_sec=int(os.getenv("CLAIM_RETRY_DELAY_SEC") or merged.get("claim_retry_delay_sec", 5)),
         warmup=WarmupConfig(
-            max_concurrent_mds_requests=int(warmup_raw.get("max_concurrent_mds_requests", 3)),
-            max_mds_requests_per_minute=int(warmup_raw.get("max_mds_requests_per_minute", 20)),
-            max_symbols_per_mds_request=int(warmup_raw.get("max_symbols_per_mds_request", 10)),
+            max_concurrent_mds_requests=int(warmup_raw.get("max_concurrent_mds_requests", 6)),
+            max_mds_requests_per_minute=int(warmup_raw.get("max_mds_requests_per_minute", 60)),
+            max_symbols_per_mds_request=int(warmup_raw.get("max_symbols_per_mds_request", 30)),
             request_timeout_sec=float(warmup_raw.get("request_timeout_sec", 60.0)),
             response_cache_ttl_sec=float(warmup_raw.get("response_cache_ttl_sec", 300.0)),
+            mds_ready_timeout_sec=int(warmup_raw.get("mds_ready_timeout_sec", 900)),
+            min_warmup_coverage_pct=float(warmup_raw.get("min_warmup_coverage_pct", 0.60)),
+            sync_tolerance_candles=int(warmup_raw.get("sync_tolerance_candles", 1)),
+            reconnect_staleness_candles=int(warmup_raw.get("reconnect_staleness_candles", 5)),
+            parquet_max_staleness_sec=float(warmup_raw.get("parquet_max_staleness_sec", 7200)),
         ),
         cache=CacheConfig(
             min_retain_bars=int(cache_raw.get("min_retain_bars", 0)),

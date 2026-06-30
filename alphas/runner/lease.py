@@ -8,7 +8,7 @@ class LeaseManager:
         self.ttl_sec = int(ttl_sec)
 
     def key(self, alpha_id: str) -> str:
-        return f"alpha:lease:{alpha_id}"
+        return f"runner:alpha:lease:{alpha_id}"
 
     def acquire(self, alpha_id: str) -> bool:
         return bool(self.redis_client.set(self.key(alpha_id), self.runner_id, nx=True, ex=self.ttl_sec))

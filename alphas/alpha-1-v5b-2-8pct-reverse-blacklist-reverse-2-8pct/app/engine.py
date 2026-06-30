@@ -195,20 +195,33 @@ class Alpha1V5b28PctReverseEngine(BaseEngine):
         if wait > 0:
             await asyncio.sleep(wait)
 
+    def _build_symbol_row(self, symbol: str) -> dict | None:
+        """Build the row dict for a single symbol, for per-symbol scanning.
+
+        Returns None if the symbol has insufficient data.
+        Caller is responsible for acquiring ``data_lock`` if needed.
+        """
+        tf_map = self.symbol_data.get(symbol)
+        if not tf_map:
+            return None
+        sd = tf_map.get(settings.TF)
+        if not sd or not sd.price_list or not sd.high_list or not sd.low_list:
+            return None
+        return {
+            "symbol":             symbol,
+            "close_list":         sd.price_list,
+            "high_list":          sd.high_list,
+            "low_list":           sd.low_list,
+            "signal_open_time_ms": sd.time_list[-1] if sd.time_list else 0,
+        }
+
     async def _process_all_symbols(self) -> None:
         snapshot: list[dict] = []
         async with self.data_lock:
-            for symbol, tf_map in self.symbol_data.items():
-                sd = tf_map.get(settings.TF)
-                if not sd or not sd.price_list or not sd.high_list or not sd.low_list:
-                    continue
-                snapshot.append({
-                    "symbol":             symbol,
-                    "close_list":         sd.price_list,
-                    "high_list":          sd.high_list,
-                    "low_list":           sd.low_list,
-                    "signal_open_time_ms": sd.time_list[-1] if sd.time_list else 0,
-                })
+            for symbol in self.symbol_data:
+                row = self._build_symbol_row(symbol)
+                if row:
+                    snapshot.append(row)
 
         for row in snapshot:
             self._process_symbol(row)
@@ -341,16 +354,30 @@ class Alpha1V5b28PctReverseEngine(BaseEngine):
         return max(0, (current_candle_open_ms - entry_ms) // candle_ms)
 
     def _process_symbol(self, row: dict) -> None:
-        symbol = row["symbol"]
-        signal_open_time_ms: int = row.get("signal_open_time_ms", 0)
+        """Backward-compat wrapper: compute indicators then apply decision."""
+        indic = self._compute_indicators(row)
+        if indic is not None:
+            self._apply_decision(row, indic)
 
-        indic = compute_alpha_v5b_indicators(
+    def _compute_indicators(self, row: dict) -> dict | None:
+        """Pure indicator computation — thread-safe, no side effects.
+
+        Returns dict with {acol, acol_prev, atr, poc, close, high, low}
+        or None if insufficient data.
+        """
+        return compute_alpha_v5b_indicators(
             close_list=row["close_list"],
             high_list=row["high_list"],
             low_list=row["low_list"],
         )
-        if indic is None:
-            return
+
+    def _apply_decision(self, row: dict, indic: dict) -> None:
+        """Apply trading decisions based on indicators — mutates state.
+
+        MUST run sequentially on the event loop (not thread-safe).
+        """
+        symbol = row["symbol"]
+        signal_open_time_ms: int = row.get("signal_open_time_ms", 0)
 
         acol: float      = indic["acol"]
         acol_prev: float = indic["acol_prev"]

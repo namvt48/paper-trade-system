@@ -12,8 +12,12 @@ class Strategy(ABC):
         self.params = params
         self.ctx = ctx
 
+    @classmethod
+    def get_required_channels(cls, params: dict) -> list[str]:
+        return ["kline:1m"]
+
     @abstractmethod
-    def get_required_channels(self) -> list[str]:
+    def get_required_channels_instance(self) -> list[str]:
         ...
 
     @abstractmethod
@@ -39,6 +43,9 @@ class Strategy(ABC):
 
     async def on_price_alert(self, symbol: str, price: float, side: str) -> None:
         return None
+
+    def should_scan_after_event(self, kind: str, symbol: str | None = None, tf: str | None = None) -> bool:
+        return True
 
     async def scan(self) -> None:
         return None

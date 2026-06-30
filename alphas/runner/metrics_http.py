@@ -19,7 +19,7 @@ class MetricsServer:
         app = web.Application()
         app.router.add_get("/health", self._health)
         app.router.add_get("/metrics", self._metrics)
-        self._runner = web.AppRunner(app)
+        self._runner = web.AppRunner(app, access_log=None)
         await self._runner.setup()
         self._site = web.TCPSite(self._runner, self.host, self.port)
         await self._site.start()
