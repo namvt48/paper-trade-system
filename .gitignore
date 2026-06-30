@@ -21,3 +21,5 @@ alphas/logs/
 .omo
 .ruff_cache
 .env
+*.parquet
+docs/alphas-2/datacryp/
