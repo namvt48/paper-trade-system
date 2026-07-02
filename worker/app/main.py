@@ -237,6 +237,44 @@ async def run_ticker_subscriber(cache: TickerPriceCache, connect_redis,
                 await redis_client.aclose()
 
 
+async def run_price_alert_bridge(connect_mds, connect_paper, exchanges: set[str]) -> None:
+    ticker_channels = [f"ticker:{exchange}" for exchange in sorted(exchanges)]
+    alert_patterns = [f"price_alert:{exchange}:*" for exchange in sorted(exchanges)]
+    while True:
+        mds_client = None
+        paper_client = None
+        pubsub = None
+        try:
+            mds_client = await connect_mds()
+            paper_client = await connect_paper()
+            pubsub = mds_client.pubsub()
+            await pubsub.subscribe(*ticker_channels)
+            await pubsub.psubscribe(*alert_patterns)
+            logger.info(
+                "[PRICE-ALERT-BRIDGE] Bridging %s + %s → paper-redis price_alert",
+                ticker_channels, alert_patterns,
+            )
+            while True:
+                msg = await pubsub.get_message(timeout=1.0)
+                if not msg or msg["type"] not in ("message", "pmessage"):
+                    continue
+                await paper_client.publish("price_alert", msg["data"])
+        except asyncio.CancelledError:
+            break
+        except Exception as exc:
+            logger.error("[PRICE-ALERT-BRIDGE] error: %s", exc)
+            await asyncio.sleep(5)
+        finally:
+            if pubsub is not None:
+                await pubsub.punsubscribe()
+                await pubsub.unsubscribe()
+                await pubsub.aclose()
+            if mds_client is not None:
+                await mds_client.aclose()
+            if paper_client is not None:
+                await paper_client.aclose()
+
+
 async def run_price_check_loop(db: Database, executor: Executor, cache: TickerPriceCache,
                                ob_cache: ObExecCache, fill_service) -> None:
     exit_price_fn = make_exit_price_fn(ob_cache, cache)
@@ -363,6 +401,7 @@ async def run_consumer():
     ownership_task = None
     equity_snapshot_collector = None
     equity_snapshot_task = None
+    price_alert_bridge_task = None
     if settings.ENABLE_EQUITY_SNAPSHOT:
         equity_snapshot_collector = EquitySnapshotCollector(
             db, cache, settings.EQUITY_SNAPSHOT_DB_PATH,
@@ -394,6 +433,9 @@ async def run_consumer():
             ticker_task = asyncio.create_task(
                 run_ticker_subscriber(cache, connect_mds_redis, supported_exchanges)
             )
+        price_alert_bridge_task = asyncio.create_task(
+            run_price_alert_bridge(connect_mds_redis, connect_paper_redis, supported_exchanges)
+        )
         if settings.ENABLE_WORKER_TPSL_AUTO_CLOSE:
             price_check_task = asyncio.create_task(
                 run_price_check_loop(db, executor, cache, ob_cache, fill_service)
@@ -465,7 +507,7 @@ async def run_consumer():
     finally:
         tasks = [task for task in (ticker_task, price_check_task, health_task,
                                    ob_sync_task, snapshot_task, ownership_task,
-                                   equity_snapshot_task) if task is not None]
+                                   equity_snapshot_task, price_alert_bridge_task) if task is not None]
         tasks.extend(ob_exec_tasks)
         for task in tasks:
             task.cancel()

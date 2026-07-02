@@ -2,7 +2,7 @@ SHELL := /bin/sh
 
 ZIP_NAME   := paper-trade-system
 ZIP_PATH   := /tmp/$(ZIP_NAME).zip
-WEB_ZIP_PATH := /tmp/$(ZIP_NAME)-web.zip
+# NOTE: web/ has been removed — dashboard is now served by ../trading-frontend/
 SERVER     ?= root@167.86.101.228
 SERVER_HOST ?= $(shell printf '%s' '$(SERVER)' | sed 's/.*@//')
 REMOTE_DIR ?= /root/paper-trade-system
@@ -21,12 +21,12 @@ ALPHA ?= undefined
 	alpha-deregister \
 	runner-build runner-up runner-down runner-scale runner-logs runner-health runner-sync-config runner-status runner-reconcile \
 	test test-indicators test-cross-alpha test-runner \
-	package deploy deploy-web deploy-core deploy-system deploy-all deploy-alpha deploy-legacy-runner deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
+	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-legacy-runner deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
 help:
 	@echo "Paper trade targets:"
-	@echo "  make up              Build/start Redis + worker + web"
+	@echo "  make up              Build/start Redis + worker (dashboard is in ../trading-frontend/)"
 	@echo "  make runner-up       Build/start alpha-runner + alpha-runner-legacy"
 	@echo "  make runner-build    Build runner images"
 	@echo "  make runner-scale N=3 Scale alpha-runner replicas"
@@ -38,20 +38,19 @@ help:
 	@echo "  make test-indicators Run indicators library tests"
 	@echo "  make test-cross-alpha Run cross-alpha strategy tests"
 	@echo "  make test-runner     Run alpha-runner tests"
-	@echo "  make health          Check core, stream, DB, web, and runner"
+	@echo "  make health          Check core, stream, DB, and runner"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
 	@echo "  make deploy          Upload, start core + runner on SERVER=$(SERVER)"
 	@echo "  make deploy-legacy-runner Upload/start only alpha-runner-legacy; leave core + existing runner running"
-	@echo "  make deploy-web      Upload and recreate only web; leave Redis, worker, and runner running"
-	@echo "  make deploy-core     Upload and start only Redis + worker + web; do not start alphas"
+	@echo "  make deploy-core     Upload and start only Redis + worker; do not start alphas"
 	@echo "  make deploy-alpha-deregister ALPHA=<name>   Stop + remove from DB and .env on SERVER"
 	@echo "  make deploy-logs     Follow remote core logs"
 	@echo "  make deploy-ps       Remote core + alpha status"
 
-# ─── Core system (redis + worker + web) ──────────────────────────────────────
+# ─── Core system (redis + worker) ───────────────────────────────────────────
 
 prepare:
-	mkdir -p data logs/redis logs/worker logs/web logs/alphas logs/runner
+	mkdir -p data logs/redis logs/worker logs/alphas logs/runner
 
 up run: prepare
 	$(COMPOSE) up -d --build --remove-orphans
@@ -80,7 +79,6 @@ health:
 	@$(COMPOSE) exec -T worker test -f /tmp/bot_health && echo "worker OK" || (echo "worker UNHEALTHY"; exit 1)
 	@$(COMPOSE) exec -T worker python -c "import redis; r=redis.Redis.from_url('redis://paper-redis:6379', decode_responses=True); print('paper-signals groups', r.xinfo_groups('paper-signals') if r.exists('paper-signals') else [])" || true
 	@$(COMPOSE) exec -T worker python -c "import sqlite3; con=sqlite3.connect('/app/data/paper-trade.db'); print('db', con.execute('PRAGMA integrity_check').fetchone()[0]); print('alphas', con.execute('select alpha_id,status from alphas order by alpha_id').fetchall())"
-	@$(COMPOSE) exec -T web node -e "fetch('http://127.0.0.1:3000/api/dashboard').then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log('web OK', j.alphas.length, 'alphas')).catch(e=>{console.error(e); process.exit(1)})"
 	@$(MAKE) --no-print-directory runner-health
 
 clean:
@@ -227,40 +225,6 @@ package:
 
 # ─── Deploy ──────────────────────────────────────────────────────────────────
 
-deploy-web:
-	@echo "→ Packaging web..."
-	rm -f $(WEB_ZIP_PATH)
-	cd .. && zip -r $(WEB_ZIP_PATH) \
-		$(ZIP_NAME)/web/ \
-		$(ZIP_NAME)/docker-compose.yml \
-		$(ZIP_NAME)/.env \
-		-x "$(ZIP_NAME)/web/node_modules/*" \
-		-x "$(ZIP_NAME)/web/.next/*" \
-		-x "$(ZIP_NAME)/web/tsconfig.tsbuildinfo"
-	@echo "→ Uploading web to $(SERVER)..."
-	scp $(WEB_ZIP_PATH) $(SERVER):/tmp/
-	ssh $(SERVER) '\
-		set -e; \
-		echo "[1/3] Extracting web..."; \
-		mkdir -p $(REMOTE_DIR); \
-		unzip -o $(WEB_ZIP_PATH) -d /root/ > /dev/null; \
-		cd $(REMOTE_DIR); \
-		mkdir -p data logs/web; \
-		echo "[2/3] Building and recreating web only..."; \
-		docker compose up -d --build --no-deps web; \
-		echo "[3/3] Checking web..."; \
-		i=0; \
-		until docker compose exec -T web node -e \
-			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; do \
-			i=$$((i+1)); \
-			[ $$i -lt 30 ] || (docker compose logs --tail=120 web; exit 1); \
-			sleep 2; \
-		done; \
-		docker compose ps web; \
-		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
-		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
-	'
-
 deploy: package
 	@echo "→ Uploading to $(SERVER)..."
 	scp $(ZIP_PATH) $(SERVER):/tmp/
@@ -299,8 +263,6 @@ deploy: package
 			[ -f data/paper-trade.db.bak ] && cp data/paper-trade.db.bak data/paper-trade.db || true; \
 			docker compose up -d --build; \
 		fi; \
-		docker compose exec -T web node -e \
-			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; \
 		echo "[8/10] Reconciling Redis positions with DB..."; \
 		docker compose exec -T worker python3 -c "import sqlite3,redis; con=sqlite3.connect(\"/app/data/paper-trade.db\"); db={r[0] for r in con.execute(\"SELECT DISTINCT alpha_id FROM positions\")}; c=redis.from_url(\"redis://paper-redis:6379\",decode_responses=True); removed=sum(c.delete(k) for k in c.scan_iter(\"runner:positions:*\") if k.replace(\"runner:positions:\",\"\") not in db); print(f\"Reconciled: removed {removed} ghost position keys\")" || echo "Reconcile skipped (worker not ready)"; \
 		echo "[9/10] Starting alpha-runner..."; \
@@ -312,11 +274,10 @@ deploy: package
 		echo "[10/10] Status"; \
 		make health; \
 		docker compose --profile runner logs --tail=80 alpha-runner alpha-runner-legacy; \
-		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
-		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
+		echo "Dashboard → http://$(SERVER_HOST):8096 (../trading-frontend/)"; \
 	'
 
-# Deploy only the core system (redis + worker + web). This intentionally stops
+# Deploy only the core system (redis + worker). This intentionally stops
 # configured alphas and does not start them again.
 deploy-core deploy-system: package
 	@echo "→ Uploading to $(SERVER)..."
@@ -344,12 +305,9 @@ deploy-core deploy-system: package
 		done; \
 		docker compose exec -T worker python3 -c \
 			"import sqlite3; con=sqlite3.connect(\"/app/data/paper-trade.db\"); assert con.execute(\"PRAGMA integrity_check\").fetchone()[0] == \"ok\"; print(\"DB OK\")"; \
-		docker compose exec -T web node -e \
-			"fetch(\"http://127.0.0.1:3000/api/dashboard\").then(r=>{if(!r.ok) throw new Error(r.status); return r.json()}).then(j=>console.log(\"web OK\", j.alphas.length, \"alphas\")).catch(e=>{console.error(e); process.exit(1)})"; \
 		echo "[7/7] Core status"; \
 		docker compose ps; \
-		WEB_PORT=$$(grep ^WEB_PORT .env | cut -d= -f2 | tr -d " #"); \
-		echo "Dashboard → http://$(SERVER_HOST):$$WEB_PORT"; \
+		echo "Dashboard → http://$(SERVER_HOST):8096 (../trading-frontend/)"; \
 		echo "Legacy standalone alphas are stopped. Start runner later with: make runner-up"; \
 	'
 

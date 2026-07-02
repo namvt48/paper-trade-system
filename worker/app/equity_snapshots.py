@@ -96,7 +96,9 @@ class EquitySnapshotCollector:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 timestamp TEXT NOT NULL,
                 alpha_id TEXT NOT NULL,
-                balance REAL NOT NULL
+                balance REAL NOT NULL,
+                unrealized_pnl REAL DEFAULT 0,
+                realized_pnl REAL DEFAULT 0
             );
             CREATE INDEX IF NOT EXISTS idx_equity_snapshots_alpha_time
                 ON equity_snapshots(alpha_id, timestamp);
@@ -104,6 +106,13 @@ class EquitySnapshotCollector:
                 ON equity_snapshots(timestamp);
             """
         )
+        for col in ("unrealized_pnl", "realized_pnl"):
+            try:
+                await self._snap_conn.execute(
+                    f"ALTER TABLE equity_snapshots ADD COLUMN {col} REAL DEFAULT 0"
+                )
+            except aiosqlite.OperationalError:
+                pass
         await self._snap_conn.commit()
         logger.info(
             "[EQUITY-SNAPSHOT] initialised db=%s interval=%.0fs",
@@ -173,6 +182,8 @@ class EquitySnapshotCollector:
 
         ts = datetime.now(timezone.utc).isoformat()
         total_balance = 0.0
+        total_unrealized = 0.0
+        total_realized = 0.0
 
         for alpha_id in sorted(alpha_ids):
             cap = capitals.get(alpha_id, 10000.0)
@@ -180,15 +191,17 @@ class EquitySnapshotCollector:
             unreal = unrealized_by_alpha.get(alpha_id, 0.0)
             balance = cap + real + unreal
             total_balance += balance
+            total_unrealized += unreal
+            total_realized += real
 
             await self._snap_conn.execute(
-                "INSERT INTO equity_snapshots (timestamp, alpha_id, balance) VALUES (?, ?, ?)",
-                (ts, alpha_id, balance),
+                "INSERT INTO equity_snapshots (timestamp, alpha_id, balance, unrealized_pnl, realized_pnl) VALUES (?, ?, ?, ?, ?)",
+                (ts, alpha_id, balance, unreal, real),
             )
 
         await self._snap_conn.execute(
-            "INSERT INTO equity_snapshots (timestamp, alpha_id, balance) VALUES (?, ?, ?)",
-            (ts, TOTAL_KEY, total_balance),
+            "INSERT INTO equity_snapshots (timestamp, alpha_id, balance, unrealized_pnl, realized_pnl) VALUES (?, ?, ?, ?, ?)",
+            (ts, TOTAL_KEY, total_balance, total_unrealized, total_realized),
         )
         await self._snap_conn.commit()
 

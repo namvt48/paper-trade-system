@@ -1,0 +1,21 @@
+{
+  "alpha_id": "1h-decay-vwap-36h",
+  "timeframe": "1h",
+  "signal": "decay_zscore",
+  "params": {
+    "field": "vwap",
+    "z_window": 2880,
+    "decay": 240
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 36,
+  "exec_lag": 0,
+  "vol_lookback": 120,
+  "ppy": 8760,
+  "long_threshold": 0.9,
+  "short_threshold": 0.1,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0
+}

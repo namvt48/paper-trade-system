@@ -56,30 +56,6 @@ services:
       retries: 3
       start_period: 20s
 
-  web:
-    build: ./web
-    ports:
-      - "${WEB_PORT:-8097}:3000"
-    volumes:
-      - ./data:/app/data
-      - ./logs/web:/app/logs
-      - ./alphas:/app/alphas:ro
-    environment:
-      - DB_PATH=/app/data/paper-trade.db
-      - EQUITY_SNAPSHOT_DB_PATH=/app/data/equity-snapshots.db
-      - ALPHAS_DIR=/app/alphas
-      - REDIS_URL=redis://paper-redis:6379
-      - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
-      - HOSTNAME=0.0.0.0
-      - PORT=3000
-      - LOG_LEVEL=${LOG_LEVEL:-INFO}
-      - DASHBOARD_CACHE_MS=${DASHBOARD_CACHE_MS:-1000}
-      - TRADE_HISTORY_LIMIT=${TRADE_HISTORY_LIMIT:-200}
-    command: sh -c "node server.js 2>&1 | tee -a /app/logs/web.log"
-    networks:
-      - redis-net
-    restart: unless-stopped
-
   alpha-runner:
     build:
       context: ./
