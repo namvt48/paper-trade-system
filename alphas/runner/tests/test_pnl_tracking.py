@@ -32,7 +32,7 @@ def _make_strategy(alpha_id: str = "15m-blend-close") -> CrossSectionalRunnerStr
     ctx = _make_ctx(alpha_id)
     params = {
         "spec_file": "cross_alpha/specs/15m-blend-close.toml",
-        "universe_file": "cross_alpha/universe/binance_perp_200.json",
+        "whitelist_file": "15m-blend-close/whitelist.txt",
         "exchange": "binance",
         "capital": 10000.0,
         "timeframe": "15m",

@@ -34,6 +34,16 @@ class MetricsServer:
     async def _health(self, request: web.Request) -> web.Response:
         if not self.alive:
             return web.json_response({"status": "stopping"}, status=503)
+        snapshot = self.metrics_snapshot()
+        stale_alphas = snapshot.get("stale_alphas") or []
+        if stale_alphas:
+            # An alpha that hasn't processed any event in far longer than
+            # its own timeframe warrants -- e.g. the 2026-07-16 incident,
+            # where 5 daily alphas went silent for 12+ hours with nothing
+            # in the logs to surface it short of reading raw runner logs.
+            return web.json_response(
+                {"status": "degraded", "stale_alphas": stale_alphas}, status=503,
+            )
         return web.json_response({"status": "ok"})
 
     async def _metrics(self, request: web.Request) -> web.Response:

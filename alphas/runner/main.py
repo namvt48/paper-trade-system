@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import asyncio
 import atexit
+import contextlib
 import importlib
 import logging
 import os
@@ -16,7 +17,6 @@ from logging.handlers import QueueHandler, QueueListener
 
 import redis
 
-from runner.alpha_logging import AlphaFileLogHandler
 from runner.config import AlphaConfig, load_runner_config
 from runner.data_layer.cache import SharedCandleCache
 from runner.data_layer.pubsub import DataEvent, SharedPubSubManager
@@ -104,20 +104,9 @@ def setup_logging() -> None:
     shutdown_logging()
     level_name = os.getenv("LOG_LEVEL", "INFO").upper()
     level = getattr(logging, level_name, logging.INFO)
-    log_dir = Path(os.getenv("LOG_DIR", "/app/logs"))
-    log_dir.mkdir(parents=True, exist_ok=True)
 
     formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s")
     handlers: list[logging.Handler] = [logging.StreamHandler(sys.stdout)]
-    handlers.append(logging.FileHandler(log_dir / "runner.log"))
-    if os.getenv("ALPHA_LOGS_ENABLED", "true").lower() not in {"0", "false", "no"}:
-        alpha_log_dir = Path(os.getenv("ALPHA_LOG_DIR", str(log_dir / "alphas")))
-        alpha_handler = AlphaFileLogHandler(
-            alpha_log_dir,
-            max_bytes=int(os.getenv("ALPHA_LOG_MAX_BYTES", "20000000")),
-            backup_count=int(os.getenv("ALPHA_LOG_BACKUP_COUNT", "5")),
-        )
-        handlers.append(alpha_handler)
     for handler in handlers:
         handler.setFormatter(formatter)
 
@@ -149,6 +138,36 @@ async def _noop_backend(requirements):
     return set()
 
 
+# Per-timeframe staleness floor for the /health "silent alpha" check --
+# deliberately coarser than the U4 per-event watchdog thresholds, since
+# this flags an alpha that hasn't processed *any* event in a very long
+# time (e.g. 2026-07-16: 5 daily alphas produced zero events for 12+
+# hours), not a single slow scan.
+_STALE_TF_MS: dict[str, int] = {
+    "1m": 60_000, "5m": 300_000, "15m": 900_000, "30m": 1_800_000,
+    "1h": 3_600_000, "4h": 14_400_000, "1d": 86_400_000,
+}
+_STALE_CANDLES = 2
+
+
+def _alpha_stale_threshold_sec(strategy) -> float:
+    get_warmup_tfs = getattr(strategy, "get_warmup_tfs", None)
+    tfs = get_warmup_tfs() if callable(get_warmup_tfs) else None
+    tf_ms_values = [_STALE_TF_MS.get(tf, 60_000) for tf in (tfs or [])] or [60_000]
+    return max(60.0, (min(tf_ms_values) / 1000.0) * _STALE_CANDLES)
+
+
+def _is_alpha_stale(strategy, metrics: RunnerMetrics, now: float) -> bool:
+    # Metrics/health introspection must never crash the runner over an
+    # incomplete strategy-like object (e.g. a test double) -- losing
+    # observability is exactly the failure mode this exists to prevent.
+    alpha_id = getattr(strategy.ctx, "alpha_id", None) or getattr(strategy, "alpha_id", None)
+    last_ts = metrics.last_event_ts_by_alpha.get(alpha_id)
+    if last_ts is None:
+        return False  # never had a chance to process an event yet (e.g. just started)
+    return (now - last_ts) > _alpha_stale_threshold_sec(strategy)
+
+
 def runner_metrics_snapshot(
     metrics: RunnerMetrics,
     cfg,
@@ -158,6 +177,7 @@ def runner_metrics_snapshot(
     panel_feature_cache: SharedPanelFeatureCache | None = None,
 ) -> dict:
     snapshot = metrics.snapshot()
+    now = time.time()
     snapshot.update({
         "runner_id": cfg.runner_id,
         "signal_stream": cfg.signal_stream,
@@ -165,6 +185,13 @@ def runner_metrics_snapshot(
         "strategies_active": sum(1 for s in strategies if s.ctx.state.ready and s.ctx.state.lease_valid),
         "strategies_suspended": sum(1 for s in strategies if not s.ctx.state.ready or not s.ctx.state.lease_valid),
         "lease_owner": {},
+        "last_event_age_sec": {
+            aid: now - ts for aid, ts in metrics.last_event_ts_by_alpha.items()
+        },
+        "stale_alphas": [
+            getattr(s.ctx, "alpha_id", None) or getattr(s, "alpha_id", None)
+            for s in strategies if _is_alpha_stale(s, metrics, now)
+        ],
     })
     if lease is not None:
         for strategy in strategies:
@@ -201,14 +228,12 @@ async def renew_strategy_leases(
 
         any_valid = False
         for strategy in strategies:
-            if not strategy.ctx.state.lease_valid:
-                continue
+            alpha_id = strategy.ctx.alpha_id
             try:
-                ok = lease.renew(strategy.ctx.alpha_id)
+                ok = lease.renew(alpha_id) if lease.is_valid(alpha_id) else lease.acquire(alpha_id)
             except Exception:
                 ok = False
-            if not ok:
-                strategy.ctx.state.lease_valid = False
+            strategy.ctx.state.lease_valid = bool(ok)
             any_valid = any_valid or bool(ok)
         if strategies and not any_valid:
             break
@@ -239,6 +264,26 @@ def _payload_int(payload: dict | None, key: str) -> int | None:
         return int(value)
     except (TypeError, ValueError):
         return None
+
+
+# Per-timeframe ceiling on a single event's processing time. If scan() (or
+# any other per-event work) takes longer than this -- e.g. an unbounded
+# I/O call or a thread-pool-starved compute step -- the event is abandoned
+# and logged rather than silently blocking this strategy's loop forever.
+# 2026-07-16 incident: 5 daily alphas' loops each got stuck on one event
+# and never processed another, including the next day's candle close,
+# until the whole runner was restarted. Thresholds per .agents/PLAN.md.
+_EVENT_TIMEOUT_SEC: dict[str, float] = {
+    "1d": 120.0,
+    "4h": 120.0,
+    "1h": 90.0,
+    "15m": 60.0,
+}
+_DEFAULT_EVENT_TIMEOUT_SEC = 60.0
+
+
+def _event_timeout_sec(event: DataEvent) -> float:
+    return _EVENT_TIMEOUT_SEC.get(event.tf, _DEFAULT_EVENT_TIMEOUT_SEC)
 
 
 async def handle_strategy_event(strategy, event: DataEvent) -> dict:
@@ -293,6 +338,9 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
         return timings
 
     if event.kind == "symbols":
+        payload = event.payload or {}
+        strategy.ctx.live_tradable_symbols = set(payload.get("symbols") or [])
+
         started = time.perf_counter()
         await strategy.scan()
         timings["scan_ms"] = _duration_ms(started)
@@ -301,7 +349,10 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
     return timings
 
 
-async def run_strategy_event_loop(strategy, queue: asyncio.Queue, stop_event: asyncio.Event) -> None:
+async def run_strategy_event_loop(
+    strategy, queue: asyncio.Queue, stop_event: asyncio.Event, metrics=None,
+    scan_semaphore: asyncio.Semaphore | None = None,
+) -> None:
     while not stop_event.is_set():
         try:
             event = await asyncio.wait_for(queue.get(), timeout=1.0)
@@ -312,7 +363,35 @@ async def run_strategy_event_loop(strategy, queue: asyncio.Queue, stop_event: as
             queue_wait_ms = 0.0
             if event.received_monotonic > 0:
                 queue_wait_ms = max(0.0, (started - event.received_monotonic) * 1000.0)
-            timings = await handle_strategy_event(strategy, event)
+            event_timeout_sec = _event_timeout_sec(event)
+            try:
+                # A universe refresh fans out to every alpha's queue at
+                # once; without a ceiling here, all of them would call
+                # handle_strategy_event (and its asyncio.to_thread compute
+                # work) simultaneously, overwhelming the runner's small
+                # shared thread pool in one burst (2026-07-16 incident;
+                # single-flight above already collapses duplicate builds
+                # within one (tf, universe), this bounds arrival *rate*
+                # across all of them). No-op when no semaphore is passed
+                # (existing callers/tests keep today's behavior).
+                async with (scan_semaphore or contextlib.nullcontext()):
+                    timings = await asyncio.wait_for(
+                        handle_strategy_event(strategy, event), timeout=event_timeout_sec,
+                    )
+            except asyncio.TimeoutError:
+                if metrics is not None:
+                    metrics.inc_scan_timeout(strategy.alpha_id)
+                logger.warning(
+                    "[STRATEGY] scan timeout alpha=%s event=%s channel=%s tf=%s "
+                    "elapsed_sec=%.1f threshold_sec=%.1f -- abandoning this event, "
+                    "moving on to the next one",
+                    strategy.alpha_id, event.kind, event.channel, event.tf or "-",
+                    _duration_ms(started) / 1000.0, event_timeout_sec,
+                    extra={"alpha_id": strategy.alpha_id},
+                )
+                continue
+            if metrics is not None:
+                metrics.mark_event_processed(strategy.alpha_id, time.time())
             total_ms = _duration_ms(started)
             data_open_ms = _payload_int(event.payload, "open_time")
             data_close_ms = _payload_int(event.payload, "close_time")
@@ -461,6 +540,12 @@ async def run(
     cache = SharedCandleCache(data_max_candles_floor=cfg.cache.min_retain_bars)
     panel_feature_cache = SharedPanelFeatureCache()
     metrics = RunnerMetrics()
+    # Bounds how many alphas' handle_strategy_event calls (and their
+    # to_thread compute work) run at once across the whole runner. A
+    # universe refresh fans out to every alpha's queue simultaneously;
+    # without this, all of them would hit the shared compute thread pool
+    # in one burst (2026-07-16 incident, see .agents/PLAN.md U5).
+    scan_semaphore = asyncio.Semaphore(max(1, cfg.compute_workers))
     redis_client = None
     mds_client = None
 
@@ -472,7 +557,19 @@ async def run(
         snapshot_reader = None
     else:
         redis_client = redis.from_url(cfg.redis_url, decode_responses=True)
-        mds_client = redis.from_url(cfg.mds_redis_url or cfg.redis_url, decode_responses=True)
+        # mds_client is only ever used for bounded request/response calls
+        # (warmup, snapshot reads, funding reads) -- never for the
+        # long-lived pubsub subscription, which SharedPubSubManager opens
+        # on its own separate redis.asyncio connection. A dead/unresponsive
+        # mds-redis connection must therefore raise instead of blocking a
+        # shared compute-pool thread forever (2026-07-16 incident: an
+        # unbounded funding read permanently starved 5 daily alphas).
+        mds_client = redis.from_url(
+            cfg.mds_redis_url or cfg.redis_url,
+            decode_responses=True,
+            socket_timeout=cfg.mds_redis_socket_timeout_sec,
+            socket_connect_timeout=cfg.mds_redis_socket_timeout_sec,
+        )
         lease = LeaseManager(redis_client, cfg.runner_id, cfg.lease_ttl_sec)
         dispatcher = SignalDispatcher(redis_client, cfg.signal_stream, lease)
         pubsub = SharedPubSubManager(mds_client, cache, cfg.data_queue_maxsize)
@@ -557,6 +654,7 @@ async def run(
                 state=StrategyRuntimeState(lease_valid=True),
                 warmup_min_symbol_coverage=cfg.warmup_min_symbol_coverage,
                 redis_client=redis_client,
+                mds_redis_client=mds_client,
                 panel_feature_cache=panel_feature_cache,
             )
             strategy = registry.create(
@@ -719,7 +817,7 @@ async def run(
                     continue
                 aid = strategy.ctx.alpha_id
                 alpha_tasks.setdefault(aid, [])
-                evt_task = asyncio.create_task(run_strategy_event_loop(strategy, queue, stop_event))
+                evt_task = asyncio.create_task(run_strategy_event_loop(strategy, queue, stop_event, metrics, scan_semaphore))
                 mng_task = asyncio.create_task(run_strategy_manage_loop(strategy, stop_event))
                 strategy_tasks.extend([evt_task, mng_task])
                 alpha_tasks[aid].extend([evt_task, mng_task])
@@ -729,6 +827,9 @@ async def run(
             from runner.periodic_claim import run_periodic_claim
 
             async def _on_new_alphas(new_configs):
+                new_configs = [c for c in new_configs if c["alpha_id"] not in owned_leases]
+                if not new_configs:
+                    return
                 logger.info("[RUNNER] Periodic claim found %d new alphas", len(new_configs))
                 for alpha_cfg in new_configs:
                     alpha_id = alpha_cfg["alpha_id"]
@@ -740,6 +841,7 @@ async def run(
                         state=StrategyRuntimeState(lease_valid=True),
                         warmup_min_symbol_coverage=cfg.warmup_min_symbol_coverage,
                         redis_client=redis_client,
+                        mds_redis_client=mds_client,
                         panel_feature_cache=panel_feature_cache,
                     )
                     strategy = registry.create(
@@ -763,7 +865,7 @@ async def run(
                     for channel in _translate_channels(strategy.get_required_channels_instance(), cfg.mds_exchange):
                         q = await pubsub.subscribe(channel, alpha_id)
                     if q is not None:
-                        evt_task = asyncio.create_task(run_strategy_event_loop(strategy, q, stop_event))
+                        evt_task = asyncio.create_task(run_strategy_event_loop(strategy, q, stop_event, metrics, scan_semaphore))
                         mng_task = asyncio.create_task(run_strategy_manage_loop(strategy, stop_event))
                         strategy_tasks.extend([evt_task, mng_task])
                         alpha_tasks[alpha_id].extend([evt_task, mng_task])

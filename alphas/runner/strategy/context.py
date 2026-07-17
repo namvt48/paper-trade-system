@@ -32,7 +32,13 @@ class StrategyContext:
     price_alerts: PriceAlertProxy | None = None
     _excluded_symbols: set[str] | None = None
     redis_client: object | None = None
+    mds_redis_client: object | None = None
     panel_feature_cache: SharedPanelFeatureCache | None = None
+    # MDS's live tradable universe (quoteAsset=USDT, contractType=PERPETUAL/
+    # TRADIFI_PERPETUAL, status=TRADING), pushed via the `symbols:{exchange}`
+    # broadcast. None means "not received yet" -- callers must fail open
+    # (don't block) rather than treat an empty/unknown set as "nothing tradable".
+    live_tradable_symbols: set[str] | None = None
 
     @property
     def excluded_symbols(self) -> set[str]:

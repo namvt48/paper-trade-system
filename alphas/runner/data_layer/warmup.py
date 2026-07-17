@@ -79,7 +79,17 @@ class MDSWarmupBackend:
         bars = max(req.bars for req in requirements)
         symbols = sorted({req.symbol for req in requirements})
         key = request_key(self.exchange, tf, bars, symbols)
-        req_id = f"{self.runner_id}:warmup:{key.split('|')[-1]}"
+        # Hash the FULL key (exchange|tf|bars|symbol-digest), not just its last
+        # segment — `key.split('|')[-1]` was only the symbol digest, so two
+        # concurrent requests for different tf/bars over the same symbol set
+        # collided on the same response_stream. Redis XREAD doesn't consume
+        # entries for other readers, so both requests' _read_response loops
+        # would race-read each other's response and exit early on whichever
+        # entry arrived first (matched by symbol only) — silently losing
+        # whichever tf's data lost the race. Any alpha with an `htf` on the
+        # same symbol set as its primary `tf` (e.g. bangoc-v2.2, short-btc-v1)
+        # hits this.
+        req_id = f"{self.runner_id}:warmup:{hashlib.sha1(key.encode('utf-8')).hexdigest()}"
         response_stream = f"warmup:response:{req_id}"
         stream = f"warmup:request:{self.exchange}"
         fields = {

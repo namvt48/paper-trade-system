@@ -4,11 +4,24 @@ import asyncio
 import json
 import logging
 
+import redis.asyncio as aioredis
+
 from runner.alpha_claim import claim_alpha_groups
 from runner.config_sync import read_alpha_configs_from_redis
 
 
 logger = logging.getLogger(__name__)
+
+
+def _derive_async_url(sync_redis_client) -> str:
+    """Build a redis:// URL for an async connection from a sync client's
+    own connection pool, mirroring ``SharedPubSubManager``'s pattern.
+    """
+    kwargs = getattr(getattr(sync_redis_client, "connection_pool", None), "connection_kwargs", {})
+    host = kwargs.get("host", "localhost")
+    port = kwargs.get("port", 6379)
+    db = kwargs.get("db", 0)
+    return f"redis://{host}:{port}/{db}"
 
 
 def find_newly_disabled(redis_client, currently_owned: list[str]) -> list[str]:
@@ -53,14 +66,26 @@ async def run_config_listener(
     ttl_sec: int = 20,
     allowed_alpha_ids: set[str] | None = None,
 ) -> None:
-    pubsub = redis_client.pubsub()
-    pubsub.subscribe("runner:config:updated")
+    # A dedicated async connection for the subscription itself: polling a
+    # sync pubsub via run_in_executor(None, ...) would permanently occupy
+    # one slot of the runner's shared compute thread pool for the entire
+    # process lifetime (this loop never stops polling), competing with
+    # alpha scan() work. See 2026-07-16 incident notes in .agents/PLAN.md.
+    async_redis = aioredis.from_url(_derive_async_url(redis_client), decode_responses=False)
+    pubsub = async_redis.pubsub()
+    await pubsub.subscribe("runner:config:updated")
     logger.info("[CONFIG-LISTENER] Subscribed to runner:config:updated")
 
     try:
         while stop_event is None or not stop_event.is_set():
             loop = asyncio.get_running_loop()
-            msg = await loop.run_in_executor(None, pubsub.get_message, 1.0)
+            try:
+                msg = await asyncio.wait_for(
+                    pubsub.get_message(ignore_subscribe_messages=True, timeout=0.05),
+                    timeout=2.0,
+                )
+            except asyncio.TimeoutError:
+                msg = None
             if msg and msg["type"] == "message":
                 logger.info("[CONFIG-LISTENER] Config update received")
                 try:
@@ -86,7 +111,7 @@ async def run_config_listener(
                 except Exception as exc:
                     logger.warning("[CONFIG-LISTENER] Error processing update: %s", exc)
     finally:
-        pubsub.unsubscribe()
-        if hasattr(pubsub, 'close'):
-            pubsub.close()
+        await pubsub.unsubscribe()
+        await pubsub.close()
+        await async_redis.close()
         logger.info("[CONFIG-LISTENER] Stopped")

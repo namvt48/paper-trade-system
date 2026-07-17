@@ -10,8 +10,16 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
+from cross_alpha.schedule import is_close_aligned_rebalance, is_midnight_close_utc
 from cross_alpha.spec import AlphaSpec
-from cross_alpha.strategy import Selection, select_positions
+from cross_alpha.strategy import (
+    Selection,
+    build_funding_panel,
+    resample_funding_to_native_cadence,
+    select_positions,
+)
+from indicators.pandas.ts_ops import ts_zscore
+from runner.data_layer.funding_snapshot import FundingSnapshotReader
 from runner.shared_panel_feature_cache import PanelBundle, SharedPanelFeatureCache
 from runner.strategy.base import Strategy
 
@@ -25,6 +33,7 @@ class CrossSectionalRunnerStrategy(Strategy):
         super().__init__(alpha_id, version, params, ctx)
         self._alphas_root = Path(__file__).resolve().parents[3]
         self.spec = AlphaSpec.load(self._required_path("spec_file"))
+        self._member_specs = self._resolve_member_specs()
         self.exchange = str(params.get("exchange", "binance"))
         self.capital = float(params.get("capital", 10_000.0))
         self.offset_candle_sec = float(params.get("offset_candle_sec", 5.0))
@@ -43,9 +52,12 @@ class CrossSectionalRunnerStrategy(Strategy):
         )
         self._last_processed_candle = 0
         self._warmup_complete = False
-        self._pending: tuple[int, Selection] | None = None
         self._open_positions: dict[str, dict[str, Any]] = self.ctx.load_positions()
         self._portfolio_returns: list[float] = []
+        # Peak-equity / current-drawdown tracking, driving the ensemble
+        # overlay's drawdown_throttle step (see cross_alpha/overlay.py).
+        self._equity = 1.0
+        self._peak_equity = 1.0
         self._last_prices: dict[str, float] = {}
         self._base_weights: dict[str, float] = {}
         self._pending_cost = 0.0
@@ -80,7 +92,14 @@ class CrossSectionalRunnerStrategy(Strategy):
         return alphas_root / spec_file
 
     def get_required_channels_instance(self) -> list[str]:
-        return self.__class__.get_required_channels(self.params)
+        # Also subscribe to MDS's live tradable-universe broadcast (used to
+        # risk-gate new OPENs in _apply_selection) -- kept out of
+        # get_required_channels() since that classmethod also feeds
+        # _tf_set_from_strategy()'s kline tf_set derivation in main.py, which
+        # would misparse a non-kline channel as a timeframe.
+        channels = list(self.__class__.get_required_channels(self.params))
+        channels.append(f"symbols:{self.exchange}")
+        return channels
 
     def get_warmup_symbols(self) -> list[str]:
         return list(self._symbols)
@@ -89,7 +108,28 @@ class CrossSectionalRunnerStrategy(Strategy):
         return [self.spec.timeframe]
 
     def get_warmup_bars(self, tf: str) -> int:
-        return int(self.params.get("warmup_bars", self.spec.required_bars))
+        # dict.get(key, default) evaluates `default` eagerly regardless of
+        # whether `key` is present -- for signal="ensemble_mean",
+        # spec.required_bars always raises (it needs member specs to
+        # compute), so an explicit params["warmup_bars"] must short-circuit
+        # before touching spec.required_bars at all, not just override it.
+        explicit = self.params.get("warmup_bars")
+        if explicit is not None:
+            return int(explicit)
+        return int(self.spec.required_bars)
+
+    def _resolve_member_specs(self) -> list[AlphaSpec] | None:
+        if self.spec.signal != "ensemble_mean" or not self.spec.members:
+            return None
+        return [
+            AlphaSpec.load(self._alphas_root / member_id / "spec.json")
+            for member_id in self.spec.members
+        ]
+
+    def _current_drawdown(self) -> float:
+        if self._peak_equity <= 0:
+            return 0.0
+        return (self._equity - self._peak_equity) / self._peak_equity
 
     def get_retain_bars(self, tf: str) -> int:
         return int(self.params.get("retain_bars", self.get_warmup_bars(tf)))
@@ -192,13 +232,21 @@ class CrossSectionalRunnerStrategy(Strategy):
         }
         self._record_portfolio_return(prices)
 
-        if self._pending and latest >= self._pending[0]:
-            _, selection = self._pending
-            await self._apply_selection(selection, prices, latest)
-            self._pending = None
-
-        bar_number = latest // self._tf_to_ms(self.spec.timeframe)
-        is_rebalance = bar_number % self.spec.rebalance_bars == 0
+        tf_ms = self._tf_to_ms(self.spec.timeframe)
+        bar_number = latest // tf_ms
+        if self.spec.publish_at_midnight_utc:
+            if not is_midnight_close_utc(latest, tf_ms):
+                logger.debug(
+                    "[%s] scan SKIP: waiting for 00:00 UTC close (candle_open=%d)",
+                    self.alpha_id, latest,
+                    extra={"alpha_id": self.alpha_id},
+                )
+                self._last_prices = prices
+                self._last_processed_candle = latest
+                return
+            is_rebalance = is_close_aligned_rebalance(latest, tf_ms, self.spec.rebalance_bars)
+        else:
+            is_rebalance = bar_number % self.spec.rebalance_bars == 0
         has_positions = bool(self._open_positions)
 
         if not is_rebalance and has_positions:
@@ -239,30 +287,31 @@ class CrossSectionalRunnerStrategy(Strategy):
             }, separators=(",", ":"), allow_nan=False),
             extra={"alpha_id": self.alpha_id},
         )
-        execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
-        if execute_at <= latest:
-            # exec_lag == 0: apply immediately
-            await self._apply_selection(selection, prices, latest)
-        else:
-            self._pending = (execute_at, selection)
-            logger.info(
-                "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
-                self.spec.alpha_id,
-                execute_at,
-                len(selection.longs),
-                len(selection.shorts),
-                selection.diagnostics["gross"],
-                selection.diagnostics["net"],
-                is_rebalance,
-                extra={"alpha_id": self.alpha_id},
-            )
+        await self._apply_selection(selection, prices, latest)
 
         self._last_prices = prices
         self._last_processed_candle = latest
 
     def _select_positions(self, bundle: PanelBundle) -> Selection:
         with bundle.lock:
-            return select_positions(bundle.panel, self.spec, context=bundle.context)
+            selection = select_positions(
+                bundle.panel, self.spec, context=bundle.context,
+                member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+            )
+        if getattr(self.spec, "reverse", False):
+            selection = Selection(
+                longs=selection.shorts,
+                shorts=selection.longs,
+                scores=selection.scores,
+                ranks=selection.ranks,
+                weights={s: -w for s, w in selection.weights.items()},
+                indicators={
+                    s: {**d, "decision": "LONG" if d.get("decision") == "SHORT" else "SHORT" if d.get("decision") == "LONG" else "FLAT", "target_weight": -d.get("target_weight", 0.0)}
+                    for s, d in selection.indicators.items()
+                },
+                diagnostics=selection.diagnostics,
+            )
+        return selection
 
     @staticmethod
     def _audit_sample(selection: Selection) -> tuple[str | None, dict[str, Any] | None]:
@@ -288,12 +337,13 @@ class CrossSectionalRunnerStrategy(Strategy):
         return self._alphas_root / path
 
     def _load_universe(self) -> list[str]:
-        path_value = self.params.get("universe_file")
-        symbols = list(self.params.get("symbols") or [])
-        if path_value:
-            with open(self._resolve_path(str(path_value)), encoding="utf-8") as fh:
-                loaded = json.load(fh)
-            symbols = list(loaded.get("symbols", []))
+        # Whitelist logic only: the whitelist file IS the tradable universe.
+        symbols = self._load_whitelist()
+        if symbols is None:
+            raise ValueError(
+                f"{self.alpha_id} has no whitelist: set params.whitelist_file or "
+                "add whitelist.txt next to spec.json"
+            )
         blacklist = self._load_blacklist()
         clean = []
         for symbol in symbols:
@@ -301,8 +351,28 @@ class CrossSectionalRunnerStrategy(Strategy):
             if symbol and symbol not in blacklist:
                 clean.append(symbol)
         if not clean:
-            raise ValueError(f"{self.alpha_id} has no symbols after universe/blacklist load")
+            raise ValueError(f"{self.alpha_id} has no symbols after whitelist/blacklist load")
         return clean
+
+    def _load_whitelist(self) -> list[str] | None:
+        """Whitelist symbols (newline-delimited text), or None if no whitelist file.
+
+        Source order: explicit params['whitelist_file'], else a ``whitelist.txt``
+        sitting next to the alpha's spec.json (convention). Returns None when no
+        whitelist file exists, which the caller treats as a fatal config error.
+        """
+        value = self.params.get("whitelist_file")
+        if value:
+            path = self._resolve_path(str(value))
+        else:
+            path = self._required_path("spec_file").parent / "whitelist.txt"
+        if not path.exists():
+            return None
+        return [
+            line.strip()
+            for line in path.read_text(encoding="utf-8").splitlines()
+            if line.strip() and not line.lstrip().startswith("#")
+        ]
 
     def _load_blacklist(self) -> set[str]:
         path_value = self.params.get("blacklist_file")
@@ -336,12 +406,49 @@ class CrossSectionalRunnerStrategy(Strategy):
     async def _shared_panel_bundle(self) -> PanelBundle | None:
         if self.ctx.panel_feature_cache is None:
             self.ctx.panel_feature_cache = SharedPanelFeatureCache()
-        return await self.ctx.panel_feature_cache.get_bundle(
+        bundle = await self.ctx.panel_feature_cache.get_bundle(
             self.ctx.cache,
             tf=self.spec.timeframe,
             symbols=tuple(self._symbols),
             bars=self.get_warmup_bars(self.spec.timeframe),
         )
+        if bundle is not None and getattr(self.spec, "needs_funding", False):
+            await asyncio.to_thread(self._attach_funding_panel, bundle.panel)
+        return bundle
+
+    def _attach_funding_panel(self, panel: dict[str, Any]) -> None:
+        """Merge a cross-sectional funding z-score into ``panel["funding_zscore"]``.
+
+        The z-score is computed at funding's shared NATIVE settlement cadence
+        (``params["funding_window"]`` settlements, e.g. 21 settlements @ 8h
+        ~= 7d -- matches ``datacryp/_scripts/_build_derived_v2.py::build_funding``'s
+        ``funding_zscore21``) BEFORE reindexing onto the kline panel's own
+        (typically daily) index -- reindexing first would silently turn a
+        21-settlement (~7d) window into a 21-*daily-bar* (~3x longer) one.
+        Symbols that settle more often than 8h are downsampled onto the
+        shared 8h grid first (``resample_funding_to_native_cadence``) so the
+        21-settlement window means the same ~7d for every symbol, not a
+        shorter one for faster-settling coins.
+
+        Opt-in via ``spec.needs_funding`` -- alphas that don't read
+        fields["funding_zscore"] never pay the extra Redis reads. Idempotent
+        per panel dict: once attached, repeated calls (e.g. multiple scans
+        before the bundle is rebuilt on a new candle) are a no-op rather than
+        re-fetching every time."""
+        if not getattr(self.spec, "needs_funding", False) or "funding_zscore" in panel:
+            return
+        rc = self.ctx.mds_redis_client
+        if rc is None:
+            return
+        reader = FundingSnapshotReader(rc, self.exchange)
+        snapshot = reader.load_many(self._symbols)
+        funding = build_funding_panel(snapshot)
+        if funding.empty:
+            return
+        funding = resample_funding_to_native_cadence(funding)
+        funding_window = int(self.spec.params.get("funding_window", 21))
+        funding_zscore = ts_zscore(funding, funding_window)
+        panel["funding_zscore"] = funding_zscore.reindex(panel["close"].index, method="ffill")
 
     def _latest_cached_timestamp(self, tf: str, symbols: tuple[str, ...]) -> int:
         latest = 0
@@ -374,9 +481,13 @@ class CrossSectionalRunnerStrategy(Strategy):
             after = prices.get(symbol)
             if before and after and before > 0:
                 gross += weight * (after / before - 1.0)
-        self._portfolio_returns.append(gross - self._pending_cost)
+        ret = gross - self._pending_cost
+        self._portfolio_returns.append(ret)
         self._pending_cost = 0.0
         self._portfolio_returns = self._portfolio_returns[-max(self.spec.vol_lookback * 2, 10):]
+        self._equity *= (1.0 + ret)
+        if self._equity > self._peak_equity:
+            self._peak_equity = self._equity
 
     def _vol_target_leverage(self) -> float:
         minimum = max(2, self.spec.vol_lookback // 2)
@@ -423,14 +534,25 @@ class CrossSectionalRunnerStrategy(Strategy):
             self.ctx.save_positions(self._open_positions)
             return
 
-        # Pre-filter to symbols with valid prices, then re-balance LONG = SHORT.
-        # select_positions already balances, but missing prices can re-introduce
-        # an odd total — trim the larger side (weakest |weight| first) so the
-        # opened book is always paired.
-        _weights = {
-            s: w for s, w in selection.weights.items()
-            if prices.get(s) and prices.get(s, 0) > 0
-        }
+        # Pre-filter to symbols with valid prices and a live MDS tradable status,
+        # then re-balance LONG = SHORT. select_positions already balances, but
+        # missing prices/tradability can re-introduce an odd total — trim the
+        # larger side (weakest |weight| first) so the opened book is always paired.
+        # live_tradable_symbols is None until the first `symbols:{exchange}`
+        # broadcast arrives -- fail open (don't block) rather than treat
+        # "not received yet" as "nothing tradable".
+        tradable = self.ctx.live_tradable_symbols
+        _weights = {}
+        for s, w in selection.weights.items():
+            if not prices.get(s) or prices.get(s, 0) <= 0:
+                continue
+            if tradable is not None and s not in tradable:
+                logger.warning(
+                    "[%s] _apply_selection: skipping OPEN for %s — not in MDS live tradable universe",
+                    self.alpha_id, s, extra={"alpha_id": self.alpha_id},
+                )
+                continue
+            _weights[s] = w
         _longs = sorted(s for s, w in _weights.items() if w > 0)
         _shorts = sorted(s for s, w in _weights.items() if w < 0)
         if _longs and _shorts and len(_longs) != len(_shorts):

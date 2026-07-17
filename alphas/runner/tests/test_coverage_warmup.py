@@ -20,7 +20,6 @@ class FakeSpec:
     universe_size: int = 20
     universe_mode: str = "fixed"
     rebalance_bars: int = 1
-    exec_lag: int = 1
     vol_lookback: int = 20
     ppy: int = 4
     long_threshold: float = None
@@ -41,8 +40,8 @@ def _make_strategy(
     ctx = StrategyContext("test-alpha", "1", cache, None, state, warmup_coverage)
     params = {
         "spec_file": "15m-blend-close/spec.json",
-        "universe_file": "15m-blend-close/data/universe.json",
         "blacklist_file": "15m-blend-close/blacklist.txt",
+        "whitelist_file": "15m-blend-close/whitelist.txt",
         "warmup_bars": 10,
         "retain_bars": 10,
         "capital": 10000.0,

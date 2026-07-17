@@ -19,6 +19,8 @@ class RunnerMetrics:
     reconnect_warmup_total: int = 0
     reconnect_snapshot_hit_total: int = 0
     reconnect_full_warmup_total: int = 0
+    scan_timeout_by_alpha: dict[str, int] = field(default_factory=dict)
+    last_event_ts_by_alpha: dict[str, float] = field(default_factory=dict)
 
     def inc(self, name: str, amount: int = 1) -> None:
         setattr(self, name, int(getattr(self, name)) + int(amount))
@@ -28,6 +30,12 @@ class RunnerMetrics:
 
     def set_strategy_coverage(self, alpha_id: str, coverage: float) -> None:
         self.strategy_readiness_coverage[str(alpha_id)] = float(coverage)
+
+    def inc_scan_timeout(self, alpha_id: str) -> None:
+        self.scan_timeout_by_alpha[alpha_id] = self.scan_timeout_by_alpha.get(alpha_id, 0) + 1
+
+    def mark_event_processed(self, alpha_id: str, now: float) -> None:
+        self.last_event_ts_by_alpha[alpha_id] = float(now)
 
     def snapshot(self) -> dict[str, Any]:
         return {
@@ -44,4 +52,6 @@ class RunnerMetrics:
             "reconnect_warmup_total": self.reconnect_warmup_total,
             "reconnect_snapshot_hit_total": self.reconnect_snapshot_hit_total,
             "reconnect_full_warmup_total": self.reconnect_full_warmup_total,
+            "scan_timeout_by_alpha": dict(self.scan_timeout_by_alpha),
+            "last_event_ts_by_alpha": dict(self.last_event_ts_by_alpha),
         }

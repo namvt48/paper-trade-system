@@ -29,7 +29,7 @@ class WarmupConfig:
     min_warmup_coverage_pct: float = 0.60
     sync_tolerance_candles: int = 1
     reconnect_staleness_candles: int = 5
-    parquet_max_staleness_sec: float = 7200
+    parquet_max_staleness_sec: float = 21600
 
 
 @dataclass(frozen=True)
@@ -43,6 +43,7 @@ class RunnerConfig:
     redis_url: str = "redis://localhost:6379"
     mds_redis_url: str = ""
     mds_exchange: str = "binance"
+    mds_redis_socket_timeout_sec: float = 10.0
     signal_stream: str = "paper-signals"
     shadow_mode: bool = True
     warmup_min_symbol_coverage: float = 0.90
@@ -96,6 +97,9 @@ def load_runner_config(path: str | Path, include_disabled: bool = False) -> Runn
         redis_url=str(os.getenv("REDIS_URL") or merged.get("redis_url", "redis://localhost:6379")),
         mds_redis_url=str(os.getenv("MDS_REDIS_URL") or merged.get("mds_redis_url", merged.get("redis_url", "")) or ""),
         mds_exchange=str(os.getenv("MDS_EXCHANGE") or merged.get("mds_exchange", "binance")),
+        mds_redis_socket_timeout_sec=float(
+            os.getenv("MDS_REDIS_SOCKET_TIMEOUT_SEC") or merged.get("mds_redis_socket_timeout_sec", 10.0)
+        ),
         signal_stream=signal_stream,
         shadow_mode=shadow_mode,
         warmup_min_symbol_coverage=float(merged.get("warmup_min_symbol_coverage", 0.90)),

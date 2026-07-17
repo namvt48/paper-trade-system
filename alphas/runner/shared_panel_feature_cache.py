@@ -31,6 +31,7 @@ class SharedPanelFeatureCache:
         self.max_panels = max(1, int(max_panels))
         self._group_max_bars: dict[tuple[str, str], int] = {}
         self._panels: OrderedDict[tuple[int, str, str, int, int], PanelBundle] = OrderedDict()
+        self._inflight: dict[tuple[int, str, str, int, int], asyncio.Task] = {}
         self._lock = threading.Lock()
         self.metrics: dict[str, int | float] = {
             "panel_cache_hits": 0,
@@ -43,6 +44,7 @@ class SharedPanelFeatureCache:
             "feature_cache_misses": 0,
             "selection_compute_total": 0,
             "selection_compute_duration_sec_total": 0.0,
+            "panel_build_single_flight_joins_total": 0,
         }
 
     @staticmethod
@@ -69,11 +71,26 @@ class SharedPanelFeatureCache:
         symbols: tuple[str, ...] | list[str],
         bars: int,
     ) -> PanelBundle | None:
+        """Fetch (building if needed) the shared panel for ``(tf, universe,
+        bars, version)``.
+
+        Single-flight: when several alphas share the same timeframe and
+        universe (e.g. all the ``1d`` cross-sectional alphas), a universe
+        refresh previously made each one independently call
+        ``asyncio.to_thread(self._build_panel, ...)`` for the identical
+        underlying data -- N redundant builds competing for the runner's
+        shared compute thread pool at once. Now only the first caller for
+        a given key builds; concurrent callers for the same key await that
+        one build instead of starting their own (2026-07-16 incident, see
+        .agents/PLAN.md U5).
+        """
         symbol_tuple = tuple(symbols)
         universe = self.register_group(tf, symbol_tuple, bars)
         effective_bars = self.max_bars(tf, universe, bars)
         version = cache.get_tf_version(tf)
         key = (id(cache), str(tf), universe, int(effective_bars), int(version))
+
+        owns_build = False
         with self._lock:
             cached = self._panels.get(key)
             if cached is not None:
@@ -81,9 +98,36 @@ class SharedPanelFeatureCache:
                 self._panels.move_to_end(key)
                 return cached
 
-        self._inc("panel_cache_misses")
+            inflight = self._inflight.get(key)
+            if inflight is None:
+                self._inc("panel_cache_misses")
+                inflight = asyncio.ensure_future(
+                    self._build_and_store(cache, tf, symbol_tuple, effective_bars, key, version, universe)
+                )
+                self._inflight[key] = inflight
+                owns_build = True
+            else:
+                self._inc("panel_build_single_flight_joins_total")
+
+        try:
+            return await inflight
+        finally:
+            if owns_build:
+                with self._lock:
+                    self._inflight.pop(key, None)
+
+    async def _build_and_store(
+        self,
+        cache: SharedCandleCache,
+        tf: str,
+        symbols: tuple[str, ...],
+        effective_bars: int,
+        key: tuple[int, str, str, int, int],
+        version: int,
+        universe: str,
+    ) -> PanelBundle | None:
         started = time.perf_counter()
-        panel = await asyncio.to_thread(self._build_panel, cache, tf, symbol_tuple, effective_bars)
+        panel = await asyncio.to_thread(self._build_panel, cache, tf, symbols, effective_bars)
         if not panel or panel["close"].empty:
             return None
         latest = int(panel["close"].index.max())
