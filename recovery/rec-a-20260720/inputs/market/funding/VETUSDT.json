@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -7.512e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.004651,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.004674,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.05e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 0.004706,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.664e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.004743,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.49e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00465513,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.81e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00466951,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.655e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.004719,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.93e-06,
+    "funding_time": 1784304000004,
+    "mark_price": 0.004712,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011,
+    "funding_time": 1784275200010,
+    "mark_price": 0.004634,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.00472858,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.055e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.004788,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.376e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.004814,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.63e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.00485246,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.00486956,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.729e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.004787,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.00483,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.611e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0048662,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.96e-06,
+    "funding_time": 1784016000002,
+    "mark_price": 0.00474452,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.004762,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.836e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00479834,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.655e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.00483,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.972e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.004848,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.132e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.004898,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.676e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.004905,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.004927,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.004993,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.00487,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.004756,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.004724,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.00471424,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.004724,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.00474124,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.853e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.004728,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00468257,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.965e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.00467341,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.589e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.004683,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.793e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.004736,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.004829,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.004874,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.00497916,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.004826,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.053e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.00467734,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.741e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.00477217,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.00471209,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.306e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.00473174,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.619e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.0047945,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.00481004,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.17e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.00471167,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.00475752,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.004717,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.719e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.00468,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.992e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.00464639,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.108e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.00456231,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.00448142,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.004463,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.004567,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.004417,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.748e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.00436937,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.11e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.00437,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.624e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.00440865,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.00448061,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.75e-06,
+    "funding_time": 1782748800004,
+    "mark_price": 0.004464,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.978e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.004524,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.892e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.004511,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.00460498,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.619e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.004655,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015411,
+    "funding_time": 1782604800000,
+    "mark_price": 0.004501,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.784e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.004469,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.34e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 0.004476,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.004489,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.00451192,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.00455203,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.84e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 0.004449,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010026,
+    "funding_time": 1782403200000,
+    "mark_price": 0.00442544,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.191e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.00458538,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.107e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.00458016,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001102,
+    "funding_time": 1782316800003,
+    "mark_price": 0.00451213,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012919,
+    "funding_time": 1782288000005,
+    "mark_price": 0.004656,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.011e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0047006,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013095,
+    "funding_time": 1782230400002,
+    "mark_price": 0.00470632,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019333,
+    "funding_time": 1782201600005,
+    "mark_price": 0.00469,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.083e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.00485686,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.583e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.004935,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.493e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.00492548,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.01e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00484555,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.59e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.00495,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.088e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.004932,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.519e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.005067,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011868,
+    "funding_time": 1781971200001,
+    "mark_price": 0.00491494,
+    "symbol": "VETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.124e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.004892,
+    "symbol": "VETUSDT"
+  }
+]

@@ -9,10 +9,15 @@ import time
 import uuid
 from datetime import datetime, timezone
 
+from pathlib import Path
+
 from base.engine import BaseEngine
+from base import signal_push
 from base.symbol_utils import get_binance_perp_symbols
+from cross_alpha.schedule import is_midnight_close_utc, is_rebalance_due
 from cross_alpha.spec import AlphaSpec
 from cross_alpha.strategy import Selection, build_panel, select_positions
+from portfolio_manager.core.book import TargetBook, TargetBookStore
 
 logger = logging.getLogger(__name__)
 
@@ -25,7 +30,6 @@ class CrossSectionalEngine(BaseEngine):
         self.settings = settings
         self.spec = AlphaSpec.load(settings.SPEC_FILE)
         self._open_positions: dict[str, dict] = {}
-        self._pending: tuple[int, Selection] | None = None
         self._last_processed_candle = 0
         self._portfolio_returns: list[float] = []
         self._last_prices: dict[str, float] = {}
@@ -34,27 +38,113 @@ class CrossSectionalEngine(BaseEngine):
         self._strategy_leverage = 0.0
         self._last_pnl_publish: dict[str, float] = {}
         self._pnl_channel = f"pnl:{self.alpha_id}"
+        self.book_only = bool(getattr(self.spec, "book_only", False) or getattr(settings, "BOOK_ONLY", False))
+        self._book_revision = 0
+        self._book_store = TargetBookStore(signal_push._r) if self.book_only and signal_push._r is not None else None
         self._columns_config_path = os.path.join(os.path.dirname(settings.SPEC_FILE), "config.toml")
+        # Peak-equity / drawdown tracking, driving the ensemble overlay's
+        # drawdown_throttle step (see cross_alpha/overlay.py). Kept here
+        # (stateful, per-alpha) rather than in strategy.py/overlay.py, which
+        # stay pure functions over a panel.
+        self._equity = 1.0
+        self._peak_equity = 1.0
+        self._member_specs: list[AlphaSpec] | None = None
+        if self.spec.signal == "ensemble_mean" and self.spec.members:
+            alphas_root = Path(settings.SPEC_FILE).resolve().parents[1]
+            self._member_specs = [
+                AlphaSpec.load(alphas_root / member_id / "spec.json")
+                for member_id in self.spec.members
+            ]
 
     def get_required_channels(self) -> list[str]:
         return [f"kline:{self.spec.timeframe}"]
 
     def _get_warmup_symbols(self) -> list[str]:
-        try:
-            with open(self.settings.UNIVERSE_FILE, encoding="utf-8") as fh:
-                configured = json.load(fh)["symbols"]
-        except (OSError, KeyError, TypeError, json.JSONDecodeError):
-            configured = []
-        tradable = set(get_binance_perp_symbols())
-        if configured and len(tradable) <= 2:
-            # symbol_utils intentionally falls back to BTC/ETH on API failure;
-            # retain the configured universe rather than collapsing the alpha.
-            tradable = set(configured)
-        symbols = [s for s in configured if (not tradable or s in tradable) and not self._is_blacklisted(s)]
-        return symbols or [s for s in sorted(tradable) if not self._is_blacklisted(s)]
+        if self._whitelist:
+            return sorted(s for s in self._whitelist if not self._is_blacklisted(s))
+        tradable = get_binance_perp_symbols()
+        return [s for s in tradable if not self._is_blacklisted(s)]
 
     def _has_open_positions(self) -> bool:
         return bool(self._open_positions)
+
+    async def on_warmup_complete(self) -> None:
+        """Bootstrap portfolio returns from historical candles so vol is estimated on first live candle."""
+        deadline = time.time() + float(getattr(self.settings, "INITIAL_DATA_TIMEOUT_SEC", 300.0))
+        while not self.symbol_data and time.time() < deadline:
+            await asyncio.sleep(1)
+        if not self.symbol_data:
+            await asyncio.sleep(5)
+
+        snapshot = await self._snapshot()
+        if not snapshot:
+            self._logger.warning(
+                "[%s] Vol bootstrap: no snapshot data (symbol_data=%d)",
+                self.alpha_id, len(self.symbol_data),
+            )
+            return
+
+        panel = build_panel(snapshot)
+        close_df = panel["close"]
+        n_bars = len(close_df)
+        self._logger.info(
+            "[%s] Vol bootstrap: symbol_data=%d snapshot=%d bars=%d",
+            self.alpha_id, len(self.symbol_data), len(snapshot), n_bars,
+        )
+        if n_bars < 3:
+            return
+
+        start_bar = max(self.spec.required_bars, 3)
+        replay_bars = n_bars - start_bar
+        if replay_bars < 2:
+            self._logger.info(
+                "[%s] Vol bootstrap skipped: %d replay bars (bars=%d, required=%d)",
+                self.alpha_id, replay_bars, n_bars, self.spec.required_bars,
+            )
+            return
+
+        prev_weights: dict[str, float] = {}
+        prev_prices: dict[str, float] = {}
+        bootstrapped = 0
+
+        for i in range(start_bar, n_bars):
+            sub_panel = {k: v.iloc[: i + 1] for k, v in panel.items()}
+            try:
+                selection = select_positions(
+                    sub_panel, self.spec,
+                    member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+                )
+            except Exception:
+                continue
+
+            curr_prices: dict[str, float] = {}
+            row = close_df.iloc[i]
+            for symbol in close_df.columns:
+                val = row.get(symbol)
+                if val is not None and not (isinstance(val, float) and math.isnan(val)):
+                    curr_prices[str(symbol)] = float(val)
+
+            if prev_weights and prev_prices:
+                gross = 0.0
+                for symbol, weight in prev_weights.items():
+                    before = prev_prices.get(symbol)
+                    after = curr_prices.get(symbol)
+                    if before and after:
+                        gross += weight * (after / before - 1.0)
+                self._portfolio_returns.append(gross)
+                bootstrapped += 1
+
+            prev_weights = dict(selection.weights)
+            prev_prices = curr_prices
+
+        self._base_weights = prev_weights
+        self._last_prices = prev_prices
+        self._strategy_leverage = self.spec.max_leverage
+
+        self._logger.info(
+            "[%s] Vol bootstrap done: %d returns, leverage=%.4f (fixed=max_leverage)",
+            self.alpha_id, bootstrapped, self._strategy_leverage,
+        )
 
     def on_position_reconciled(self, position: dict, mode: str) -> None:
         symbol = str(position.get("symbol", ""))
@@ -153,13 +243,23 @@ class CrossSectionalEngine(BaseEngine):
         prices = {symbol: float(row["close"][-1]) for symbol, row in snapshot.items() if row["close"]}
         self._record_portfolio_return(prices)
 
-        if self._pending and latest >= self._pending[0]:
-            _, selection = self._pending
-            self._apply_selection(selection, prices, latest)
-            self._pending = None
-
-        bar_number = latest // self._tf_to_ms(self.spec.timeframe)
-        is_rebalance = bar_number % self.spec.rebalance_bars == 0
+        tf_ms = self._tf_to_ms(self.spec.timeframe)
+        if self.spec.publish_at_midnight_utc:
+            if not is_midnight_close_utc(latest, tf_ms):
+                self._logger.debug(
+                    "[%s] scan SKIP: waiting for 00:00 UTC close (candle_open=%d)",
+                    self.config.ALPHA_ID, latest,
+                )
+                self._last_prices = prices
+                self._last_processed_candle = latest
+                return
+        is_rebalance = is_rebalance_due(
+            latest,
+            tf_ms,
+            self.spec.rebalance_bars,
+            publish_at_midnight_utc=self.spec.publish_at_midnight_utc,
+            rebalance_on_close=getattr(self.spec, "rebalance_on_close", False),
+        )
         panel = build_panel(snapshot)
 
         # DIAGNOSTIC: log panel shape and NaN counts before signal computation
@@ -177,7 +277,10 @@ class CrossSectionalEngine(BaseEngine):
                 sorted(row_neg1921[row_neg1921.isna()].index.tolist())[:5],
             )
 
-        selection = select_positions(panel, self.spec)
+        selection = select_positions(
+            panel, self.spec,
+            member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+        )
         self._logger.info(
             "[SIGNAL_AUDIT] %s",
             json.dumps({
@@ -192,11 +295,10 @@ class CrossSectionalEngine(BaseEngine):
                 "symbols": selection.indicators,
             }, separators=(",", ":"), allow_nan=False),
         )
-        execute_at = latest + self.spec.exec_lag * self._tf_to_ms(self.spec.timeframe)
-        self._pending = (execute_at, selection)
+        self._apply_selection(selection, prices, latest)
         self._logger.info(
-            "[%s] Decision queued for %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
-            self.spec.alpha_id, execute_at, len(selection.longs), len(selection.shorts),
+            "[%s] Decision applied at %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
+            self.spec.alpha_id, latest, len(selection.longs), len(selection.shorts),
             selection.diagnostics["gross"], selection.diagnostics["net"], is_rebalance,
         )
 
@@ -212,9 +314,18 @@ class CrossSectionalEngine(BaseEngine):
             after = prices.get(symbol)
             if before and after:
                 gross += weight * (after / before - 1.0)
-        self._portfolio_returns.append(gross - self._pending_cost)
+        ret = gross - self._pending_cost
+        self._portfolio_returns.append(ret)
         self._pending_cost = 0.0
         self._portfolio_returns = self._portfolio_returns[-max(self.spec.vol_lookback * 2, 10):]
+        self._equity *= (1.0 + ret)
+        if self._equity > self._peak_equity:
+            self._peak_equity = self._equity
+
+    def _current_drawdown(self) -> float:
+        if self._peak_equity <= 0:
+            return 0.0
+        return (self._equity - self._peak_equity) / self._peak_equity
 
     def _vol_target_leverage(self) -> float:
         minimum = max(2, self.spec.vol_lookback // 2)
@@ -229,6 +340,12 @@ class CrossSectionalEngine(BaseEngine):
         return min(self.spec.max_leverage, self.spec.target_vol / rv)
 
     def _apply_selection(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+        if self.book_only:
+            self._base_weights = dict(selection.weights)
+            self._publish_target_book(selection, prices, candle_open_ms)
+            self._open_positions.clear()
+            self.mark_positions_changed()
+            return
         # Quantity modification is not supported by the paper worker. Closing and
         # reopening the rebalance basket preserves target quantities and sides.
         for symbol, pos in list(self._open_positions.items()):
@@ -245,6 +362,10 @@ class CrossSectionalEngine(BaseEngine):
             return
 
         for symbol, weight in selection.weights.items():
+            if self._whitelist and symbol not in self._whitelist:
+                continue
+            if self._is_blacklisted(symbol):
+                continue
             price = prices.get(symbol)
             if not price or price <= 0:
                 continue
@@ -282,3 +403,24 @@ class CrossSectionalEngine(BaseEngine):
                 timestamp=datetime.now(timezone.utc).isoformat(),
             )
         self.mark_positions_changed()
+
+    def _publish_target_book(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+        if self._book_store is None:
+            logger.error("[%s] BOOK_ONLY configured but Redis is unavailable", self.alpha_id)
+            return
+        self._book_revision += 1
+        book = TargetBook.create(
+            self.alpha_id,
+            self.spec.timeframe,
+            selection.weights,
+            revision=self._book_revision,
+            as_of_candle_ms=candle_open_ms,
+            meta={
+                "n_long": len(selection.longs),
+                "n_short": len(selection.shorts),
+                "book_only": True,
+                "prices": {symbol: float(prices[symbol]) for symbol in selection.weights if symbol in prices},
+                "diagnostics": selection.diagnostics,
+            },
+        )
+        self._book_store.write(book)

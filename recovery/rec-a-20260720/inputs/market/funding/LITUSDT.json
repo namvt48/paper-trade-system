@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 2.2038,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 2.2108,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 2.2275,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 2.23036986,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 2.21164273,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 2.205812,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 2.2341,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 2.25719147,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 2.20852352,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 2.1936058,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 2.2079,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 2.2387,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 2.2915482,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 2.2884,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 2.28433855,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 2.2174,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 2.21406333,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 2.190036,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 2.2054,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 2.28661073,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 2.45503214,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.801e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 2.498,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.636e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 2.3935,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.309e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 2.3759,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.174e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 2.4,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.143e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 2.41173307,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014778,
+    "funding_time": 1784145600002,
+    "mark_price": 2.4559,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 2.5377,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 2.5947,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012737,
+    "funding_time": 1784102400002,
+    "mark_price": 2.55948233,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010274,
+    "funding_time": 1784088000003,
+    "mark_price": 2.61632673,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.362e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 2.5935,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 2.58408087,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 2.5417,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 2.4696304,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 2.3879,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 2.38319973,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 2.30497779,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027584,
+    "funding_time": 1783972800000,
+    "mark_price": 2.3266,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 2.3839352,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.2e-07,
+    "funding_time": 1783944000000,
+    "mark_price": 2.3781,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 2.37,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 2.5572,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 2.62551047,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 2.6642,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 2.6352,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 2.60198587,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 2.60411733,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 2.7206,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 2.5759,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 2.62,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 2.57959873,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 2.5869,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 2.6074,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 2.6433,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 2.6920458,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 2.5432712,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 2.4859,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 2.5094182,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 2.5058432,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 2.47715367,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.507e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 2.3937,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017308,
+    "funding_time": 1783627200000,
+    "mark_price": 2.3366,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.458e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 2.42375527,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016753,
+    "funding_time": 1783598400002,
+    "mark_price": 2.4616,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012082,
+    "funding_time": 1783584000001,
+    "mark_price": 2.4672,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.293e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 2.3479,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015154,
+    "funding_time": 1783555200000,
+    "mark_price": 2.32649848,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022499,
+    "funding_time": 1783540800006,
+    "mark_price": 2.3873,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.47e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 2.30988687,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.84e-06,
+    "funding_time": 1783512000005,
+    "mark_price": 2.3304,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 2.367,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 2.3925,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 2.4605,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 2.5622,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.822e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 2.55571387,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.91e-06,
+    "funding_time": 1783425600010,
+    "mark_price": 2.60354113,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.706e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 2.6092,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 2.56071083,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 2.577417,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 2.5973,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 2.6579,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 2.44248647,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 2.5844,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046031,
+    "funding_time": 1783310400000,
+    "mark_price": 2.6757,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.433e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 2.4572,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.118e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 2.447985,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 2.4487,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.14e-06,
+    "funding_time": 1783252800000,
+    "mark_price": 2.2810132,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.364e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 2.27172627,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001624,
+    "funding_time": 1783224000002,
+    "mark_price": 2.17653147,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 2.1991,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.313e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 2.17794387,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.621e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 2.2108,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.367e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 2.23848853,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 2.18441647,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 2.2002,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.458e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 2.11418607,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 2.15772448,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 2.1189,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002716,
+    "funding_time": 1783080000002,
+    "mark_price": 2.03923113,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.766e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 2.0582,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.017e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 2.1137,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.001e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 2.06671053,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.503e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 2.0261,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.45e-06,
+    "funding_time": 1783008000000,
+    "mark_price": 2.0798,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 2.1704,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 2.1455422,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 2.0847518,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 2.0704,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 1.99475473,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.77665947,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.601e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.8675,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.90874221,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.175e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.8918832,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.84937833,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 1.8362,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 1.9696,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 1.906817,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.89700913,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 1.85834738,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.860716,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 1.8015,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.714496,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 1.720464,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1.7117,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 1.75109607,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.7317,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 1.73599931,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.749332,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 1.7928164,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.813912,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 1.73876113,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.72232462,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 1.743884,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.8308,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 1.7823,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.7894,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 1.8058,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.824944,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 1.79402,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.80852,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 1.7014882,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.665728,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 1.6658,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.612352,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 1.5981,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.60880933,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.6397,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.6725,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.6638,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.696,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 1.56820707,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.5292,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 1.5606,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.5477858,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 1.5042,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.5346,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.5457802,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 1.5692,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.5028,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 1.64928,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.6112,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 1.6200186,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.6473,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.70330587,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.6689,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.6173844,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.5683,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.587658,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.5608,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 1.5645,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.58327467,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.6035,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.5570131,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.52547667,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.55325787,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.53990673,
+    "symbol": "LITUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.5568,
+    "symbol": "LITUSDT"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784505600002,
+    "mark_price": 643.67,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784476800001,
+    "mark_price": 640.52,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784448000001,
+    "mark_price": 640.56,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784419200001,
+    "mark_price": 639.66,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784390400001,
+    "mark_price": 638.01601894,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784361600001,
+    "mark_price": 640.52,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784332800001,
+    "mark_price": 640.35274321,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.243e-05,
+    "funding_time": 1784304000001,
+    "mark_price": 633.13,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.042e-05,
+    "funding_time": 1784275200001,
+    "mark_price": 654.68,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784246400001,
+    "mark_price": 666.15,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784217600001,
+    "mark_price": 674.51,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784188800002,
+    "mark_price": 679.94372385,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784160000001,
+    "mark_price": 680.12,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.45e-05,
+    "funding_time": 1784131200001,
+    "mark_price": 683.96958678,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784102400001,
+    "mark_price": 659.64894348,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784073600001,
+    "mark_price": 661.83984066,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784044800001,
+    "mark_price": 656.85,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.156e-05,
+    "funding_time": 1784016000001,
+    "mark_price": 653.98116036,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017066,
+    "funding_time": 1783987200002,
+    "mark_price": 656.35609561,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783958400001,
+    "mark_price": 660.63457863,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783929600001,
+    "mark_price": 661.64,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.331e-05,
+    "funding_time": 1783900800001,
+    "mark_price": 664.83,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783872000001,
+    "mark_price": 671.32876307,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783843200001,
+    "mark_price": 666.86,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783814400001,
+    "mark_price": 670.05,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783785600001,
+    "mark_price": 672.84,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783756800001,
+    "mark_price": 667.77476403,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783728000001,
+    "mark_price": 668.63,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.499e-05,
+    "funding_time": 1783699200001,
+    "mark_price": 669.8,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010423,
+    "funding_time": 1783670400001,
+    "mark_price": 637.4,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00077459,
+    "funding_time": 1783641600001,
+    "mark_price": 640.74,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783612800001,
+    "mark_price": 607.97642211,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783584000001,
+    "mark_price": 604.16527797,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783555200001,
+    "mark_price": 603.61,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783526400001,
+    "mark_price": 603.81828737,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783497600001,
+    "mark_price": 617.22826696,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783468800002,
+    "mark_price": 616.42,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783440000001,
+    "mark_price": 605.57825922,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783411200001,
+    "mark_price": 600.71422205,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783382400001,
+    "mark_price": 600.52916847,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.229e-05,
+    "funding_time": 1783353600001,
+    "mark_price": 592.94,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001066,
+    "funding_time": 1783324800001,
+    "mark_price": 590.96019003,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783296000001,
+    "mark_price": 592.16417461,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783267200001,
+    "mark_price": 590.57,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783238400001,
+    "mark_price": 590.15,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783209600002,
+    "mark_price": 590.62151269,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783180800001,
+    "mark_price": 589.37991014,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783152000001,
+    "mark_price": 590.53,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783123200001,
+    "mark_price": 589.76924928,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783094400001,
+    "mark_price": 591.02,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783065600001,
+    "mark_price": 589.09547305,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783036800001,
+    "mark_price": 584.78817293,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783008000001,
+    "mark_price": 587.72325878,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782979200001,
+    "mark_price": 608.38,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782950400000,
+    "mark_price": 611.67,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782921600001,
+    "mark_price": 617.74,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030202,
+    "funding_time": 1782892800001,
+    "mark_price": 561.79,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042971,
+    "funding_time": 1782864000000,
+    "mark_price": 562.45,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.000251,
+    "funding_time": 1782835200001,
+    "mark_price": 557.48038575,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018297,
+    "funding_time": 1782806400000,
+    "mark_price": 563.45502754,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.26e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 564.01083846,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.769e-05,
+    "funding_time": 1782748800001,
+    "mark_price": 565.2965756,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782720000001,
+    "mark_price": 556.36795788,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782691200001,
+    "mark_price": 552.77,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782662400001,
+    "mark_price": 552.82,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782633600002,
+    "mark_price": 553.57971469,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782604800002,
+    "mark_price": 553.46,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782576000001,
+    "mark_price": 554.3,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782547200001,
+    "mark_price": 554.35047469,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782518400001,
+    "mark_price": 551.7345335,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782489600001,
+    "mark_price": 556.08,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018665,
+    "funding_time": 1782460800002,
+    "mark_price": 546.67560719,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024629,
+    "funding_time": 1782432000001,
+    "mark_price": 545.57828416,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.832e-05,
+    "funding_time": 1782403200001,
+    "mark_price": 550.34166341,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034319,
+    "funding_time": 1782374400001,
+    "mark_price": 557.6,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027049,
+    "funding_time": 1782345600002,
+    "mark_price": 559.42393889,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782316800001,
+    "mark_price": 563.66,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782288000001,
+    "mark_price": 562.70519278,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782259200001,
+    "mark_price": 562.71,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782230400001,
+    "mark_price": 564.62,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782201600002,
+    "mark_price": 560.16,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.199e-05,
+    "funding_time": 1782172800001,
+    "mark_price": 563.54148577,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.879e-05,
+    "funding_time": 1782144000001,
+    "mark_price": 562.99,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039535,
+    "funding_time": 1782115200001,
+    "mark_price": 576.39,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027078,
+    "funding_time": 1782086400001,
+    "mark_price": 570.26657798,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782057600001,
+    "mark_price": 576.43701205,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782028800001,
+    "mark_price": 576.12,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782000000001,
+    "mark_price": 575.83232549,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1781971200001,
+    "mark_price": 575.44,
+    "symbol": "METAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1781942400001,
+    "mark_price": 576.44,
+    "symbol": "METAUSDT"
+  }
+]

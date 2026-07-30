@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.042e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.361,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.52e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 0.3611,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.97e-06,
+    "funding_time": 1784491200004,
+    "mark_price": 0.36007629,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.58e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.358,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.36e-06,
+    "funding_time": 1784462400000,
+    "mark_price": 0.35536886,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.8e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.3601,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.28e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.3588,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.853e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.3617,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.064e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.3549,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.451e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.3563,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.702e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.3601,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.249e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.36383114,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.428e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.3691,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.621e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.3782,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.17e-06,
+    "funding_time": 1784318400000,
+    "mark_price": 0.3813,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.166e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.3814299,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.689e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.38321038,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011484,
+    "funding_time": 1784275200010,
+    "mark_price": 0.3764,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.831e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.3802,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.414e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.39719667,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.937e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.4048,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.389e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.4022,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.117e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.4014,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.104e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.40539676,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.41279305,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.41631105,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.41305429,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.41323419,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.42015157,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.612e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.4045,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.41141648,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.4072,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.946e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.4009,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.706e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.4007,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.814e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.4008,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.409,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.031e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.40308181,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.806e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.396,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.87e-06,
+    "funding_time": 1783972800000,
+    "mark_price": 0.40293819,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.621e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.4051,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.4143,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.866e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.4053,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.94e-06,
+    "funding_time": 1783915200000,
+    "mark_price": 0.3895,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.214e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.3985,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.379e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.4045,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.388e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.4058,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.4081,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.41231857,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.40501124,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.81e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.40408034,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.4131,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.41511152,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.396e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.40848676,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.701e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.4016,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.88e-06,
+    "funding_time": 1783742400000,
+    "mark_price": 0.40771752,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.649e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.39849333,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.09e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.3976,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.16e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.4041,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.41492389,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.278e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.41306848,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.4198,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.4104,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.412,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.4181,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.40476629,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.3954,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.3953,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.399734,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.38810305,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.38414478,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.3895,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.38967438,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.38699424,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.37742714,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.38456514,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.39162648,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.3893,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.3818,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.37618476,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.3827,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.189e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.3846,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.301e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.3861,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.399e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.37858181,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.184e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.38777924,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.3962199,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.39790781,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.39897867,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.3869,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.386808,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.981e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.3929,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.72e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.3905,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.3934681,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.39946576,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.39793,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.39153381,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.3946,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.406099,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.40223229,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.3951,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.40302343,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.39683414,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.37756248,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.934e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.36998606,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.757e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.36495629,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.548e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.36777374,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.3713,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.3711,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.511e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.3635,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.982e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.3651,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.96e-06,
+    "funding_time": 1782950400000,
+    "mark_price": 0.3568,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.55e-06,
+    "funding_time": 1782936000000,
+    "mark_price": 0.3587,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.3724,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.529e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.3694,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.36484362,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.576e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.36702695,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6e-06,
+    "funding_time": 1782864000000,
+    "mark_price": 0.3555581,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.729e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.35877514,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.16e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.36422543,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.98e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.3653,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.441e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.39200333,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.867e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.3931,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.55e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.3896,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.012e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.3944,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.397e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.39944005,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.38910276,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.3819,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.35e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.38378248,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.191e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.37504143,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.314e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.3678,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.864e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.3742,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.413e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.38033238,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.58e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.3733,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.77e-06,
+    "funding_time": 1782619200002,
+    "mark_price": 0.3736,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.36e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 0.37310324,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.275e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.3683,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.61e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 0.3818,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.644e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.3734,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.899e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.37872714,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.3725,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.3812,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.3812,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.911e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.36791486,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.114e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.35296324,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.36610686,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.667e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.3546,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.3561,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.243e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.3541,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.037e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.35451352,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.275e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.3692,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.625e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.376,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.341e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.36822095,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.792e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.3732,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.34974514,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.75e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.35790686,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.608e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.3726,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.642e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.36926352,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.66e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.37641,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.133e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.38557843,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.956e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.38452762,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.669e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.3745,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.2e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.381,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.17e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 0.4039,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.38426895,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.249e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.3928,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.01e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.3995,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.093e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.3958,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6e-07,
+    "funding_time": 1782115200000,
+    "mark_price": 0.3822081,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.949e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.37183124,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.241e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.36366581,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.035e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.37070952,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.483e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.3761,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.374,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.496e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.36914457,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.118e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.3682,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.772e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.371658,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.15e-06,
+    "funding_time": 1781985600000,
+    "mark_price": 0.37072133,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.18e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 0.3767,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.88e-06,
+    "funding_time": 1781956800001,
+    "mark_price": 0.3757,
+    "symbol": "TIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.342e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.38022333,
+    "symbol": "TIAUSDT"
+  }
+]

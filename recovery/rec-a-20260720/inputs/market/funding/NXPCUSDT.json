@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.2401,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.442e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.2425492,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.514e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.24134498,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.22e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.2424788,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.844e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.2449,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.2479,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.79e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.24815155,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.2489271,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.24894629,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.2493,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.24854897,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.2494,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.251,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.806e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.2503555,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.25115157,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.2521,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.253,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.252,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.2545,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.2541,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.2571,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.2612,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.25856988,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.25705264,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.2566,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.2563,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.2568,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.2588,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.259,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.25453358,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.2553,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.2575,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.25529493,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.2576,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.2523,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.25348882,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.25025076,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.2489,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.251,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.25424119,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012282,
+    "funding_time": 1783944000000,
+    "mark_price": 0.254,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.75e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.2542,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.2532,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.2571,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.26014867,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.2608,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.2608,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.2608,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.2631,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.2625,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.2665,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.2655,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.26415755,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.2657,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.26580739,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.2666,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.2663,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.26661922,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.26491578,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.2658,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.2694,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.268,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.26726922,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.26234825,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.2594,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.259,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.2541,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.2568,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.2555,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.2534,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.25612407,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.2579,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.25647335,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.2594,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.2608,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.2631662,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.2619,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.26134429,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.26464406,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.2667,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.2681,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.2677,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.2632,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.26577065,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.2645,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.2688,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.2677461,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2669,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.2673,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.27105115,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.27247005,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.27633201,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.27775143,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.2782,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.2742,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.27251704,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.2748,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.2786,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.2776,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.2774,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.2773,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.2759,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.2734,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.2729,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.27316917,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.2748,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.2735,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.27185881,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.27394593,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2681,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.26705122,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.26642341,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.262,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.2599,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.265,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.2649,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.26404776,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.2623,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.26162315,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.263179,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.2627,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.2667,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.268,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.2663,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.26260456,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.2635,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.2632,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.26092228,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.2613,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.2645,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.26568553,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.26313029,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.26939557,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.2665,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.2689,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.27334888,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.2727,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.2746,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.2786,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.2751,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.27313463,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.2706,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.2657,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.26987577,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.26775084,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.2676,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.26301954,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.2667303,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.27485818,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.2817,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.2786,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.2828,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.2844,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.282,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.29065916,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.2893,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.2961,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.3016,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.3041,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.30055764,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.289e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.29452985,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.65e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 0.299,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.3005,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.3022,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.302,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.273e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.3008,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.744e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.2984,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010012,
+    "funding_time": 1782100800000,
+    "mark_price": 0.29852275,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.649e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.29705195,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.30245849,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.3028,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.3021,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.30600471,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.3078,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.3104,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.3087,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.30973357,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.31200067,
+    "symbol": "NXPCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.3127,
+    "symbol": "NXPCUSDT"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 6.689e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.13615,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.403e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1369,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.177e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1389,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 0.14136875,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 0.14005,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.76e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.14175,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.14498719,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.755e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.1438,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.14375,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.14717791,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.839e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1482,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.14613438,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.1476,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.792e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.14643958,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1445,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.146,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.14496312,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.144,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.1435,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.14556833,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1433,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.42e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.1465,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.14885,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.474e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.1485,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.61e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.15196646,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079209,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1535,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.083e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1464,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.13855,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.76e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1375,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.138,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.856e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1368,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1367,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.886e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1379,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1402,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.038e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.13475,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.13845,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.334e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1383,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1418,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.14225,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.14451167,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.14885292,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.73e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 0.13767083,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.14195,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1402,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1396,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.886e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.1439,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.14483375,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.14045,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.14280667,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1424,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.1391,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.13523,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1342,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.13216562,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.131,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.134,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.12845,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.12724667,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.12695,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.13055,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1319,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.131675,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.978e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.13275,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1307,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.13244375,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012581,
+    "funding_time": 1782633600013,
+    "mark_price": 0.1351,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.4e-07,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1304,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.205e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.13235,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.11e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1331,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.637e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1324,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.36e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1331,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.208e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1346,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.3e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1315,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.633e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.12929583,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.305e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1337,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.46e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.13887625,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.526e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.14093707,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.127e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1451,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.09e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1463,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.28e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1468,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.431e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.14662,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.181e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.15066875,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1549,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.098e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.153,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782086400000,
+    "mark_price": 0.1528,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.542e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.1587,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.472e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1573,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 0.15740833,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 0.15506333,
+    "symbol": "THETAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1525,
+    "symbol": "THETAUSDT"
+  }
+]

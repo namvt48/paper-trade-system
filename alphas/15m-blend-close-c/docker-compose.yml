@@ -9,14 +9,13 @@ services:
       dockerfile: 15m-blend-close-c/Dockerfile
     env_file: .env
     volumes:
-      - ../../logs/alphas/15m-blend-close-c:/app/logs
       - ./blacklist.txt:/app/blacklist.txt:ro
+      - ./whitelist.txt:/app/whitelist.txt:ro
       - ./data:/app/data:ro
       - ./spec.json:/app/spec.json:ro
       - ./config.toml:/app/config.toml:ro
     environment:
       - REDIS_URL=redis://paper-redis:6379
-      - LOG_DIR=/app/logs
       - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - MDS_EXCHANGE=${MDS_EXCHANGE:-binance}
     networks:

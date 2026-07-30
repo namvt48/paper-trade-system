@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 34.3440112,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.48e-06,
+    "funding_time": 1784476800001,
+    "mark_price": 34.11499024,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 34.51299134,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 34.23563952,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.346e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 33.81428832,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 33.92408805,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 34.29401717,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 34.38,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.568e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 33.42,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.464e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 33.31499657,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 33.96,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 34.07420789,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 34.49083597,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 34.83740346,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 34.07479693,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 34.12,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 34.09,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.41e-06,
+    "funding_time": 1784016000002,
+    "mark_price": 32.76488061,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013142,
+    "funding_time": 1783987200000,
+    "mark_price": 32.86484764,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013771,
+    "funding_time": 1783958400004,
+    "mark_price": 33.16,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.409e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 34.17,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.416e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 34.4112165,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.725e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 34.83,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.822e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 34.21,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 33.93067558,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.48e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 34.64508455,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 34.7,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 34.84025336,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 34.55,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 35.12785645,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.473e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 34.15,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 33.78,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 34.19,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.532e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 34.35237411,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.751e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 33.57,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.56e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 34.02,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 35.3,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 36.38,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 35.16,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 35.11093829,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 34.94700389,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 34.73063348,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 35.71064227,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 35.08495948,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 35.39144879,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 35.69774887,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 35.88,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 35.2,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 35.85438075,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 35.83139735,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 35.61355459,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 34.55588683,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 34.43,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 33.6,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 33.09470988,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 33.04015486,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 32.54440817,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 32.52197187,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 32.76,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 33.14,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 33.26,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.693e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 33.01,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.893e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 32.78505126,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.533e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 32.18,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.573e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 32.34217703,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012405,
+    "funding_time": 1782633600013,
+    "mark_price": 32.67201264,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017073,
+    "funding_time": 1782604800000,
+    "mark_price": 32.99921755,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.6e-07,
+    "funding_time": 1782576000009,
+    "mark_price": 34.46,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.671e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 33.82869964,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 34.2125083,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.129e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 34.19,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.796e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 34.3,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 33.97,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.513e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 33.68639841,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.908e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 35.06,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.201e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 33.75,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.495e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 34.27,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.901e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 35.53604584,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 36.24379012,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.331e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 34.77372335,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.74e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 34.51224898,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.17e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 34.47116363,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.43e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 34.94,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.007e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 35.35758847,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.914e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 34.75854375,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.51e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 36.28198545,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.72e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 36.65798508,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.929e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 36.92496663,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 37.25026894,
+    "symbol": "DASHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 36.55,
+    "symbol": "DASHUSDT"
+  }
+]

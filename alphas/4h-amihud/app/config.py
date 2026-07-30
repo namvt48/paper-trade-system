@@ -17,8 +17,8 @@ class AlphaConfig(BaseConfig):
     DATA_MAX_CANDLES: int = 182
     MAX_CONCURRENT_POSITIONS: int = 180
     SPEC_FILE: str = str(ROOT / "spec.json")
-    UNIVERSE_FILE: str = str(ROOT / "data" / "universe.json")
     BLACKLIST_FILE: str = str(ROOT / "blacklist.txt")
+    WHITELIST_FILE: str = str(ROOT / "whitelist.txt")
 
     model_config = SettingsConfigDict(env_file=".env", env_ignore_empty=True, extra="ignore")
 

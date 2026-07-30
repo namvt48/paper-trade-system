@@ -1,0 +1,1262 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 1.00204591,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.009,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 1.012,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.016,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.03060402,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.039,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 1.046,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.054,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 1.065,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.04400815,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.058,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.05,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.04676396,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.04448694,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 1.053,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.053,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001545,
+    "funding_time": 1784289600004,
+    "mark_price": 1.051,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.01551818,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 1.02,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.018,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 1.022,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.03749353,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 1.01449408,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.023,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 1.03550719,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.03252703,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 1.03337587,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.035,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 1.027,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.017,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 1.026,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.034,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 1.033,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.038,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 1.02600057,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.011,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.021,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.00451787,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 1.00501629,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.01338963,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 1.00681209,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.015,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 1.0129892,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.025,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 1.036,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.038,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 1.032,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.034,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 1.04052764,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 1.059,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 1.07949968,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.089,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 1.0734814,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.037,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 1.04145835,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.03549858,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 1.01483901,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.01070507,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 1.016,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.016,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 1.027,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.015,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 1.018,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.01475011,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 1.03227785,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.03668971,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.047,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.073,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 1.06745726,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.0769682,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 1.05930672,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 1.08955441,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 1.01816774,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 1.035,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 1.03,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.039,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 1.04459183,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.00142242,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.98749196,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.00502799,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.014,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.011,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.00911389,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.024,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.03704381,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.988,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.999,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.0255407,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.997,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.97,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.93550817,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.95142559,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.955,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.95545015,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.94400664,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.937,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.959,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.96283511,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.96012176,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.96,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.93312369,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.807e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.91781899,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.91938321,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.95350911,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.94894961,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.94748278,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.9484748,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.9290521,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 1.0000299,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.05346185,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.982e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.99242645,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.392e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.0161922,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.04491089,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.91484475,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.87313984,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.82449026,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.83198345,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.83527943,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.39e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.859,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.88992606,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.863,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.87907968,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.887,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.867,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.87231317,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.878,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.87152356,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.872,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.88449091,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.899,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.908,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.906,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.911,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.9187447,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.92360519,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.9408916,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.90650338,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.89550458,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.89099863,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.88650307,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.89378633,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.894,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.87,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.89140584,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.87261018,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.87503056,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.86488539,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.87614711,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.90450922,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.919,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.90449733,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.90927663,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.88777589,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.89778868,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.93756026,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.93852262,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782273600001,
+    "mark_price": 0.929,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.91561292,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.91098485,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.9137508,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.92500673,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.934,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.961,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.961,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.97055452,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.98879363,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.002,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.99648407,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.98404014,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.98007844,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.00448839,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.001,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.99102706,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.003,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.00506022,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.02273581,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.00849674,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.02684165,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.01649269,
+    "symbol": "FLUIDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.015,
+    "symbol": "FLUIDUSDT"
+  }
+]

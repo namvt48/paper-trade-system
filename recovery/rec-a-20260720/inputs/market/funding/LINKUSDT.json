@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.101e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 8.381,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.291e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 8.354,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.011e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 8.365,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.75e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 8.34345089,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.519e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 8.27002483,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.586e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 8.24700896,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.636e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 8.25,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.622e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 8.16366473,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.496e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 8.16540694,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.522e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 8.338,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 8.44052068,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.812e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 8.51359304,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.162e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 8.53526842,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 8.549,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 8.32947137,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 8.34186841,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 8.295,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.369e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 7.919,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.379e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 7.8850308,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.298e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 7.93330585,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.822e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 7.974,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.651e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 7.992,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.678e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 8.06642445,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.459e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 7.97,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.153e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 7.90858244,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 8.058,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.826e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 7.988,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.528e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 7.966,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.839e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 7.921,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 7.895,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.397e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 7.730056,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.429e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 7.69707619,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.146e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 7.72508363,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.462e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 7.638,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.286e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 7.54869811,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.35e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 7.698419,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.484e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 7.858,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 7.996,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.601e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 7.904,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 8.018,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.817e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 8.017,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.852e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 7.94769516,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 8.06,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.991e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 7.962,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.249e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 7.921,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 8.00265115,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 8.08461977,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.457e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 7.92124637,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 7.97237841,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 7.84333666,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 7.765,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.732e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 7.745,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 7.784,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.327e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 7.45,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.68e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 7.355,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.808e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 7.412,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.337e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 7.202,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.458e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 7.196,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.327e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 7.15366493,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.974e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 7.297,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.297e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 7.377,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.319e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 7.32376522,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.82e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 7.3181955,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.671e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 7.266,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.12e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 7.313,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.257e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 7.30098696,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.966e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 7.29213638,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.773e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 7.451,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.256e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 7.38181773,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.964e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 7.349,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.581e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 7.334,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.46e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 7.32364317,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.166e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 7.242,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.451e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 7.211,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.787e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 7.53302536,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.737e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 7.422,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.041e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 7.363,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.21e-06,
+    "funding_time": 1782288000005,
+    "mark_price": 7.602,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.287e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 7.629,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.889e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 7.6190397,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.412e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 7.656,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.53e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 7.86848249,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.557e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 7.983,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.938e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 7.96030773,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.14e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 7.778,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 7.984,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.48e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 7.94583245,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.158e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 7.98399621,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.405e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 7.96238334,
+    "symbol": "LINKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.229e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 7.959,
+    "symbol": "LINKUSDT"
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -4.725e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02381,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011625,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02393,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.4e-06,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02401,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.752e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02416,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010435,
+    "funding_time": 1784462400000,
+    "mark_price": 0.024,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.363e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02415,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.589e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.02422,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.509e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02425067,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010398,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02404501,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.844e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02425,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001119,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02433491,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.28e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02479,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.566e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02464479,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.534e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02474,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.599e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02515499,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.423e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02520285,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.02551529,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.41e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02518,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02586051,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.743e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02488,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.46e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02512,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.25e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 0.02531454,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02514233,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.998e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02520892,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.891e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.02544,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.03e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 0.02543956,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.122e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.0255,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02573,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.02551415,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.001e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02543,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.128e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02563,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.7e-07,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02547,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019515,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02534334,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.695e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.02555,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.991e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.02507,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.665e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02512,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.8e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02519,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.925e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02526,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.708e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02517541,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.02576229,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.02557,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.02518,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8e-08,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02512,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010004,
+    "funding_time": 1783900800000,
+    "mark_price": 0.02527,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.575e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.02561106,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.002e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.02562114,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.204e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.02579524,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.397e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.02595,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.11e-06,
+    "funding_time": 1783828800000,
+    "mark_price": 0.02608,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.87e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 0.02582615,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.652e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.02629,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.915e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.02636663,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.02669,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.02661,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.02638692,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.02603,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.58e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.02541,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.02556,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.02567191,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.81e-06,
+    "funding_time": 1783670400005,
+    "mark_price": 0.02545,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.576e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.02516,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.27e-06,
+    "funding_time": 1783641600000,
+    "mark_price": 0.02525,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.887e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.02537,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.158e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.02486503,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.868e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.02524063,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.838e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0249044,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.12e-06,
+    "funding_time": 1783569600002,
+    "mark_price": 0.02482,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.02502,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.02498,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.02478,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.02531022,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.025902,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.02568363,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.02558,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.0259,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.02625,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.02629,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.02626,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.0265505,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.0266228,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.02658,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.02664676,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.405e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.0259,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.221e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.02601,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.481e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.02691,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.02715,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.02713,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.02646,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.0263357,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.02694987,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.02649,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.0266705,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.02698,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.02702687,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.0268,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.02734507,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.02752,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.02709,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.02646,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.02662603,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.02682504,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.02592818,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.02519444,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.02487,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001362,
+    "funding_time": 1783022400008,
+    "mark_price": 0.02501,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.366e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.02373,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.33e-06,
+    "funding_time": 1782993600005,
+    "mark_price": 0.0232055,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.02e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.02312,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8e-06,
+    "funding_time": 1782964800003,
+    "mark_price": 0.02342,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.953e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.02296,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011419,
+    "funding_time": 1782936000000,
+    "mark_price": 0.02236543,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.346e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.02288,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.06e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.02229484,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.2e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.02252,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.735e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.02291,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.0227,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.271e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.0228,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.5e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.02282,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.5e-07,
+    "funding_time": 1782820800002,
+    "mark_price": 0.02267,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.906e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.023,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.134e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.02303345,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.514e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.02448,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.02471511,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.7e-07,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0258187,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024007,
+    "funding_time": 1782734400001,
+    "mark_price": 0.02528,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.223e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.02377067,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028038,
+    "funding_time": 1782705600000,
+    "mark_price": 0.0246,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018244,
+    "funding_time": 1782691200006,
+    "mark_price": 0.02412,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.749e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02547,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049128,
+    "funding_time": 1782662400000,
+    "mark_price": 0.028078,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00089088,
+    "funding_time": 1782648000008,
+    "mark_price": 0.02596686,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00159813,
+    "funding_time": 1782633600013,
+    "mark_price": 0.02597208,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.52e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.02316188,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.493e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.02214472,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070581,
+    "funding_time": 1782590400000,
+    "mark_price": 0.02274,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0205407,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.095e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0198849,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.791e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.02005,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.615e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.02015,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.65e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.02017302,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.104e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.02034,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.744e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01998,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.709e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.01953,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.02014,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.223e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.02018451,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.779e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.02000687,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011695,
+    "funding_time": 1782417600011,
+    "mark_price": 0.01954,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.38e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.01996,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.108e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.02072624,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001259,
+    "funding_time": 1782374400000,
+    "mark_price": 0.0209016,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.21e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.02095,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.07e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.02088,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.02091,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.02235949,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.4e-07,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0232,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.644e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.02350185,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.55e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 0.02374,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.658e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.02330263,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.12e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.02414,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.02466,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.127e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.02454416,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.3e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 0.02541,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011528,
+    "funding_time": 1782172800003,
+    "mark_price": 0.02503009,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.32e-06,
+    "funding_time": 1782158400000,
+    "mark_price": 0.02596,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.991e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.02600139,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.568e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.02723457,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0273166,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.11e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.02718524,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.02695063,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.01e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.02803857,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.563e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.02788,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.02787,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.769e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.02788,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.443e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.02789,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.903e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.02789,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.569e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.02776,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.43e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 0.02819,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.02801,
+    "symbol": "SUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.672e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.02918069,
+    "symbol": "SUSDT"
+  }
+]

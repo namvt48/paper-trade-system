@@ -11,10 +11,12 @@ logger = logging.getLogger(__name__)
 
 
 class SignalDispatcher:
-    def __init__(self, redis_client, stream: str, lease_manager, max_seen: int = 4096):
+    def __init__(self, redis_client, stream: str, lease_manager, max_seen: int = 4096,
+                 metrics=None):
         self.redis_client = redis_client
         self.stream = stream
         self.lease_manager = lease_manager
+        self.metrics = metrics
         self.max_seen = int(max_seen)
         self._seen: OrderedDict[str, None] = OrderedDict()
         self._dedup_key = f"runner:dedup:{stream}"
@@ -30,9 +32,13 @@ class SignalDispatcher:
             pass
 
     async def dispatch(self, ctx, signal_type: str, **fields) -> str | None:
+        if self.metrics is not None:
+            self.metrics.inc_signal_dispatched()
         if not self.lease_manager.is_valid(ctx.alpha_id):
             ctx.state.lease_valid = False
-            logger.warning(
+            if self.metrics is not None:
+                self.metrics.inc_signal_lease_dropped(ctx.alpha_id)
+            logger.error(
                 "[SIGNAL] Lease invalid, dropping signal type=%s alpha=%s",
                 signal_type,
                 ctx.alpha_id,
@@ -41,6 +47,8 @@ class SignalDispatcher:
             return None
         signal_id = self.signal_id(ctx.alpha_id, ctx.version, signal_type, fields)
         if signal_id in self._seen:
+            if self.metrics is not None:
+                self.metrics.inc_signal_dedup_skipped(ctx.alpha_id)
             logger.info(
                 "[SIGNAL] Duplicate skipped type=%s alpha=%s symbol=%s tf=%s signal_id=%s",
                 signal_type,
@@ -64,6 +72,8 @@ class SignalDispatcher:
                 continue
             payload[key] = value if isinstance(value, str) else str(value)
         self.redis_client.xadd(self.stream, payload)
+        if self.metrics is not None:
+            self.metrics.inc_signal_published()
         logger.info(
             "[SIGNAL] Dispatched type=%s alpha=%s symbol=%s tf=%s signal_id=%s",
             signal_type,

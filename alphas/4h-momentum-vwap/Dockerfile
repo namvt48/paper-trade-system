@@ -8,4 +8,5 @@ COPY 4h-momentum-vwap/app/ ./app/
 COPY 4h-momentum-vwap/main.py 4h-momentum-vwap/spec.json 4h-momentum-vwap/config.toml ./
 COPY 4h-momentum-vwap/data/ ./data/
 COPY 4h-momentum-vwap/blacklist.txt .
+COPY 4h-momentum-vwap/whitelist.txt .
 CMD ["python", "main.py"]

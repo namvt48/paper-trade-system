@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -5.451e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.0665,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.489e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.06669,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012652,
+    "funding_time": 1784448000000,
+    "mark_price": 0.06713,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.48e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 0.06707,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.39e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.06663624,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.407e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.06629488,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.181e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.06585239,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.057e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.06597952,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.152e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.06599,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.338e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.06653,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.602e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.06802642,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.54e-06,
+    "funding_time": 1784188800003,
+    "mark_price": 0.067045,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.159e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.06791,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.465e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.06823,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.85e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 0.06748,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.615e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.06731,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.443e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.06696,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.37e-06,
+    "funding_time": 1784016000002,
+    "mark_price": 0.06599,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.16e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 0.06658,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.481e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0667007,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.121e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.06765,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020908,
+    "funding_time": 1783900800000,
+    "mark_price": 0.067539,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013562,
+    "funding_time": 1783872000000,
+    "mark_price": 0.06767749,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020952,
+    "funding_time": 1783843200003,
+    "mark_price": 0.06761,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.5e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 0.06843225,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011601,
+    "funding_time": 1783785600000,
+    "mark_price": 0.06988,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.07061014,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.705e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.07029,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.107e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.07031,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.764e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.070413,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.946e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.06989064,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.07e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.06991,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.49e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.07053,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.506e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.06930321,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.96e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 0.06909,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.357e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.06998,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.69e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.07086,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.314e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.07252049,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018239,
+    "funding_time": 1783411200000,
+    "mark_price": 0.07166399,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014061,
+    "funding_time": 1783382400000,
+    "mark_price": 0.07329488,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.998e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.07446,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.37e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 0.07473224,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.066e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.07628868,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.698e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.07523006,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.004e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.07501134,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.07726,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.07470684,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.955e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.07227467,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.749e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0733305,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021048,
+    "funding_time": 1783094400000,
+    "mark_price": 0.07184808,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.48e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.07117249,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.941e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.07082346,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.125e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.07414,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.07291866,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.253e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.07187,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.708e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.07223,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.986e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.06871723,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.012e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.06947,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.19e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.06990359,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.711e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.07104,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.746e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.07163,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.48e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.07121734,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.9e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.07161586,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.529e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.07098,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.233e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.07117287,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.473e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.07128625,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.105e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.07188,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.783e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.07323,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.144e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.07247,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020238,
+    "funding_time": 1782518400000,
+    "mark_price": 0.07088,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.67e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.07313,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.047e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.07417559,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.816e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.07340343,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.313e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.07309,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.46e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.07427,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.429e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.07561,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.382e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.07398606,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.07731,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.385e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.07749451,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.711e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.07765788,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.2e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.07774,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.787e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.07868467,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.446e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.07931,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.345e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.07947,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.188e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.07802696,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.529e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.0802011,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.3e-07,
+    "funding_time": 1782028800000,
+    "mark_price": 0.08008082,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.176e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.08065588,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.982e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.08033109,
+    "symbol": "HBARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.337e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.08018007,
+    "symbol": "HBARUSDT"
+  }
+]

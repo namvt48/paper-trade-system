@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -1.19e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 0.002011,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.544e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.002051,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.229e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.00207532,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010769,
+    "funding_time": 1784419200003,
+    "mark_price": 0.002049,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.64e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00205024,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.232e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00214373,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.324e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.002098,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.524e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.002063,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.0020255,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.759e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.002078,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.29e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.002042,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.373e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.00199985,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.22e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 0.002028,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.103e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.002028,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.0020205,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.00203676,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.002051,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019446,
+    "funding_time": 1784016000002,
+    "mark_price": 0.002035,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011985,
+    "funding_time": 1783987200000,
+    "mark_price": 0.00202838,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.76e-06,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00203961,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.345e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.00203826,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.882e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.00205,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.002078,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.239e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.0020895,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.00208273,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0021205,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.0021585,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.968e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0021555,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.02e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.00215065,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.00215998,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.526e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.0021155,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.106e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.00212302,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.427e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.00212016,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.936e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00208329,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022582,
+    "funding_time": 1783526400000,
+    "mark_price": 0.002064,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.08e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.002132,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.288e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.002218,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.06e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.00222831,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.0022215,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.00224917,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.41e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.00227713,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018587,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0022555,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.00231723,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010221,
+    "funding_time": 1783267200000,
+    "mark_price": 0.002313,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012023,
+    "funding_time": 1783238400001,
+    "mark_price": 0.002284,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.979e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.002395,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.238e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.00247058,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.002363,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.00250241,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.00257188,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.002354,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.549e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.002318,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.00230265,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.002305,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.002302,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.002332,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00227321,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.121e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.002232,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.00223423,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.00227837,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.606e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.002279,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.058e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.00228353,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.00228512,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.316e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.00225694,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.587e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.00228403,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.64e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.002274,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.264e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.002255,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.534e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.002318,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.356e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.002314,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.253e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.002343,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.252e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.00231465,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.00232007,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.95e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.002286,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782403200000,
+    "mark_price": 0.00228248,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.002395,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.773e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.00234783,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027151,
+    "funding_time": 1782316800003,
+    "mark_price": 0.00234412,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010275,
+    "funding_time": 1782288000005,
+    "mark_price": 0.002397,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0024255,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031922,
+    "funding_time": 1782230400002,
+    "mark_price": 0.00246125,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.543e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.00246796,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.437e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.00251397,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.254e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.002617,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014983,
+    "funding_time": 1782115200000,
+    "mark_price": 0.00259385,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.56e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00256833,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.518e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.00267196,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.957e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.0026975,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.417e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.00271,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.915e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.00272868,
+    "symbol": "GALAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.644e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.0025819,
+    "symbol": "GALAUSDT"
+  }
+]

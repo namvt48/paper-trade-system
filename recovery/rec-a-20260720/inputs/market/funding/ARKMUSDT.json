@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 1.279e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.1068,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.78e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1062,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.385e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1075,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 0.10735003,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.005e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.10685808,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.974e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.10749346,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.1086,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.918e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.1091,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1081,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.31e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1086,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.062e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1115,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.996e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.11035291,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.505e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.112,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.45e-06,
+    "funding_time": 1784131200000,
+    "mark_price": 0.11261327,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.675e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1103,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.384e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1105,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.565e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1118,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.853e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1105,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.637e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.10868062,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.289e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.10960851,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012197,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1092,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.1102,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1121,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.1114,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1115,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1145,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.096e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1136,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.171e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1146,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002541,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1151,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.11194529,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1113,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.06e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1113,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.11195123,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.565e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.11102047,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.434e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.10953994,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.928e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1104,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.231e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1116,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.858e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1155,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.806e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1148,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.863e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1179,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.49e-06,
+    "funding_time": 1783353600000,
+    "mark_price": 0.11872545,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.132e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.11555046,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1194,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1173,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.118,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.11820722,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1203,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.11815118,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.1203,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1199,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.1227,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1135,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1137,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1122,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1083,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.74e-06,
+    "funding_time": 1782921600000,
+    "mark_price": 0.11183988,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.10895287,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.03e-06,
+    "funding_time": 1782864000000,
+    "mark_price": 0.1099,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.475e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1113,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.993e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.112,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1148,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1155,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.11501123,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.125e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1131,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.11521035,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.116,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1157,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 0.12137347,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1202,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.11863782,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.11853462,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.11922217,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.11842589,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.6e-07,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1177,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1222,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1187,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.449e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.116,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.089e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1212,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.12017558,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013518,
+    "funding_time": 1782230400002,
+    "mark_price": 0.12231664,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.767e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1207,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013026,
+    "funding_time": 1782172800003,
+    "mark_price": 0.12588665,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.99e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1315,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.799e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.13470128,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.013e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.12765289,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.76e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.1336,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.32e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1349,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.278e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.1317,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1322,
+    "symbol": "ARKMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.45e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1294,
+    "symbol": "ARKMUSDT"
+  }
+]

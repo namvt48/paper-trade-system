@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017319,
+    "funding_time": 1784520000000,
+    "mark_price": 0.09656726,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011218,
+    "funding_time": 1784505600000,
+    "mark_price": 0.09710793,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011861,
+    "funding_time": 1784491200004,
+    "mark_price": 0.09741205,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010156,
+    "funding_time": 1784476800001,
+    "mark_price": 0.09766,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012489,
+    "funding_time": 1784462400000,
+    "mark_price": 0.09775517,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021586,
+    "funding_time": 1784448000000,
+    "mark_price": 0.09803,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013267,
+    "funding_time": 1784433600000,
+    "mark_price": 0.09835,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011223,
+    "funding_time": 1784419200003,
+    "mark_price": 0.09832,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.949e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.09847,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021378,
+    "funding_time": 1784390400001,
+    "mark_price": 0.09786,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.161e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.09863921,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.544e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.0989,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002434,
+    "funding_time": 1784347200000,
+    "mark_price": 0.09712,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.825e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.09777,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017947,
+    "funding_time": 1784318400000,
+    "mark_price": 0.09718,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021353,
+    "funding_time": 1784304000004,
+    "mark_price": 0.09744493,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.34e-06,
+    "funding_time": 1784289600004,
+    "mark_price": 0.09860393,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.564e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.09766,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001371,
+    "funding_time": 1784260800000,
+    "mark_price": 0.09698274,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020801,
+    "funding_time": 1784246400000,
+    "mark_price": 0.09727,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.578e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.09789793,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014694,
+    "funding_time": 1784217600002,
+    "mark_price": 0.0983355,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.974e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.09936,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012195,
+    "funding_time": 1784188800003,
+    "mark_price": 0.09780429,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.81e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.09822,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015924,
+    "funding_time": 1784160000000,
+    "mark_price": 0.09817005,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.186e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.09968,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.10052305,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039027,
+    "funding_time": 1784116800003,
+    "mark_price": 0.09593,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.297e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.09876,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.176e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.09914,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.918e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.10001,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.677e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.09975,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001749,
+    "funding_time": 1784044800001,
+    "mark_price": 0.09997355,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.971e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.10165,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.10197525,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.91e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.1008,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015554,
+    "funding_time": 1783987200000,
+    "mark_price": 0.09951,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011051,
+    "funding_time": 1783972800000,
+    "mark_price": 0.09999407,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.46e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.09911,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031796,
+    "funding_time": 1783944000000,
+    "mark_price": 0.09890886,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.119e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.09941,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016056,
+    "funding_time": 1783915200000,
+    "mark_price": 0.09992346,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.556e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.10096326,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010703,
+    "funding_time": 1783886400002,
+    "mark_price": 0.10117,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015742,
+    "funding_time": 1783872000000,
+    "mark_price": 0.10092,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.571e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.10121,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.719e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.10127,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013298,
+    "funding_time": 1783828800000,
+    "mark_price": 0.10078,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.10129,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.1014,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.649e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.10076,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.617e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.09880014,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.554e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.10225,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.1025716,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.10231,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.10228,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1023,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.10147781,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.09911417,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.09992223,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.09935,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.667e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.09910861,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.53e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.09818548,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.435e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.09684738,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0962,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.09478,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.954e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.09471,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.09641483,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.459e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.09572,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.09581,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016867,
+    "funding_time": 1783497600000,
+    "mark_price": 0.09451768,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.653e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.09335,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010423,
+    "funding_time": 1783468800000,
+    "mark_price": 0.09365,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020747,
+    "funding_time": 1783454400000,
+    "mark_price": 0.09364819,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051101,
+    "funding_time": 1783440000000,
+    "mark_price": 0.09373,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.887e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.09362517,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039893,
+    "funding_time": 1783411200000,
+    "mark_price": 0.0921,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.0935476,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.09321805,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.09296,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.159e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.09168367,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015035,
+    "funding_time": 1783339200002,
+    "mark_price": 0.09071555,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001035,
+    "funding_time": 1783324800000,
+    "mark_price": 0.09098,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.285e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.09175,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.735e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.09153,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.408e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.0927,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.09247,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.339e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.09212,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.09277921,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.090445,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.09063,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.09027,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.944e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.08974,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001006,
+    "funding_time": 1783166400000,
+    "mark_price": 0.09038,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.22e-06,
+    "funding_time": 1783152000000,
+    "mark_price": 0.09018004,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.08973,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0903839,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.08986067,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.08955,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.08868,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.08881,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.08798,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.651e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.08777,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.84e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.08826,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.101e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.08818455,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.5e-06,
+    "funding_time": 1782993600005,
+    "mark_price": 0.08772,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.08806,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.96e-06,
+    "funding_time": 1782964800003,
+    "mark_price": 0.08739,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.266e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.08787,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.08842138,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.962e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.08756,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.673e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.08913,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.08829,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011785,
+    "funding_time": 1782878400001,
+    "mark_price": 0.08715,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.08749,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.08681,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.08569,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.17e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.0849,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.981e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.08568,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.38e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.0865519,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.082e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.08758102,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.0875,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010032,
+    "funding_time": 1782748800004,
+    "mark_price": 0.08605,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.525e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.08739,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.191e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0879,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.0887,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.3e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.08863,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.2e-06,
+    "funding_time": 1782676800003,
+    "mark_price": 0.08829,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.099e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.08801982,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.08748666,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.08619,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.08632979,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.23e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 0.08577407,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.5e-07,
+    "funding_time": 1782590400000,
+    "mark_price": 0.08518004,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.08518,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.08532,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.08459331,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.08263905,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.08185,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.85e-06,
+    "funding_time": 1782504000000,
+    "mark_price": 0.08177,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.137e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.08149,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.08282245,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.08231,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.61e-06,
+    "funding_time": 1782446400001,
+    "mark_price": 0.08169933,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.21e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 0.08124096,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.286e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.0812005,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.967e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.08092355,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.692e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.08141,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.675e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.08166,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.227e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.0813,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.08119,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.08062,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.79e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.08228708,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.083985,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.08363043,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.416e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.08267023,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.08337,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.08308,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.201e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.08243,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.961e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0824,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.37e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.08294,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.0839,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.08325,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.37e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.08228,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.267e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.083375,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011528,
+    "funding_time": 1782115200000,
+    "mark_price": 0.08313021,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.388e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.08357,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.056e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.08337,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.08325448,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.47e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.08316,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.439e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.08283338,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.66e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.08278,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.08253,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.565e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.08344962,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.08374983,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.9e-07,
+    "funding_time": 1781971200001,
+    "mark_price": 0.08349683,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.08332,
+    "symbol": "JSTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.08258295,
+    "symbol": "JSTUSDT"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001407,
+    "funding_time": 1784505600000,
+    "mark_price": 0.7194,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025917,
+    "funding_time": 1784476800001,
+    "mark_price": 0.72413707,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.586e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.7428,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.975e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.74905182,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.905e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.74464214,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.06e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 0.75766889,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.7642,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.76439225,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.093e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.7646,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.945e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.76946355,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.7846,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.844e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.7803,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.7887,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.7938,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.7798,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.78491212,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.687e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.77555429,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.362e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.7567,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.979e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.74894628,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.882e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.75430539,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.35e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.7622,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.81e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.77157325,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.965e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.77502418,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.16e-06,
+    "funding_time": 1783843200003,
+    "mark_price": 0.78354398,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.671e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.7706,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.196e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.79376638,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.122e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.78965098,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.379e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.7868532,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.79887725,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.423e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.7932,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.78014367,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.78502635,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.694e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.77523867,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.37e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.7649,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.346e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.75499165,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.004e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.76416114,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.773,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.795,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.78050725,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.79424256,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.7963785,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.736e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.78449708,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.79957524,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.786,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.7875466,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.79654807,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.80747819,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.602e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.795,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.806,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.79889243,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.78146016,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.773,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.77902891,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.868e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.76,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.736,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.74490364,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.72149771,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.71745017,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.707e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.71447558,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.089e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.72349865,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.873e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.73164021,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.658e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.72331589,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.887e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.721,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.8e-07,
+    "funding_time": 1782691200006,
+    "mark_price": 0.716,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.749e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.72149671,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.372e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.73246894,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.201e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.72654354,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.631e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.749,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.402e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.746,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.928e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.744,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.37e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.73564614,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.743,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.9e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.736,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.663e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.72046259,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.76073274,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.38e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.74913849,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.998e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.739,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 0.77647267,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.78806008,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.198e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.76851777,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.661e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.76739155,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010015,
+    "funding_time": 1782172800003,
+    "mark_price": 0.788,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.672e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.803,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 0.806,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.645e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.782,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.864e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.81420335,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.65e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.796,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.212e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.787,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.801e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.791,
+    "symbol": "FILUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.387e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.785,
+    "symbol": "FILUSDT"
+  }
+]

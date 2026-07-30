@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.11026503,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.721e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.10971177,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.11082396,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.11041895,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.399e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.1091785,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.843e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.11099,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.159e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.11338785,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.11453,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.11311,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.651e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.10908,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.908e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.11257,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.857e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.10689898,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.1e-07,
+    "funding_time": 1784347200000,
+    "mark_price": 0.11276,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.389e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.11321,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.916e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.11343405,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.706e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.11700748,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.12012,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.12147916,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.1223881,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.12139773,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.1219337,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.12101312,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.12308,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.12085,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.12454437,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.1257793,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.12774373,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.12556,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.12338863,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.12269714,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.11777,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.12068,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.12178351,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1218,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.11969,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.11865785,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.13212697,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.12990138,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.12702187,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.13342883,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.14033423,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.13471981,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.12899,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.12045,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.11716403,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019851,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1167,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.11392,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.11302,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.11371937,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.11546228,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.11607547,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.242e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.11586643,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.162e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.11948,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001238,
+    "funding_time": 1783756800000,
+    "mark_price": 0.12083,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012868,
+    "funding_time": 1783742400000,
+    "mark_price": 0.12242462,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022958,
+    "funding_time": 1783728000000,
+    "mark_price": 0.11915819,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021791,
+    "funding_time": 1783713600000,
+    "mark_price": 0.12002572,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.11919492,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028716,
+    "funding_time": 1783684800002,
+    "mark_price": 0.11842,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017429,
+    "funding_time": 1783670400005,
+    "mark_price": 0.11625,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023858,
+    "funding_time": 1783656000000,
+    "mark_price": 0.11588544,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016468,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1144,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.11314217,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.878e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.11447815,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014211,
+    "funding_time": 1783598400002,
+    "mark_price": 0.11229723,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019655,
+    "funding_time": 1783584000001,
+    "mark_price": 0.11383,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.297e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.1113278,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012925,
+    "funding_time": 1783555200000,
+    "mark_price": 0.11339981,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027877,
+    "funding_time": 1783540800006,
+    "mark_price": 0.11530627,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.019e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.11316,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011995,
+    "funding_time": 1783512000005,
+    "mark_price": 0.11347,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.11033445,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.10839741,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.11336363,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015817,
+    "funding_time": 1783454400000,
+    "mark_price": 0.11718,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011912,
+    "funding_time": 1783440000000,
+    "mark_price": 0.11778,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026413,
+    "funding_time": 1783425600010,
+    "mark_price": 0.12053,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015429,
+    "funding_time": 1783411200000,
+    "mark_price": 0.11957,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011561,
+    "funding_time": 1783396800000,
+    "mark_price": 0.12161558,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015122,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1222,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.11941677,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013999,
+    "funding_time": 1783353600000,
+    "mark_price": 0.12062724,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.11978,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.095e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.12301307,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.12123521,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.12037293,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.211e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.11459522,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.11602201,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.11704156,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.981e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1237,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011673,
+    "funding_time": 1783224000002,
+    "mark_price": 0.11801014,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.11631581,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010257,
+    "funding_time": 1783195200000,
+    "mark_price": 0.11632508,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.72e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.11725,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010183,
+    "funding_time": 1783166400000,
+    "mark_price": 0.11284,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.939e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.11664,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.11946,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.11465,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.11413293,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.11389,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.1177787,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.11065,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.1058462,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.10631786,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.10552018,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1047449,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.10693769,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.10481,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.10537,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.10214862,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.10334971,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.10829424,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.10598,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.11073036,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.10808481,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.10858,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.11093949,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.11135,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.11251555,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.11309,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.11280753,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.11728,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.11675,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.11848769,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.11736377,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.11720584,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.12031882,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.11974,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.11987484,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.12322,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.12678512,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.654e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.12831038,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.13407884,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.13586,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.13650961,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010592,
+    "funding_time": 1782576000009,
+    "mark_price": 0.14068,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.1417,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001592,
+    "funding_time": 1782547200000,
+    "mark_price": 0.14261778,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011047,
+    "funding_time": 1782532800000,
+    "mark_price": 0.13784963,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.13896,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.14075581,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.14e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.14218693,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.14296443,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1454658,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.14536647,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.14263089,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.14089434,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.13443,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.14185789,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.148179,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.1486,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.14925,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.14718944,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.15354587,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.15888654,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.16242274,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.16295169,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.15983,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.15571,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.1569,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.15723983,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.16325,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.16564999,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.16340476,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.16459664,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.16635597,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.16506819,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.16515,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.16422,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.16617,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.165657,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.16416,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.16878986,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.16678767,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.16624445,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.16681,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.16587331,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.16415,
+    "symbol": "KITEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.16626084,
+    "symbol": "KITEUSDT"
+  }
+]

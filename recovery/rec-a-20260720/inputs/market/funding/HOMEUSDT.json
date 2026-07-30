@@ -1,0 +1,1738 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00314862,
+    "funding_time": 1784520000000,
+    "mark_price": 0.00767,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00148141,
+    "funding_time": 1784505600000,
+    "mark_price": 0.0075,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00135524,
+    "funding_time": 1784491200004,
+    "mark_price": 0.00777,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037148,
+    "funding_time": 1784476800001,
+    "mark_price": 0.00787,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053332,
+    "funding_time": 1784462400000,
+    "mark_price": 0.00826,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00060786,
+    "funding_time": 1784448000000,
+    "mark_price": 0.00782865,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00226039,
+    "funding_time": 1784433600000,
+    "mark_price": 0.00737011,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00408339,
+    "funding_time": 1784419200003,
+    "mark_price": 0.00720076,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00382799,
+    "funding_time": 1784404800004,
+    "mark_price": 0.00712,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00856489,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00739,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00936312,
+    "funding_time": 1784376000002,
+    "mark_price": 0.00670445,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00852209,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00704,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01166721,
+    "funding_time": 1784347200000,
+    "mark_price": 0.00766,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01267943,
+    "funding_time": 1784332800000,
+    "mark_price": 0.00808723,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0092946,
+    "funding_time": 1784318400000,
+    "mark_price": 0.00800847,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00381023,
+    "funding_time": 1784304000004,
+    "mark_price": 0.00832,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00429377,
+    "funding_time": 1784289600004,
+    "mark_price": 0.00812,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01625047,
+    "funding_time": 1784275200010,
+    "mark_price": 0.00827329,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00792757,
+    "funding_time": 1784260800000,
+    "mark_price": 0.00961,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00715173,
+    "funding_time": 1784246400000,
+    "mark_price": 0.00989,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0069368,
+    "funding_time": 1784232000002,
+    "mark_price": 0.01097569,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00207314,
+    "funding_time": 1784217600002,
+    "mark_price": 0.01188,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0029709,
+    "funding_time": 1784203200001,
+    "mark_price": 0.01289352,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00214855,
+    "funding_time": 1784188800003,
+    "mark_price": 0.01421,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00381354,
+    "funding_time": 1784174400003,
+    "mark_price": 0.01561,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00290792,
+    "funding_time": 1784160000000,
+    "mark_price": 0.01803,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014838,
+    "funding_time": 1784145600002,
+    "mark_price": 0.01481172,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.01378,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.283e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.01387,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011023,
+    "funding_time": 1784102400002,
+    "mark_price": 0.01323,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.177e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.01329,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.537e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.01374,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011637,
+    "funding_time": 1784059200000,
+    "mark_price": 0.01375039,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.734e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.01282,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.564e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.01306097,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.942e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.01298,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.66e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.0131,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.223e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.01317944,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.828e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.01317,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.073e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.01356,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012498,
+    "funding_time": 1783944000000,
+    "mark_price": 0.01366442,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.528e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.01392,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.01393163,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.495e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.014,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.646e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.0145,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.724e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.01452798,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.827e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.01455,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.227e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.01475537,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.01485,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.385e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.01462475,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.932e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.01498,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.959e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.01539559,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.01549379,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.01582,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.246e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.01551,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.01576,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.01557,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.624e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.01609,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.184e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.01553,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.01555424,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.01549,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.968e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.01539,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.01545226,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.01564,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.01588,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.01571665,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.01596,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.01582,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.01561,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.014975,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.01568712,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.01535,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.01519,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.01452,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.01458685,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013908,
+    "funding_time": 1783440000000,
+    "mark_price": 0.01538,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.175e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.01555,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.01574544,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012,
+    "funding_time": 1783396800000,
+    "mark_price": 0.01568394,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.087e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.01587,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.312e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.01578,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012848,
+    "funding_time": 1783353600000,
+    "mark_price": 0.01584,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.278e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.01577891,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.017e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.01598,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.361e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.016,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.289e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.01633,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.863e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.01618,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.972e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.01637938,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.01667,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.381e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.01656,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.0166805,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.01673,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.01678,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.671e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.01652,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.641e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.01669217,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.01698906,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.353e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.01709,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.181e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.01753412,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.01757059,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.0174,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.01698,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.01697,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.16e-06,
+    "funding_time": 1783051200000,
+    "mark_price": 0.016664,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.188e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0169,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.253e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.01696268,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.987e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01644781,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.01642441,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.0169,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.01629,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.978e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.01604,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.01642206,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.01699291,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.01761681,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.0174,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.01701,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.01754,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.01692184,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.912e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.0167,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.71e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.0172,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.215e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0180036,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.797e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.01793311,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.14e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.01817,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.66e-06,
+    "funding_time": 1782763200000,
+    "mark_price": 0.01809,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.01883,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.01959841,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.01941,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.105e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.01889364,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025135,
+    "funding_time": 1782691200006,
+    "mark_price": 0.01812,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011274,
+    "funding_time": 1782676800003,
+    "mark_price": 0.01814513,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.034e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.01863,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.268e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.01878547,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.059e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.019004,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.808e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.01875457,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018657,
+    "funding_time": 1782604800000,
+    "mark_price": 0.01790218,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016723,
+    "funding_time": 1782590400000,
+    "mark_price": 0.01789747,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014932,
+    "funding_time": 1782576000009,
+    "mark_price": 0.01831543,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010257,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0189,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.41e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.01907,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025539,
+    "funding_time": 1782532800000,
+    "mark_price": 0.01876,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031682,
+    "funding_time": 1782518400000,
+    "mark_price": 0.019,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039129,
+    "funding_time": 1782504000000,
+    "mark_price": 0.01921396,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015468,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01968885,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.31e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.01972,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.246e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.02017,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.11e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.02039,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.205e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.020055,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.39e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.02023669,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.527e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.02057853,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.995e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.02067528,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.783e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.02095535,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.496e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.02118,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.109e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.02134,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.874e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.0205283,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001358,
+    "funding_time": 1782316800003,
+    "mark_price": 0.02028315,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032176,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0202,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045255,
+    "funding_time": 1782288000005,
+    "mark_price": 0.02059241,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021514,
+    "funding_time": 1782259200005,
+    "mark_price": 0.02086,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.59e-05,
+    "funding_time": 1782255600003,
+    "mark_price": 0.02082132,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.955e-05,
+    "funding_time": 1782252000003,
+    "mark_price": 0.0211418,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.418e-05,
+    "funding_time": 1782248400002,
+    "mark_price": 0.02118619,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.02072,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.304e-05,
+    "funding_time": 1782241200009,
+    "mark_price": 0.02074,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.275e-05,
+    "funding_time": 1782237600000,
+    "mark_price": 0.0203707,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.781e-05,
+    "funding_time": 1782234000007,
+    "mark_price": 0.02050752,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.321e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.02059,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012049,
+    "funding_time": 1782226800002,
+    "mark_price": 0.02055057,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012706,
+    "funding_time": 1782223200006,
+    "mark_price": 0.02068365,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012393,
+    "funding_time": 1782219600000,
+    "mark_price": 0.02064,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.17e-06,
+    "funding_time": 1782216000000,
+    "mark_price": 0.02048838,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.422e-05,
+    "funding_time": 1782212400006,
+    "mark_price": 0.01972722,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.419e-05,
+    "funding_time": 1782208800004,
+    "mark_price": 0.01974,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016139,
+    "funding_time": 1782205200000,
+    "mark_price": 0.01897,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024105,
+    "funding_time": 1782201600005,
+    "mark_price": 0.01896,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00041524,
+    "funding_time": 1782198000004,
+    "mark_price": 0.01922784,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015539,
+    "funding_time": 1782194400001,
+    "mark_price": 0.01974,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.273e-05,
+    "funding_time": 1782190800004,
+    "mark_price": 0.01989622,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.508e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.02011735,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.585e-05,
+    "funding_time": 1782183600002,
+    "mark_price": 0.02026,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015683,
+    "funding_time": 1782180000002,
+    "mark_price": 0.02036069,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.074e-05,
+    "funding_time": 1782176400000,
+    "mark_price": 0.02051,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012244,
+    "funding_time": 1782172800003,
+    "mark_price": 0.02044049,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033121,
+    "funding_time": 1782169200000,
+    "mark_price": 0.02068,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002353,
+    "funding_time": 1782165600000,
+    "mark_price": 0.02041,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027526,
+    "funding_time": 1782162000002,
+    "mark_price": 0.02013,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024266,
+    "funding_time": 1782158400000,
+    "mark_price": 0.02015582,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030802,
+    "funding_time": 1782154800006,
+    "mark_price": 0.02025651,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002578,
+    "funding_time": 1782151200004,
+    "mark_price": 0.02044278,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025251,
+    "funding_time": 1782147600002,
+    "mark_price": 0.02045,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021676,
+    "funding_time": 1782144000002,
+    "mark_price": 0.02062406,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022637,
+    "funding_time": 1782140400000,
+    "mark_price": 0.02038,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026062,
+    "funding_time": 1782136800001,
+    "mark_price": 0.02074,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002503,
+    "funding_time": 1782133200000,
+    "mark_price": 0.02053,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013434,
+    "funding_time": 1782129600000,
+    "mark_price": 0.02057,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031101,
+    "funding_time": 1782126000000,
+    "mark_price": 0.02054962,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027234,
+    "funding_time": 1782122400000,
+    "mark_price": 0.02092,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017632,
+    "funding_time": 1782118800001,
+    "mark_price": 0.02061,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033647,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0213,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026382,
+    "funding_time": 1782111600000,
+    "mark_price": 0.02170093,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046037,
+    "funding_time": 1782108000002,
+    "mark_price": 0.02215242,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042526,
+    "funding_time": 1782104400000,
+    "mark_price": 0.02323563,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038242,
+    "funding_time": 1782100800000,
+    "mark_price": 0.02245382,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044472,
+    "funding_time": 1782097200000,
+    "mark_price": 0.02218,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00082451,
+    "funding_time": 1782093600000,
+    "mark_price": 0.02251475,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052722,
+    "funding_time": 1782090000007,
+    "mark_price": 0.02199,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00056567,
+    "funding_time": 1782086400000,
+    "mark_price": 0.02157926,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042365,
+    "funding_time": 1782082800000,
+    "mark_price": 0.02121,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00062482,
+    "funding_time": 1782079200012,
+    "mark_price": 0.02097308,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038367,
+    "funding_time": 1782075600005,
+    "mark_price": 0.02154,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065053,
+    "funding_time": 1782072000004,
+    "mark_price": 0.02002,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065417,
+    "funding_time": 1782068400007,
+    "mark_price": 0.02034482,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047616,
+    "funding_time": 1782064800000,
+    "mark_price": 0.02023765,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053406,
+    "funding_time": 1782061200000,
+    "mark_price": 0.0203,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064227,
+    "funding_time": 1782057600000,
+    "mark_price": 0.02045685,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00061422,
+    "funding_time": 1782054000000,
+    "mark_price": 0.02045,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053565,
+    "funding_time": 1782050400002,
+    "mark_price": 0.02026985,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070357,
+    "funding_time": 1782046800000,
+    "mark_price": 0.02049,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00071975,
+    "funding_time": 1782043200001,
+    "mark_price": 0.02059,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063996,
+    "funding_time": 1782039600001,
+    "mark_price": 0.02,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046638,
+    "funding_time": 1782036000000,
+    "mark_price": 0.02000109,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00056882,
+    "funding_time": 1782032400008,
+    "mark_price": 0.02003,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00058668,
+    "funding_time": 1782028800000,
+    "mark_price": 0.02002,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052566,
+    "funding_time": 1782025200006,
+    "mark_price": 0.02012789,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049032,
+    "funding_time": 1782021600000,
+    "mark_price": 0.01985046,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048806,
+    "funding_time": 1782018000009,
+    "mark_price": 0.02002,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036744,
+    "funding_time": 1782014400000,
+    "mark_price": 0.02020317,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029245,
+    "funding_time": 1782010800002,
+    "mark_price": 0.01963,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.163e-05,
+    "funding_time": 1782007200003,
+    "mark_price": 0.01951797,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043896,
+    "funding_time": 1782003600000,
+    "mark_price": 0.0201536,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00056103,
+    "funding_time": 1782000000000,
+    "mark_price": 0.021,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048823,
+    "funding_time": 1781996400001,
+    "mark_price": 0.02127037,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074815,
+    "funding_time": 1781992800001,
+    "mark_price": 0.02165874,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072456,
+    "funding_time": 1781989200001,
+    "mark_price": 0.02185412,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00135614,
+    "funding_time": 1781985600000,
+    "mark_price": 0.02209096,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00081737,
+    "funding_time": 1781982000005,
+    "mark_price": 0.02191,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063234,
+    "funding_time": 1781978400001,
+    "mark_price": 0.022045,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047757,
+    "funding_time": 1781974800000,
+    "mark_price": 0.02232119,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045178,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0225216,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00113735,
+    "funding_time": 1781967600004,
+    "mark_price": 0.02274,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00096704,
+    "funding_time": 1781964000008,
+    "mark_price": 0.02267,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00086074,
+    "funding_time": 1781960400000,
+    "mark_price": 0.0228,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00073699,
+    "funding_time": 1781956800001,
+    "mark_price": 0.02302049,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079318,
+    "funding_time": 1781953200013,
+    "mark_price": 0.02311,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00157307,
+    "funding_time": 1781949600001,
+    "mark_price": 0.02379418,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00150343,
+    "funding_time": 1781946000000,
+    "mark_price": 0.02356,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00146767,
+    "funding_time": 1781942400000,
+    "mark_price": 0.02292,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0007371,
+    "funding_time": 1781938800004,
+    "mark_price": 0.02267,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00078918,
+    "funding_time": 1781935200007,
+    "mark_price": 0.02305662,
+    "symbol": "HOMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00094828,
+    "funding_time": 1781931600000,
+    "mark_price": 0.0234408,
+    "symbol": "HOMEUSDT"
+  }
+]

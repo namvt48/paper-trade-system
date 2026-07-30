@@ -1,0 +1,3159 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024369,
+    "funding_time": 1784520000000,
+    "mark_price": 0.14882948,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027717,
+    "funding_time": 1784505600000,
+    "mark_price": 0.15064484,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018788,
+    "funding_time": 1784491200004,
+    "mark_price": 0.15616742,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023979,
+    "funding_time": 1784476800001,
+    "mark_price": 0.15983792,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00043177,
+    "funding_time": 1784462400000,
+    "mark_price": 0.16943567,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028978,
+    "funding_time": 1784448000000,
+    "mark_price": 0.17364958,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022674,
+    "funding_time": 1784433600000,
+    "mark_price": 0.1773,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00041196,
+    "funding_time": 1784419200003,
+    "mark_price": 0.19256482,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.1882,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.188936,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010425,
+    "funding_time": 1784376000002,
+    "mark_price": 0.18138778,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034915,
+    "funding_time": 1784361600000,
+    "mark_price": 0.19469098,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.938e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.18085098,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023108,
+    "funding_time": 1784332800000,
+    "mark_price": 0.1834,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023907,
+    "funding_time": 1784318400000,
+    "mark_price": 0.1842,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001911,
+    "funding_time": 1784304000004,
+    "mark_price": 0.18338319,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028889,
+    "funding_time": 1784289600004,
+    "mark_price": 0.1942,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.17481956,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031725,
+    "funding_time": 1784260800000,
+    "mark_price": 0.19786705,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00053832,
+    "funding_time": 1784246400000,
+    "mark_price": 0.2209,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00046855,
+    "funding_time": 1784232000002,
+    "mark_price": 0.21221703,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00051708,
+    "funding_time": 1784217600002,
+    "mark_price": 0.2146,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050921,
+    "funding_time": 1784203200001,
+    "mark_price": 0.21337159,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022541,
+    "funding_time": 1784188800003,
+    "mark_price": 0.2158,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010151,
+    "funding_time": 1784174400003,
+    "mark_price": 0.22532322,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040371,
+    "funding_time": 1784160000000,
+    "mark_price": 0.24275266,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002071,
+    "funding_time": 1784145600002,
+    "mark_price": 0.2244,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024038,
+    "funding_time": 1784131200000,
+    "mark_price": 0.2262,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00032975,
+    "funding_time": 1784116800003,
+    "mark_price": 0.24006111,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.745e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.2418,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012791,
+    "funding_time": 1784088000003,
+    "mark_price": 0.2416,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031475,
+    "funding_time": 1784073600005,
+    "mark_price": 0.25027487,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00070184,
+    "funding_time": 1784059200000,
+    "mark_price": 0.3161,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00046369,
+    "funding_time": 1784044800001,
+    "mark_price": 0.3295,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.31560574,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.28007231,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017882,
+    "funding_time": 1784001600000,
+    "mark_price": 0.33445569,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.623e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.25400347,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016965,
+    "funding_time": 1783972800000,
+    "mark_price": 0.22206639,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021037,
+    "funding_time": 1783958400004,
+    "mark_price": 0.31183617,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.3412,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.213e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.3519,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011396,
+    "funding_time": 1783915200000,
+    "mark_price": 0.4185,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034349,
+    "funding_time": 1783900800000,
+    "mark_price": 0.4069,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039926,
+    "funding_time": 1783886400002,
+    "mark_price": 0.4207,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026453,
+    "funding_time": 1783872000000,
+    "mark_price": 0.4669,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031426,
+    "funding_time": 1783857600000,
+    "mark_price": 0.4823,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013214,
+    "funding_time": 1783843200003,
+    "mark_price": 0.4541,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030082,
+    "funding_time": 1783828800000,
+    "mark_price": 0.5477,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00055256,
+    "funding_time": 1783814400000,
+    "mark_price": 0.5692,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0007515,
+    "funding_time": 1783800000000,
+    "mark_price": 0.6854,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00066518,
+    "funding_time": 1783785600000,
+    "mark_price": 0.76387532,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022795,
+    "funding_time": 1783771200008,
+    "mark_price": 0.85569935,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019643,
+    "funding_time": 1783756800000,
+    "mark_price": 0.7785,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044731,
+    "funding_time": 1783742400000,
+    "mark_price": 0.86188876,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00053382,
+    "funding_time": 1783728000000,
+    "mark_price": 0.8904,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00055787,
+    "funding_time": 1783713600000,
+    "mark_price": 0.91974935,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026819,
+    "funding_time": 1783699200005,
+    "mark_price": 1.2111,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00053694,
+    "funding_time": 1783684800002,
+    "mark_price": 1.19153347,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020508,
+    "funding_time": 1783670400005,
+    "mark_price": 1.1386,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022863,
+    "funding_time": 1783656000000,
+    "mark_price": 1.14792911,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00046555,
+    "funding_time": 1783641600000,
+    "mark_price": 1.13942911,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00032775,
+    "funding_time": 1783627200000,
+    "mark_price": 1.024,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001068,
+    "funding_time": 1783620000004,
+    "mark_price": 1.03166486,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015113,
+    "funding_time": 1783616400000,
+    "mark_price": 1.01376293,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015773,
+    "funding_time": 1783612800001,
+    "mark_price": 0.99541479,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.744e-05,
+    "funding_time": 1783609200000,
+    "mark_price": 0.91507625,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.723e-05,
+    "funding_time": 1783605600003,
+    "mark_price": 0.86041604,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.533e-05,
+    "funding_time": 1783602000000,
+    "mark_price": 0.8311,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.629e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.92747518,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.962e-05,
+    "funding_time": 1783594800000,
+    "mark_price": 0.88587541,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783591200000,
+    "mark_price": 1.00631542,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.874e-05,
+    "funding_time": 1783587600000,
+    "mark_price": 1.17490912,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011584,
+    "funding_time": 1783584000001,
+    "mark_price": 1.1948492,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.985e-05,
+    "funding_time": 1783580400009,
+    "mark_price": 1.18404571,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.017e-05,
+    "funding_time": 1783576800000,
+    "mark_price": 1.18155949,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.851e-05,
+    "funding_time": 1783573200000,
+    "mark_price": 1.19774185,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.407e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.14115376,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.464e-05,
+    "funding_time": 1783566000000,
+    "mark_price": 1.26584659,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029005,
+    "funding_time": 1783562400000,
+    "mark_price": 1.297,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783558800000,
+    "mark_price": 1.12476649,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010147,
+    "funding_time": 1783555200000,
+    "mark_price": 1.254,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.675e-05,
+    "funding_time": 1783551600001,
+    "mark_price": 1.3488,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001937,
+    "funding_time": 1783548000001,
+    "mark_price": 1.45092514,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.119e-05,
+    "funding_time": 1783544400001,
+    "mark_price": 1.306,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013205,
+    "funding_time": 1783540800006,
+    "mark_price": 1.33549859,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012214,
+    "funding_time": 1783537200013,
+    "mark_price": 1.19847965,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783533600002,
+    "mark_price": 1.16958783,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044007,
+    "funding_time": 1783530000003,
+    "mark_price": 1.10159714,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00151968,
+    "funding_time": 1783526400000,
+    "mark_price": 1.165,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079065,
+    "funding_time": 1783522800000,
+    "mark_price": 1.505,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012939,
+    "funding_time": 1783519200001,
+    "mark_price": 1.837,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.423e-05,
+    "funding_time": 1783515600006,
+    "mark_price": 2.34121099,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 2.49744809,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783508400005,
+    "mark_price": 2.180073,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.332e-05,
+    "funding_time": 1783504800001,
+    "mark_price": 2.117,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.758e-05,
+    "funding_time": 1783501200011,
+    "mark_price": 2.88,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013677,
+    "funding_time": 1783497600000,
+    "mark_price": 3.40640621,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783494000000,
+    "mark_price": 2.79530615,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.68e-06,
+    "funding_time": 1783490400000,
+    "mark_price": 3.375,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.273e-05,
+    "funding_time": 1783486800000,
+    "mark_price": 3.75524386,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051996,
+    "funding_time": 1783483200003,
+    "mark_price": 3.292,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00290615,
+    "funding_time": 1783479600004,
+    "mark_price": 3.99723547,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00555818,
+    "funding_time": 1783476000000,
+    "mark_price": 4.82004135,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0052439,
+    "funding_time": 1783472400000,
+    "mark_price": 6.3899809,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00797803,
+    "funding_time": 1783468800000,
+    "mark_price": 5.76459651,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01046957,
+    "funding_time": 1783465200004,
+    "mark_price": 5.869,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01127757,
+    "funding_time": 1783461600007,
+    "mark_price": 6.23198719,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00819645,
+    "funding_time": 1783458000008,
+    "mark_price": 5.597,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0114169,
+    "funding_time": 1783454400000,
+    "mark_price": 4.896,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00908913,
+    "funding_time": 1783450800001,
+    "mark_price": 4.842,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01937378,
+    "funding_time": 1783447200000,
+    "mark_price": 4.358,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01324266,
+    "funding_time": 1783443600000,
+    "mark_price": 5.87169422,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00678383,
+    "funding_time": 1783440000000,
+    "mark_price": 6.79468577,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01684592,
+    "funding_time": 1783436400002,
+    "mark_price": 8.323,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1783432800000,
+    "mark_price": 8.355,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1783429200001,
+    "mark_price": 8.01092651,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1783425600010,
+    "mark_price": 10.24061892,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01627497,
+    "funding_time": 1783422000000,
+    "mark_price": 10.79694697,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1783418400004,
+    "mark_price": 11.995,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01657981,
+    "funding_time": 1783414800000,
+    "mark_price": 12.067,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01050053,
+    "funding_time": 1783411200000,
+    "mark_price": 13.48104556,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00811198,
+    "funding_time": 1783407600002,
+    "mark_price": 13.70000707,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00707985,
+    "funding_time": 1783404000000,
+    "mark_price": 14.6747438,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00669918,
+    "funding_time": 1783400400000,
+    "mark_price": 14.416,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0069202,
+    "funding_time": 1783396800000,
+    "mark_price": 14.12450684,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00728738,
+    "funding_time": 1783393200000,
+    "mark_price": 14.40114496,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00574785,
+    "funding_time": 1783389600004,
+    "mark_price": 13.69521881,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00700036,
+    "funding_time": 1783386000010,
+    "mark_price": 13.98369493,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0094405,
+    "funding_time": 1783382400000,
+    "mark_price": 14.095,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00930664,
+    "funding_time": 1783378800002,
+    "mark_price": 14.26557849,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01001714,
+    "funding_time": 1783375200001,
+    "mark_price": 14.40797506,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01333909,
+    "funding_time": 1783371600006,
+    "mark_price": 15.14499695,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00896908,
+    "funding_time": 1783368000003,
+    "mark_price": 15.151,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00399821,
+    "funding_time": 1783364400002,
+    "mark_price": 14.42771854,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00380753,
+    "funding_time": 1783360800002,
+    "mark_price": 14.84754615,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00318181,
+    "funding_time": 1783357200000,
+    "mark_price": 14.085,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00350147,
+    "funding_time": 1783353600000,
+    "mark_price": 16.03482883,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00315403,
+    "funding_time": 1783350000011,
+    "mark_price": 16.417,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00270821,
+    "funding_time": 1783346400002,
+    "mark_price": 16.7013544,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00312261,
+    "funding_time": 1783342800000,
+    "mark_price": 16.73643307,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00502636,
+    "funding_time": 1783339200002,
+    "mark_price": 17.00629579,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00395976,
+    "funding_time": 1783335600000,
+    "mark_price": 16.95845048,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00268175,
+    "funding_time": 1783332000003,
+    "mark_price": 15.86421408,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00210525,
+    "funding_time": 1783328400000,
+    "mark_price": 16.09,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00112862,
+    "funding_time": 1783324800000,
+    "mark_price": 16.7731624,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00073867,
+    "funding_time": 1783321200000,
+    "mark_price": 16.81,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00108178,
+    "funding_time": 1783317600000,
+    "mark_price": 16.974,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00094439,
+    "funding_time": 1783314000000,
+    "mark_price": 16.1091686,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099234,
+    "funding_time": 1783310400000,
+    "mark_price": 16.527,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068592,
+    "funding_time": 1783306800001,
+    "mark_price": 16.426,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00060504,
+    "funding_time": 1783303200000,
+    "mark_price": 15.8570914,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00103729,
+    "funding_time": 1783299600000,
+    "mark_price": 16.41,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00098912,
+    "funding_time": 1783296000000,
+    "mark_price": 16.58358475,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072606,
+    "funding_time": 1783292400000,
+    "mark_price": 16.668,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00084318,
+    "funding_time": 1783288800001,
+    "mark_price": 16.90914239,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068056,
+    "funding_time": 1783285200000,
+    "mark_price": 16.548,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059185,
+    "funding_time": 1783281600000,
+    "mark_price": 16.854,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059854,
+    "funding_time": 1783278000000,
+    "mark_price": 16.71382275,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020691,
+    "funding_time": 1783274400012,
+    "mark_price": 16.6080354,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025281,
+    "funding_time": 1783270800001,
+    "mark_price": 16.01026037,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013956,
+    "funding_time": 1783267200000,
+    "mark_price": 16.066,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00041556,
+    "funding_time": 1783263600000,
+    "mark_price": 15.916,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027832,
+    "funding_time": 1783260000000,
+    "mark_price": 16.16807318,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019675,
+    "funding_time": 1783256400008,
+    "mark_price": 16.17785026,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018829,
+    "funding_time": 1783252800000,
+    "mark_price": 15.81493357,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025126,
+    "funding_time": 1783249200000,
+    "mark_price": 15.827,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025221,
+    "funding_time": 1783245600011,
+    "mark_price": 15.958,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072028,
+    "funding_time": 1783242000000,
+    "mark_price": 15.89302412,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057091,
+    "funding_time": 1783238400001,
+    "mark_price": 16.683,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005172,
+    "funding_time": 1783234800000,
+    "mark_price": 15.96390359,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003129,
+    "funding_time": 1783231200000,
+    "mark_price": 16.82814291,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048142,
+    "funding_time": 1783227600000,
+    "mark_price": 16.297,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004591,
+    "funding_time": 1783224000002,
+    "mark_price": 16.67679602,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036114,
+    "funding_time": 1783220400000,
+    "mark_price": 16.18348582,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.526e-05,
+    "funding_time": 1783216800000,
+    "mark_price": 16.199,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010928,
+    "funding_time": 1783213200001,
+    "mark_price": 15.08738508,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.094e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 15.58113327,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.031e-05,
+    "funding_time": 1783206000002,
+    "mark_price": 15.2566405,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013606,
+    "funding_time": 1783202400002,
+    "mark_price": 15.044,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016703,
+    "funding_time": 1783198800010,
+    "mark_price": 16.29320404,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 15.73011727,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.35e-06,
+    "funding_time": 1783191600000,
+    "mark_price": 15.35461926,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783188000001,
+    "mark_price": 16.164,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057988,
+    "funding_time": 1783184400002,
+    "mark_price": 13.443,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00077791,
+    "funding_time": 1783180800007,
+    "mark_price": 15.27761777,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005269,
+    "funding_time": 1783177200000,
+    "mark_price": 14.415,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033342,
+    "funding_time": 1783173600000,
+    "mark_price": 13.63279987,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783170000002,
+    "mark_price": 12.796,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 11.077,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783162800000,
+    "mark_price": 10.58116259,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.25e-05,
+    "funding_time": 1783159200002,
+    "mark_price": 10.75413478,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001174,
+    "funding_time": 1783155600003,
+    "mark_price": 9.40055761,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.427e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 9.293,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.314e-05,
+    "funding_time": 1783148400000,
+    "mark_price": 8.87011536,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039763,
+    "funding_time": 1783144800000,
+    "mark_price": 7.35329673,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042082,
+    "funding_time": 1783141200000,
+    "mark_price": 7.796,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030845,
+    "funding_time": 1783137600006,
+    "mark_price": 7.60236545,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.545e-05,
+    "funding_time": 1783134000005,
+    "mark_price": 6.834,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018482,
+    "funding_time": 1783130400000,
+    "mark_price": 5.90231435,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038634,
+    "funding_time": 1783126800000,
+    "mark_price": 5.992,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019584,
+    "funding_time": 1783123200000,
+    "mark_price": 5.97488021,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039927,
+    "funding_time": 1783119600001,
+    "mark_price": 5.97,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050393,
+    "funding_time": 1783116000000,
+    "mark_price": 6.018,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010246,
+    "funding_time": 1783112400001,
+    "mark_price": 6.10135605,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018597,
+    "funding_time": 1783108800001,
+    "mark_price": 6.03602491,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010515,
+    "funding_time": 1783105200000,
+    "mark_price": 5.88420583,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037781,
+    "funding_time": 1783101600000,
+    "mark_price": 5.997,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00085943,
+    "funding_time": 1783098000009,
+    "mark_price": 6.041996,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00085574,
+    "funding_time": 1783094400000,
+    "mark_price": 6.3,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00135672,
+    "funding_time": 1783090800000,
+    "mark_price": 6.27989602,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00213556,
+    "funding_time": 1783087200000,
+    "mark_price": 7.144,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0019328,
+    "funding_time": 1783083600000,
+    "mark_price": 7.12942639,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0019324,
+    "funding_time": 1783080000002,
+    "mark_price": 7.169,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00243928,
+    "funding_time": 1783076400002,
+    "mark_price": 7.31266948,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00230426,
+    "funding_time": 1783072800001,
+    "mark_price": 7.78950499,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00083204,
+    "funding_time": 1783069200000,
+    "mark_price": 7.487,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00279787,
+    "funding_time": 1783065600007,
+    "mark_price": 8.288,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00513694,
+    "funding_time": 1783062000000,
+    "mark_price": 8.919,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00769141,
+    "funding_time": 1783058400000,
+    "mark_price": 9.495,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00718231,
+    "funding_time": 1783054800000,
+    "mark_price": 9.995,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00715605,
+    "funding_time": 1783051200000,
+    "mark_price": 10.20867885,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00967043,
+    "funding_time": 1783047600011,
+    "mark_price": 10.285,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01102574,
+    "funding_time": 1783044000000,
+    "mark_price": 10.83739331,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00957657,
+    "funding_time": 1783040400000,
+    "mark_price": 10.05057391,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00524735,
+    "funding_time": 1783036800000,
+    "mark_price": 11.11510437,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0054727,
+    "funding_time": 1783033200001,
+    "mark_price": 11.14008804,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00785923,
+    "funding_time": 1783029600001,
+    "mark_price": 10.825,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00709539,
+    "funding_time": 1783026000005,
+    "mark_price": 10.67879329,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0043777,
+    "funding_time": 1783022400008,
+    "mark_price": 10.23379762,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.003267,
+    "funding_time": 1783018800000,
+    "mark_price": 9.90337058,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00309655,
+    "funding_time": 1783015200002,
+    "mark_price": 9.70121888,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00304467,
+    "funding_time": 1783011600000,
+    "mark_price": 9.488,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0020021,
+    "funding_time": 1783008000000,
+    "mark_price": 9.549,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00155543,
+    "funding_time": 1783004400008,
+    "mark_price": 9.067,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00130481,
+    "funding_time": 1783000800000,
+    "mark_price": 9.007,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093327,
+    "funding_time": 1782997200000,
+    "mark_price": 9.20206846,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109018,
+    "funding_time": 1782993600005,
+    "mark_price": 9.166,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00101535,
+    "funding_time": 1782990000012,
+    "mark_price": 8.989,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109307,
+    "funding_time": 1782986400000,
+    "mark_price": 8.954,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00119208,
+    "funding_time": 1782982800003,
+    "mark_price": 8.997,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00114772,
+    "funding_time": 1782979200000,
+    "mark_price": 9.002,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0015135,
+    "funding_time": 1782975600000,
+    "mark_price": 8.98916933,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00190954,
+    "funding_time": 1782972000000,
+    "mark_price": 9.0623329,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00231069,
+    "funding_time": 1782968400002,
+    "mark_price": 9.32925235,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00160868,
+    "funding_time": 1782964800003,
+    "mark_price": 9.85560565,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00085419,
+    "funding_time": 1782961200000,
+    "mark_price": 9.53667786,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.227e-05,
+    "funding_time": 1782957600002,
+    "mark_price": 8.94023033,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.508e-05,
+    "funding_time": 1782954000000,
+    "mark_price": 8.99564622,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.932e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 8.893,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010927,
+    "funding_time": 1782946800000,
+    "mark_price": 8.96656721,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035862,
+    "funding_time": 1782943200005,
+    "mark_price": 8.9796406,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079325,
+    "funding_time": 1782939600000,
+    "mark_price": 9.051,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00088881,
+    "funding_time": 1782936000000,
+    "mark_price": 9.022,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093879,
+    "funding_time": 1782932400000,
+    "mark_price": 8.993,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00096123,
+    "funding_time": 1782928800004,
+    "mark_price": 9.022,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00113836,
+    "funding_time": 1782925200000,
+    "mark_price": 8.75606722,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00105937,
+    "funding_time": 1782921600000,
+    "mark_price": 9.00543761,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00120056,
+    "funding_time": 1782918000003,
+    "mark_price": 8.96274297,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109353,
+    "funding_time": 1782914400000,
+    "mark_price": 9.02001085,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00146718,
+    "funding_time": 1782910800000,
+    "mark_price": 8.996,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00160663,
+    "funding_time": 1782907200000,
+    "mark_price": 9.002,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00199984,
+    "funding_time": 1782903600000,
+    "mark_price": 8.99003071,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00225929,
+    "funding_time": 1782900000003,
+    "mark_price": 9.123,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00237157,
+    "funding_time": 1782896400004,
+    "mark_price": 9.93133876,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00221871,
+    "funding_time": 1782892800000,
+    "mark_price": 10.94294899,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00298537,
+    "funding_time": 1782889200007,
+    "mark_price": 10.758,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00514156,
+    "funding_time": 1782885600001,
+    "mark_price": 11.96637919,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00313972,
+    "funding_time": 1782882000000,
+    "mark_price": 12.07394467,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00376873,
+    "funding_time": 1782878400001,
+    "mark_price": 11.96644298,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00400148,
+    "funding_time": 1782874800000,
+    "mark_price": 12.124,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00538502,
+    "funding_time": 1782871200000,
+    "mark_price": 12.948,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00538437,
+    "funding_time": 1782867600000,
+    "mark_price": 13.06,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00446305,
+    "funding_time": 1782864000000,
+    "mark_price": 13.11430672,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00450368,
+    "funding_time": 1782860400002,
+    "mark_price": 13.05681514,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00540227,
+    "funding_time": 1782856800002,
+    "mark_price": 13.2584259,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00534508,
+    "funding_time": 1782853200005,
+    "mark_price": 13.0112183,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00740741,
+    "funding_time": 1782849600003,
+    "mark_price": 13.067,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00719575,
+    "funding_time": 1782846000000,
+    "mark_price": 13.397,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00397186,
+    "funding_time": 1782842400000,
+    "mark_price": 13.279,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00324126,
+    "funding_time": 1782838800016,
+    "mark_price": 13.097,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00214426,
+    "funding_time": 1782835200005,
+    "mark_price": 13.08525704,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00207318,
+    "funding_time": 1782831600000,
+    "mark_price": 12.97724331,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00240472,
+    "funding_time": 1782828000002,
+    "mark_price": 12.99071486,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00241904,
+    "funding_time": 1782824400004,
+    "mark_price": 11.85469385,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00327014,
+    "funding_time": 1782820800002,
+    "mark_price": 12.38627629,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.006813,
+    "funding_time": 1782817200000,
+    "mark_price": 12.969,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0096951,
+    "funding_time": 1782813600008,
+    "mark_price": 13.00448592,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00921799,
+    "funding_time": 1782810000000,
+    "mark_price": 12.99492218,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0083712,
+    "funding_time": 1782806400000,
+    "mark_price": 12.989,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00559858,
+    "funding_time": 1782802800006,
+    "mark_price": 13.579,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00643103,
+    "funding_time": 1782799200000,
+    "mark_price": 14.00214262,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00538498,
+    "funding_time": 1782795600000,
+    "mark_price": 13.8034606,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00615119,
+    "funding_time": 1782792000000,
+    "mark_price": 14.24165156,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00585562,
+    "funding_time": 1782788400003,
+    "mark_price": 14.201,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00601115,
+    "funding_time": 1782784800000,
+    "mark_price": 13.96,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0077054,
+    "funding_time": 1782781200000,
+    "mark_price": 13.967,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00902151,
+    "funding_time": 1782777600000,
+    "mark_price": 14.0308232,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00723058,
+    "funding_time": 1782774000001,
+    "mark_price": 14.19210117,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0038525,
+    "funding_time": 1782770400000,
+    "mark_price": 14.3690484,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00289241,
+    "funding_time": 1782766800004,
+    "mark_price": 15.01378473,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00284121,
+    "funding_time": 1782763200000,
+    "mark_price": 14.958,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00299564,
+    "funding_time": 1782759600004,
+    "mark_price": 15.1048493,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00351777,
+    "funding_time": 1782756000000,
+    "mark_price": 14.979,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00350592,
+    "funding_time": 1782752400000,
+    "mark_price": 14.957,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0045685,
+    "funding_time": 1782748800004,
+    "mark_price": 15.05434826,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00491702,
+    "funding_time": 1782745200002,
+    "mark_price": 15.222,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00494077,
+    "funding_time": 1782741600008,
+    "mark_price": 14.947,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00771482,
+    "funding_time": 1782738000000,
+    "mark_price": 14.98,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00786023,
+    "funding_time": 1782734400001,
+    "mark_price": 15.085,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00598783,
+    "funding_time": 1782730800002,
+    "mark_price": 14.76392543,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00657899,
+    "funding_time": 1782727200000,
+    "mark_price": 14.663,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00405345,
+    "funding_time": 1782723600000,
+    "mark_price": 14.81428388,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00285777,
+    "funding_time": 1782720000013,
+    "mark_price": 14.109,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00262754,
+    "funding_time": 1782716400001,
+    "mark_price": 13.848,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00233126,
+    "funding_time": 1782712800010,
+    "mark_price": 13.759,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00254046,
+    "funding_time": 1782709200000,
+    "mark_price": 13.61907483,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00158467,
+    "funding_time": 1782705600000,
+    "mark_price": 13.64556748,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0025914,
+    "funding_time": 1782702000001,
+    "mark_price": 13.94681572,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00344426,
+    "funding_time": 1782698400000,
+    "mark_price": 14.6346931,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00313199,
+    "funding_time": 1782694800001,
+    "mark_price": 15.30553548,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00205212,
+    "funding_time": 1782691200006,
+    "mark_price": 15.51278153,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00129555,
+    "funding_time": 1782687600000,
+    "mark_price": 15.92922468,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00110656,
+    "funding_time": 1782684000000,
+    "mark_price": 16.5585492,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00104437,
+    "funding_time": 1782680400000,
+    "mark_price": 16.743,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00112669,
+    "funding_time": 1782676800003,
+    "mark_price": 16.72789813,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118469,
+    "funding_time": 1782673200001,
+    "mark_price": 17.05031619,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00132644,
+    "funding_time": 1782669600000,
+    "mark_price": 16.936,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118223,
+    "funding_time": 1782666000002,
+    "mark_price": 17.27494138,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00136893,
+    "funding_time": 1782662400000,
+    "mark_price": 17.228772,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00134362,
+    "funding_time": 1782658800000,
+    "mark_price": 17.33,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00147287,
+    "funding_time": 1782655200014,
+    "mark_price": 17.022,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00179088,
+    "funding_time": 1782651600002,
+    "mark_price": 17.20483134,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00177344,
+    "funding_time": 1782648000008,
+    "mark_price": 16.33298248,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00181349,
+    "funding_time": 1782644400000,
+    "mark_price": 17.244,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00174168,
+    "funding_time": 1782640800003,
+    "mark_price": 17.596238,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00189027,
+    "funding_time": 1782637200001,
+    "mark_price": 17.49664821,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00189513,
+    "funding_time": 1782633600013,
+    "mark_price": 17.631,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00213696,
+    "funding_time": 1782630000003,
+    "mark_price": 17.759,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00224702,
+    "funding_time": 1782626400000,
+    "mark_price": 17.00587654,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00229856,
+    "funding_time": 1782622800000,
+    "mark_price": 17.305,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00258982,
+    "funding_time": 1782619200002,
+    "mark_price": 17.382,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00293177,
+    "funding_time": 1782615600000,
+    "mark_price": 17.11607311,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00297143,
+    "funding_time": 1782612000000,
+    "mark_price": 17.6928801,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00350563,
+    "funding_time": 1782608400003,
+    "mark_price": 17.16240077,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00406507,
+    "funding_time": 1782604800000,
+    "mark_price": 16.41835295,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00458801,
+    "funding_time": 1782601200001,
+    "mark_price": 16.07150223,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00490343,
+    "funding_time": 1782597600000,
+    "mark_price": 15.508,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00512963,
+    "funding_time": 1782594000000,
+    "mark_price": 15.575,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00561458,
+    "funding_time": 1782590400000,
+    "mark_price": 15.41992251,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00585937,
+    "funding_time": 1782586800004,
+    "mark_price": 15.111,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00643191,
+    "funding_time": 1782583200000,
+    "mark_price": 14.972,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00673603,
+    "funding_time": 1782579600005,
+    "mark_price": 15.691,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00481384,
+    "funding_time": 1782576000009,
+    "mark_price": 14.97275379,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00429167,
+    "funding_time": 1782572400001,
+    "mark_price": 15.04302684,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00320117,
+    "funding_time": 1782568800000,
+    "mark_price": 14.758,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00379481,
+    "funding_time": 1782565200000,
+    "mark_price": 14.61130603,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00576451,
+    "funding_time": 1782561600001,
+    "mark_price": 17.65253593,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0065895,
+    "funding_time": 1782558000003,
+    "mark_price": 18.21877221,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00545906,
+    "funding_time": 1782554400000,
+    "mark_price": 18.291,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00435081,
+    "funding_time": 1782550800001,
+    "mark_price": 18.813,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00417562,
+    "funding_time": 1782547200000,
+    "mark_price": 19.66138156,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00500522,
+    "funding_time": 1782543600002,
+    "mark_price": 19.39746512,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00382367,
+    "funding_time": 1782540000000,
+    "mark_price": 19.40731652,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0035827,
+    "funding_time": 1782536400001,
+    "mark_price": 19.738,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0046194,
+    "funding_time": 1782532800000,
+    "mark_price": 19.48050286,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00596974,
+    "funding_time": 1782529200002,
+    "mark_price": 18.89566909,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00413346,
+    "funding_time": 1782525600000,
+    "mark_price": 18.227,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00317677,
+    "funding_time": 1782522000000,
+    "mark_price": 19.916,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00180069,
+    "funding_time": 1782518400000,
+    "mark_price": 19.515,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00177414,
+    "funding_time": 1782514800000,
+    "mark_price": 19.21903074,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00238104,
+    "funding_time": 1782511200008,
+    "mark_price": 19.209,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00281877,
+    "funding_time": 1782507600002,
+    "mark_price": 18.6176454,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00264031,
+    "funding_time": 1782504000000,
+    "mark_price": 18.703,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00228197,
+    "funding_time": 1782500400000,
+    "mark_price": 18.728,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00254493,
+    "funding_time": 1782496800005,
+    "mark_price": 18.921,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00322207,
+    "funding_time": 1782493200001,
+    "mark_price": 18.6245762,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00367159,
+    "funding_time": 1782489600000,
+    "mark_price": 18.78122581,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00382783,
+    "funding_time": 1782486000007,
+    "mark_price": 18.67016703,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0036332,
+    "funding_time": 1782482400000,
+    "mark_price": 18.542976,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00551004,
+    "funding_time": 1782478800006,
+    "mark_price": 18.677,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0051317,
+    "funding_time": 1782475200004,
+    "mark_price": 18.6493956,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00321489,
+    "funding_time": 1782471600000,
+    "mark_price": 18.457,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00268285,
+    "funding_time": 1782468000000,
+    "mark_price": 18.21330569,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00326865,
+    "funding_time": 1782464400000,
+    "mark_price": 18.255,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00299112,
+    "funding_time": 1782460800002,
+    "mark_price": 18.25479835,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0030022,
+    "funding_time": 1782457200000,
+    "mark_price": 17.75023552,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00216158,
+    "funding_time": 1782453600002,
+    "mark_price": 18.86327054,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00178374,
+    "funding_time": 1782450000001,
+    "mark_price": 18.54088924,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00160874,
+    "funding_time": 1782446400001,
+    "mark_price": 18.26645781,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00166992,
+    "funding_time": 1782442800008,
+    "mark_price": 18.08393241,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0016632,
+    "funding_time": 1782439200009,
+    "mark_price": 18.095,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00198468,
+    "funding_time": 1782435600007,
+    "mark_price": 17.78528599,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00235583,
+    "funding_time": 1782432000010,
+    "mark_price": 17.8947776,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00215695,
+    "funding_time": 1782428400002,
+    "mark_price": 17.70404497,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00169267,
+    "funding_time": 1782424800004,
+    "mark_price": 17.822,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00148385,
+    "funding_time": 1782421200017,
+    "mark_price": 17.965,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00090339,
+    "funding_time": 1782417600011,
+    "mark_price": 18.096,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00108699,
+    "funding_time": 1782414000004,
+    "mark_price": 18.46084007,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091363,
+    "funding_time": 1782410400009,
+    "mark_price": 18.403,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00112028,
+    "funding_time": 1782406800000,
+    "mark_price": 18.59046793,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00086831,
+    "funding_time": 1782403200000,
+    "mark_price": 18.24214197,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051749,
+    "funding_time": 1782399600010,
+    "mark_price": 17.82728116,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00097728,
+    "funding_time": 1782396000000,
+    "mark_price": 17.471,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091833,
+    "funding_time": 1782392400002,
+    "mark_price": 17.6208115,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109258,
+    "funding_time": 1782388800006,
+    "mark_price": 17.27822572,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00154348,
+    "funding_time": 1782385200011,
+    "mark_price": 17.175,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00186774,
+    "funding_time": 1782381600000,
+    "mark_price": 17.044,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00203933,
+    "funding_time": 1782378000002,
+    "mark_price": 16.825,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00271613,
+    "funding_time": 1782374400000,
+    "mark_price": 17.29072583,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00258061,
+    "funding_time": 1782370800000,
+    "mark_price": 17.2270191,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00194538,
+    "funding_time": 1782367200003,
+    "mark_price": 16.75029034,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00210864,
+    "funding_time": 1782363600001,
+    "mark_price": 16.012,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00178379,
+    "funding_time": 1782360000008,
+    "mark_price": 15.93554069,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00211399,
+    "funding_time": 1782356400000,
+    "mark_price": 16.078,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00205216,
+    "funding_time": 1782352800001,
+    "mark_price": 16.193,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00196243,
+    "funding_time": 1782349200008,
+    "mark_price": 16.427,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00174181,
+    "funding_time": 1782345600000,
+    "mark_price": 16.04031774,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00205102,
+    "funding_time": 1782342000013,
+    "mark_price": 16.04,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00239609,
+    "funding_time": 1782338400000,
+    "mark_price": 16.263,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00346474,
+    "funding_time": 1782334800000,
+    "mark_price": 15.898,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00290303,
+    "funding_time": 1782331200006,
+    "mark_price": 15.8646581,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00308913,
+    "funding_time": 1782327600000,
+    "mark_price": 15.862,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0045677,
+    "funding_time": 1782324000001,
+    "mark_price": 16.059,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00574561,
+    "funding_time": 1782320400006,
+    "mark_price": 16.286,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1782316800003,
+    "mark_price": 19.19412706,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00736628,
+    "funding_time": 1782302400005,
+    "mark_price": 16.832,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00346202,
+    "funding_time": 1782288000005,
+    "mark_price": 16.09632492,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00148354,
+    "funding_time": 1782259200005,
+    "mark_price": 14.54600185,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00121872,
+    "funding_time": 1782244800000,
+    "mark_price": 15.041,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0025462,
+    "funding_time": 1782230400002,
+    "mark_price": 15.45466292,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00152408,
+    "funding_time": 1782216000000,
+    "mark_price": 16.159,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00116819,
+    "funding_time": 1782201600005,
+    "mark_price": 16.396,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040565,
+    "funding_time": 1782187200000,
+    "mark_price": 16.9201954,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00095727,
+    "funding_time": 1782172800003,
+    "mark_price": 16.934,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003559,
+    "funding_time": 1782158400000,
+    "mark_price": 16.907,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 14.97082917,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 15.04270404,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.772e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 14.926,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036531,
+    "funding_time": 1782100800000,
+    "mark_price": 14.09,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00106115,
+    "funding_time": 1782086400000,
+    "mark_price": 15.931,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00117488,
+    "funding_time": 1782072000004,
+    "mark_price": 13.387,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002276,
+    "funding_time": 1782057600000,
+    "mark_price": 13.97410985,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 16.07388349,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039102,
+    "funding_time": 1782028800000,
+    "mark_price": 15.30400355,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.035e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 13.49789187,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 13.43614259,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 13.366,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015085,
+    "funding_time": 1781971200001,
+    "mark_price": 12.555,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.53e-06,
+    "funding_time": 1781956800001,
+    "mark_price": 12.06806816,
+    "symbol": "LABUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 12.18992344,
+    "symbol": "LABUSDT"
+  }
+]

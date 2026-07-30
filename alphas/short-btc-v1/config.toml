@@ -1,0 +1,28 @@
+[[columns]]
+key = "reduced"
+label = "Reduced"
+type = "text"
+
+[[columns]]
+key = "reduce_fraction"
+label = "Reduce Frac"
+type = "number"
+decimals = 2
+
+[[columns]]
+key = "context_bad_count"
+label = "Ctx Bad"
+type = "number"
+decimals = 0
+
+[[columns]]
+key = "funding_at_signal"
+label = "Funding"
+type = "number"
+decimals = 6
+
+[[columns]]
+key = "oi_daily_change_pct"
+label = "OI Chg %"
+type = "number"
+decimals = 2

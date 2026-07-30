@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.12571362,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.12604578,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.55e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.1248,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.373e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.12525441,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.607e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.1257,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1264,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.045e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.126749,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.848e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.12695027,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.873e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.12645275,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.32e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 0.12644985,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.91e-06,
+    "funding_time": 1784376000002,
+    "mark_price": 0.1266,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.43e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 0.12675673,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.144e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.12794985,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.255e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.12697514,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.156e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.12765633,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.12875121,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.129,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.149e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1284,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.1309,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1307,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.13195443,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1319082,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.12865048,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.049e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.12946968,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.692e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.1305,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.12963662,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.1293,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.359e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.13124913,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.28e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.13034969,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1303,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.13054702,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.537e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1327,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.13184976,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.317e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1311,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.05e-06,
+    "funding_time": 1784030400001,
+    "mark_price": 0.1286,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.778e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.12854519,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.243e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.12750831,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.1287,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.781e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.12962244,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.916e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.13044516,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.13273984,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1321,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.13025862,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.13264548,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.13474408,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1332,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.13295041,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.1333,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.1339,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.13182346,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.135,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1351,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.13525021,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.474e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1344,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.13590723,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1369,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.84e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.1364,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.13763188,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.693e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.1386,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.13993803,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.1401,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.736e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1386,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.1396,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.421e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.13725112,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.13854538,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.13862628,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.1403,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.355e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.14183781,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.14175049,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.1355,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.1353,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.13494375,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.988e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.13621941,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.13690166,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.13655314,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.14072801,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.1394,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.13814381,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.1387,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1446,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.14104937,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.1427,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.1399,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.14014955,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.1381,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.13845101,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.1332,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1344,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.1355,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.13451984,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.13532704,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.13725258,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.139,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1349,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.13183927,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.13,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.1305,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.13066458,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.12981078,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1279499,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.1265,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.12391234,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.463e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.12081142,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.696e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1204,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.923e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.1205508,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.802e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.12003253,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.077e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.1216668,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.12,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.15e-06,
+    "funding_time": 1782964800003,
+    "mark_price": 0.1207,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.245e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1187,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.11925489,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.1198,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.1153,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.538e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1148,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.1156,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.114,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.11775045,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.258e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.11754966,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.908e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.1168,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1188,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.601e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.1189,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1199161,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.12040836,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.438e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.12012923,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.12082297,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.549e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1221,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.851e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.1234225,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.005e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1211,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.761e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.12141153,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.385e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1232,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.706e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.1232,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.36e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.12265416,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.617e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.1239,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.994e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1224,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.65e-06,
+    "funding_time": 1782590400000,
+    "mark_price": 0.12244995,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.759e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.12564473,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.1246,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.688e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.12475988,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.648e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.1242,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1245,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.1256,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.154e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1256,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.409e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.12209054,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1265,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.151e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.1251,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1257,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.12284627,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1255,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.1316,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1336,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.13261509,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.13394586,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.1304,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.676e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.1311031,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.1373,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.13755045,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.13842318,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.13738758,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1377,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.074e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.1317,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.373e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1326,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.38e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 0.1366,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.1361,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.511e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.1387,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.573e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1405,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.14102425,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.727e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.14024952,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.351e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.1399,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.7e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.13804504,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.14201706,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.1425,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.14224395,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.747e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1433365,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.1446637,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.14424833,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.1433,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.145,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.14428015,
+    "symbol": "IMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.837e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1416,
+    "symbol": "IMXUSDT"
+  }
+]

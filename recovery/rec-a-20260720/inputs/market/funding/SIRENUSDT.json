@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00106761,
+    "funding_time": 1784520000000,
+    "mark_price": 0.03113184,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021451,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02613896,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033478,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02627,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.873e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02648385,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02769366,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027084,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02894911,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.738e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.0284274,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00069433,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02828,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021919,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02818401,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02742431,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00068769,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02782,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038485,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02747482,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00083403,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02821,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00052437,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0276,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00049756,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02797386,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050383,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02763,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00090253,
+    "funding_time": 1784289600004,
+    "mark_price": 0.02746,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015982,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02689429,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039785,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02811352,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004562,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02772698,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016474,
+    "funding_time": 1784232000002,
+    "mark_price": 0.0273486,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00074,
+    "funding_time": 1784217600002,
+    "mark_price": 0.02817148,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00079851,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02703841,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004403,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02749785,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021921,
+    "funding_time": 1784174400003,
+    "mark_price": 0.02706,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050719,
+    "funding_time": 1784160000000,
+    "mark_price": 0.02742462,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00078757,
+    "funding_time": 1784145600002,
+    "mark_price": 0.02642,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02636,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038447,
+    "funding_time": 1784116800003,
+    "mark_price": 0.02599,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.959e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02598517,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.234e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02684843,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02686225,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025901,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02703,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024993,
+    "funding_time": 1784044800001,
+    "mark_price": 0.02713,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022281,
+    "funding_time": 1784030400001,
+    "mark_price": 0.0264,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044048,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02623947,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015817,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02595,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00101674,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02589882,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00073257,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02585,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018225,
+    "funding_time": 1783958400004,
+    "mark_price": 0.02636256,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00057209,
+    "funding_time": 1783944000000,
+    "mark_price": 0.02674,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00041059,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0272,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029542,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02719601,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.02742841,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011227,
+    "funding_time": 1783886400002,
+    "mark_price": 0.02829,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00060515,
+    "funding_time": 1783872000000,
+    "mark_price": 0.02796,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.02755937,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026003,
+    "funding_time": 1783843200003,
+    "mark_price": 0.02771754,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00052864,
+    "funding_time": 1783828800000,
+    "mark_price": 0.02645752,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0006842,
+    "funding_time": 1783814400000,
+    "mark_price": 0.02738,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00071994,
+    "funding_time": 1783800000000,
+    "mark_price": 0.02815,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00059294,
+    "funding_time": 1783785600000,
+    "mark_price": 0.02808745,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00068179,
+    "funding_time": 1783771200008,
+    "mark_price": 0.02807448,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036575,
+    "funding_time": 1783756800000,
+    "mark_price": 0.02766516,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019689,
+    "funding_time": 1783742400000,
+    "mark_price": 0.02806,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024796,
+    "funding_time": 1783728000000,
+    "mark_price": 0.02786207,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029496,
+    "funding_time": 1783713600000,
+    "mark_price": 0.02796,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045572,
+    "funding_time": 1783699200005,
+    "mark_price": 0.02807,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00059822,
+    "funding_time": 1783684800002,
+    "mark_price": 0.02851497,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030429,
+    "funding_time": 1783670400005,
+    "mark_price": 0.02806,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010099,
+    "funding_time": 1783656000000,
+    "mark_price": 0.02833908,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00041671,
+    "funding_time": 1783641600000,
+    "mark_price": 0.02872,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00101,
+    "funding_time": 1783627200000,
+    "mark_price": 0.02837471,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034997,
+    "funding_time": 1783612800001,
+    "mark_price": 0.02826662,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042792,
+    "funding_time": 1783598400002,
+    "mark_price": 0.02813,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030386,
+    "funding_time": 1783584000001,
+    "mark_price": 0.02831598,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00064009,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03009,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029005,
+    "funding_time": 1783555200000,
+    "mark_price": 0.02788,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029046,
+    "funding_time": 1783540800006,
+    "mark_price": 0.02746,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024403,
+    "funding_time": 1783526400000,
+    "mark_price": 0.02687,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020124,
+    "funding_time": 1783512000005,
+    "mark_price": 0.02715772,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024902,
+    "funding_time": 1783497600000,
+    "mark_price": 0.02698,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.02726271,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029898,
+    "funding_time": 1783468800000,
+    "mark_price": 0.02868,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.02806993,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03278,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00100422,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03380949,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018618,
+    "funding_time": 1783411200000,
+    "mark_price": 0.0334484,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014546,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03374,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.0345828,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040694,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03488039,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03362,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00035321,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03345,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0005135,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03399785,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00066826,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03429382,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00032098,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03469513,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03541836,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.811e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03611,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034202,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03529059,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014415,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03534,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.372e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03496,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00105853,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03736,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00169245,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03947427,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040121,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03538,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00064941,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03516,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00074453,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03571299,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038163,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03494828,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028346,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0349,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026005,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03402679,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00068623,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03406276,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00075121,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03416913,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00046758,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03432664,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03427156,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028203,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03405112,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00102034,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03419507,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00054613,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03226,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.03276035,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00051158,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03314049,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.818e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03413258,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00048561,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03455,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010123,
+    "funding_time": 1782936000000,
+    "mark_price": 0.03495,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027944,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03597,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00089101,
+    "funding_time": 1782907200000,
+    "mark_price": 0.03379259,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050482,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03421,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00058076,
+    "funding_time": 1782878400001,
+    "mark_price": 0.0351866,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00076511,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03634,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03641,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00061101,
+    "funding_time": 1782835200005,
+    "mark_price": 0.03688973,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00056253,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03783,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00069519,
+    "funding_time": 1782806400000,
+    "mark_price": 0.03938,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00081935,
+    "funding_time": 1782792000000,
+    "mark_price": 0.03902985,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00090654,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03831,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00117747,
+    "funding_time": 1782763200000,
+    "mark_price": 0.03817,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00075277,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03601,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00064054,
+    "funding_time": 1782734400001,
+    "mark_price": 0.0361956,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0005734,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03569928,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022889,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03683511,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.03698131,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027705,
+    "funding_time": 1782676800003,
+    "mark_price": 0.03696,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031361,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03793503,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00088052,
+    "funding_time": 1782648000008,
+    "mark_price": 0.04103,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00102197,
+    "funding_time": 1782633600013,
+    "mark_price": 0.04129358,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00067802,
+    "funding_time": 1782619200002,
+    "mark_price": 0.03854,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00052282,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03723,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0006122,
+    "funding_time": 1782590400000,
+    "mark_price": 0.0355016,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00096577,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03494,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00049939,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03411,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023634,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03504451,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050292,
+    "funding_time": 1782532800000,
+    "mark_price": 0.03550207,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040779,
+    "funding_time": 1782518400000,
+    "mark_price": 0.03491,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00167629,
+    "funding_time": 1782504000000,
+    "mark_price": 0.03464,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00056221,
+    "funding_time": 1782489600000,
+    "mark_price": 0.03445,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00081899,
+    "funding_time": 1782475200004,
+    "mark_price": 0.0338756,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036846,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03327,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00070829,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03373681,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040053,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03425,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00061788,
+    "funding_time": 1782417600011,
+    "mark_price": 0.03396,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031364,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03447,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00107329,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03469237,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00035011,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03594925,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016614,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03659143,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00060108,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03764783,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038707,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03638,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00123386,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03984,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045797,
+    "funding_time": 1782302400005,
+    "mark_price": 0.04213431,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00043706,
+    "funding_time": 1782288000005,
+    "mark_price": 0.04431465,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00035895,
+    "funding_time": 1782259200005,
+    "mark_price": 0.04391403,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00102085,
+    "funding_time": 1782244800000,
+    "mark_price": 0.04416217,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00107735,
+    "funding_time": 1782230400002,
+    "mark_price": 0.04342,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00095168,
+    "funding_time": 1782216000000,
+    "mark_price": 0.04251278,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00088162,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0425,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00051789,
+    "funding_time": 1782187200000,
+    "mark_price": 0.04183,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00142469,
+    "funding_time": 1782172800003,
+    "mark_price": 0.04297,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00095755,
+    "funding_time": 1782158400000,
+    "mark_price": 0.04155,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00136514,
+    "funding_time": 1782144000002,
+    "mark_price": 0.041,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038083,
+    "funding_time": 1782129600000,
+    "mark_price": 0.04105,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00082532,
+    "funding_time": 1782115200000,
+    "mark_price": 0.04215408,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00098424,
+    "funding_time": 1782100800000,
+    "mark_price": 0.04122,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0011436,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03960475,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00052475,
+    "funding_time": 1782072000004,
+    "mark_price": 0.04038,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00117224,
+    "funding_time": 1782057600000,
+    "mark_price": 0.04043,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0008003,
+    "funding_time": 1782043200001,
+    "mark_price": 0.04225,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00115484,
+    "funding_time": 1782028800000,
+    "mark_price": 0.04034,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00154413,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03963912,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00126057,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03888,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00186641,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03874,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0019847,
+    "funding_time": 1781971200001,
+    "mark_price": 0.04324837,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00055412,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03677,
+    "symbol": "SIRENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0006253,
+    "funding_time": 1781942400000,
+    "mark_price": 0.04034,
+    "symbol": "SIRENUSDT"
+  }
+]

@@ -9,7 +9,7 @@ tốt nhất nhóm trend (WFE 0.71).
 | khung | 1h · rebal 48 (2d) · vol-lookback 120 (5d) |
 | signal | `cs_zscore(ts_zscore(close_t180, 2880)) + cs_zscore(ts_scale(close_t180, 720))` |
 | định cỡ | trọng số độ lớn từng coin (winsor-cont, không rank) — xem [overview](overview.md) |
-| universe | top-180 (`_t180`) · exec_lag 1 · vol-target 10% · gross 1 trung hòa đô-la |
+| universe | top-180 (`_t180`) · vol-target 10% · gross 1 trung hòa đô-la |
 | hiệu năng | IS 2.38 · OS 1.70 · WFE 0.71 · maxDD(OS) −10% · 1903 lệnh/năm |
 
 ## Tín hiệu & vào lệnh long/short

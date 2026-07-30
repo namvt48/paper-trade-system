@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 0.001209,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.001204,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 0.001205,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012677,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0012105,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026006,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00120255,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.55e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00119646,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.62e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.001209,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.616e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.0012015,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.095e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.00119645,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.073e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.001207,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.226e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.00123441,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.495e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.001232,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.295e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.00124243,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.758e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.001246,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.001223,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.00124,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.001251,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.0012245,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0012095,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00121817,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0012284,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.00123,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.0012445,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.001246,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.0012535,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.28e-06,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0013,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.001269,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.001281,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016169,
+    "funding_time": 1783699200005,
+    "mark_price": 0.00127902,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.0012695,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.18e-06,
+    "funding_time": 1783641600000,
+    "mark_price": 0.0012635,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.313e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.001282,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.985e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.001283,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00117821,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.332e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.00118,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.483e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.0012055,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.146e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.00123,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.82e-06,
+    "funding_time": 1783440000000,
+    "mark_price": 0.001254,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.922e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.00120153,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.00122055,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.562e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.00121704,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.001194,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.001218,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.00120356,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.001198,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.001209,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.00122049,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.00119256,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.001221,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.0012245,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.001185,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.001176,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.0011495,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.00110756,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0010755,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.00108956,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00105339,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.001068,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.00108144,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.001114,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.001125,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.00113816,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0011605,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.001141,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.0011725,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.37e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.00119,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.936e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.001183,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.28e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.00120862,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.00119851,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.001187,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.00122482,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.0012415,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.00123276,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.026e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.001221,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.001277,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.0012485,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.96e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.001255,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.358e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.0012785,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.001262,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 0.00124372,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.13e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.001253,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.7e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 0.00127149,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.6e-07,
+    "funding_time": 1782144000002,
+    "mark_price": 0.001304,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.828e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0012965,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.874e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00126772,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.897e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.001311,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.932e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.00131848,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.637e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.001309,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.854e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.00131201,
+    "symbol": "RSRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.33e-06,
+    "funding_time": 1781942400000,
+    "mark_price": 0.001295,
+    "symbol": "RSRUSDT"
+  }
+]

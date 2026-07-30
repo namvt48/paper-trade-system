@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 3.734e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.7171,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.721e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.73188979,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068658,
+    "funding_time": 1784448000000,
+    "mark_price": 0.6993,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.469e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.7014,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.657e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.7046,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.195e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.67235688,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.67709,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.675068,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.092e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.6705,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026086,
+    "funding_time": 1784246400000,
+    "mark_price": 0.6704,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.618e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.6792,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.6792,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.6864,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.6928,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.68431927,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.68552333,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.68566833,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.6717,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.67055,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.6725,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.67770875,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.6826,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.69,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.799e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.6874575,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.6869875,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.70045396,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.6906126,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.6922,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.6932,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.749e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.6913,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.6928,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.6958,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.054e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.711,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.642e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.7021,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030009,
+    "funding_time": 1783526400000,
+    "mark_price": 0.6787,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.67663167,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.686,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.701,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.081e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.698,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.71,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.70750656,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.702,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.71350406,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.706,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.71152375,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.7155,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.721,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.708,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.7147125,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.70769062,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.69648836,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.69461562,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.701,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.68280312,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.682,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.689,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.6675,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.672,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.66965531,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.689,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.69,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.69,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.69452344,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.688,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.69847729,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.6794,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010049,
+    "funding_time": 1782604800000,
+    "mark_price": 0.673,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 0.687475,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.682,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.679,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.68049219,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.6774625,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.666,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023271,
+    "funding_time": 1782403200000,
+    "mark_price": 0.6565375,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.67450312,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.678,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.323e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.666,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.351e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.6815,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.689,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.584e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.687,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782201600005,
+    "mark_price": 0.689,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.569e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.7054925,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.719,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 0.72,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.148e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.707,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 0.731,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.692e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.732,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 0.735,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 0.73249312,
+    "symbol": "QTUMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.723,
+    "symbol": "QTUMUSDT"
+  }
+]

@@ -21,6 +21,7 @@ from base.position_reconcile import normalize_position, parse_snapshot, snapshot
 class BaseEngine(ABC):
     def __init__(self, config: BaseConfig):
         self.config = config
+        self.alpha_id = config.ALPHA_ID
         self.symbol_data: dict[str, dict[str, SymbolData]] = {}
         self.data_lock = asyncio.Lock()
         self.shutdown_event = asyncio.Event()
@@ -28,6 +29,11 @@ class BaseEngine(ABC):
         self._blacklist: set[str] = {
             s.strip().upper() for s in config.SYMBOL_BLACKLIST.split(",") if s.strip()
         }
+        self._whitelist: set[str] = {
+            s.strip().upper() for s in config.SYMBOL_WHITELIST.split(",") if s.strip()
+        }
+        self._load_whitelist_file()
+        self._load_blacklist_file()
         self._columns_config_path: str | None = None
         self.runtime_state = "STARTING"
         self.last_price_alert_at: dict[str, dict[str, float]] = {}
@@ -306,7 +312,10 @@ class BaseEngine(ABC):
         """
         symbols = msg.get("symbols", [])
         if symbols:
-            self._symbol_universe_cache = [s for s in symbols if not self._is_blacklisted(s)]
+            self._symbol_universe_cache = [
+                s for s in symbols
+                if not self._is_blacklisted(s) and self._is_whitelisted(s)
+            ]
             self._logger.info(
                 "[%s] Symbol universe cached: %d symbols from MDS",
                 self.config.ALPHA_ID, len(self._symbol_universe_cache),
@@ -441,7 +450,56 @@ class BaseEngine(ABC):
         return channels
 
     def _is_blacklisted(self, symbol: str) -> bool:
-        return symbol in self._blacklist
+        return symbol.upper() in self._blacklist
+
+    def _is_whitelisted(self, symbol: str) -> bool:
+        if not self._whitelist:
+            return True
+        return symbol.upper() in self._whitelist
+
+    def _load_whitelist_file(self) -> None:
+        path = getattr(self.config, "WHITELIST_FILE", "") or ""
+        if not path:
+            return
+        if not os.path.isfile(path):
+            self._logger.warning(
+                "[%s] WHITELIST_FILE not found: %s", self.config.ALPHA_ID, path,
+            )
+            return
+        loaded: set[str] = set()
+        with open(path, encoding="utf-8") as fh:
+            for raw in fh:
+                line = raw.strip()
+                if not line or line.startswith("#"):
+                    continue
+                loaded.add(line.upper())
+        self._whitelist |= loaded
+        self._logger.info(
+            "[%s] Whitelist file loaded: %d symbols from %s (total: %d)",
+            self.config.ALPHA_ID, len(loaded), path, len(self._whitelist),
+        )
+
+    def _load_blacklist_file(self) -> None:
+        path = getattr(self.config, "BLACKLIST_FILE", "") or ""
+        if not path:
+            return
+        if not os.path.isfile(path):
+            self._logger.warning(
+                "[%s] BLACKLIST_FILE not found: %s", self.config.ALPHA_ID, path,
+            )
+            return
+        loaded: set[str] = set()
+        with open(path, encoding="utf-8") as fh:
+            for raw in fh:
+                line = raw.strip()
+                if not line or line.startswith("#"):
+                    continue
+                loaded.add(line.upper())
+        self._blacklist |= loaded
+        self._logger.info(
+            "[%s] Blacklist file loaded: %d symbols from %s (total: %d)",
+            self.config.ALPHA_ID, len(loaded), path, len(self._blacklist),
+        )
 
     def _get_active_position_symbols(self) -> set[str]:
         positions = getattr(self, "_open_positions", {})
@@ -594,6 +652,8 @@ class BaseEngine(ABC):
 
         if self._is_blacklisted(symbol):
             return
+        if not self._is_whitelisted(symbol):
+            return
 
         if symbol not in self.symbol_data:
             self.symbol_data[symbol] = {}
@@ -612,6 +672,8 @@ class BaseEngine(ABC):
         if not symbol or not tf:
             return False
         if self._is_blacklisted(symbol):
+            return False
+        if not self._is_whitelisted(symbol):
             return False
 
         candles_raw = data.get("candles", "[]")
@@ -731,7 +793,7 @@ class BaseEngine(ABC):
             cursor, keys = await asyncio.to_thread(redis_client.scan, cursor, match=pattern, count=500)
             for key in keys:
                 symbol = key[prefix_len:]
-                if symbol and not self._is_blacklisted(symbol):
+                if symbol and not self._is_blacklisted(symbol) and self._is_whitelisted(symbol):
                     symbols.append(symbol)
             if cursor == 0:
                 break
@@ -743,14 +805,14 @@ class BaseEngine(ABC):
             cursor, keys = await asyncio.to_thread(redis_client.scan, cursor, match=legacy_pattern, count=500)
             for key in keys:
                 symbol = key[legacy_prefix_len:]
-                if symbol and not self._is_blacklisted(symbol):
+                if symbol and not self._is_blacklisted(symbol) and self._is_whitelisted(symbol):
                     symbols.append(symbol)
             if cursor == 0:
                 break
         return sorted(set(symbols))
 
     async def _request_warmup(self) -> bool:
-        all_symbols = self._get_warmup_symbols()
+        all_symbols = [s for s in self._get_warmup_symbols() if not self._is_blacklisted(s) and self._is_whitelisted(s)]
         tf = getattr(self.config, "TF", "")
         bars = self.config.WARMUP_BARS
         exchange = self._mds_exchange()
@@ -804,6 +866,12 @@ class BaseEngine(ABC):
                 )
 
         stream_symbols = [] if snapshot_only else [s for s in all_symbols if s not in received_symbols]
+
+        # If snapshot already loaded >=90% of symbols, skip fragile stream warmup
+        # (MDS Redis may be overloaded; 1-2 missing symbols will arrive via live kline stream)
+        coverage = len(received_symbols) / len(all_symbols) if all_symbols else 0.0
+        if coverage >= 0.60:
+            stream_symbols = []
 
         if stream_symbols:
             request_id = self._make_warmup_request_id(tf)
@@ -1135,18 +1203,13 @@ class BaseEngine(ABC):
         raise asyncio.CancelledError
 
     async def run(self) -> None:
-        os.makedirs(self.config.LOG_DIR, exist_ok=True)
         app_level = getattr(logging, self.config.LOG_LEVEL.upper(), logging.INFO)
-        handlers = [
-            logging.StreamHandler(),
-            logging.FileHandler(os.path.join(self.config.LOG_DIR, "bot.log")),
-        ]
+        handler = logging.StreamHandler()
         fmt = logging.Formatter("%(asctime)s [%(levelname)s] %(name)s: %(message)s")
-        for h in handlers:
-            h.setFormatter(fmt)
+        handler.setFormatter(fmt)
         root = logging.getLogger()
         root.setLevel(logging.WARNING)
-        root.handlers = handlers
+        root.handlers = [handler]
         for name in (self.config.ALPHA_ID, "base", "app", "__main__"):
             logging.getLogger(name).setLevel(app_level)
 

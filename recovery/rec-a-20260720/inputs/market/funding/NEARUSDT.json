@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 1.917,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.102e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.91765532,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.492e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.934,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.785e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.93057117,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.199e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.91591901,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.771e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.90784739,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.74e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 1.92534505,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.609e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.9200014,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 1.9391155,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.958e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.964,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.141e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 2.066,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.682e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 2.04923919,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.61e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 2.067,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.1e-06,
+    "funding_time": 1784131200000,
+    "mark_price": 2.076,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.55e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 2.006,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 2.01242189,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010911,
+    "funding_time": 1784044800001,
+    "mark_price": 2.046,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.426e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.99073919,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.07e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.921,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 1.937,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 1.9092664,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 1.88753355,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.988e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.89754744,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.298e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.87446533,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 1.8672282,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 1.90410937,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.749e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.88138441,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.434e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.89142973,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.722e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.89823458,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 1.931,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 1.91849009,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 1.91369838,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 1.916,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012107,
+    "funding_time": 1783555200000,
+    "mark_price": 1.89031252,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.913e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.85337521,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.55e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 1.904,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 1.976,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 2.064,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.42e-06,
+    "funding_time": 1783411200000,
+    "mark_price": 2.023,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.64e-06,
+    "funding_time": 1783382400000,
+    "mark_price": 2.052,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 2.076,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.09e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 1.99,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.141e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 2.01653225,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.211e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.979,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 1.958,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.88e-06,
+    "funding_time": 1783209600003,
+    "mark_price": 1.99751279,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.16e-06,
+    "funding_time": 1783180800007,
+    "mark_price": 2.036,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 1.979,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.432e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 2.04362838,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.894e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 2.03315468,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 1.956,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 1.943,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.236e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.914,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 1.916,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.485e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.806,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 1.84023588,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 1.795,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 1.78209685,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 1.78710324,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 1.857,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 1.86495946,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 1.8463918,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 1.86657847,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 1.833,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 1.86491153,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.818e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.873,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010329,
+    "funding_time": 1782604800000,
+    "mark_price": 1.867,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.028e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.893,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 1.81206117,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 1.803,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.803e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.802,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 1.8495709,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 1.8331045,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782403200000,
+    "mark_price": 1.863,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.02e-06,
+    "funding_time": 1782374400000,
+    "mark_price": 1.969,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.43e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 1.965,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.296e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.91300928,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.344e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.95368036,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 1.98134207,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.325e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.9785755,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.791e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 2.01687072,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.873e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 2.06713,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.375e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 2.12,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.688e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 2.17041351,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.573e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 2.10104667,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011018,
+    "funding_time": 1782057600000,
+    "mark_price": 2.20229568,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.51e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 2.2158127,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.695e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 2.192,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.934e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 2.162,
+    "symbol": "NEARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.072e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 2.139,
+    "symbol": "NEARUSDT"
+  }
+]

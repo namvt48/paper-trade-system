@@ -1,0 +1,26 @@
+[[columns]]
+key = "indi1_color"
+label = "M15 Indi1"
+type = "text"
+
+[[columns]]
+key = "indi2_color"
+label = "M15 Indi2"
+type = "text"
+
+[[columns]]
+key = "h1_dot_color"
+label = "H1 Dot"
+type = "text"
+
+[[columns]]
+key = "indi1_acol"
+label = "M15 ACol"
+type = "number"
+decimals = 4
+
+[[columns]]
+key = "indi2_poc"
+label = "M15 POC"
+type = "number"
+decimals = 2

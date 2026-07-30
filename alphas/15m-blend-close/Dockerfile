@@ -8,4 +8,5 @@ COPY 15m-blend-close/app/ ./app/
 COPY 15m-blend-close/main.py 15m-blend-close/spec.json 15m-blend-close/config.toml ./
 COPY 15m-blend-close/data/ ./data/
 COPY 15m-blend-close/blacklist.txt .
+COPY 15m-blend-close/whitelist.txt .
 CMD ["python", "main.py"]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.568e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.35432883,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.803e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.3566,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.189e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.3576,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.479e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.35755,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.346e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.3647,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.5e-07,
+    "funding_time": 1784361600000,
+    "mark_price": 0.3683,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.97e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 0.3741,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.6e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.3835,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.37014036,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.36443829,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.377,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.3695945,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.3585,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.3323,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.3274,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.368e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.3332,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.44e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.3293,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.02e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.3256,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.281e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.31394054,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.3082,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.3103,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.307,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.3081,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.614e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.3076,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.30950234,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.033e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.3105,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.588e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.30996081,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.964e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.3002,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.944e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.3024,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.3059,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.544e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.29930862,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.3097,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.32072883,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.32362315,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 0.325026,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.31552703,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.31152283,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.30281351,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.2863,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.28117982,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.094e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.27442788,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.26891645,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.2743,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.98e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2677,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.2708,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.891e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.2723,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.728e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.27323842,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.01e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.26390946,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.2683395,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.023e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.2665,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.507e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.26145315,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.422e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.2585,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.917e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.2568,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.846e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.2481,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2463,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.25341698,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.24205,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.392e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.2397,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.363e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.2453,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.928e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.252,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.25259189,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.25123686,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.795e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.25121027,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.345e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.24465,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.942e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.24461099,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.652e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.24689189,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.89e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.2456,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.327e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.2497,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.494e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.2475,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.2496,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.287e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.2495,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.825e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.24724892,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.456e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.24561333,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.744e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.2448,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.587e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.2593,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.213e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.2539,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.861e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.25306815,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.1e-06,
+    "funding_time": 1782288000005,
+    "mark_price": 0.25645,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.123e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.25973892,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.648e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.25582689,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.01e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.26205,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.058e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.2671,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.177e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.2748,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.959e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.27195,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.736e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.26750243,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.131e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.2817109,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.276,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.282e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.2762,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.943e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.2776,
+    "symbol": "LDOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.337e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.27703333,
+    "symbol": "LDOUSDT"
+  }
+]

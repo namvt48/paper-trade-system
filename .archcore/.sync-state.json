@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "files": {},
+  "relations": [
+    {
+      "source": "alpha-integration/xau-m30-alpha-bundle.prd.md",
+      "target": "alpha-integration/xau-m30-alpha-bundle.idea.md",
+      "type": "implements"
+    },
+    {
+      "source": "alpha-integration/xau-m30-alpha-bundle.plan.md",
+      "target": "alpha-integration/xau-m30-alpha-bundle.prd.md",
+      "type": "implements"
+    }
+  ]
+}

@@ -23,3 +23,5 @@ alphas/logs/
 .env
 *.parquet
 docs/alphas-2/datacryp/
+
+docs/

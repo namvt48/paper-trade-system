@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.43e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 571.38287671,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.631e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 570.48268128,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.07e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 569.32657315,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.925e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 570.99,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.856e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 571.0459418,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.518e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 568.2,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784332800000,
+    "mark_price": 568.38235251,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1784304000004,
+    "mark_price": 563.21605559,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.252e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 566.32204135,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.363e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 572.76159828,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001107,
+    "funding_time": 1784217600002,
+    "mark_price": 579.87426559,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.816e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 580.24,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014088,
+    "funding_time": 1784160000000,
+    "mark_price": 581.01799008,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.756e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 582.01052511,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013454,
+    "funding_time": 1784102400002,
+    "mark_price": 576.84,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012457,
+    "funding_time": 1784073600005,
+    "mark_price": 582.22,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.807e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 583.2362526,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.843e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 570.35683167,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783987200000,
+    "mark_price": 567.80842922,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.773e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 568.94,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.62e-06,
+    "funding_time": 1783929600001,
+    "mark_price": 570.29,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.761e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 574.17,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011818,
+    "funding_time": 1783872000000,
+    "mark_price": 581.47,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783843200003,
+    "mark_price": 572.56617808,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.35e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 574.91,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.755e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 580.21,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.645e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 577.26904384,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.961e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 575.72,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011027,
+    "funding_time": 1783699200005,
+    "mark_price": 574.11689702,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011748,
+    "funding_time": 1783670400005,
+    "mark_price": 574.41,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.403e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 569.05,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012025,
+    "funding_time": 1783612800001,
+    "mark_price": 571.39271536,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.613e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 573.18,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.204e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 568.97545887,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783526400000,
+    "mark_price": 562.68,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.075e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 568.18,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.957e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 577.04612822,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.872e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 585.04507089,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1783411200000,
+    "mark_price": 578.62,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.595e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 586.29480913,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.35e-06,
+    "funding_time": 1783353600000,
+    "mark_price": 585.08,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.64e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 582.45364554,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.905e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 590.30320334,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.046e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 587.72,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.193e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 576.02554226,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.393e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 575.72789954,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010833,
+    "funding_time": 1783180800007,
+    "mark_price": 577.12,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012176,
+    "funding_time": 1783152000000,
+    "mark_price": 570.06055682,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019594,
+    "funding_time": 1783123200000,
+    "mark_price": 574.23,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001291,
+    "funding_time": 1783094400000,
+    "mark_price": 566.15,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.653e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 562.05954983,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.19e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 559.18,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010499,
+    "funding_time": 1783008000000,
+    "mark_price": 562.81736515,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.503e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 549.68002802,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.254e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 550.79339107,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782921600000,
+    "mark_price": 554.84,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.081e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 547.13983877,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.374e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 546.84,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782835200005,
+    "mark_price": 545.21,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782806400000,
+    "mark_price": 552.60641553,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.028e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 559.83,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.584e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 552.23,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.52e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 553.88,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782691200006,
+    "mark_price": 551.43,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782662400000,
+    "mark_price": 554.76891167,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782633600013,
+    "mark_price": 556.7,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782604800000,
+    "mark_price": 557.44,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.89e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 565.87764816,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.127e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 565.86228578,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.039e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 567.98,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782489600000,
+    "mark_price": 565.68192228,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782460800002,
+    "mark_price": 569.83,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782432000010,
+    "mark_price": 560.7962771,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782403200000,
+    "mark_price": 554.06221361,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782374400000,
+    "mark_price": 570.48,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782345600000,
+    "mark_price": 564.54,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782316800003,
+    "mark_price": 561.5,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782288000005,
+    "mark_price": 577.06239909,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782259200005,
+    "mark_price": 578.1760274,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782230400002,
+    "mark_price": 574.65,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782201600005,
+    "mark_price": 581.06,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782172800003,
+    "mark_price": 590.33115668,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782144000002,
+    "mark_price": 596.49,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782115200000,
+    "mark_price": 594.25,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782086400000,
+    "mark_price": 584.54,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.515e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 590.27634485,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782028800000,
+    "mark_price": 591.31,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0,
+    "funding_time": 1782000000000,
+    "mark_price": 588.30318269,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.245e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 587.52,
+    "symbol": "BNBUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.83e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 588.05368384,
+    "symbol": "BNBUSDT"
+  }
+]

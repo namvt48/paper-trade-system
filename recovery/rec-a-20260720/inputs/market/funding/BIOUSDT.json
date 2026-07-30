@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02583,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02545,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.951e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02547,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02509181,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.24e-06,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02531,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02539,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.07e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.02563263,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.006e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02562,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.527e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02517539,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.404e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02511,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.34e-06,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02551,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02571492,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.809e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02613,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.488e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02585493,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.103e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02590207,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.188e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02597563,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011679,
+    "funding_time": 1784289600004,
+    "mark_price": 0.02598209,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.108e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02572,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.64e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02618806,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.21e-06,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02693,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.842e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02721144,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.243e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.02787476,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.0277711,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.008e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02782,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.0279,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.02782,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.08e-06,
+    "funding_time": 1784145600002,
+    "mark_price": 0.02767,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02801,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.819e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.0278,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02764,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.747e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02789201,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02797,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.933e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02789186,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.02821346,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.4e-06,
+    "funding_time": 1784030400001,
+    "mark_price": 0.02747,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.034e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02756,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02749522,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02736433,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.764e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02763,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.02843864,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.02882,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.02913,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02779511,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.801e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.02822,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.02851167,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.02871,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.02884062,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.02888457,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.02921,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.02865504,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.02907688,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.02875054,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.02843,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.945e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.02852,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.02856449,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.02852,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.0286,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.02871152,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.0288,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.02838572,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.02833,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.18e-06,
+    "funding_time": 1783641600000,
+    "mark_price": 0.02829,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.02846,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.977e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.0286,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.02830023,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.02841,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.02848948,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.92e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 0.02788435,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.01e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.02754005,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.951e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.02748,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.158e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.02823598,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.02818,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.02793034,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.53e-06,
+    "funding_time": 1783468800000,
+    "mark_price": 0.02808,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.02866,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.02957318,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03036314,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.02979,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.0301032,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.02945,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.265e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.02932,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.02923043,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.966e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.02883909,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.02927645,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.02966004,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03020263,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.149e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.02994,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.02996286,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.269e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.02960374,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03016188,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03084,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03081591,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03093627,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03135298,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03079831,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03061,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03088991,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.0308799,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03100235,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03063198,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.02996932,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.748e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.02985035,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.889e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.02944782,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.02979,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.02991052,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.02981862,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.02997,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.02977,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.02915677,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.02997114,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.0292915,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03096,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.02997135,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03005456,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.02989852,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.16e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.02751,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.02703038,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.796e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.02731873,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.206e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.02778106,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.127e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.02804,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.02832468,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.594e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.02817103,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.51e-06,
+    "funding_time": 1782734400001,
+    "mark_price": 0.02796485,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.21e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.02835614,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.85e-06,
+    "funding_time": 1782705600000,
+    "mark_price": 0.02824,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.649e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.02818632,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.506e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02803118,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.02847,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.02949,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.02907306,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.02929,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.02876,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.02895002,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.02951892,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.02983,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.02864167,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.02876508,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.02907,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.028972,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.02995,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.086e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.02957387,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.549e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03011,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.565e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03048917,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.684e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03010921,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.343e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.02933,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.937e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.02752581,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.02859891,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.02903,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.02838,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.02864295,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.304e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.02851434,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.63e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.02915243,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.8e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03043172,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.31e-06,
+    "funding_time": 1782288000005,
+    "mark_price": 0.03026,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.905e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03003186,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.55e-06,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03045,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.821e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.02882,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.052e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.02885,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.851e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.02884,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.073e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.02945374,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.0297562,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.751e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03013,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.042e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03049873,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.928e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03036,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.205e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03081525,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.22e-06,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03104,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.275e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03105261,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.03184463,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.7e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03243,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.427e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03181,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.29e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.03209,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.57e-06,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03233,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.796e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03279082,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.311e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.033,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.536e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.03262,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.163e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03191895,
+    "symbol": "BIOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03228435,
+    "symbol": "BIOUSDT"
+  }
+]

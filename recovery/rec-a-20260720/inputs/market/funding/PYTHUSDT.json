@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.441e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.04899,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.04847,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.332e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.04822,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.04895755,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.421e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.04801,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.318e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.04854,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.04832,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.96e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 0.04854463,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.259e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.04865291,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.68e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 0.04825,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.793e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.04843466,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.507e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.04778,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.101e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.04957,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.209e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.04843,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.1e-07,
+    "funding_time": 1784318400000,
+    "mark_price": 0.04884,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.97e-06,
+    "funding_time": 1784304000004,
+    "mark_price": 0.04906,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.656e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.04998981,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.05014,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.228e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.04980437,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.417e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.05038997,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.05131867,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.336e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.05117,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6e-06,
+    "funding_time": 1784203200001,
+    "mark_price": 0.05109,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.05024363,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.04920469,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.04769136,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.04782,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.04728177,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.04769107,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.397e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.04772,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.772e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.04913,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.722e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.04672,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.849e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.04656,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.262e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.04618,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.04612777,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.04633524,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.04591,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.04730174,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.04687,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.04778,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.909e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.0495783,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.04796,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.04668,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.708e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.04787,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.0481,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.04747238,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.04704309,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.04704,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.04747,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.04676181,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.0485,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.04834,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.04776,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.04740962,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.04766249,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.04747,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.04642,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.04399,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.04425,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.04422221,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.04482,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.04536,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.04509,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.04244431,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.04207009,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.04269423,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.04341308,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.04359,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.86e-06,
+    "funding_time": 1783540800006,
+    "mark_price": 0.04277194,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.878e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.0412038,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.04227024,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.521e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.04306427,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.04370634,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.04285095,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.04365,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.04483,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.04585205,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.04434634,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.04438,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.04550623,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.04618,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.04637074,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.44e-06,
+    "funding_time": 1783339200002,
+    "mark_price": 0.04372,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.375e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.04222067,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.04091336,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.04038,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03962,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.576e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03947496,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03932,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03881,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03859736,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03828,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03865017,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03834,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03796198,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.0384,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03844359,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03920626,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03939139,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03892508,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03886706,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03956,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03976,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03866,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.512e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03890229,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.842e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03823,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.306e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.04000117,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03983278,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.994e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.04083,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.64e-06,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0376,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.335e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.0384575,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.604e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03922126,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.06e-06,
+    "funding_time": 1782907200000,
+    "mark_price": 0.03885,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.64e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03834151,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.353e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.03984958,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.769e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03744624,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.574e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03829367,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.144e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.040172,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03567,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0362,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.889e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.03627,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03603605,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.91e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.0366,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03668,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.689e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.03661624,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03624558,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.838e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03587531,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.03362,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.03355844,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03362,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.674e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.03391,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.264e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.03388294,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.034,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03347367,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03369415,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.715e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03409834,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03386463,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03417,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.03421987,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.03432669,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.03392,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0328,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.215e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.03177,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03262515,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.433e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03203708,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03234,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.03193,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03227565,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.736e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03362,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03395,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.454e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03343,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03375067,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.171e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03343906,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.031e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03361,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.776e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03517,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.167e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.0352137,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0351028,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03535613,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.165e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.03500048,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.94e-06,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03473,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.117e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.03512,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.03717,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.511e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.03655376,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.8e-07,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03689,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.49e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03714276,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.028e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03785785,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03682297,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.89e-06,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03603,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.124e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03562233,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.03675544,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03722188,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.79e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03678,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.463e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.0363,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.508e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03652,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.0364,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03596451,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0365,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03619639,
+    "symbol": "PYTHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.18e-06,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03657511,
+    "symbol": "PYTHUSDT"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -5.217e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.00460963,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.004773,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 0.004777,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.243e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.00478784,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.075e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00471051,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019465,
+    "funding_time": 1784361600000,
+    "mark_price": 0.004668,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036575,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0045025,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.934e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.00445994,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013184,
+    "funding_time": 1784275200010,
+    "mark_price": 0.004348,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.8e-07,
+    "funding_time": 1784246400000,
+    "mark_price": 0.004403,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.184e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.00440352,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.47e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.00449038,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.236e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.00456138,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.00444726,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.748e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.004356,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.43e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.00436,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.245e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.004351,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015884,
+    "funding_time": 1784016000002,
+    "mark_price": 0.00437031,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.174e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.00430121,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.94e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.004324,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.323e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.004363,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.023e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.004364,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.421e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.004418,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.279e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.004416,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.00442315,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.284e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.004476,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.00452465,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.004563,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.104e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.00452,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.259e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.004492,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.69e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.004399,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.327e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.00440275,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.543e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.00437557,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00436403,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.798e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.004363,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.725e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.004417,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.004415,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.976e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.004566,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.176e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.00450155,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.461e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.00457,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.00463847,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.92e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.004562,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.883e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.004618,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.527e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.004597,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.00463078,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.0046,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.004663,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.004643,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0047233,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.004586,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.004502,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.004532,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.00453221,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.4e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.00442985,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.208e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.00446186,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.00445215,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.831e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00424026,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.00424907,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.053e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.00432568,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.609e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.00434,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.00439915,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.608e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0044345,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.957e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.004334,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.472e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.004329,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.31e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.00434848,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.00446729,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.614e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.004461,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.502e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0045502,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.766e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.00451499,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.004559,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.643e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0047404,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.00453977,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023325,
+    "funding_time": 1782432000010,
+    "mark_price": 0.00441856,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.778e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.00439092,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023639,
+    "funding_time": 1782374400000,
+    "mark_price": 0.004559,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.6e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.00448498,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019309,
+    "funding_time": 1782316800003,
+    "mark_price": 0.004408,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.314e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.00459367,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.535e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.004671,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010615,
+    "funding_time": 1782230400002,
+    "mark_price": 0.00453775,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012253,
+    "funding_time": 1782201600005,
+    "mark_price": 0.004492,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.14e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 0.00458773,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.00472139,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000149,
+    "funding_time": 1782115200000,
+    "mark_price": 0.004773,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.469e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00459232,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.533e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.00463103,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.004662,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.259e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.00468993,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012623,
+    "funding_time": 1781971200001,
+    "mark_price": 0.00468,
+    "symbol": "JASMYUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014429,
+    "funding_time": 1781942400000,
+    "mark_price": 0.00472,
+    "symbol": "JASMYUSDT"
+  }
+]

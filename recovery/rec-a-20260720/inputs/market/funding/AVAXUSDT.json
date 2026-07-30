@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011531,
+    "funding_time": 1784505600000,
+    "mark_price": 6.462,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.493e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 6.451,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.77e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 6.554,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.488e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 6.57,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.638e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 6.53869286,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 6.60487534,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.536e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 6.58522747,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.583e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 6.47798839,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.26e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 6.474,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.337e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 6.51163817,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.921e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 6.62400339,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.151e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 6.62514457,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.068e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 6.69822925,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.998e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 6.725,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.216e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 6.61754405,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 6.709,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.621e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 6.65294299,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.541e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 6.477,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.621e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 6.447,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.907e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 6.559,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.229e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 6.504,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.817e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 6.403,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017763,
+    "funding_time": 1783872000000,
+    "mark_price": 6.43541267,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022806,
+    "funding_time": 1783843200003,
+    "mark_price": 6.37301246,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.113e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 6.54738828,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 6.749,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.553e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 6.70648269,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.443e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 6.735,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.936e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 6.74,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 6.74927993,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 6.67531578,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 6.75003871,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 6.74208469,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.293e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 6.472,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.09e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 6.37801726,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017907,
+    "funding_time": 1783497600000,
+    "mark_price": 6.44412294,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6e-08,
+    "funding_time": 1783468800000,
+    "mark_price": 6.685,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.896e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 6.76587366,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.396e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 6.76103958,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 6.928,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.857e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 6.916,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.928e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 6.928,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 6.921,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 6.926,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013162,
+    "funding_time": 1783238400001,
+    "mark_price": 6.81204894,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.809e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 6.9622548,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.164e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 6.985,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.299e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 6.86315913,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.203e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 6.94453485,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.479e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 6.82484221,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 6.83532513,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.628e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 6.79820094,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.542e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 6.771,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.69e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 6.66668848,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.433e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 6.662,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.03e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 6.72669019,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.856e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 6.64860402,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.871e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 6.534,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.017e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 6.495,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.92e-06,
+    "funding_time": 1782806400000,
+    "mark_price": 6.57478146,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.998e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 6.67401154,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.278e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 6.655,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.121e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 6.546,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.3e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 6.44363279,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.32e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 6.321,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.078e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 6.33673485,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.347e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 6.42742317,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.606e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 6.633,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 6.559,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 6.629,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.68e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 6.371,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.216e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 6.3096629,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.05e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 6.23,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001103,
+    "funding_time": 1782403200000,
+    "mark_price": 6.113,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.556e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 6.527,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.855e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 6.442,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.43e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 6.23,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.91e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 6.389,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.004e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 6.48,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.98e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 6.3670703,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.915e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 6.153,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.83e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 6.236,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.107e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 6.30295699,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.309e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 6.282,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.466e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 6.10970426,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.478e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 6.32605897,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.191e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 6.284,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.411e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 6.234,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.196e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 6.14597561,
+    "symbol": "AVAXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013524,
+    "funding_time": 1781942400000,
+    "mark_price": 6.146,
+    "symbol": "AVAXUSDT"
+  }
+]

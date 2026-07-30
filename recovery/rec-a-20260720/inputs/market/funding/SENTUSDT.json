@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012193,
+    "funding_time": 1784520000000,
+    "mark_price": 0.01377,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.072e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.01355,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00058226,
+    "funding_time": 1784491200004,
+    "mark_price": 0.01361,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00069483,
+    "funding_time": 1784476800001,
+    "mark_price": 0.01377,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070031,
+    "funding_time": 1784462400000,
+    "mark_price": 0.01383368,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014588,
+    "funding_time": 1784448000000,
+    "mark_price": 0.01385653,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027914,
+    "funding_time": 1784433600000,
+    "mark_price": 0.01349,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037279,
+    "funding_time": 1784419200003,
+    "mark_price": 0.01349,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.75e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.0134451,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019754,
+    "funding_time": 1784390400001,
+    "mark_price": 0.01338,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0006013,
+    "funding_time": 1784376000002,
+    "mark_price": 0.01356125,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024638,
+    "funding_time": 1784361600000,
+    "mark_price": 0.01327,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037696,
+    "funding_time": 1784347200000,
+    "mark_price": 0.01331,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035618,
+    "funding_time": 1784332800000,
+    "mark_price": 0.01347,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053999,
+    "funding_time": 1784318400000,
+    "mark_price": 0.01343651,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.818e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.01361,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00343262,
+    "funding_time": 1784289600004,
+    "mark_price": 0.01407,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049853,
+    "funding_time": 1784275200010,
+    "mark_price": 0.01376888,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029483,
+    "funding_time": 1784260800000,
+    "mark_price": 0.01361206,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.081e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.01344283,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.068e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.0132,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.214e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.01346466,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002201,
+    "funding_time": 1784203200001,
+    "mark_price": 0.01301507,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.379e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.01325573,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.103e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.01338528,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013843,
+    "funding_time": 1784160000000,
+    "mark_price": 0.01345685,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.752e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.0133263,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.396e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.01342,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.01344173,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.576e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.01360399,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.32e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.01332,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.27e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.01359,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018744,
+    "funding_time": 1784059200000,
+    "mark_price": 0.01337,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.84e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 0.01344531,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013891,
+    "funding_time": 1784030400001,
+    "mark_price": 0.01351,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037957,
+    "funding_time": 1784016000002,
+    "mark_price": 0.01399,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057949,
+    "funding_time": 1784001600000,
+    "mark_price": 0.01404,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00088442,
+    "funding_time": 1783987200000,
+    "mark_price": 0.01391,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00459178,
+    "funding_time": 1783972800000,
+    "mark_price": 0.01508,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0009791,
+    "funding_time": 1783958400004,
+    "mark_price": 0.01405112,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.565e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.01353,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012635,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0133,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.408e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.01319,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016179,
+    "funding_time": 1783900800000,
+    "mark_price": 0.01339,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023786,
+    "funding_time": 1783886400002,
+    "mark_price": 0.01364,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040647,
+    "funding_time": 1783872000000,
+    "mark_price": 0.01328668,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054717,
+    "funding_time": 1783857600000,
+    "mark_price": 0.01340527,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047591,
+    "funding_time": 1783843200003,
+    "mark_price": 0.01331338,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053235,
+    "funding_time": 1783828800000,
+    "mark_price": 0.01363598,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00066284,
+    "funding_time": 1783814400000,
+    "mark_price": 0.01360114,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044025,
+    "funding_time": 1783800000000,
+    "mark_price": 0.01387485,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046785,
+    "funding_time": 1783785600000,
+    "mark_price": 0.01384573,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003706,
+    "funding_time": 1783771200008,
+    "mark_price": 0.01387008,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00061909,
+    "funding_time": 1783756800000,
+    "mark_price": 0.0141,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031886,
+    "funding_time": 1783742400000,
+    "mark_price": 0.01408602,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00069687,
+    "funding_time": 1783728000000,
+    "mark_price": 0.01461483,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002753,
+    "funding_time": 1783713600000,
+    "mark_price": 0.01469521,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032622,
+    "funding_time": 1783699200005,
+    "mark_price": 0.01472,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004336,
+    "funding_time": 1783684800002,
+    "mark_price": 0.01483,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011923,
+    "funding_time": 1783670400005,
+    "mark_price": 0.01534,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052649,
+    "funding_time": 1783656000000,
+    "mark_price": 0.01582,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00209463,
+    "funding_time": 1783641600000,
+    "mark_price": 0.01705,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0031642,
+    "funding_time": 1783627200000,
+    "mark_price": 0.01759,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023916,
+    "funding_time": 1783612800001,
+    "mark_price": 0.01582,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.125e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.0143,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.839e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.01382,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.699e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.013688,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.543e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.01367368,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.01393731,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.714e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.01392936,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.6e-06,
+    "funding_time": 1783512000005,
+    "mark_price": 0.01344,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.01358,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.069e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.01351,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.89e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.01381,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.01e-06,
+    "funding_time": 1783454400000,
+    "mark_price": 0.01391,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.957e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.01435,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.003e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.01477119,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.354e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.01526446,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.01540305,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.01483537,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.01527193,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.01436,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.01528933,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.01465,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.01462,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.01454006,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.01457,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.01454714,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.01465371,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.01522277,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.01481,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.01456718,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.01470259,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.01473,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.01402727,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.01439376,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.01486794,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.01431059,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.01431255,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.0146,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.01402,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.01373045,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.01341,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.01348,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.01332472,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01332395,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.01340605,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.01336988,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.01338,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.01297,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.01285486,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.01310461,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.012778,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.01305606,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.01336,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.01284027,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.01235,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.01264,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.01283382,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.01338,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.01347139,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.01332513,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.01329546,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0134,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.01357809,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.01334526,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.01318147,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.01294558,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.01297495,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.01313,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.01332405,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.01293507,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.01306,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.01281,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.01276,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.01283,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.01287,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.01302,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.01322,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.01317,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.01301,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01296316,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.01282,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.01284,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.01270051,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.01253337,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.01263,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.01279,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.01313678,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.01304,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.01298,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.01333513,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.01351078,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.01368,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0141,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.01403,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.01406,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.01412,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.01423263,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.01394514,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.01373,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.01422425,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.01433534,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.01462,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.01485204,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.01502,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.01526,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.01497506,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.0148,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.01503562,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.01503,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.01521479,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.01556412,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.01558435,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.0156068,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.01519,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.01525,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.01539239,
+    "symbol": "SENTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.01557,
+    "symbol": "SENTUSDT"
+  }
+]

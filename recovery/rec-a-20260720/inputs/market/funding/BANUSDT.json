@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.074337,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.073595,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042728,
+    "funding_time": 1784491200004,
+    "mark_price": 0.07272,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011006,
+    "funding_time": 1784476800001,
+    "mark_price": 0.0732,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.073,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.073843,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.07418,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.07324,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.737e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.07323523,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.363e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.073265,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.070945,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.07123207,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.0714269,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.07197785,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.07167,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.07542,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.0701,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.07022,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.07117604,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.07169,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.07212176,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.073605,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.07312,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00047152,
+    "funding_time": 1784188800003,
+    "mark_price": 0.073005,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016996,
+    "funding_time": 1784174400003,
+    "mark_price": 0.07300344,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.07385,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.07418894,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.07451826,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.07515,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.07187241,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.07217444,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.0735877,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012996,
+    "funding_time": 1784059200000,
+    "mark_price": 0.07261639,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.07284,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.07266717,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.0744095,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.07413,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.07375,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.07682483,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015076,
+    "funding_time": 1783958400004,
+    "mark_price": 0.07355,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.06814,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.069273,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.0690293,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.07025167,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.07125122,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.07217,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.07246104,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.07177367,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.07253467,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.07328,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.07359956,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.07375,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.0735,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.07351,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.07263,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0731,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.07286272,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.07365989,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.07377,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.07467,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.07985,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.07557,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.07513,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.07358444,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.07410722,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.07454,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.07438444,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.07618542,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.07648317,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.07545621,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.07723556,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.07538383,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.07505672,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.07398,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013529,
+    "funding_time": 1783454400000,
+    "mark_price": 0.073096,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022275,
+    "funding_time": 1783440000000,
+    "mark_price": 0.07338794,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00051242,
+    "funding_time": 1783425600010,
+    "mark_price": 0.07302172,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038909,
+    "funding_time": 1783411200000,
+    "mark_price": 0.07302,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029027,
+    "funding_time": 1783396800000,
+    "mark_price": 0.073008,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00047165,
+    "funding_time": 1783382400000,
+    "mark_price": 0.07313272,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.07352,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.07398115,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016291,
+    "funding_time": 1783339200002,
+    "mark_price": 0.07316,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.07386276,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.0735,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.07346,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010496,
+    "funding_time": 1783281600000,
+    "mark_price": 0.07333674,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.07389,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012855,
+    "funding_time": 1783252800000,
+    "mark_price": 0.07443,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.07366,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.07374,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.07402,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.07381567,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.07398,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.074165,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.07386417,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.07335639,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.07203,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0008743,
+    "funding_time": 1783108800001,
+    "mark_price": 0.0730075,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.07397,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.07217,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023974,
+    "funding_time": 1783065600007,
+    "mark_price": 0.073,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.07306,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.07147135,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.07152,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.07177,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.07262644,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.07224856,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.07235498,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.07103567,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.07167,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.479e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.076074,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011115,
+    "funding_time": 1782907200000,
+    "mark_price": 0.07681757,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.07591,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.07529398,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.07101,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.07169728,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.07178,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00048774,
+    "funding_time": 1782820800002,
+    "mark_price": 0.07306,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023696,
+    "funding_time": 1782806400000,
+    "mark_price": 0.07309086,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.073615,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.07665757,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001006,
+    "funding_time": 1782763200000,
+    "mark_price": 0.075902,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010812,
+    "funding_time": 1782748800004,
+    "mark_price": 0.07226,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.07334,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.07103483,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.07260885,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014206,
+    "funding_time": 1782691200006,
+    "mark_price": 0.07369743,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.07348791,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.07276196,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.07538,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.07471283,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012288,
+    "funding_time": 1782619200002,
+    "mark_price": 0.07613,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042713,
+    "funding_time": 1782604800000,
+    "mark_price": 0.07181,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00073658,
+    "funding_time": 1782590400000,
+    "mark_price": 0.07300796,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00073191,
+    "funding_time": 1782576000009,
+    "mark_price": 0.07309263,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044271,
+    "funding_time": 1782561600001,
+    "mark_price": 0.07302139,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.328e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0747065,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.074283,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.07480033,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.07550303,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.07239867,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.07135,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.07357,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.07358,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.07257,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.07042,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.07184,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.07284636,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.07194262,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.07106,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.074295,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.07351739,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044055,
+    "funding_time": 1782316800003,
+    "mark_price": 0.07304293,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.772e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0733772,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.07410724,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0755482,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.07631069,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.07441,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00081247,
+    "funding_time": 1782216000000,
+    "mark_price": 0.07301,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.07328,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015464,
+    "funding_time": 1782187200000,
+    "mark_price": 0.0732,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002166,
+    "funding_time": 1782172800003,
+    "mark_price": 0.07300294,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.07325,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00076299,
+    "funding_time": 1782144000002,
+    "mark_price": 0.07315762,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.07420588,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.07442278,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.07235,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.07187817,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.07163567,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.07095,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.06528248,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.06650192,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.06607854,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.06524778,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.06600278,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0669762,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.06623245,
+    "symbol": "BANUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.06673,
+    "symbol": "BANUSDT"
+  }
+]

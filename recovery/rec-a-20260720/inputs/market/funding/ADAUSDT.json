@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -1.177e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.16604979,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.389e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1662,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1656092,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.231e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.1667,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 0.16441757,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 0.1661446,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.16652846,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.712e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.16409688,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.949e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.15878321,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.584e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1607,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.704e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.16355534,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.85e-06,
+    "funding_time": 1784188800003,
+    "mark_price": 0.16284804,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013604,
+    "funding_time": 1784160000000,
+    "mark_price": 0.165,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.711e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1656,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.814e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.16307183,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013137,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1654,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015931,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1655,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.489e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1586,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.989e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.15738267,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.16e-06,
+    "funding_time": 1783958400004,
+    "mark_price": 0.15885709,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.699e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1603522,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.794e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.1619,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.182e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1645,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015952,
+    "funding_time": 1783843200003,
+    "mark_price": 0.16350827,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013042,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1657,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.413e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.17171267,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015987,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1677,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015085,
+    "funding_time": 1783728000000,
+    "mark_price": 0.16657091,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001783,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1664,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.1664783,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011066,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1665,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.665e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.16655393,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.541e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1681146,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.245e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.16694484,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.314e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.1655,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.421e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1695,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.658e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1745,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.167e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1771,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1794,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.121e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.18407102,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.1858,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.18413533,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1895,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.18905655,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.19292855,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.19209886,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1909,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.17592181,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.17987444,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.17354498,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.16500042,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.16145272,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1607,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.15504718,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1539,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.878e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.15517247,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.15005804,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.367e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.1442,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.848e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1443,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.381e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.14495587,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.811e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.14561117,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.88e-06,
+    "funding_time": 1782748800004,
+    "mark_price": 0.14540121,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013679,
+    "funding_time": 1782720000013,
+    "mark_price": 0.14493027,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.741e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.14372551,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.355e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.14445913,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022043,
+    "funding_time": 1782633600013,
+    "mark_price": 0.1451,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010374,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1452,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.96e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1488,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.091e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1476,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.84e-06,
+    "funding_time": 1782518400000,
+    "mark_price": 0.14839698,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.233e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.148,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.827e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1466,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.087e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1437748,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.737e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1432,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.798e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.14974356,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020945,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1476,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018974,
+    "funding_time": 1782316800003,
+    "mark_price": 0.14370415,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.258e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.15048615,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.589e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1514,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012289,
+    "funding_time": 1782230400002,
+    "mark_price": 0.15085205,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013072,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1545,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026358,
+    "funding_time": 1782172800003,
+    "mark_price": 0.1584,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010145,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1594,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.523e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.16170495,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010834,
+    "funding_time": 1782086400000,
+    "mark_price": 0.15646271,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.268e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.16225006,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002929,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1615,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.377e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.16314191,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.793e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.16207337,
+    "symbol": "ADAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017062,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1629,
+    "symbol": "ADAUSDT"
+  }
+]

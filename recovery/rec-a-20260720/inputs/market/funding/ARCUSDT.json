@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.07226,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015779,
+    "funding_time": 1784505600000,
+    "mark_price": 0.07091408,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.07013233,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031249,
+    "funding_time": 1784476800001,
+    "mark_price": 0.06969,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.06984,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023264,
+    "funding_time": 1784448000000,
+    "mark_price": 0.07129979,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.07108,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.071135,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.07158,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.07146792,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011639,
+    "funding_time": 1784376000002,
+    "mark_price": 0.07166,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.072665,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.07333978,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.07325,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.07272409,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.07206417,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.073165,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.07241129,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.0734865,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.07472733,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.07424,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.0734425,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.07258538,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.07589917,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.07524,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.07654283,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.07659,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.63e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.07734,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019662,
+    "funding_time": 1784116800003,
+    "mark_price": 0.08061,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036471,
+    "funding_time": 1784102400002,
+    "mark_price": 0.08284,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042458,
+    "funding_time": 1784088000003,
+    "mark_price": 0.08178,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033719,
+    "funding_time": 1784073600005,
+    "mark_price": 0.08053,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00070914,
+    "funding_time": 1784059200000,
+    "mark_price": 0.0805,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.07116,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.06992,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.07246438,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.07321262,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.07426,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.07494,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012898,
+    "funding_time": 1783958400004,
+    "mark_price": 0.07666828,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018501,
+    "funding_time": 1783944000000,
+    "mark_price": 0.07775,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023578,
+    "funding_time": 1783929600001,
+    "mark_price": 0.07926654,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.07772592,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019335,
+    "funding_time": 1783900800000,
+    "mark_price": 0.07835738,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040181,
+    "funding_time": 1783886400002,
+    "mark_price": 0.07889,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020121,
+    "funding_time": 1783872000000,
+    "mark_price": 0.07879,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.07722479,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019186,
+    "funding_time": 1783843200003,
+    "mark_price": 0.07719,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012585,
+    "funding_time": 1783828800000,
+    "mark_price": 0.07859,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00037162,
+    "funding_time": 1783814400000,
+    "mark_price": 0.07886275,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011903,
+    "funding_time": 1783800000000,
+    "mark_price": 0.07902,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.07797957,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.713e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.07795,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010835,
+    "funding_time": 1783756800000,
+    "mark_price": 0.07903,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.823e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.07954,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028668,
+    "funding_time": 1783728000000,
+    "mark_price": 0.07971,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034591,
+    "funding_time": 1783713600000,
+    "mark_price": 0.07954,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00037102,
+    "funding_time": 1783699200005,
+    "mark_price": 0.08008,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022898,
+    "funding_time": 1783684800002,
+    "mark_price": 0.07987,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012168,
+    "funding_time": 1783670400005,
+    "mark_price": 0.07897,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030238,
+    "funding_time": 1783656000000,
+    "mark_price": 0.07972512,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.772e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.07925,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.08012483,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.07851,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004008,
+    "funding_time": 1783598400002,
+    "mark_price": 0.07892,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021207,
+    "funding_time": 1783584000001,
+    "mark_price": 0.07917,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.0813,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.08154901,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026231,
+    "funding_time": 1783540800006,
+    "mark_price": 0.07829,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012122,
+    "funding_time": 1783526400000,
+    "mark_price": 0.07836,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.251e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.07845,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.0791945,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.07971,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.08109293,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022299,
+    "funding_time": 1783454400000,
+    "mark_price": 0.08146,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019672,
+    "funding_time": 1783440000000,
+    "mark_price": 0.07980125,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.07927475,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.08006,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.08161875,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.08249,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.0839,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.08374,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.08204208,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.861e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.08214,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019249,
+    "funding_time": 1783310400000,
+    "mark_price": 0.0821,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014111,
+    "funding_time": 1783296000000,
+    "mark_price": 0.08155,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.428e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.08127,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.08208384,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017601,
+    "funding_time": 1783252800000,
+    "mark_price": 0.08180683,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.078985,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.07856,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.07814,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.07808,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.07971,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.08013492,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.080145,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.07929,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.07909,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.07983,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.07876,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.08024,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.08116975,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.08237,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.08306783,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.08354383,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.08338,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.08536,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.08287033,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.08391,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.08343788,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.0839935,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.08373,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016675,
+    "funding_time": 1782907200000,
+    "mark_price": 0.0837,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003287,
+    "funding_time": 1782892800000,
+    "mark_price": 0.08658,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030786,
+    "funding_time": 1782878400001,
+    "mark_price": 0.08603,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.08437,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020695,
+    "funding_time": 1782849600003,
+    "mark_price": 0.08640833,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013459,
+    "funding_time": 1782835200005,
+    "mark_price": 0.08372142,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.08487,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00062701,
+    "funding_time": 1782806400000,
+    "mark_price": 0.08493,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.08431433,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.08386725,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.08574,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003324,
+    "funding_time": 1782748800004,
+    "mark_price": 0.08344825,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012137,
+    "funding_time": 1782734400001,
+    "mark_price": 0.08571425,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.236e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.08778817,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00049384,
+    "funding_time": 1782705600000,
+    "mark_price": 0.08902492,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.08839,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011622,
+    "funding_time": 1782676800003,
+    "mark_price": 0.08842629,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.08641,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031471,
+    "funding_time": 1782648000008,
+    "mark_price": 0.08594,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023062,
+    "funding_time": 1782633600013,
+    "mark_price": 0.08716633,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.766e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.08676,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.08419246,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029133,
+    "funding_time": 1782590400000,
+    "mark_price": 0.08638,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024126,
+    "funding_time": 1782576000009,
+    "mark_price": 0.08821,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.08197,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.08248,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.0834635,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.08425667,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.08392,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.08261571,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.08045517,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.08273,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.07941871,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.08389,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.273e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.08267183,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.733e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.08386,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038334,
+    "funding_time": 1782388800006,
+    "mark_price": 0.08878,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002377,
+    "funding_time": 1782374400000,
+    "mark_price": 0.08848858,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.08140533,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.08279,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.08012417,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010352,
+    "funding_time": 1782316800003,
+    "mark_price": 0.08241,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.08352167,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.08197,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001215,
+    "funding_time": 1782259200005,
+    "mark_price": 0.08299,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.266e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.082721,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.08462,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00066239,
+    "funding_time": 1782216000000,
+    "mark_price": 0.08887071,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00065809,
+    "funding_time": 1782201600005,
+    "mark_price": 0.08839858,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.08344,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017592,
+    "funding_time": 1782172800003,
+    "mark_price": 0.0840825,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.08305,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.08207233,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.191e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.08118,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.08045,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.08114,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.08036,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.080695,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.08105,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.565e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.08078633,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.08028579,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.08045,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.08009,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.07918,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.08022288,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.07911133,
+    "symbol": "ARCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.07979808,
+    "symbol": "ARCUSDT"
+  }
+]

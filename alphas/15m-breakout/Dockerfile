@@ -9,4 +9,5 @@ COPY 15m-breakout/app/ ./app/
 COPY 15m-breakout/main.py 15m-breakout/spec.json 15m-breakout/config.toml ./
 COPY 15m-breakout/data/ ./data/
 COPY 15m-breakout/blacklist.txt .
+COPY 15m-breakout/whitelist.txt .
 CMD ["python", "main.py"]

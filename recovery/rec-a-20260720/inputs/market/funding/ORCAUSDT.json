@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.598e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 1.191,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.206,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 1.20207769,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.18355919,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.17450371,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.18,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 1.1844957,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.179,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 1.177,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.165,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.16850132,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.16550948,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.16949781,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.17150139,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 1.17600867,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.17226493,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 1.17,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.166,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 1.17943921,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.18849501,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 1.195,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.214,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 1.218,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.20515384,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 1.19851494,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.207,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 1.1975023,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.21149172,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 1.211,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.08e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.22023558,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 1.19921074,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.769e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.179,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 1.171,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.323e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.17842918,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.541e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 1.147,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.703e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.143,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.128502,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.1354857,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 1.143,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.14448863,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.45e-06,
+    "funding_time": 1783944000000,
+    "mark_price": 1.14249308,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.853e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.148,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027704,
+    "funding_time": 1783915200000,
+    "mark_price": 1.146,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.161,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 1.16649504,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010832,
+    "funding_time": 1783872000000,
+    "mark_price": 1.16350645,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.918e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 1.162,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.15553722,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.98e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 1.163,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.122e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 1.169,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.097e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 1.191,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.36e-06,
+    "funding_time": 1783785600000,
+    "mark_price": 1.193,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 1.19350563,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.18248739,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.381e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 1.18450306,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.192,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 1.198,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.20471298,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012345,
+    "funding_time": 1783684800002,
+    "mark_price": 1.207,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.546e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.205484,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 1.215,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.857e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.209,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 1.202,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.869e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.199,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 1.212,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.828e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.205,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.185,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.688e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.20710758,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.691e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 1.189,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.312e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.19,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 1.213,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 1.22549671,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 1.22349664,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 1.252,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 1.27049985,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.29694383,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 1.269,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.245,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.22421319,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.24493989,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.256,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.243,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.22701507,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.241,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.23985757,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.259,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 1.246,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.28686218,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 1.2274498,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.22683046,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 1.23050147,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.239,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 1.24179006,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.238,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 1.232,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.24956846,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 1.24549385,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.25662064,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 1.25349829,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.23358083,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 1.228,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.20949926,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 1.21848468,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1.22350531,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 1.22447622,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.91e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.23350271,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 1.22044511,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.754e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.18250484,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 1.20447899,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.196,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.151e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 1.189,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.455e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.19750292,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.18349135,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.177,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.18751995,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.17048288,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 1.17539158,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 1.176,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.65e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 1.18,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.197,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.34e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 1.20510829,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.217,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.769e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 1.22,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.883e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.20419445,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.617e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 1.196,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.46e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1.18074307,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 1.18250443,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.163,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 1.171,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.17106987,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 1.17351288,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.166,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 1.166,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.166,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.327e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 1.16607637,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.188,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 1.18049295,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.18152963,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 1.183,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.18665333,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 1.18482825,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.166,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 1.13015294,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.15,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.497e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 1.11321693,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.672e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.108,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.512e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 1.073,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.907e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.0870962,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.716e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.12449825,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.494e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.141,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.101e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.12998859,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.311e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.119,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.088e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 1.0895007,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033108,
+    "funding_time": 1782316800003,
+    "mark_price": 1.11905263,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010484,
+    "funding_time": 1782302400005,
+    "mark_price": 1.13409802,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023056,
+    "funding_time": 1782288000005,
+    "mark_price": 1.12722328,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019563,
+    "funding_time": 1782259200005,
+    "mark_price": 1.15286472,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.048e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.157,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010158,
+    "funding_time": 1782230400002,
+    "mark_price": 1.15951184,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00103793,
+    "funding_time": 1782216000000,
+    "mark_price": 1.16748331,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0007418,
+    "funding_time": 1782201600005,
+    "mark_price": 1.15352126,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043887,
+    "funding_time": 1782187200000,
+    "mark_price": 1.19944565,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.20751896,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.104e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 1.20698923,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.2253694,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.735e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.23302196,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.086e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.213,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.209e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.214,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.496e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.18831405,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.047e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.214,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.886e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.21644601,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.509e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 1.231,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.445e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.237,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.623e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.253,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012886,
+    "funding_time": 1782000000000,
+    "mark_price": 1.235,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.573e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.208,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.525e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.208,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.043e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.225,
+    "symbol": "ORCAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018137,
+    "funding_time": 1781942400000,
+    "mark_price": 1.22849308,
+    "symbol": "ORCAUSDT"
+  }
+]

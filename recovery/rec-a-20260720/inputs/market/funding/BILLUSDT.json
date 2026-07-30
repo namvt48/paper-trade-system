@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011488,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02488,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028854,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02515049,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016958,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02515734,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012424,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02693549,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014895,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02717786,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00058712,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02631,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.523e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.02506585,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014262,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02514,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034898,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02466501,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031696,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02387561,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004039,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02428748,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00080634,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02336,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00071389,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02208,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014104,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02322,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012566,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02345,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02397031,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016662,
+    "funding_time": 1784289600004,
+    "mark_price": 0.02748,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010784,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02265052,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048904,
+    "funding_time": 1784260800000,
+    "mark_price": 0.0259,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018063,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02653,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018421,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02818,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005095,
+    "funding_time": 1784217600002,
+    "mark_price": 0.02904643,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030074,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02972,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.312e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02927,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045139,
+    "funding_time": 1784174400003,
+    "mark_price": 0.03099,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079278,
+    "funding_time": 1784160000000,
+    "mark_price": 0.03409,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074404,
+    "funding_time": 1784145600002,
+    "mark_price": 0.0351,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00146643,
+    "funding_time": 1784131200000,
+    "mark_price": 0.03509,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00061929,
+    "funding_time": 1784116800003,
+    "mark_price": 0.0328255,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002645,
+    "funding_time": 1784102400002,
+    "mark_price": 0.03698,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012503,
+    "funding_time": 1784088000003,
+    "mark_price": 0.03902036,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.987e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.04154518,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035042,
+    "funding_time": 1784059200000,
+    "mark_price": 0.0421459,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.882e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.04585,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028135,
+    "funding_time": 1784030400001,
+    "mark_price": 0.0669088,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018704,
+    "funding_time": 1784016000002,
+    "mark_price": 0.06573516,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010289,
+    "funding_time": 1784001600000,
+    "mark_price": 0.05632936,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013536,
+    "funding_time": 1783987200000,
+    "mark_price": 0.05987378,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.05804138,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.209e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.05949935,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026598,
+    "funding_time": 1783944000000,
+    "mark_price": 0.0545,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019368,
+    "funding_time": 1783929600001,
+    "mark_price": 0.04802,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013083,
+    "funding_time": 1783915200000,
+    "mark_price": 0.05178,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.558e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.04957,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.637e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.05177,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.04937709,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.04579,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.04407973,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.04302,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.04097,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.0403725,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03931672,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.03919,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03872176,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03947184,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.03938506,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.03820494,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03904415,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03776671,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03719852,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.03796289,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03787484,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.03766617,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03702514,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.03766,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03816,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.0374174,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03756586,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.03867,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03614,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.03689236,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03729231,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.03671895,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.04002573,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.04013173,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.04330715,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015889,
+    "funding_time": 1783425600010,
+    "mark_price": 0.04376,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.761e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.04377883,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.04231815,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.04292,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.04362,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0412158,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.04298255,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.04362431,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.0445,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.04252,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.04211439,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.0411195,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03979427,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.04069,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.04075,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.04132501,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.04212,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.04240611,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.04195,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.04151634,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.04136794,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.04115,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.04122041,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.04225407,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.04244,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.04418416,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.04589434,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.04525849,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.04395,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.04343,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.04278063,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.04233785,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.0425,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0434,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.04356,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.04315,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.04215,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.04287549,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.04321002,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.04462843,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.502e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.04642,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.04527339,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.04579,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.04738437,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.04758353,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.037e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.05511845,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023025,
+    "funding_time": 1782763200000,
+    "mark_price": 0.05045,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019449,
+    "funding_time": 1782748800004,
+    "mark_price": 0.04706,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.11e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.04325498,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.438e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.04328642,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017156,
+    "funding_time": 1782705600000,
+    "mark_price": 0.04266078,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.677e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.04409041,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.288e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.04243,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.539e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.04541065,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.788e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.04327372,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019854,
+    "funding_time": 1782633600013,
+    "mark_price": 0.04187,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027121,
+    "funding_time": 1782619200002,
+    "mark_price": 0.04139795,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014005,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03923814,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012796,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03901,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021995,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0403814,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016294,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03971968,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026566,
+    "funding_time": 1782547200000,
+    "mark_price": 0.04034265,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020369,
+    "funding_time": 1782532800000,
+    "mark_price": 0.04049,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001432,
+    "funding_time": 1782518400000,
+    "mark_price": 0.04104,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.04095,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.04116564,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.04059,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.04086922,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.04189,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.04142796,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.04169,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.04094508,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.04264684,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.04286,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.04411,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.04512,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.04379044,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.04561,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.05286,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.05156,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0508108,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.05068,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.05200431,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.05206226,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.05358631,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.05584,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.05626,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.05690428,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.0576131,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.06114,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011833,
+    "funding_time": 1782115200000,
+    "mark_price": 0.06057655,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012805,
+    "funding_time": 1782100800000,
+    "mark_price": 0.05934,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.05801044,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.05742617,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.973e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.05733,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.05367718,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.05577,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.0553,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.05625877,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.05618955,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.05676,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.05591,
+    "symbol": "BILLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.05675,
+    "symbol": "BILLUSDT"
+  }
+]

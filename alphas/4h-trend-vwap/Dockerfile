@@ -8,4 +8,5 @@ COPY 4h-trend-vwap/app/ ./app/
 COPY 4h-trend-vwap/main.py 4h-trend-vwap/spec.json 4h-trend-vwap/config.toml ./
 COPY 4h-trend-vwap/data/ ./data/
 COPY 4h-trend-vwap/blacklist.txt .
+COPY 4h-trend-vwap/whitelist.txt .
 CMD ["python", "main.py"]

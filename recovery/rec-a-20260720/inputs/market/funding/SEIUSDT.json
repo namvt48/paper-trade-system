@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 3.49e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.0465,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.102e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.04652,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.403e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.04656,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.483e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0468173,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.926e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.04638348,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013933,
+    "funding_time": 1784361600000,
+    "mark_price": 0.04664275,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.194e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0469,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.279e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.04755,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.437e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.04655177,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.65e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.04705,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.648e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.04811797,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.132e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.04801298,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.926e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.04840374,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.107e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.04868,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.07e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 0.04791817,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.724e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.04849,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.418e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.04872,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015164,
+    "funding_time": 1784016000002,
+    "mark_price": 0.04768707,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018849,
+    "funding_time": 1783987200000,
+    "mark_price": 0.04722308,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.2e-07,
+    "funding_time": 1783958400004,
+    "mark_price": 0.04801129,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.397e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.04823,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.848e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.04834122,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.159e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.049023,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.825e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.04898,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.443e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.0489995,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.16e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.05041,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.108e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.04997,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.04994,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.04985,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.04948727,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.04972,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.279e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.04732,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.119e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.04791,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.22e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 0.04717,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021081,
+    "funding_time": 1783526400000,
+    "mark_price": 0.0464,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027083,
+    "funding_time": 1783497600000,
+    "mark_price": 0.04682777,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.12e-06,
+    "funding_time": 1783468800000,
+    "mark_price": 0.0480609,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.39e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.04939,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.855e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.04978,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.262e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.05057,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.991e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.04993091,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012103,
+    "funding_time": 1783324800000,
+    "mark_price": 0.04895538,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.838e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.04995692,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019158,
+    "funding_time": 1783267200000,
+    "mark_price": 0.04855,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012934,
+    "funding_time": 1783238400001,
+    "mark_price": 0.0489079,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.521e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.05012,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.426e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.05009,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.622e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.04946438,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.597e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.04995788,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.076e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.04981401,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.257e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.04954066,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028131,
+    "funding_time": 1783036800000,
+    "mark_price": 0.04823682,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.254e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.04779,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.002e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.04721,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.684e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.04731548,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.304e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.04807,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021699,
+    "funding_time": 1782892800000,
+    "mark_price": 0.04664405,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.002e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.04743,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.958e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.04803,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.499e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0499,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.78e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.04985,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.418e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.049525,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.946e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.04999,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.152e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.04962449,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.992e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.04971,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.285e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.05028,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.458e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.05036,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.982e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0515,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.346e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0521335,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.372e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.0531351,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.9e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 0.05286,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.336e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.05427005,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.551e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.05721563,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782403200000,
+    "mark_price": 0.05728,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.05746858,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.05529351,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.227e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.05239,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.549e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.05261,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.429e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.05275515,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.99e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.05244,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012217,
+    "funding_time": 1782201600005,
+    "mark_price": 0.05292,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.39e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.05452994,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.05482,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.58e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 0.05492485,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.17e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.05450347,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.669e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.0556,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.883e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.05561,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.577e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.05458716,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.12e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 0.05426,
+    "symbol": "SEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.842e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.05463,
+    "symbol": "SEIUSDT"
+  }
+]

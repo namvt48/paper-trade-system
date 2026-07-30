@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 6.561,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 6.52511667,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.822e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 6.449,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.115e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 6.371,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.488e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 6.26941667,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.614e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 6.272,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 6.0815,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 6.08998276,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 5.852,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.584e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 5.992,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 6.0,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 6.06945,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.7e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 5.96918333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.703e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 5.97088333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017053,
+    "funding_time": 1784102400002,
+    "mark_price": 5.88003333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.558e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 5.932,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 5.95,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018683,
+    "funding_time": 1784016000002,
+    "mark_price": 5.706,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 5.747,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 5.638,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 5.67428333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 5.7505,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 5.835,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.113e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 5.899,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.612e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 5.917,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.433e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 6.062,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 5.974,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 6.04545,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.936e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 6.17635,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.575e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 6.2055,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.309e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 5.97303448,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 5.9134375,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 5.851,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.808e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 5.70878125,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 5.508,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.17e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 5.747,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017247,
+    "funding_time": 1783468800000,
+    "mark_price": 5.73,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 5.91425,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 5.891,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015224,
+    "funding_time": 1783382400000,
+    "mark_price": 5.935,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 5.966,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010014,
+    "funding_time": 1783324800000,
+    "mark_price": 5.86259375,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.644e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 5.9775,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 5.90641354,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 5.909,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 5.94,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 6.001,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.529e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 5.923,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 6.0206,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.931e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 6.021,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.557e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 5.949,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.751e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 5.908,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.796e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 5.73,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011807,
+    "funding_time": 1782979200000,
+    "mark_price": 5.619,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 5.585,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 5.591,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 5.36421444,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 5.291,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 5.50651875,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.24e-06,
+    "funding_time": 1782806400000,
+    "mark_price": 5.462,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016284,
+    "funding_time": 1782777600000,
+    "mark_price": 5.432,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.129e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 5.411,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.108e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 5.40876667,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.322e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 5.401,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.926e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 5.43698333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.315e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 5.38929167,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.64e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 5.4065,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.23e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 5.547,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 5.56806875,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 5.69121875,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 5.366,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.705e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 5.341,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 5.279,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020802,
+    "funding_time": 1782403200000,
+    "mark_price": 5.227,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.517e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 5.43510345,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 5.34634375,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782316800003,
+    "mark_price": 5.283,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.037e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 5.49443333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.161e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 5.52903333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 5.54976667,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036794,
+    "funding_time": 1782201600005,
+    "mark_price": 5.59213333,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.44e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 5.7779625,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.176e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 5.86703854,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.98e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 5.894,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020455,
+    "funding_time": 1782086400000,
+    "mark_price": 5.827,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.238e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 5.961,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.496e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 5.986,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 6.09137931,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 6.117,
+    "symbol": "GMXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 6.15315417,
+    "symbol": "GMXUSDT"
+  }
+]

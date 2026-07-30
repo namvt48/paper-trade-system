@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022739,
+    "funding_time": 1784520000000,
+    "mark_price": 0.63937253,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.616e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.6313,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.6293,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023121,
+    "funding_time": 1784476800001,
+    "mark_price": 0.6457,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023363,
+    "funding_time": 1784462400000,
+    "mark_price": 0.6495,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.195e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.64979083,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011411,
+    "funding_time": 1784433600000,
+    "mark_price": 0.6555,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011151,
+    "funding_time": 1784419200003,
+    "mark_price": 0.65447933,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030644,
+    "funding_time": 1784404800004,
+    "mark_price": 0.65345,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016837,
+    "funding_time": 1784390400001,
+    "mark_price": 0.65285167,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027078,
+    "funding_time": 1784376000002,
+    "mark_price": 0.6502,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014263,
+    "funding_time": 1784361600000,
+    "mark_price": 0.6527,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.003e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.65874933,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.64998724,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.65082501,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.431e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.6551,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.372e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.67257646,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.6487,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.66002642,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.627255,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.63350741,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.651961,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.6611,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.6645,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.6708,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.68006686,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.6618,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.837e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.6697,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.67235411,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.95e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.690248,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015961,
+    "funding_time": 1784088000003,
+    "mark_price": 0.6949,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.6632077,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.981e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.6668,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.069e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.6701304,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.6474,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.6453,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.65245367,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.65896639,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.6612,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.6685,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.751e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.6711,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010518,
+    "funding_time": 1783929600001,
+    "mark_price": 0.672036,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.65768066,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.666,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.336e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.67672733,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.6726,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.673,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.672484,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.6792,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.187e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.68736538,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.7079,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014109,
+    "funding_time": 1783785600000,
+    "mark_price": 0.7046,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010948,
+    "funding_time": 1783771200008,
+    "mark_price": 0.69943533,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013194,
+    "funding_time": 1783756800000,
+    "mark_price": 0.686756,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.68594578,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010967,
+    "funding_time": 1783728000000,
+    "mark_price": 0.68681218,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.68411767,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.244e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.693202,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.754e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.6851,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.67621531,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.192e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.6821,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.6832,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015889,
+    "funding_time": 1783627200000,
+    "mark_price": 0.6857,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.67509207,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.6792,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.68364,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.6796,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.518e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.68677162,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.6712,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016543,
+    "funding_time": 1783526400000,
+    "mark_price": 0.680065,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021098,
+    "funding_time": 1783512000005,
+    "mark_price": 0.6831,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.139e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.676176,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.6781,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.142e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.6721,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.027e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.67155333,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.6823,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.67684369,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.864e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.6793,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.67616379,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018944,
+    "funding_time": 1783382400000,
+    "mark_price": 0.68496086,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.6899,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.6897166,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.6785,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013898,
+    "funding_time": 1783324800000,
+    "mark_price": 0.6883,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025183,
+    "funding_time": 1783310400000,
+    "mark_price": 0.7019,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.156e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.6948,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.68580833,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012042,
+    "funding_time": 1783267200000,
+    "mark_price": 0.687318,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.098e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.6872,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016393,
+    "funding_time": 1783238400001,
+    "mark_price": 0.6935,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022905,
+    "funding_time": 1783224000002,
+    "mark_price": 0.6905,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020839,
+    "funding_time": 1783209600003,
+    "mark_price": 0.7,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001062,
+    "funding_time": 1783195200000,
+    "mark_price": 0.7104,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.239e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.6988,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.69761083,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.7028,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.714455,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010055,
+    "funding_time": 1783123200000,
+    "mark_price": 0.72604379,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.7187,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001362,
+    "funding_time": 1783094400000,
+    "mark_price": 0.7114,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.7066,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.7048,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.68636881,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.68114833,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.6774,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.6769,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.66497483,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.66759605,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.6699,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.67059447,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.169e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.70318233,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013847,
+    "funding_time": 1782921600000,
+    "mark_price": 0.7359,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.521e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.72564382,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.7055,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.7332,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.72329804,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.73062883,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.7135,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.7158,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013486,
+    "funding_time": 1782806400000,
+    "mark_price": 0.75909,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.407e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.7287,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024938,
+    "funding_time": 1782777600000,
+    "mark_price": 0.76447947,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022082,
+    "funding_time": 1782763200000,
+    "mark_price": 0.75735783,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.214e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.74868583,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012075,
+    "funding_time": 1782734400001,
+    "mark_price": 0.7639,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.72286667,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.70403601,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.7505,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.121e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.7877,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012973,
+    "funding_time": 1782662400000,
+    "mark_price": 0.8018,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.75674571,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.75644197,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020327,
+    "funding_time": 1782619200002,
+    "mark_price": 0.8647,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028087,
+    "funding_time": 1782604800000,
+    "mark_price": 0.80558106,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023339,
+    "funding_time": 1782590400000,
+    "mark_price": 0.81684136,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025689,
+    "funding_time": 1782576000009,
+    "mark_price": 0.8168597,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004044,
+    "funding_time": 1782561600001,
+    "mark_price": 0.7419,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022396,
+    "funding_time": 1782547200000,
+    "mark_price": 0.70070304,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022451,
+    "funding_time": 1782532800000,
+    "mark_price": 0.6718,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.845e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.661,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.653943,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.64378493,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.6283,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.64261667,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.6332,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.896e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.64553,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.618443,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.62137667,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.64411732,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014398,
+    "funding_time": 1782374400000,
+    "mark_price": 0.6512,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.082e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.64608233,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.277e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.654428,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.62845529,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.6484,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012824,
+    "funding_time": 1782302400005,
+    "mark_price": 0.6929,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.6756,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.6766,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.682,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.6918,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.6775,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.66443004,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.691,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.67893443,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.68948833,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.014e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.7069,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022446,
+    "funding_time": 1782129600000,
+    "mark_price": 0.7128,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.646e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.7141,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016984,
+    "funding_time": 1782100800000,
+    "mark_price": 0.71023725,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012032,
+    "funding_time": 1782086400000,
+    "mark_price": 0.68634803,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025395,
+    "funding_time": 1782072000004,
+    "mark_price": 0.7103,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.936e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.7055,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.222e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.699,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020073,
+    "funding_time": 1782028800000,
+    "mark_price": 0.718,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013092,
+    "funding_time": 1782014400000,
+    "mark_price": 0.69453748,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023271,
+    "funding_time": 1782000000000,
+    "mark_price": 0.7191,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019037,
+    "funding_time": 1781985600000,
+    "mark_price": 0.72319428,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.828e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.7326,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.71766948,
+    "symbol": "PIEVERSEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.6835,
+    "symbol": "PIEVERSEUSDT"
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 1.035,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022495,
+    "funding_time": 1784505600000,
+    "mark_price": 1.06058207,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025634,
+    "funding_time": 1784491200004,
+    "mark_price": 1.066,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.418e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.063,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.921e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.0635,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.723e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.067,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052125,
+    "funding_time": 1784433600000,
+    "mark_price": 1.07169025,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028671,
+    "funding_time": 1784419200003,
+    "mark_price": 1.08,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.885e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 1.069,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038461,
+    "funding_time": 1784390400001,
+    "mark_price": 1.0795,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.065,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.0295,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.026,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.0295,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 1.031,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.034,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 1.0365,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.0335,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 1.0415,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.04309678,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 1.0585,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.066,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 1.05975172,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.05963471,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 1.0565,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.0555,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 1.055,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.055,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 1.049,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.042,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 1.05078621,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.054,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 1.058,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.063,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 1.029,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.023,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.0245,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.0247931,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 1.02790345,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.03824644,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 1.0465,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.044,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 1.02914345,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.052,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 1.064,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.064,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 1.06921264,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.054,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 1.06816667,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 1.061,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 1.07897931,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.069,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 1.052,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.0505,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 1.04847241,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.04797241,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 1.048,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.05,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 1.0475,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.04383448,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 1.05,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.03693103,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 1.035,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.03255172,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 1.04085517,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.039,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.0275,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.029,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 1.03160345,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.01990345,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 1.02358621,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 1.026,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 1.036,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 1.048,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 1.061,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.07,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 1.068,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.06147586,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.066,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.08711712,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.0735,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.06198621,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.0433469,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.048,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.054,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017211,
+    "funding_time": 1783296000000,
+    "mark_price": 1.0745,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.822e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 1.067,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.358e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.066,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.25e-06,
+    "funding_time": 1783252800000,
+    "mark_price": 1.064,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.581e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.081,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.281e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 1.07011494,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.078,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 1.08481629,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.09,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 1.072,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.069,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 1.075,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.073,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 1.07108667,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.05936161,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 1.064,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.0565,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 1.0465,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.861e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1.046,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.518e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 1.04148288,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.037,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 1.03510414,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.024,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 1.04351494,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013293,
+    "funding_time": 1782950400000,
+    "mark_price": 1.036,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.68e-06,
+    "funding_time": 1782936000000,
+    "mark_price": 1.033,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024342,
+    "funding_time": 1782921600000,
+    "mark_price": 1.0315,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.171e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.0085,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.63e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.0075,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.385e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.0264023,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038281,
+    "funding_time": 1782864000000,
+    "mark_price": 1.04543793,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004562,
+    "funding_time": 1782849600003,
+    "mark_price": 1.0682977,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074705,
+    "funding_time": 1782835200005,
+    "mark_price": 1.06916253,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068051,
+    "funding_time": 1782820800002,
+    "mark_price": 1.07313241,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063821,
+    "funding_time": 1782806400000,
+    "mark_price": 1.09791379,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00349962,
+    "funding_time": 1782792000000,
+    "mark_price": 1.149,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039359,
+    "funding_time": 1782777600000,
+    "mark_price": 1.125,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012559,
+    "funding_time": 1782763200000,
+    "mark_price": 1.09931782,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017755,
+    "funding_time": 1782748800004,
+    "mark_price": 1.10650357,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00092197,
+    "funding_time": 1782734400001,
+    "mark_price": 1.124,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00180513,
+    "funding_time": 1782720000013,
+    "mark_price": 1.11704322,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00172014,
+    "funding_time": 1782705600000,
+    "mark_price": 1.155,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.058,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.148e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 1.08,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.58e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 1.0695,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.805e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 1.03746667,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013667,
+    "funding_time": 1782633600013,
+    "mark_price": 1.033,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 1.037,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.021,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 1.024,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.0355,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 1.0355,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.366e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.028,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.907e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 1.0403654,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.015,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 1.01656207,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.019,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.9845,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.519e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.002,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.98549287,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.981,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.9725,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.98089655,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.01,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.021,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.007,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.022,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 1.005,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.0085,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 1.046,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.04,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 1.047,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.04451609,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.31e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.047,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.59e-06,
+    "funding_time": 1782216000000,
+    "mark_price": 1.0485,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.05,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.255e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 1.08427586,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.0765,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.93e-06,
+    "funding_time": 1782158400000,
+    "mark_price": 1.086,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.0975,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.095,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.086,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.085,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.957e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.082,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.115,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.118,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 1.115,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.118,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.505e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.1215,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.1245,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.11307586,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.116,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.11,
+    "symbol": "GASUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.099,
+    "symbol": "GASUSDT"
+  }
+]

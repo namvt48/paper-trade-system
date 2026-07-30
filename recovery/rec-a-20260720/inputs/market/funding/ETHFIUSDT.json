@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.4509,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.4449,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.456,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.4481,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.4467,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.4453,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.44594669,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.4484,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.45800915,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.4588434,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.45500592,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.4451,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.437,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.44037664,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.4366581,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.41969105,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.42303362,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.389e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.41349821,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.42336299,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.9e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.4188,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.4297,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.4308,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.43231875,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.43902298,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.44713714,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.43813253,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.43958042,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.43699669,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.41494246,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.464e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.3929,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.25e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.399938,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.236e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.39381245,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.24e-06,
+    "funding_time": 1784059200000,
+    "mark_price": 0.392,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.68e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 0.4012,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.3913,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.14e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.38932151,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.214e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.3877,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.288e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.3799,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.265e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.3822,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.633e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.39794021,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.4e-07,
+    "funding_time": 1783944000000,
+    "mark_price": 0.4074,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.4086,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.414,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.4217,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.4223,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.426,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.4308,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.42771494,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.42162418,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.41426949,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.42614056,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.42635172,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.4151,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.40545566,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.40920452,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.4065498,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.409441,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.3994,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.40319633,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.39996672,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.4019,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.39003136,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.39620837,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.4032,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.4155063,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.41621576,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.399,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.3863,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.38903382,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.39518026,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.39321872,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.3958,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.39266245,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.4163,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.43305576,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.433,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.43204059,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.437,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.43646821,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.43515191,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.4462217,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.4392,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.42209591,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.4214,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.4321,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.42779227,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.42333802,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.42318926,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.4218,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.43069724,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.42513314,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.4118,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.44215259,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.4121,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.39470125,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.37465881,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.373,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.3745,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.36515361,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.36108572,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.3435,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.33579522,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.33334702,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.3329,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.32984177,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.3301,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.33400141,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.33250495,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.33502283,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.31984963,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.625e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.3183,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.51e-06,
+    "funding_time": 1782921600000,
+    "mark_price": 0.32548527,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.3192925,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.315e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.3168,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.046e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.3211,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.32121413,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.407e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.31903705,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.33e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.32081827,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.52e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.32216982,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.32173933,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.268e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.32913295,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.3349,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.34508415,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.35035221,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.34216266,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.34394282,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.34515452,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.3359,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.33791766,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.254e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.34133489,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.983e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.34569823,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.928e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.34591257,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.11e-06,
+    "funding_time": 1782619200002,
+    "mark_price": 0.34565073,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.467e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.34665359,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.3484,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.3599,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.467e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.35977467,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.155e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.35364946,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.762e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.35534331,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.3609,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.3673,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.3674,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.35900474,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.38136702,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.3782354,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.3789,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.3557,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.3595,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.35160341,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.35498246,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.3423,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.3405,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.3314,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.3329,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.34653519,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.3432,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.3494,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.34313254,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.33346826,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.3295,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.329,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.34666727,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.3412,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.3477,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.3507,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.35176068,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.346,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.34696092,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.33387079,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.34599208,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.3472948,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.34625146,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.3474,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.762e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.34844241,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.34525982,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.61e-06,
+    "funding_time": 1781985600000,
+    "mark_price": 0.3454,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.3413,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.33947395,
+    "symbol": "ETHFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.3431,
+    "symbol": "ETHFIUSDT"
+  }
+]

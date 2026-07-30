@@ -9,7 +9,7 @@ lottery lệch phải, short coin lệch phải mà không có uptrend. Nửa đ
 | khung | 1h · rebal 48 (2d) · vol-lookback 120 (5d) |
 | signal | `cs_zscore(ts_zscore(close_t180, 2880)) + cs_zscore(-ts_skew(returns_t180, 1440))` |
 | định cỡ | trọng số độ lớn từng coin (winsor-cont, không rank) — xem [overview](overview.md) |
-| universe | top-180 (`_t180`) · exec_lag 1 · vol-target 10% · gross 1 trung hòa đô-la |
+| universe | top-180 (`_t180`) · vol-target 10% · gross 1 trung hòa đô-la |
 | hiệu năng | IS 1.66 · **OS 2.37 · WFE 1.43** · maxDD(OS) **−6%** · 1283 lệnh/năm |
 
 ## Tín hiệu & vào lệnh long/short

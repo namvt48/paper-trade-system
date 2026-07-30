@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 1.3964,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.949e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.39991675,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001111,
+    "funding_time": 1784491200004,
+    "mark_price": 1.3913,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.634e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.3965404,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.13e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.39699415,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.241e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.40554428,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.411e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 1.4037,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.40920804,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.496e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 1.4109889,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.564e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.40159484,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.4129,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.3963,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.40435914,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.41025427,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 1.41217812,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011034,
+    "funding_time": 1784304000004,
+    "mark_price": 1.3853,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.19e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 1.3846,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.318e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.38412702,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.768e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 1.39278643,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.976e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.3891,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 1.39620009,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.4,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 1.3954,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.847e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.3995342,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 1.41,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.41061703,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 1.41131748,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.4278,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 1.4255,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.76e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 1.4165,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 1.43172098,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.4354,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.701e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 1.4134,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.41976667,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.457e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 1.3941,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.975e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.3993,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.40161879,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.3995455,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.834e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 1.37981763,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.38825673,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.314e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 1.3908,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.3979,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.395e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 1.39496827,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.728e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.4013,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 1.4133,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.4226,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 1.4322,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.41302579,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 1.41747565,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 1.42405557,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 1.4451,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.4361,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 1.4279,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.997e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.42,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 1.4096,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.072e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.3969,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 1.3957,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.3841,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 1.3829,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.427e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.3785,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.181e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 1.3841,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.994e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.3736,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 1.3738,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.649e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.37321373,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 1.3917,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.685e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.38551071,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.3767,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.3811,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.94e-06,
+    "funding_time": 1783540800006,
+    "mark_price": 1.3762,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.36251648,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.023e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 1.36407785,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.41e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 1.3663888,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 1.38,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 1.3888,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 1.4075,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.95e-06,
+    "funding_time": 1783440000000,
+    "mark_price": 1.4225,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 1.4176,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.41812203,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.867e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.43121052,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.4379,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.43739644,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.4462473,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.43605035,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.4295,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.44963459,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.46945313,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 1.44509508,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.40898397,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 1.3712,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.3763,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 1.3751,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.388,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 1.3943,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.40002904,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 1.3802,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.3825,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 1.39039319,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.39555311,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 1.39834968,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.3923,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 1.38243543,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.37100278,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 1.3676,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1.35778246,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 1.36301382,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.3655,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 1.35398809,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.34171874,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 1.34908713,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.3350533,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 1.344,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.32753915,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.804e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.31191735,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.3204,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.3233,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.31,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 1.32064947,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 1.3063,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.218e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 1.2941,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.32030026,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.443e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 1.3226,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.33491029,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 1.3449,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.3281,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 1.339,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1.34800822,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.404e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 1.3589,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.3459,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 1.32746306,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.3472,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 1.3438,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.3311,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.375e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 1.31525784,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.3208,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.301e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 1.332,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.349e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.34049888,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011594,
+    "funding_time": 1782561600001,
+    "mark_price": 1.3122,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.32e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 1.3216,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 1.3291,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.33727046,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 1.34128968,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.3407,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 1.3246,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.3438,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 1.3216,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.3153,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 1.3058,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.3051,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.3196,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.3413,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.797e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.3022,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.52e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 1.311,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.7e-07,
+    "funding_time": 1782331200006,
+    "mark_price": 1.28603857,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.603e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.2953,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 1.3519,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.543e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.32624337,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.41e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 1.3288,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.33947392,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.234e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.32095582,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.364e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 1.3168,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.985e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.33824091,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.33e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 1.35681213,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.153e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.35360801,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 1.36340384,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.131e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.37187627,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.416e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.38312422,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.3774,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.36825367,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.36576298,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.265e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.3826,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.3934,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.48e-06,
+    "funding_time": 1782043200001,
+    "mark_price": 1.386,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.042e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.389,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.40511534,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.93e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.3739,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.518e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.3667,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.64e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.37930435,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.436e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.379,
+    "symbol": "CAKEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.776e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.3776,
+    "symbol": "CAKEUSDT"
+  }
+]

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 8.356e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.5795,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 1.5474,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.65e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 1.5193,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.557e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.5315,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 1.51627166,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.35e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 1.52754865,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.85e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.5381,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 1.5535,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.166e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.52402782,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.254e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.54973172,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 1.59988291,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 1.6036,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 1.5852,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 1.6003,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.082e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.53405224,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 1.5768,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.41e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 1.5133,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.723e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.465,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 1.4623,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 1.48553115,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 1.506,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4e-07,
+    "funding_time": 1783900800000,
+    "mark_price": 1.5347,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.08e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 1.5465,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.498e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.522,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 1.52941431,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 1.56541716,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 1.54523999,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 1.5113,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.385e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.49632334,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.236e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.52568697,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.403e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.51941764,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.325e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.5255,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 1.59545087,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024161,
+    "funding_time": 1783555200000,
+    "mark_price": 1.49464803,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.386e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.5024876,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 1.53039348,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 1.479494,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 1.51962356,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.083e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.4171,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.516e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.4377,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 1.4490011,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 1.38549028,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 1.41977212,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 1.41556999,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 1.43437872,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 1.4623,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 1.4842,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.608e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.47123961,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018,
+    "funding_time": 1783123200000,
+    "mark_price": 1.4781,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 1.4829,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.347e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.50349459,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 1.51302668,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.876e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.48493827,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 1.45429707,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.085e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.42486778,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.47e-06,
+    "funding_time": 1782921600000,
+    "mark_price": 1.37833635,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.429e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.3137,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 1.3168,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 1.2894,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029916,
+    "funding_time": 1782806400000,
+    "mark_price": 1.33997724,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001435,
+    "funding_time": 1782777600000,
+    "mark_price": 1.3511,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 1.34163299,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 1.31480845,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 1.26029743,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.616e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.24576191,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 1.2529,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.624e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.23900003,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 1.27837839,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.527e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.2557,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031441,
+    "funding_time": 1782518400000,
+    "mark_price": 1.2719,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.403e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.23403105,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 1.2603,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 1.24374865,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782403200000,
+    "mark_price": 1.25106747,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.24e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.29004156,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.187e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.25867297,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.269e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.22337203,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.553e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.27545396,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.52e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 1.30952316,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.934e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.30031406,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011847,
+    "funding_time": 1782201600005,
+    "mark_price": 1.3279,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.805e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.35721289,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028697,
+    "funding_time": 1782144000002,
+    "mark_price": 1.3979,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 1.4397,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.594e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.39525468,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 1.4625,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.49e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.4526,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 1.4103,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 1.386,
+    "symbol": "PENDLEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012631,
+    "funding_time": 1781942400000,
+    "mark_price": 1.3858,
+    "symbol": "PENDLEUSDT"
+  }
+]

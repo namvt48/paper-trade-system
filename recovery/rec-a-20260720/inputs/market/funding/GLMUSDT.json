@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -2.28e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.09768,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.079e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.098914,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017188,
+    "funding_time": 1784491200004,
+    "mark_price": 0.09922,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.517e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.09989,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.419e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.100395,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028002,
+    "funding_time": 1784448000000,
+    "mark_price": 0.09945,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.09957379,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0991455,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011443,
+    "funding_time": 1784404800004,
+    "mark_price": 0.09913,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028234,
+    "funding_time": 1784390400001,
+    "mark_price": 0.099447,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018146,
+    "funding_time": 1784376000002,
+    "mark_price": 0.10024183,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016042,
+    "funding_time": 1784361600000,
+    "mark_price": 0.09905431,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013517,
+    "funding_time": 1784347200000,
+    "mark_price": 0.098435,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.713e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.09778,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.894e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.0976555,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013042,
+    "funding_time": 1784304000004,
+    "mark_price": 0.09765414,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.291e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.09707,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012209,
+    "funding_time": 1784275200010,
+    "mark_price": 0.09656,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.844e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.09762,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011921,
+    "funding_time": 1784246400000,
+    "mark_price": 0.09767,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.497e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.09947,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.125e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.10052,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.521e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.10064583,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.10061897,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.10054,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.100125,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011509,
+    "funding_time": 1784145600002,
+    "mark_price": 0.10007683,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.10122,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.10016534,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.36e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1005,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003044,
+    "funding_time": 1784088000003,
+    "mark_price": 0.10066,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.10191,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013535,
+    "funding_time": 1784059200000,
+    "mark_price": 0.1016,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.10193117,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.028e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.10019,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.10061,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.09924,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.09938,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.09969,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.09992783,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.09971,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.10031,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015077,
+    "funding_time": 1783915200000,
+    "mark_price": 0.09839,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.0992705,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.10051,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.10125,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.1009165,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.10059,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.1011445,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015067,
+    "funding_time": 1783814400000,
+    "mark_price": 0.09967,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.10152,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.10143,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.1005695,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.10035467,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.10035317,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.09989,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.2e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.09865,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.09924,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.895e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.09983189,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.10046617,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.10045117,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.0996,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.09991833,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.09877356,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.09826083,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0982,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012247,
+    "funding_time": 1783569600002,
+    "mark_price": 0.09689,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.0961,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.09554867,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.526e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.09459,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.095441,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.09589,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.09525845,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.057e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.09639,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.09762,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.09892,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.09889,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.09977,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.1002945,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.10191,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.10180217,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.10131,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.09999567,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.10066267,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.10108,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.10224,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.1015445,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.10172,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.10176883,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.10259,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.943e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.10176,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.10317,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.10404183,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.10468,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.276e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.1036,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.10444,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.10455,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.10334917,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.10122133,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.10102,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.10206217,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.10163,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.03e-06,
+    "funding_time": 1783051200000,
+    "mark_price": 0.1015,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.07e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.10059,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.168e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.10051617,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.865e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.10043,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.555e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.10061,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001717,
+    "funding_time": 1782979200000,
+    "mark_price": 0.09788417,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010813,
+    "funding_time": 1782964800003,
+    "mark_price": 0.10168029,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001905,
+    "funding_time": 1782950400000,
+    "mark_price": 0.10107,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029881,
+    "funding_time": 1782936000000,
+    "mark_price": 0.10352347,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012866,
+    "funding_time": 1782921600000,
+    "mark_price": 0.10353344,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017007,
+    "funding_time": 1782907200000,
+    "mark_price": 0.10225,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00130382,
+    "funding_time": 1782892800000,
+    "mark_price": 0.10213,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00114805,
+    "funding_time": 1782878400001,
+    "mark_price": 0.10472177,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00299953,
+    "funding_time": 1782864000000,
+    "mark_price": 0.10580321,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01161096,
+    "funding_time": 1782849600003,
+    "mark_price": 0.10824,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00330905,
+    "funding_time": 1782835200005,
+    "mark_price": 0.10784,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.16e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.09947,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.63e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.09698,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021843,
+    "funding_time": 1782792000000,
+    "mark_price": 0.09737,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.09794,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.09872817,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.104e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.09780005,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.09663,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.09790569,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.047e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.09889,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017145,
+    "funding_time": 1782691200006,
+    "mark_price": 0.09693552,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012319,
+    "funding_time": 1782676800003,
+    "mark_price": 0.09763,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040973,
+    "funding_time": 1782662400000,
+    "mark_price": 0.09834,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054167,
+    "funding_time": 1782648000008,
+    "mark_price": 0.10141036,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00073458,
+    "funding_time": 1782633600013,
+    "mark_price": 0.10059,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00258909,
+    "funding_time": 1782619200002,
+    "mark_price": 0.10329245,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013412,
+    "funding_time": 1782604800000,
+    "mark_price": 0.09848683,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00056993,
+    "funding_time": 1782590400000,
+    "mark_price": 0.09788,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054729,
+    "funding_time": 1782576000009,
+    "mark_price": 0.09945947,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0022208,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0983125,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00087525,
+    "funding_time": 1782547200000,
+    "mark_price": 0.09966633,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.10002158,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.0966,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.09652558,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.09547933,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.09387059,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.0949755,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.09265397,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.09201,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.09175345,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.09310411,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.09583483,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.09707,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.09503,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.09637,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.09472146,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.09771,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.10128,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.10128,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.793e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.10197,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.61e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.10340283,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.8e-07,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1025675,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.10234,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.342e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.10281,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.809e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.10595,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.697e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.10529,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014699,
+    "funding_time": 1782158400000,
+    "mark_price": 0.10636709,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.10724033,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.10846,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.10705,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.476e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.10599,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.75e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.10491383,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.765e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.10772,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.82e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.10783897,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.10787255,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014887,
+    "funding_time": 1782028800000,
+    "mark_price": 0.11,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.108585,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.10806017,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.10734,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.10807742,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.10736833,
+    "symbol": "GLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.254e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1079,
+    "symbol": "GLMUSDT"
+  }
+]

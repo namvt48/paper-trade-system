@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -2.015e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.14405,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.23e-06,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1461,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.612e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1456,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.885e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.1425,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 0.14273431,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 0.1454,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.506e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.1472,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.748e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.14775882,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.765e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1487,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1503,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.316e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.15193853,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.637e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.15005,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.15310884,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1574,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.719e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1481,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.538e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.14685,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.677e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.14292367,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.379e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.142628,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.1479,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.82e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.14948492,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.415e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.15195324,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.15340364,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1543,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.1561,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1557,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1562,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1571,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.16014776,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1599,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.16363205,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.372e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.168,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1624,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.476e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.16239941,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.622e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1623,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.575e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.1518,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.274e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.14793342,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.141,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.788e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1417,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.5e-06,
+    "funding_time": 1783411200000,
+    "mark_price": 0.13515,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.81e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1379,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.02e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.1353,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.981e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.13823708,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1424,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.054e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1424,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1438,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.76e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.1461,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1464,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.1436,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.14559029,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1474,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.296e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.1444,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1409,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.842e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.14494114,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.438e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.14334835,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.325e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.13979529,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.14175159,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.742e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1453,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.93e-06,
+    "funding_time": 1782864000000,
+    "mark_price": 0.1455,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.124e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1473,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.897e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1473,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.223e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1457,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.883e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1457,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.07e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.13643706,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.956e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.13552439,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.13794971,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.13953941,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.882e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.13745,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.72e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1418,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.86e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1462,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.243e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.14776275,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.139e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.14767692,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.584e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.15256078,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.238e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.14164366,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.417e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1316,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.914e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.13296244,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.507e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.13009653,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.932e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.13017566,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.1e-06,
+    "funding_time": 1782288000005,
+    "mark_price": 0.13592259,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.216e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1317102,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.069e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.133,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.4e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1364,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013307,
+    "funding_time": 1782172800003,
+    "mark_price": 0.13995997,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.483e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.13841902,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.706e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.13954412,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.274e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.13511039,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.18e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.13716373,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.507e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1381,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.616e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.13636603,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.84e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1396,
+    "symbol": "APEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1374,
+    "symbol": "APEUSDT"
+  }
+]

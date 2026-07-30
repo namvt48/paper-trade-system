@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013073,
+    "funding_time": 1784505600000,
+    "mark_price": 0.819,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019405,
+    "funding_time": 1784476800001,
+    "mark_price": 0.824,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.787e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.83714713,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020701,
+    "funding_time": 1784419200003,
+    "mark_price": 0.838,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.282e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.832,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.999e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.84246064,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.265e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.84847805,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.733e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.84952966,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.84941672,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.85875096,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.85e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 0.85359304,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.642e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.83546999,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.84690699,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.856,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.85249805,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.611e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.85154828,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.85222883,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.84453388,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.67e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 0.83550098,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.342e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.837,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.955e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.83747869,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019522,
+    "funding_time": 1783900800000,
+    "mark_price": 0.84349246,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.216e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.84495201,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.332e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.847,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.215e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.85393561,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.87953774,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.87531665,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.877,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.87429438,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.847,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.187e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.82590984,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.82857262,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.147e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.834,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.585e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.82653675,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.979e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.81944109,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.437e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.8405112,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.085e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.85,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.509e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.873,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.033e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.86047232,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.885,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.335e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.88,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.422e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.868,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.88154204,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.87703398,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.86e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.87254215,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.884,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.863e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.8874966,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.87332503,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.881,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.781e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.873,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.61e-06,
+    "funding_time": 1783065600007,
+    "mark_price": 0.85507221,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.029e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.841,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.16e-06,
+    "funding_time": 1783008000000,
+    "mark_price": 0.84993743,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.409e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.84,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.899e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.827662,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.406e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.84536495,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.834,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.82198477,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.931e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.81329713,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.81555232,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.768e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.8257534,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.793e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.82150508,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.81667126,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.81036546,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.576e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.80967967,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.8e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.816,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015328,
+    "funding_time": 1782604800000,
+    "mark_price": 0.81520718,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010638,
+    "funding_time": 1782576000009,
+    "mark_price": 0.847,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.871e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.845,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.8524974,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.377e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.85494063,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.691e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.844,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.487e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.843,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.547e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.85139655,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.061e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.891,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.88794342,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.738e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.87127082,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.317e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.905,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.247e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.91,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012792,
+    "funding_time": 1782230400002,
+    "mark_price": 0.899,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015095,
+    "funding_time": 1782201600005,
+    "mark_price": 0.90562402,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.822e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.9354527,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.252e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.95679663,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.575e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.96289024,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.619e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.9406191,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 0.97,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.96648729,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.215e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.969,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.609e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.96791019,
+    "symbol": "DOTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011528,
+    "funding_time": 1781942400000,
+    "mark_price": 0.963,
+    "symbol": "DOTUSDT"
+  }
+]

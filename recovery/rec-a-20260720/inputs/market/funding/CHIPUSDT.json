@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.03008836,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.03006056,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.03035451,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.03032,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.03064,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.03061489,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.03106,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.03104293,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.03100504,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.03132,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.03139446,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.03056,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02997105,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.702e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02978,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.467e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.0299,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.03004781,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.03003,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02964,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.03019296,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.03028457,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.03070241,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.03122834,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.03108,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.03087,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.03113967,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.03113981,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.03141163,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.03127,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.03168441,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.03072005,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.03065,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.03020003,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02989396,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.03031,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.02976504,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.03019,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.195e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02905,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.838e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02994,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.412e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.03005126,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010177,
+    "funding_time": 1783958400004,
+    "mark_price": 0.03019,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.893e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.02985,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.02983,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.206e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.03022363,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.03224,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.844e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.03256498,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03230052,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.948e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.03253,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.95e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03268,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.536e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.03335429,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.698e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.03192747,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.794e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.03219,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.839e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03216,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.03249,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03210668,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03249,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0335,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.7e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.03326,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03357,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.92e-06,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03318467,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.136e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03391711,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.03367,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.989e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.033,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.179e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.03277,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.252e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03195018,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.52e-06,
+    "funding_time": 1783598400002,
+    "mark_price": 0.0325,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03261423,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03272,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.53e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03298,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.0326201,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03160497,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.03315,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.0332703,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.904e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.03517,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.03436056,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.03489534,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.0370805,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010507,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03583,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.23e-06,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03545184,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03163,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03238,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03221,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03263,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.197e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03076142,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.276e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03082,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010395,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03113875,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03132182,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03136476,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03215,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001117,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03149328,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015865,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03075809,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013122,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03063,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.166e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03167549,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.643e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03234554,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03258,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03281519,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03176011,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.255e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03136768,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.208e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03112017,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03106758,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03123255,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03028941,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03018335,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03031,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03067573,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.026e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.0301,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.585e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.0299344,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.03022,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.271e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03026,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.781e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03063969,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.234e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.02982,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.7e-06,
+    "funding_time": 1782936000000,
+    "mark_price": 0.0301,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.677e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03019223,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.237e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.0298,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.44e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.02971,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.252e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.03014847,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.524e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03058241,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.9e-06,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03043319,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.31e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.0312,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03123518,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.048e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.03132467,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.575e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.03141856,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.19e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03245,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.428e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.03104909,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.01e-06,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03157702,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.024e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.03105325,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.99e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03144,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.63e-06,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03072332,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.56e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.02995661,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.26e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02977552,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.595e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03004222,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.684e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.03144,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.577e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.03135962,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.787e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.03076,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.849e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03036,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.506e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03029101,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.092e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03115434,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.765e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0295,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010669,
+    "funding_time": 1782547200000,
+    "mark_price": 0.02877,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015676,
+    "funding_time": 1782532800000,
+    "mark_price": 0.02913,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.104e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.0290237,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.221e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.02923,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.974e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.02972803,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016715,
+    "funding_time": 1782475200004,
+    "mark_price": 0.02837506,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017067,
+    "funding_time": 1782460800002,
+    "mark_price": 0.02918246,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00055121,
+    "funding_time": 1782446400001,
+    "mark_price": 0.02964,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00092393,
+    "funding_time": 1782432000010,
+    "mark_price": 0.02993,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00082463,
+    "funding_time": 1782417600011,
+    "mark_price": 0.02826,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079603,
+    "funding_time": 1782403200000,
+    "mark_price": 0.02877,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074197,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03021497,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00103554,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03103,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00094654,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03153667,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099157,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03087984,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00069131,
+    "funding_time": 1782331200006,
+    "mark_price": 0.02988,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043483,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03000105,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030514,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03128,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035751,
+    "funding_time": 1782288000005,
+    "mark_price": 0.03225,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039331,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03290536,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051125,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03356,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00062308,
+    "funding_time": 1782230400002,
+    "mark_price": 0.03295,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059611,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03269,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003129,
+    "funding_time": 1782201600005,
+    "mark_price": 0.03282524,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052934,
+    "funding_time": 1782187200000,
+    "mark_price": 0.03421219,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091056,
+    "funding_time": 1782172800003,
+    "mark_price": 0.03391503,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048474,
+    "funding_time": 1782158400000,
+    "mark_price": 0.034346,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003288,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03534,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.554e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03616358,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.98e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03504,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017181,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03514014,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024766,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03404114,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014384,
+    "funding_time": 1782072000004,
+    "mark_price": 0.03529191,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002335,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03568191,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014239,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03572217,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002224,
+    "funding_time": 1782028800000,
+    "mark_price": 0.03828676,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020928,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03698913,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010705,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03516971,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00062517,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03625329,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050597,
+    "funding_time": 1781971200001,
+    "mark_price": 0.03400208,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003286,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03267,
+    "symbol": "CHIPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019123,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03291,
+    "symbol": "CHIPUSDT"
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02693,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02673139,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.38e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02642444,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02735301,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02728,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02735,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.02748199,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0276,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02738356,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.465e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02736,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.617e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02738283,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.942e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02786,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.725e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.0275755,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.5e-07,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02758568,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02799,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02815,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.028585,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02773051,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02948293,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02949,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02991936,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.0298882,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02970494,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.0294,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.02937125,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.02947559,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.02906471,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02956,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.16e-06,
+    "funding_time": 1784116800003,
+    "mark_price": 0.02903,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02928296,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02889234,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02876,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.0293435,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.02990741,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.029205,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02911849,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02919,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.029305,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02963,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.02974233,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.03006,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.03001,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02983,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.03049678,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.03004,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03038633,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.03052,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03067,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.03061034,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.0304642,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.03149,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03175,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.03140617,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03136,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03076942,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.03097,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.03104356,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03119,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03106961,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03115,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.03115233,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.689e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03112028,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.03102,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03126,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.03143,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03178039,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03178878,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03192,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.03153146,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03186101,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.03196,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03238171,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.03294,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.03328,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.03354,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.82e-06,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03349,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03378,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.283e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03365,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03393,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03423,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.0338,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0334,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.032803,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03355,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03426,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.999e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.0338955,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.117e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.0336,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03351,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03334283,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03330564,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03387383,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03453811,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03424,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03416574,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03260069,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03256657,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.442e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03275,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03333,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03322,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03263517,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03186363,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.0317,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03220261,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03216,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.96e-06,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03172033,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03090149,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.099e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.0307,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03049,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03168,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03114,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.03059,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03177,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.898e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.0311,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.0308,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.03123,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03098122,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03118416,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.03099383,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03151339,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0318608,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.03154408,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03212,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.242e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.031965,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.847e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03121472,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.845e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.03163,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03143,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03168846,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.45e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.02988808,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.448e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02983,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.2e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03008,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.03037127,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.03069961,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.03052501,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03073046,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03098028,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03058,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03039183,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03036,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.03074,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.0306,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.03060834,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.03043785,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.03009784,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03073,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03090316,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03108451,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.03078189,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03144373,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03240916,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.0322,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03112633,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03136065,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03092,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03088,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03136344,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.03063428,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03177,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.651e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03174177,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.831e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.03196183,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03259,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0325,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.0325,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.0321941,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03253498,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03273234,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03285099,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03328017,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03311,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03288,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.033,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03301,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03294,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.03282,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03288234,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03207,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03181241,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.03253,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03226,
+    "symbol": "NIGHTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03187,
+    "symbol": "NIGHTUSDT"
+  }
+]

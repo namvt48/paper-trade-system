@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016458,
+    "funding_time": 1784520000000,
+    "mark_price": 1.57251972,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.775e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.56415835,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001338,
+    "funding_time": 1784491200004,
+    "mark_price": 1.623,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.073e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.625,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.509e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.63905838,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.635,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.028e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 1.661,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.859e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.625,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.58e-06,
+    "funding_time": 1784404800004,
+    "mark_price": 1.62,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.65047624,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.028e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.689,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.62952121,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.948e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.633,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.96e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 1.55307702,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.472e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 1.54342505,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.58e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.54664337,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 1.536,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.821e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.531,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.771e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 1.552,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.806e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.545,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.964e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 1.55962046,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.613e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.57751089,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 1.562,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.597e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.567,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 1.57832969,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.55e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 1.57847516,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.251e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 1.583,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.57077938,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.8e-07,
+    "funding_time": 1784116800003,
+    "mark_price": 1.565,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.535e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.564,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.488e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 1.56214367,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.338e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.558,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.517e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 1.558,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.12e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 1.54958683,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.738e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 1.529,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.369e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.533,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.717e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.536,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013012,
+    "funding_time": 1783987200000,
+    "mark_price": 1.545,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016897,
+    "funding_time": 1783972800000,
+    "mark_price": 1.536,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.457e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.5553145,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010165,
+    "funding_time": 1783944000000,
+    "mark_price": 1.55,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015306,
+    "funding_time": 1783929600001,
+    "mark_price": 1.543,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018643,
+    "funding_time": 1783915200000,
+    "mark_price": 1.53744011,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015429,
+    "funding_time": 1783900800000,
+    "mark_price": 1.55650935,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.714e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 1.578,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020936,
+    "funding_time": 1783872000000,
+    "mark_price": 1.588,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019476,
+    "funding_time": 1783857600000,
+    "mark_price": 1.57602499,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019917,
+    "funding_time": 1783843200003,
+    "mark_price": 1.566,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019537,
+    "funding_time": 1783828800000,
+    "mark_price": 1.582,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012128,
+    "funding_time": 1783814400000,
+    "mark_price": 1.58304796,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014418,
+    "funding_time": 1783800000000,
+    "mark_price": 1.625,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.3e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.618,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001085,
+    "funding_time": 1783771200008,
+    "mark_price": 1.612,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.571e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.605,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.83e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 1.611,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.009e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.614,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.063e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 1.608,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.399e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.61,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.129e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 1.63043907,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.118e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.604504,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014698,
+    "funding_time": 1783656000000,
+    "mark_price": 1.61150148,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011141,
+    "funding_time": 1783641600000,
+    "mark_price": 1.604,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010348,
+    "funding_time": 1783627200000,
+    "mark_price": 1.61643083,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.187e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.601,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.718e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 1.616,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.31e-06,
+    "funding_time": 1783584000001,
+    "mark_price": 1.61780008,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.385e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 1.61059324,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.065e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.604,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.084e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 1.60276004,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.318e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.609,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.129e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 1.592,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.251e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 1.6,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.693e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 1.611,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.08e-06,
+    "funding_time": 1783468800000,
+    "mark_price": 1.644,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.141e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 1.663,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.351e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.687,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.145e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 1.6654165,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.862e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.64849552,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.363e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.666,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.026e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.693,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.439e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.693,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.313e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.675,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.572e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.662,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.949e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.668,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.596e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.67106792,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.127e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.706,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.78e-06,
+    "funding_time": 1783281600000,
+    "mark_price": 1.697,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.218e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.695,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025143,
+    "funding_time": 1783252800000,
+    "mark_price": 1.701,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.848e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.7128608,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.138e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 1.76,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.3e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.821,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.06e-06,
+    "funding_time": 1783195200000,
+    "mark_price": 1.837,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.537e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.8100791,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.088e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 1.775,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.643e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.774,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.573e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 1.787,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.007e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.791,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.39e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 1.79479435,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.828e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.771,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.984e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 1.76059381,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.988e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.723,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.13e-06,
+    "funding_time": 1783051200000,
+    "mark_price": 1.726,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012698,
+    "funding_time": 1783036800000,
+    "mark_price": 1.717,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010464,
+    "funding_time": 1783022400008,
+    "mark_price": 1.709,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.157e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.705,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010163,
+    "funding_time": 1782993600005,
+    "mark_price": 1.707,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.928e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.67438144,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013323,
+    "funding_time": 1782964800003,
+    "mark_price": 1.701,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013006,
+    "funding_time": 1782950400000,
+    "mark_price": 1.683,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.197e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 1.686,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.57e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.717,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.919e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.696,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.288e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.697,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.149e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.708,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.361e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.65762512,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.253e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 1.661,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.613e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 1.659,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.514e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 1.6484199,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.314e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.665,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.543e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 1.664,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.322e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.68,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.037e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 1.672,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016777,
+    "funding_time": 1782748800004,
+    "mark_price": 1.671,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028937,
+    "funding_time": 1782734400001,
+    "mark_price": 1.66757029,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024747,
+    "funding_time": 1782720000013,
+    "mark_price": 1.65330697,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043729,
+    "funding_time": 1782705600000,
+    "mark_price": 1.66644229,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046711,
+    "funding_time": 1782691200006,
+    "mark_price": 1.63137386,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045033,
+    "funding_time": 1782676800003,
+    "mark_price": 1.60775812,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032139,
+    "funding_time": 1782662400000,
+    "mark_price": 1.638,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002799,
+    "funding_time": 1782648000008,
+    "mark_price": 1.651,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015758,
+    "funding_time": 1782633600013,
+    "mark_price": 1.648,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016222,
+    "funding_time": 1782619200002,
+    "mark_price": 1.663,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015134,
+    "funding_time": 1782604800000,
+    "mark_price": 1.65180898,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010587,
+    "funding_time": 1782590400000,
+    "mark_price": 1.666,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.269e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.69848421,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014479,
+    "funding_time": 1782561600001,
+    "mark_price": 1.694,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022615,
+    "funding_time": 1782547200000,
+    "mark_price": 1.711,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031546,
+    "funding_time": 1782532800000,
+    "mark_price": 1.726,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025589,
+    "funding_time": 1782518400000,
+    "mark_price": 1.709,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023524,
+    "funding_time": 1782504000000,
+    "mark_price": 1.68994064,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010932,
+    "funding_time": 1782489600000,
+    "mark_price": 1.688,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000645,
+    "funding_time": 1782475200004,
+    "mark_price": 1.682939,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023228,
+    "funding_time": 1782460800002,
+    "mark_price": 1.71254848,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018998,
+    "funding_time": 1782446400001,
+    "mark_price": 1.663,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021567,
+    "funding_time": 1782432000010,
+    "mark_price": 1.6416519,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018772,
+    "funding_time": 1782417600011,
+    "mark_price": 1.6131649,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.99e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.622,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013831,
+    "funding_time": 1782388800006,
+    "mark_price": 1.69442311,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013988,
+    "funding_time": 1782374400000,
+    "mark_price": 1.714,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011483,
+    "funding_time": 1782360000008,
+    "mark_price": 1.697,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013961,
+    "funding_time": 1782345600000,
+    "mark_price": 1.693,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017817,
+    "funding_time": 1782331200006,
+    "mark_price": 1.65710963,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019958,
+    "funding_time": 1782316800003,
+    "mark_price": 1.68780658,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011873,
+    "funding_time": 1782302400005,
+    "mark_price": 1.737,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011926,
+    "funding_time": 1782288000005,
+    "mark_price": 1.74240615,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011815,
+    "funding_time": 1782259200005,
+    "mark_price": 1.76264875,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.86e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.76008166,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.848e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.7646946,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.03e-06,
+    "funding_time": 1782216000000,
+    "mark_price": 1.74890424,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.204e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.77542936,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.43e-06,
+    "funding_time": 1782187200000,
+    "mark_price": 1.8512014,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012716,
+    "funding_time": 1782172800003,
+    "mark_price": 1.87180301,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.83e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 1.882,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.829e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.918,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001299,
+    "funding_time": 1782129600000,
+    "mark_price": 1.90143117,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013565,
+    "funding_time": 1782115200000,
+    "mark_price": 1.90726733,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.544e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.89006537,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017945,
+    "funding_time": 1782086400000,
+    "mark_price": 1.88022896,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002913,
+    "funding_time": 1782072000004,
+    "mark_price": 1.90511613,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057842,
+    "funding_time": 1782057600000,
+    "mark_price": 1.902,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011487,
+    "funding_time": 1782043200001,
+    "mark_price": 1.835,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012593,
+    "funding_time": 1782028800000,
+    "mark_price": 1.7992791,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017237,
+    "funding_time": 1782014400000,
+    "mark_price": 1.812,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019759,
+    "funding_time": 1782000000000,
+    "mark_price": 1.80898226,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020563,
+    "funding_time": 1781985600000,
+    "mark_price": 1.79644997,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.662e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.80904117,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015131,
+    "funding_time": 1781956800001,
+    "mark_price": 1.819,
+    "symbol": "TRUMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001191,
+    "funding_time": 1781942400000,
+    "mark_price": 1.834,
+    "symbol": "TRUMPUSDT"
+  }
+]

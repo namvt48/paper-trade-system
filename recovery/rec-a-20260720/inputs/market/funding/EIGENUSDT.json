@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.2332,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.22850059,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.2325,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.229636,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.2299,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.726e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.2315,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.22976795,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.01e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.22985,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012907,
+    "funding_time": 1784404800004,
+    "mark_price": 0.2272,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.403e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.22780706,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.136e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.2306,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.598e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.2313,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.425e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.234,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.2354,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.23175441,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.763e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.23163127,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.46e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.2324,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.23002586,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.075e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.23072765,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.2464,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.24176095,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.83e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 0.239,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.23755549,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.24141735,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.2471,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.2418,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.238,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.51e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.2379,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.622e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.2348,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.006e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.23281284,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.38e-06,
+    "funding_time": 1784088000003,
+    "mark_price": 0.2366,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.73e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.2336,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.407e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.2377,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.51e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 0.242,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.2403,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.966e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.24110598,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.074e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.2314,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.24302775,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.2387,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.2451,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.813e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.24720265,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.2388,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.23013185,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.22771912,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.23445941,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.278e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.23325863,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.537e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.23425412,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.957e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.2294,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.992e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.2297,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.825e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.2257,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.096e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.24103667,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.304e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.2413,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.38e-06,
+    "funding_time": 1783771200008,
+    "mark_price": 0.2368,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.086e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.2333,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.234,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.124e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.2371,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.78e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.2374,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.033e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.24010686,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.39e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.24848235,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.47e-06,
+    "funding_time": 1783670400005,
+    "mark_price": 0.24124667,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.2454,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.234,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.2407,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.24008804,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.2464,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.24976833,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.25110235,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.24955243,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.2365,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.228,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.23147549,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.22872029,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.21520193,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.2226,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.22700118,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.22996471,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.22554402,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.22547706,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.22175324,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.2291,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.2319,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.22772353,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.29e-06,
+    "funding_time": 1783339200002,
+    "mark_price": 0.22498043,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.2304,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.231,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.23942931,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.24161863,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2324,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.22488333,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.2308,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.2318,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.2315,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.2372,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.2226,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.214,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.21571,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.2145,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.88e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.21245686,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.21049069,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.194e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.20984138,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.393e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.21421549,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.2111,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.759e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.2151,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.2047,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.912e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.21320608,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.918e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.20480588,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.705e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.19933529,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.401e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1986,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.544e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.2035,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.114e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1954,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.018e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.1978,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.446e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.2083,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.298e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.2013,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.81e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1998,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.17e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.2008,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.2027001,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.381e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.20600882,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.84e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.20595137,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.101e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.21297373,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.2169,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.13e-06,
+    "funding_time": 1782792000000,
+    "mark_price": 0.21453873,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.781e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.2179,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.08e-06,
+    "funding_time": 1782763200000,
+    "mark_price": 0.22700686,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.65e-06,
+    "funding_time": 1782748800004,
+    "mark_price": 0.22645039,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.23054127,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.2316,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.23260451,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.23427404,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.273e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.22576775,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.22976765,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.2378,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.2398,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.24469157,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.2381698,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.2352,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.2402,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.22368176,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.614e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.22261216,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.21855353,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.219,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.22151176,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.77e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 0.22274824,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.2149,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.22381422,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.2235,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.2212,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.67e-06,
+    "funding_time": 1782417600011,
+    "mark_price": 0.2172,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.21960451,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.22585,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.23325,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.22993912,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.2359,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.466e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.22341902,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.23097775,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.729e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.2467,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.955e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.24632814,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.571e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.24730608,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.949e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.25054716,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.25203598,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.304e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.2571,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.553e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.26037686,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.2697,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.943e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.28453951,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.2892,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.31e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.29784645,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.3e-07,
+    "funding_time": 1782129600000,
+    "mark_price": 0.2998,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.82e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 0.3007452,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.435e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.29968451,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.726e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.2698,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.28056627,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.894e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.27911137,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.2714,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.27513682,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.26045814,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7e-08,
+    "funding_time": 1782000000000,
+    "mark_price": 0.25184706,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.2483,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.2535,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.26622576,
+    "symbol": "EIGENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.2677,
+    "symbol": "EIGENUSDT"
+  }
+]

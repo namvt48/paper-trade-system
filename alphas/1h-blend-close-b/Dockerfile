@@ -8,4 +8,5 @@ COPY 1h-blend-close-b/app/ ./app/
 COPY 1h-blend-close-b/main.py 1h-blend-close-b/spec.json 1h-blend-close-b/config.toml ./
 COPY 1h-blend-close-b/data/ ./data/
 COPY 1h-blend-close-b/blacklist.txt .
+COPY 1h-blend-close-b/whitelist.txt .
 CMD ["python", "main.py"]

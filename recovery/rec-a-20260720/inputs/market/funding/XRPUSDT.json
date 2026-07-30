@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.877e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.09727166,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.68e-06,
+    "funding_time": 1784476800001,
+    "mark_price": 1.09726284,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.545e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.0948,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.213e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 1.0922,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.11e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 1.08598782,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.003e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.0883,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.97e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 1.08842981,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.737e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.08279377,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.412e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.08322718,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.3e-07,
+    "funding_time": 1784246400000,
+    "mark_price": 1.08659585,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.935e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.1143,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.73e-06,
+    "funding_time": 1784188800003,
+    "mark_price": 1.10565504,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.081e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.11268255,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.785e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.1257,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.462e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 1.1033,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.03e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.1111534,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.549e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.1043,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.36e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.0682,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.766e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.06688886,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.04e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.07202737,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.91e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.07904815,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.5e-07,
+    "funding_time": 1783900800000,
+    "mark_price": 1.08541855,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.893e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.10122536,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.3e-07,
+    "funding_time": 1783843200003,
+    "mark_price": 1.09082443,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.01e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 1.0963,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.928e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.11273409,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.839e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.10716805,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.733e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.1041,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.961e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.1032,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.73e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 1.105,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.6e-07,
+    "funding_time": 1783641600000,
+    "mark_price": 1.0929,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.575e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.0895,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.554e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.09754285,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.255e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.0903,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.09e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 1.07336924,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.35e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 1.09351277,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.2e-07,
+    "funding_time": 1783468800000,
+    "mark_price": 1.1114,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.84e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.13009481,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.439e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.12619346,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.727e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.1445,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.333e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.1441,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.252e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.1454,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.11e-06,
+    "funding_time": 1783296000000,
+    "mark_price": 1.15679861,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.542e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.1364,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.065e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.13960455,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.394e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.15691795,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.057e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.1719,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1e-07,
+    "funding_time": 1783152000000,
+    "mark_price": 1.139,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.29e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.1342514,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.244e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.1196,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.337e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.10192221,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.751e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1.0874,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.135e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.0932,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.495e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.0581,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.531e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1.0526,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.278e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.06022469,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.61e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 1.04331798,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.247e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.03951445,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.97e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 1.0335,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.562e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.0468,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.184e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.0583977,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.077e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.049,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.137e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1.04865234,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.522e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.048,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010487,
+    "funding_time": 1782662400000,
+    "mark_price": 1.05161109,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013755,
+    "funding_time": 1782633600013,
+    "mark_price": 1.05046859,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013963,
+    "funding_time": 1782604800000,
+    "mark_price": 1.04697562,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014459,
+    "funding_time": 1782576000009,
+    "mark_price": 1.07456597,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.705e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.0596,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011229,
+    "funding_time": 1782518400000,
+    "mark_price": 1.0483,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015255,
+    "funding_time": 1782489600000,
+    "mark_price": 1.0445,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.829e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.04922887,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.715e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.04280483,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012131,
+    "funding_time": 1782403200000,
+    "mark_price": 1.0342,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.356e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.0865,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001523,
+    "funding_time": 1782345600000,
+    "mark_price": 1.07291156,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.712e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.05784442,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.248e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 1.0982,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.87e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 1.10937887,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.911e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.09859356,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.998e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.1122,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011229,
+    "funding_time": 1782172800003,
+    "mark_price": 1.1288,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.147e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.13918717,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.29e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 1.13685119,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.89e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 1.1243,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.16e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 1.14914813,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.91e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 1.1468,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.279e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.1494,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.09e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 1.1499,
+    "symbol": "XRPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.504e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.1467,
+    "symbol": "XRPUSDT"
+  }
+]

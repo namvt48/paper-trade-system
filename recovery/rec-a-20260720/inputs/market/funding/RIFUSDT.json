@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 1.776e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.12925767,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.51e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.12638,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011369,
+    "funding_time": 1784491200004,
+    "mark_price": 0.12919,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.13081617,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.13038796,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.34e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 0.13011,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.167e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.13346,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.1343,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.13412,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.13408,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.13653881,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.348e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.13284252,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.13192081,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.13574,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.13632,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.1339,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.33e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.12855529,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.13396,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.905e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.13316,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.13268168,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.13533,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.988e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.13218257,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.1354614,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.14092,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.13522,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.13222952,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.337e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.1289981,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.13354725,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.13757,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.13103,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.12447765,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.12376907,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.332e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.12338,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.695e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.12697988,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.12875454,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.391e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.12736,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.1338004,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.13109,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.13019871,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.12888,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.11912,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.205e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.11966,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.699e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.12614967,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.48e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.12994643,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.13005,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.13262,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.1338404,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.073e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.13272,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.417e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.13025,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.48e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.12936,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.896e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.13239025,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.12e-06,
+    "funding_time": 1783785600000,
+    "mark_price": 0.12648621,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.12958733,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.13432543,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.13345371,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.13582,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.14164978,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.13602,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.46e-06,
+    "funding_time": 1783684800002,
+    "mark_price": 0.12682,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.13092,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.13659683,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.13925427,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.13914,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.12952,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.1255,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.13022056,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.13209,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1346,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.1348,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.12882,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.13273,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.13716467,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.13364,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.13428,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.12949,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1308,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.14276667,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.13404348,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.12867,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.12877872,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.1312,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.12671,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.11246405,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.10571,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.066e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.10411,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.93e-06,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1068854,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.634e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.10681407,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.11109,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.771e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.11114852,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.734e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.11180912,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013335,
+    "funding_time": 1783224000002,
+    "mark_price": 0.10392,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033093,
+    "funding_time": 1783209600003,
+    "mark_price": 0.09610177,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031804,
+    "funding_time": 1783195200000,
+    "mark_price": 0.09915,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.441e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.10286,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.77e-06,
+    "funding_time": 1783166400000,
+    "mark_price": 0.10977,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.11358,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.11047896,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.12e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.11447617,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.12053107,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.22e-06,
+    "funding_time": 1783094400000,
+    "mark_price": 0.11538,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.005e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.13125676,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.987e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.12683807,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.96e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.12629,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.09908262,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.49e-06,
+    "funding_time": 1783022400008,
+    "mark_price": 0.10131,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.809e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.09334524,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.125e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.09693737,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.13376124,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.902e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.13145325,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1164024,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.11702,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.10065,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025141,
+    "funding_time": 1782907200000,
+    "mark_price": 0.08773,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037295,
+    "funding_time": 1782892800000,
+    "mark_price": 0.09542425,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.731e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.08918445,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010716,
+    "funding_time": 1782864000000,
+    "mark_price": 0.09067676,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040453,
+    "funding_time": 1782849600003,
+    "mark_price": 0.08696,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00066737,
+    "funding_time": 1782835200005,
+    "mark_price": 0.08851405,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027472,
+    "funding_time": 1782820800002,
+    "mark_price": 0.08172,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.69e-06,
+    "funding_time": 1782806400000,
+    "mark_price": 0.07307217,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.981e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.07442,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.558e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.07372323,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022395,
+    "funding_time": 1782763200000,
+    "mark_price": 0.072273,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031359,
+    "funding_time": 1782748800004,
+    "mark_price": 0.07109324,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109477,
+    "funding_time": 1782734400001,
+    "mark_price": 0.07102,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00365754,
+    "funding_time": 1782720000013,
+    "mark_price": 0.06848681,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00163614,
+    "funding_time": 1782705600000,
+    "mark_price": 0.0715,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00230113,
+    "funding_time": 1782691200006,
+    "mark_price": 0.06917,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00106797,
+    "funding_time": 1782676800003,
+    "mark_price": 0.06731,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00537606,
+    "funding_time": 1782662400000,
+    "mark_price": 0.06987029,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00127603,
+    "funding_time": 1782648000008,
+    "mark_price": 0.06159421,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00129506,
+    "funding_time": 1782633600013,
+    "mark_price": 0.06168129,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024798,
+    "funding_time": 1782619200002,
+    "mark_price": 0.05828795,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031106,
+    "funding_time": 1782604800000,
+    "mark_price": 0.05928,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048617,
+    "funding_time": 1782590400000,
+    "mark_price": 0.06058,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00149332,
+    "funding_time": 1782576000009,
+    "mark_price": 0.06541,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005682,
+    "funding_time": 1782561600001,
+    "mark_price": 0.06186,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.986e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.06477011,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054507,
+    "funding_time": 1782532800000,
+    "mark_price": 0.06366,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003583,
+    "funding_time": 1782518400000,
+    "mark_price": 0.06746,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030739,
+    "funding_time": 1782504000000,
+    "mark_price": 0.0669,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013805,
+    "funding_time": 1782489600000,
+    "mark_price": 0.07132898,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.577e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.07337,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.07747636,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.075e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.07811,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.07983769,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011851,
+    "funding_time": 1782417600011,
+    "mark_price": 0.07884493,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.08037083,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.08623595,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.0859759,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.627e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.08307,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.24e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 0.08279076,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.08266,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.255e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.07902255,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0789,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.004e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.08105,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0818486,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.738e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.08193445,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.08754,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.08526,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.08364864,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.788e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.08313382,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.08466114,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.08478,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.08410002,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.09011346,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.09339,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.101e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.0923935,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.364e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.08746,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.0858,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.08602,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.627e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.08383658,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.8e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.08372,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.399e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.09184051,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.64e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 0.09106481,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.09065512,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.08954,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011537,
+    "funding_time": 1781956800001,
+    "mark_price": 0.09269,
+    "symbol": "RIFUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.656e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.10889086,
+    "symbol": "RIFUSDT"
+  }
+]

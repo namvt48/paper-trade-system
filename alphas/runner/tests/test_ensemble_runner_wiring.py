@@ -4,6 +4,7 @@ Mirrors what cross_alpha/engine.py's CrossSectionalEngine already does for the
 standalone-container path, but for the runner used by the live alpha-runner
 container (registered via runner-config.yaml).
 """
+
 from __future__ import annotations
 
 import json
@@ -24,6 +25,8 @@ def _bare(params, alphas_root, spec=None):
     s.alpha_id = "test-alpha"
     s.params = params
     s._alphas_root = alphas_root
+    s.book_only = False
+    s._book_store = None
     if spec is not None:
         s.spec = spec
     return s
@@ -31,10 +34,17 @@ def _bare(params, alphas_root, spec=None):
 
 def _write_spec(path, **overrides):
     base = {
-        "alpha_id": "member", "timeframe": "1d", "signal": "zscore",
+        "alpha_id": "member",
+        "timeframe": "1d",
+        "signal": "zscore",
         "params": {"field": "close", "window": 5},
-        "universe_size": 4, "universe_mode": "dynamic_top_k", "rebalance_bars": 1,
-        "vol_lookback": 10, "ppy": 365, "long_threshold": None, "short_threshold": None,
+        "universe_size": 4,
+        "universe_mode": "dynamic_top_k",
+        "rebalance_bars": 1,
+        "vol_lookback": 10,
+        "ppy": 365,
+        "long_threshold": None,
+        "short_threshold": None,
     }
     base.update(overrides)
     path.write_text(json.dumps(base))
@@ -42,10 +52,19 @@ def _write_spec(path, **overrides):
 
 def _ensemble_spec(**overrides) -> AlphaSpec:
     kwargs = dict(
-        alpha_id="ensemble-1d", timeframe="1d", signal="ensemble_mean", params={},
-        universe_size=180, universe_mode="dynamic_top_k", rebalance_bars=1,
-        vol_lookback=30, ppy=365, long_threshold=None, short_threshold=None,
-        members=["member-a"], ema_smooth=5,
+        alpha_id="ensemble-1d",
+        timeframe="1d",
+        signal="ensemble_mean",
+        params={},
+        universe_size=180,
+        universe_mode="dynamic_top_k",
+        rebalance_bars=1,
+        vol_lookback=30,
+        ppy=365,
+        long_threshold=None,
+        short_threshold=None,
+        members=["member-a"],
+        ema_smooth=5,
     )
     kwargs.update(overrides)
     return AlphaSpec(**kwargs)
@@ -53,10 +72,17 @@ def _ensemble_spec(**overrides) -> AlphaSpec:
 
 def _plain_spec(**overrides) -> AlphaSpec:
     kwargs = dict(
-        alpha_id="test-kertrend", timeframe="1d", signal="kaufman_trend",
+        alpha_id="test-kertrend",
+        timeframe="1d",
+        signal="kaufman_trend",
         params={"field": "close", "er_window": 20, "ema_span": 20},
-        universe_size=180, universe_mode="dynamic_top_k", rebalance_bars=1,
-        vol_lookback=30, ppy=365, long_threshold=None, short_threshold=None,
+        universe_size=180,
+        universe_mode="dynamic_top_k",
+        rebalance_bars=1,
+        vol_lookback=30,
+        ppy=365,
+        long_threshold=None,
+        short_threshold=None,
     )
     kwargs.update(overrides)
     return AlphaSpec(**kwargs)
@@ -89,12 +115,18 @@ def test_get_warmup_bars_raises_for_ensemble_without_explicit_value():
 
 def test_resolve_member_specs_loads_real_alphaspecs(tmp_path):
     (tmp_path / "member-a").mkdir()
-    _write_spec(tmp_path / "member-a" / "spec.json", alpha_id="member-a", signal="momentum",
-                params={"field": "close", "window": 5})
+    _write_spec(
+        tmp_path / "member-a" / "spec.json",
+        alpha_id="member-a",
+        signal="momentum",
+        params={"field": "close", "window": 5},
+    )
     (tmp_path / "member-b").mkdir()
     _write_spec(tmp_path / "member-b" / "spec.json", alpha_id="member-b")
 
-    strategy = _bare({}, tmp_path, spec=_ensemble_spec(members=["member-a", "member-b"]))
+    strategy = _bare(
+        {}, tmp_path, spec=_ensemble_spec(members=["member-a", "member-b"])
+    )
 
     resolved = strategy._resolve_member_specs()
 
@@ -127,7 +159,14 @@ def test_current_drawdown_tracks_equity_peak():
     assert strategy._current_drawdown() == pytest.approx(0.0)
 
 
-NEW_ALPHA_IDS = ["1d-kertrend", "1d-trend60cmf", "1d-vwaprev", "1d-chmom", "1d-iamp", "ensemble-1d"]
+NEW_ALPHA_IDS = [
+    "1d-kertrend",
+    "1d-trend60cmf",
+    "1d-vwaprev",
+    "1d-chmom",
+    "1d-iamp",
+    "ensemble-1d",
+]
 
 
 @pytest.mark.parametrize("alpha_id", NEW_ALPHA_IDS)
@@ -150,11 +189,15 @@ def test_new_alpha_fully_constructs_via_real_runner_config(alpha_id):
         state=StrategyRuntimeState(),
         redis_client=None,
     )
-    strategy = CrossSectionalRunnerStrategy(alpha_id, entry.version, dict(entry.params), ctx)
+    strategy = CrossSectionalRunnerStrategy(
+        alpha_id, entry.version, dict(entry.params), ctx
+    )
 
     assert strategy.spec.alpha_id == alpha_id
     assert len(strategy._symbols) > 0
-    assert strategy.get_warmup_bars(strategy.spec.timeframe) == entry.params["warmup_bars"]
+    assert (
+        strategy.get_warmup_bars(strategy.spec.timeframe) == entry.params["warmup_bars"]
+    )
     if strategy.spec.signal == "ensemble_mean":
         assert strategy._member_specs is not None
         assert len(strategy._member_specs) == len(strategy.spec.members)

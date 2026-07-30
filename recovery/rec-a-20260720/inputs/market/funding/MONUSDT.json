@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02113,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.0212,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02119,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.021225,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.79e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02113193,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02136,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.0214193,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.147e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02154,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.626e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.02129,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02145,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.794e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.0214861,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.02155,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02182,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.291e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02191773,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02202417,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02195275,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.998e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.02163,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02180327,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.909e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02186,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.5e-07,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02153,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02148,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.02201048,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02214,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02207749,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.76e-06,
+    "funding_time": 1784174400003,
+    "mark_price": 0.02215,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.449e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.02226,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.396e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.02226841,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02277658,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.02247,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02258,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02279061,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02264575,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02250333,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.459e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.02279663,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.721e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.02264,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02243,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.57e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02198193,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02226218,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02194,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.02198,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.59e-06,
+    "funding_time": 1783944000000,
+    "mark_price": 0.02210495,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.142e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.02227,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02204,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.02279,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.02311,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.02290781,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.02241174,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.02216,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.02253939,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.263e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.02224315,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.02265,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0227,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.959e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.02295306,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.02309,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.02328,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.02297,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.02262,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.0226207,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.02277624,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.02258,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.02321,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.353e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.02306351,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.581e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.02326,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.02309348,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.02286,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.02349,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.584e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.02279154,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.807e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.02307,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.524e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.02290345,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.02335178,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.02385,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.02413,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.754e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.02435,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.02438,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.77e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.02488,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.02494347,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.0251512,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.02492,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.0244598,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.561e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.02497036,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.0241,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0244,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.02286339,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.781e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.02205911,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.391e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.02233,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.02158645,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.506e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.02053,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.541e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.02049,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.356e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.02027386,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.867e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.02043271,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.703e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.02044,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.02111,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.696e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.02064426,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.593e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.02063,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024196,
+    "funding_time": 1783166400000,
+    "mark_price": 0.02062,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014365,
+    "funding_time": 1783152000000,
+    "mark_price": 0.0203,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.402e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.02051,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.657e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.02047336,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.02066,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001311,
+    "funding_time": 1783094400000,
+    "mark_price": 0.02082,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.3e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.02055042,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.595e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.02049,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.02030142,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016575,
+    "funding_time": 1783036800000,
+    "mark_price": 0.01996,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.59e-06,
+    "funding_time": 1783022400008,
+    "mark_price": 0.02030562,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011009,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01995,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.05e-06,
+    "funding_time": 1782993600005,
+    "mark_price": 0.01999,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.02011,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.249e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.02055203,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014274,
+    "funding_time": 1782950400000,
+    "mark_price": 0.02003,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026508,
+    "funding_time": 1782936000000,
+    "mark_price": 0.02003,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.366e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.01964277,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.002e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.01882282,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.76e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 0.01863,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.01871,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.17e-06,
+    "funding_time": 1782864000000,
+    "mark_price": 0.01831304,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.437e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.01836123,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013254,
+    "funding_time": 1782835200005,
+    "mark_price": 0.01845,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.876e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.0184,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.399e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.01866,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.01879423,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.65e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.01891644,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.135e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.019,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.01879,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010481,
+    "funding_time": 1782734400001,
+    "mark_price": 0.01886486,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.537e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0189,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.516e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.0190195,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.425e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.01865,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.8e-06,
+    "funding_time": 1782676800003,
+    "mark_price": 0.01859752,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.444e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.01883,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001167,
+    "funding_time": 1782648000008,
+    "mark_price": 0.01901,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015936,
+    "funding_time": 1782633600013,
+    "mark_price": 0.01897126,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034187,
+    "funding_time": 1782619200002,
+    "mark_price": 0.01899047,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016101,
+    "funding_time": 1782604800000,
+    "mark_price": 0.01883,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020355,
+    "funding_time": 1782590400000,
+    "mark_price": 0.01886,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.01919,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0192,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0194,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.589e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.01944,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.01934,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.179e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.01915,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.02e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01915,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.01866,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.01911117,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.092e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.01894,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.01917,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.778e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.019,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.778e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.01912094,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014666,
+    "funding_time": 1782388800006,
+    "mark_price": 0.01964,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.282e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.01993,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.84e-06,
+    "funding_time": 1782360000008,
+    "mark_price": 0.01959803,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013218,
+    "funding_time": 1782345600000,
+    "mark_price": 0.01968,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029339,
+    "funding_time": 1782331200006,
+    "mark_price": 0.01957271,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.371e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.01915104,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.13e-06,
+    "funding_time": 1782302400005,
+    "mark_price": 0.01998,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.01985,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.203e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.02008,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.44e-06,
+    "funding_time": 1782244800000,
+    "mark_price": 0.0200203,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.57e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.02003273,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.215e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.02007,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012079,
+    "funding_time": 1782201600005,
+    "mark_price": 0.02011,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.02078,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.02062,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.02079,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.713e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.02082229,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.02118,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.86e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 0.02094,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.592e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.02089446,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.663e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.02075,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.02147398,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.02109337,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.875e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.02066995,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.02091473,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.02079,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.368e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.02058486,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.162e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.02036,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.02064,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.02061,
+    "symbol": "MONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.141e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.02062,
+    "symbol": "MONUSDT"
+  }
+]

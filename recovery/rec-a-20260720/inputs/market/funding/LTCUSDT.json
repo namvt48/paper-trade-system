@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -2.92e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 47.05,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.985e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 47.17,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.289e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 47.06785294,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.052e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 46.97,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.043e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 46.22,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.611e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 45.47539216,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.57e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 45.13813725,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 44.73177485,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.005e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 44.73044118,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.579e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 44.92395098,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.611e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 45.20192157,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.68e-06,
+    "funding_time": 1784188800003,
+    "mark_price": 44.85036511,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.364e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 45.14037525,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 45.71207843,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 45.12,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.01e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 45.37041176,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.102e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 44.75,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 43.56529412,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.49e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 43.54,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.487e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 43.45585294,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.898e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 43.88,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.742e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 43.98,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.6e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 44.78,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.71e-06,
+    "funding_time": 1783843200003,
+    "mark_price": 44.48461765,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.54e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 44.6287549,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.468e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 45.12066667,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.774e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 44.99,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.59e-06,
+    "funding_time": 1783728000000,
+    "mark_price": 44.74,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.594e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 44.73,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.056e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 44.27813725,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.591e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 43.77,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 43.95,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 44.03254902,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.05e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 43.65,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.672e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 43.33054767,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.762e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 43.83,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.856e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 43.88,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 44.67,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.157e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 44.01,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.478e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 44.81,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.359e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 44.9709902,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.368e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 44.86613725,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.649e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 45.78465686,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.408e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 45.42,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.892e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 44.38621569,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.234e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 44.82295098,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 45.14868627,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.488e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 44.20176471,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.922e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 44.8,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 43.59,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.003e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 43.21,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 43.51186275,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 43.38,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 42.68,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.302e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 42.69,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.206e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 42.48551961,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.005e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 42.19283333,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.708e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 41.91,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.925e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 41.70018627,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.502e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 42.57,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.68e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 43.16,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.566e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 42.49,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.126e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 42.64,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.48e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 42.48833333,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.28e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 42.89781373,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.331e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 42.49933333,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.024e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 42.15,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.9e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 43.09,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.99e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 42.42174442,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.057e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 41.88,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.633e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 41.37,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.244e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 41.86504902,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.995e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 40.9,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.132e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 40.41,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.829e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 41.74,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.351e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 41.16,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.39e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 40.69,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.085e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 42.05,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.671e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 42.14289216,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.464e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 41.93,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.679e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 43.77,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.679e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 44.52192157,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.281e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 45.11645098,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.06e-06,
+    "funding_time": 1782115200000,
+    "mark_price": 44.97,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.907e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 44.4410142,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.487e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 45.90660784,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.852e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 44.8,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.221e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 44.50507843,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.775e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 44.29,
+    "symbol": "LTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.906e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 44.11196078,
+    "symbol": "LTCUSDT"
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.00240328,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.00241223,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.00240363,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.0024,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.0023965,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.002406,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.00241,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.002424,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.002436,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.131e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.00242922,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.002427,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.181e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.002429,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.002457,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.002466,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.00250543,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.038e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.00245914,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.002434,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.497e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.00241,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.636e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.002441,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.864e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.002426,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.002438,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.0024585,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.53e-06,
+    "funding_time": 1784203200001,
+    "mark_price": 0.00244947,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.889e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.002469,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.6e-07,
+    "funding_time": 1784174400003,
+    "mark_price": 0.002483,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031326,
+    "funding_time": 1784160000000,
+    "mark_price": 0.00248,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.74e-06,
+    "funding_time": 1784145600002,
+    "mark_price": 0.002474,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010697,
+    "funding_time": 1784131200000,
+    "mark_price": 0.002499,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.002478,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.693e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.002501,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.0024975,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.506e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.002509,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.568e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.002505,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.867e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.002497,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.816e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.00244114,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.104e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.00242974,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.373e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.002474,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.73e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 0.002484,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.00248051,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00246882,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.925e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.002396,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.00235945,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.0023167,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.73e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.002362,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.9e-07,
+    "funding_time": 1783886400002,
+    "mark_price": 0.002393,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.471e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.0023965,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.00239028,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.0023765,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.002406,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.2e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 0.002386,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.1e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.00245,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.002457,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.002457,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.002434,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.00245041,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.002464,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.002461,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.002475,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.002501,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.00249505,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.0024545,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.002415,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.0024215,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.00241,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.002423,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.002408,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.0024,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.002372,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.0023633,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.002359,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.00237742,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.002372,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.002381,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.00242,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.00245015,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.002483,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.002479,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.002461,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.00246034,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.002496,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.002496,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.002481,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.00240904,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0024405,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.00245631,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.002482,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.00245747,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.002463,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.00244138,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.002463,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.002479,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.002512,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.00253,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.00254879,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.002492,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.002475,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.002475,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.00247105,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.002459,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.0024662,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.002484,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.002456,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.0024439,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.002421,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.002409,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.00241424,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.00242504,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.00239709,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.002397,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.00235,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.00231614,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.002346,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.00232,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00229758,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.002307,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.002276,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.002287,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.002274,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.00230805,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.00232,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.002347,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.002342,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.00234905,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.00230517,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.00229936,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.76e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.00229035,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.002299,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.77e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.00227056,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.51e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.002268,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.00228824,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.348e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.002301,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.002287,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.0023,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.002284,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.00229457,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.86e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 0.002346,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.002308,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0023214,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.002324,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.002322,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.002323,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.00232,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.002279,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.002323,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.317e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.002282,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.002285,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.965e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.002258,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.818e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.002269,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.757e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.002336,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.00236578,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.0023155,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.002329,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.00227838,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.002331,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.885e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.002412,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.002394,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.002406,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.0023831,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.91e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.002394,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.102e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.002395,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.866e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.002414,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.878e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.00246094,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.906e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.00245446,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.002482,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.002508,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.002514,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.002508,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.00251342,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00248373,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.00254,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.002575,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.002544,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.00252704,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.002544,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.00253452,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.00253846,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.00254547,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.002523,
+    "symbol": "LINEAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.002461,
+    "symbol": "LINEAUSDT"
+  }
+]

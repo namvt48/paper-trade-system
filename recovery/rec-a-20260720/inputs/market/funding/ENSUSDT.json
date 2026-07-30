@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.85e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 4.507,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 4.6339009,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.005e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 4.48262162,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.278e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 4.556,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.27e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 4.5645,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.23e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 4.449,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.832e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 4.5571518,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.907e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 4.638,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 4.421,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 4.238,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 4.29427568,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.801e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 4.2669,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.278e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 4.31331667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 4.404,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 4.21721622,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024661,
+    "funding_time": 1784073600005,
+    "mark_price": 4.224,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 4.227,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.529e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 4.098,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010269,
+    "funding_time": 1783987200000,
+    "mark_price": 4.072,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016357,
+    "funding_time": 1783958400004,
+    "mark_price": 4.06775862,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.507e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 4.138,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.063e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 4.096,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.343e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 4.13562072,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.282e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 4.123,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.049e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 4.13175,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 4.201,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 4.17836207,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 4.178,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.203e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 4.15255,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 4.16143333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.213e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 4.143,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 4.12447748,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 4.13513333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.331e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 4.06894595,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010632,
+    "funding_time": 1783526400000,
+    "mark_price": 4.01843103,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.365e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 4.06191667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 4.139,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.866e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 4.231,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 4.211,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.082e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 4.26463333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.31e-06,
+    "funding_time": 1783353600000,
+    "mark_price": 4.248,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.406e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 4.25722414,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 4.338,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 4.28123333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 4.302,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.033e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 4.31131667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 4.37,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 4.31478333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 4.36962162,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 4.34305405,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.91e-06,
+    "funding_time": 1783065600007,
+    "mark_price": 4.255,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.684e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 4.172,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.153e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 4.207,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.735e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 4.1456,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.612e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 4.09,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.091e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 4.17811667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.209e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 4.04663333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 4.0713045,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 4.049,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 4.127,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 4.18862162,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.572e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 4.14018333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 4.13178333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.627e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 4.116,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.695e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 4.15068288,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.666e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 4.13305586,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782604800000,
+    "mark_price": 4.18,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.932e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 4.309,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 4.30132432,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 4.21943333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 4.14381081,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.08e-06,
+    "funding_time": 1782460800002,
+    "mark_price": 4.13521667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.03e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 4.16,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.497e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 4.12238333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 4.349,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.717e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 4.343,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027047,
+    "funding_time": 1782316800003,
+    "mark_price": 4.25104865,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.415e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 4.38536667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.885e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 4.44093333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.648e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 4.381,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.595e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 4.41621306,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.377e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 4.6421,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.929e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 4.682,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018967,
+    "funding_time": 1782115200000,
+    "mark_price": 4.692,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012209,
+    "funding_time": 1782086400000,
+    "mark_price": 4.65013333,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014702,
+    "funding_time": 1782057600000,
+    "mark_price": 4.77916667,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013479,
+    "funding_time": 1782028800000,
+    "mark_price": 4.708,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.665e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 4.81802793,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.948e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 4.86125,
+    "symbol": "ENSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.891e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 4.80423739,
+    "symbol": "ENSUSDT"
+  }
+]

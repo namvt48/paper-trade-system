@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 7.436e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 3.173,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.878e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 3.26,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 3.18786286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.29e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 3.239,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 3.217,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 3.258,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 3.26365,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.78e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 3.10834236,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.5e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 3.069,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.595e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 3.14092857,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.792e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 3.155,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.026e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 3.10321429,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039136,
+    "funding_time": 1784160000000,
+    "mark_price": 3.17,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.789e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 3.20972095,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.641e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 3.27282857,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.098e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 3.40667429,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00080813,
+    "funding_time": 1784044800001,
+    "mark_price": 3.525,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020658,
+    "funding_time": 1784016000002,
+    "mark_price": 3.238,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 3.099,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 3.12189,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 3.13054429,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.558e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 3.032,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.848e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 2.97954138,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.653e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 3.057,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.651e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 2.91068571,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017164,
+    "funding_time": 1783785600000,
+    "mark_price": 2.87996571,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.221e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 2.81570857,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003674,
+    "funding_time": 1783728000000,
+    "mark_price": 2.855,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.627e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 2.86,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.986e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 2.91176905,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 2.89837143,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021928,
+    "funding_time": 1783612800001,
+    "mark_price": 2.99068571,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00121548,
+    "funding_time": 1783584000001,
+    "mark_price": 3.064,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 2.78003571,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.073e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 2.75514335,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 2.71424286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 2.731,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 2.82183905,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.035e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 2.85068619,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.49e-06,
+    "funding_time": 1783382400000,
+    "mark_price": 2.89965143,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.961e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 2.793,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012457,
+    "funding_time": 1783324800000,
+    "mark_price": 2.70140286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.294e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 2.706,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.95e-06,
+    "funding_time": 1783267200000,
+    "mark_price": 2.68085714,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.6e-07,
+    "funding_time": 1783238400001,
+    "mark_price": 2.692,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.539e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 2.74974286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 2.77815762,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.083e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 2.68085714,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 2.74878048,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 2.717,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 2.703,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 2.64408762,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 2.65507783,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.82e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 2.64476502,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.124e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 2.5845719,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 2.599,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.207e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 2.495,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 2.524,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 2.512,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.251e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 2.579,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012869,
+    "funding_time": 1782777600000,
+    "mark_price": 2.64934095,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.779e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 2.61704762,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 2.54548571,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011973,
+    "funding_time": 1782691200006,
+    "mark_price": 2.51946286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.59e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 2.53106667,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.771e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 2.516,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.169e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 2.51,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.49e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 2.573,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 2.56468,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 2.56438095,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 2.524,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 2.54538667,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017311,
+    "funding_time": 1782432000010,
+    "mark_price": 2.506,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028465,
+    "funding_time": 1782403200000,
+    "mark_price": 2.512,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020918,
+    "funding_time": 1782374400000,
+    "mark_price": 2.63315714,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014497,
+    "funding_time": 1782345600000,
+    "mark_price": 2.662,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013692,
+    "funding_time": 1782316800003,
+    "mark_price": 2.58117714,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.808e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 2.66963143,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.64e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 2.67244286,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.285e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 2.68812476,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.859e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 2.721,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016985,
+    "funding_time": 1782172800003,
+    "mark_price": 2.77797143,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.274e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 2.83663333,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 2.849,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.532e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 2.80645476,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 2.88044381,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.829e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 2.8685,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 2.885,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.57e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 2.889,
+    "symbol": "EGLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 2.846,
+    "symbol": "EGLDUSDT"
+  }
+]

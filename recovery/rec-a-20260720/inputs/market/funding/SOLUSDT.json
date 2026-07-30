@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5.638e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 76.34052249,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.396e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 76.18138701,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.518e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 76.11,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.81e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 75.47207437,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.433e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 74.93,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.87e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 74.93,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.897e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 75.0,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.44e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 74.75,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.497e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 74.57618387,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.683e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 75.28056622,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.49e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 76.6,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.349e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 76.38,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.874e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 77.23558836,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.87e-06,
+    "funding_time": 1784131200000,
+    "mark_price": 78.03407406,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.48e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 77.36417199,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.428e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 77.82181018,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.297e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 77.34002433,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.868e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 74.92155753,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.27e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 74.96110666,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.296e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 75.78007368,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.873e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 76.40269529,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.504e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 76.86620185,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.891e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 77.44,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.011e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 76.46191564,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.546e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 76.74,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.892e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 78.3506044,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.607e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 77.95019059,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.263e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 78.08,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 78.12,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.338e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 78.81775134,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.254e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 78.00287217,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.46e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 77.57446097,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.411e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 78.18,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.117e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 77.79,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.721e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 76.71471894,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.042e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 78.24747773,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.939e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 80.53,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.996e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 82.09,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.46e-06,
+    "funding_time": 1783411200000,
+    "mark_price": 81.45077219,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.816e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 81.91,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.227e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 81.45,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.336e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 80.77013972,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.82e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 81.55497647,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.855e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 81.31175681,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.506e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 80.67,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.37e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 81.74410705,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.847e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 82.19802477,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.74e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 82.68674953,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.283e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 82.30098762,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.2e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 81.17426393,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.188e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 81.19,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.31e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 80.6814292,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.544e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 80.81,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.441e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 77.95,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.682e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 77.42,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.848e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 77.40218899,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 74.83100211,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 73.63890447,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.228e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 73.09480251,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.704e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 74.12165781,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 75.13307681,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.184e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 73.87,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.745e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 72.68,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.21e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 71.35,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.68e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 72.05,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.764e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 71.04086445,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.63e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 70.47,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.93e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 72.8,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.81e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 72.27126616,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 71.87,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.096e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 72.04,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.442e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 70.74987595,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.113e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 67.65829253,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.827e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 66.27592892,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.028e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 69.40139065,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011854,
+    "funding_time": 1782345600000,
+    "mark_price": 68.07,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.309e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 67.3,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.233e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 69.33,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.775e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 69.65,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020855,
+    "funding_time": 1782230400002,
+    "mark_price": 68.88454777,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.607e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 69.95187865,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.964e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 71.91252441,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.017e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 73.1,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.305e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 74.06608096,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.338e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 72.42,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.45e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 74.1115614,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.277e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 73.17982368,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.438e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 73.18,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.391e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 71.98,
+    "symbol": "SOLUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.337e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 71.5434816,
+    "symbol": "SOLUSDT"
+  }
+]

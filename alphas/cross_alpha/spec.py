@@ -14,7 +14,6 @@ class AlphaSpec:
     universe_size: int
     universe_mode: str
     rebalance_bars: int
-    exec_lag: int
     vol_lookback: int
     ppy: int
     long_threshold: float | None
@@ -24,6 +23,34 @@ class AlphaSpec:
     fee_bps: float = 7.0
     construction: str = "rank"  # "rank" | "winsor_cont"
     winsor_k: float = 3.0  # clip threshold for winsor_cont
+    reverse: bool = False  # when True, swap LONG↔SHORT (negate all weights)
+    # When True, signals publish only on the scan whose candle closes at a
+    # 00:00 UTC day boundary (entries at ~00:00, never at other hours).
+    publish_at_midnight_utc: bool = False
+    # Count rebalance bars on candle-close boundaries without imposing a
+    # midnight-only gate. Use this for cadences such as 36h that must alternate
+    # between 00:00 and 12:00 UTC while remaining exactly 36 hours apart.
+    rebalance_on_close: bool = False
+    # When True, the runner attaches a cross-sectional funding panel
+    # (panel["funding_zscore"]) before calling select_positions() -- required
+    # by any signal that reads fields["funding_zscore"] (e.g. carry_momentum).
+    # The zscore is computed at funding's OWN native settlement frequency
+    # (params["funding_window"] settlements, e.g. 21 settlements @ 8h ~= 7d)
+    # before being reindexed/ffilled onto the alpha's own (typically daily)
+    # kline index -- computing it after reindexing would silently stretch the
+    # window to 21 *daily* bars (~3x too long). See
+    # CrossSectionalRunnerStrategy._attach_funding_panel.
+    needs_funding: bool = False
+    # Publish a normalized target book without emitting worker OPEN/CLOSE signals.
+    book_only: bool = False
+    # Ensemble-only fields (signal == "ensemble_mean"): member alpha_ids whose
+    # own spec.json (each already built/tested standalone) get combined, and
+    # the portfolio-overlay config (risk_parity/beta_neutralize/per_coin_cap/
+    # drawdown_throttle) applied to the combined signal. See
+    # cross_alpha/ensemble.py and cross_alpha/overlay.py.
+    members: list[str] | None = None
+    overlay: dict | None = None
+    ema_smooth: int | None = None
 
     @classmethod
     def load(cls, path: str | Path) -> "AlphaSpec":
@@ -68,4 +95,28 @@ class AlphaSpec:
             return max(int(p["z_window"]), int(p["range_window"]))
         if signal == "amihud":
             return int(p["window"]) + 1
+        if signal == "kaufman_trend":
+            return int(p["er_window"]) + int(p["ema_span"]) - 1
+        if signal == "trend_cmf_blend":
+            return max(int(p["z_window"]), int(p["cmf_window"]) + int(p["ema_span"]) - 1)
+        if signal == "vwap_reversion":
+            return int(p["vwap_window"]) + int(p["ema_span"]) - 1
+        if signal == "carry_momentum":
+            # funding_window applies at funding's own native settlement
+            # frequency (resolved upstream by the runner, not here) -- only
+            # momentum_window and the ema_span (applied post-reindex, on the
+            # alpha's own daily bars) count toward this alpha's own warmup.
+            return max(int(p["momentum_window"]) + 1, int(p["ema_span"]))
+        if signal == "ideal_amplitude":
+            # ideal_amp itself needs window+5 valid bars before it produces
+            # any output (a hard floor baked into the indicator, matching
+            # its reference implementation) plus ema_span-1 more for the
+            # smoothing to stabilize.
+            return int(p["window"]) + 5 + int(p["ema_span"]) - 1
+        if signal == "ensemble_mean":
+            raise ValueError(
+                f"{self.alpha_id}: ensemble_mean's required_bars depends on its members' own "
+                "required_bars (load each member's spec.json and take the max) -- not "
+                "computable from this spec's own params alone"
+            )
         raise ValueError(f"Unsupported signal: {signal}")

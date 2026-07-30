@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 0.2128,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.2142,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.417e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.2211,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 0.2144,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.064e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.21126795,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.715e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.21324308,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.7e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 0.21445,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.269e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.21482586,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.916e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.216,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.2194,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.2207,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.35e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.22,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.22195,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.2243,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.2215,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.22215,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.2233,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.2166,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 0.2162,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.2182,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.22005,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017378,
+    "funding_time": 1783900800000,
+    "mark_price": 0.221,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.82e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 0.2249,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.225,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.2271,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.22997692,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.22865,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.2267,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.2258,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.177e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.2299,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.48e-06,
+    "funding_time": 1783641600000,
+    "mark_price": 0.2281,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.2291,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.2344,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.23914372,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 0.23179098,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.2207,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.22259947,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.2271,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.2246,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.2263,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.22621923,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.2237,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.2274,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2269,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.2279,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.22978077,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.2314,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.2236,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.2259,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.2253,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.2203,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.221,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.22486751,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.221,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2238,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.2252,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.396e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.22383013,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.218,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.2081,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.21339885,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.2089,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.20860628,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.2087,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.20932167,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.2108,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.211,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782604800000,
+    "mark_price": 0.21152833,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 0.21608077,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.2142,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.2158,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.22091987,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.21075,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.2072,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.912e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.2067,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.245e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.2163,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.2171,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.166e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.2139,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 0.2202,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.22238231,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 0.2227,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010102,
+    "funding_time": 1782201600005,
+    "mark_price": 0.2241,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782172800003,
+    "mark_price": 0.23055641,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.23601526,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 0.2345,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.717e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.23046,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.098e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.2355,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.2353,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 0.2351,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.262e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.234,
+    "symbol": "SFPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.2343,
+    "symbol": "SFPUSDT"
+  }
+]

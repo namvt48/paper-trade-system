@@ -8,4 +8,5 @@ COPY 1h-decay-close-v3/app/ ./app/
 COPY 1h-decay-close-v3/main.py 1h-decay-close-v3/spec.json 1h-decay-close-v3/config.toml ./
 COPY 1h-decay-close-v3/data/ ./data/
 COPY 1h-decay-close-v3/blacklist.txt .
+COPY 1h-decay-close-v3/whitelist.txt .
 CMD ["python", "main.py"]

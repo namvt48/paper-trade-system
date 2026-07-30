@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -3.353e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 2122.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.58e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 2127.3,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011798,
+    "funding_time": 1784448000000,
+    "mark_price": 2112.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001026,
+    "funding_time": 1784419200003,
+    "mark_price": 2110.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.024e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 2076.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020236,
+    "funding_time": 1784361600000,
+    "mark_price": 2033.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022281,
+    "funding_time": 1784332800000,
+    "mark_price": 2061.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014054,
+    "funding_time": 1784304000004,
+    "mark_price": 2071.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010364,
+    "funding_time": 1784275200010,
+    "mark_price": 2121.56666667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012629,
+    "funding_time": 1784246400000,
+    "mark_price": 2141.18965517,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.646e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 2150.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025549,
+    "funding_time": 1784188800003,
+    "mark_price": 2145.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021333,
+    "funding_time": 1784160000000,
+    "mark_price": 2103.34479167,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019987,
+    "funding_time": 1784131200000,
+    "mark_price": 2138.02716667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018289,
+    "funding_time": 1784102400002,
+    "mark_price": 2104.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025198,
+    "funding_time": 1784073600005,
+    "mark_price": 2104.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031847,
+    "funding_time": 1784044800001,
+    "mark_price": 2117.09166667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.027e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 2108.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017966,
+    "funding_time": 1783987200000,
+    "mark_price": 2122.52083333,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018275,
+    "funding_time": 1783958400004,
+    "mark_price": 2089.1,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034431,
+    "funding_time": 1783929600001,
+    "mark_price": 2063.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023661,
+    "funding_time": 1783900800000,
+    "mark_price": 2084.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021796,
+    "funding_time": 1783872000000,
+    "mark_price": 2120.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034694,
+    "funding_time": 1783843200003,
+    "mark_price": 2135.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044271,
+    "funding_time": 1783814400000,
+    "mark_price": 2092.51875,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042995,
+    "funding_time": 1783785600000,
+    "mark_price": 2129.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028849,
+    "funding_time": 1783756800000,
+    "mark_price": 2146.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016442,
+    "funding_time": 1783728000000,
+    "mark_price": 2187.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025928,
+    "funding_time": 1783699200005,
+    "mark_price": 2164.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026678,
+    "funding_time": 1783670400005,
+    "mark_price": 2115.1,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040801,
+    "funding_time": 1783641600000,
+    "mark_price": 2102.64583333,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048905,
+    "funding_time": 1783612800001,
+    "mark_price": 2171.125,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005678,
+    "funding_time": 1783584000001,
+    "mark_price": 2183.3,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00056793,
+    "funding_time": 1783555200000,
+    "mark_price": 2287.61210417,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042373,
+    "funding_time": 1783526400000,
+    "mark_price": 2046.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070445,
+    "funding_time": 1783497600000,
+    "mark_price": 2091.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064036,
+    "funding_time": 1783468800000,
+    "mark_price": 2173.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00081479,
+    "funding_time": 1783440000000,
+    "mark_price": 2344.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00076525,
+    "funding_time": 1783411200000,
+    "mark_price": 2279.37916667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065118,
+    "funding_time": 1783382400000,
+    "mark_price": 2696.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00154131,
+    "funding_time": 1783353600000,
+    "mark_price": 2580.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035539,
+    "funding_time": 1783324800000,
+    "mark_price": 1992.53333333,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.185e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1868.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.121e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1812.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.34e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1810.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.085e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1838.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 1854.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 1829.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 1834.06666667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.135e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1823.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 1763.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.409e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1771.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 1762.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 1744.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.061e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 1746.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 1721.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.5e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 1623.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 1621.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012794,
+    "funding_time": 1782835200005,
+    "mark_price": 1608.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.71e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1636.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.164e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1643.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.308e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1645.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.223e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1644.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010184,
+    "funding_time": 1782691200006,
+    "mark_price": 1631.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.04e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 1649.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.892e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1653.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019004,
+    "funding_time": 1782604800000,
+    "mark_price": 1642.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 1664.16666667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.319e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1670.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 1671.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.987e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1663.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013505,
+    "funding_time": 1782460800002,
+    "mark_price": 1669.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013475,
+    "funding_time": 1782432000010,
+    "mark_price": 1644.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033935,
+    "funding_time": 1782403200000,
+    "mark_price": 1642.66666667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030535,
+    "funding_time": 1782374400000,
+    "mark_price": 1706.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001146,
+    "funding_time": 1782345600000,
+    "mark_price": 1703.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039583,
+    "funding_time": 1782316800003,
+    "mark_price": 1687.29166667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048711,
+    "funding_time": 1782288000005,
+    "mark_price": 1730.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031183,
+    "funding_time": 1782259200005,
+    "mark_price": 1744.05833333,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049081,
+    "funding_time": 1782230400002,
+    "mark_price": 1732.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003006,
+    "funding_time": 1782201600005,
+    "mark_price": 1742.66666667,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011157,
+    "funding_time": 1782172800003,
+    "mark_price": 1804.5875,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027541,
+    "funding_time": 1782144000002,
+    "mark_price": 1824.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010007,
+    "funding_time": 1782115200000,
+    "mark_price": 1827.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034058,
+    "funding_time": 1782086400000,
+    "mark_price": 1788.2,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.455e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1830.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015525,
+    "funding_time": 1782028800000,
+    "mark_price": 1842.5,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002963,
+    "funding_time": 1782000000000,
+    "mark_price": 1847.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034462,
+    "funding_time": 1781971200001,
+    "mark_price": 1842.0,
+    "symbol": "YFIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.244e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1852.0,
+    "symbol": "YFIUSDT"
+  }
+]

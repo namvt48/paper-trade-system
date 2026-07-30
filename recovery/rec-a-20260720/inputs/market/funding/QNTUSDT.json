@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 1.726e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 64.14213773,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002705,
+    "funding_time": 1784476800001,
+    "mark_price": 64.26,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015974,
+    "funding_time": 1784448000000,
+    "mark_price": 64.51,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014851,
+    "funding_time": 1784419200003,
+    "mark_price": 63.82,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.114e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 64.53,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.125e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 64.66,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 65.06,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.974e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 67.45526852,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010178,
+    "funding_time": 1784275200010,
+    "mark_price": 64.12577905,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012343,
+    "funding_time": 1784246400000,
+    "mark_price": 63.68,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.771e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 64.79,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.9e-07,
+    "funding_time": 1784188800003,
+    "mark_price": 65.07755791,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.05e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 65.18,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.018e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 64.82,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 65.26791687,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.485e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 65.80820504,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.91e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 64.77,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018415,
+    "funding_time": 1784016000002,
+    "mark_price": 63.82,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.689e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 64.74544069,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 64.37,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 65.39,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.68e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 65.47,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021888,
+    "funding_time": 1783872000000,
+    "mark_price": 66.0006923,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019645,
+    "funding_time": 1783843200003,
+    "mark_price": 65.61,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.724e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 65.82687441,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.82e-06,
+    "funding_time": 1783785600000,
+    "mark_price": 66.74,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.781e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 67.58,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 67.98,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 68.65157479,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 67.67212275,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 68.04424395,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 66.13,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.14e-06,
+    "funding_time": 1783584000001,
+    "mark_price": 66.18068852,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.16e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 65.78,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018681,
+    "funding_time": 1783526400000,
+    "mark_price": 64.44,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011953,
+    "funding_time": 1783497600000,
+    "mark_price": 66.16,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.714e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 65.91,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.03e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 66.71,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.587e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 65.61,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.603e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 66.1,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.488e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 66.88331497,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.56e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 66.44,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 67.5996324,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.876e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 67.13870858,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 67.59394027,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.08e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 68.17682649,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 69.01,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.887e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 67.84,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.088e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 68.38682807,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 68.01,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.512e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 67.5084861,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.457e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 67.54,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.74e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 67.46,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.392e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 66.87747777,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.002e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 66.8396453,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 67.89353545,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011127,
+    "funding_time": 1782892800000,
+    "mark_price": 65.15,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 64.77,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 64.2616501,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.752e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 65.79,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012093,
+    "funding_time": 1782777600000,
+    "mark_price": 65.6,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 65.52,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.803e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 65.10834976,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.864e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 64.56,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.727e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 65.15,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.304e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 65.22583849,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.409e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 65.53,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.785e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 66.5,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.807e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 66.16,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 67.63407304,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.05e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 66.40721118,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.154e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 64.28,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.3e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 64.7,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.933e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 66.4995682,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.599e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 68.19,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.87e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 68.56,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.248e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 67.68,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.041e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 69.48,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 70.6783357,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 71.33900737,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015037,
+    "funding_time": 1782201600005,
+    "mark_price": 67.91,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010357,
+    "funding_time": 1782172800003,
+    "mark_price": 70.51,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021589,
+    "funding_time": 1782144000002,
+    "mark_price": 71.4,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.284e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 70.64,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.11e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 70.17444446,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.525e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 70.99,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.326e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 70.75,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.96e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 70.27,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.792e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 70.75,
+    "symbol": "QNTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.191e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 70.38,
+    "symbol": "QNTUSDT"
+  }
+]

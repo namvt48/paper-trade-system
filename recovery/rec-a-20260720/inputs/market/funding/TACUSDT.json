@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.00339551,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.00340067,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.00330072,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.00336479,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.00339,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.244e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.00351683,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025347,
+    "funding_time": 1784433600000,
+    "mark_price": 0.003373,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.252e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.003453,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010678,
+    "funding_time": 1784404800004,
+    "mark_price": 0.003475,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.003573,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.00343945,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00327171,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.003274,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.003255,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.003108,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.003257,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.00339254,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.00365756,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013963,
+    "funding_time": 1784260800000,
+    "mark_price": 0.00335164,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.217e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.00365996,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.519e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.00343857,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.00313863,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.00308767,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.0030307,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.003136,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.0029508,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.00305673,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.003043,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.002973,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.002822,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.002793,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.002853,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.00310201,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.00290636,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.00284622,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.002751,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.002788,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.00276989,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.00270848,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.002708,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.002823,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.00289878,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.00297234,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.00299689,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.00315499,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.003125,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.00337844,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.00341191,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.003536,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.003706,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.00362074,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.00342444,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.00340611,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.00343103,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025154,
+    "funding_time": 1783742400000,
+    "mark_price": 0.00366,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028998,
+    "funding_time": 1783728000000,
+    "mark_price": 0.003932,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016074,
+    "funding_time": 1783713600000,
+    "mark_price": 0.004258,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015319,
+    "funding_time": 1783699200005,
+    "mark_price": 0.00378898,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016208,
+    "funding_time": 1783684800002,
+    "mark_price": 0.0039904,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024474,
+    "funding_time": 1783670400005,
+    "mark_price": 0.004038,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016743,
+    "funding_time": 1783656000000,
+    "mark_price": 0.00434368,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.000119,
+    "funding_time": 1783641600000,
+    "mark_price": 0.00475363,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.003638,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.00290572,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.002646,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.00261613,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.002516,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.354e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.0027308,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.00272704,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.00282461,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.003313,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.00432552,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.295e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.004384,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042664,
+    "funding_time": 1783468800000,
+    "mark_price": 0.004509,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00065654,
+    "funding_time": 1783454400000,
+    "mark_price": 0.00443048,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00076691,
+    "funding_time": 1783440000000,
+    "mark_price": 0.00575333,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.05132437,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.034536,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03292,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03230306,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03173978,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03045602,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03022923,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.029559,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.030767,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03084694,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.031069,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03008633,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03010969,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03016449,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03069138,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.064e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.030246,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.032111,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.032165,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.0407604,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03087211,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.0301435,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.030047,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03038789,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03093863,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.031596,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03589944,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03512779,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.034608,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.035491,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03752648,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.04009592,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03677692,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03539344,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03942003,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.042866,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.548e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.050398,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013969,
+    "funding_time": 1782907200000,
+    "mark_price": 0.05811694,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.024e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.059344,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001119,
+    "funding_time": 1782878400001,
+    "mark_price": 0.062938,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00043238,
+    "funding_time": 1782864000000,
+    "mark_price": 0.062479,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004138,
+    "funding_time": 1782849600003,
+    "mark_price": 0.05968521,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042411,
+    "funding_time": 1782835200005,
+    "mark_price": 0.05890447,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025013,
+    "funding_time": 1782820800002,
+    "mark_price": 0.062835,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034617,
+    "funding_time": 1782806400000,
+    "mark_price": 0.05880035,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00059602,
+    "funding_time": 1782792000000,
+    "mark_price": 0.05980035,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00059933,
+    "funding_time": 1782777600000,
+    "mark_price": 0.06003646,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00067737,
+    "funding_time": 1782763200000,
+    "mark_price": 0.05934992,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00034416,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0586419,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003284,
+    "funding_time": 1782734400001,
+    "mark_price": 0.05241,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004723,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0338029,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019707,
+    "funding_time": 1782705600000,
+    "mark_price": 0.02204517,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.408e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.02210277,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00037464,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02185307,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024589,
+    "funding_time": 1782662400000,
+    "mark_price": 0.02163465,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.021497,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.021524,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010688,
+    "funding_time": 1782619200002,
+    "mark_price": 0.02114794,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017396,
+    "funding_time": 1782604800000,
+    "mark_price": 0.0209679,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.02050849,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012884,
+    "funding_time": 1782576000009,
+    "mark_price": 0.02052821,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.287e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.02252525,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.934e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.02323964,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019896,
+    "funding_time": 1782532800000,
+    "mark_price": 0.02314445,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031306,
+    "funding_time": 1782518400000,
+    "mark_price": 0.024697,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026625,
+    "funding_time": 1782504000000,
+    "mark_price": 0.023911,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013897,
+    "funding_time": 1782489600000,
+    "mark_price": 0.02478168,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013839,
+    "funding_time": 1782475200004,
+    "mark_price": 0.025676,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023287,
+    "funding_time": 1782460800002,
+    "mark_price": 0.025164,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031168,
+    "funding_time": 1782446400001,
+    "mark_price": 0.023852,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039028,
+    "funding_time": 1782432000010,
+    "mark_price": 0.02263998,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017229,
+    "funding_time": 1782417600011,
+    "mark_price": 0.021244,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012357,
+    "funding_time": 1782403200000,
+    "mark_price": 0.02112456,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013755,
+    "funding_time": 1782388800006,
+    "mark_price": 0.02125,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.02094633,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001044,
+    "funding_time": 1782360000008,
+    "mark_price": 0.020604,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.020355,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.02029398,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.02030042,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.02001803,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001136,
+    "funding_time": 1782288000005,
+    "mark_price": 0.01958587,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001144,
+    "funding_time": 1782259200005,
+    "mark_price": 0.01968234,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016848,
+    "funding_time": 1782244800000,
+    "mark_price": 0.019522,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.019561,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011294,
+    "funding_time": 1782216000000,
+    "mark_price": 0.019921,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.019773,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013951,
+    "funding_time": 1782187200000,
+    "mark_price": 0.01979094,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.01980412,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.020035,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014557,
+    "funding_time": 1782144000002,
+    "mark_price": 0.019852,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.0194039,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.019609,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.02009086,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.01992132,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.02026668,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.020537,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.020836,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.265e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.021021,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.066e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.02086956,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.02098059,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022489,
+    "funding_time": 1781985600000,
+    "mark_price": 0.020942,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021712,
+    "funding_time": 1781971200001,
+    "mark_price": 0.02086701,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014214,
+    "funding_time": 1781956800001,
+    "mark_price": 0.021189,
+    "symbol": "TACUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.014e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.020912,
+    "symbol": "TACUSDT"
+  }
+]

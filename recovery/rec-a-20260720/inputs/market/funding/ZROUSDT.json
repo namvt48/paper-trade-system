@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 7.08e-06,
+    "funding_time": 1784520000000,
+    "mark_price": 0.7645933,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.252e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.7888,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.577e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.7992,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.152e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.807,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.377e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.81076593,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.81491164,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.8081,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.7923,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.78410181,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.7808,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.799,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.8127,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.8069,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.213e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.7785,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.77574672,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.78484347,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.7837,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.79793249,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.81151829,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.972e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.81268498,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.8128,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.8122,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.378e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.8082,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.8103,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.494e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.8162,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.576e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.8208,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.8348,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.84470035,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.8474,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.8563,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.8696,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.759e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.8597,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.85579012,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.85708552,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.8482015,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.652e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.8549,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.8656,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.8623,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.8703,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.84942053,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.8587,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.644e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.8579,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.32e-06,
+    "funding_time": 1783915200000,
+    "mark_price": 0.8494,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.86578253,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.87704868,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.87750539,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.937e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.88503906,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.90139515,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.9045,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.915,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.9212,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.9266,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.92231151,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.92444004,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.9261,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.92490399,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.905,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.903,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.9233,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.89260072,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.89974963,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.90460871,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.92027656,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.86e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.9222911,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.92004718,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.92193148,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.93370185,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.9468,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.9505,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.9641,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.9551842,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.9526,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.96887018,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.9328,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.95824101,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.9803,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.99798853,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.0092,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.0066,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.0138,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.0222,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.9909,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.97354494,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.95370541,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.9551,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.9279,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.91689323,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.9126,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.9137,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.92282964,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.9043,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.90929894,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.93420764,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.91781107,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.8985978,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.8967,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.90518203,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.88760869,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.88340866,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.88507891,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.89774625,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.8721,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.87755616,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.88682877,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.8901,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.8534,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.8486,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.82461027,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.82749294,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.8137,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.81232603,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.8359585,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.82063192,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.8238,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.991e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.82447638,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.8222025,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.81346595,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.82238362,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.80135249,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.81535748,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.81987477,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.80545712,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.8147,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.78530244,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.76240504,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.75854213,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.786,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.7755,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.74541404,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.617e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.7533,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.7518,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.107e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.7552,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.77523965,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.77554516,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.77023014,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.79470011,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.78230119,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.80543445,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.79493301,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.7963,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.79885584,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.80155346,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.7725,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.81630432,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.831e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.7891,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.81602438,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.58e-06,
+    "funding_time": 1782417600011,
+    "mark_price": 0.8291,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.597e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.8325,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.639e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.8767,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.7e-07,
+    "funding_time": 1782374400000,
+    "mark_price": 0.8783,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.596e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.86796309,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.29e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 0.86383447,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012629,
+    "funding_time": 1782331200006,
+    "mark_price": 0.8406,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.90643837,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.95472531,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.9365489,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.9288,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.9286,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.9443,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.9676,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.9252,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.9667,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.9531,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.9589,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.97385928,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.9446,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.9215,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.9068,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.9033,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.92667236,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.93367794,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.903,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.89784906,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.90109863,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.90014977,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.89568346,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.91357544,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.90684722,
+    "symbol": "ZROUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.9223,
+    "symbol": "ZROUSDT"
+  }
+]

@@ -82,9 +82,18 @@ Plan này KHÔNG chỉ khôi phục dịch vụ (restart là đủ để cứu t
 - **KHÔNG làm** executor `queue_depth`: `ThreadPoolExecutor._work_queue.qsize()` là API nội bộ không chính thức của `concurrent.futures`, dễ vỡ giữa các Python minor version — không đáng đánh đổi cho một số liệu phụ khi `stale_alphas`/`scan_timeout_by_alpha` đã là tín hiệu "fail loud" chính, đúng yêu cầu R3.
 - Acceptance: `test_runner_metrics_snapshot_flags_alpha_silent_far_longer_than_its_timeframe`, `test_runner_metrics_snapshot_does_not_flag_alpha_that_never_processed_yet`, `test_health_endpoint_returns_503_when_an_alpha_is_stale` (mới, `test_deployment_runtime.py`) — GREEN, không vỡ 5 test cũ trong cùng file.
 
-### U7 — Verify + triển khai
-- `make test-runner` xanh (baseline: 4 lỗi pre-existing không liên quan — `test_snapshot.py`, `test_alpha_claim.py`, `test_periodic_claim.py` — xác nhận có trước khi bắt đầu, không do plan này gây ra, không sửa vì ngoài phạm vi); deploy `alpha-runner`; `make runner-reconcile` nếu cần; xác nhận 6 daily alpha đều emit ở kline close 00:00 UTC kế tiếp (kiểm chứng bằng DB `signals` + log ALPHA_TIMING).
-- Acceptance: sau 1 chu kỳ daily close, cả 6 daily alpha có signal mới trong `signals`; không alpha nào im lặng > timeframe.
+### U7 — Verify + triển khai — ĐÃ DEPLOY, chờ xác nhận cuối ở daily close kế tiếp
+- `make test-runner`: 168 passed, 15 skipped, 1 failed + 10 error (baseline pre-existing, xác nhận qua `git stash` trước/sau — không do plan này gây ra). ✓
+- Commit `b3e5b16` (scope `alphas/runner/` + `.agents/`, bundle cả một số việc dở dang khác của session trước không tách được — đại diện đã xác nhận chấp nhận). ✓
+- Deploy 2026-07-17 04:17 UTC lên server `167.86.101.228`: `make package` → scp → build + restart **chỉ** `alpha-runner` (`--no-deps`, không đụng `alpha-runner-legacy`/`worker`/core — mirror pattern `deploy-legacy-runner` nhưng đúng service). ✓
+- Verify ngay sau deploy (04:25:58 UTC, warmup xong 27/27):
+  - Container `healthy`, không exception nào trong log.
+  - `[CLAIM] Group 1d claimed 6 alphas: 1d-kertrend,1d-trend60cmf,1d-chmom,1d-vwaprev,1d-iamp,ensemble-1d` — đủ 6.
+  - `/health` → `{"status":"ok"}`; `/metrics` → `stale_alphas:[]`, `scan_timeout_by_alpha:{}`, `strategies_active:27`.
+  - `panel_feature_cache`: 27 alpha nhưng chỉ `panel_build_total:5` (5 nhóm tf/universe riêng biệt) — xác nhận cache/single-flight hoạt động đúng cấu trúc.
+  - `config_listener` subscribe qua async pubsub mới, không lỗi.
+- **Còn lại (không thể verify trong phiên này — cách ~19.5h):** xác nhận cả 6 daily alpha thực sự emit signal ở candle close 00:00 UTC 18/07 (kiểm bằng DB `signals` hoặc `/metrics` `last_event_age_sec`/`stale_alphas` sau 00:00 UTC). Đề xuất: đại diện tự kiểm tra `curl localhost:9091/health` hoặc query DB sau 00:05 UTC, hoặc nhờ agent mới trong phiên sau kiểm tra.
+- Acceptance: (a) deploy healthy, cấu trúc đúng — ĐẠT. (b) 6 daily alpha có signal mới trong `signals` sau 1 chu kỳ daily close — **CHƯA XÁC NHẬN**, cần kiểm tra lại sau 00:00 UTC 18/07.
 
 ## Risks
 

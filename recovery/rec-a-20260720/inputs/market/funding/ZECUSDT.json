@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 7.048e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 547.85255196,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.867e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 552.9,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.234e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 559.46,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.716e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 558.37557758,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.653e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 556.973837,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.419e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 541.07713961,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.491e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 547.26142171,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 543.42516495,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 532.02015646,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 523.5,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.356e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 555.52820677,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.351e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 568.53952415,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.739e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 570.36,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.2e-07,
+    "funding_time": 1784131200000,
+    "mark_price": 575.66,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.473e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 551.99,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 563.97055615,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.509e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 539.64366151,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.971e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 505.35,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.901e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 495.37,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.143e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 508.8927443,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.774e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 521.76,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.056e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 533.26162576,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.99e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 531.15,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.687e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 517.55,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 508.56,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 504.3,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 498.88,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 498.91,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.22e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 500.73917372,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 500.23341307,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 481.37,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.43e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 465.88,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.187e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 467.61,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.423e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 465.72,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.528e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 454.24016036,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 476.13269959,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 483.51179897,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 494.54098009,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 454.79,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 452.6793174,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 452.1,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 456.00526148,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 462.21252886,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 462.88,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 458.94,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 463.23778724,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 465.3,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 462.15304169,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 460.89463936,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 459.83913912,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 439.48,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.81e-06,
+    "funding_time": 1783036800000,
+    "mark_price": 434.43092729,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.745e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 437.67,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.215e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 423.14964086,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.277e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 416.93521439,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.663e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 414.93,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 398.47206582,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.328e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 399.24469276,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.37e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 401.11967031,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.09e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 399.59688817,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 407.29770578,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 389.30069452,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.473e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 382.11903789,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.452e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 376.21,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.692e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 389.4,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.41e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 385.58493983,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.187e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 395.65,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 411.38,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 411.18596204,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 419.10339895,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.4e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 410.02,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 413.55154946,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 416.46254282,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.974e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 401.14,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.095e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 418.52,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.003e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 416.67,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.473e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 406.24,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.307e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 413.55,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.97e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 415.83,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011761,
+    "funding_time": 1782230400002,
+    "mark_price": 417.61813978,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011868,
+    "funding_time": 1782201600005,
+    "mark_price": 424.84,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.41e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 442.06,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031451,
+    "funding_time": 1782144000002,
+    "mark_price": 449.75920169,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043142,
+    "funding_time": 1782115200000,
+    "mark_price": 451.24667484,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042999,
+    "funding_time": 1782086400000,
+    "mark_price": 434.27,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025477,
+    "funding_time": 1782057600000,
+    "mark_price": 453.43295764,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036959,
+    "funding_time": 1782028800000,
+    "mark_price": 465.87,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040063,
+    "funding_time": 1782000000000,
+    "mark_price": 470.62125495,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030544,
+    "funding_time": 1781971200001,
+    "mark_price": 475.21,
+    "symbol": "ZECUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003479,
+    "funding_time": 1781942400000,
+    "mark_price": 468.39,
+    "symbol": "ZECUSDT"
+  }
+]

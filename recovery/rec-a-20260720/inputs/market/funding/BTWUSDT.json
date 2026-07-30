@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029998,
+    "funding_time": 1784520000000,
+    "mark_price": 0.06644,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031704,
+    "funding_time": 1784505600000,
+    "mark_price": 0.06868839,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00041492,
+    "funding_time": 1784491200004,
+    "mark_price": 0.06648766,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023262,
+    "funding_time": 1784476800001,
+    "mark_price": 0.06632916,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015639,
+    "funding_time": 1784462400000,
+    "mark_price": 0.06479,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017489,
+    "funding_time": 1784448000000,
+    "mark_price": 0.06682122,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00040693,
+    "funding_time": 1784433600000,
+    "mark_price": 0.06484,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038126,
+    "funding_time": 1784419200003,
+    "mark_price": 0.06325,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024188,
+    "funding_time": 1784404800004,
+    "mark_price": 0.06381,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029993,
+    "funding_time": 1784390400001,
+    "mark_price": 0.062217,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00058053,
+    "funding_time": 1784376000002,
+    "mark_price": 0.06510093,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004514,
+    "funding_time": 1784361600000,
+    "mark_price": 0.06328371,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020163,
+    "funding_time": 1784347200000,
+    "mark_price": 0.05989078,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030772,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0602,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045342,
+    "funding_time": 1784318400000,
+    "mark_price": 0.05966,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025064,
+    "funding_time": 1784304000004,
+    "mark_price": 0.06085511,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017667,
+    "funding_time": 1784289600004,
+    "mark_price": 0.05816921,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.617e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.05901,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031897,
+    "funding_time": 1784260800000,
+    "mark_price": 0.06008056,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024121,
+    "funding_time": 1784246400000,
+    "mark_price": 0.0599515,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027299,
+    "funding_time": 1784232000002,
+    "mark_price": 0.05964859,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021957,
+    "funding_time": 1784217600002,
+    "mark_price": 0.05947,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.05996,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016591,
+    "funding_time": 1784188800003,
+    "mark_price": 0.05914,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003763,
+    "funding_time": 1784174400003,
+    "mark_price": 0.05985,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00046059,
+    "funding_time": 1784160000000,
+    "mark_price": 0.06021,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033549,
+    "funding_time": 1784145600002,
+    "mark_price": 0.06042021,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00050878,
+    "funding_time": 1784131200000,
+    "mark_price": 0.06061,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003342,
+    "funding_time": 1784116800003,
+    "mark_price": 0.06167489,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026911,
+    "funding_time": 1784102400002,
+    "mark_price": 0.06017655,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028623,
+    "funding_time": 1784088000003,
+    "mark_price": 0.05946684,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027479,
+    "funding_time": 1784073600005,
+    "mark_price": 0.05839036,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018219,
+    "funding_time": 1784059200000,
+    "mark_price": 0.05871,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019347,
+    "funding_time": 1784044800001,
+    "mark_price": 0.05993,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026889,
+    "funding_time": 1784030400001,
+    "mark_price": 0.05994305,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015332,
+    "funding_time": 1784016000002,
+    "mark_price": 0.05968,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031947,
+    "funding_time": 1784001600000,
+    "mark_price": 0.06033,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023217,
+    "funding_time": 1783987200000,
+    "mark_price": 0.06073,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020868,
+    "funding_time": 1783972800000,
+    "mark_price": 0.05909147,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021972,
+    "funding_time": 1783958400004,
+    "mark_price": 0.05991,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020969,
+    "funding_time": 1783944000000,
+    "mark_price": 0.05838,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010321,
+    "funding_time": 1783929600001,
+    "mark_price": 0.05871378,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016295,
+    "funding_time": 1783915200000,
+    "mark_price": 0.05929,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016163,
+    "funding_time": 1783900800000,
+    "mark_price": 0.06010281,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021634,
+    "funding_time": 1783886400002,
+    "mark_price": 0.05957,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036163,
+    "funding_time": 1783872000000,
+    "mark_price": 0.06040864,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031564,
+    "funding_time": 1783857600000,
+    "mark_price": 0.06025665,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031546,
+    "funding_time": 1783843200003,
+    "mark_price": 0.06247755,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016672,
+    "funding_time": 1783828800000,
+    "mark_price": 0.05848517,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027748,
+    "funding_time": 1783814400000,
+    "mark_price": 0.05931441,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045405,
+    "funding_time": 1783800000000,
+    "mark_price": 0.0601478,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00062951,
+    "funding_time": 1783785600000,
+    "mark_price": 0.06115,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045973,
+    "funding_time": 1783771200008,
+    "mark_price": 0.06252,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.174e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.06478,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012879,
+    "funding_time": 1783742400000,
+    "mark_price": 0.06283556,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028937,
+    "funding_time": 1783728000000,
+    "mark_price": 0.06425757,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.06328,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002335,
+    "funding_time": 1783699200005,
+    "mark_price": 0.06465,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015932,
+    "funding_time": 1783684800002,
+    "mark_price": 0.06344021,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033456,
+    "funding_time": 1783670400005,
+    "mark_price": 0.06288,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.92e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.06497,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012042,
+    "funding_time": 1783641600000,
+    "mark_price": 0.06488823,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030853,
+    "funding_time": 1783627200000,
+    "mark_price": 0.06579256,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025613,
+    "funding_time": 1783612800001,
+    "mark_price": 0.06501753,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024606,
+    "funding_time": 1783598400002,
+    "mark_price": 0.06333,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001448,
+    "funding_time": 1783584000001,
+    "mark_price": 0.06261,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033537,
+    "funding_time": 1783569600002,
+    "mark_price": 0.06281,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025163,
+    "funding_time": 1783555200000,
+    "mark_price": 0.06614321,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029816,
+    "funding_time": 1783540800006,
+    "mark_price": 0.06716344,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.05983,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031674,
+    "funding_time": 1783512000005,
+    "mark_price": 0.0616,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017337,
+    "funding_time": 1783497600000,
+    "mark_price": 0.06129259,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014598,
+    "funding_time": 1783483200003,
+    "mark_price": 0.06110477,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.482e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.06209407,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021775,
+    "funding_time": 1783454400000,
+    "mark_price": 0.06375025,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021348,
+    "funding_time": 1783440000000,
+    "mark_price": 0.06187,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015009,
+    "funding_time": 1783425600010,
+    "mark_price": 0.06305539,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.06465,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.0622,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.06029053,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.06248512,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.944e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.06582584,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001222,
+    "funding_time": 1783339200002,
+    "mark_price": 0.06324995,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022866,
+    "funding_time": 1783324800000,
+    "mark_price": 0.06539,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025845,
+    "funding_time": 1783310400000,
+    "mark_price": 0.06817971,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00060478,
+    "funding_time": 1783296000000,
+    "mark_price": 0.07575176,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00058731,
+    "funding_time": 1783281600000,
+    "mark_price": 0.07537,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017991,
+    "funding_time": 1783267200000,
+    "mark_price": 0.07636457,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025495,
+    "funding_time": 1783252800000,
+    "mark_price": 0.08139045,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039296,
+    "funding_time": 1783238400001,
+    "mark_price": 0.0712603,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017181,
+    "funding_time": 1783224000002,
+    "mark_price": 0.06374,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025233,
+    "funding_time": 1783209600003,
+    "mark_price": 0.06459,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015626,
+    "funding_time": 1783195200000,
+    "mark_price": 0.06299,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0004047,
+    "funding_time": 1783180800007,
+    "mark_price": 0.06630419,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.842e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.0633,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.05938,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.06058,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012712,
+    "funding_time": 1783123200000,
+    "mark_price": 0.06221,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.786e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.05864,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013554,
+    "funding_time": 1783094400000,
+    "mark_price": 0.06166,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030365,
+    "funding_time": 1783080000002,
+    "mark_price": 0.06335784,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015581,
+    "funding_time": 1783065600007,
+    "mark_price": 0.06385245,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019966,
+    "funding_time": 1783051200000,
+    "mark_price": 0.06524,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010363,
+    "funding_time": 1783036800000,
+    "mark_price": 0.06236,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022503,
+    "funding_time": 1783022400008,
+    "mark_price": 0.06325694,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013351,
+    "funding_time": 1783008000000,
+    "mark_price": 0.06322,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022911,
+    "funding_time": 1782993600005,
+    "mark_price": 0.06272191,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024763,
+    "funding_time": 1782979200000,
+    "mark_price": 0.06562,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014122,
+    "funding_time": 1782964800003,
+    "mark_price": 0.05978,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022808,
+    "funding_time": 1782950400000,
+    "mark_price": 0.06716543,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018381,
+    "funding_time": 1782936000000,
+    "mark_price": 0.06477,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020901,
+    "funding_time": 1782921600000,
+    "mark_price": 0.06541,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001975,
+    "funding_time": 1782907200000,
+    "mark_price": 0.06396995,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017158,
+    "funding_time": 1782892800000,
+    "mark_price": 0.06063,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.324e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.06298,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.05266487,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.05285586,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.716e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.05364982,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019694,
+    "funding_time": 1782820800002,
+    "mark_price": 0.06667351,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.06750149,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.05327587,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.05024,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.0504,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.05011,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.05270754,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.05154508,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.05337,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.0570395,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.0581,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.06140105,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.06447377,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.06811,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.06325143,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.06448,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.07292,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.07575878,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.08466579,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059007,
+    "funding_time": 1782547200000,
+    "mark_price": 0.08362557,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040056,
+    "funding_time": 1782532800000,
+    "mark_price": 0.09087,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.496e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.09631879,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00076978,
+    "funding_time": 1782504000000,
+    "mark_price": 0.08830636,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091012,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0982,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072125,
+    "funding_time": 1782475200004,
+    "mark_price": 0.09887821,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00128156,
+    "funding_time": 1782460800002,
+    "mark_price": 0.09879929,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00135745,
+    "funding_time": 1782446400001,
+    "mark_price": 0.0974419,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00081615,
+    "funding_time": 1782432000010,
+    "mark_price": 0.09655165,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.09278,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.09853,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.09939207,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021738,
+    "funding_time": 1782374400000,
+    "mark_price": 0.09821699,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00035172,
+    "funding_time": 1782360000008,
+    "mark_price": 0.09512716,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.10123468,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.09177263,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00043422,
+    "funding_time": 1782316800003,
+    "mark_price": 0.10187811,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012091,
+    "funding_time": 1782302400005,
+    "mark_price": 0.09974,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.808e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.10504838,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00047979,
+    "funding_time": 1782259200005,
+    "mark_price": 0.09988,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00077343,
+    "funding_time": 1782244800000,
+    "mark_price": 0.09992,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00075726,
+    "funding_time": 1782230400002,
+    "mark_price": 0.10013048,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00057215,
+    "funding_time": 1782216000000,
+    "mark_price": 0.10330761,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029631,
+    "funding_time": 1782201600005,
+    "mark_price": 0.08907842,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002121,
+    "funding_time": 1782187200000,
+    "mark_price": 0.0860354,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024614,
+    "funding_time": 1782172800003,
+    "mark_price": 0.09419,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015219,
+    "funding_time": 1782158400000,
+    "mark_price": 0.08988,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00066404,
+    "funding_time": 1782144000002,
+    "mark_price": 0.09163,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00131304,
+    "funding_time": 1782129600000,
+    "mark_price": 0.11171,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00114746,
+    "funding_time": 1782115200000,
+    "mark_price": 0.09724,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00069976,
+    "funding_time": 1782100800000,
+    "mark_price": 0.09084,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036415,
+    "funding_time": 1782086400000,
+    "mark_price": 0.08052,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00055126,
+    "funding_time": 1782072000004,
+    "mark_price": 0.08481207,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00037551,
+    "funding_time": 1782057600000,
+    "mark_price": 0.09232,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00058409,
+    "funding_time": 1782043200001,
+    "mark_price": 0.1219117,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00072384,
+    "funding_time": 1782028800000,
+    "mark_price": 0.09179243,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00204772,
+    "funding_time": 1782014400000,
+    "mark_price": 0.11299,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00278192,
+    "funding_time": 1782000000000,
+    "mark_price": 0.13325,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00428495,
+    "funding_time": 1781985600000,
+    "mark_price": 0.185,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00279565,
+    "funding_time": 1781971200001,
+    "mark_price": 0.15591,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00282083,
+    "funding_time": 1781956800001,
+    "mark_price": 0.13480471,
+    "symbol": "BTWUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00186469,
+    "funding_time": 1781942400000,
+    "mark_price": 0.11850421,
+    "symbol": "BTWUSDT"
+  }
+]

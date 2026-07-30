@@ -9,7 +9,7 @@ quan tới trend giá, nên nó lãi khi trend đứng — và còn *mạnh hơn
 | khung | 4h · rebal 12 (2d) · vol-lookback 30 (5d) |
 | signal | `cs_zscore(ts_mean(abs(returns_t180) / dollar_volume_t180, 180))` |
 | định cỡ | trọng số độ lớn từng coin (winsor-cont, không rank) — xem [overview](overview.md) |
-| universe | top-180 (`_t180`) · exec_lag 1 · vol-target 10% · gross 1 trung hòa đô-la |
+| universe | top-180 (`_t180`) · vol-target 10% · gross 1 trung hòa đô-la |
 | hiệu năng | IS 1.86 · **OS 2.34 · WFE 1.26** · maxDD(OS) −12% · **182 lệnh/năm** (turnover rất thấp) |
 
 ## Tín hiệu & vào lệnh long/short

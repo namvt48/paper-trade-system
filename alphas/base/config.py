@@ -9,7 +9,6 @@ class BaseConfig(BaseSettings):
     LEVERAGE: int = 10
     MAX_CONCURRENT_POSITIONS: int = 50
     LOG_LEVEL: str = "INFO"
-    LOG_DIR: str = "logs"
     EXCHANGE: str = "binance"
     FEE_PCT: float = 0.0005
     DATA_CHANNELS: str = ""
@@ -19,6 +18,8 @@ class BaseConfig(BaseSettings):
     WARMUP_BARS: int = 50
     WARMUP_MIN_SYMBOL_COVERAGE: float = 0.90
     SYMBOL_BLACKLIST: str = ""
+    SYMBOL_WHITELIST: str = ""
+    WHITELIST_FILE: str = ""
     MANAGE_INTERVAL_SEC: float = 60.0
     MDS_REDIS_URL: str = ""
     MDS_EXCHANGE: str = ""

@@ -20,7 +20,8 @@ ALPHA ?= undefined
 	require-mds-network alphas-up alphas-down alpha-up alpha-down alpha-restart alpha-logs alphas-ps alphas-health \
 	alpha-deregister \
 	runner-build runner-up runner-down runner-scale runner-logs runner-health runner-sync-config runner-status runner-reconcile \
-	test test-indicators test-cross-alpha test-runner \
+	pm-build pm-up pm-down pm-logs pm-health \
+	test test-indicators test-cross-alpha test-runner audit-whitelist \
 	package deploy deploy-core deploy-system deploy-all deploy-alpha deploy-legacy-runner deploy-alpha-deregister deploy-restart deploy-logs deploy-ps deploy-prune \
 	deploy-db-reset deploy-db-recover db-trades db-summary db-open db-symbols db-csv db-alphas
 
@@ -32,12 +33,15 @@ help:
 	@echo "  make runner-scale N=3 Scale alpha-runner replicas"
 	@echo "  make runner-health   Check alpha-runner container; metrics is best-effort during warmup"
 	@echo "  make runner-reconcile  Remove ghost Redis positions (run before runner-up after deploy-core)"
+	@echo "  make pm-up           Start pm-live (run after runner-up has produced sleeve books)"
+	@echo "  make pm-down         Stop pm-live; alpha runner and worker remain running"
 	@echo "  make alphas-down     Stop legacy standalone alpha containers, if any"
 	@echo "  make alpha-deregister ALPHA=<name>          Stop + remove from DB and .env (local)"
 	@echo "  make test            Run all tests (indicators + alphas)"
 	@echo "  make test-indicators Run indicators library tests"
 	@echo "  make test-cross-alpha Run cross-alpha strategy tests"
 	@echo "  make test-runner     Run alpha-runner tests"
+	@echo "  make audit-whitelist Report whitelist.txt symbols no longer TRADING on Binance (FIX=1 to auto-remove)"
 	@echo "  make health          Check core, stream, DB, and runner"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
 	@echo "  make deploy          Upload, start core + runner on SERVER=$(SERVER)"
@@ -126,6 +130,24 @@ runner-reconcile: ## Remove ghost Redis positions (runner:positions:* keys with 
 	@echo "→ Reconciling Redis positions with DB..."
 	@docker compose exec -T worker python3 -c "import sqlite3,redis; con=sqlite3.connect('/app/data/paper-trade.db'); db={r[0] for r in con.execute('SELECT DISTINCT alpha_id FROM positions')}; c=redis.from_url('redis://paper-redis:6379',decode_responses=True); removed=sum(c.delete(k) for k in c.scan_iter('runner:positions:*') if k.replace('runner:positions:','') not in db); print(f'Reconciled: removed {removed} ghost position keys')"
 
+# ─── Portfolio Manager ──────────────────────────────────────────────────────
+
+pm-build:
+	$(COMPOSE) --profile pm build pm-live
+
+pm-up:
+	$(COMPOSE) --profile pm up -d --build pm-live
+
+pm-down:
+	$(COMPOSE) --profile pm stop pm-live
+
+pm-logs:
+	$(COMPOSE) --profile pm logs -f pm-live
+
+pm-health:
+	$(COMPOSE) --profile pm ps pm-live
+	@$(COMPOSE) --profile pm exec -T pm-live python -c "import json,os; json.load(open(os.environ['PORTFOLIO_CONFIG'])); print('pm-live config OK')"
+
 # ─── Alpha management ────────────────────────────────────────────────────────
 
 require-mds-network:
@@ -197,14 +219,19 @@ test-cross-alpha:
 test-runner:
 	PYTHONPATH=.:alphas python -m pytest alphas/runner/ -v
 
+audit-whitelist:
+	python3 scripts/audit_whitelist_tradability.py $(if $(FIX),--fix,)
+
 # ─── Package ─────────────────────────────────────────────────────────────────
 
 package:
 	rm -f $(ZIP_PATH)
 	cd .. && zip -r $(ZIP_PATH) $(ZIP_NAME)/ \
 		-x "$(ZIP_NAME)/.git/*" \
+		-x "$(ZIP_NAME)/docs/*" \
 		-x "$(ZIP_NAME)/.pytest_cache/*" \
 		-x "$(ZIP_NAME)/.codegraph/*" \
+		-x "$(ZIP_NAME)/.omo/*" \
 		-x "$(ZIP_NAME)/**/__pycache__/*" \
 		-x "$(ZIP_NAME)/**/.venv/*" \
 		-x "$(ZIP_NAME)/**/.pytest_cache/*" \
@@ -212,14 +239,16 @@ package:
 		-x "$(ZIP_NAME)/**/.ruff_cache/*" \
 		-x "$(ZIP_NAME)/**/node_modules/*" \
 		-x "$(ZIP_NAME)/**/.next/*" \
-		-x "$(ZIP_NAME)/data/paper-trade.db" \
-		-x "$(ZIP_NAME)/data/paper-trade.db-shm" \
-		-x "$(ZIP_NAME)/data/paper-trade.db-wal" \
+		-x "$(ZIP_NAME)/data/*.db*" \
 		-x "$(ZIP_NAME)/logs/*" \
 		-x "$(ZIP_NAME)/benchmarks/results/*" \
 		-x "$(ZIP_NAME)/graphify-out/*" \
 		-x "$(ZIP_NAME)/*.log" \
 		-x "$(ZIP_NAME)/**/*.log"
+	@if zipinfo -1 $(ZIP_PATH) | grep -Eq '^$(ZIP_NAME)/data/.*\.db'; then \
+		echo "ERROR: runtime database leaked into deploy package"; \
+		exit 1; \
+	fi
 	@echo "Packaged → $(ZIP_PATH)"
 	@zip -sf $(ZIP_PATH) | grep "\.env" && echo "✓ .env files included" || true
 

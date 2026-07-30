@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -4.713e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.0008227,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.048e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.00081996,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.00081944,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.321e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.0008168,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.0008145,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.0008136,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.0008226,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.2e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0008233,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.386e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.00081685,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.0008118,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.894e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.00081391,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.667e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.00082308,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.453e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.0008247,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.099e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0008177,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.588e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.00082669,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.359e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.0008279,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.0008301,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.159e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.00082031,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.18e-06,
+    "funding_time": 1784260800000,
+    "mark_price": 0.00082992,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.473e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.0008303,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.0008309,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.00084309,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.00084062,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.000849,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.0008579,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.0008535,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.00085028,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.000856,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.0008451,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.00084295,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.00085012,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.0008474,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.0008487,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.00085632,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.00083752,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.0008253,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.0008257,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0008244,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.00082605,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00084267,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.00085187,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.509e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0008437,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.063e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.00083,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.669e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.0008388,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.086e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.00084385,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.6e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 0.00084691,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.00084782,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.00084871,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.000865,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.273e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.00087413,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.0008845,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0008826,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.00087304,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.00084825,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.00085061,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0008501,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.0008461,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.0008566,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.0008614,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.00085843,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.0008749,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.000847,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.0008493,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.0008519,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.00086559,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0008627,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.0008438,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00084479,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.00084194,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.000828,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.0008331,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.0008432,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.00083693,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.0008526,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.0008577,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.0008803,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.00088891,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.00087704,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.00087794,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.0008959,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.00090531,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0009151,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.00089174,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0009095,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.00091617,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.00092272,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.00091655,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.00091424,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.0008991,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.00090882,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.0008877,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.00089272,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.00091121,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.0009241,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.0008999,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.00089028,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.0009013,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0009019,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.00089439,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.00089816,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.0008904,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.0008815,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.0008703,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0008737,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.00086662,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.23e-06,
+    "funding_time": 1783008000000,
+    "mark_price": 0.00085594,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.0008415,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.00082941,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.0008447,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0008385,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.67e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.00083757,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.00082429,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.00080987,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00080963,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.0008321,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.00080814,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.00081124,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.0008147,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.00082229,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0008464,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.0008534,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.00085935,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.0008594,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.00086503,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.00089748,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.8e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0009035,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.916e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.00092377,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.0008826,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022369,
+    "funding_time": 1782676800003,
+    "mark_price": 0.0008939,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.583e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.0008923,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.0008506,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.00082131,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.995e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.0008153,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.453e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.00080775,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.0008019,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0008179,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.00080624,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0008096,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.00081196,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.00080393,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.00080354,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0007993,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.748e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.00078187,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.0007987,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.799e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.0007942,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.0007949,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.676e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.0007884,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.277e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.00079332,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.154e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.0008202,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.00083288,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.0008186,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.000827,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.00080771,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.00081511,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.00084961,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.0008488,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.169e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0008643,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.00085558,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.35e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.0008569,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.00084802,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.112e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0008507,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.005e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.0008876,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.26e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 0.0008795,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.0008904,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.342e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.00089029,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.00089224,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0008797,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.665e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.0008741,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.02e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.00086494,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.0008913,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.00089102,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.871e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.0008853,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.00087972,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.644e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.0008826,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.327e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.00088103,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.0008809,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0008879,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.21e-06,
+    "funding_time": 1781956800001,
+    "mark_price": 0.000877,
+    "symbol": "TURBOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.07e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.00087958,
+    "symbol": "TURBOUSDT"
+  }
+]

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 1.347e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02856,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.02871,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.36e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02865236,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.788e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02873,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.161e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.02889,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.14e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 0.02906882,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.222e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.02919,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.914e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.02933163,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.38e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.027795,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.654e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.02748,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.784e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.02747488,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.879e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.0275,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.053e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.02759213,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02783882,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02775,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.801e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.02768238,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.85e-06,
+    "funding_time": 1784289600004,
+    "mark_price": 0.0277,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.525e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.02759581,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.02832516,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.02818054,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.33e-06,
+    "funding_time": 1784232000002,
+    "mark_price": 0.02837,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.084e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.028375,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.02836925,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.02855516,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.777e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.02875447,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.927e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.028785,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.02869,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.02919,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.02877482,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.02864,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.02888,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.44e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.02899,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.02872587,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0297,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.02898,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.02903568,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.02886674,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.02887694,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.02893235,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.374e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0296,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.821e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.029765,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.941e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.02998,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.325e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.02963,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.055e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.02985,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.03023,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.65e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03039,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.357e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.030515,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.542e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03038324,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.030648,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.363e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.03053,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.871e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.0314,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0309,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.0309,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03073833,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03061129,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.030615,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.46e-06,
+    "funding_time": 1783713600000,
+    "mark_price": 0.03044,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03061676,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.664e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03091394,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.568e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03081,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.03075,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03025065,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.726e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.0305,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.21e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03033588,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.03061633,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03106414,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03009,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.432e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03037548,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.193e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.03001,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010918,
+    "funding_time": 1783526400000,
+    "mark_price": 0.02954,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.86e-06,
+    "funding_time": 1783512000005,
+    "mark_price": 0.02977,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.59e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03041,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.0305,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.884e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.03049,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.0308,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03129088,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03142,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03093,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6e-07,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03074333,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03134,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03141267,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03181,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.817e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03102699,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.791e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03104,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.841e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03132952,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03170324,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.854e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03135869,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.419e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.0308596,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.32e-06,
+    "funding_time": 1783252800000,
+    "mark_price": 0.0306352,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.91e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03082486,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03072,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.39e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03124404,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.027e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.031597,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.224e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03158853,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.123e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03113233,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.063e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03126261,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.85e-06,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03173,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03191306,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03143,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03133603,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03151088,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.55e-06,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03093,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.689e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03092,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03056,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.469e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03041,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.17e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03042,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.03077982,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03004,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03045,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.347e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.02972,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.28e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.0297222,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.02988354,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.631e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.02932,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.314e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.0291,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.773e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.02941,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.45e-06,
+    "funding_time": 1782864000000,
+    "mark_price": 0.02912,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.59e-06,
+    "funding_time": 1782849600003,
+    "mark_price": 0.0296,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.396e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.02975284,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.02939959,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.02952,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.02971294,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.905e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03016224,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.03040067,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.02959,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.02927933,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0298407,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.02927,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.0286607,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.02857,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.0291,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.02913,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.02940441,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.34e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.02919,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.0284,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.85e-06,
+    "funding_time": 1782590400000,
+    "mark_price": 0.02888366,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.083e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.02936,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.434e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.0289791,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.362e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.02908,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.24e-06,
+    "funding_time": 1782532800000,
+    "mark_price": 0.02886,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.028808,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.996e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.02932458,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.141e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.02926,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.295e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.02868,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.02979433,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.0291751,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.02963765,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.02973588,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.8e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.0299379,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.67e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03102,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03122735,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03093765,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03079,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.112e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03017,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001026,
+    "funding_time": 1782316800003,
+    "mark_price": 0.0307672,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.04e-06,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03168,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.819e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.03156382,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03202706,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.956e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03202133,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.588e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.0321,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.112e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03203292,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.764e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.03257,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.969e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.03344,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019403,
+    "funding_time": 1782172800003,
+    "mark_price": 0.03323048,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.463e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03368,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.684e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.034,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.262e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03475,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.546e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0343,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.857e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03409,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.405e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03336054,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.24e-06,
+    "funding_time": 1782072000004,
+    "mark_price": 0.034285,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.627e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03434094,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.548e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03409,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.081e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.03421,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.643e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03442,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.49e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.034277,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.317e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03398,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016581,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0345,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.804e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03438,
+    "symbol": "STRKUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.7e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03438,
+    "symbol": "STRKUSDT"
+  }
+]

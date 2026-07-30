@@ -8,4 +8,5 @@ COPY 4h-trend-close/app/ ./app/
 COPY 4h-trend-close/main.py 4h-trend-close/spec.json 4h-trend-close/config.toml ./
 COPY 4h-trend-close/data/ ./data/
 COPY 4h-trend-close/blacklist.txt .
+COPY 4h-trend-close/whitelist.txt .
 CMD ["python", "main.py"]

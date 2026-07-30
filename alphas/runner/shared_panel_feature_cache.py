@@ -13,6 +13,7 @@ import pandas as pd
 
 from cross_alpha.strategy import CrossAlphaComputeContext, build_panel
 from runner.data_layer.cache import SharedCandleCache
+from runner.perf_metrics import LabeledLatencyWindows, LatencyWindow
 
 
 @dataclass(frozen=True)
@@ -33,6 +34,9 @@ class SharedPanelFeatureCache:
         self._panels: OrderedDict[tuple[int, str, str, int, int], PanelBundle] = OrderedDict()
         self._inflight: dict[tuple[int, str, str, int, int], asyncio.Task] = {}
         self._lock = threading.Lock()
+        self._panel_build_latency: LatencyWindow = LatencyWindow()
+        self._selection_compute_latency: LatencyWindow = LatencyWindow()
+        self._panel_build_by_group: LabeledLatencyWindows = LabeledLatencyWindows()
         self.metrics: dict[str, int | float] = {
             "panel_cache_hits": 0,
             "panel_cache_misses": 0,
@@ -145,10 +149,9 @@ class SharedPanelFeatureCache:
             self._panels[key] = bundle
             while len(self._panels) > self.max_panels:
                 self._panels.popitem(last=False)
+        duration_sec = time.perf_counter() - started
         self._inc("panel_build_total")
-        self.metrics["panel_build_duration_sec_total"] = float(self.metrics["panel_build_duration_sec_total"]) + (
-            time.perf_counter() - started
-        )
+        self.observe_panel_build(tf, universe, duration_sec)
         return bundle
 
     def clear(self) -> None:
@@ -156,13 +159,19 @@ class SharedPanelFeatureCache:
             self._group_max_bars.clear()
             self._panels.clear()
 
-    def snapshot(self) -> dict[str, int | float]:
+    def snapshot(self) -> dict[str, Any]:
+        """Return cache counters plus bounded latency summaries."""
         with self._lock:
             panel_entries = len(self._panels)
         return {
             **self.metrics,
             "panel_cache_entries": panel_entries,
             "panel_group_entries": len(self._group_max_bars),
+            "latency": {
+                "panel_build_sec": self._panel_build_latency.snapshot(),
+                "selection_compute_sec": self._selection_compute_latency.snapshot(),
+                "panel_build_by_group_sec": self._panel_build_by_group.snapshot(),
+            },
         }
 
     def _build_panel(
@@ -251,4 +260,15 @@ class SharedPanelFeatureCache:
         self._inc(name, amount)
 
     def observe_seconds(self, name: str, seconds: float) -> None:
+        """Add a cumulative duration and update its bounded latency window."""
         self.metrics[name] = float(self.metrics.get(name, 0.0)) + float(seconds)
+        if name == "selection_compute_duration_sec_total":
+            self._selection_compute_latency.observe(seconds)
+
+    def observe_panel_build(self, tf: str, universe_hash: str, seconds: float) -> None:
+        """Record overall and cardinality-bounded panel-build latency."""
+        self.metrics["panel_build_duration_sec_total"] = (
+            float(self.metrics["panel_build_duration_sec_total"]) + float(seconds)
+        )
+        self._panel_build_latency.observe(seconds)
+        self._panel_build_by_group.observe(f"{tf}:{universe_hash}", seconds)

@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 2.0161,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 2.00005072,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 1.99093135,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 1.97411104,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 1.99157509,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.012e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.9891,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.55e-06,
+    "funding_time": 1784433600000,
+    "mark_price": 2.00391039,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.505e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 2.0067,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 2.0186,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.9827,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.089e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 1.9509,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.88e-06,
+    "funding_time": 1784361600000,
+    "mark_price": 1.9603,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.47e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 1.98825419,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.288e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.96339567,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.99e-06,
+    "funding_time": 1784318400000,
+    "mark_price": 1.97043947,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.9874,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.276e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 1.99519982,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.2e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 1.999,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.353e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 2.0285,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.22e-06,
+    "funding_time": 1784246400000,
+    "mark_price": 2.07196766,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.87e-06,
+    "funding_time": 1784232000002,
+    "mark_price": 2.0124,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.805e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 2.02966117,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 2.12673005,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 2.1037,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 2.1174,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 2.01878468,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 2.0388,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 2.0665,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 2.0731,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 2.05439955,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 2.00537626,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 2.0594,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 2.0284,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 2.02312847,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 2.02971086,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 2.02595423,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.039e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 1.96275014,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.21e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 1.99078423,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.118e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 1.999015,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 2.015,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.624e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 1.9512,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.091e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 1.98206441,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.69e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 1.9938,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.869e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 2.0022,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.399e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 2.0212,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.9954,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 1.99450401,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 2.02428527,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 2.0792,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 2.0716745,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 2.1273,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 2.20941369,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 2.1163,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.105e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 2.0701,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 2.0814591,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 2.1872,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 2.1822,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 2.2541,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 2.2756,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 2.26491572,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 2.2757,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 2.2488,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 2.19915739,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 2.1042,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 2.0773,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 2.05048721,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 2.02622527,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 2.0426,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 2.0565,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 2.0788,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 2.13694982,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 2.07733586,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 2.03872614,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 2.01559045,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 2.0276,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 2.0003,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 2.0013,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.99345338,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 1.99986486,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 2.00839189,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 1.9889,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 2.0048,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 1.9144,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.91456189,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 1.93075523,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.93742185,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 1.93944324,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.9385,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 1.98151919,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 2.00413842,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 1.9514,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 1.9549,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 1.9205,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 1.9411,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 1.93126167,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 1.9839,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 1.98372739,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 1.97389383,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 1.9486486,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 1.96869329,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 1.95205667,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 1.9995,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 2.0471,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 2.0738,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 2.0586,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 2.1617355,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 2.14861883,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.16e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 2.1146,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.545e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 2.17568671,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 2.0705,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 2.0811,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 2.11011396,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 1.9931,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.752e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.97730167,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.136e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 1.9068,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.701e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.89675635,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 1.8997,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.918e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 1.8747559,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.365e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 1.86574653,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.01e-06,
+    "funding_time": 1782806400000,
+    "mark_price": 1.91414231,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.012e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 1.87045153,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.29e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.8842,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 1.82628099,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.79820757,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 1.8025,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.28e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 1.7868,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 1.7731,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.74975349,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.27e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 1.72733739,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.285e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.7427,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.17e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 1.75846995,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.322e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.7588,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.529e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 1.7369,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.539e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.74531,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.288e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 1.7461,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.80078712,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.079e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 1.7769,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.7832,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 1.7805,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.7918,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 1.70687791,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.67611806,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 1.6634,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.68659995,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 1.65188602,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.6954,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 1.7083,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.753,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.881e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.784,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.871e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.7527,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.73746302,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.76e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.72184797,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.65e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 1.7114,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.73e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 1.68975527,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001177,
+    "funding_time": 1782302400005,
+    "mark_price": 1.6883,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.11e-06,
+    "funding_time": 1782288000005,
+    "mark_price": 1.6449,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.497e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 1.64192423,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 1.63985131,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.356e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.634,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 1.72258414,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.337e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.7332,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.473e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 1.7835,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.113e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.7802,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.86e-06,
+    "funding_time": 1782158400000,
+    "mark_price": 1.7865595,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.071e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.821,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.8257,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.81741167,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 1.80196234,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.79717973,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 1.8315,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 1.86312131,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 1.8569,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.985e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 1.84453886,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.811285,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.8185,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 1.8196,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.849975,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.85730294,
+    "symbol": "MORPHOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.87477225,
+    "symbol": "MORPHOUSDT"
+  }
+]

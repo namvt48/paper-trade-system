@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004664,
+    "funding_time": 1784505600000,
+    "mark_price": 0.36101644,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.922e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.36920305,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.45e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.375,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.262e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.3761,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026687,
+    "funding_time": 1784390400001,
+    "mark_price": 0.37048225,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.118e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.38053418,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.345e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.3883,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.945e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.384,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021999,
+    "funding_time": 1784275200010,
+    "mark_price": 0.37903568,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.268e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.388,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.58e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 0.39856331,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016026,
+    "funding_time": 1784188800003,
+    "mark_price": 0.39795847,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.834e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.40624867,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.487e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.40987158,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.66e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 0.40975441,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.713e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.4146,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.049e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.41417296,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.008e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.4058,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018875,
+    "funding_time": 1783987200000,
+    "mark_price": 0.3922,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.652e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.4088,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.97e-06,
+    "funding_time": 1783929600001,
+    "mark_price": 0.4152,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.414e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.4184,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.4262,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.12e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.4016,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.39715604,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.4076,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.05e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.39015829,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.776e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.38124715,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.887e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.3843,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.38138205,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.28e-06,
+    "funding_time": 1783641600000,
+    "mark_price": 0.38305458,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.326e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.38204429,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.19e-06,
+    "funding_time": 1783584000001,
+    "mark_price": 0.3837,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.587e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.38875936,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.36e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 0.37488314,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.752e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.3729,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.843e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.3806,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.268e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.39465478,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010457,
+    "funding_time": 1783411200000,
+    "mark_price": 0.39735139,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.925e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.4099,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.4183,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.641e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.4182,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.084e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.4185,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.28e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.40330597,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.649e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.41684021,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.406e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.4252,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.8e-07,
+    "funding_time": 1783180800007,
+    "mark_price": 0.4367,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010372,
+    "funding_time": 1783152000000,
+    "mark_price": 0.4249,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.45e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.43416644,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.38e-06,
+    "funding_time": 1783094400000,
+    "mark_price": 0.42736366,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.899e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.41855228,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.379e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.4042,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.26e-06,
+    "funding_time": 1783008000000,
+    "mark_price": 0.38309633,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.62e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.37090231,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.129e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.3613,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.40049754,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.747e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.3914,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.4066,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.02e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.4145,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.41679372,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.057e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.4206081,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.422e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.42195038,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.799e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.42685107,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.812e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.4422,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.027e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.4425,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.717e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.4521,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.395e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.4489,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.445e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.46837943,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.08e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 0.46462248,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.46705907,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.273e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.4629,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.121e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.48298717,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.427e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.49588516,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.943e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.49310843,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.57e-06,
+    "funding_time": 1782374400000,
+    "mark_price": 0.5156,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.317e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.5299,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.503e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.52131535,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.414e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.52364756,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015081,
+    "funding_time": 1782259200005,
+    "mark_price": 0.54347152,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.373e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.5543,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014748,
+    "funding_time": 1782201600005,
+    "mark_price": 0.5846,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011387,
+    "funding_time": 1782172800003,
+    "mark_price": 0.6189,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.677e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.63615622,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.566e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.6389,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.872e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.605,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.308e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.64308654,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.99e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.6028,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.541e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.6103,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.9e-07,
+    "funding_time": 1781971200001,
+    "mark_price": 0.6163,
+    "symbol": "WLDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.426e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.60013615,
+    "symbol": "WLDUSDT"
+  }
+]

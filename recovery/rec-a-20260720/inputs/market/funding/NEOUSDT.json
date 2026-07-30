@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00076354,
+    "funding_time": 1784505600000,
+    "mark_price": 2.05518229,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00084821,
+    "funding_time": 1784476800001,
+    "mark_price": 2.043,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00239151,
+    "funding_time": 1784448000000,
+    "mark_price": 2.03224583,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050712,
+    "funding_time": 1784419200003,
+    "mark_price": 1.99827292,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052522,
+    "funding_time": 1784390400001,
+    "mark_price": 2.0015,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.866e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.934,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.4e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.946,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 1.951,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 1.9305,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 1.94042708,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 1.96766667,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 1.96746875,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 1.97354526,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 1.98468333,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 1.966,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.014e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.982,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.768e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 1.982,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012944,
+    "funding_time": 1784016000002,
+    "mark_price": 1.933,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.261e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.914,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017879,
+    "funding_time": 1783958400004,
+    "mark_price": 1.91644688,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018752,
+    "funding_time": 1783929600001,
+    "mark_price": 1.941,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.788e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.939,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.359e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.964,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022276,
+    "funding_time": 1783843200003,
+    "mark_price": 1.956,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 1.9494625,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000176,
+    "funding_time": 1783785600000,
+    "mark_price": 1.988,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001189,
+    "funding_time": 1783756800000,
+    "mark_price": 1.96044375,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013731,
+    "funding_time": 1783728000000,
+    "mark_price": 1.962,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.566e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.954,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 1.957,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.326e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.93916875,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.943e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.943,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.697e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 1.939,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.062e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.908,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.277e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.88844181,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.012e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 1.913,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.398e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 1.929,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.285e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 1.986,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.29e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.962,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.274e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.999,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 1.99002083,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.876e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 1.9646,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.363e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.994,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.071e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 1.97617292,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.873e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 1.9784,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 1.998,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.155e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 2.012125,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 1.97775,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 2.00121667,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 1.9864,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 1.957,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.215e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 1.948,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.108e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 1.954,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.3e-07,
+    "funding_time": 1782979200000,
+    "mark_price": 1.9245,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.8e-06,
+    "funding_time": 1782950400000,
+    "mark_price": 1.91545,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.584e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.957,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018602,
+    "funding_time": 1782892800000,
+    "mark_price": 1.889,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020701,
+    "funding_time": 1782864000000,
+    "mark_price": 1.8799,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028153,
+    "funding_time": 1782835200005,
+    "mark_price": 1.902,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.481e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 1.9195,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.538e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.927,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.2e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.927,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.065e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 1.9285,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.826e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.90355938,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.617e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.91896875,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.513e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.921,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.432e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.901,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 1.944,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.62e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 1.940125,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.783e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.93243333,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.017e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.93,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 1.939,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 1.916,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.54e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.916,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 2.011,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.979e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 2.015,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.495e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 2.0,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014269,
+    "funding_time": 1782288000005,
+    "mark_price": 2.05722917,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.095e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 2.072,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.258e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 2.06749167,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.799e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 2.059,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.193e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 2.124,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.734e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 2.172,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 2.15,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.21e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 2.127,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.953e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 2.201,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.759e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 2.205,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.75e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 2.214,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.136e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 2.23,
+    "symbol": "NEOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.184e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 2.207,
+    "symbol": "NEOUSDT"
+  }
+]

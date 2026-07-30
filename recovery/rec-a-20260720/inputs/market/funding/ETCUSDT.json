@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.834e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 6.953,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014646,
+    "funding_time": 1784476800001,
+    "mark_price": 6.90882432,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 6.96654595,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.902e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 7.01,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.68e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 6.99568198,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 7.06076216,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.834e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 7.0375,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.046e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 7.03265405,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.136e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 6.88827459,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 6.935,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.751e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 7.02820901,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.946e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 7.038,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 7.08121202,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.371e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 7.127,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 7.00252883,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 7.092,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.933e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 7.061,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.976e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 6.90526378,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.125e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 6.879,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.299e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 6.92654685,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.184e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 6.963,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010692,
+    "funding_time": 1783900800000,
+    "mark_price": 6.84461982,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.222e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 6.93306216,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011479,
+    "funding_time": 1783843200003,
+    "mark_price": 6.85716667,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 6.95011802,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 7.10000676,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 7.09,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.3e-07,
+    "funding_time": 1783728000000,
+    "mark_price": 7.05462703,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.43e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 7.08,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 7.04370541,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.587e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 7.03276757,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 7.00269189,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.753e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 7.01557207,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.861e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 6.899,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.931e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 6.85048136,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.456e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 6.917,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.353e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 6.961,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.695e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 7.044,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 7.024,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.17e-06,
+    "funding_time": 1783382400000,
+    "mark_price": 7.11,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.939e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 7.161,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.27e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 7.099,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.465e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 7.2384,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.64e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 7.17223874,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.808e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 7.103,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 7.261,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 7.35260405,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 7.15397838,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 7.2279955,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 7.1825027,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 7.107,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.43e-06,
+    "funding_time": 1783036800000,
+    "mark_price": 7.07,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.243e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 7.11291351,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 7.02862162,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.476e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 7.00675045,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.19e-06,
+    "funding_time": 1782921600000,
+    "mark_price": 7.014,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.512e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 6.8594018,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.821e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 6.8889,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.942e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 6.969,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.877e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 7.017,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.996e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 7.138,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.707e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 7.034,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.255e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 7.046,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.871e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 7.049,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.255e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 7.028,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.755e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 7.108,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.914e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 7.11,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 7.2689,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 7.29589748,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 7.248,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.442e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 7.12257387,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 7.02376396,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.469e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 7.026,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.683e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 6.92908559,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 7.14095853,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001881,
+    "funding_time": 1782345600000,
+    "mark_price": 6.988,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.67e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 6.812,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 7.06987027,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.998e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 7.06,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.86e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 6.91735757,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.691e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 7.004,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.596e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 7.171,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.576e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 7.295,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.023e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 7.318,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.07e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 7.29498835,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.142e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 7.382,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.939e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 7.401,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.584e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 7.45475991,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 7.57085865,
+    "symbol": "ETCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 7.51986396,
+    "symbol": "ETCUSDT"
+  }
+]

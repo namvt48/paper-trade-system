@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 3.164,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 3.18546875,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.549e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 3.188,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016813,
+    "funding_time": 1784419200003,
+    "mark_price": 3.18133125,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012348,
+    "funding_time": 1784390400001,
+    "mark_price": 3.162,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015123,
+    "funding_time": 1784361600000,
+    "mark_price": 3.16063125,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011781,
+    "funding_time": 1784332800000,
+    "mark_price": 3.2015,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.789e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 3.189,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.89e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 3.18718958,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.302e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 3.194,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 3.231,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 3.27473646,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011294,
+    "funding_time": 1784160000000,
+    "mark_price": 3.31525938,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.695e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 3.339,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.28e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 3.297,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.36e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 3.332425,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.543e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 3.37881146,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 3.248,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.108e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 3.22803333,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 3.343,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 3.284,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 3.27375,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 3.311,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 3.326,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.727e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 3.30228646,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 3.373,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.109e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 3.326,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.958e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 3.41100833,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.802e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 3.33,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.04e-06,
+    "funding_time": 1783670400005,
+    "mark_price": 3.35090833,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.464e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 3.272,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.493e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 3.247,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.901e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 3.26246667,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.978e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 3.378,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 3.19,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 3.22179583,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 3.25,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 3.397,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 3.377,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 3.47925,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.244e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 3.63403333,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017408,
+    "funding_time": 1783324800000,
+    "mark_price": 3.36944167,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001025,
+    "funding_time": 1783296000000,
+    "mark_price": 3.29777917,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 3.224,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.515e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 3.24945625,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 3.292,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.66e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 3.348,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.8e-07,
+    "funding_time": 1783152000000,
+    "mark_price": 3.283,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.608e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 3.33205833,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.163e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 3.266125,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.544e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 3.211,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 3.14106667,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 3.16,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.66e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 3.139,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028505,
+    "funding_time": 1782950400000,
+    "mark_price": 3.088,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.228e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 3.14705819,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.522e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 2.983,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.685e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 2.97478125,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.341e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 2.985,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.76e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 3.00530833,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 3.047,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 3.02300208,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 3.027,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.284e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 3.004,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 3.041925,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 3.044,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782604800000,
+    "mark_price": 3.04,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 3.13971875,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 3.14921875,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 3.1315625,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.105e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 3.12,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.809e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 3.12,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.66e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 3.10490625,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017069,
+    "funding_time": 1782403200000,
+    "mark_price": 3.108,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 3.26839547,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 3.29,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.868e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 3.266,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.11e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 3.37694375,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.892e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 3.37812708,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.607e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 3.31923333,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.25e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 3.317,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.04e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 3.410825,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.483e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 3.512,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 3.488,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.276e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 3.423,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 3.504,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 3.55199688,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 3.529,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.584e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 3.512,
+    "symbol": "KSMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.572e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 3.479,
+    "symbol": "KSMUSDT"
+  }
+]

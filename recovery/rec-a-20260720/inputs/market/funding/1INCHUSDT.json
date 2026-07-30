@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -2.198e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.07379,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.671e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.07265,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.17e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 0.07265,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.5e-07,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0734144,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.787e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.071765,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.739e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.07171,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.441e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.07238,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.406e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.0719,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.071195,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.07264,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.07356689,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.573e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.07454601,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.115e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.07441871,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.558e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.07491,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.985e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.07432,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.152e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.07471504,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0754,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.0722,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.175e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.07144,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.966e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.07148,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.908e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.07197,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.07286,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.07384,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.073,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.867e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.07334271,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.983e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.07383,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.07217,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.36e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.07226392,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.687e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.07217759,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.74e-06,
+    "funding_time": 1783670400005,
+    "mark_price": 0.07234,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.417e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.07129,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.07113,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.07134,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.07051622,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.679e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.06953476,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.07067392,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.0707,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.07226629,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.07164859,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.07260315,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.07322807,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.07153239,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.0725568,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.0717,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.0718,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.07216563,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.07353865,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.0717,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.07205919,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.07221486,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.0711,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0706,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.0706,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.069,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.06835043,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.06855199,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.0662,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.06565249,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.06611928,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.06761286,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.0684,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0681,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0686,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032882,
+    "funding_time": 1782691200006,
+    "mark_price": 0.06795,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.892e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.0681,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.929e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.06821605,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014208,
+    "funding_time": 1782604800000,
+    "mark_price": 0.0683,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.834e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.07015103,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0691,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012135,
+    "funding_time": 1782518400000,
+    "mark_price": 0.06888861,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.867e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0691,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.257e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.0687,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.0673,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.1e-07,
+    "funding_time": 1782403200000,
+    "mark_price": 0.0672,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.262e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.07028366,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.509e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.0694,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.669e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.06820361,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016676,
+    "funding_time": 1782288000005,
+    "mark_price": 0.07,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019735,
+    "funding_time": 1782259200005,
+    "mark_price": 0.07048919,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022474,
+    "funding_time": 1782230400002,
+    "mark_price": 0.07,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0703,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016193,
+    "funding_time": 1782172800003,
+    "mark_price": 0.072,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.0734,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013245,
+    "funding_time": 1782115200000,
+    "mark_price": 0.0729,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782086400000,
+    "mark_price": 0.0718,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 0.0735,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.07322631,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 0.0739,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 0.0735,
+    "symbol": "1INCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.885e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.073,
+    "symbol": "1INCHUSDT"
+  }
+]

@@ -1,7 +1,7 @@
 import aiosqlite
 import json
 import uuid
-from datetime import datetime
+from datetime import datetime, timezone
 from contextlib import asynccontextmanager
 from typing import Optional
 
@@ -57,7 +57,9 @@ def merge_position_runtime_metadata(current: str | None, update: str | None) -> 
         merged.update(runtime)
         base["strategy_runtime"] = merged
         base["strategy_runtime_version"] = int(
-            incoming.get("strategy_runtime_version", base.get("strategy_runtime_version", 1))
+            incoming.get(
+                "strategy_runtime_version", base.get("strategy_runtime_version", 1)
+            )
         )
     return json.dumps(base)
 
@@ -73,7 +75,12 @@ class Database:
         self._conn.row_factory = aiosqlite.Row
         await self._conn.execute("PRAGMA journal_mode=WAL")
         await self._conn.execute("PRAGMA synchronous=NORMAL")
-        await self._conn.execute("PRAGMA busy_timeout=5000")
+        # 2026-07-27: a burst of ~40 simultaneous alpha rebalances serialized
+        # through this single writer connection exceeded a 5s busy_timeout,
+        # raising "database is locked" and (before the handle_signal_message
+        # try/except fix) crashing the whole consumer. 20s gives a mass
+        # rebalance headroom to drain the write queue instead of erroring.
+        await self._conn.execute("PRAGMA busy_timeout=20000")
         await self._conn.execute("PRAGMA temp_store=MEMORY")
         await self._create_tables()
         await self._migrate()
@@ -132,6 +139,52 @@ class Database:
                 exchange TEXT DEFAULT 'binance'
             );
 
+            CREATE TABLE IF NOT EXISTS virtual_positions (
+                position_id TEXT PRIMARY KEY,
+                alpha_id TEXT,
+                signal_id TEXT,
+                symbol TEXT,
+                side TEXT,
+                entry_price REAL,
+                qty REAL,
+                leverage INTEGER DEFAULT 1,
+                opened_at TEXT,
+                metadata TEXT,
+                exchange TEXT DEFAULT 'binance'
+            );
+
+            CREATE TABLE IF NOT EXISTS virtual_trades (
+                trade_id TEXT PRIMARY KEY,
+                position_id TEXT,
+                alpha_id TEXT,
+                signal_id TEXT,
+                symbol TEXT,
+                side TEXT,
+                entry_price REAL,
+                exit_price REAL,
+                qty REAL,
+                pnl REAL,
+                pnl_percent REAL,
+                leverage INTEGER,
+                tp REAL,
+                sl REAL,
+                reason TEXT,
+                duration_hours REAL,
+                opened_at TEXT,
+                closed_at TEXT,
+                metadata TEXT,
+                fee REAL DEFAULT 0.0,
+                exchange TEXT DEFAULT 'binance'
+            );
+
+            CREATE TABLE IF NOT EXISTS virtual_trade_events (
+                event_id TEXT PRIMARY KEY,
+                alpha_id TEXT NOT NULL,
+                event_type TEXT NOT NULL,
+                payload TEXT NOT NULL,
+                processed_at TEXT NOT NULL
+            );
+
             CREATE TABLE IF NOT EXISTS signals (
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 signal_id TEXT,
@@ -146,6 +199,10 @@ class Database:
             CREATE INDEX IF NOT EXISTS idx_trades_alpha_closed ON trades(alpha_id, closed_at);
             CREATE INDEX IF NOT EXISTS idx_trades_closed ON trades(closed_at);
             CREATE INDEX IF NOT EXISTS idx_trades_pnl ON trades(pnl);
+            CREATE INDEX IF NOT EXISTS idx_virtual_trades_alpha_closed
+                ON virtual_trades(alpha_id, closed_at);
+            CREATE INDEX IF NOT EXISTS idx_virtual_positions_alpha_symbol
+                ON virtual_positions(alpha_id, symbol);
             CREATE INDEX IF NOT EXISTS idx_positions_alpha_symbol ON positions(alpha_id, symbol);
             CREATE INDEX IF NOT EXISTS idx_positions_symbol ON positions(symbol);
             CREATE INDEX IF NOT EXISTS idx_signals_alpha_received ON signals(alpha_id, received_at);
@@ -238,7 +295,22 @@ class Database:
             """INSERT INTO positions
                (position_id, alpha_id, signal_id, symbol, side, entry_price, qty, tp, sl, leverage, opened_at, metadata, exchange, fee_pct)
                VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)""",
-            (position_id, alpha_id, signal_id, symbol, side, entry_price, qty, tp, sl, leverage, opened_at, metadata, exchange, fee_pct),
+            (
+                position_id,
+                alpha_id,
+                signal_id,
+                symbol,
+                side,
+                entry_price,
+                qty,
+                tp,
+                sl,
+                leverage,
+                opened_at,
+                metadata,
+                exchange,
+                fee_pct,
+            ),
         )
         await self._commit()
         return position_id
@@ -258,8 +330,13 @@ class Database:
         row = await cursor.fetchone()
         return dict(row) if row else None
 
-    async def modify_position(self, position_id: str, tp: float = None, sl: float = None,
-                              metadata: str | None = None):
+    async def modify_position(
+        self,
+        position_id: str,
+        tp: float = None,
+        sl: float = None,
+        metadata: str | None = None,
+    ):
         updates = []
         params = []
         if tp is not None:
@@ -271,7 +348,11 @@ class Database:
         if metadata and metadata not in ("{}", ""):
             pos = await self.get_position(position_id)
             updates.append("metadata = ?")
-            params.append(merge_position_runtime_metadata(pos.get("metadata") if pos else None, metadata))
+            params.append(
+                merge_position_runtime_metadata(
+                    pos.get("metadata") if pos else None, metadata
+                )
+            )
         if not updates:
             return
         params.append(position_id)
@@ -356,7 +437,9 @@ class Database:
                 "UPDATE positions SET qty = ?, metadata = ? WHERE position_id = ?",
                 (
                     remaining_qty,
-                    merge_position_runtime_metadata(pos.get("metadata"), close_metadata),
+                    merge_position_runtime_metadata(
+                        pos.get("metadata"), close_metadata
+                    ),
                     position_id,
                 ),
             )
@@ -369,7 +452,9 @@ class Database:
         row = await cursor.fetchone()
         return dict(row) if row else None
 
-    async def get_trades_by_alpha(self, alpha_id: str, limit: int = 100, offset: int = 0):
+    async def get_trades_by_alpha(
+        self, alpha_id: str, limit: int = 100, offset: int = 0
+    ):
         cursor = await self._conn.execute(
             "SELECT * FROM trades WHERE alpha_id = ? ORDER BY closed_at DESC LIMIT ? OFFSET ?",
             (alpha_id, limit, offset),
@@ -377,7 +462,156 @@ class Database:
         rows = await cursor.fetchall()
         return [dict(r) for r in rows]
 
-    async def log_signal(self, signal_id: str, alpha_id: str, signal_type: str, payload: str):
+    async def apply_virtual_trade_event(self, event: dict) -> dict | None:
+        event_id = str(event["event_id"])
+        event_type = str(event["type"])
+        alpha_id = str(event["alpha_id"])
+        payload = json.dumps(event, separators=(",", ":"), sort_keys=True)
+
+        async with self.transaction():
+            cursor = await self._conn.execute(
+                "SELECT 1 FROM virtual_trade_events WHERE event_id = ?",
+                (event_id,),
+            )
+            if await cursor.fetchone() is not None:
+                return None
+
+            if event_type == "VIRTUAL_OPEN":
+                metadata = json.dumps(event.get("metadata") or {})
+                await self._conn.execute(
+                    """INSERT OR IGNORE INTO virtual_positions
+                       (position_id, alpha_id, signal_id, symbol, side,
+                        entry_price, qty, leverage, opened_at, metadata, exchange)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, 1, ?, ?, ?)""",
+                    (
+                        str(event["position_id"]),
+                        alpha_id,
+                        event_id,
+                        str(event["symbol"]),
+                        str(event["side"]),
+                        float(event["price"]),
+                        float(event["qty"]),
+                        str(event["timestamp"]),
+                        metadata,
+                        str(event.get("exchange", "binance")),
+                    ),
+                )
+                result = {"event": event_type, "position_id": event["position_id"]}
+            elif event_type == "VIRTUAL_CLOSE":
+                cursor = await self._conn.execute(
+                    "SELECT * FROM virtual_positions WHERE position_id = ?",
+                    (str(event["position_id"]),),
+                )
+                row = await cursor.fetchone()
+                if row is None:
+                    raise ValueError(
+                        f"virtual position not found: {event['position_id']}"
+                    )
+                position = dict(row)
+                exit_price = float(event["price"])
+                qty = float(position["qty"])
+                direction = 1.0 if position["side"] == "LONG" else -1.0
+                pnl = (exit_price - float(position["entry_price"])) * qty * direction
+                capital = float(position["entry_price"]) * qty
+                pnl_percent = pnl / capital * 100.0 if capital else 0.0
+                opened = datetime.fromisoformat(
+                    str(position["opened_at"]).replace("Z", "+00:00")
+                )
+                closed_at = str(event["timestamp"])
+                closed = datetime.fromisoformat(closed_at.replace("Z", "+00:00"))
+                duration_hours = (closed - opened).total_seconds() / 3600.0
+                close_metadata = json.dumps(
+                    {
+                        "virtual": True,
+                        "ledger_source": "shadow_sleeve",
+                        "candle_open_ms": event.get("candle_open_ms"),
+                    }
+                )
+                metadata = merge_trade_metadata(
+                    position.get("metadata"), close_metadata
+                )
+                await self._conn.execute(
+                    """INSERT INTO virtual_trades
+                       (trade_id, position_id, alpha_id, signal_id, symbol, side,
+                        entry_price, exit_price, qty, pnl, pnl_percent, leverage,
+                        tp, sl, reason, duration_hours, opened_at, closed_at,
+                        metadata, fee, exchange)
+                       VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, 1,
+                               NULL, NULL, ?, ?, ?, ?, ?, 0.0, ?)""",
+                    (
+                        str(position["position_id"]),
+                        str(position["position_id"]),
+                        alpha_id,
+                        event_id,
+                        str(position["symbol"]),
+                        str(position["side"]),
+                        float(position["entry_price"]),
+                        exit_price,
+                        qty,
+                        pnl,
+                        pnl_percent,
+                        str(event.get("reason", "VIRTUAL_REBALANCE")),
+                        duration_hours,
+                        str(position["opened_at"]),
+                        closed_at,
+                        metadata,
+                        str(position.get("exchange") or "binance"),
+                    ),
+                )
+                await self._conn.execute(
+                    "DELETE FROM virtual_positions WHERE position_id = ?",
+                    (str(position["position_id"]),),
+                )
+                result = {
+                    "event": event_type,
+                    "position_id": position["position_id"],
+                    "pnl": pnl,
+                }
+            else:
+                raise ValueError(f"unsupported virtual ledger event: {event_type}")
+
+            await self._conn.execute(
+                """INSERT INTO virtual_trade_events
+                   (event_id, alpha_id, event_type, payload, processed_at)
+                   VALUES (?, ?, ?, ?, ?)""",
+                (
+                    event_id,
+                    alpha_id,
+                    event_type,
+                    payload,
+                    datetime.now(timezone.utc).isoformat(),
+                ),
+            )
+            return result
+
+    async def get_virtual_positions(self, alpha_id: str | None = None):
+        if alpha_id:
+            cursor = await self._conn.execute(
+                """SELECT * FROM virtual_positions
+                   WHERE alpha_id = ? ORDER BY opened_at DESC""",
+                (alpha_id,),
+            )
+        else:
+            cursor = await self._conn.execute(
+                "SELECT * FROM virtual_positions ORDER BY opened_at DESC"
+            )
+        rows = await cursor.fetchall()
+        return [dict(row) for row in rows]
+
+    async def get_virtual_trades_by_alpha(
+        self, alpha_id: str, limit: int = 100, offset: int = 0
+    ):
+        cursor = await self._conn.execute(
+            """SELECT * FROM virtual_trades
+               WHERE alpha_id = ? ORDER BY closed_at DESC LIMIT ? OFFSET ?""",
+            (alpha_id, limit, offset),
+        )
+        rows = await cursor.fetchall()
+        return [dict(row) for row in rows]
+
+    async def log_signal(
+        self, signal_id: str, alpha_id: str, signal_type: str, payload: str
+    ):
         now = datetime.utcnow().isoformat()
         await self._conn.execute(
             """INSERT INTO signals (signal_id, alpha_id, type, payload, received_at, processed)

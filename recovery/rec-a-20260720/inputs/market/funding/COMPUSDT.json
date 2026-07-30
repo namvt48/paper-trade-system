@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 16.93196015,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.361e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 17.13499534,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.365e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 17.26,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.69e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 17.35582353,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.105e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 17.32113643,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.773e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 17.06254902,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.43e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 16.99527515,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.442e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 17.22,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 17.09,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.209e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 17.13,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 17.45,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.038e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 17.33679025,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 17.0,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.944e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 16.94,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.885e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 16.9,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.618e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 17.16,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.986e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 17.04,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.603e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 16.49,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 16.47440254,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.082e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 16.76,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 16.8,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.263e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 16.92,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 16.92455408,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 16.98,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 17.0803714,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 17.02461449,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 16.86,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 16.84,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 16.83210122,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 17.06,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.206e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 16.95248784,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 16.89513227,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 16.94,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 16.81412251,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 16.9607549,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 17.21,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 17.08,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 17.41668303,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 17.29,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 17.45,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 17.59359947,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 16.92337323,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 16.97,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 16.81,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 16.85,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 17.15,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 17.31514673,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 16.93578556,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 16.79477944,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 16.7,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 16.51,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 16.09,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 15.91,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 15.6103574,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 15.61,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 15.73437169,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.369e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 15.16869987,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 15.18443218,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 15.35,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 15.68,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 15.70200282,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 15.79,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.216e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 15.85098053,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.872e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 15.64,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 15.59094484,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.17e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 15.79493339,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.64e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 15.71233266,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 16.22,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 16.08444957,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.092e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 16.06,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.745e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 15.56,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.127e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 15.6041742,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 15.65,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.381e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 15.49092343,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 16.01051492,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 16.64,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.835e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 16.3996296,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.755e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 16.77553005,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 16.98493005,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.778e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 17.05062173,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.645e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 17.15,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011284,
+    "funding_time": 1782172800003,
+    "mark_price": 17.5734646,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.578e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 18.23,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.756e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 17.98,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.603e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 17.66543774,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.6e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 18.21497059,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.38e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 17.78,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.451e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 17.91,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.03e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 17.8,
+    "symbol": "COMPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011753,
+    "funding_time": 1781942400000,
+    "mark_price": 17.63,
+    "symbol": "COMPUSDT"
+  }
+]

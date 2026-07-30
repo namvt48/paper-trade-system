@@ -1,0 +1,1262 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 3.20247696,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 3.21079583,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 3.204,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 3.2768444,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 3.281,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 3.32376394,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018845,
+    "funding_time": 1784433600000,
+    "mark_price": 3.34714356,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016041,
+    "funding_time": 1784419200003,
+    "mark_price": 3.29577417,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 3.30512328,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 3.27236458,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 3.34257083,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 3.328,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 3.335,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 3.358,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 3.348,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010705,
+    "funding_time": 1784304000004,
+    "mark_price": 3.391,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016223,
+    "funding_time": 1784289600004,
+    "mark_price": 3.466,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011701,
+    "funding_time": 1784275200010,
+    "mark_price": 3.428,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013219,
+    "funding_time": 1784260800000,
+    "mark_price": 3.452,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022046,
+    "funding_time": 1784246400000,
+    "mark_price": 3.426,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 3.34248768,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 3.294,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 3.2924775,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 3.29553208,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 3.28827609,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 3.29749125,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 3.274,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 3.278,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 3.267,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 3.26511991,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 3.2905125,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 3.31854082,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 3.36674125,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 3.329,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 3.23077667,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 3.27050083,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 3.25763312,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 3.272,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 3.296,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 3.43870835,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 3.449,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 3.41743292,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 3.372,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 3.274,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 3.21558606,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 3.321,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 3.301,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 3.26513955,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 3.36726767,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 3.58,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 3.72664625,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 3.72246375,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 3.709,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.577e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 3.698,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 3.72165812,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 3.751,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 3.76779583,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 3.762,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 3.77148917,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 3.779,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 3.74993768,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.471e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 3.756,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.609e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 3.76350169,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.969e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 3.68857868,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001304,
+    "funding_time": 1783598400002,
+    "mark_price": 3.705,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 3.72077947,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 3.66190417,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 3.705,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.214e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 3.656,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.662e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 3.633,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 3.62468199,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 3.617,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 3.587,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 3.67023715,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 3.69168167,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 3.78719699,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 3.83747708,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 3.786,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 3.778,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 3.89487917,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 3.92742917,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 3.984,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 3.881,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 3.942,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 4.05,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001516,
+    "funding_time": 1783296000000,
+    "mark_price": 4.125,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.47e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 4.062,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 3.934,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 3.861,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.611e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 3.978,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.366e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 4.05661375,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.196e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 4.03905833,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015419,
+    "funding_time": 1783195200000,
+    "mark_price": 4.054,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 4.027,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.494e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 3.969,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 4.048,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012386,
+    "funding_time": 1783137600006,
+    "mark_price": 4.163,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021328,
+    "funding_time": 1783123200000,
+    "mark_price": 4.18653664,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016693,
+    "funding_time": 1783108800001,
+    "mark_price": 4.15385446,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014935,
+    "funding_time": 1783094400000,
+    "mark_price": 4.195,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016572,
+    "funding_time": 1783080000002,
+    "mark_price": 4.033,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011017,
+    "funding_time": 1783065600007,
+    "mark_price": 3.866,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012811,
+    "funding_time": 1783051200000,
+    "mark_price": 3.8299482,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.000101,
+    "funding_time": 1783036800000,
+    "mark_price": 3.81,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 3.74097222,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.77e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 3.74883551,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 3.744,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018112,
+    "funding_time": 1782979200000,
+    "mark_price": 3.712,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010346,
+    "funding_time": 1782964800003,
+    "mark_price": 3.76,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.000117,
+    "funding_time": 1782950400000,
+    "mark_price": 3.62122579,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.825e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 3.629,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027222,
+    "funding_time": 1782921600000,
+    "mark_price": 3.78515776,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011819,
+    "funding_time": 1782907200000,
+    "mark_price": 3.6859058,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017158,
+    "funding_time": 1782892800000,
+    "mark_price": 3.71325404,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011603,
+    "funding_time": 1782878400001,
+    "mark_price": 3.847,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015196,
+    "funding_time": 1782864000000,
+    "mark_price": 3.793,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010771,
+    "funding_time": 1782849600003,
+    "mark_price": 3.814,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001846,
+    "funding_time": 1782835200005,
+    "mark_price": 3.77487379,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012948,
+    "funding_time": 1782820800002,
+    "mark_price": 3.647,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001648,
+    "funding_time": 1782806400000,
+    "mark_price": 3.659875,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.488e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 3.68608266,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011536,
+    "funding_time": 1782777600000,
+    "mark_price": 3.73430445,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012966,
+    "funding_time": 1782763200000,
+    "mark_price": 3.81,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018803,
+    "funding_time": 1782748800004,
+    "mark_price": 3.69537393,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.796e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 3.646,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023971,
+    "funding_time": 1782720000013,
+    "mark_price": 3.64320791,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.451e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 3.67043144,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 3.63292034,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 3.554,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 3.65859998,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.687e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 3.62151391,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 3.65154417,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 3.62673,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 3.68784536,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 3.68180361,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 3.75993598,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 3.68728,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 3.711,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 3.72378839,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 3.74779,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 3.754,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.053e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 3.75397898,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 3.713,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.455e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 3.855,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 3.782,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011055,
+    "funding_time": 1782432000010,
+    "mark_price": 3.86796125,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 3.846,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 3.886,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 4.10001422,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 4.182,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 4.1004262,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 4.085,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 4.037,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 4.11883231,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 4.282,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 4.34553142,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782273600001,
+    "mark_price": 4.354,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 4.427,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 4.377,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 4.293,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 4.438,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002288,
+    "funding_time": 1782201600005,
+    "mark_price": 4.63376589,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028013,
+    "funding_time": 1782187200000,
+    "mark_price": 4.82065129,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00041334,
+    "funding_time": 1782172800003,
+    "mark_price": 4.89577703,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019887,
+    "funding_time": 1782158400000,
+    "mark_price": 4.863,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013696,
+    "funding_time": 1782144000002,
+    "mark_price": 4.748,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022365,
+    "funding_time": 1782129600000,
+    "mark_price": 4.84,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026089,
+    "funding_time": 1782115200000,
+    "mark_price": 4.821,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027433,
+    "funding_time": 1782100800000,
+    "mark_price": 4.845,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023774,
+    "funding_time": 1782086400000,
+    "mark_price": 4.762,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022229,
+    "funding_time": 1782072000004,
+    "mark_price": 5.02712529,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021516,
+    "funding_time": 1782057600000,
+    "mark_price": 4.834,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 4.534,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.181e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 4.53472976,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.332e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 4.53164267,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.766e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 4.53,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015126,
+    "funding_time": 1781985600000,
+    "mark_price": 4.52444917,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001197,
+    "funding_time": 1781971200001,
+    "mark_price": 4.518,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012006,
+    "funding_time": 1781956800001,
+    "mark_price": 4.477,
+    "symbol": "RIVERUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010205,
+    "funding_time": 1781942400000,
+    "mark_price": 4.507,
+    "symbol": "RIVERUSDT"
+  }
+]

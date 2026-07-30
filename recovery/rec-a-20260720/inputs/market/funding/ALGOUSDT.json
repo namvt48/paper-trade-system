@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 0.08289229,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051422,
+    "funding_time": 1784476800001,
+    "mark_price": 0.08214954,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010262,
+    "funding_time": 1784448000000,
+    "mark_price": 0.0824,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 0.08326057,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027034,
+    "funding_time": 1784390400001,
+    "mark_price": 0.082,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.794e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.0822,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001741,
+    "funding_time": 1784332800000,
+    "mark_price": 0.0827,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.183e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.08264777,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016116,
+    "funding_time": 1784275200010,
+    "mark_price": 0.08247686,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039161,
+    "funding_time": 1784246400000,
+    "mark_price": 0.0822,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.839e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.0835332,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.885e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.08338457,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.652e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.08494088,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.176e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.08555263,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.08465371,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.111e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.084794,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.591e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0849,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.997e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.08395024,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.428e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0836,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019607,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0835,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028468,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0829,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010559,
+    "funding_time": 1783900800000,
+    "mark_price": 0.08355412,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014481,
+    "funding_time": 1783872000000,
+    "mark_price": 0.0839,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.391e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.0836,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.08421974,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.826e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.086755,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.086,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0855492,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.516e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.0859,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.97e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.08567286,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.0847,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.329e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.0854,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.354e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0856,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.758e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.0847731,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019091,
+    "funding_time": 1783526400000,
+    "mark_price": 0.0842,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.769e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.085,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011242,
+    "funding_time": 1783468800000,
+    "mark_price": 0.08603572,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011861,
+    "funding_time": 1783440000000,
+    "mark_price": 0.087,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031722,
+    "funding_time": 1783411200000,
+    "mark_price": 0.0866,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.088e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.0884,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.786e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0884,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.47e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0882,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.09095,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.0899,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.0898,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.090659,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.0909,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.0885,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0893,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.0884,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.0878,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0866,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.0861,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.0856,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.08430591,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.979e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.085,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.32e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 0.08293714,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.2e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.0829,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.14e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.0823567,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019164,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0859,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.389e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.0857,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.077e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.0857,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.962e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0865,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.434e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.0875,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.08613842,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.088,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.484e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.086,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0868,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.26e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0861,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.8e-07,
+    "funding_time": 1782518400000,
+    "mark_price": 0.08294333,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010949,
+    "funding_time": 1782489600000,
+    "mark_price": 0.084,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021008,
+    "funding_time": 1782460800002,
+    "mark_price": 0.08485,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.558e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.08485131,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.339e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.0863,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.21e-06,
+    "funding_time": 1782374400000,
+    "mark_price": 0.0897,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.334e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.0898,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.772e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.089,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 0.09161886,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0946,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 0.0928,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.88e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0902,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.555e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.08953472,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.886e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.0904,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.634e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.090094,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.456e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.08925,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015206,
+    "funding_time": 1782057600000,
+    "mark_price": 0.09215244,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010823,
+    "funding_time": 1782028800000,
+    "mark_price": 0.093,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.569e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.0936,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.704e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.094,
+    "symbol": "ALGOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.13e-06,
+    "funding_time": 1781942400000,
+    "mark_price": 0.0942,
+    "symbol": "ALGOUSDT"
+  }
+]

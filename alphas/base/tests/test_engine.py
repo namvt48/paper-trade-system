@@ -34,11 +34,12 @@ def engine():
     config.REDIS_URL = "redis://localhost:6379"
     config.REDIS_STREAM = "paper-signals"
     config.LOG_LEVEL = "INFO"
-    config.LOG_DIR = "/tmp/test_logs"
     config.DATA_MAX_CANDLES = 1000
     config.WARMUP_BARS = 50
     config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
     config.SYMBOL_BLACKLIST = ""
+    config.SYMBOL_WHITELIST = ""
+    config.WHITELIST_FILE = ""
     config.TF = "15m"
     config.MANAGE_INTERVAL_SEC = 60.0
     config.MDS_REDIS_URL = ""
@@ -64,11 +65,12 @@ def engine_with_blacklist():
     config.REDIS_URL = "redis://localhost:6379"
     config.REDIS_STREAM = "paper-signals"
     config.LOG_LEVEL = "INFO"
-    config.LOG_DIR = "/tmp/test_logs"
     config.DATA_MAX_CANDLES = 1000
     config.WARMUP_BARS = 50
     config.WARMUP_MIN_SYMBOL_COVERAGE = 0.90
     config.SYMBOL_BLACKLIST = "BTCUSDT,DOGEUSDT"
+    config.SYMBOL_WHITELIST = ""
+    config.WHITELIST_FILE = ""
     config.TF = "15m"
     config.MANAGE_INTERVAL_SEC = 60.0
     config.MDS_REDIS_URL = ""

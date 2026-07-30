@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -8.739e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.01643158,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045782,
+    "funding_time": 1784476800001,
+    "mark_price": 0.01653,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.309e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.01678,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.281e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.01693504,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.805e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.01688407,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013599,
+    "funding_time": 1784361600000,
+    "mark_price": 0.01691085,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.319e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.01708019,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.635e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.01718,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.337e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.01703,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.01716924,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.01747582,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.347e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.01756093,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.01769,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.01777,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.42e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.01767316,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.44e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.01762,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.412e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.01767,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040758,
+    "funding_time": 1784016000002,
+    "mark_price": 0.01739652,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.509e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0172,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.77e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.01716773,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.498e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.01732,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.57e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.01742412,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.888e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.017615,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.04e-06,
+    "funding_time": 1783843200003,
+    "mark_price": 0.01748,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.263e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.017505,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.017885,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.935e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.01762,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.01761115,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.395e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.01775,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.01765,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.838e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.01742,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.351e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.01751,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.751e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.01760332,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.166e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.0175,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011456,
+    "funding_time": 1783526400000,
+    "mark_price": 0.01731,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014245,
+    "funding_time": 1783497600000,
+    "mark_price": 0.01771,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011019,
+    "funding_time": 1783468800000,
+    "mark_price": 0.01781799,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001909,
+    "funding_time": 1783440000000,
+    "mark_price": 0.018155,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.01798,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.1e-06,
+    "funding_time": 1783382400000,
+    "mark_price": 0.01841,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.626e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.01861,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.278e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.01840067,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.363e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.01867,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.887e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.01853,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.392e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.01855,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.0188,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.01902,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.01897,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.367e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.01931223,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.01867181,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.01853556,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.467e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.01811342,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01815,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.009e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.01787,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.755e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.01773,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.216e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.01776014,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.01759551,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.264e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.01766896,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022638,
+    "funding_time": 1782835200005,
+    "mark_price": 0.01745,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015492,
+    "funding_time": 1782806400000,
+    "mark_price": 0.01790438,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.01788074,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.01812359,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.017811,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014,
+    "funding_time": 1782691200006,
+    "mark_price": 0.0176,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.718e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.01798,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.94e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 0.01759,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.12e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 0.0176795,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.515e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.01832527,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012641,
+    "funding_time": 1782547200000,
+    "mark_price": 0.01795,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.01798,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.917e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01798,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.877e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.01801305,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.43e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.01803,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016799,
+    "funding_time": 1782403200000,
+    "mark_price": 0.01779468,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.073e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.01864,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.616e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.01843,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.198e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.01816,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.336e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.018935,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.47e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 0.019,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.478e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.01892,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.234e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.01892,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001361,
+    "funding_time": 1782172800003,
+    "mark_price": 0.01941204,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.901e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.01973001,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.266e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.01983,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.832e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.01945422,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.137e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.02001,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.333e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.01995,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010014,
+    "funding_time": 1782000000000,
+    "mark_price": 0.01986,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001759,
+    "funding_time": 1781971200001,
+    "mark_price": 0.01958,
+    "symbol": "GRTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.126e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.01937,
+    "symbol": "GRTUSDT"
+  }
+]

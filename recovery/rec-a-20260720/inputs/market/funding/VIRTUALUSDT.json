@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -5.643e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.61647847,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.365e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.6143959,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.738e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.6116,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013863,
+    "funding_time": 1784476800001,
+    "mark_price": 0.6064,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010986,
+    "funding_time": 1784462400000,
+    "mark_price": 0.6074,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011009,
+    "funding_time": 1784448000000,
+    "mark_price": 0.6094,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.457e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.6114,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010951,
+    "funding_time": 1784419200003,
+    "mark_price": 0.6173,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001621,
+    "funding_time": 1784404800004,
+    "mark_price": 0.6094,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001957,
+    "funding_time": 1784390400001,
+    "mark_price": 0.6040282,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010498,
+    "funding_time": 1784376000002,
+    "mark_price": 0.6092,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016534,
+    "funding_time": 1784361600000,
+    "mark_price": 0.619,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010352,
+    "funding_time": 1784347200000,
+    "mark_price": 0.6321,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019255,
+    "funding_time": 1784332800000,
+    "mark_price": 0.6234,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021114,
+    "funding_time": 1784318400000,
+    "mark_price": 0.6363,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010791,
+    "funding_time": 1784304000004,
+    "mark_price": 0.6408,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.46e-06,
+    "funding_time": 1784289600004,
+    "mark_price": 0.6198,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.499e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.6139,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.9e-07,
+    "funding_time": 1784260800000,
+    "mark_price": 0.62006802,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.792e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.62400658,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.256e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.64304842,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.989e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.6557,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.592e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.6364,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012149,
+    "funding_time": 1784188800003,
+    "mark_price": 0.6191,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.086e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.6202,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.67e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 0.6134,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.22e-06,
+    "funding_time": 1784145600002,
+    "mark_price": 0.6272,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011292,
+    "funding_time": 1784131200000,
+    "mark_price": 0.6087,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011337,
+    "funding_time": 1784116800003,
+    "mark_price": 0.6091,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.914e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.59580649,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.925e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.58711802,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.844e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.5935,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014325,
+    "funding_time": 1784059200000,
+    "mark_price": 0.589,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.184e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.57773023,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.157e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.5564,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.317e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.5509,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.07e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.54700162,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.58e-06,
+    "funding_time": 1783987200000,
+    "mark_price": 0.5493,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.238e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.5517,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.02e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.5646,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.565e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.56363802,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.367e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.5669,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.5613,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.466e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.5737,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.833e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.58960423,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.289e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.5942,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.605,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.5964,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.60452784,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.59234081,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.887e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.6134,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.61318052,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.6237,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.939e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.61209095,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.6326,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.61191387,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.58438743,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.4e-07,
+    "funding_time": 1783699200005,
+    "mark_price": 0.5407,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.54724027,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.53551048,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.53903829,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.537e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.5291,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.828e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.5307,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.22e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.5265,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013944,
+    "funding_time": 1783598400002,
+    "mark_price": 0.525,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011905,
+    "funding_time": 1783584000001,
+    "mark_price": 0.52488099,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.734e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.5203,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017263,
+    "funding_time": 1783555200000,
+    "mark_price": 0.5242,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.764e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.52400847,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011295,
+    "funding_time": 1783526400000,
+    "mark_price": 0.51809506,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020009,
+    "funding_time": 1783512000005,
+    "mark_price": 0.5209,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.291e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.52994302,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.982e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.5295,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015292,
+    "funding_time": 1783468800000,
+    "mark_price": 0.5317,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.12e-06,
+    "funding_time": 1783454400000,
+    "mark_price": 0.5352,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.406e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.54838716,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.429e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.54455676,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015928,
+    "funding_time": 1783411200000,
+    "mark_price": 0.5417,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.62e-06,
+    "funding_time": 1783396800000,
+    "mark_price": 0.53941306,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.98e-06,
+    "funding_time": 1783382400000,
+    "mark_price": 0.5505,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.88e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.5519,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.151e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.5503,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.948e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.5407655,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.528e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.5568,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.329e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.5603,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.569,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.192e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.56724865,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.5679,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.165e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.5617664,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001023,
+    "funding_time": 1783238400001,
+    "mark_price": 0.5679,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.112e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.5553,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.73e-06,
+    "funding_time": 1783209600003,
+    "mark_price": 0.5666,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.482e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.5725355,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.95e-06,
+    "funding_time": 1783180800007,
+    "mark_price": 0.57543288,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.545e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.5645,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.56721068,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.39e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.5731,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.585e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.57992189,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.78e-06,
+    "funding_time": 1783108800001,
+    "mark_price": 0.57866207,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.91e-06,
+    "funding_time": 1783094400000,
+    "mark_price": 0.56629432,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.146e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.57084441,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.172e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.5599,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.58e-06,
+    "funding_time": 1783051200000,
+    "mark_price": 0.55820117,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.636e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.55341108,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.38e-06,
+    "funding_time": 1783022400008,
+    "mark_price": 0.5585,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.803e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.5527,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.677e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.55651923,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.03e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 0.5476,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.905e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.55710207,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.174e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.5466,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.93e-06,
+    "funding_time": 1782936000000,
+    "mark_price": 0.5441,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.5616,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.763e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.5274,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.812e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.5224,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.092e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.5324,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.5251,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.03e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.5298,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.973e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.5237,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.472e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.52005649,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.017e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.53580144,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.695e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.54164279,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.671e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.5467,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.54891811,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.466e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.54024419,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.716e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.53852572,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.494e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.539,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.419e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.5405482,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.54e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.5346,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.831e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.52778811,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.013e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.5391,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.532e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.5348,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.714e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.5333,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.685e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.5334,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.2e-07,
+    "funding_time": 1782604800000,
+    "mark_price": 0.5318,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.035e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.53437721,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010335,
+    "funding_time": 1782576000009,
+    "mark_price": 0.54845081,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.489e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.53341405,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.482e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.5346,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.505e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.53064072,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.797e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.5282,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.638e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.53107097,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.14e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.5298,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.17e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.51600414,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.982e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.53144144,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013782,
+    "funding_time": 1782446400001,
+    "mark_price": 0.5207,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.433e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.5236,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012011,
+    "funding_time": 1782417600011,
+    "mark_price": 0.5142,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015602,
+    "funding_time": 1782403200000,
+    "mark_price": 0.5174,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015263,
+    "funding_time": 1782388800006,
+    "mark_price": 0.5387,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.907e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.5529,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.251e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.5477,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013148,
+    "funding_time": 1782345600000,
+    "mark_price": 0.5534,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023736,
+    "funding_time": 1782331200006,
+    "mark_price": 0.53251748,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.9e-07,
+    "funding_time": 1782316800003,
+    "mark_price": 0.5435455,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.217e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.5691,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.812e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.5679,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.467e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.5747,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.752e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.57072937,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010769,
+    "funding_time": 1782230400002,
+    "mark_price": 0.56609972,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014364,
+    "funding_time": 1782216000000,
+    "mark_price": 0.56621806,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.113e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.5692,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010931,
+    "funding_time": 1782187200000,
+    "mark_price": 0.5853,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012135,
+    "funding_time": 1782172800003,
+    "mark_price": 0.588,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016928,
+    "funding_time": 1782158400000,
+    "mark_price": 0.5887,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012224,
+    "funding_time": 1782144000002,
+    "mark_price": 0.59343756,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.49e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.6056,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011381,
+    "funding_time": 1782115200000,
+    "mark_price": 0.5998,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.59e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.59309838,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015782,
+    "funding_time": 1782086400000,
+    "mark_price": 0.58517243,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.429e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.60007768,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015194,
+    "funding_time": 1782057600000,
+    "mark_price": 0.60505009,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.908e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.6027,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.743e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.6047627,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.795e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.61245098,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014397,
+    "funding_time": 1782000000000,
+    "mark_price": 0.608935,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010058,
+    "funding_time": 1781985600000,
+    "mark_price": 0.60048347,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.129e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.608,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.489e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.60632039,
+    "symbol": "VIRTUALUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.708e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.6039,
+    "symbol": "VIRTUALUSDT"
+  }
+]

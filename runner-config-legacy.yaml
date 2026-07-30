@@ -11,7 +11,7 @@ runner:
   strategy_event_drop_warn_threshold: 100
   lease_ttl_sec: 1800
   lease_renew_interval_sec: 5
-  max_alphas_per_runner: 10
+  max_alphas_per_runner: 12
   claim_interval_sec: 3600
   warmup:
     max_concurrent_mds_requests: 3
@@ -28,52 +28,14 @@ runner:
 
 modules:
   - runner.strategies.legacy_standalone
+  - runner.strategies.bangoc_v22
 
 alphas:
-  - alpha_id: alpha-1-bangoc
-    strategy: legacy_standalone
-    version: "legacy"
+  - alpha_id: bangoc-v2.2
+    strategy: bangoc_v22
+    version: "2.2"
     enabled: true
-    params: {alpha_dir: alpha-1-bangoc, tf: 15m, symbols: [BTCUSDT], warmup_bars: 700, retain_bars: 1000, include_1m: false, scan_on_tfs: [15m], exchange: binance}
-  - alpha_id: alpha-1-v5b
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: true
-    params: {alpha_dir: alpha-1-v5b, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
-  - alpha_id: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: true
-    params: {alpha_dir: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
-  - alpha_id: alpha-1-v5b-reverse-blacklist-base-reverse
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: true
-    params: {alpha_dir: alpha-1-v5b-reverse-blacklist-base-reverse, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
-  - alpha_id: alpha-2
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: false
-    params: {alpha_dir: alpha-2, tf: 4h, htf: 12h, warmup_bars: 900, retain_bars: 1000, htf_warmup_bars: 900, htf_retain_bars: 1000, include_1m: false, scan_on_tfs: [4h], exchange: binance}
-  - alpha_id: hyper-turbo
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: true
-    params: {alpha_dir: hyper-turbo, tf: 15m, symbols: [BTCUSDT], warmup_bars: 21, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m, 1m], exchange: binance}
-  - alpha_id: hyper-turbo-v2
-    strategy: legacy_standalone
-    version: "legacy"
-    enabled: false
-    params:
-      alpha_dir: hyper-turbo-v2
-      tf: 4h
-      symbols: [CAKEUSDT, SEIUSDT, BIOUSDT, FIDAUSDT, ORDIUSDT, INJUSDT, NEARUSDT, OPUSDT, AAVEUSDT, TAOUSDT, DOGEUSDT, SUIUSDT, BNBUSDT, LINKUSDT, TIAUSDT, SUPERUSDT, DYMUSDT, IDUSDT, BTCUSDT]
-      warmup_bars: 360
-      retain_bars: 1000
-      include_1m: true
-      retain_1m_bars: 1000
-      scan_on_tfs: [4h]
-      exchange: binance
+    params: {alpha_dir: bangoc-v2.2, tf: 15m, htf: 1h, symbols: [BTCUSDT], warmup_bars: 700, retain_bars: 1000, htf_warmup_bars: 700, htf_retain_bars: 1000, include_1m: false, scan_on_tfs: [15m, 1h], exchange: binance}
   # ── alpha2-NR-Long-Short: EMA-cross + Hull-Butterfly reversal, BTC only ──
   - alpha_id: alpha2-NR-Long-Short-M15
     strategy: legacy_standalone
@@ -91,3 +53,9 @@ alphas:
     version: "legacy"
     enabled: true
     params: {alpha_dir: deobietcophaialphakhong, tf: 15m, symbols: [BTCUSDT], warmup_bars: 800, retain_bars: 1000, include_1m: false, scan_on_tfs: [15m], exchange: binance}
+  # ── short-btc-v1: EMA/RSI/CLV breakdown short with D1 gate + funding/OI context-sized reduce ──
+  - alpha_id: short-btc-v1
+    strategy: legacy_standalone
+    version: "1"
+    enabled: true
+    params: {alpha_dir: short-btc-v1, tf: 15m, htf: 1d, symbols: [BTCUSDT], warmup_bars: 500, retain_bars: 1000, htf_warmup_bars: 90, htf_retain_bars: 90, include_1m: false, scan_on_tfs: [15m], exchange: binance}

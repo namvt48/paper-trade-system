@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010471,
+    "funding_time": 1784505600000,
+    "mark_price": 0.2316,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.01e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.2197,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.386e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.2211,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.863e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.22365982,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 0.21963,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 0.22345495,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024842,
+    "funding_time": 1784332800000,
+    "mark_price": 0.22251045,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.72e-06,
+    "funding_time": 1784304000004,
+    "mark_price": 0.22306622,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.2211,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.2246,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.22656568,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.227,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.189e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.2294,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.6e-07,
+    "funding_time": 1784131200000,
+    "mark_price": 0.2303,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.76e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.23385,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.337e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.2373,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.501e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.23373937,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 0.2325,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.389e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.2254,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.23030405,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.2309,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004359,
+    "funding_time": 1783900800000,
+    "mark_price": 0.2453993,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017866,
+    "funding_time": 1783872000000,
+    "mark_price": 0.2404,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029159,
+    "funding_time": 1783843200003,
+    "mark_price": 0.24224167,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.071e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.2276,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.23183473,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.21e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.2351,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.2296,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.933e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.2323,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.78e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.22305676,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.811e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.2168,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.116e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.2219,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.6e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.22131649,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.286e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.21654847,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.377e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.21340061,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.2173,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.2203,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.2286,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.2225,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.2228,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.22446946,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.417e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.22444306,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.686e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.23048207,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2269,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.22765234,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.489e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.23105541,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.502e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.2349,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.232,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.016e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.25064568,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.23321892,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.2327,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.942e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.22952622,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.22256817,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.062e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.2135,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.176e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2131,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.2141,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.958e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.20788919,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.21214189,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.20687586,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.20930243,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021872,
+    "funding_time": 1782777600000,
+    "mark_price": 0.213,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.516e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.2143,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.6e-07,
+    "funding_time": 1782720000013,
+    "mark_price": 0.2225,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.22006437,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.593e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.2312,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018577,
+    "funding_time": 1782633600013,
+    "mark_price": 0.224,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00117656,
+    "funding_time": 1782604800000,
+    "mark_price": 0.2424,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093708,
+    "funding_time": 1782576000009,
+    "mark_price": 0.22459459,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.902e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.2062,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.20054189,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.962e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.197,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.379e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.2008,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027189,
+    "funding_time": 1782432000010,
+    "mark_price": 0.20059,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00041867,
+    "funding_time": 1782403200000,
+    "mark_price": 0.20235703,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.21665391,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.271e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.21923113,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.287e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.2224,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026022,
+    "funding_time": 1782288000005,
+    "mark_price": 0.22525405,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.662e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.2292,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022237,
+    "funding_time": 1782230400002,
+    "mark_price": 0.22878284,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.97e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.235,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.024e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.2456573,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016254,
+    "funding_time": 1782144000002,
+    "mark_price": 0.2445,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.526e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.2413,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012574,
+    "funding_time": 1782086400000,
+    "mark_price": 0.2353,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 0.24075324,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013288,
+    "funding_time": 1782028800000,
+    "mark_price": 0.2412,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015381,
+    "funding_time": 1782000000000,
+    "mark_price": 0.24304351,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.685e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.2425,
+    "symbol": "SNXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.696e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.24074595,
+    "symbol": "SNXUSDT"
+  }
+]

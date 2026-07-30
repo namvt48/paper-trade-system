@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018217,
+    "funding_time": 1784505600000,
+    "mark_price": 1.4755,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012155,
+    "funding_time": 1784476800001,
+    "mark_price": 1.485,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.631e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.49,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021343,
+    "funding_time": 1784419200003,
+    "mark_price": 1.4965,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039423,
+    "funding_time": 1784390400001,
+    "mark_price": 1.492,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.828e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.493,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.636e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.50948571,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021101,
+    "funding_time": 1784304000004,
+    "mark_price": 1.51124089,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023916,
+    "funding_time": 1784275200010,
+    "mark_price": 1.501,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.119e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.511,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.223e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.52699143,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.18e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 1.5445,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.897e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 1.555,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.538e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.573,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.3e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 1.5575,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.92e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 1.563,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016599,
+    "funding_time": 1784044800001,
+    "mark_price": 1.556,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.375e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 1.526,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010068,
+    "funding_time": 1783987200000,
+    "mark_price": 1.5375,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003862,
+    "funding_time": 1783958400004,
+    "mark_price": 1.54843333,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024263,
+    "funding_time": 1783929600001,
+    "mark_price": 1.5465,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028676,
+    "funding_time": 1783900800000,
+    "mark_price": 1.5655,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002443,
+    "funding_time": 1783872000000,
+    "mark_price": 1.586,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018232,
+    "funding_time": 1783843200003,
+    "mark_price": 1.562,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011029,
+    "funding_time": 1783814400000,
+    "mark_price": 1.58,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.315e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 1.5915,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.212e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 1.588,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.4e-06,
+    "funding_time": 1783728000000,
+    "mark_price": 1.5865,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.49e-06,
+    "funding_time": 1783699200005,
+    "mark_price": 1.58,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014545,
+    "funding_time": 1783670400005,
+    "mark_price": 1.56,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015724,
+    "funding_time": 1783641600000,
+    "mark_price": 1.55,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.483e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 1.548,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001364,
+    "funding_time": 1783584000001,
+    "mark_price": 1.5705,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021898,
+    "funding_time": 1783555200000,
+    "mark_price": 1.56425543,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034487,
+    "funding_time": 1783526400000,
+    "mark_price": 1.54720818,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022372,
+    "funding_time": 1783497600000,
+    "mark_price": 1.563,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018575,
+    "funding_time": 1783468800000,
+    "mark_price": 1.57238571,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014036,
+    "funding_time": 1783440000000,
+    "mark_price": 1.6,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.96e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 1.58400571,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.34e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 1.601,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.242e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 1.582,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023028,
+    "funding_time": 1783324800000,
+    "mark_price": 1.605,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.893e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 1.596,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002114,
+    "funding_time": 1783267200000,
+    "mark_price": 1.56,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047488,
+    "funding_time": 1783238400001,
+    "mark_price": 1.558,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016842,
+    "funding_time": 1783209600003,
+    "mark_price": 1.592,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013994,
+    "funding_time": 1783180800007,
+    "mark_price": 1.5985,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021888,
+    "funding_time": 1783152000000,
+    "mark_price": 1.582,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017571,
+    "funding_time": 1783123200000,
+    "mark_price": 1.59422229,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.35e-06,
+    "funding_time": 1783094400000,
+    "mark_price": 1.603,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014211,
+    "funding_time": 1783065600007,
+    "mark_price": 1.579,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013253,
+    "funding_time": 1783036800000,
+    "mark_price": 1.558,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014821,
+    "funding_time": 1783008000000,
+    "mark_price": 1.54270335,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.05e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.5425,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001671,
+    "funding_time": 1782950400000,
+    "mark_price": 1.538,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.87e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 1.55294,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.583e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 1.511,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.029e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 1.5123981,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019107,
+    "funding_time": 1782835200005,
+    "mark_price": 1.52730867,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013612,
+    "funding_time": 1782806400000,
+    "mark_price": 1.51146743,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.098e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 1.5331581,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.726e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 1.5385,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015273,
+    "funding_time": 1782720000013,
+    "mark_price": 1.57324286,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.37e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 1.57128286,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.992e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 1.571,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030083,
+    "funding_time": 1782633600013,
+    "mark_price": 1.566,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.307e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.5795798,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013982,
+    "funding_time": 1782576000009,
+    "mark_price": 1.608,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.855e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.5905,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.339e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.5935,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.503e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.59515714,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.895e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.61972381,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.7e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 1.61119524,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013942,
+    "funding_time": 1782403200000,
+    "mark_price": 1.62618714,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018522,
+    "funding_time": 1782374400000,
+    "mark_price": 1.66,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.673e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.65,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.502e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.63325862,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022204,
+    "funding_time": 1782288000005,
+    "mark_price": 1.69549257,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.775e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 1.717,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.38e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 1.724,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018245,
+    "funding_time": 1782201600005,
+    "mark_price": 1.7585,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.218e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.798,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.816e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.80027143,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015939,
+    "funding_time": 1782115200000,
+    "mark_price": 1.8015,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.905e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.75551143,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014606,
+    "funding_time": 1782057600000,
+    "mark_price": 1.771,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011296,
+    "funding_time": 1782028800000,
+    "mark_price": 1.777,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.91e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 1.802,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019165,
+    "funding_time": 1781971200001,
+    "mark_price": 1.79,
+    "symbol": "ATOMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.227e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.796,
+    "symbol": "ATOMUSDT"
+  }
+]

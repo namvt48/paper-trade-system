@@ -1,0 +1,3208 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004208,
+    "funding_time": 1784520000000,
+    "mark_price": 0.02871643,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0012296,
+    "funding_time": 1784516400002,
+    "mark_price": 0.02805229,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118967,
+    "funding_time": 1784512800000,
+    "mark_price": 0.0276,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099327,
+    "funding_time": 1784509200000,
+    "mark_price": 0.0279,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00094582,
+    "funding_time": 1784505600000,
+    "mark_price": 0.0287,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00083624,
+    "funding_time": 1784502000002,
+    "mark_price": 0.0288,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00061534,
+    "funding_time": 1784498400000,
+    "mark_price": 0.0289,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070643,
+    "funding_time": 1784494800000,
+    "mark_price": 0.02893721,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064681,
+    "funding_time": 1784491200004,
+    "mark_price": 0.02883818,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046269,
+    "funding_time": 1784487600002,
+    "mark_price": 0.02904667,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053266,
+    "funding_time": 1784484000000,
+    "mark_price": 0.0296,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065949,
+    "funding_time": 1784480400001,
+    "mark_price": 0.02905,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00104912,
+    "funding_time": 1784476800001,
+    "mark_price": 0.02884796,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00076967,
+    "funding_time": 1784473200000,
+    "mark_price": 0.0295,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00078757,
+    "funding_time": 1784469600000,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00086944,
+    "funding_time": 1784466000003,
+    "mark_price": 0.02957281,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00075571,
+    "funding_time": 1784462400000,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00069572,
+    "funding_time": 1784458800000,
+    "mark_price": 0.02974187,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00066428,
+    "funding_time": 1784455200000,
+    "mark_price": 0.02985344,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00097171,
+    "funding_time": 1784451600000,
+    "mark_price": 0.0299,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00105172,
+    "funding_time": 1784448000000,
+    "mark_price": 0.0305,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00098281,
+    "funding_time": 1784444400000,
+    "mark_price": 0.0302,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00085507,
+    "funding_time": 1784440800000,
+    "mark_price": 0.03,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00098856,
+    "funding_time": 1784437200000,
+    "mark_price": 0.03063639,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072058,
+    "funding_time": 1784433600000,
+    "mark_price": 0.0307412,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00062907,
+    "funding_time": 1784430000004,
+    "mark_price": 0.03123993,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00061663,
+    "funding_time": 1784426400000,
+    "mark_price": 0.03004173,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034482,
+    "funding_time": 1784422800000,
+    "mark_price": 0.0299,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038391,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091038,
+    "funding_time": 1784415600002,
+    "mark_price": 0.029843,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118379,
+    "funding_time": 1784412000000,
+    "mark_price": 0.0298,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00106717,
+    "funding_time": 1784408400006,
+    "mark_price": 0.03,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00075053,
+    "funding_time": 1784404800004,
+    "mark_price": 0.0304,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00095222,
+    "funding_time": 1784401200000,
+    "mark_price": 0.0307,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00095015,
+    "funding_time": 1784397600000,
+    "mark_price": 0.0314,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045696,
+    "funding_time": 1784394000009,
+    "mark_price": 0.0307,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00101398,
+    "funding_time": 1784390400001,
+    "mark_price": 0.0299,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063924,
+    "funding_time": 1784386800000,
+    "mark_price": 0.03008303,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00060825,
+    "funding_time": 1784383200002,
+    "mark_price": 0.0308,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050508,
+    "funding_time": 1784379600001,
+    "mark_price": 0.0303,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059428,
+    "funding_time": 1784376000002,
+    "mark_price": 0.03,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0006266,
+    "funding_time": 1784372400000,
+    "mark_price": 0.0294,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052983,
+    "funding_time": 1784368800002,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070379,
+    "funding_time": 1784365200000,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00112283,
+    "funding_time": 1784361600000,
+    "mark_price": 0.0300141,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00227727,
+    "funding_time": 1784358000003,
+    "mark_price": 0.0287,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00157182,
+    "funding_time": 1784354400000,
+    "mark_price": 0.02921626,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00177469,
+    "funding_time": 1784350800000,
+    "mark_price": 0.0294,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00145918,
+    "funding_time": 1784347200000,
+    "mark_price": 0.0296,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00144065,
+    "funding_time": 1784343600000,
+    "mark_price": 0.0297,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00138183,
+    "funding_time": 1784340000000,
+    "mark_price": 0.0296,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00113595,
+    "funding_time": 1784336400000,
+    "mark_price": 0.0298,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00121073,
+    "funding_time": 1784332800000,
+    "mark_price": 0.02984664,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00115735,
+    "funding_time": 1784329200003,
+    "mark_price": 0.0306,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00142724,
+    "funding_time": 1784325600000,
+    "mark_price": 0.0297497,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00185555,
+    "funding_time": 1784322000006,
+    "mark_price": 0.02894653,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00132386,
+    "funding_time": 1784318400000,
+    "mark_price": 0.02954602,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00106541,
+    "funding_time": 1784314800001,
+    "mark_price": 0.02965764,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0016735,
+    "funding_time": 1784311200000,
+    "mark_price": 0.02965295,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040384,
+    "funding_time": 1784307600002,
+    "mark_price": 0.02982639,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001156,
+    "funding_time": 1784304000004,
+    "mark_price": 0.03172597,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034096,
+    "funding_time": 1784300400005,
+    "mark_price": 0.0324,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002071,
+    "funding_time": 1784296800001,
+    "mark_price": 0.0327,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020502,
+    "funding_time": 1784293200001,
+    "mark_price": 0.0329627,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028651,
+    "funding_time": 1784289600004,
+    "mark_price": 0.0331,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016769,
+    "funding_time": 1784286000000,
+    "mark_price": 0.0333,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.354e-05,
+    "funding_time": 1784282400004,
+    "mark_price": 0.03383162,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038647,
+    "funding_time": 1784278800000,
+    "mark_price": 0.03404768,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030235,
+    "funding_time": 1784275200010,
+    "mark_price": 0.0335,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000242,
+    "funding_time": 1784271600005,
+    "mark_price": 0.0342,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00060897,
+    "funding_time": 1784268000000,
+    "mark_price": 0.0334,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024559,
+    "funding_time": 1784264400002,
+    "mark_price": 0.03466033,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042031,
+    "funding_time": 1784260800000,
+    "mark_price": 0.0357,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00090537,
+    "funding_time": 1784257200007,
+    "mark_price": 0.03540586,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00066002,
+    "funding_time": 1784253600002,
+    "mark_price": 0.0362,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050353,
+    "funding_time": 1784250000000,
+    "mark_price": 0.0367,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00120777,
+    "funding_time": 1784246400000,
+    "mark_price": 0.0359,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00092598,
+    "funding_time": 1784242800000,
+    "mark_price": 0.03565141,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00041371,
+    "funding_time": 1784239200000,
+    "mark_price": 0.0366,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00055144,
+    "funding_time": 1784235600002,
+    "mark_price": 0.0366,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00055673,
+    "funding_time": 1784232000002,
+    "mark_price": 0.0361,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020609,
+    "funding_time": 1784228400000,
+    "mark_price": 0.0375,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00088984,
+    "funding_time": 1784224800000,
+    "mark_price": 0.03586366,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070489,
+    "funding_time": 1784221200000,
+    "mark_price": 0.0353,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099262,
+    "funding_time": 1784217600002,
+    "mark_price": 0.03563808,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00113551,
+    "funding_time": 1784214000000,
+    "mark_price": 0.03676356,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054871,
+    "funding_time": 1784210400002,
+    "mark_price": 0.03740933,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029595,
+    "funding_time": 1784206800001,
+    "mark_price": 0.03794587,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014899,
+    "funding_time": 1784203200001,
+    "mark_price": 0.0384494,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.632e-05,
+    "funding_time": 1784199600002,
+    "mark_price": 0.03860652,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.589e-05,
+    "funding_time": 1784196000000,
+    "mark_price": 0.039,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044546,
+    "funding_time": 1784192400002,
+    "mark_price": 0.03946554,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023854,
+    "funding_time": 1784188800003,
+    "mark_price": 0.03984267,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070488,
+    "funding_time": 1784185200001,
+    "mark_price": 0.04,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00072601,
+    "funding_time": 1784181600000,
+    "mark_price": 0.04073241,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00107298,
+    "funding_time": 1784178000000,
+    "mark_price": 0.0412,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00199318,
+    "funding_time": 1784174400003,
+    "mark_price": 0.04063644,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00188188,
+    "funding_time": 1784170800001,
+    "mark_price": 0.0412,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0012947,
+    "funding_time": 1784167200003,
+    "mark_price": 0.04204839,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00153256,
+    "funding_time": 1784163600000,
+    "mark_price": 0.0425,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00115887,
+    "funding_time": 1784160000000,
+    "mark_price": 0.0429,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00090224,
+    "funding_time": 1784156400000,
+    "mark_price": 0.0427,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00101827,
+    "funding_time": 1784152800000,
+    "mark_price": 0.04194282,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00107488,
+    "funding_time": 1784149200000,
+    "mark_price": 0.04180032,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093956,
+    "funding_time": 1784145600002,
+    "mark_price": 0.04183479,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00108773,
+    "funding_time": 1784142000002,
+    "mark_price": 0.04113903,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00109644,
+    "funding_time": 1784138400003,
+    "mark_price": 0.0406372,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00197884,
+    "funding_time": 1784134800000,
+    "mark_price": 0.04122942,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0013236,
+    "funding_time": 1784131200000,
+    "mark_price": 0.0426,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00177452,
+    "funding_time": 1784127600002,
+    "mark_price": 0.0436,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00164043,
+    "funding_time": 1784124000009,
+    "mark_price": 0.0434,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00170523,
+    "funding_time": 1784120400000,
+    "mark_price": 0.04351698,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00117002,
+    "funding_time": 1784116800003,
+    "mark_price": 0.0435,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00116717,
+    "funding_time": 1784113200000,
+    "mark_price": 0.044,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00140144,
+    "funding_time": 1784109600000,
+    "mark_price": 0.0435,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00146762,
+    "funding_time": 1784106000004,
+    "mark_price": 0.0442,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00134811,
+    "funding_time": 1784102400002,
+    "mark_price": 0.04474849,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00133359,
+    "funding_time": 1784098800000,
+    "mark_price": 0.04542909,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064081,
+    "funding_time": 1784095200002,
+    "mark_price": 0.04684279,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044379,
+    "funding_time": 1784091600003,
+    "mark_price": 0.04675525,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00134611,
+    "funding_time": 1784088000003,
+    "mark_price": 0.04740393,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00177489,
+    "funding_time": 1784084400001,
+    "mark_price": 0.048,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00221628,
+    "funding_time": 1784080800000,
+    "mark_price": 0.0485,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0024001,
+    "funding_time": 1784077200000,
+    "mark_price": 0.0501,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00196904,
+    "funding_time": 1784073600005,
+    "mark_price": 0.05171849,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00244211,
+    "funding_time": 1784070000001,
+    "mark_price": 0.0504822,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00292101,
+    "funding_time": 1784066400001,
+    "mark_price": 0.05105413,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00192719,
+    "funding_time": 1784062800000,
+    "mark_price": 0.05113416,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00134291,
+    "funding_time": 1784059200000,
+    "mark_price": 0.0517,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00123197,
+    "funding_time": 1784055600002,
+    "mark_price": 0.05082074,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00170225,
+    "funding_time": 1784052000001,
+    "mark_price": 0.0504,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00151506,
+    "funding_time": 1784048400001,
+    "mark_price": 0.0512,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00161032,
+    "funding_time": 1784044800001,
+    "mark_price": 0.05035659,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00473579,
+    "funding_time": 1784041200000,
+    "mark_price": 0.04916642,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00372863,
+    "funding_time": 1784037600000,
+    "mark_price": 0.0472,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0015792,
+    "funding_time": 1784034000001,
+    "mark_price": 0.0512,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048176,
+    "funding_time": 1784030400001,
+    "mark_price": 0.0519,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068397,
+    "funding_time": 1784026800000,
+    "mark_price": 0.04874333,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00080051,
+    "funding_time": 1784023200006,
+    "mark_price": 0.0485,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0005764,
+    "funding_time": 1784019600002,
+    "mark_price": 0.0488,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068729,
+    "funding_time": 1784016000002,
+    "mark_price": 0.04844037,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063821,
+    "funding_time": 1784012400000,
+    "mark_price": 0.0488,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038407,
+    "funding_time": 1784008800000,
+    "mark_price": 0.0491,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057692,
+    "funding_time": 1784005200000,
+    "mark_price": 0.0488,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038605,
+    "funding_time": 1784001600000,
+    "mark_price": 0.04924456,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045369,
+    "funding_time": 1783998000001,
+    "mark_price": 0.04968619,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004627,
+    "funding_time": 1783994400000,
+    "mark_price": 0.0499,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031381,
+    "funding_time": 1783990800000,
+    "mark_price": 0.05114067,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039484,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0499,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049645,
+    "funding_time": 1783983600000,
+    "mark_price": 0.0497,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051128,
+    "funding_time": 1783980000000,
+    "mark_price": 0.0499,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00044505,
+    "funding_time": 1783976400001,
+    "mark_price": 0.05084067,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035386,
+    "funding_time": 1783972800000,
+    "mark_price": 0.05013943,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00070727,
+    "funding_time": 1783969200002,
+    "mark_price": 0.04894127,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036104,
+    "funding_time": 1783965600000,
+    "mark_price": 0.04763784,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.466e-05,
+    "funding_time": 1783962000000,
+    "mark_price": 0.0513,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002644,
+    "funding_time": 1783958400004,
+    "mark_price": 0.04976501,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013838,
+    "funding_time": 1783954800002,
+    "mark_price": 0.0505397,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.72e-06,
+    "funding_time": 1783951200003,
+    "mark_price": 0.05214558,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014882,
+    "funding_time": 1783947600000,
+    "mark_price": 0.0513,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017166,
+    "funding_time": 1783944000000,
+    "mark_price": 0.04995338,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028906,
+    "funding_time": 1783940400003,
+    "mark_price": 0.04964365,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012334,
+    "funding_time": 1783936800001,
+    "mark_price": 0.04954301,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027927,
+    "funding_time": 1783933200007,
+    "mark_price": 0.05103685,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064294,
+    "funding_time": 1783929600001,
+    "mark_price": 0.0517,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00089642,
+    "funding_time": 1783926000003,
+    "mark_price": 0.0524,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00117084,
+    "funding_time": 1783922400000,
+    "mark_price": 0.0522,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00116449,
+    "funding_time": 1783918800000,
+    "mark_price": 0.0528,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00111827,
+    "funding_time": 1783915200000,
+    "mark_price": 0.0526,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00126859,
+    "funding_time": 1783911600000,
+    "mark_price": 0.0539,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00179354,
+    "funding_time": 1783908000000,
+    "mark_price": 0.05482026,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00225003,
+    "funding_time": 1783904400001,
+    "mark_price": 0.05828264,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00231051,
+    "funding_time": 1783900800000,
+    "mark_price": 0.0551,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00249116,
+    "funding_time": 1783897200000,
+    "mark_price": 0.055,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00255173,
+    "funding_time": 1783893600002,
+    "mark_price": 0.0552,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00230424,
+    "funding_time": 1783890000002,
+    "mark_price": 0.0557,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00254412,
+    "funding_time": 1783886400002,
+    "mark_price": 0.0555,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00254073,
+    "funding_time": 1783882800002,
+    "mark_price": 0.0551,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00315568,
+    "funding_time": 1783879200000,
+    "mark_price": 0.0556,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00275107,
+    "funding_time": 1783875600002,
+    "mark_price": 0.0538,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00273077,
+    "funding_time": 1783872000000,
+    "mark_price": 0.05393232,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00258203,
+    "funding_time": 1783868400002,
+    "mark_price": 0.0572,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00302387,
+    "funding_time": 1783864800000,
+    "mark_price": 0.0573,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00196903,
+    "funding_time": 1783861200000,
+    "mark_price": 0.0566094,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00202865,
+    "funding_time": 1783857600000,
+    "mark_price": 0.05584813,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0020859,
+    "funding_time": 1783854000004,
+    "mark_price": 0.0561,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0026922,
+    "funding_time": 1783850400004,
+    "mark_price": 0.0567,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0033973,
+    "funding_time": 1783846800001,
+    "mark_price": 0.0576,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00394782,
+    "funding_time": 1783843200003,
+    "mark_price": 0.0588,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00454116,
+    "funding_time": 1783839600000,
+    "mark_price": 0.0592,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00403367,
+    "funding_time": 1783836000001,
+    "mark_price": 0.061,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00398778,
+    "funding_time": 1783832400000,
+    "mark_price": 0.0617,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00477964,
+    "funding_time": 1783828800000,
+    "mark_price": 0.0609,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.004673,
+    "funding_time": 1783825200003,
+    "mark_price": 0.0619,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00589093,
+    "funding_time": 1783821600000,
+    "mark_price": 0.0636,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00905491,
+    "funding_time": 1783818000000,
+    "mark_price": 0.0642,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00397798,
+    "funding_time": 1783814400000,
+    "mark_price": 0.0667,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00317664,
+    "funding_time": 1783810800000,
+    "mark_price": 0.0614,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00185752,
+    "funding_time": 1783807200004,
+    "mark_price": 0.06080018,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00153042,
+    "funding_time": 1783803600000,
+    "mark_price": 0.059,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00125058,
+    "funding_time": 1783800000000,
+    "mark_price": 0.05924167,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00114208,
+    "funding_time": 1783796400008,
+    "mark_price": 0.05810599,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00080213,
+    "funding_time": 1783792800000,
+    "mark_price": 0.0589,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099354,
+    "funding_time": 1783789200001,
+    "mark_price": 0.06021005,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0015257,
+    "funding_time": 1783785600000,
+    "mark_price": 0.0612508,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051679,
+    "funding_time": 1783782000004,
+    "mark_price": 0.0589,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043445,
+    "funding_time": 1783778400002,
+    "mark_price": 0.0587,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057783,
+    "funding_time": 1783774800000,
+    "mark_price": 0.0578423,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00089304,
+    "funding_time": 1783771200008,
+    "mark_price": 0.05794928,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00087719,
+    "funding_time": 1783767600000,
+    "mark_price": 0.0577,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00084183,
+    "funding_time": 1783764000001,
+    "mark_price": 0.0592,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00138623,
+    "funding_time": 1783760400000,
+    "mark_price": 0.0592,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00116157,
+    "funding_time": 1783756800000,
+    "mark_price": 0.06213976,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00146144,
+    "funding_time": 1783753200000,
+    "mark_price": 0.05663665,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00161242,
+    "funding_time": 1783749600001,
+    "mark_price": 0.0582,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00172783,
+    "funding_time": 1783746000001,
+    "mark_price": 0.0596,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00104373,
+    "funding_time": 1783742400000,
+    "mark_price": 0.062,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0012881,
+    "funding_time": 1783738800000,
+    "mark_price": 0.0622,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00103362,
+    "funding_time": 1783735200000,
+    "mark_price": 0.0626,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00115292,
+    "funding_time": 1783731600003,
+    "mark_price": 0.0634,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00114424,
+    "funding_time": 1783728000000,
+    "mark_price": 0.0628,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00092185,
+    "funding_time": 1783724400000,
+    "mark_price": 0.06326542,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00134645,
+    "funding_time": 1783720800000,
+    "mark_price": 0.063,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00165922,
+    "funding_time": 1783717200001,
+    "mark_price": 0.0628,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00156706,
+    "funding_time": 1783713600000,
+    "mark_price": 0.06376188,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00143332,
+    "funding_time": 1783710000000,
+    "mark_price": 0.0674,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00133939,
+    "funding_time": 1783706400000,
+    "mark_price": 0.0708,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00111808,
+    "funding_time": 1783702800001,
+    "mark_price": 0.07362881,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0016475,
+    "funding_time": 1783699200005,
+    "mark_price": 0.07182832,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00150147,
+    "funding_time": 1783695600000,
+    "mark_price": 0.072,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00128777,
+    "funding_time": 1783692000004,
+    "mark_price": 0.0716,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00161963,
+    "funding_time": 1783688400005,
+    "mark_price": 0.07133508,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00168941,
+    "funding_time": 1783684800002,
+    "mark_price": 0.0706,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00200262,
+    "funding_time": 1783681200006,
+    "mark_price": 0.07344107,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00233972,
+    "funding_time": 1783677600001,
+    "mark_price": 0.07513986,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00255622,
+    "funding_time": 1783674000001,
+    "mark_price": 0.0755,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00272939,
+    "funding_time": 1783670400005,
+    "mark_price": 0.0755,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00267197,
+    "funding_time": 1783666800000,
+    "mark_price": 0.0765,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00212567,
+    "funding_time": 1783663200000,
+    "mark_price": 0.0769,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0021033,
+    "funding_time": 1783659600003,
+    "mark_price": 0.0777,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00189283,
+    "funding_time": 1783656000000,
+    "mark_price": 0.0781,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00230925,
+    "funding_time": 1783652400001,
+    "mark_price": 0.0775,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00262831,
+    "funding_time": 1783648800005,
+    "mark_price": 0.0773,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0037996,
+    "funding_time": 1783645200000,
+    "mark_price": 0.0773,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00403352,
+    "funding_time": 1783641600000,
+    "mark_price": 0.0787,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0033103,
+    "funding_time": 1783638000000,
+    "mark_price": 0.08042562,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00247273,
+    "funding_time": 1783634400001,
+    "mark_price": 0.07936006,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00236285,
+    "funding_time": 1783630800000,
+    "mark_price": 0.08162989,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00268925,
+    "funding_time": 1783627200000,
+    "mark_price": 0.0818586,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.002415,
+    "funding_time": 1783623600006,
+    "mark_price": 0.0819,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00275962,
+    "funding_time": 1783620000004,
+    "mark_price": 0.08294467,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00337685,
+    "funding_time": 1783616400000,
+    "mark_price": 0.0837449,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00416726,
+    "funding_time": 1783612800001,
+    "mark_price": 0.08438049,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00304223,
+    "funding_time": 1783609200000,
+    "mark_price": 0.0836,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0025572,
+    "funding_time": 1783605600003,
+    "mark_price": 0.0854,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00254436,
+    "funding_time": 1783602000000,
+    "mark_price": 0.0863254,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00335452,
+    "funding_time": 1783598400002,
+    "mark_price": 0.08814964,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00432595,
+    "funding_time": 1783594800000,
+    "mark_price": 0.08864243,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00249205,
+    "funding_time": 1783591200000,
+    "mark_price": 0.0883,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00228496,
+    "funding_time": 1783587600000,
+    "mark_price": 0.08437491,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00201604,
+    "funding_time": 1783584000001,
+    "mark_price": 0.0841,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00191641,
+    "funding_time": 1783580400009,
+    "mark_price": 0.08524957,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00223249,
+    "funding_time": 1783576800000,
+    "mark_price": 0.085,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00211703,
+    "funding_time": 1783573200000,
+    "mark_price": 0.08443226,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00232199,
+    "funding_time": 1783569600002,
+    "mark_price": 0.08397354,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00312437,
+    "funding_time": 1783566000000,
+    "mark_price": 0.0842,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00215091,
+    "funding_time": 1783562400000,
+    "mark_price": 0.0846423,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0020343,
+    "funding_time": 1783558800000,
+    "mark_price": 0.08264817,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00289267,
+    "funding_time": 1783555200000,
+    "mark_price": 0.08442427,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00382384,
+    "funding_time": 1783551600001,
+    "mark_price": 0.08683556,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0043258,
+    "funding_time": 1783548000001,
+    "mark_price": 0.0872,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00465405,
+    "funding_time": 1783544400001,
+    "mark_price": 0.088,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00317664,
+    "funding_time": 1783540800006,
+    "mark_price": 0.0908,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0031721,
+    "funding_time": 1783537200013,
+    "mark_price": 0.09075461,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0047384,
+    "funding_time": 1783533600002,
+    "mark_price": 0.09106639,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00586571,
+    "funding_time": 1783530000003,
+    "mark_price": 0.08892166,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00660424,
+    "funding_time": 1783526400000,
+    "mark_price": 0.0891,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00551218,
+    "funding_time": 1783522800000,
+    "mark_price": 0.0874,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00341535,
+    "funding_time": 1783519200001,
+    "mark_price": 0.0863,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00344355,
+    "funding_time": 1783515600006,
+    "mark_price": 0.08306991,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00331401,
+    "funding_time": 1783512000005,
+    "mark_price": 0.0871,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00417932,
+    "funding_time": 1783508400005,
+    "mark_price": 0.0878,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00461755,
+    "funding_time": 1783504800001,
+    "mark_price": 0.09129977,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00405867,
+    "funding_time": 1783501200011,
+    "mark_price": 0.0923,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00298022,
+    "funding_time": 1783497600000,
+    "mark_price": 0.0944,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00229109,
+    "funding_time": 1783494000000,
+    "mark_price": 0.0942,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00312244,
+    "funding_time": 1783490400000,
+    "mark_price": 0.0954767,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00433805,
+    "funding_time": 1783486800000,
+    "mark_price": 0.0974,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00516104,
+    "funding_time": 1783483200003,
+    "mark_price": 0.09694167,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00368777,
+    "funding_time": 1783479600004,
+    "mark_price": 0.0986,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00300232,
+    "funding_time": 1783476000000,
+    "mark_price": 0.097,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00427888,
+    "funding_time": 1783472400000,
+    "mark_price": 0.1039699,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00800535,
+    "funding_time": 1783468800000,
+    "mark_price": 0.10653523,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00827943,
+    "funding_time": 1783465200004,
+    "mark_price": 0.105,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00826269,
+    "funding_time": 1783461600007,
+    "mark_price": 0.1053,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00770186,
+    "funding_time": 1783458000008,
+    "mark_price": 0.1046,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00722908,
+    "funding_time": 1783454400000,
+    "mark_price": 0.1092,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00801935,
+    "funding_time": 1783450800001,
+    "mark_price": 0.1075,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00614382,
+    "funding_time": 1783447200000,
+    "mark_price": 0.1086,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00546991,
+    "funding_time": 1783443600000,
+    "mark_price": 0.11010959,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00726253,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1122,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00732225,
+    "funding_time": 1783436400002,
+    "mark_price": 0.1126,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00827547,
+    "funding_time": 1783432800000,
+    "mark_price": 0.11470873,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01404074,
+    "funding_time": 1783429200001,
+    "mark_price": 0.1123,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01996739,
+    "funding_time": 1783425600010,
+    "mark_price": 0.10388401,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01955787,
+    "funding_time": 1783422000000,
+    "mark_price": 0.1125,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.01097267,
+    "funding_time": 1783418400004,
+    "mark_price": 0.1181,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00395088,
+    "funding_time": 1783414800000,
+    "mark_price": 0.12001448,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00261623,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1281,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00271851,
+    "funding_time": 1783407600002,
+    "mark_price": 0.12854138,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00247589,
+    "funding_time": 1783404000000,
+    "mark_price": 0.12912568,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00157264,
+    "funding_time": 1783400400000,
+    "mark_price": 0.1295,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00111252,
+    "funding_time": 1783396800000,
+    "mark_price": 0.1304,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0009394,
+    "funding_time": 1783393200000,
+    "mark_price": 0.134343,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00139735,
+    "funding_time": 1783389600004,
+    "mark_price": 0.1374,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00094322,
+    "funding_time": 1783386000010,
+    "mark_price": 0.13794862,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00119471,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1349,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00120087,
+    "funding_time": 1783378800002,
+    "mark_price": 0.13356419,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00150946,
+    "funding_time": 1783375200001,
+    "mark_price": 0.1332771,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00149242,
+    "funding_time": 1783371600006,
+    "mark_price": 0.133,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118392,
+    "funding_time": 1783368000003,
+    "mark_price": 0.136,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00155303,
+    "funding_time": 1783364400002,
+    "mark_price": 0.1355,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0010524,
+    "funding_time": 1783360800002,
+    "mark_price": 0.13665683,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0010218,
+    "funding_time": 1783357200000,
+    "mark_price": 0.1389,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00173384,
+    "funding_time": 1783353600000,
+    "mark_price": 0.13486244,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00210594,
+    "funding_time": 1783350000011,
+    "mark_price": 0.132,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00168388,
+    "funding_time": 1783346400002,
+    "mark_price": 0.1318,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00195409,
+    "funding_time": 1783342800000,
+    "mark_price": 0.1302,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00178673,
+    "funding_time": 1783339200002,
+    "mark_price": 0.13253657,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00183955,
+    "funding_time": 1783335600000,
+    "mark_price": 0.13028687,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00155693,
+    "funding_time": 1783332000003,
+    "mark_price": 0.1314,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018058,
+    "funding_time": 1783328400000,
+    "mark_price": 0.13913653,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.807e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.13894566,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017851,
+    "funding_time": 1783321200000,
+    "mark_price": 0.139543,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.278e-05,
+    "funding_time": 1783317600000,
+    "mark_price": 0.1392,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011557,
+    "funding_time": 1783314000000,
+    "mark_price": 0.1420603,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033356,
+    "funding_time": 1783310400000,
+    "mark_price": 0.1412,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038474,
+    "funding_time": 1783306800001,
+    "mark_price": 0.14300928,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065534,
+    "funding_time": 1783303200000,
+    "mark_price": 0.1404,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00081284,
+    "funding_time": 1783299600000,
+    "mark_price": 0.14367269,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048359,
+    "funding_time": 1783296000000,
+    "mark_price": 0.14309257,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00073305,
+    "funding_time": 1783292400000,
+    "mark_price": 0.14241147,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0007413,
+    "funding_time": 1783288800001,
+    "mark_price": 0.1414,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079286,
+    "funding_time": 1783285200000,
+    "mark_price": 0.14001833,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00091903,
+    "funding_time": 1783281600000,
+    "mark_price": 0.13656033,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093913,
+    "funding_time": 1783278000000,
+    "mark_price": 0.1374,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00092281,
+    "funding_time": 1783274400012,
+    "mark_price": 0.1368,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068326,
+    "funding_time": 1783270800001,
+    "mark_price": 0.1386,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00071277,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1409,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00080202,
+    "funding_time": 1783263600000,
+    "mark_price": 0.1408,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0007988,
+    "funding_time": 1783260000000,
+    "mark_price": 0.1407,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00077409,
+    "funding_time": 1783256400008,
+    "mark_price": 0.14213897,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036601,
+    "funding_time": 1783252800000,
+    "mark_price": 0.13844667,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00055499,
+    "funding_time": 1783249200000,
+    "mark_price": 0.13944258,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00084459,
+    "funding_time": 1783245600011,
+    "mark_price": 0.13843283,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0007386,
+    "funding_time": 1783242000000,
+    "mark_price": 0.141,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00093914,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1451,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00088175,
+    "funding_time": 1783234800000,
+    "mark_price": 0.14371256,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00110225,
+    "funding_time": 1783231200000,
+    "mark_price": 0.14231506,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00129151,
+    "funding_time": 1783227600000,
+    "mark_price": 0.1408,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00150072,
+    "funding_time": 1783224000002,
+    "mark_price": 0.1403,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00164832,
+    "funding_time": 1783220400000,
+    "mark_price": 0.138,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00218792,
+    "funding_time": 1783216800000,
+    "mark_price": 0.13543905,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00246355,
+    "funding_time": 1783213200001,
+    "mark_price": 0.1336,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00277779,
+    "funding_time": 1783209600003,
+    "mark_price": 0.13420111,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00309139,
+    "funding_time": 1783206000002,
+    "mark_price": 0.13461289,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0030498,
+    "funding_time": 1783202400002,
+    "mark_price": 0.1367,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00307059,
+    "funding_time": 1783198800010,
+    "mark_price": 0.1348,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00302965,
+    "funding_time": 1783195200000,
+    "mark_price": 0.13700628,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00342953,
+    "funding_time": 1783191600000,
+    "mark_price": 0.13623243,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0049323,
+    "funding_time": 1783188000001,
+    "mark_price": 0.133,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00587376,
+    "funding_time": 1783184400002,
+    "mark_price": 0.1286,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.02,
+    "funding_time": 1783180800007,
+    "mark_price": 0.13064373,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00242916,
+    "funding_time": 1783166400000,
+    "mark_price": 0.1417,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00192769,
+    "funding_time": 1783152000000,
+    "mark_price": 0.144252,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00304194,
+    "funding_time": 1783137600006,
+    "mark_price": 0.13796212,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00558694,
+    "funding_time": 1783123200000,
+    "mark_price": 0.1404,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00251274,
+    "funding_time": 1783108800001,
+    "mark_price": 0.1404,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00161685,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1464,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00693387,
+    "funding_time": 1783080000002,
+    "mark_price": 0.1278,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00579835,
+    "funding_time": 1783065600007,
+    "mark_price": 0.12113032,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00435031,
+    "funding_time": 1783051200000,
+    "mark_price": 0.1227,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00296244,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1237,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00206607,
+    "funding_time": 1783022400008,
+    "mark_price": 0.1236,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00172203,
+    "funding_time": 1783008000000,
+    "mark_price": 0.12356636,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0028851,
+    "funding_time": 1782993600005,
+    "mark_price": 0.12986376,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00126941,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1383,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00227493,
+    "funding_time": 1782964800003,
+    "mark_price": 0.1179,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00152593,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1163,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00202664,
+    "funding_time": 1782936000000,
+    "mark_price": 0.1215,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00165234,
+    "funding_time": 1782921600000,
+    "mark_price": 0.11863333,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00253823,
+    "funding_time": 1782907200000,
+    "mark_price": 0.1194,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00239048,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1149,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00064844,
+    "funding_time": 1782878400001,
+    "mark_price": 0.11837712,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.12625862,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052728,
+    "funding_time": 1782849600003,
+    "mark_price": 0.12631693,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00124772,
+    "funding_time": 1782835200005,
+    "mark_price": 0.14589962,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00224229,
+    "funding_time": 1782820800002,
+    "mark_price": 0.13767208,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00071873,
+    "funding_time": 1782806400000,
+    "mark_price": 0.14884752,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00205445,
+    "funding_time": 1782792000000,
+    "mark_price": 0.1638,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0020645,
+    "funding_time": 1782777600000,
+    "mark_price": 0.16668963,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00149458,
+    "funding_time": 1782763200000,
+    "mark_price": 0.1485,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00116057,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1716596,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00280131,
+    "funding_time": 1782734400001,
+    "mark_price": 0.23405413,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.18901706,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017286,
+    "funding_time": 1782705600000,
+    "mark_price": 0.1589,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028772,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1651,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013049,
+    "funding_time": 1782676800003,
+    "mark_price": 0.162,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1555,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014578,
+    "funding_time": 1782648000008,
+    "mark_price": 0.13840035,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019048,
+    "funding_time": 1782633600013,
+    "mark_price": 0.1344,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028977,
+    "funding_time": 1782619200002,
+    "mark_price": 0.13422224,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.13029676,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.12975,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.478e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.13,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.223e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.13254594,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.158e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1325,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023781,
+    "funding_time": 1782532800000,
+    "mark_price": 0.13305676,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.56e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1272268,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.12733995,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044432,
+    "funding_time": 1782489600000,
+    "mark_price": 0.127411,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012964,
+    "funding_time": 1782475200004,
+    "mark_price": 0.1268836,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020368,
+    "funding_time": 1782460800002,
+    "mark_price": 0.12719057,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.12128407,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.12346715,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.1238,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.12328194,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.1259,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1275,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.1246,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1349,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.1218,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.1175,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.11774601,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.12,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1192,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.12001072,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.12019768,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.11885082,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1212,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.1203,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.1206,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.11972163,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1181,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.10384839,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.10765809,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.1030016,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.09954779,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.10203459,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.10375752,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.1039,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.10374444,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.10603227,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.1080408,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.1069537,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.11022146,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.1079,
+    "symbol": "GWEIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.10478344,
+    "symbol": "GWEIUSDT"
+  }
+]

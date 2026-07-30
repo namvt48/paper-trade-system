@@ -74,6 +74,44 @@ async def test_process_open_duplicate_reject(executor):
 
 
 @pytest.mark.asyncio
+async def test_process_open_allows_explicit_multi_leg_position(executor):
+    first = OpenSignal(
+        type=SignalType.OPEN, alpha_id="alpha-4-xau", signal_id="sig-001",
+        position_id="leg-1", symbol="XAUUSDT", side="LONG", entry=5000.0,
+        qty=1.0, timestamp="2026-05-22T10:00:00Z",
+        metadata=json.dumps({"allow_duplicate_position": True}),
+    )
+    second = OpenSignal(
+        type=SignalType.OPEN, alpha_id="alpha-4-xau", signal_id="sig-002",
+        position_id="leg-2", symbol="XAUUSDT", side="LONG", entry=5001.0,
+        qty=1.0, timestamp="2026-05-22T10:30:00Z",
+        metadata=json.dumps({"allow_duplicate_position": True}),
+    )
+    await executor.process_open(first)
+    result = await executor.process_open(second)
+    assert result["position_id"] == "leg-2"
+
+
+@pytest.mark.asyncio
+async def test_process_open_duplicate_reject_logs_orphan_warning(executor, caplog):
+    signal = OpenSignal(
+        type=SignalType.OPEN,
+        alpha_id="test-alpha",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry=95000.0,
+        qty=0.01,
+        timestamp="2026-05-22T10:00:00Z",
+    )
+    await executor.process_open(signal)
+    with caplog.at_level("WARNING", logger="app.executor"):
+        with pytest.raises(ValueError, match="already has an open position"):
+            await executor.process_open(signal)
+    assert any("[DUPLICATE-REJECT]" in rec.message for rec in caplog.records)
+
+
+@pytest.mark.asyncio
 async def test_process_open_with_slippage(tmp_path):
     db_path = str(tmp_path / "test.db")
     database = Database(db_path)

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5.932e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.04627,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.04659,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.044e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.04631,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.866e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.04661,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.264e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.04602502,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.929e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.04602,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.04602,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.04611,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.04562,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.306e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.04466,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.04499731,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.04532,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.544e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.04454752,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.191e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.04475,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.456e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.04460614,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.94e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.04462,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.04470702,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.79e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.04351,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.721e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.04238214,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.065e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0427,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.22e-06,
+    "funding_time": 1783929600001,
+    "mark_price": 0.04229,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.173e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.0443,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.696e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.04395032,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.7e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.04351559,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.04381935,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.04458,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.578e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.04315,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.04295,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.04317,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.368e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.0428,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.662e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.04237,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.0425,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.753e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.04240777,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.108e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.04221,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.81e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 0.0417416,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.52e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 0.04240282,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.722e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.04298,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.04421,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.322e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.04388,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.011e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.04478,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.0453,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.297e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.04465,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.04526,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.04457,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.564e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.04474466,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.045695,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.04619,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.04546,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0461431,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.04575,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.04546,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.096e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.04407157,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.068e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.04441,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.845e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.04416559,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0439,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.0440448,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.741e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.04281542,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.968e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.04261377,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.21e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.0421186,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.387e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.04254,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.04307767,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.04252671,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.5e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.04224,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.977e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.04211,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.04234,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.599e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.04251,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.131e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.04207,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.639e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.04298,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.863e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.04280557,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.136e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.0429,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.216e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.04329,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.04346,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.811e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.04306,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.863e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.04266,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.186e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.04424397,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.04372,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.4e-07,
+    "funding_time": 1782316800003,
+    "mark_price": 0.04391,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.703e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.04594,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.516e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.04621,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.11e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.04583,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.809e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.04659143,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.319e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.04767099,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.801e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.04882188,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.496e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.04831,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.4e-07,
+    "funding_time": 1782086400000,
+    "mark_price": 0.04720841,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.03e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.04828124,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.04766099,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.944e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.04745601,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.875e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.04795865,
+    "symbol": "CFXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.866e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.04807,
+    "symbol": "CFXUSDT"
+  }
+]

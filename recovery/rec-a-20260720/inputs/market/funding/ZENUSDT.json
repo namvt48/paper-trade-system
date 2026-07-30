@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -4.258e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 4.17282812,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 4.17596875,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 4.17228125,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.618e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 4.158,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.786e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 4.165,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.404e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 4.144,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 4.145,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 4.1959375,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 4.16,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.578e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 4.171,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 4.273,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 4.28,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 4.345,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 4.37625521,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 4.237,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.963e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 4.20297522,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 4.251,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.459e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 4.06465,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 4.032,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.253e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 4.10338229,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.905e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 4.08,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 4.124,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 4.1865,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 4.12939224,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 4.11632708,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 4.1765,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 4.17140625,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 4.1485,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 4.172,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 4.13766667,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 4.108,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 4.14221667,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.71e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 4.129,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 4.09819167,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.526e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 4.01923276,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.51e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 4.15896667,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 4.225,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 4.279,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.695e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 4.18906667,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 4.242,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.774e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 4.25933333,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.482e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 4.23210833,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 4.3076875,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.075e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 4.21067083,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.451e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 4.25932759,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 4.3175,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 4.33788333,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 4.27310312,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 4.3302,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 4.33117396,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 4.18311207,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 4.18304167,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.111e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 4.222,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.415e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 4.0880097,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 4.048,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.452e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 4.08618534,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.62e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 3.98103333,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.073e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 4.01445,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.213e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 3.983,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 4.07229167,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.083e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 4.118,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.341e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 4.0826,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 4.105,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.438e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 4.03335833,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.672e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 4.0588125,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.044e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 4.055,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.973e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 4.04743333,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 4.178,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 4.15101667,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 4.129,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.986e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 4.141625,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.741e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 4.148,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.271e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 4.059,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.09e-06,
+    "funding_time": 1782403200000,
+    "mark_price": 4.034,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.981e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 4.22,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.739e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 4.154,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.851e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 4.17143854,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.08e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 4.350125,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 4.39312083,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.638e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 4.32109167,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.315e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 4.37,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.358e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 4.47144167,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.728e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 4.59080833,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.176e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 4.60443333,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.886e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 4.49502292,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.112e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 4.64940729,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.655e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 4.6503125,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.43e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 4.65756042,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.275e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 4.701,
+    "symbol": "ZENUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.786e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 4.612,
+    "symbol": "ZENUSDT"
+  }
+]

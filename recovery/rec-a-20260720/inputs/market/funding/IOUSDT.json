@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.1442,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.171e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.1427,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.14287339,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.458e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1434,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3e-08,
+    "funding_time": 1784462400000,
+    "mark_price": 0.1456,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.12e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1472,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.1478,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016528,
+    "funding_time": 1784419200003,
+    "mark_price": 0.1491,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.102e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.1478,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.1482243,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.809e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.1472,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.14696095,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.601e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.14825313,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.14965559,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.1504,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.1511,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.1511,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.15081575,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.153,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1531,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.803e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.1568,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.383e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1586,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.1575,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.15675867,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.15985115,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.1605,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.15878938,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1604,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.1592,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1585,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.1616,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.955e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1636204,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.15970657,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.216e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.16166094,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.567e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.1535,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1556,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.1541502,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.1534496,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.15353485,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.15840979,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.15654545,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1556,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.15535092,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.16123369,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.16406214,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1631503,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.16373021,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.165,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.1682,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.16605453,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.17039588,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.17125092,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.17094504,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.169,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.1707,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1717,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.16872381,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.17036509,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.16990084,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.16887254,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.16960955,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1706,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.16997298,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.16915005,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.17288524,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1698,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.1685,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.16680763,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.16806935,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.1681,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.17581114,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1711,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.1713,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.16942994,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.1676,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1733,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.17665004,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1741,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.1741,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1789,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.18013621,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.17651881,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.1743,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.1736104,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.175,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.17661018,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.17694857,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1769,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.17872013,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1736,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.1694,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.173,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.17621543,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.17628894,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.1734,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.17395177,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.1739,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.17614628,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.17625511,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.17732804,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.1788,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.18221589,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.1738,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.17100865,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.1698,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.16778291,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.16766234,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1603,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.1615,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.15572369,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.15823491,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.16625004,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.497e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.16057544,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1622,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.1657,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.16514283,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.1646,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1644,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.16648348,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1666,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.1698255,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1716,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.17304995,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1711,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.1727,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1698354,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.1729,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.054e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1682,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.903e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.168,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.841e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.17101333,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.1733,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.17342127,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.99e-06,
+    "funding_time": 1782619200002,
+    "mark_price": 0.1792,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1762,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.1738,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1787,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.248e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.17900974,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1799,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.18450052,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1844,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.1792,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.414e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1766,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.17050196,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1746,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.79e-06,
+    "funding_time": 1782446400001,
+    "mark_price": 0.1732,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.43e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1746,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.836e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.173,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.23e-06,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1737,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.88e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.1807,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.993e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1777,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.8e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.1727,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1764,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.704e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.1741,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.1692,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.17731755,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1752,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.18484687,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.18250437,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.613e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.17727388,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.17902324,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1782,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.1872,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.1883,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.1942,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.086e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.19580878,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.636e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.1984,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.2021,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.357e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.2085,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.1945,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.20456794,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.19738209,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.20459807,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.109e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.2037,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.19452701,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.189,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.18450377,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1877,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.625e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.1792,
+    "symbol": "IOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.99e-06,
+    "funding_time": 1781942400000,
+    "mark_price": 0.18048376,
+    "symbol": "IOUSDT"
+  }
+]

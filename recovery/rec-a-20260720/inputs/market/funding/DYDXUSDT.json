@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 6.327e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.11926123,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.1213,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1217,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.823e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.12105,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.792e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.1201,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 0.12144045,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.12435,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.1254,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.127,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1249,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1232,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.1203,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.12165,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.729e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.12073108,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.298e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.11983839,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013772,
+    "funding_time": 1784073600005,
+    "mark_price": 0.11996484,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.993e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.12194301,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.796e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1228,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.488e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.12152019,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.1267,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.727e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.12665,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 0.13080656,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.13291312,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.13120665,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.12761871,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.935e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1287,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.15e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.12735,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.642e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.13139473,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1314,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.13225213,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1351,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.134,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1351729,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.14127806,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 0.129,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 0.12715301,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1277,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.12914004,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1303,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.12933398,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.1308,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.469e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.1298,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.13044333,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.728e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.12795606,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.679e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1283,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.1302,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.03e-06,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1313,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032064,
+    "funding_time": 1783152000000,
+    "mark_price": 0.1264,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.548e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.1326,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.99e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.131,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002958,
+    "funding_time": 1783065600007,
+    "mark_price": 0.12874893,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032503,
+    "funding_time": 1783036800000,
+    "mark_price": 0.12827867,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017073,
+    "funding_time": 1783008000000,
+    "mark_price": 0.13759207,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00039944,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1336,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.809e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1439,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.015e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.18860815,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001259,
+    "funding_time": 1782892800000,
+    "mark_price": 0.19180375,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.468e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.1799131,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.295e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.17100694,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.16211787,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.15944794,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.769e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.16360781,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.164e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.163,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.067e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.15340905,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.197e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1591,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.688e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.1522,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.82e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 0.15025,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.962e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.15595957,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.716e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.15545409,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1599,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1549,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.914e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.14441129,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1455391,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.65e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.13963609,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 0.148,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.677e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1495,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.929e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.14416217,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.159e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1437,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014268,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1499,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.304e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.13710432,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.14e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.1329,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.056e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.12885323,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.49e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1363,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.693e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.1213,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.105e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.12005742,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.783e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.126,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.129e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.12005,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.144e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.119,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.594e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1204,
+    "symbol": "DYDXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1196,
+    "symbol": "DYDXUSDT"
+  }
+]

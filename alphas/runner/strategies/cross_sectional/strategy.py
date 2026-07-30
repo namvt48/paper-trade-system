@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from cross_alpha.schedule import is_close_aligned_rebalance, is_midnight_close_utc
+from cross_alpha.schedule import is_midnight_close_utc, is_rebalance_due
 from cross_alpha.spec import AlphaSpec
 from cross_alpha.strategy import (
     Selection,
@@ -19,9 +19,11 @@ from cross_alpha.strategy import (
     select_positions,
 )
 from indicators.pandas.ts_ops import ts_zscore
+from portfolio_manager.core.book import TargetBook, TargetBookStore
 from runner.data_layer.funding_snapshot import FundingSnapshotReader
 from runner.shared_panel_feature_cache import PanelBundle, SharedPanelFeatureCache
 from runner.strategy.base import Strategy
+from runner.virtual_trade_ledger import VirtualTradeLedgerPublisher
 
 logger = logging.getLogger(__name__)
 
@@ -36,6 +38,13 @@ class CrossSectionalRunnerStrategy(Strategy):
         self._member_specs = self._resolve_member_specs()
         self.exchange = str(params.get("exchange", "binance"))
         self.capital = float(params.get("capital", 10_000.0))
+        self.book_only = bool(params.get("book_only", self.spec.book_only))
+        self._book_revision = 0
+        self._book_store = (
+            TargetBookStore(ctx.redis_client)
+            if self.book_only and ctx.redis_client is not None
+            else None
+        )
         self.offset_candle_sec = float(params.get("offset_candle_sec", 5.0))
         self.retain_buffer_bars = int(params.get("retain_buffer_bars", 0))
         self._symbols = self._load_universe()
@@ -52,18 +61,34 @@ class CrossSectionalRunnerStrategy(Strategy):
         )
         self._last_processed_candle = 0
         self._warmup_complete = False
-        self._open_positions: dict[str, dict[str, Any]] = self.ctx.load_positions()
+        self._open_positions: dict[str, dict[str, Any]] = (
+            self.reconcile_open_positions()
+        )
         self._portfolio_returns: list[float] = []
         # Peak-equity / current-drawdown tracking, driving the ensemble
         # overlay's drawdown_throttle step (see cross_alpha/overlay.py).
         self._equity = 1.0
         self._peak_equity = 1.0
+        self._shadow_equity = 1.0
         self._last_prices: dict[str, float] = {}
         self._base_weights: dict[str, float] = {}
         self._pending_cost = 0.0
         self._strategy_leverage = float(params.get("initial_strategy_leverage", 1.0))
         self._last_pnl_publish: dict[str, float] = {}
         self._pnl_channel = f"pnl:{self.alpha_id}"
+        self._virtual_trade_ledger = (
+            VirtualTradeLedgerPublisher(
+                ctx.redis_client,
+                self.alpha_id,
+                self.capital,
+                self.exchange,
+                str(params.get("virtual_trade_stream", "paper-shadow-trades")),
+            )
+            if self.book_only and ctx.redis_client is not None
+            else None
+        )
+        if self.book_only and ctx.redis_client is not None:
+            self._restore_shadow_state()
 
     @classmethod
     def get_required_channels(cls, params: dict) -> list[str]:
@@ -73,6 +98,7 @@ class CrossSectionalRunnerStrategy(Strategy):
             if spec_path:
                 try:
                     from cross_alpha.spec import AlphaSpec
+
                     spec = AlphaSpec.load(cls._resolve_spec_path(spec_path, params))
                     tf = spec.timeframe
                 except Exception:
@@ -157,42 +183,58 @@ class CrossSectionalRunnerStrategy(Strategy):
             pnl_pct = (entry - price) / entry
         else:
             return
-        payload = json.dumps({
-            "alpha_id": self.alpha_id,
-            "symbol": symbol,
-            "side": pos_side,
-            "entry_price": entry,
-            "current_price": price,
-            "pnl_pct": round(pnl_pct, 6),
-            "weight": float(pos.get("weight", 0.0)),
-            "timestamp": int(now * 1000),
-        })
+        payload = json.dumps(
+            {
+                "alpha_id": self.alpha_id,
+                "symbol": symbol,
+                "side": pos_side,
+                "entry_price": entry,
+                "current_price": price,
+                "pnl_pct": round(pnl_pct, 6),
+                "weight": float(pos.get("weight", 0.0)),
+                "timestamp": int(now * 1000),
+            }
+        )
         rc = self.ctx.redis_client
         if rc is not None:
             try:
                 rc.publish(self._pnl_channel, payload)
             except Exception:
-                logger.debug("[PNL] publish failed for %s", symbol, extra={"alpha_id": self.alpha_id})
+                logger.debug(
+                    "[PNL] publish failed for %s",
+                    symbol,
+                    extra={"alpha_id": self.alpha_id},
+                )
         self._last_pnl_publish[symbol] = now
 
-    def should_scan_after_event(self, kind: str, symbol: str | None = None, tf: str | None = None) -> bool:
+    def should_scan_after_event(
+        self, kind: str, symbol: str | None = None, tf: str | None = None
+    ) -> bool:
         if kind != "kline" or tf != self.spec.timeframe or not symbol:
             return False
         if symbol not in self._symbol_set:
             return False
-        candle_open_ms = self.ctx.cache.get_latest_timestamp(symbol, self.spec.timeframe)
+        candle_open_ms = self.ctx.cache.get_latest_timestamp(
+            symbol, self.spec.timeframe
+        )
         if candle_open_ms is None or candle_open_ms <= self._last_processed_candle:
             logger.debug(
                 "[%s] should_scan SKIP: symbol=%s candle_open_ms=%s last_processed=%s",
-                self.alpha_id, symbol, candle_open_ms, self._last_processed_candle,
+                self.alpha_id,
+                symbol,
+                candle_open_ms,
+                self._last_processed_candle,
             )
             return False
         if self._warmup_complete:
-            gap_candles = (candle_open_ms - self._last_processed_candle) // self._tf_to_ms(self.spec.timeframe)
+            gap_candles = (
+                candle_open_ms - self._last_processed_candle
+            ) // self._tf_to_ms(self.spec.timeframe)
             if gap_candles > _WARMUP_GAP_RESET_CANDLES:
                 logger.info(
                     "[%s] should_scan: large gap (%d candles) — resetting warmup_complete",
-                    self.alpha_id, gap_candles,
+                    self.alpha_id,
+                    gap_candles,
                 )
                 self._warmup_complete = False
         # Always check coverage — scanning before enough symbols have the new
@@ -202,7 +244,10 @@ class CrossSectionalRunnerStrategy(Strategy):
         if coverage < self.scan_min_symbol_coverage:
             logger.debug(
                 "[%s] should_scan SKIP: symbol=%s coverage=%.2f < %.2f",
-                self.alpha_id, symbol, coverage, self.scan_min_symbol_coverage,
+                self.alpha_id,
+                symbol,
+                coverage,
+                self.scan_min_symbol_coverage,
             )
             return False
         self._warmup_complete = True
@@ -215,12 +260,13 @@ class CrossSectionalRunnerStrategy(Strategy):
         if bundle is None:
             return
         panel = bundle.panel
-        compute_context = bundle.context
         latest = bundle.latest
         # Fallback: panel build (snapshot + build_panel) may not include the
         # newest candle if not all symbols have it yet. Use the actual latest
         # timestamp from the per-symbol cache to avoid stale early-return.
-        cache_latest = self._latest_cached_timestamp(self.spec.timeframe, tuple(self._symbols))
+        cache_latest = self._latest_cached_timestamp(
+            self.spec.timeframe, tuple(self._symbols)
+        )
         if cache_latest > latest:
             latest = cache_latest
         if latest <= self._last_processed_candle:
@@ -233,26 +279,33 @@ class CrossSectionalRunnerStrategy(Strategy):
         self._record_portfolio_return(prices)
 
         tf_ms = self._tf_to_ms(self.spec.timeframe)
-        bar_number = latest // tf_ms
         if self.spec.publish_at_midnight_utc:
             if not is_midnight_close_utc(latest, tf_ms):
                 logger.debug(
                     "[%s] scan SKIP: waiting for 00:00 UTC close (candle_open=%d)",
-                    self.alpha_id, latest,
+                    self.alpha_id,
+                    latest,
                     extra={"alpha_id": self.alpha_id},
                 )
                 self._last_prices = prices
                 self._last_processed_candle = latest
                 return
-            is_rebalance = is_close_aligned_rebalance(latest, tf_ms, self.spec.rebalance_bars)
-        else:
-            is_rebalance = bar_number % self.spec.rebalance_bars == 0
+        is_rebalance = is_rebalance_due(
+            latest,
+            tf_ms,
+            self.spec.rebalance_bars,
+            publish_at_midnight_utc=self.spec.publish_at_midnight_utc,
+            rebalance_on_close=getattr(self.spec, "rebalance_on_close", False),
+        )
+        bar_number = latest // tf_ms
         has_positions = bool(self._open_positions)
 
-        if not is_rebalance and has_positions:
+        if not is_rebalance and (has_positions or self.book_only):
             logger.debug(
                 "[%s] scan SKIP: not rebalance bar (bar_number=%d, rebalance_bars=%d)",
-                self.alpha_id, bar_number, self.spec.rebalance_bars,
+                self.alpha_id,
+                bar_number,
+                self.spec.rebalance_bars,
                 extra={"alpha_id": self.alpha_id},
             )
             self._last_prices = prices
@@ -270,21 +323,25 @@ class CrossSectionalRunnerStrategy(Strategy):
         sample_symbol, sample_indicator = self._audit_sample(selection)
         logger.info(
             "[SIGNAL_AUDIT] %s",
-            json.dumps({
-                "alpha_id": self.spec.alpha_id,
-                "timeframe": self.spec.timeframe,
-                "signal_candle_open_ms": latest,
-                "is_rebalance": is_rebalance,
-                "signal": self.spec.signal,
-                "params": self.spec.params,
-                "long_threshold": self.spec.long_threshold,
-                "short_threshold": self.spec.short_threshold,
-                "symbol_count": len(selection.indicators),
-                "long_count": len(selection.longs),
-                "short_count": len(selection.shorts),
-                "sample_symbol": sample_symbol,
-                "sample_indicator": sample_indicator,
-            }, separators=(",", ":"), allow_nan=False),
+            json.dumps(
+                {
+                    "alpha_id": self.spec.alpha_id,
+                    "timeframe": self.spec.timeframe,
+                    "signal_candle_open_ms": latest,
+                    "is_rebalance": is_rebalance,
+                    "signal": self.spec.signal,
+                    "params": self.spec.params,
+                    "long_threshold": self.spec.long_threshold,
+                    "short_threshold": self.spec.short_threshold,
+                    "symbol_count": len(selection.indicators),
+                    "long_count": len(selection.longs),
+                    "short_count": len(selection.shorts),
+                    "sample_symbol": sample_symbol,
+                    "sample_indicator": sample_indicator,
+                },
+                separators=(",", ":"),
+                allow_nan=False,
+            ),
             extra={"alpha_id": self.alpha_id},
         )
         await self._apply_selection(selection, prices, latest)
@@ -295,8 +352,11 @@ class CrossSectionalRunnerStrategy(Strategy):
     def _select_positions(self, bundle: PanelBundle) -> Selection:
         with bundle.lock:
             selection = select_positions(
-                bundle.panel, self.spec, context=bundle.context,
-                member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+                bundle.panel,
+                self.spec,
+                context=bundle.context,
+                member_specs=self._member_specs,
+                current_drawdown=self._current_drawdown(),
             )
         if getattr(self.spec, "reverse", False):
             selection = Selection(
@@ -306,7 +366,15 @@ class CrossSectionalRunnerStrategy(Strategy):
                 ranks=selection.ranks,
                 weights={s: -w for s, w in selection.weights.items()},
                 indicators={
-                    s: {**d, "decision": "LONG" if d.get("decision") == "SHORT" else "SHORT" if d.get("decision") == "LONG" else "FLAT", "target_weight": -d.get("target_weight", 0.0)}
+                    s: {
+                        **d,
+                        "decision": "LONG"
+                        if d.get("decision") == "SHORT"
+                        else "SHORT"
+                        if d.get("decision") == "LONG"
+                        else "FLAT",
+                        "target_weight": -d.get("target_weight", 0.0),
+                    }
                     for s, d in selection.indicators.items()
                 },
                 diagnostics=selection.diagnostics,
@@ -351,7 +419,9 @@ class CrossSectionalRunnerStrategy(Strategy):
             if symbol and symbol not in blacklist:
                 clean.append(symbol)
         if not clean:
-            raise ValueError(f"{self.alpha_id} has no symbols after whitelist/blacklist load")
+            raise ValueError(
+                f"{self.alpha_id} has no symbols after whitelist/blacklist load"
+            )
         return clean
 
     def _load_whitelist(self) -> list[str] | None:
@@ -414,6 +484,14 @@ class CrossSectionalRunnerStrategy(Strategy):
         )
         if bundle is not None and getattr(self.spec, "needs_funding", False):
             await asyncio.to_thread(self._attach_funding_panel, bundle.panel)
+            # The bundle's context (and its masked-field snapshots) is shared
+            # across every alpha on this (tf, universe): a non-funding alpha may
+            # have already memoized a snapshot BEFORE funding_zscore was attached
+            # here. Drop those snapshots so this alpha's compute rebuilds them
+            # with funding_zscore present -- otherwise compute_signal_details
+            # raises KeyError('funding_zscore') off the stale snapshot.
+            if "funding_zscore" in bundle.panel:
+                bundle.context.invalidate_masked_fields()
         return bundle
 
     def _attach_funding_panel(self, panel: dict[str, Any]) -> None:
@@ -448,7 +526,9 @@ class CrossSectionalRunnerStrategy(Strategy):
         funding = resample_funding_to_native_cadence(funding)
         funding_window = int(self.spec.params.get("funding_window", 21))
         funding_zscore = ts_zscore(funding, funding_window)
-        panel["funding_zscore"] = funding_zscore.reindex(panel["close"].index, method="ffill")
+        panel["funding_zscore"] = funding_zscore.reindex(
+            panel["close"].index, method="ffill"
+        )
 
     def _latest_cached_timestamp(self, tf: str, symbols: tuple[str, ...]) -> int:
         latest = 0
@@ -472,6 +552,60 @@ class CrossSectionalRunnerStrategy(Strategy):
                 loaded += 1
         return loaded / len(self._symbols)
 
+    def _restore_shadow_state(self) -> None:
+        """Restore book-only shadow mark-to-market state across a restart.
+
+        Real positions restore from the worker's authoritative DB snapshot
+        (``reconcile_open_positions``). ``_shadow_equity``/``_base_weights``/
+        ``_last_prices`` have no such path -- they only ever lived in this
+        process's memory. The runner restarts far more often (multiple times
+        a day) than these sleeves rebalance (every 24-96 candles), so every
+        restart used to snap the published shadow equity back to 1.0 and
+        blank ``_base_weights`` -- until the next rebalance repopulated it,
+        up to ~2 days later. Displayed as an equity curve, that is a repeated
+        reset to baseline rather than a continuously compounding curve.
+        Both are reconstructible from what's already published to Redis on
+        every mark/rebalance, so restore them the same way.
+        """
+        redis_client = self.ctx.redis_client
+        if redis_client is None:
+            return
+        try:
+            raw = redis_client.get(f"shadow:pnl:{self.alpha_id}")
+            if raw:
+                payload = json.loads(raw)
+                equity = float(payload.get("equity", 0.0))
+                if equity > 0:
+                    self._shadow_equity = equity
+                    self._equity = equity
+                    self._peak_equity = max(
+                        equity, float(payload.get("peak_equity", equity))
+                    )
+                    prices = payload.get("prices")
+                    if isinstance(prices, dict) and prices:
+                        self._last_prices = {
+                            str(symbol): float(price)
+                            for symbol, price in prices.items()
+                        }
+        except Exception:
+            logger.warning(
+                "[%s] failed to restore shadow equity from shadow:pnl",
+                self.alpha_id,
+                extra={"alpha_id": self.alpha_id},
+            )
+        if self._book_store is None:
+            return
+        try:
+            book = self._book_store.read(self.alpha_id)
+            if book is not None and book.weights:
+                self._base_weights = dict(book.weights)
+        except Exception:
+            logger.warning(
+                "[%s] failed to restore shadow base weights from target book",
+                self.alpha_id,
+                extra={"alpha_id": self.alpha_id},
+            )
+
     def _record_portfolio_return(self, prices: dict[str, float]) -> None:
         if not self._last_prices or not self._base_weights:
             return
@@ -484,14 +618,57 @@ class CrossSectionalRunnerStrategy(Strategy):
         ret = gross - self._pending_cost
         self._portfolio_returns.append(ret)
         self._pending_cost = 0.0
-        self._portfolio_returns = self._portfolio_returns[-max(self.spec.vol_lookback * 2, 10):]
-        self._equity *= (1.0 + ret)
+        self._portfolio_returns = self._portfolio_returns[
+            -max(self.spec.vol_lookback * 2, 10) :
+        ]
+        self._equity *= 1.0 + ret
         if self._equity > self._peak_equity:
             self._peak_equity = self._equity
+        if self.book_only:
+            self._shadow_equity *= 1.0 + ret
+            self._publish_shadow_pnl(ret, prices)
+
+    def _publish_shadow_pnl(
+        self, period_return: float, prices: dict[str, float]
+    ) -> None:
+        redis_client = self.ctx.redis_client
+        if redis_client is None:
+            return
+        payload = {
+            "alpha_id": self.alpha_id,
+            "timestamp": time.time(),
+            "return": float(period_return),
+            "equity": float(self._shadow_equity),
+            "peak_equity": float(self._peak_equity),
+            "capital": self.capital,
+            "standalone": True,
+            "basis": "gross-1-standalone",
+            # Marked prices as of this update -- restored into _last_prices on
+            # the next process boot (see _restore_shadow_state) so a runner
+            # restart resumes mark-to-market from here instead of skipping a
+            # return calculation (empty _last_prices) or, worse, marking
+            # against a stale price once _last_prices is next populated.
+            "prices": {str(symbol): float(price) for symbol, price in prices.items()},
+        }
+        try:
+            redis_client.set(
+                f"shadow:pnl:{self.alpha_id}",
+                json.dumps(payload, separators=(",", ":")),
+            )
+            redis_client.publish(
+                f"shadow:pnl:updated:{self.alpha_id}",
+                json.dumps(payload, separators=(",", ":")),
+            )
+        except Exception:
+            logger.warning(
+                "[%s] shadow-PnL publish failed",
+                self.alpha_id,
+                extra={"alpha_id": self.alpha_id},
+            )
 
     def _vol_target_leverage(self) -> float:
         minimum = max(2, self.spec.vol_lookback // 2)
-        values = self._portfolio_returns[-self.spec.vol_lookback:]
+        values = self._portfolio_returns[-self.spec.vol_lookback :]
         if len(values) < minimum:
             return self._strategy_leverage
         mean = sum(values) / len(values)
@@ -501,13 +678,46 @@ class CrossSectionalRunnerStrategy(Strategy):
             return 0.0
         return min(self.spec.max_leverage, self.spec.target_vol / rv)
 
-    async def _apply_selection(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+    async def _apply_selection(
+        self, selection: Selection, prices: dict[str, float], candle_open_ms: int
+    ) -> None:
         logger.info(
             "[%s] _apply_selection at %d: longs=%d shorts=%d",
-            self.alpha_id, candle_open_ms,
-            len(selection.longs), len(selection.shorts),
+            self.alpha_id,
+            candle_open_ms,
+            len(selection.longs),
+            len(selection.shorts),
             extra={"alpha_id": self.alpha_id},
         )
+        if self.book_only:
+            self._base_weights = dict(selection.weights)
+            self._publish_target_book(selection, prices, candle_open_ms)
+            ledger = getattr(self, "_virtual_trade_ledger", None)
+            if ledger is not None:
+                metadata_by_symbol = {
+                    symbol: {
+                        "score": selection.scores.get(symbol),
+                        "rank": selection.ranks.get(symbol),
+                        **selection.diagnostics,
+                    }
+                    for symbol in selection.weights
+                }
+                try:
+                    ledger.rebalance(
+                        weights=selection.weights,
+                        prices=prices,
+                        candle_open_ms=candle_open_ms,
+                        timeframe=self.spec.timeframe,
+                        metadata_by_symbol=metadata_by_symbol,
+                    )
+                except Exception:
+                    logger.exception(
+                        "[VIRTUAL-LEDGER] publish failed for alpha=%s",
+                        self.alpha_id,
+                        extra={"alpha_id": self.alpha_id},
+                    )
+            self.ctx.clear_positions()
+            return
         for symbol, pos in list(self._open_positions.items()):
             await self.ctx.emit_signal(
                 "CLOSE",
@@ -521,14 +731,21 @@ class CrossSectionalRunnerStrategy(Strategy):
         self._open_positions.clear()
 
         symbols = set(self._base_weights) | set(selection.weights)
-        turnover = sum(abs(selection.weights.get(symbol, 0.0) - self._base_weights.get(symbol, 0.0)) for symbol in symbols)
+        turnover = sum(
+            abs(
+                selection.weights.get(symbol, 0.0) - self._base_weights.get(symbol, 0.0)
+            )
+            for symbol in symbols
+        )
         self._pending_cost = turnover * self.spec.fee_bps / 10_000
         self._strategy_leverage = self._vol_target_leverage()
         self._base_weights = dict(selection.weights)
         if self._strategy_leverage <= 0 or not self.ctx.can_open_trades():
             logger.info(
                 "[%s] _apply_selection SKIP: leverage=%.4f can_open=%s",
-                self.alpha_id, self._strategy_leverage, self.ctx.can_open_trades(),
+                self.alpha_id,
+                self._strategy_leverage,
+                self.ctx.can_open_trades(),
                 extra={"alpha_id": self.alpha_id},
             )
             self.ctx.save_positions(self._open_positions)
@@ -549,7 +766,9 @@ class CrossSectionalRunnerStrategy(Strategy):
             if tradable is not None and s not in tradable:
                 logger.warning(
                     "[%s] _apply_selection: skipping OPEN for %s — not in MDS live tradable universe",
-                    self.alpha_id, s, extra={"alpha_id": self.alpha_id},
+                    self.alpha_id,
+                    s,
+                    extra={"alpha_id": self.alpha_id},
                 )
                 continue
             _weights[s] = w
@@ -558,9 +777,15 @@ class CrossSectionalRunnerStrategy(Strategy):
         if _longs and _shorts and len(_longs) != len(_shorts):
             _target = min(len(_longs), len(_shorts))
             if len(_longs) > _target:
-                _drop = set(sorted(_longs, key=lambda s: _weights[s])[: len(_longs) - _target])
+                _drop = set(
+                    sorted(_longs, key=lambda s: _weights[s])[: len(_longs) - _target]
+                )
             else:
-                _drop = set(sorted(_shorts, key=lambda s: abs(_weights[s]))[: len(_shorts) - _target])
+                _drop = set(
+                    sorted(_shorts, key=lambda s: abs(_weights[s]))[
+                        : len(_shorts) - _target
+                    ]
+                )
             _weights = {s: w for s, w in _weights.items() if s not in _drop}
 
         for symbol, weight in _weights.items():
@@ -590,13 +815,15 @@ class CrossSectionalRunnerStrategy(Strategy):
                 position_id=position_id,
                 exchange=self.exchange,
                 fee_pct=self.spec.fee_bps / 10_000,
-                metadata=json.dumps({
-                    "score": selection.scores.get(symbol),
-                    "rank": selection.ranks.get(symbol),
-                    "weight": weight,
-                    "strategy_leverage": self._strategy_leverage,
-                    **selection.diagnostics,
-                }),
+                metadata=json.dumps(
+                    {
+                        "score": selection.scores.get(symbol),
+                        "rank": selection.ranks.get(symbol),
+                        "weight": weight,
+                        "strategy_leverage": self._strategy_leverage,
+                        **selection.diagnostics,
+                    }
+                ),
                 signal_candle_open_ms=candle_open_ms,
                 timestamp=datetime.now(timezone.utc).isoformat(),
             )
@@ -604,6 +831,47 @@ class CrossSectionalRunnerStrategy(Strategy):
                 self._open_positions.pop(symbol, None)
 
         self.ctx.save_positions(self._open_positions)
+
+    def _publish_target_book(
+        self, selection: Selection, prices: dict[str, float], candle_open_ms: int
+    ) -> None:
+        if self._book_store is None:
+            logger.error(
+                "[%s] BOOK_ONLY configured but Redis is unavailable; target book was not published",
+                self.alpha_id,
+                extra={"alpha_id": self.alpha_id},
+            )
+            return
+        self._book_revision += 1
+        book = TargetBook.create(
+            self.alpha_id,
+            self.spec.timeframe,
+            selection.weights,
+            revision=self._book_revision,
+            as_of_candle_ms=candle_open_ms,
+            meta={
+                "n_long": len(selection.longs),
+                "n_short": len(selection.shorts),
+                "book_only": True,
+                "capital": self.capital,
+                "exchange": self.exchange,
+                "prices": {
+                    symbol: float(prices[symbol])
+                    for symbol in selection.weights
+                    if symbol in prices
+                },
+                "diagnostics": selection.diagnostics,
+            },
+        )
+        self._book_store.write(book)
+        logger.info(
+            "[%s] BOOK_ONLY target published revision=%d gross=%.6f symbols=%d",
+            self.alpha_id,
+            book.revision,
+            book.gross,
+            len(book.weights),
+            extra={"alpha_id": self.alpha_id},
+        )
 
     @staticmethod
     def _tf_to_ms(tf: str) -> int:

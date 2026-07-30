@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -1.208e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.44281438,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784476800001,
+    "mark_price": 0.4483,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 0.44694375,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.583e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.42981021,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.789e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.4259,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.651e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.4257,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.4293,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.4202,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.4138,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.4214,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.045e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.4213,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.653e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.41953198,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.803e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.4183,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.42314844,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.4222475,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.005e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.42110604,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.943e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.41560708,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.189e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.4021,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.961e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.4037,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 0.4044,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.4004,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.044e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.4019,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.326e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.4044,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.4032,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.40374667,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.4099,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.15e-06,
+    "funding_time": 1783756800000,
+    "mark_price": 0.4001,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.40142844,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.311e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.4015,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.40265,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.532e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.3956,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.3902,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.3902,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.216e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.38411263,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014505,
+    "funding_time": 1783526400000,
+    "mark_price": 0.37666504,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001477,
+    "funding_time": 1783497600000,
+    "mark_price": 0.3812,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.265e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.3874,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 0.38767169,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.39908554,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.4028,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.40483032,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.801e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.41072826,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.41520693,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.599e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.4129,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.4128,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.4142,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.4142,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.171e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.40802486,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.41091637,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.4069,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.4071,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.919e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.40019552,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.281e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.39565364,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.3926,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.389,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.3913,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.265e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.38006327,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.37831467,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.489e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.3792,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.183e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.38216619,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.3862,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.252e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.384,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.686e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.38780509,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.387,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.784e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.38748199,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 0.3944024,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.237e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.3929,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.09e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 0.4018,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.593e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.40139501,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.3991,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 0.40107126,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.3986,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.561e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.3958,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.484e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.39700072,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.143e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.4112,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.519e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.4047,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.176e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.4029,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011596,
+    "funding_time": 1782288000005,
+    "mark_price": 0.4174,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.41902072,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012545,
+    "funding_time": 1782230400002,
+    "mark_price": 0.4169,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.167e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.4216,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782172800003,
+    "mark_price": 0.40972983,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010525,
+    "funding_time": 1782144000002,
+    "mark_price": 0.404,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 0.4188,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782086400000,
+    "mark_price": 0.41073655,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.366e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.42168352,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.40423523,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.304e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.40824353,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001082,
+    "funding_time": 1781971200001,
+    "mark_price": 0.40485032,
+    "symbol": "RUNEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781942400000,
+    "mark_price": 0.3975,
+    "symbol": "RUNEUSDT"
+  }
+]

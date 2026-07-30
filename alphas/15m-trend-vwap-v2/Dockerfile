@@ -8,4 +8,5 @@ COPY 15m-trend-vwap-v2/app/ ./app/
 COPY 15m-trend-vwap-v2/main.py 15m-trend-vwap-v2/spec.json 15m-trend-vwap-v2/config.toml ./
 COPY 15m-trend-vwap-v2/data/ ./data/
 COPY 15m-trend-vwap-v2/blacklist.txt .
+COPY 15m-trend-vwap-v2/whitelist.txt .
 CMD ["python", "main.py"]

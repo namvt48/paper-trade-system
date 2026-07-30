@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.01022,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.01020386,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.01027,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.976e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.01035,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.01062719,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.01039,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.01048,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.01035,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.33e-06,
+    "funding_time": 1784404800004,
+    "mark_price": 0.01015458,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.01038952,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.01034,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.010689,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.01055,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.01068,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.01080575,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.01082,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.0108,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.01039,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.01044423,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.01031,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.01094113,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.01056,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.01053105,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.01044,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.01032,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.89e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 0.01046,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.44e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.01002,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.01009,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.043e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.009991,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.00983,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.113e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.00996,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.73e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.00993,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.82e-06,
+    "funding_time": 1784059200000,
+    "mark_price": 0.00986061,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0100242,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.00977,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.00970457,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.459e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.00977,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.094e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.009815,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.76e-06,
+    "funding_time": 1783972800000,
+    "mark_price": 0.00975484,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.00992,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.00994062,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.01006,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.08e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.00983,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.71e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.00991527,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.893e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.01006,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.01016,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.01010505,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.09e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.01022,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.01042,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.01011,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.010525,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.01035,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.01048,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.01046,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.01068,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.01058195,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.01054,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.01019,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.2e-06,
+    "funding_time": 1783684800002,
+    "mark_price": 0.01016,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.01013,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.01013,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.01008,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.01013,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.76e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.01009,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.987e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.01016,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.010175,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.222e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.01015,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.00977625,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.00981,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.769e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.00978,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.00986,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.01003248,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.00993,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.01018,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.01036231,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.08e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.01047,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.842e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.01063,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017004,
+    "funding_time": 1783411200000,
+    "mark_price": 0.01064083,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013589,
+    "funding_time": 1783396800000,
+    "mark_price": 0.01066,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.493e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.01086,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.67e-06,
+    "funding_time": 1783368000003,
+    "mark_price": 0.01083,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.744e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.01085,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.558e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.0108333,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.01039,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.01038,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.01054703,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.01040458,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.01045497,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.01046395,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.01051,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.010475,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.01068,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.01073,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.010695,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.01059,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.01052419,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.010605,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.01068,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.01066516,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.01073696,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.01047,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.01031,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.010443,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.01023,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.816e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.0101554,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.947e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01025,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.263e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.01033,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.01009625,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.01001,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.953e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.00966,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.00974521,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.00987,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.63e-06,
+    "funding_time": 1782907200000,
+    "mark_price": 0.00965,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.00957,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.0097,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.00957472,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.055e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.00961,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.00984,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.00949,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.00976,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.00981,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.00999234,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.00995,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.00991,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.00989,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.00985,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.01003945,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.677e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.00976498,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.749e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.00975,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.00981486,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.35e-06,
+    "funding_time": 1782648000008,
+    "mark_price": 0.00983534,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.00964328,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.00948543,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.00956,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.983e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.00944428,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.00962,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.00951,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.00955,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.00953,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.00953,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.00952217,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.0094,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.00912,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.00942472,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.5e-06,
+    "funding_time": 1782446400001,
+    "mark_price": 0.00939279,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.00944,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013043,
+    "funding_time": 1782417600011,
+    "mark_price": 0.0094,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014494,
+    "funding_time": 1782403200000,
+    "mark_price": 0.00940054,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019233,
+    "funding_time": 1782388800006,
+    "mark_price": 0.00966,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013652,
+    "funding_time": 1782374400000,
+    "mark_price": 0.00993,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.009675,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.586e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.00979,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.11e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.00966549,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.743e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.00987,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.01035,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.217e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.01024,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.010375,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.309e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.01043193,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.01045612,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.853e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.010455,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.13e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.01035,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.776e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.01069,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.305e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.01083,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.01091,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.718e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.01111,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.01151,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.01107,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.011095,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.685e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.01084,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.416e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.0112,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.925e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.01132018,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.01119,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.01102,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.553e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.01107531,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.51e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 0.01111215,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.225e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.01094,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.578e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.01122,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.01091515,
+    "symbol": "PLUMEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.416e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.01107,
+    "symbol": "PLUMEUSDT"
+  }
+]

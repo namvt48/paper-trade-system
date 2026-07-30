@@ -5,7 +5,6 @@
 | timeframe | 4h (ppy = 2190 bars/yr) |
 | universe | top-60 by liquidity  (liquid-K filter at backtest) |
 | rebalance | 12 bars (2d) |
-| exec_lag | 1 bar |
 | vol-lookback | 30 bars (5d) |
 | target_vol | 0.10 | 
 | fee | 7 bps per side |
@@ -37,7 +36,7 @@ short WHERE cross_sectional_rank(score) < 0.07
 - **VÀO SHORT:** coin có rank điểm **< 0.07** (nhóm 7% THẤP nhất) → mở/giữ short.
 - **RA:** nến rebalance kế, coin rớt khỏi nhóm → đóng (weight→0); nếu lật sang vế ngược → đảo chiều.
 - **Giữ:** vị thế giữ nguyên giữa 2 lần rebalance — 12 nến (2d). **KHÔNG TP/SL/time-stop.**
-- **Khớp:** quyết định ở nến `t`, vào lệnh ở nến `t+1` (exec_lag=1, giá nến kế). Size: equal-weight mỗi vế, dollar-neutral (gross=1), nhân đòn bẩy vol-target.
+- **Khớp:** quyết định ở nến `t`, vào lệnh ngay khi đóng nến `t` (không exec lag). Size: equal-weight mỗi vế, dollar-neutral (gross=1), nhân đòn bẩy vol-target.
 - Vòng đời đầy đủ: [entry-exit](reference/entry-exit.md).
 
 ## Operators used

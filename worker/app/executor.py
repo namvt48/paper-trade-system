@@ -34,6 +34,15 @@ class Executor:
         metadata.update(extra)
         return json.dumps(metadata)
 
+    @staticmethod
+    def allows_duplicate_position(signal: OpenSignal) -> bool:
+        """Permit an explicitly multi-leg alpha without weakening the global guard."""
+        try:
+            metadata = json.loads(signal.metadata or "{}")
+        except (TypeError, json.JSONDecodeError):
+            return False
+        return bool(metadata.get("allow_duplicate_position")) if isinstance(metadata, dict) else False
+
     async def process_open(self, signal: OpenSignal, fill_price: float | FillResolution | None = None) -> dict:
         await self.db.register_alpha(signal.alpha_id)
 
@@ -41,7 +50,15 @@ class Executor:
             signal.alpha_id, signal.symbol
         )
         if existing:
-            if self.duplicate_policy == "reject":
+            if self.duplicate_policy == "reject" and not self.allows_duplicate_position(signal):
+                logger.warning(
+                    "[DUPLICATE-REJECT] alpha=%s symbol=%s new OPEN rejected: existing "
+                    "position_id=%s opened_at=%s still open in DB. If the alpha no longer "
+                    "manages it, this is an ORPHAN (engine/DB split-brain) and every new "
+                    "%s OPEN keeps being rejected until it is reconciled.",
+                    signal.alpha_id, signal.symbol, existing.get("position_id"),
+                    existing.get("opened_at"), signal.symbol,
+                )
                 raise ValueError(
                     f"Alpha {signal.alpha_id} already has an open position on {signal.symbol}"
                 )

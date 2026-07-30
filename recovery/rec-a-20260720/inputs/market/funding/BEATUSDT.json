@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 9.85e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 2.33940128,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.558e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 2.346,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.844e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 2.383,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.135e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 2.32450426,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.199e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 2.31336736,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 2.33485872,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 2.348,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 2.35420239,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 2.372,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 2.392,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 2.34264531,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 2.35563438,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 2.381,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 2.41593672,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 2.45530158,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.64e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 2.51519579,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010772,
+    "funding_time": 1784289600004,
+    "mark_price": 2.52451617,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 2.53692621,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 2.56284972,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 2.54784646,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 2.54844732,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 2.60757384,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 2.574,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 2.45633167,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 2.518878,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 2.59637292,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.14e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 2.67256352,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.946e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 2.686,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 2.557,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 2.684,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 2.618,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 2.50996535,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 2.61372667,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 2.61120007,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.119e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 2.614,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.538e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 2.669,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.929e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 2.62441791,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.252e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 2.645,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.849e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 2.68995114,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 2.53119158,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 2.55370689,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 2.58869166,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 2.63396624,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 2.54973223,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.94e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 2.669,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010937,
+    "funding_time": 1783872000000,
+    "mark_price": 2.76995104,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 2.65196318,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 2.24,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 2.21914136,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 2.34757547,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 2.29217031,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 2.445,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 2.965,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 2.89781003,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 2.693,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 2.68289022,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 2.64474912,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.469e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 2.48,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 2.3257223,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 2.16435292,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 2.269,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 2.20193966,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 2.14824988,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 2.11346417,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 2.19879755,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 2.22478021,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 2.25216785,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 2.35171871,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 2.37158334,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 2.233,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 2.205,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 2.345,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 2.33138617,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 2.438,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 2.394,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 2.469,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 2.544,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 2.62165702,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 2.69126922,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 2.57523655,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 2.49631738,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 2.41440677,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 2.48201188,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 2.53358842,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 2.76238681,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 2.801,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 2.73765733,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 2.79067559,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 2.795,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 2.78770531,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 2.72685083,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.897e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 2.884,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.063e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 2.924,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011897,
+    "funding_time": 1783180800007,
+    "mark_price": 3.019,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.776e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 2.883,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 2.90929892,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 2.70588271,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 2.66514164,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 2.82361962,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 2.72223382,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 2.777,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.007e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 2.909,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015088,
+    "funding_time": 1783051200000,
+    "mark_price": 3.10624301,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001902,
+    "funding_time": 1783036800000,
+    "mark_price": 3.26223058,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011788,
+    "funding_time": 1783022400008,
+    "mark_price": 3.07093596,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.428e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 2.92792208,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 2.84075517,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 2.81234418,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 2.70780019,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 2.891,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 2.85631158,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 2.75599014,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 2.36410568,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 2.9623861,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.514e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 3.32097691,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 2.91204667,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011819,
+    "funding_time": 1782849600003,
+    "mark_price": 2.90117983,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022383,
+    "funding_time": 1782835200005,
+    "mark_price": 2.7848866,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017027,
+    "funding_time": 1782820800002,
+    "mark_price": 2.79031497,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014994,
+    "funding_time": 1782806400000,
+    "mark_price": 2.73872489,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019807,
+    "funding_time": 1782792000000,
+    "mark_price": 2.803,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014716,
+    "funding_time": 1782777600000,
+    "mark_price": 2.76883359,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014614,
+    "funding_time": 1782763200000,
+    "mark_price": 2.714,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031358,
+    "funding_time": 1782748800004,
+    "mark_price": 2.79279689,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012179,
+    "funding_time": 1782734400001,
+    "mark_price": 2.68435233,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.756e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 2.61035154,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.918e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 2.70854158,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 2.67101096,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 2.46161584,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 2.50676107,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 2.48724579,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022246,
+    "funding_time": 1782633600013,
+    "mark_price": 2.85054346,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00038651,
+    "funding_time": 1782619200002,
+    "mark_price": 2.676,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00039976,
+    "funding_time": 1782604800000,
+    "mark_price": 2.5728893,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030318,
+    "funding_time": 1782590400000,
+    "mark_price": 2.4,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003303,
+    "funding_time": 1782576000009,
+    "mark_price": 2.48866553,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013713,
+    "funding_time": 1782561600001,
+    "mark_price": 2.492,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017659,
+    "funding_time": 1782547200000,
+    "mark_price": 2.18013863,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022266,
+    "funding_time": 1782532800000,
+    "mark_price": 2.646,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011154,
+    "funding_time": 1782518400000,
+    "mark_price": 2.62551087,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 2.45515568,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020082,
+    "funding_time": 1782489600000,
+    "mark_price": 2.44237638,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002334,
+    "funding_time": 1782475200004,
+    "mark_price": 2.41067199,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024929,
+    "funding_time": 1782460800002,
+    "mark_price": 2.37639745,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00027058,
+    "funding_time": 1782446400001,
+    "mark_price": 2.35258524,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001362,
+    "funding_time": 1782432000010,
+    "mark_price": 2.09310988,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 1.852,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 2.0069831,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 1.89174348,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.84603386,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 1.8067983,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 1.70419498,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 1.72214373,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.759,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 1.91886888,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 2.49752661,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 2.35934903,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 2.28780942,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 1.899,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.266e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 1.76336848,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.6963877,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 1.71266206,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 1.67851933,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 1.63931493,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 1.70266873,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 1.71967182,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018075,
+    "funding_time": 1782115200000,
+    "mark_price": 1.80286079,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019582,
+    "funding_time": 1782100800000,
+    "mark_price": 1.74473067,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00029142,
+    "funding_time": 1782086400000,
+    "mark_price": 1.778,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00033281,
+    "funding_time": 1782072000004,
+    "mark_price": 1.77368762,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015222,
+    "funding_time": 1782057600000,
+    "mark_price": 1.759,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 1.709,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010083,
+    "funding_time": 1782028800000,
+    "mark_price": 1.77375744,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 1.73732551,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.964e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 1.7318879,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016199,
+    "funding_time": 1781985600000,
+    "mark_price": 1.828,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 1.77514159,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 1.81091447,
+    "symbol": "BEATUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 1.84824734,
+    "symbol": "BEATUSDT"
+  }
+]

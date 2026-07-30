@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -3.98e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 5.10555231,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.717e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 5.106,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010356,
+    "funding_time": 1784448000000,
+    "mark_price": 5.09000894,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.502e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 5.16284075,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.578e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 5.09714503,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010326,
+    "funding_time": 1784361600000,
+    "mark_price": 5.0581036,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.603e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 5.14462877,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.019e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 5.097,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.925e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 4.89825026,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011832,
+    "funding_time": 1784246400000,
+    "mark_price": 4.85631232,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.16e-06,
+    "funding_time": 1784217600002,
+    "mark_price": 5.05,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.466e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 5.137,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.081e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 5.09109449,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013352,
+    "funding_time": 1784131200000,
+    "mark_price": 5.15242788,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.38e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 4.9144501,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.665e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 5.052,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022753,
+    "funding_time": 1784044800001,
+    "mark_price": 5.00918446,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.667e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 4.973,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.502e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 4.67257561,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.9e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 4.725,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014444,
+    "funding_time": 1783929600001,
+    "mark_price": 4.743,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011987,
+    "funding_time": 1783900800000,
+    "mark_price": 4.86869128,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010589,
+    "funding_time": 1783872000000,
+    "mark_price": 4.89903522,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016527,
+    "funding_time": 1783843200003,
+    "mark_price": 4.90642925,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.539e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 4.92680241,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.339e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 5.04110317,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.686e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 5.09,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.18e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 5.01320367,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.598e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 4.835,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.749e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 4.79342852,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.205e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 4.832,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.496e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 4.867,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.201e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 4.82880795,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.471e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 4.738,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010732,
+    "funding_time": 1783526400000,
+    "mark_price": 4.66709658,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003659,
+    "funding_time": 1783497600000,
+    "mark_price": 4.73001045,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033027,
+    "funding_time": 1783468800000,
+    "mark_price": 4.721,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014306,
+    "funding_time": 1783440000000,
+    "mark_price": 4.868,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.581e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 4.754,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.787e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 4.816,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.962e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 4.879,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.028e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 4.84295999,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.581e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 4.80751239,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011366,
+    "funding_time": 1783267200000,
+    "mark_price": 4.659,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028705,
+    "funding_time": 1783238400001,
+    "mark_price": 4.73010662,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.915e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 4.80838649,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.055e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 4.86,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.158e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 4.80626799,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.516e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 4.86187993,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.803e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 4.85431297,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.071e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 4.762,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023333,
+    "funding_time": 1783036800000,
+    "mark_price": 4.62258065,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033093,
+    "funding_time": 1783008000000,
+    "mark_price": 4.60366803,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046678,
+    "funding_time": 1782979200000,
+    "mark_price": 4.59963765,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016826,
+    "funding_time": 1782950400000,
+    "mark_price": 4.49,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.749e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 4.82352804,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.414e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 4.62856251,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 4.54803204,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.734e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 4.59035335,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.012e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 4.70618077,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.2e-07,
+    "funding_time": 1782777600000,
+    "mark_price": 4.727,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.34e-06,
+    "funding_time": 1782748800004,
+    "mark_price": 4.81364555,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011655,
+    "funding_time": 1782720000013,
+    "mark_price": 4.7,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.454e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 4.552,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.52e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 4.62334386,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.527e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 4.73206628,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.28e-06,
+    "funding_time": 1782604800000,
+    "mark_price": 4.63596295,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.752e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 4.89164399,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.606e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 5.04021487,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011239,
+    "funding_time": 1782518400000,
+    "mark_price": 4.87158045,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.325e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 4.70385241,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.89e-06,
+    "funding_time": 1782460800002,
+    "mark_price": 4.48233145,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 4.275,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.085e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 4.22,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.433e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 4.256,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.555e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 4.262,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.166e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 4.263,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.058e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 4.515,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.488e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 4.54247715,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013289,
+    "funding_time": 1782230400002,
+    "mark_price": 4.53,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021283,
+    "funding_time": 1782201600005,
+    "mark_price": 4.607,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010775,
+    "funding_time": 1782172800003,
+    "mark_price": 4.81552926,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010754,
+    "funding_time": 1782144000002,
+    "mark_price": 4.823,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.2e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 4.907,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.353e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 4.818,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015453,
+    "funding_time": 1782057600000,
+    "mark_price": 5.00174093,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.131e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 5.019,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.097e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 5.05406259,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020401,
+    "funding_time": 1781971200001,
+    "mark_price": 5.011,
+    "symbol": "INJUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026302,
+    "funding_time": 1781942400000,
+    "mark_price": 5.08591683,
+    "symbol": "INJUSDT"
+  }
+]

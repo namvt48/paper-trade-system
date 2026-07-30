@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.682e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 3.51537229,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.86e-06,
+    "funding_time": 1784476800001,
+    "mark_price": 3.51643628,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.104e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 3.537,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.399e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 3.56754284,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.4e-07,
+    "funding_time": 1784390400001,
+    "mark_price": 3.516,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.478e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 3.5138816,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.82e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 3.63890868,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.212e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 3.50855063,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.7e-07,
+    "funding_time": 1784275200010,
+    "mark_price": 3.513,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.79e-06,
+    "funding_time": 1784246400000,
+    "mark_price": 3.53777474,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.685e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 3.62852271,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.497e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 3.67662859,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.26e-06,
+    "funding_time": 1784160000000,
+    "mark_price": 3.616,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.94e-06,
+    "funding_time": 1784131200000,
+    "mark_price": 3.684,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.981e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 3.590735,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.59e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 3.662,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.005e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 3.702,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.18e-06,
+    "funding_time": 1784016000002,
+    "mark_price": 3.575,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.794e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 3.55165388,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.774e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 3.5151524,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.764e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 3.53648341,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.9e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 3.591,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.093e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 3.67615475,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.601e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 3.62858643,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.09e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 3.65444953,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 3.744,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 3.51846095,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 3.52175818,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 3.555,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 3.48806169,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 3.39233686,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.6e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 3.341,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 3.36921973,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.086e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 3.278,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783526400000,
+    "mark_price": 3.27420353,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 3.28878221,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 3.19,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 3.253,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.123e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 3.159,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 3.1800042,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.152e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 3.192,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.592e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 3.114,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 3.173,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.04e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 3.1435249,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 3.19607868,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 3.216,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 3.2580214,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 3.18252038,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 3.20827742,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 3.26549409,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 3.19610829,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 3.179,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 3.16764281,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.407e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 2.823,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.731e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 2.788,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.961e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 2.80220009,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 2.78060925,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.837e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 2.7759905,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.978e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 2.757,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 2.876,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.75e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 2.89,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.119e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 2.96083558,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 2.93958904,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.762e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 2.92350894,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.591e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 2.93499797,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.58e-06,
+    "funding_time": 1782633600013,
+    "mark_price": 2.904,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.371e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 2.922,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.809e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 2.997,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.71e-06,
+    "funding_time": 1782547200000,
+    "mark_price": 2.943,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.261e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 2.96163947,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.69e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 2.94,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.469e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 2.93524625,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.958e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 2.883,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.42e-06,
+    "funding_time": 1782403200000,
+    "mark_price": 2.857,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.987e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 2.964,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.031e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 2.924,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.753e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 2.80729646,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 2.895,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 2.92233919,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.357e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 2.90188965,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.285e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 2.86104495,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.279e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 2.98220061,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.59e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 3.068,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.453e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 3.014,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.086e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 2.983,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.687e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 3.113,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.716e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 2.99941753,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.46e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 3.004,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.93e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 3.048,
+    "symbol": "UNIUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.177e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 3.009,
+    "symbol": "UNIUSDT"
+  }
+]

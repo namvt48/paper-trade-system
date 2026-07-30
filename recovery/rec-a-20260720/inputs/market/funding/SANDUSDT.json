@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032784,
+    "funding_time": 1784505600000,
+    "mark_price": 0.04671,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001762,
+    "funding_time": 1784476800001,
+    "mark_price": 0.04683,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.594e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.04747,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011183,
+    "funding_time": 1784419200003,
+    "mark_price": 0.04747,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.306e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.0474,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.81e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.04734595,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.3e-07,
+    "funding_time": 1784332800000,
+    "mark_price": 0.04781,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.496e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.0476419,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011603,
+    "funding_time": 1784275200010,
+    "mark_price": 0.04724,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.04769355,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.993e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.04863033,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.557e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.04824,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022525,
+    "funding_time": 1784160000000,
+    "mark_price": 0.04820724,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.633e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.04897,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.558e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.0485,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.241e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.0490641,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.421e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.04877184,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015336,
+    "funding_time": 1784016000002,
+    "mark_price": 0.047145,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.948e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.04733671,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.344e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.04743,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.04797659,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.361e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.04785,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.03e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 0.04844,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.04868,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.308e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.04856,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.847e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.04974,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.834e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.049775,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.165e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.04934,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.941e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.04911,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016513,
+    "funding_time": 1783670400005,
+    "mark_price": 0.04897387,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.815e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.04842,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.718e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.04903045,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.893e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.04946,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.11e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.04822,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.032e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.04722485,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.438e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.04805,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.246e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.0485,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.537e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.0496,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.04931,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.05033892,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.05001191,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.129e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0496958,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.05098,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.05018,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.264e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.05011737,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.699e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.05048,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.841e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.05085,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.453e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.0498925,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.067e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.05119879,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.188e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.05170709,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.291e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.05013,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.04824,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.406e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.04787,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.378e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.04681122,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.066e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.04753851,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.04777,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.19e-06,
+    "funding_time": 1782892800000,
+    "mark_price": 0.04604,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.354e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.04651,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.017e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.04647,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.143e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.0472,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.657e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.04709,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.432e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.04682,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.46e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.04661,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.365e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.04666005,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.363e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.04713334,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.489e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.04704,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.534e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.04695,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.803e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.0479,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.831e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.0476,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.492e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.04741252,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.653e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.04705,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.051e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.04742,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010645,
+    "funding_time": 1782432000010,
+    "mark_price": 0.04698,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014556,
+    "funding_time": 1782403200000,
+    "mark_price": 0.04747836,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.05e-06,
+    "funding_time": 1782374400000,
+    "mark_price": 0.05000862,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.141e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.05012,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.35e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.05063606,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.835e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.05199,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.05e-06,
+    "funding_time": 1782259200005,
+    "mark_price": 0.05239,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.791e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.05272464,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.02e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.05273,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.57e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 0.05515218,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014569,
+    "funding_time": 1782144000002,
+    "mark_price": 0.05599,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.392e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.05578106,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.36e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.05550175,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.612e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.05708,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026617,
+    "funding_time": 1782028800000,
+    "mark_price": 0.05777698,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015027,
+    "funding_time": 1782000000000,
+    "mark_price": 0.06008,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00052607,
+    "funding_time": 1781971200001,
+    "mark_price": 0.06055017,
+    "symbol": "SANDUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00050132,
+    "funding_time": 1781942400000,
+    "mark_price": 0.05491498,
+    "symbol": "SANDUSDT"
+  }
+]

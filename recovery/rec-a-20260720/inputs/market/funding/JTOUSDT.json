@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.5979,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.74e-06,
+    "funding_time": 1784505600000,
+    "mark_price": 0.5671,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.74e-06,
+    "funding_time": 1784491200004,
+    "mark_price": 0.56622132,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.337e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.56456189,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010465,
+    "funding_time": 1784462400000,
+    "mark_price": 0.5425,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.17e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.5438,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012417,
+    "funding_time": 1784433600000,
+    "mark_price": 0.54512778,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.44e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.5479,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.21e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.5494,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010127,
+    "funding_time": 1784390400001,
+    "mark_price": 0.54023514,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.103e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.5477,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.109e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.5517611,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.345e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.5552,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.637e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.5623,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.056e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.5556,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.732e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.5496,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.042e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.55740504,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.997e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.5611,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.89e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.5623,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.833e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.56820908,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.296e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.58837422,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011323,
+    "funding_time": 1784217600002,
+    "mark_price": 0.5895,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010906,
+    "funding_time": 1784203200001,
+    "mark_price": 0.6013,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.818e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.6029,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.896e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.61510011,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.459e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.6164,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.6227,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.734e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.6311,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.829e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.6187,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012195,
+    "funding_time": 1784102400002,
+    "mark_price": 0.6023,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.094e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.63045734,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.91e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.6447,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.903e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.6414,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.316e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.64774008,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.075e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.6606,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.678e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.6409,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.2e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.63484171,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.195e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.643,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.905e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.6305,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.732e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.6415,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.6577,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.651e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.65537983,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.1e-07,
+    "funding_time": 1783915200000,
+    "mark_price": 0.63189694,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.7e-06,
+    "funding_time": 1783900800000,
+    "mark_price": 0.609,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.591e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.61235073,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.615e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.6134,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.292e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.59606982,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.338e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.5877,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.619e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.5904,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012634,
+    "funding_time": 1783814400000,
+    "mark_price": 0.59874668,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010137,
+    "funding_time": 1783800000000,
+    "mark_price": 0.61908315,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.184e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.6257817,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.343e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.6278,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.959e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.6322,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.743e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.6228,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.283e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.615,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011493,
+    "funding_time": 1783713600000,
+    "mark_price": 0.6221209,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.312e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.6315,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010882,
+    "funding_time": 1783684800002,
+    "mark_price": 0.6487,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016948,
+    "funding_time": 1783670400005,
+    "mark_price": 0.6447,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014593,
+    "funding_time": 1783656000000,
+    "mark_price": 0.65841987,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015193,
+    "funding_time": 1783641600000,
+    "mark_price": 0.63820626,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014901,
+    "funding_time": 1783627200000,
+    "mark_price": 0.6420349,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014766,
+    "funding_time": 1783612800001,
+    "mark_price": 0.637,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013079,
+    "funding_time": 1783598400002,
+    "mark_price": 0.64329568,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018961,
+    "funding_time": 1783584000001,
+    "mark_price": 0.6397,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000151,
+    "funding_time": 1783569600002,
+    "mark_price": 0.6267,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024502,
+    "funding_time": 1783555200000,
+    "mark_price": 0.6356,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014492,
+    "funding_time": 1783540800006,
+    "mark_price": 0.6453,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037238,
+    "funding_time": 1783526400000,
+    "mark_price": 0.6102,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036185,
+    "funding_time": 1783512000005,
+    "mark_price": 0.6075,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014118,
+    "funding_time": 1783497600000,
+    "mark_price": 0.62855426,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.692e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.7167,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.658e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.7379,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.7335,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.77677529,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.7795,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.7881,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.7706,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.79185946,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.7627,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.283e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.73682433,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.318e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.71873846,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.9e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 0.72673423,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.608e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.7306,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.423e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.7218,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.756e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.71038969,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.565e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.71477135,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.47e-06,
+    "funding_time": 1783252800000,
+    "mark_price": 0.7204369,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.819e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.73316737,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.727e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.7397,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.477e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.7282,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.621e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.7259,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010647,
+    "funding_time": 1783180800007,
+    "mark_price": 0.72438561,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.999e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.7211,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.875e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.75136533,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.7522,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.618e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.76100769,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.77014691,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.78282285,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.76238904,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.7589726,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.512e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.74659964,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.263e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.73765345,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.824e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.7498,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.501e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.74961706,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.848e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.78916951,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.7957,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.117e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.78588978,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.557e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.76786088,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.7693,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.7902,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.7671,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.7694,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.772,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.71231901,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.7289,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.776,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.675e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.748,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.409e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.75761113,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.388e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.73561818,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.723e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.7391,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.955e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.74944175,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.25e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.7634011,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.644e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.807,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.11e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.8359,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.344e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.84800974,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.82080514,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.255e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.81784789,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.134e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.830962,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.132e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.8082,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.025e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.7663,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.487e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.80342972,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.217e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.8139,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.196e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.80425641,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.471e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.8117,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.429e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.7999,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.8139,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.8273,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.584e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.80154207,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001088,
+    "funding_time": 1782504000000,
+    "mark_price": 0.86343404,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6e-08,
+    "funding_time": 1782489600000,
+    "mark_price": 0.8039,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.877e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.75325881,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.731e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.76103254,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1e-06,
+    "funding_time": 1782446400001,
+    "mark_price": 0.74954428,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.6977,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.66685023,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.081e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.6579,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.196e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.68251976,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.603e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.6716,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.6919,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.602e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.6827,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.1e-07,
+    "funding_time": 1782331200006,
+    "mark_price": 0.638,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.6432,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.82e-06,
+    "funding_time": 1782302400005,
+    "mark_price": 0.6925,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.076e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.66504739,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.6709,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.6536,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.475e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.64000891,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.288e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.61797009,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.25e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.6319,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.3e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.66447562,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.125e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.6554,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.08e-06,
+    "funding_time": 1782158400000,
+    "mark_price": 0.6586,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.27e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.63195165,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.64762943,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.6e-07,
+    "funding_time": 1782115200000,
+    "mark_price": 0.65240835,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.052e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.649,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.087e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.6419,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.55e-06,
+    "funding_time": 1782072000004,
+    "mark_price": 0.68848487,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.408e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.69885327,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.444e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.7075,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.052e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.7086,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.977e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.71181251,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.66734814,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.8e-06,
+    "funding_time": 1781985600000,
+    "mark_price": 0.67499282,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.751e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.6797,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.29e-06,
+    "funding_time": 1781956800001,
+    "mark_price": 0.71772448,
+    "symbol": "JTOUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.719,
+    "symbol": "JTOUSDT"
+  }
+]

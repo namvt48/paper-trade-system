@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.1387,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.082e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.1381,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.13927419,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.13905,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.13894761,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1414,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.14155411,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.13835013,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.13856475,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.1377,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.13605141,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.504e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.13873506,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.071e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.1402,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.13970378,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.13874969,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.14244621,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.14342282,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1446,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.1478,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1456,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.1437208,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1436,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.14024326,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.1419,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.1419,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.1408,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.1401,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1408,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.1403,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1391,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.13994351,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1397,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.14162778,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1417,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.501e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.14042831,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1407,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.36e-06,
+    "funding_time": 1784001600000,
+    "mark_price": 0.14141961,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.14105071,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.206e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.1409,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.12e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.1453636,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.1495,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.352e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.14595014,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.147,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.1555,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.638e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.1552,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.15524999,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.746e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.1538,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.1534,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.1542,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.15653063,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.1612,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.16235016,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.16315011,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1636507,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.16372461,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1652,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.1634,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.16507459,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.1647,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.1671491,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.17175065,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.16724744,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.1684,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.361e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1665,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.1677,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.16973578,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.65e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.16911409,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1655,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.16126297,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.16130077,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.1626,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1597,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.039e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.15870371,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.983e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1626,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.577e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.16145174,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1702,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.1763066,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.16770916,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.1756,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1776,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.17073585,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.503e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.1567,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.677e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.15646002,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.06e-06,
+    "funding_time": 1783324800000,
+    "mark_price": 0.15703858,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.206e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.1544,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012229,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1546462,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.062e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.1546,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.973e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1567,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028711,
+    "funding_time": 1783252800000,
+    "mark_price": 0.15137864,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001253,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1529,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068667,
+    "funding_time": 1783224000002,
+    "mark_price": 0.15300344,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00042236,
+    "funding_time": 1783209600003,
+    "mark_price": 0.1531,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.355e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.1543,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00067566,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1556,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018607,
+    "funding_time": 1783166400000,
+    "mark_price": 0.15629903,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074005,
+    "funding_time": 1783152000000,
+    "mark_price": 0.1562,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047054,
+    "funding_time": 1783137600006,
+    "mark_price": 0.1568,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00098789,
+    "funding_time": 1783123200000,
+    "mark_price": 0.1588,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063467,
+    "funding_time": 1783108800001,
+    "mark_price": 0.1565,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040821,
+    "funding_time": 1783094400000,
+    "mark_price": 0.15648551,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002359,
+    "funding_time": 1783080000002,
+    "mark_price": 0.158,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020482,
+    "funding_time": 1783065600007,
+    "mark_price": 0.15692502,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.015e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.1619,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015151,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1586,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034053,
+    "funding_time": 1783022400008,
+    "mark_price": 0.1597,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018244,
+    "funding_time": 1783008000000,
+    "mark_price": 0.15634988,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.644e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.16003893,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016567,
+    "funding_time": 1782979200000,
+    "mark_price": 0.15965295,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023277,
+    "funding_time": 1782964800003,
+    "mark_price": 0.15824518,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027366,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1604,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.469e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.1655,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.28e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.1682,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.1702,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.159e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1703,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.1761,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.171e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.16693123,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.18e-06,
+    "funding_time": 1782849600003,
+    "mark_price": 0.16728437,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.22e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1637,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.71e-06,
+    "funding_time": 1782820800002,
+    "mark_price": 0.171,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011455,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1657,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.152e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.1639,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017306,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1633,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019805,
+    "funding_time": 1782763200000,
+    "mark_price": 0.1647,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020482,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1655018,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010517,
+    "funding_time": 1782734400001,
+    "mark_price": 0.17042193,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.609e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1727,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.497e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.1726,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028865,
+    "funding_time": 1782691200006,
+    "mark_price": 0.16334913,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026102,
+    "funding_time": 1782676800003,
+    "mark_price": 0.1643,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.843e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1676519,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022103,
+    "funding_time": 1782648000008,
+    "mark_price": 0.16780019,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019227,
+    "funding_time": 1782633600013,
+    "mark_price": 0.17671929,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.98e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.1805,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010654,
+    "funding_time": 1782604800000,
+    "mark_price": 0.17476504,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00057259,
+    "funding_time": 1782590400000,
+    "mark_price": 0.17384021,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0008795,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1693,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00030238,
+    "funding_time": 1782561600001,
+    "mark_price": 0.1592,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00068943,
+    "funding_time": 1782547200000,
+    "mark_price": 0.16265283,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00103965,
+    "funding_time": 1782532800000,
+    "mark_price": 0.1638,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00212239,
+    "funding_time": 1782518400000,
+    "mark_price": 0.17025084,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00099916,
+    "funding_time": 1782504000000,
+    "mark_price": 0.16523256,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063086,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1591,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026141,
+    "funding_time": 1782475200004,
+    "mark_price": 0.1575572,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033298,
+    "funding_time": 1782460800002,
+    "mark_price": 0.16155664,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00043824,
+    "funding_time": 1782446400001,
+    "mark_price": 0.159,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00085017,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1611,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00119085,
+    "funding_time": 1782417600011,
+    "mark_price": 0.1518,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00320845,
+    "funding_time": 1782403200000,
+    "mark_price": 0.155,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00087452,
+    "funding_time": 1782388800006,
+    "mark_price": 0.16564876,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0006266,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1649,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00183765,
+    "funding_time": 1782360000008,
+    "mark_price": 0.1677,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00118923,
+    "funding_time": 1782345600000,
+    "mark_price": 0.16323626,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00075933,
+    "funding_time": 1782331200006,
+    "mark_price": 0.1621,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040204,
+    "funding_time": 1782316800003,
+    "mark_price": 0.16813726,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020202,
+    "funding_time": 1782302400005,
+    "mark_price": 0.1807,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016425,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1808,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.544e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.18613844,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.2e-07,
+    "funding_time": 1782244800000,
+    "mark_price": 0.18189869,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.678e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1878,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024562,
+    "funding_time": 1782216000000,
+    "mark_price": 0.18824741,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016073,
+    "funding_time": 1782201600005,
+    "mark_price": 0.19896331,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.105e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.2036,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001225,
+    "funding_time": 1782172800003,
+    "mark_price": 0.20425651,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021354,
+    "funding_time": 1782158400000,
+    "mark_price": 0.2185,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015165,
+    "funding_time": 1782144000002,
+    "mark_price": 0.2049,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015253,
+    "funding_time": 1782129600000,
+    "mark_price": 0.1994,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.869e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.20422814,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.85e-06,
+    "funding_time": 1782100800000,
+    "mark_price": 0.21030016,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019089,
+    "funding_time": 1782086400000,
+    "mark_price": 0.20085919,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00025121,
+    "funding_time": 1782072000004,
+    "mark_price": 0.20396599,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017261,
+    "funding_time": 1782057600000,
+    "mark_price": 0.2019559,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016665,
+    "funding_time": 1782043200001,
+    "mark_price": 0.20146712,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.31e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.20970374,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.495e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.21241523,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015279,
+    "funding_time": 1782000000000,
+    "mark_price": 0.20810003,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018648,
+    "funding_time": 1781985600000,
+    "mark_price": 0.2099,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002888,
+    "funding_time": 1781971200001,
+    "mark_price": 0.20690289,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021904,
+    "funding_time": 1781956800001,
+    "mark_price": 0.2036,
+    "symbol": "STGUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023577,
+    "funding_time": 1781942400000,
+    "mark_price": 0.2098,
+    "symbol": "STGUSDT"
+  }
+]

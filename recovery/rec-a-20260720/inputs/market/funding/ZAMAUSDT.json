@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -7.431e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.03516,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.346e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.035435,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.243e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.03591409,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.03565,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.03526555,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.03483,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.299e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.034161,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.326e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.03479,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.035085,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.332e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.0348,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.79e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.03478,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.722e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.03506038,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.03484,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.03483,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.29e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.03473,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.69e-06,
+    "funding_time": 1784304000004,
+    "mark_price": 0.03506,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.71e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.03554,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.03484246,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.03484,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.97e-06,
+    "funding_time": 1784246400000,
+    "mark_price": 0.03508,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011585,
+    "funding_time": 1784232000002,
+    "mark_price": 0.03485,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.03514,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.03529193,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.13e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.035,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.125e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.03502,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.683e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.03501779,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.03446,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.3e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.03427,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.03400591,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.266e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.03401,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.28e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.03451,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.03431058,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.617e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.03307,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.937e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.03295,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.305e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.03252009,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.259e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.03302488,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.03320472,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.322e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.03272,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.03288308,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.9e-07,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0329915,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.03315,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.987e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.03391442,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.03427,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.03444433,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.03487,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03438,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.0341,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03394,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.03421,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.425e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.03401911,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.03458,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03416,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.341e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.03424,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03442,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03365471,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.03347,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.03318,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.677e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03283,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03325,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.688e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03262772,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.03292594,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.023e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03294,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.03332,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.09e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03332389,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.03365,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03385,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.486e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03291,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03352,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.564e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.03349642,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.332e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03366171,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.03442101,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03451749,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.03358,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.03343989,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.03306,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03338,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03378,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03416,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03402486,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03472139,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03442,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03336,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03258,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.0323,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03247,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03199467,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.81e-06,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03165,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.914e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03123,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.717e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03176019,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03178,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03206,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03249,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03229,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.0324,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03228,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.19e-06,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03221714,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03320069,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.834e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03309,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.03346175,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03351,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03293467,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03264,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.668e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03180222,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.031571,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03151,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.645e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03158,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.03269328,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03306511,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03311,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03362,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.03358997,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.0338,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.03308,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03344,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.03329,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03337422,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03389,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.03373114,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03315358,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.03277,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.0323,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03211,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.03075014,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03050528,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.03032289,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03013,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03064,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.03056,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.03036,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03111969,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.03143,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.03149,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.03122097,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03098,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03118,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03132,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03121,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03169,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.03227,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.03239,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.362e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.0320506,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.733e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.03176394,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.24e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.03201,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03285,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03156,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03103,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.03082,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.862e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03092,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.04e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03124282,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03154,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.03105,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03093,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03112,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.735e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03205,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.0336156,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.021e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.03300665,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022607,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03218,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.58e-06,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03261681,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028565,
+    "funding_time": 1782230400002,
+    "mark_price": 0.03329171,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016804,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03412,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016316,
+    "funding_time": 1782201600005,
+    "mark_price": 0.03395725,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.324e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.03322,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.03325,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011915,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03298,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.501e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03271,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03332,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03404242,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.0343616,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.03351475,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.0334,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.383e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03348,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03373,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.0339645,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03432,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.265e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03432523,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.632e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03439461,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.03564,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03451,
+    "symbol": "ZAMAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03472,
+    "symbol": "ZAMAUSDT"
+  }
+]

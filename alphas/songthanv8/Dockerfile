@@ -9,4 +9,5 @@ COPY songthanv8/app/ ./app/
 COPY songthanv8/main.py songthanv8/spec.json songthanv8/config.toml ./
 COPY songthanv8/data/ ./data/
 COPY songthanv8/blacklist.txt .
+COPY songthanv8/whitelist.txt .
 CMD ["python", "main.py"]

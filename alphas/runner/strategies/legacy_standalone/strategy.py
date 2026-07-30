@@ -81,7 +81,7 @@ class LegacyStandaloneRunnerStrategy(Strategy):
         self._pending_scan_symbol: str | None = None
         self._pending_scan_tf: str | None = None
         if hasattr(self.engine, "_open_positions"):
-            self.engine._open_positions = self.ctx.load_positions()
+            self.engine._open_positions = self.reconcile_open_positions()
         self._force_live()
 
     @classmethod

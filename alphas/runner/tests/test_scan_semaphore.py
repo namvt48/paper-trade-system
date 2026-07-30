@@ -15,6 +15,7 @@ import pytest
 from runner import main as runner_main
 from runner.data_layer.cache import SharedCandleCache
 from runner.data_layer.pubsub import DataEvent
+from runner.metrics import RunnerMetrics
 from runner.reconcile.state import StrategyRuntimeState
 from runner.strategy.base import Strategy
 from runner.strategy.context import StrategyContext
@@ -129,12 +130,17 @@ async def test_run_strategy_event_loop_without_semaphore_still_works():
     strategy = ImmediateStrategy(alpha_id="a", version="1", params={}, ctx=ctx)
     queue: asyncio.Queue = asyncio.Queue()
     stop = asyncio.Event()
-    task = asyncio.create_task(runner_main.run_strategy_event_loop(strategy, queue, stop))
+    metrics = RunnerMetrics()
+    task = asyncio.create_task(runner_main.run_strategy_event_loop(strategy, queue, stop, metrics))
 
     try:
         await queue.put(DataEvent("symbols:binance", "symbols", "", "", {"symbols": []}))
         await asyncio.wait_for(queue.join(), timeout=1.0)
         assert strategy.scanned
+        performance = metrics.snapshot()["performance"]
+        assert performance["event_total"] == 1
+        assert performance["scan_total"] == 1
+        assert performance["event_by_kind"] == {"symbols": 1}
     finally:
         stop.set()
         task.cancel()

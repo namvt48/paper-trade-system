@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.273e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.156652,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.866e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.15697163,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.581e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1568,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010235,
+    "funding_time": 1784419200003,
+    "mark_price": 0.15845034,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019357,
+    "funding_time": 1784390400001,
+    "mark_price": 0.15660639,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.765e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.1581,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.15948686,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.429e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.15996234,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.211e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1574,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.545e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1579,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.16008024,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017877,
+    "funding_time": 1784188800003,
+    "mark_price": 0.15897473,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.339e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.1606,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023639,
+    "funding_time": 1784131200000,
+    "mark_price": 0.16237378,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.68e-06,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1603419,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.16235164,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.635e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1622,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.01e-06,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1608,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.596e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.15782165,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.732e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.1595,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011515,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1604,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018253,
+    "funding_time": 1783900800000,
+    "mark_price": 0.15825415,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021122,
+    "funding_time": 1783872000000,
+    "mark_price": 0.15964996,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.465e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.15944904,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.646e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.15851124,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.45e-06,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1629,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.221e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.161,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.649e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1622,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.921e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1616,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.4e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.16144134,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.163e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.15955058,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.12e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1593,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.044e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.16095812,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015179,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1597,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017714,
+    "funding_time": 1783526400000,
+    "mark_price": 0.15516165,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.61e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 0.16032393,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.226e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1635,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024873,
+    "funding_time": 1783440000000,
+    "mark_price": 0.16771927,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.388e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.16782294,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.17149922,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014421,
+    "funding_time": 1783353600000,
+    "mark_price": 0.17213703,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.17152522,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.21e-06,
+    "funding_time": 1783296000000,
+    "mark_price": 0.17951096,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001466,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1759,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.014e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1777,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.18257131,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.18639432,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.346e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.1841,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.18767059,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.435e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1861,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.1878,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.18323823,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.18462331,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1776,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.091e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.178,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.069e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.1802,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.62e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.17388514,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.17168491,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 0.17137719,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.185e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1719,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.96e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.17695195,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.581e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1759,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.248e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1777,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.02e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.178,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.477e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.17250157,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.011e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.17228287,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.383e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.17265011,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.885e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1794,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.381e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1808,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.417e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.17758518,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.06e-06,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1740939,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.29e-06,
+    "funding_time": 1782460800002,
+    "mark_price": 0.16854289,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.64e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 0.16817461,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.92e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.16595696,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.76e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.17678342,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.62e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1731,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.32e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.1672125,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.971e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.17481093,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 0.1741,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.122e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1735767,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.618e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.17481342,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023383,
+    "funding_time": 1782172800003,
+    "mark_price": 0.18154262,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.4e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.18319322,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.7e-07,
+    "funding_time": 1782115200000,
+    "mark_price": 0.1833,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.973e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.17924253,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.209e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.189,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.32e-06,
+    "funding_time": 1782028800000,
+    "mark_price": 0.18694996,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.497e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.18795477,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.66e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1903914,
+    "symbol": "FETUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.994e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1896,
+    "symbol": "FETUSDT"
+  }
+]

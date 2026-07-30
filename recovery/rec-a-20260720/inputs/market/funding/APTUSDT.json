@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -2.332e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.5955,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.01e-06,
+    "funding_time": 1784476800001,
+    "mark_price": 0.599085,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.065e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.60491042,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.03e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 0.608315,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.715e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.60549667,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.124e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.614,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.6216,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.609e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.604,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.597,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.856e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.6098,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.94e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.6176,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.6136625,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.908e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.6234,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.62727667,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.6135405,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.62017333,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 0.624055,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.002e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.5987,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011746,
+    "funding_time": 1783987200000,
+    "mark_price": 0.5917,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.855e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.5987,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014852,
+    "funding_time": 1783929600001,
+    "mark_price": 0.5996,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017569,
+    "funding_time": 1783900800000,
+    "mark_price": 0.6103,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.906e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.62223333,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022994,
+    "funding_time": 1783843200003,
+    "mark_price": 0.62115667,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.7e-06,
+    "funding_time": 1783814400000,
+    "mark_price": 0.62413433,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.557e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.6384,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017397,
+    "funding_time": 1783756800000,
+    "mark_price": 0.6288335,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.141e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.6295025,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.54e-06,
+    "funding_time": 1783699200005,
+    "mark_price": 0.62685575,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.971e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.62812617,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.62480672,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.732e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.62830175,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.63142692,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.6172975,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.547e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.60050009,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.494e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.63326242,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.318e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.6280075,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.141e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.6476,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.6342,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.631225,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.628,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.931e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.62260353,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.63307325,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.62607433,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014736,
+    "funding_time": 1783238400001,
+    "mark_price": 0.62133276,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.378e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.6274,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.628e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.6373,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.48e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.62682569,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.519e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.637523,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.357e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.6161,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.663e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.6182,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.622e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.6089,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.425e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.6099,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.60695192,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.5861,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.5982,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.57936526,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.57148042,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015008,
+    "funding_time": 1782835200005,
+    "mark_price": 0.5659055,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.467e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.5734,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.64e-06,
+    "funding_time": 1782777600000,
+    "mark_price": 0.580255,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.55e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.58311379,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.005e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.57981858,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4e-06,
+    "funding_time": 1782691200006,
+    "mark_price": 0.5741,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.11e-06,
+    "funding_time": 1782662400000,
+    "mark_price": 0.583085,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032784,
+    "funding_time": 1782633600013,
+    "mark_price": 0.5833,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015525,
+    "funding_time": 1782604800000,
+    "mark_price": 0.58060135,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.686e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.6059,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.733e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.6047,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.194e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.59813667,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.159e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.60067883,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.247e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.6045,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.883e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.593275,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028339,
+    "funding_time": 1782403200000,
+    "mark_price": 0.58852733,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.188e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.6376,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.048e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.6309,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.553e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.6147,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.262e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.64535,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.611e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.6455,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.63227,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.784e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.6361,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.848e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.6611,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.957e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.66792083,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.355e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.67263083,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.787e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.64781525,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.475e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.6576075,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.641e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.65290397,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.945e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.6457625,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.97e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.63845017,
+    "symbol": "APTUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011365,
+    "funding_time": 1781942400000,
+    "mark_price": 0.6343475,
+    "symbol": "APTUSDT"
+  }
+]

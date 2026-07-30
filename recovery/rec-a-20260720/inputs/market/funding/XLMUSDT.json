@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5.285e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.18803719,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.104e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.19024,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.483e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.18634845,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 0.18771,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.642e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.18711304,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.292e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.18473192,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784332800000,
+    "mark_price": 0.18545,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.18683228,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.605e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.18258963,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.257e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.18508241,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.19237171,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.18733188,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.18839,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1861,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.667e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.18195831,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.7e-06,
+    "funding_time": 1784073600005,
+    "mark_price": 0.18437,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013423,
+    "funding_time": 1784044800001,
+    "mark_price": 0.18445,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010242,
+    "funding_time": 1784016000002,
+    "mark_price": 0.17871,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011281,
+    "funding_time": 1783987200000,
+    "mark_price": 0.18076786,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.174e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.18232572,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.334e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1841,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.441e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.18628681,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.24e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 0.18985705,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.847e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.18531857,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.117e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.18633336,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.19149041,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.31e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.18988,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.427e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.19054,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.18863,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.619e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.19009,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.258e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.18626414,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.68e-06,
+    "funding_time": 1783612800001,
+    "mark_price": 0.18128,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.785e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.18113879,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.18117,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.916e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.1803,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.595e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.18533,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.111e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.18860463,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.365e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.19261,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.86e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.19511,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.311e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.19996,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.19959089,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.531e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.20062,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.20329439,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.20018,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.336e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.19947,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.20655,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.77e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.21143507,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.20639,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.20401092,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.20061,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.716e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.19950722,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.135e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.19916601,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.24e-06,
+    "funding_time": 1783008000000,
+    "mark_price": 0.19929,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.45e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 0.19682,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012674,
+    "funding_time": 1782950400000,
+    "mark_price": 0.19731611,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.993e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.20224,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 0.2002495,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.308e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.18899201,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.454e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.18262101,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021576,
+    "funding_time": 1782806400000,
+    "mark_price": 0.18226544,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00024636,
+    "funding_time": 1782777600000,
+    "mark_price": 0.17496604,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.619e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.17371702,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.02e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.17341,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011878,
+    "funding_time": 1782691200006,
+    "mark_price": 0.17283,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012806,
+    "funding_time": 1782662400000,
+    "mark_price": 0.17085,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.219e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.17203,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015909,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1738118,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.731e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.17863,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.17552205,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 0.17775044,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.478e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.17811,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.9e-07,
+    "funding_time": 1782460800002,
+    "mark_price": 0.17895997,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.058e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.17884,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014488,
+    "funding_time": 1782403200000,
+    "mark_price": 0.17861,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.03e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.18688,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.33e-06,
+    "funding_time": 1782345600000,
+    "mark_price": 0.18544,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.5e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.18547066,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.338e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.19121,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.868e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.19502883,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.99e-06,
+    "funding_time": 1782230400002,
+    "mark_price": 0.19290044,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.126e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.19567,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018146,
+    "funding_time": 1782172800003,
+    "mark_price": 0.20279712,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.847e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.20875266,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014285,
+    "funding_time": 1782115200000,
+    "mark_price": 0.21296997,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015846,
+    "funding_time": 1782086400000,
+    "mark_price": 0.2096,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.28e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.2161589,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.971e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.21335893,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010419,
+    "funding_time": 1782000000000,
+    "mark_price": 0.21605096,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.186e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.21558,
+    "symbol": "XLMUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.653e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.21586,
+    "symbol": "XLMUSDT"
+  }
+]

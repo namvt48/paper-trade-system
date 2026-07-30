@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.30119304,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.30351183,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.30557993,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.30622579,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.30633213,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00032522,
+    "funding_time": 1784448000000,
+    "mark_price": 0.30315,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030721,
+    "funding_time": 1784433600000,
+    "mark_price": 0.30388627,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.30259802,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019841,
+    "funding_time": 1784404800004,
+    "mark_price": 0.3008,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024135,
+    "funding_time": 1784390400001,
+    "mark_price": 0.3002,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.300407,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.30061667,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011355,
+    "funding_time": 1784347200000,
+    "mark_price": 0.30484667,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.30066241,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.2998,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.30716,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.3097,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.31149483,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.31020099,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.32776133,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.33025034,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.57e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.33394539,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019287,
+    "funding_time": 1784203200001,
+    "mark_price": 0.3273,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.317888,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.3178,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.30807353,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.009e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.3068,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.30775,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.31015934,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.3113,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.306888,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.3106908,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.30920413,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.113e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.30990269,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.30431,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.307169,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.3056,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.2979,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.30017518,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.295504,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.3002,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.616e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.30057425,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.2978,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.29735,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.30110621,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.29796747,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.29565964,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.29956547,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.29805439,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.3043,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.29141,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017399,
+    "funding_time": 1783785600000,
+    "mark_price": 0.2972,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.2937,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.2944,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.347e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.29671073,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015142,
+    "funding_time": 1783728000000,
+    "mark_price": 0.29851,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.29919467,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.30195833,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.2997,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.30068923,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.327e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.31536533,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.055e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.3111,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.621e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.31271833,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.314,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.31798467,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.28709039,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.28667782,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.306,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.308,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.307466,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.31267455,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.320277,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.324942,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.3257,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.3307,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.3278,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.3293,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.3306,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.3327931,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.32903267,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.327386,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.32395504,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.3373,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.34598891,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.32767033,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.3254,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.32111067,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.320758,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013608,
+    "funding_time": 1783252800000,
+    "mark_price": 0.3189,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.32228067,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.3232,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.191e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.32367333,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.32303933,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00031546,
+    "funding_time": 1783180800007,
+    "mark_price": 0.3242,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.32461923,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.3183488,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.3187,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.3189,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.3197,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.3266,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.32405267,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.33046379,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.33678933,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.33115,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.33165,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.33045345,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.3325,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.3388,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.3365,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021595,
+    "funding_time": 1782950400000,
+    "mark_price": 0.339,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.33222867,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.3445,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.34906695,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013783,
+    "funding_time": 1782892800000,
+    "mark_price": 0.3726,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.37371467,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.36550933,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.08e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.3528,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.33921965,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.3268,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.061e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.32623387,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.3285,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.334,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011286,
+    "funding_time": 1782763200000,
+    "mark_price": 0.33365,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.331056,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.33415,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.33470133,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.34014787,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.34467567,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.3488,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.35464236,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.35535826,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.3522,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.35985109,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.3409,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.3171,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.32385,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.32105,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.3242,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.31547467,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.3233,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.32027833,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.3201,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.3078,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.3115,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.3031,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.29512506,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.30182749,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.297382,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.31456517,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.312784,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.316,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.3117,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.31493763,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.3349,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.3391,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.35031488,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022563,
+    "funding_time": 1782259200005,
+    "mark_price": 0.3672,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.3665,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.3671,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.381,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001064,
+    "funding_time": 1782201600005,
+    "mark_price": 0.3746,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001388,
+    "funding_time": 1782187200000,
+    "mark_price": 0.3894,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.39088623,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.3911,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.3931,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.39394333,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.3935,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.39603733,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.3955,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.3976,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.3945,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.40387,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.401446,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.405,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.40663172,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014228,
+    "funding_time": 1781985600000,
+    "mark_price": 0.4092836,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.41646439,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.422,
+    "symbol": "CYSUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.4212,
+    "symbol": "CYSUSDT"
+  }
+]

@@ -8,4 +8,5 @@ COPY 15m-trend-close/app/ ./app/
 COPY 15m-trend-close/main.py 15m-trend-close/spec.json 15m-trend-close/config.toml ./
 COPY 15m-trend-close/data/ ./data/
 COPY 15m-trend-close/blacklist.txt .
+COPY 15m-trend-close/whitelist.txt .
 CMD ["python", "main.py"]

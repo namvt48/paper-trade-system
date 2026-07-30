@@ -7,7 +7,7 @@ Stochastic).
 | param | giá trị |
 |---|---|
 | định cỡ | trọng số độ lớn từng coin (winsor-cont, không rank) — xem [overview](overview.md) |
-| universe | top-180 (`_t180`) · exec_lag 1 · vol-target 10% · gross 1 trung hòa đô-la |
+| universe | top-180 (`_t180`) · vol-target 10% · gross 1 trung hòa đô-la |
 | hướng | **long gần đỉnh range (breakout), short gần đáy** (momentum) |
 
 ## Tín hiệu & vào lệnh long/short

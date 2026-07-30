@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.28082552,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.2797,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.291,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.005e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.3002,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.3063,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.31157743,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.30788538,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013674,
+    "funding_time": 1784419200003,
+    "mark_price": 0.3084,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.30614329,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.3045,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013173,
+    "funding_time": 1784376000002,
+    "mark_price": 0.30787182,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00022118,
+    "funding_time": 1784361600000,
+    "mark_price": 0.30727491,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030328,
+    "funding_time": 1784347200000,
+    "mark_price": 0.3026,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00072468,
+    "funding_time": 1784332800000,
+    "mark_price": 0.30358841,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00061921,
+    "funding_time": 1784318400000,
+    "mark_price": 0.294,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00084711,
+    "funding_time": 1784304000004,
+    "mark_price": 0.3006,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002933,
+    "funding_time": 1784289600004,
+    "mark_price": 0.3038,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002947,
+    "funding_time": 1784275200010,
+    "mark_price": 0.2908,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00019724,
+    "funding_time": 1784260800000,
+    "mark_price": 0.30462993,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015448,
+    "funding_time": 1784246400000,
+    "mark_price": 0.3212,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00042769,
+    "funding_time": 1784232000002,
+    "mark_price": 0.3126,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025571,
+    "funding_time": 1784217600002,
+    "mark_price": 0.3104,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.674e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.30495243,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.31359852,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.3022,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.2856,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001274,
+    "funding_time": 1784145600002,
+    "mark_price": 0.2833,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.446e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.29449355,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.2950258,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.27750863,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.25426958,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.25134479,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.2507,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.25319622,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.2479,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.2429,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.2444,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.2446758,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783972800000,
+    "mark_price": 0.24909931,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.549e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.251,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.824e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.254,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.2469,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.263e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.247,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.533e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.24954913,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.25650977,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.2614,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.771e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.2677737,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.186e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.2561,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.651e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.2609,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.26421362,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.2718,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.26715231,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.27215273,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.26577978,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.27329697,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.2764,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.2747,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.27750057,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.2765465,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.27325802,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.27896411,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.2818,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.27762243,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.2743,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.27170218,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.27536557,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.27494363,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.27599285,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.2823,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.25875148,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.27541465,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.284,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.2731,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.28313313,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.28436509,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.3199,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.30871846,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.31697928,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.502e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.30066507,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.29434984,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.29267808,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.29342503,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.28030815,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.28526485,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.2885,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.2906,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.28752112,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.30080535,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.2792,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.28,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.2894,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.2979,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.292,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.28719345,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.2811,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.27948962,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.27618617,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.27947113,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.27996729,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.2756,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.28142782,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.2975,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0003518,
+    "funding_time": 1783051200000,
+    "mark_price": 0.30008479,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.2841,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.816e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.27852515,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.864e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.2728,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.26970057,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.594e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.2708,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.28506948,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.818e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2829,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.914e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.29186711,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.29532901,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.574e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.28900474,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.716e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.2915,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.155e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.32591206,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.174e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.32083024,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.3119337,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.32819541,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.34034602,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.3709,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.36238888,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010907,
+    "funding_time": 1782777600000,
+    "mark_price": 0.39541538,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023018,
+    "funding_time": 1782763200000,
+    "mark_price": 0.4217,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.193e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.44205932,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036804,
+    "funding_time": 1782734400001,
+    "mark_price": 0.3825,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00114164,
+    "funding_time": 1782720000013,
+    "mark_price": 0.50964172,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00037222,
+    "funding_time": 1782705600000,
+    "mark_price": 0.38485663,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.32839668,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.3283,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.2977,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.2929457,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.2817,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.26630553,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.25539888,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.27941403,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.2601,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.22907614,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.23,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.232,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.22766013,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.22614303,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.22361229,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.2209,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.22312692,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.21915422,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.22084341,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.22122727,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.22028154,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.23826898,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.25008409,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.2506,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.2519,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.23918533,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.26272676,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012505,
+    "funding_time": 1782302400005,
+    "mark_price": 0.268572,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017434,
+    "funding_time": 1782288000005,
+    "mark_price": 0.2682,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026678,
+    "funding_time": 1782259200005,
+    "mark_price": 0.27076329,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.26555574,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.2552,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.25543795,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.26162667,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010303,
+    "funding_time": 1782187200000,
+    "mark_price": 0.2743,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.2668,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.26922306,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.27170186,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.27382984,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.27254862,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.26782372,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.2609,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.2717,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.27518967,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.270155,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.2699234,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.27174746,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.26701481,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.27175065,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.27033605,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.2659,
+    "symbol": "RAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.2711,
+    "symbol": "RAVEUSDT"
+  }
+]

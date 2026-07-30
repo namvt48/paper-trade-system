@@ -1,0 +1,14 @@
+{
+  "executionEnvironments": [
+    {
+      "root": "./alphas"
+    },
+    {
+      "root": "./scripts",
+      "extraPaths": [
+        ".",
+        "./alphas"
+      ]
+    }
+  ]
+}

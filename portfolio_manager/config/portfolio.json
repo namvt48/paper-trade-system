@@ -1,0 +1,21 @@
+{
+  "alpha_id": "pm-live",
+  "capital": 100000.0,
+  "exchange": "binance",
+  "fee_bps": 7.0,
+  "trigger": {"mode": "event", "safety_poll_sec": 60, "debounce_sec": 5},
+  "sleeves": [
+    {"id": "15m-blend-close-b-sleeve", "weight": 0.2, "max_staleness_sec": 5400, "on_stale": "drop_to_flat"},
+    {"id": "1h-blend-close-sleeve", "weight": 0.2, "max_staleness_sec": 100000, "on_stale": "drop_to_flat"},
+    {"id": "1h-blend-close-c-sleeve", "weight": 0.2, "max_staleness_sec": 100000, "on_stale": "drop_to_flat"},
+    {"id": "1h-decay-close-v3-sleeve", "weight": 0.2, "max_staleness_sec": 190000, "on_stale": "drop_to_flat"},
+    {"id": "4h-amihud-sleeve", "weight": 0.2, "max_staleness_sec": 190000, "on_stale": "drop_to_flat"}
+  ],
+  "allocation": {"method": "fixed", "dynamic_execution_enabled": false},
+  "execution": {"enabled": true},
+  "regime": {
+    "provider": "btc_trend", "symbol": "BTCUSDT", "timeframe": "1h", "lookback_bars": 24,
+    "threshold": 0.0, "shadow_evaluation": true, "execution_enabled": false
+  },
+  "overlay": {"per_coin_cap": 0.04, "gross_target": 1.0, "ema_span": 5, "downtrend_multiplier": 1.0}
+}

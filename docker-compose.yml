@@ -9,18 +9,19 @@ services:
     env_file: ./worker/.env
     volumes:
       - ./data:/app/data
-      - ./logs/worker:/app/logs
     environment:
       - REDIS_URL=redis://paper-redis:6379
       - MDS_REDIS_URL=${MDS_REDIS_URL:-redis://mds-redis:6379}
       - DB_PATH=/app/data/paper-trade.db
-      - LOG_DIR=/app/logs
       - LOG_LEVEL=${LOG_LEVEL:-INFO}
       - SLIPPAGE_PCT=${SLIPPAGE_PCT:-0.05}
       - DUPLICATE_POSITION_POLICY=${DUPLICATE_POSITION_POLICY:-reject}
       - REGISTERED_ALPHAS=${REGISTERED_ALPHAS:-}
       - REDIS_READ_COUNT=${REDIS_READ_COUNT:-100}
       - REDIS_BLOCK_MS=${REDIS_BLOCK_MS:-1000}
+      - VIRTUAL_TRADE_STREAM=${VIRTUAL_TRADE_STREAM:-paper-shadow-trades}
+      - VIRTUAL_TRADE_CONSUMER_GROUP=${VIRTUAL_TRADE_CONSUMER_GROUP:-paper-shadow-ledger}
+      - VIRTUAL_TRADE_CONSUMER_NAME=${VIRTUAL_TRADE_CONSUMER_NAME:-shadow-ledger-1}
       - SIGNAL_RETENTION_DAYS=${SIGNAL_RETENTION_DAYS:-0}
       - ENABLE_ORDERBOOK=${ENABLE_ORDERBOOK:-true}
       - ENABLE_ORDERBOOK_SLIPPAGE=${ENABLE_ORDERBOOK_SLIPPAGE:-true}
@@ -67,19 +68,13 @@ services:
       RUNNER_CONFIG: /config/runner-config.yaml
       RUNNER_METRICS_HOST: 0.0.0.0
       RUNNER_METRICS_PORT: 9091
-      LOG_DIR: /app/logs
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
-      ALPHA_LOGS_ENABLED: ${ALPHA_LOGS_ENABLED:-true}
-      ALPHA_LOG_DIR: ${ALPHA_LOG_DIR:-/app/logs/alphas}
-      ALPHA_LOG_MAX_BYTES: ${ALPHA_LOG_MAX_BYTES:-20000000}
-      ALPHA_LOG_BACKUP_COUNT: ${ALPHA_LOG_BACKUP_COUNT:-5}
-      MAX_ALPHAS_PER_RUNNER: ${MAX_ALPHAS_PER_RUNNER:-40}
+      MAX_ALPHAS_PER_RUNNER: ${MAX_ALPHAS_PER_RUNNER:-50}
       RUNNER_COMPUTE_WORKERS: ${RUNNER_COMPUTE_WORKERS:-8}
       CLAIM_INTERVAL_SEC: ${CLAIM_INTERVAL_SEC:-30}
       RUNNER_CACHE_DIR: ${RUNNER_CACHE_DIR:-/data/cache}
     volumes:
       - ${RUNNER_CONFIG_FILE:-./runner-config.yaml}:/config/runner-config.yaml:ro
-      - ./logs/runner:/app/logs
       - ../market-data-service/historical_cache:${RUNNER_CACHE_DIR:-/data/cache}:ro
     depends_on:
       - worker
@@ -103,19 +98,13 @@ services:
       RUNNER_CONFIG: /config/runner-config.yaml
       RUNNER_METRICS_HOST: 0.0.0.0
       RUNNER_METRICS_PORT: 9092
-      LOG_DIR: /app/logs
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
-      ALPHA_LOGS_ENABLED: ${ALPHA_LOGS_ENABLED:-true}
-      ALPHA_LOG_DIR: ${ALPHA_LOG_DIR:-/app/logs/alphas}
-      ALPHA_LOG_MAX_BYTES: ${ALPHA_LOG_MAX_BYTES:-20000000}
-      ALPHA_LOG_BACKUP_COUNT: ${ALPHA_LOG_BACKUP_COUNT:-5}
-      MAX_ALPHAS_PER_RUNNER: ${LEGACY_MAX_ALPHAS_PER_RUNNER:-10}
+      MAX_ALPHAS_PER_RUNNER: ${LEGACY_MAX_ALPHAS_PER_RUNNER:-12}
       RUNNER_COMPUTE_WORKERS: ${LEGACY_RUNNER_COMPUTE_WORKERS:-4}
       CLAIM_INTERVAL_SEC: ${LEGACY_CLAIM_INTERVAL_SEC:-3600}
       RUNNER_CACHE_DIR: ${RUNNER_CACHE_DIR:-/data/cache}
     volumes:
       - ${LEGACY_RUNNER_CONFIG_FILE:-./runner-config-legacy.yaml}:/config/runner-config.yaml:ro
-      - ./logs/runner-legacy:/app/logs
       - ../market-data-service/historical_cache:${RUNNER_CACHE_DIR:-/data/cache}:ro
     depends_on:
       - worker
@@ -126,3 +115,20 @@ services:
       - runner
     deploy:
       replicas: ${LEGACY_RUNNER_REPLICAS:-1}
+
+  pm-live:
+    build:
+      context: ./
+      dockerfile: portfolio_manager/Dockerfile
+    environment:
+      REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
+      MDS_REDIS_URL: ${MDS_REDIS_URL:-redis://mds-redis:6379}
+      PORTFOLIO_CONFIG: /app/portfolio_manager/config/portfolio.json
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+    depends_on:
+      - worker
+    networks:
+      - redis-net
+    restart: unless-stopped
+    profiles:
+      - pm

@@ -9,4 +9,5 @@ COPY 1h-trend-breakout/app/ ./app/
 COPY 1h-trend-breakout/main.py 1h-trend-breakout/spec.json 1h-trend-breakout/config.toml ./
 COPY 1h-trend-breakout/data/ ./data/
 COPY 1h-trend-breakout/blacklist.txt .
+COPY 1h-trend-breakout/whitelist.txt .
 CMD ["python", "main.py"]

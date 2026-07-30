@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010154,
+    "funding_time": 1784505600000,
+    "mark_price": 215.17,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002594,
+    "funding_time": 1784476800001,
+    "mark_price": 216.12,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013833,
+    "funding_time": 1784448000000,
+    "mark_price": 217.87,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.607e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 219.99914997,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.381e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 219.64213909,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010206,
+    "funding_time": 1784361600000,
+    "mark_price": 218.63246041,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.778e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 219.64,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.855e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 216.76400801,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.24e-06,
+    "funding_time": 1784275200010,
+    "mark_price": 222.0587454,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010967,
+    "funding_time": 1784246400000,
+    "mark_price": 221.72,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018325,
+    "funding_time": 1784217600002,
+    "mark_price": 222.73,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020411,
+    "funding_time": 1784188800003,
+    "mark_price": 224.44797942,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021464,
+    "funding_time": 1784160000000,
+    "mark_price": 223.01,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016757,
+    "funding_time": 1784131200000,
+    "mark_price": 234.34889395,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010393,
+    "funding_time": 1784102400002,
+    "mark_price": 234.98,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002195,
+    "funding_time": 1784073600005,
+    "mark_price": 236.69,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011028,
+    "funding_time": 1784044800001,
+    "mark_price": 239.03,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013294,
+    "funding_time": 1784016000002,
+    "mark_price": 234.74,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.353e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 236.29,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.511e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 236.96,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.207e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 236.92,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.754e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 240.07538615,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.304e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 245.24,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012633,
+    "funding_time": 1783843200003,
+    "mark_price": 244.38,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.965e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 243.74,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.981e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 248.06810828,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.549e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 244.14526509,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.662e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 245.12,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 249.48856202,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.106e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 243.27280141,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.244e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 237.63,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.02e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 236.90651734,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.325e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 239.32,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.166e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 235.27,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.851e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 231.83746588,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.644e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 238.21,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.174e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 239.16,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.221e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 242.75,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.318e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 238.53768899,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.03e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 241.91,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.71e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 239.64127821,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.742e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 240.38356328,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.719e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 244.24,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.02e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 237.56,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 240.6405246,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.709e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 236.07462363,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.261e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 232.36,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.522e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 226.6,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.893e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 229.34564199,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.529e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 227.43,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.578e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 224.1,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.971e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 220.19449585,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.53e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 217.67,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.48e-06,
+    "funding_time": 1782979200000,
+    "mark_price": 213.5,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017066,
+    "funding_time": 1782950400000,
+    "mark_price": 209.89,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.15e-06,
+    "funding_time": 1782921600000,
+    "mark_price": 214.75,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.132e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 203.04,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 199.89,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.54e-06,
+    "funding_time": 1782835200005,
+    "mark_price": 200.3501887,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.429e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 200.37,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.346e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 201.11,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.17e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 196.29,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.986e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 196.71,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014764,
+    "funding_time": 1782691200006,
+    "mark_price": 190.87378709,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.31e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 193.09,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.704e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 193.19601771,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.274e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 195.29317997,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.005e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 199.48,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.288e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 197.0427186,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.139e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 197.28,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.059e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 200.26199435,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9e-07,
+    "funding_time": 1782460800002,
+    "mark_price": 195.72,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.215e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 192.87072812,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.735e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 189.11,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010034,
+    "funding_time": 1782374400000,
+    "mark_price": 194.82,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.441e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 190.25,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015239,
+    "funding_time": 1782316800003,
+    "mark_price": 187.78,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.463e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 194.43167927,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.813e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 194.44,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.625e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 190.29807713,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.075e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 190.83795693,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011834,
+    "funding_time": 1782172800003,
+    "mark_price": 197.4937821,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014084,
+    "funding_time": 1782144000002,
+    "mark_price": 201.14,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.541e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 199.23,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023883,
+    "funding_time": 1782086400000,
+    "mark_price": 194.79440422,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001624,
+    "funding_time": 1782057600000,
+    "mark_price": 199.56929928,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017311,
+    "funding_time": 1782028800000,
+    "mark_price": 198.82992317,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001939,
+    "funding_time": 1782000000000,
+    "mark_price": 199.94889827,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017459,
+    "funding_time": 1781971200001,
+    "mark_price": 200.02,
+    "symbol": "BCHUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.25e-06,
+    "funding_time": 1781942400000,
+    "mark_price": 199.7,
+    "symbol": "BCHUSDT"
+  }
+]

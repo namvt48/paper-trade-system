@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018915,
+    "funding_time": 1784505600000,
+    "mark_price": 0.03581672,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.643e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.03593,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.525e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.03618,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.86e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 0.036025,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.268e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.036,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029497,
+    "funding_time": 1784361600000,
+    "mark_price": 0.035675,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.302e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.03583,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 0.03602774,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 0.03504,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 0.03539,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 0.036085,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.03628537,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.03723,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.037325,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.082e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.03623067,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021492,
+    "funding_time": 1784073600005,
+    "mark_price": 0.0369087,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.275e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.03681052,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.76e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.03659,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.87e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.03666,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.617e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.03738,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.27e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.03762045,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.928e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.03858,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.508e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03908,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015891,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03811188,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004008,
+    "funding_time": 1783814400000,
+    "mark_price": 0.03945394,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.242e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03999444,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00183604,
+    "funding_time": 1783756800000,
+    "mark_price": 0.04088,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.053e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.03908,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0016538,
+    "funding_time": 1783699200005,
+    "mark_price": 0.04032387,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010212,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03983768,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03679,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.274e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03632,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.81e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03678813,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03647,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.95e-06,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03696,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.102e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03721032,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.858e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.0364,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.477e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03729,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.35e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03679,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.552e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03788547,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.157e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03730083,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03706,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.691e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03825995,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03805,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03838953,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03932645,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03943,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03844,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.0394828,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.038475,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03896,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.729e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.03904,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.091e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.038855,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012147,
+    "funding_time": 1782979200000,
+    "mark_price": 0.04032233,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.987e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03747,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.105e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03826749,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.111e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03636,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036533,
+    "funding_time": 1782864000000,
+    "mark_price": 0.035195,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.222e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.03501,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.307e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.03481,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03501,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.749e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03545,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.557e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03510488,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.062e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.03533467,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.519e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.037,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.898e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.03722,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.528e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03737053,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.572e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03880492,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.21e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03859,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.288e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.038375,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027873,
+    "funding_time": 1782489600000,
+    "mark_price": 0.038798,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.331e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03838029,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.282e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.0378,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032469,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03905,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.61e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03987,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015117,
+    "funding_time": 1782345600000,
+    "mark_price": 0.04017483,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001922,
+    "funding_time": 1782316800003,
+    "mark_price": 0.04063,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.186e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.04204,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.674e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.04181054,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054681,
+    "funding_time": 1782230400002,
+    "mark_price": 0.0415,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.125e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.04193,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.081e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.04320039,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.948e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.04495685,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.527e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.044585,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.35e-06,
+    "funding_time": 1782086400000,
+    "mark_price": 0.04378,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 0.04489,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.515e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.04499,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.414e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.04499737,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.04494,
+    "symbol": "IOTAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.446e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.04503,
+    "symbol": "IOTAUSDT"
+  }
+]

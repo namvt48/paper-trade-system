@@ -8,4 +8,5 @@ COPY 1h-decay-vwap/app/ ./app/
 COPY 1h-decay-vwap/main.py 1h-decay-vwap/spec.json 1h-decay-vwap/config.toml ./
 COPY 1h-decay-vwap/data/ ./data/
 COPY 1h-decay-vwap/blacklist.txt .
+COPY 1h-decay-vwap/whitelist.txt .
 CMD ["python", "main.py"]

@@ -1,0 +1,23 @@
+{
+  "alpha_id": "1d-chmom",
+  "timeframe": "1d",
+  "signal": "carry_momentum",
+  "params": {
+    "momentum_window": 20,
+    "funding_window": 21,
+    "ema_span": 3
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 1,
+  "vol_lookback": 30,
+  "ppy": 365,
+  "long_threshold": null,
+  "short_threshold": null,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0,
+  "construction": "winsor_cont",
+  "winsor_k": 3.0,
+  "needs_funding": true
+}

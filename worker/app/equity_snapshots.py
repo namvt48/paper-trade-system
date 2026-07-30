@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import json
 import logging
 import os
 from datetime import datetime, timezone
@@ -25,7 +26,7 @@ def _parse_env_file(path: str) -> dict[str, str]:
                 if eq == -1:
                     continue
                 key = trimmed[:eq].strip()
-                val = trimmed[eq + 1:].split("#")[0].strip()
+                val = trimmed[eq + 1 :].split("#")[0].strip()
                 result[key] = val
     except OSError:
         pass
@@ -74,12 +75,14 @@ class EquitySnapshotCollector:
         snapshot_db_path: str,
         interval_sec: float = 300.0,
         alphas_dir: str = "alphas",
+        redis_client=None,
     ) -> None:
         self._db = db
         self._ticker_cache = ticker_cache
         self._snapshot_db_path = snapshot_db_path
         self._interval_sec = interval_sec
         self._alphas_dir = alphas_dir
+        self._redis_client = redis_client
         self._last_prices = LastPriceCache()
         self._snap_conn: Optional[aiosqlite.Connection] = None
 
@@ -135,8 +138,10 @@ class EquitySnapshotCollector:
     def _compute_position_pnl(position: dict[str, Any], current_price: float) -> float:
         direction = 1.0 if position["side"] == "LONG" else -1.0
         gross = (current_price - position["entry_price"]) * position["qty"] * direction
-        fee = (position["entry_price"] + current_price) * position["qty"] * (
-            position.get("fee_pct") or 0.0
+        fee = (
+            (position["entry_price"] + current_price)
+            * position["qty"]
+            * (position.get("fee_pct") or 0.0)
         )
         return gross - fee
 
@@ -147,12 +152,40 @@ class EquitySnapshotCollector:
         rows = await cursor.fetchall()
         return {row[0]: row[1] for row in rows}
 
+    async def _get_virtual_realized_pnl_by_alpha(self) -> dict[str, float]:
+        cursor = await self._db._conn.execute(
+            "SELECT alpha_id, COALESCE(SUM(pnl), 0) as total FROM virtual_trades GROUP BY alpha_id"
+        )
+        rows = await cursor.fetchall()
+        return {row[0]: row[1] for row in rows}
+
+    async def _get_shadow_pnl_by_alpha(self) -> dict[str, dict[str, float]]:
+        if self._redis_client is None:
+            return {}
+        result: dict[str, dict[str, float]] = {}
+        try:
+            for key in await self._redis_client.keys("shadow:pnl:*"):
+                raw = await self._redis_client.get(key)
+                if not raw:
+                    continue
+                payload = json.loads(raw)
+                alpha_id = str(payload.get("alpha_id") or str(key).rsplit(":", 1)[-1])
+                equity = float(payload.get("equity", 1.0))
+                capital = float(payload.get("capital", 10000.0))
+                if equity > 0 and capital > 0:
+                    result[alpha_id] = {"balance": capital * equity, "capital": capital}
+        except Exception:
+            logger.exception("[EQUITY-SNAPSHOT] shadow-PnL read failed")
+        return result
+
     async def snapshot_once(self) -> None:
         if self._snap_conn is None:
             return
 
         positions = await self._db.get_all_open_positions()
         realized = await self._get_realized_pnl_by_alpha()
+        virtual_realized = await self._get_virtual_realized_pnl_by_alpha()
+        shadow = await self._get_shadow_pnl_by_alpha()
         capitals = load_alpha_capitals(self._alphas_dir)
 
         unrealized_by_alpha: dict[str, float] = {}
@@ -179,6 +212,8 @@ class EquitySnapshotCollector:
         alpha_ids = {row["alpha_id"] for row in all_alphas}
         alpha_ids.update(realized.keys())
         alpha_ids.update(unrealized_by_alpha.keys())
+        shadow_ids = set(shadow)
+        alpha_ids.difference_update(shadow_ids)
 
         ts = datetime.now(timezone.utc).isoformat()
         total_balance = 0.0
@@ -194,6 +229,24 @@ class EquitySnapshotCollector:
             total_unrealized += unreal
             total_realized += real
 
+            await self._snap_conn.execute(
+                "INSERT INTO equity_snapshots (timestamp, alpha_id, balance, unrealized_pnl, realized_pnl) VALUES (?, ?, ?, ?, ?)",
+                (ts, alpha_id, balance, unreal, real),
+            )
+
+        # Shadow sleeves have no worker positions/trades. Their rows are
+        # standalone 100%-basis NAV, intentionally excluded from TOTAL_KEY.
+        # realized_pnl comes from closed virtual trades (virtual_trades.pnl,
+        # written on each VIRTUAL_CLOSE) -- the rest of the balance move
+        # since capital is the still-open sleeve's unrealized_pnl. Previously
+        # this hardcoded realized_pnl=0.0 and dumped everything into
+        # unrealized_pnl, so the dashboard's realized column stayed empty
+        # for every sleeve despite virtual_trades already having the data.
+        for alpha_id, values in sorted(shadow.items()):
+            balance = values["balance"]
+            capital = values["capital"]
+            real = virtual_realized.get(alpha_id, 0.0)
+            unreal = balance - capital - real
             await self._snap_conn.execute(
                 "INSERT INTO equity_snapshots (timestamp, alpha_id, balance, unrealized_pnl, realized_pnl) VALUES (?, ?, ?, ?, ?)",
                 (ts, alpha_id, balance, unreal, real),

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 2.758e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 1.88151705,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020842,
+    "funding_time": 1784476800001,
+    "mark_price": 1.885,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.059e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 1.906,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 1.924,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.722e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 1.89659781,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.575e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 1.9044105,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.082e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 1.91118115,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.146e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 1.91599095,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.947e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 1.921,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.008e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 1.949,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.656e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 1.99944007,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 1.98227738,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 1.99,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.627e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 1.99176521,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 1.988,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 1.983,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 1.97346281,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 1.932,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.253e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 1.89548208,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.734e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 1.92824438,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 1.942,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.696e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 1.949,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.693e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 1.972,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.277e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 1.973,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 1.96979133,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 1.9950172,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 1.99749999,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.048e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 1.99921652,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.446e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 1.979,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 1.99239239,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.638e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 1.96245843,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 1.97632693,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 1.97995531,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.91e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 1.95,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.673e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 1.92435721,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 1.97436474,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 1.97243838,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 2.013,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 1.99,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.484e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 2.019,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 2.033,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.9e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 2.002,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.462e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 2.03311347,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.376e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 2.00749346,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 2.03354397,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 2.11485509,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 2.085,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 2.009,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.116e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 2.03128669,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.105e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 2.028,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.943e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 2.026,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.996e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 2.001,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 2.00923198,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.215e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 1.97,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 1.95414528,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 1.999,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 2.01075084,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 1.994,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 1.911,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 1.94456205,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 2.01022905,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 1.9858589,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 1.916,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.197e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 1.84,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 1.83156724,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.818e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 1.845,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.596e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 1.82249557,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.528e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 1.869,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.783e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 1.878,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.899e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 1.871,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.617e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 1.88849219,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.355e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 1.866,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.501e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 1.821,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.004e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 1.817,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.854e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 1.941,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015046,
+    "funding_time": 1782345600000,
+    "mark_price": 1.882,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.694e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 1.911,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 1.99824695,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 2.006,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.451e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 2.00543559,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.035e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 1.946,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.85e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 2.00118625,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.397e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 2.0020829,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.718e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 1.992,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.724e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 1.95426987,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.675e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 2.01943546,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.627e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 2.03,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.925e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 2.0292105,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.773e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 2.02214857,
+    "symbol": "ARUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.488e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 2.00128438,
+    "symbol": "ARUSDT"
+  }
+]

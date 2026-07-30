@@ -112,3 +112,51 @@ class StrategyContext:
                 exc,
                 extra={"alpha_id": self.alpha_id},
             )
+
+    def load_authoritative_positions(self) -> dict | None:
+        """Read the worker's authoritative open-position snapshot.
+
+        The worker DB (published to ``paper:positions:snapshot:{alpha_id}``) -- not the
+        runner-side ``runner:positions`` cache -- is the source of truth for *which*
+        positions are open: it is what enforces ``DUPLICATE_POSITION_POLICY``. A runner
+        that trusts only its own cache can silently diverge from the DB across restarts,
+        orphaning a DB position it no longer manages (never closed) while every new OPEN
+        on that symbol is rejected.
+
+        Returns ``{position_id: normalized_position}`` when the snapshot is present
+        (possibly empty), or ``None`` when it is absent/unreadable -- callers MUST treat
+        ``None`` ("worker view unknown") differently from ``{}`` ("DB has none open").
+        """
+        if self.redis_client is None:
+            return None
+        try:
+            raw = self.redis_client.get(f"paper:positions:snapshot:{self.alpha_id}")
+        except Exception as exc:
+            logger.warning(
+                "[CTX] Failed to read authoritative snapshot for %s: %s",
+                self.alpha_id,
+                exc,
+                extra={"alpha_id": self.alpha_id},
+            )
+            return None
+        from base.position_reconcile import normalize_position, parse_snapshot
+
+        snapshot = parse_snapshot(raw)
+        if snapshot is None:
+            return None
+        result: dict = {}
+        for raw_pos in snapshot.get("positions", []):
+            if not isinstance(raw_pos, dict) or not raw_pos.get("position_id"):
+                continue
+            try:
+                normalized = normalize_position(raw_pos)
+            except Exception as exc:
+                logger.warning(
+                    "[CTX] Skipping unparseable authoritative position for %s: %s",
+                    self.alpha_id,
+                    exc,
+                    extra={"alpha_id": self.alpha_id},
+                )
+                continue
+            result[str(normalized["position_id"])] = normalized
+        return result

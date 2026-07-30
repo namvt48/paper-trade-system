@@ -170,7 +170,6 @@ Mỗi alpha = 1 thư mục dưới `alphas/`, inherit `CrossSectionalEngine`, co
   "universe_size": 30,
   "universe_mode": "dynamic_top_k",
   "rebalance_bars": 1,
-  "exec_lag": 0,
   "vol_lookback": 30,
   "ppy": 365,
   "long_threshold": null,

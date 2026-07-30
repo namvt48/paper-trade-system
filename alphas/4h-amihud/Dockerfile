@@ -9,4 +9,5 @@ COPY 4h-amihud/app/ ./app/
 COPY 4h-amihud/main.py 4h-amihud/spec.json 4h-amihud/config.toml ./
 COPY 4h-amihud/data/ ./data/
 COPY 4h-amihud/blacklist.txt .
+COPY 4h-amihud/whitelist.txt .
 CMD ["python", "main.py"]

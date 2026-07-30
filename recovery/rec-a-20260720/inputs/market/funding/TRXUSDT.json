@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -3.746e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.32679,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.024e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.32727088,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.526e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.32571,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.131e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.32559,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012332,
+    "funding_time": 1784390400001,
+    "mark_price": 0.32248733,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053616,
+    "funding_time": 1784361600000,
+    "mark_price": 0.32213488,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002458,
+    "funding_time": 1784332800000,
+    "mark_price": 0.32249137,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012169,
+    "funding_time": 1784304000004,
+    "mark_price": 0.32273739,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00047159,
+    "funding_time": 1784275200010,
+    "mark_price": 0.32222784,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035767,
+    "funding_time": 1784246400000,
+    "mark_price": 0.32291178,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00067326,
+    "funding_time": 1784217600002,
+    "mark_price": 0.32327543,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00037877,
+    "funding_time": 1784188800003,
+    "mark_price": 0.32388,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045208,
+    "funding_time": 1784160000000,
+    "mark_price": 0.32433,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.279e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.32754,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.021e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.32754,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017551,
+    "funding_time": 1784073600005,
+    "mark_price": 0.32572,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010435,
+    "funding_time": 1784044800001,
+    "mark_price": 0.32558912,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019104,
+    "funding_time": 1784016000002,
+    "mark_price": 0.32498,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00046996,
+    "funding_time": 1783987200000,
+    "mark_price": 0.32423,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023667,
+    "funding_time": 1783958400004,
+    "mark_price": 0.3259,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.201e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.32961,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.356e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.33131069,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.493e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.33094129,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.547e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.32964451,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.425e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.32966,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.33120225,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012571,
+    "funding_time": 1783756800000,
+    "mark_price": 0.32933,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.59e-06,
+    "funding_time": 1783728000000,
+    "mark_price": 0.33023,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.76e-06,
+    "funding_time": 1783699200005,
+    "mark_price": 0.33066571,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.213e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.33029,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.373e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.33208484,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.611e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.331337,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.33174337,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.53e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 0.3282248,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.256e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.32843054,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00012644,
+    "funding_time": 1783497600000,
+    "mark_price": 0.32952,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.903e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.33153,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.508e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.3316,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.57e-06,
+    "funding_time": 1783411200000,
+    "mark_price": 0.32929,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.863e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.32965,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.117e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.32756267,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.603e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.32786698,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.3293,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.32916,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.669e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.32492,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.06e-06,
+    "funding_time": 1783209600003,
+    "mark_price": 0.32515,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.629e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.32573106,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.657e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.32380396,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.32333,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.927e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.32056886,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00051535,
+    "funding_time": 1783065600007,
+    "mark_price": 0.31903453,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00063031,
+    "funding_time": 1783036800000,
+    "mark_price": 0.3173169,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022729,
+    "funding_time": 1783008000000,
+    "mark_price": 0.31822482,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00041818,
+    "funding_time": 1782979200000,
+    "mark_price": 0.31676,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026721,
+    "funding_time": 1782950400000,
+    "mark_price": 0.31573,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.264e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.31772861,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018805,
+    "funding_time": 1782892800000,
+    "mark_price": 0.31629,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00060304,
+    "funding_time": 1782864000000,
+    "mark_price": 0.31501,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00053816,
+    "funding_time": 1782835200005,
+    "mark_price": 0.31662,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026848,
+    "funding_time": 1782806400000,
+    "mark_price": 0.31909725,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.127e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.32117,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.754e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.32335,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.87e-06,
+    "funding_time": 1782720000013,
+    "mark_price": 0.32396524,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.867e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.32198,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.518e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.32325353,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.5e-07,
+    "funding_time": 1782633600013,
+    "mark_price": 0.32152,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.437e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.32108678,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014837,
+    "funding_time": 1782576000009,
+    "mark_price": 0.32051296,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.2e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.32117539,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021344,
+    "funding_time": 1782518400000,
+    "mark_price": 0.32031,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028175,
+    "funding_time": 1782489600000,
+    "mark_price": 0.32007857,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.877e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.32268035,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.764e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.32366551,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010944,
+    "funding_time": 1782403200000,
+    "mark_price": 0.32320524,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.544e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.32928,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 0.32739,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019921,
+    "funding_time": 1782316800003,
+    "mark_price": 0.32719,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00018181,
+    "funding_time": 1782288000005,
+    "mark_price": 0.32893,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022766,
+    "funding_time": 1782259200005,
+    "mark_price": 0.32901,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015533,
+    "funding_time": 1782230400002,
+    "mark_price": 0.32958,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.093e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.33149,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.91e-06,
+    "funding_time": 1782172800003,
+    "mark_price": 0.3339922,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.85e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.32978,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.522e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.33,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.04e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.32758169,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.856e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.32657029,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.205e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.3272911,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.545e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.32660335,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.55e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.32409,
+    "symbol": "TRXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.005e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.32229204,
+    "symbol": "TRXUSDT"
+  }
+]

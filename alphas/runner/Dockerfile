@@ -7,6 +7,7 @@ RUN pip install --no-cache-dir -r /tmp/runner-requirements.txt
 
 COPY alphas/ /app/alphas
 COPY indicators/ /app/indicators
+COPY portfolio_manager/ /app/portfolio_manager
 
 ENV PYTHONPATH=/app/alphas:/app
 ENV RUNNER_METRICS_HOST=0.0.0.0

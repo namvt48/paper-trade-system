@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.15776134,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.1594,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.15845192,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.16166137,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.16094813,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1632,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.1634,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.1638,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.16526451,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.16216094,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024983,
+    "funding_time": 1784376000002,
+    "mark_price": 0.1648,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.1639,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.648e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.1649,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036745,
+    "funding_time": 1784332800000,
+    "mark_price": 0.1651,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.01e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.1648,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017851,
+    "funding_time": 1784304000004,
+    "mark_price": 0.16896432,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.831e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.16904798,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1638,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.16375042,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1637,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.1642,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.16414255,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.1652,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.16453853,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.1653,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.16614691,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.1652,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1678,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.16434755,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028984,
+    "funding_time": 1784102400002,
+    "mark_price": 0.1672,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.16626377,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00018063,
+    "funding_time": 1784073600005,
+    "mark_price": 0.16673826,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.1646,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.954e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.1683,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.1680477,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.17291265,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.1716,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.17523268,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00024249,
+    "funding_time": 1783972800000,
+    "mark_price": 0.1749,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016972,
+    "funding_time": 1783958400004,
+    "mark_price": 0.1715,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.16455596,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1645,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.15843848,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.16496645,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.16669873,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.1689,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.16747348,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.16593155,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.16855629,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1670041,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.1693,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.16980276,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.1719,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00015359,
+    "funding_time": 1783756800000,
+    "mark_price": 0.1742,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.17353557,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.898e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.17556917,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.173e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.17793788,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00064801,
+    "funding_time": 1783699200005,
+    "mark_price": 0.17425441,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.261e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.17105435,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.16905366,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.1693,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1677,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030226,
+    "funding_time": 1783627200000,
+    "mark_price": 0.16793544,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1654,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.16764174,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026464,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1685,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.1669,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.1673,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.16754013,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.16825152,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.17283336,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1705,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.1676,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1645624,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.16638213,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026733,
+    "funding_time": 1783440000000,
+    "mark_price": 0.16595457,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.16776138,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1669406,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.16793623,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1707,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.1708,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.17196809,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.17197451,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.17302349,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.17475673,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1765,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.17596283,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.17127489,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.16936928,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.17047126,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.16893924,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.1728508,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.17499744,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1758,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.17195855,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.17595636,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.1737852,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.17534739,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021247,
+    "funding_time": 1783108800001,
+    "mark_price": 0.17686206,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014771,
+    "funding_time": 1783094400000,
+    "mark_price": 0.17594957,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00071455,
+    "funding_time": 1783080000002,
+    "mark_price": 0.1778,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.902e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.17035802,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.16894553,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.16627615,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.16504756,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1662,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00071097,
+    "funding_time": 1782993600005,
+    "mark_price": 0.1657,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.234e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.16429532,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026155,
+    "funding_time": 1782964800003,
+    "mark_price": 0.16774192,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1639667,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.1624,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.1656,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.16349975,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.16356175,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00055444,
+    "funding_time": 1782878400001,
+    "mark_price": 0.1638,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0003692,
+    "funding_time": 1782864000000,
+    "mark_price": 0.1640881,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012837,
+    "funding_time": 1782849600003,
+    "mark_price": 0.16466125,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.541e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.1672,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002323,
+    "funding_time": 1782820800002,
+    "mark_price": 0.17,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.612e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.17334667,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025337,
+    "funding_time": 1782792000000,
+    "mark_price": 0.17598706,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012977,
+    "funding_time": 1782777600000,
+    "mark_price": 0.17826591,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.1778,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.1772,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.1749,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1764,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017434,
+    "funding_time": 1782705600000,
+    "mark_price": 0.17737164,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.724e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.17760498,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00013852,
+    "funding_time": 1782676800003,
+    "mark_price": 0.18214649,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00045149,
+    "funding_time": 1782662400000,
+    "mark_price": 0.18038719,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00030282,
+    "funding_time": 1782648000008,
+    "mark_price": 0.1693,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026264,
+    "funding_time": 1782633600013,
+    "mark_price": 0.17305245,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00025323,
+    "funding_time": 1782619200002,
+    "mark_price": 0.17407134,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026291,
+    "funding_time": 1782604800000,
+    "mark_price": 0.1723,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.236e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.17333173,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.173,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.1703,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1708,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.1724,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1722,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.1693,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1695,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.16842463,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1701,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.16746197,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.17179001,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.1698,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012865,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1644,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.1625,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1634,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.1617,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.16168983,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.037e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.15769184,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.16150599,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.16126386,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.16164493,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.16057377,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.161138,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1624,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.1607,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.16001223,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.1636676,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.16229382,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.16395375,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.16597976,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.16724939,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.16575358,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.16914455,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.1714,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00060563,
+    "funding_time": 1782072000004,
+    "mark_price": 0.174,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036676,
+    "funding_time": 1782057600000,
+    "mark_price": 0.1754,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011872,
+    "funding_time": 1782043200001,
+    "mark_price": 0.1779,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.17384386,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.16635309,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001063,
+    "funding_time": 1782000000000,
+    "mark_price": 0.16304334,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.1612,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.562e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1619,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.16104262,
+    "symbol": "SOONUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1618,
+    "symbol": "SOONUSDT"
+  }
+]

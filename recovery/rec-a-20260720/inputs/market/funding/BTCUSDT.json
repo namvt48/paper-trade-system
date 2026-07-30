@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 4.89e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 64694.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.235e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 64552.28368841,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.905e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 64692.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.06e-06,
+    "funding_time": 1784419200003,
+    "mark_price": 64806.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.326e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 64090.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.955e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 63987.03769565,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.074e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 63910.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.045e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 63432.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.52e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 62792.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.639e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 63803.90949275,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.102e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 64677.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.584e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 64204.4981934,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.426e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 64722.22011994,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.457e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 65392.88324638,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 64530.40087681,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 65017.64591304,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.59e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 64727.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.489e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 62529.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.256e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 62307.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 62603.79932609,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.856e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 62952.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.521e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 63750.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.578e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 64150.28418841,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.315e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 63856.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.651e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 63787.76113043,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.156e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 64142.50822464,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.42e-06,
+    "funding_time": 1783756800000,
+    "mark_price": 64132.6,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 64129.4,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.508e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 64023.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.247e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 63956.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.058e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 63197.36055797,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.912e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 62837.77481884,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.615e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 62973.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.16e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 62257.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.171e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 61683.73416792,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.24e-06,
+    "funding_time": 1783497600000,
+    "mark_price": 62857.18618116,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.846e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 63331.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.825e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 63909.9,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.792e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 63062.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 64023.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 63523.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.12e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 63064.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.7e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 63625.51176812,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.608e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 62712.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.873e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 62997.87521014,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.533e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 63114.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.48e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 62914.35025362,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 62549.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 62570.25216667,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.74e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 61895.7014058,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 61733.6,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 61540.74072464,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.261e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 61583.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.238e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 60126.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.001e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 59999.6,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.073e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 60120.69034783,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.853e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 58744.4,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.532e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 58605.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.327e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 58356.6362029,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.349e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 59498.43484058,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.175e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 60229.35621014,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.658e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 59800.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.444e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 60001.22944928,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.112e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 59550.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.43e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 59854.54542754,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.355e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 60192.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.258e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 60000.4,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.742e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 60817.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.284e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 60521.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.255e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 60072.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.308e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 60300.5,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.904e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 60501.93606522,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.298e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 59769.9,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.58e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 59532.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.803e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 61886.7,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.423e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 61051.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.7e-07,
+    "funding_time": 1782316800003,
+    "mark_price": 60256.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.134e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 62630.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.154e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 62696.8,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.889e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 62457.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.655e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 62849.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.041e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 63990.41186957,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.813e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 64808.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.514e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 64188.0,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.572e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 63287.1,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.189e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 64200.3,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.034e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 64171.31875,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.78e-06,
+    "funding_time": 1782000000000,
+    "mark_price": 64275.9747971,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.985e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 64129.2,
+    "symbol": "BTCUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.633e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 63624.9,
+    "symbol": "BTCUSDT"
+  }
+]

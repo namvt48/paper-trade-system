@@ -9,7 +9,6 @@
   "universe_size": 180,
   "universe_mode": "dynamic_top_k",
   "rebalance_bars": 96,
-  "exec_lag": 0,
   "vol_lookback": 480,
   "ppy": 35040,
   "long_threshold": 0.9,
@@ -18,5 +17,6 @@
   "max_leverage": 3.0,
   "fee_bps": 7.0,
   "construction": "rank",
-  "winsor_k": 3.0
+  "winsor_k": 3.0,
+  "publish_at_midnight_utc": true
 }

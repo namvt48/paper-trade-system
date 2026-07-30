@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 7.199e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 89.52,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.494e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 89.61,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.61e-06,
+    "funding_time": 1784448000000,
+    "mark_price": 90.74857195,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.524e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 89.92330266,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.521e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 88.79,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.814e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 87.94,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.253e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 89.95,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.61e-06,
+    "funding_time": 1784304000004,
+    "mark_price": 91.43,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.354e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 90.42,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 91.14042799,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.641e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 92.44777408,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.57e-06,
+    "funding_time": 1784188800003,
+    "mark_price": 94.5280586,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.384e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 95.72,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.511e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 97.07768839,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.812e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 97.03,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.659e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 98.8971452,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.626e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 99.78741918,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.742e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 95.21,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.055e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 94.48307444,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.795e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 94.91881524,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.123e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 95.2,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.893e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 96.86,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.24e-06,
+    "funding_time": 1783872000000,
+    "mark_price": 98.65,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.632e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 97.34,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.268e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 98.05,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.768e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 99.96,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.19e-06,
+    "funding_time": 1783756800000,
+    "mark_price": 96.04153078,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.487e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 95.71026174,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 95.56807569,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.088e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 94.19,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 91.28,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 92.3,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 88.49,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 88.27,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.459e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 87.03,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.761e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 88.9788268,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 89.89761951,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.339e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 92.33,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.587e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 93.41,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 94.20878506,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.068e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 96.4,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.018e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 90.74,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.818e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 89.05,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.15e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 89.4,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.21e-06,
+    "funding_time": 1783238400001,
+    "mark_price": 87.85,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 88.59961334,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.73e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 89.56343251,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.489e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 87.61709882,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.153e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 87.56023007,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.777e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 88.6726616,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.984e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 85.99,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.067e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 86.17274184,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.192e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 86.07,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.204e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 84.62,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.019e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 83.16,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.376e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 86.91,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.708e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 85.49,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.925e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 85.09,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.11e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 85.33008528,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 90.16635183,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.174e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 91.44448,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.884e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 90.62,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.815e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 91.56,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.678e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 91.65314612,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.451e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 89.05,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.114e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 90.90757173,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.138e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 93.97,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.93e-06,
+    "funding_time": 1782576000009,
+    "mark_price": 96.14,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.419e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 96.15,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 95.1353192,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.296e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 92.93,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.038e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 86.3,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.46e-06,
+    "funding_time": 1782432000010,
+    "mark_price": 82.33836936,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.205e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 82.12,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.142e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 81.95011271,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.752e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 80.32946352,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.188e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 75.70143174,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 71.50870562,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 72.42,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.497e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 72.05592748,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.557e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 72.14147497,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.88e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 75.01,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.882e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 75.7,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.135e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 75.81,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.452e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 73.92189119,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.265e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 75.05,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.844e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 75.84010949,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.976e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 75.92814834,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.593e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 75.75,
+    "symbol": "AAVEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.997e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 74.25,
+    "symbol": "AAVEUSDT"
+  }
+]

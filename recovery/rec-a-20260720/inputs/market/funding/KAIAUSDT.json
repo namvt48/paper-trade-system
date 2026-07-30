@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.03137,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.03241811,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.03272421,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.03273,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.03271035,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.03273,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784433600000,
+    "mark_price": 0.03273043,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.03286,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784404800004,
+    "mark_price": 0.03278,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.03272,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784376000002,
+    "mark_price": 0.03277,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.0331147,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.03295,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784332800000,
+    "mark_price": 0.03296,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.03302366,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.03296,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.03318359,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.817e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.03303,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.03346,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.03366,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022104,
+    "funding_time": 1784232000002,
+    "mark_price": 0.03376,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.03393,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.03417,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.03361,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.03376,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.03370783,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.03371553,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.03418,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.03415,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.03392,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.03408,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.03409,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.03429,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.0343,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784030400001,
+    "mark_price": 0.0337,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.03358,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.413e-05,
+    "funding_time": 1784001600000,
+    "mark_price": 0.03358,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.007e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.03378232,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022088,
+    "funding_time": 1783972800000,
+    "mark_price": 0.03365,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.832e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.03399,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.0341077,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.03431,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.03429,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.03481,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.03558,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.03525902,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.03476193,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.03458,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.253e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.03503207,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.03444532,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.035,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.03491,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.03475,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.03467,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.03473,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.03471156,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.0351,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.03493251,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.03509,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.03507,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.034784,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783641600000,
+    "mark_price": 0.03458,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783627200000,
+    "mark_price": 0.0345,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.03465971,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783598400002,
+    "mark_price": 0.03489407,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.03454422,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.534e-05,
+    "funding_time": 1783569600002,
+    "mark_price": 0.03421,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.03413,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.03409,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.456e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.03386127,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.654e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.03422001,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.338e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.03441,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.03437042,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.396e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.03446,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.03482,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.665e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.03502,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.03467,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.03461,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.03432,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.03495,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.03477,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.03472,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.501e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.03472621,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.03511184,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.03569,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.03557,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.03525,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.03506,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.03507905,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.03557309,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.03523,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.03551,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.03563,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.03581,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.03553,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.03551,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.03566,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.03586143,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.0355473,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.03548,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.03576,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.03517,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.03526,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0355,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783022400008,
+    "mark_price": 0.03552399,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.03561,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.03498,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.03475,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.03503317,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.03472,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782936000000,
+    "mark_price": 0.03493518,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.03514919,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.03469581,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.03439,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.03506,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.03488048,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.03509,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.03471,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.032e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.03475,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.03486466,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.03609,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.03599,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.03597,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.03589471,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.03535,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.03515,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782705600000,
+    "mark_price": 0.03477,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.03419301,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782676800003,
+    "mark_price": 0.03404072,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.03391,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.03419,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.0345,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.983e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.03476,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.17e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.03461,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.03504,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.03558,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.03538491,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.03533,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.03543571,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.03496,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.03465221,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.03471,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.03397,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.56e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.03455162,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782446400001,
+    "mark_price": 0.03348,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.03355,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.03325,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.03355992,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00033768,
+    "funding_time": 1782388800006,
+    "mark_price": 0.03418509,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.471e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.03468569,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.0343955,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014129,
+    "funding_time": 1782345600000,
+    "mark_price": 0.03437,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029357,
+    "funding_time": 1782331200006,
+    "mark_price": 0.03393,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.03397096,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782302400005,
+    "mark_price": 0.03594479,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.0363,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.03653,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782244800000,
+    "mark_price": 0.03664,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.03689,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.03617135,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.03568671,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.349e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.03660418,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.03705106,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782158400000,
+    "mark_price": 0.03746148,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.653e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.03727879,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.03736,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.03689711,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.03733467,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.0366772,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782072000004,
+    "mark_price": 0.03728,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.03748231,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.03697784,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.03707,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782014400000,
+    "mark_price": 0.03721,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.03720368,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.03705,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.5e-06,
+    "funding_time": 1781971200001,
+    "mark_price": 0.03725,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.03726,
+    "symbol": "KAIAUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.03725,
+    "symbol": "KAIAUSDT"
+  }
+]

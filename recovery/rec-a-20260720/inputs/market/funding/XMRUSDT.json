@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00028754,
+    "funding_time": 1784505600000,
+    "mark_price": 336.93842857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00036729,
+    "funding_time": 1784476800001,
+    "mark_price": 334.01007143,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784448000000,
+    "mark_price": 339.518,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784419200003,
+    "mark_price": 336.00642857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784390400001,
+    "mark_price": 333.09428571,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00058391,
+    "funding_time": 1784361600000,
+    "mark_price": 328.61,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00071251,
+    "funding_time": 1784332800000,
+    "mark_price": 330.95952381,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784304000004,
+    "mark_price": 326.62,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784275200010,
+    "mark_price": 330.28719048,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784246400000,
+    "mark_price": 335.02833333,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784217600002,
+    "mark_price": 336.62,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 334.70285714,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 330.24948276,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 332.92292857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 329.94547619,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 330.7737619,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784044800001,
+    "mark_price": 329.76714286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784016000002,
+    "mark_price": 325.61407143,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783987200000,
+    "mark_price": 321.78709524,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783958400004,
+    "mark_price": 321.86,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.058e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 329.9,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783900800000,
+    "mark_price": 324.449,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 329.53,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 327.16714286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 322.79,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 320.43566667,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 322.80335714,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 322.54,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 324.59571429,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 316.207,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 314.25,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 317.87814286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 326.881,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783555200000,
+    "mark_price": 320.22142857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00044902,
+    "funding_time": 1783526400000,
+    "mark_price": 322.81544335,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783497600000,
+    "mark_price": 331.04,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783468800000,
+    "mark_price": 335.15219212,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783440000000,
+    "mark_price": 331.73,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 326.56957143,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001558,
+    "funding_time": 1783382400000,
+    "mark_price": 323.8,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 321.95,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 321.45938095,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 327.56185714,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010573,
+    "funding_time": 1783267200000,
+    "mark_price": 328.63604762,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 329.36,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 328.4,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 329.78,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.714e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 330.07514286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 324.48,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 323.56652381,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 319.76,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 317.66428571,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 312.53,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 309.09185714,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.921e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 308.93,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 306.84,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782892800000,
+    "mark_price": 305.86842857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 303.91214286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782835200005,
+    "mark_price": 304.52,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 310.75552381,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 315.59,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 309.25,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 310.93,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 311.1,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 313.93,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782633600013,
+    "mark_price": 312.66428571,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782604800000,
+    "mark_price": 313.23,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782576000009,
+    "mark_price": 315.24745238,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 316.76,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782518400000,
+    "mark_price": 320.95,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782489600000,
+    "mark_price": 320.3,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 312.72,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782432000010,
+    "mark_price": 307.64264286,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782403200000,
+    "mark_price": 307.26,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782374400000,
+    "mark_price": 317.2379803,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782345600000,
+    "mark_price": 315.22,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782316800003,
+    "mark_price": 320.41,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782288000005,
+    "mark_price": 325.49,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782259200005,
+    "mark_price": 318.92721429,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782230400002,
+    "mark_price": 314.21142857,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782201600005,
+    "mark_price": 324.06571429,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782172800003,
+    "mark_price": 318.06647619,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 331.92354762,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 324.79,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782086400000,
+    "mark_price": 320.66,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782057600000,
+    "mark_price": 318.98,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 322.5802381,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782000000000,
+    "mark_price": 321.29,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1781971200001,
+    "mark_price": 320.76,
+    "symbol": "XMRUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0008152,
+    "funding_time": 1781942400000,
+    "mark_price": 313.58042857,
+    "symbol": "XMRUSDT"
+  }
+]

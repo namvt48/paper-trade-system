@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784505600000,
+    "mark_price": 0.09496158,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.766e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.0941,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.303e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.09493326,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.925e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.0954,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.54e-06,
+    "funding_time": 1784390400001,
+    "mark_price": 0.0947,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784361600000,
+    "mark_price": 0.096,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014,
+    "funding_time": 1784332800000,
+    "mark_price": 0.09595114,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.846e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.0963,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.656e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.09618182,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.953e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.0986024,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.942e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.10031661,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.879e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.10123682,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784160000000,
+    "mark_price": 0.10215811,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.10287079,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.901e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.10075,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1015,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.61e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.10212501,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.908e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1005,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.816e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0984,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.968e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.0989,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.92e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.09966368,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.59e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.1001,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.319e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.10214603,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.044e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.10134811,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1019,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.579e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1058,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.10394522,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1034,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.105,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.10558816,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.10204801,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.10325049,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.1034,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.28e-06,
+    "funding_time": 1783555200000,
+    "mark_price": 0.09962291,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.154e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.09774842,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.666e-05,
+    "funding_time": 1783497600000,
+    "mark_price": 0.09890279,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.616e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1021,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.779e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1044,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.1046,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.10722842,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783353600000,
+    "mark_price": 0.10745368,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.1071,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1085,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1067,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.1069,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783209600003,
+    "mark_price": 0.10761667,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1085,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.10688342,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.1071,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.10514674,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.10115,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.0987,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.09880004,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.773e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.09745047,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.000158,
+    "funding_time": 1782950400000,
+    "mark_price": 0.0945,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.824e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.09617237,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019258,
+    "funding_time": 1782892800000,
+    "mark_price": 0.09354189,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.239e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.09636867,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011788,
+    "funding_time": 1782835200005,
+    "mark_price": 0.09492891,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.45e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.09875,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.942e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.10039921,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.175e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.10185133,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782720000013,
+    "mark_price": 0.102,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782691200006,
+    "mark_price": 0.10003228,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.071e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1015,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.731e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.10115,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.292e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.10075063,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.326e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.10348816,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.809e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1054,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.6e-06,
+    "funding_time": 1782518400000,
+    "mark_price": 0.10565,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.75e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.1057,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1078,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.435e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.10552826,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.804e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.103,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.376e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.1085581,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.364e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.10430868,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.12e-06,
+    "funding_time": 1782316800003,
+    "mark_price": 0.0986,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.379e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1013,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.077e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.10128914,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.358e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.10008895,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.583e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.0982,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.063e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.10069289,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782144000002,
+    "mark_price": 0.1024,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.079e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.1031,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.059e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.09972074,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.85e-06,
+    "funding_time": 1782057600000,
+    "mark_price": 0.10314932,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.429e-05,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1031,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010662,
+    "funding_time": 1782000000000,
+    "mark_price": 0.10364521,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020356,
+    "funding_time": 1781971200001,
+    "mark_price": 0.10158342,
+    "symbol": "OPUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.669e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.103,
+    "symbol": "OPUSDT"
+  }
+]

@@ -350,9 +350,11 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
 
 
 async def run_strategy_event_loop(
-    strategy, queue: asyncio.Queue, stop_event: asyncio.Event, metrics=None,
+    strategy, queue: asyncio.Queue[DataEvent], stop_event: asyncio.Event,
+    metrics: RunnerMetrics | None = None,
     scan_semaphore: asyncio.Semaphore | None = None,
 ) -> None:
+    """Process one strategy queue while recording bounded admission and scan latency."""
     while not stop_event.is_set():
         try:
             event = await asyncio.wait_for(queue.get(), timeout=1.0)
@@ -364,6 +366,10 @@ async def run_strategy_event_loop(
             if event.received_monotonic > 0:
                 queue_wait_ms = max(0.0, (started - event.received_monotonic) * 1000.0)
             event_timeout_sec = _event_timeout_sec(event)
+            semaphore_wait_started = time.perf_counter()
+            waiter_registered = metrics is not None and scan_semaphore is not None
+            if waiter_registered and metrics is not None:
+                metrics.scan_wait_started()
             try:
                 # A universe refresh fans out to every alpha's queue at
                 # once; without a ceiling here, all of them would call
@@ -375,6 +381,10 @@ async def run_strategy_event_loop(
                 # across all of them). No-op when no semaphore is passed
                 # (existing callers/tests keep today's behavior).
                 async with (scan_semaphore or contextlib.nullcontext()):
+                    semaphore_wait_ms = _duration_ms(semaphore_wait_started)
+                    if waiter_registered and metrics is not None:
+                        metrics.scan_wait_finished()
+                        waiter_registered = False
                     timings = await asyncio.wait_for(
                         handle_strategy_event(strategy, event), timeout=event_timeout_sec,
                     )
@@ -390,9 +400,21 @@ async def run_strategy_event_loop(
                     extra={"alpha_id": strategy.alpha_id},
                 )
                 continue
+            finally:
+                if waiter_registered and metrics is not None:
+                    metrics.scan_wait_finished()
             if metrics is not None:
                 metrics.mark_event_processed(strategy.alpha_id, time.time())
             total_ms = _duration_ms(started)
+            if metrics is not None:
+                metrics.observe_event(
+                    kind=event.kind,
+                    queue_wait_ms=queue_wait_ms,
+                    semaphore_wait_ms=semaphore_wait_ms,
+                    scan_ms=timings.get("scan_ms", 0.0),
+                    total_ms=total_ms,
+                    scanned=bool(timings.get("scanned", False)),
+                )
             data_open_ms = _payload_int(event.payload, "open_time")
             data_close_ms = _payload_int(event.payload, "close_time")
             data_age_ms = 0
@@ -571,7 +593,7 @@ async def run(
             socket_connect_timeout=cfg.mds_redis_socket_timeout_sec,
         )
         lease = LeaseManager(redis_client, cfg.runner_id, cfg.lease_ttl_sec)
-        dispatcher = SignalDispatcher(redis_client, cfg.signal_stream, lease)
+        dispatcher = SignalDispatcher(redis_client, cfg.signal_stream, lease, metrics=metrics)
         pubsub = SharedPubSubManager(mds_client, cache, cfg.data_queue_maxsize)
         warmup_backend = MDSWarmupBackend(
             mds_client,

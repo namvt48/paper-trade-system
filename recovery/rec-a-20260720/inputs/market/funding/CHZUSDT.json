@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059121,
+    "funding_time": 1784505600000,
+    "mark_price": 0.01482436,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00079811,
+    "funding_time": 1784476800001,
+    "mark_price": 0.01505255,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00035877,
+    "funding_time": 1784448000000,
+    "mark_price": 0.01536044,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032164,
+    "funding_time": 1784419200003,
+    "mark_price": 0.01571486,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00040652,
+    "funding_time": 1784390400001,
+    "mark_price": 0.01562001,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00066362,
+    "funding_time": 1784361600000,
+    "mark_price": 0.01568,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00059604,
+    "funding_time": 1784332800000,
+    "mark_price": 0.01597,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00048092,
+    "funding_time": 1784304000004,
+    "mark_price": 0.01594,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00031294,
+    "funding_time": 1784275200010,
+    "mark_price": 0.01633266,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.79e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.01671,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.208e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.01689,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.461e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.01676281,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.038e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.01672,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.01671528,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784102400002,
+    "mark_price": 0.01666,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784073600005,
+    "mark_price": 0.01674,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.28e-06,
+    "funding_time": 1784044800001,
+    "mark_price": 0.01683443,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021619,
+    "funding_time": 1784016000002,
+    "mark_price": 0.01643,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00038233,
+    "funding_time": 1783987200000,
+    "mark_price": 0.0163929,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.68e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.01670392,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.93e-06,
+    "funding_time": 1783929600001,
+    "mark_price": 0.01679,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.454e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.01689466,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783872000000,
+    "mark_price": 0.01721,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.065e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.01721647,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.049e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.01714819,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.01757456,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.01751,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00014118,
+    "funding_time": 1783728000000,
+    "mark_price": 0.01702499,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016596,
+    "funding_time": 1783699200005,
+    "mark_price": 0.01687,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00027779,
+    "funding_time": 1783670400005,
+    "mark_price": 0.01681999,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017967,
+    "funding_time": 1783641600000,
+    "mark_price": 0.01686259,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.017e-05,
+    "funding_time": 1783612800001,
+    "mark_price": 0.01701449,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.656e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.017175,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.782e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.01705,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0004267,
+    "funding_time": 1783526400000,
+    "mark_price": 0.01634016,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00054321,
+    "funding_time": 1783497600000,
+    "mark_price": 0.01688,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00065209,
+    "funding_time": 1783468800000,
+    "mark_price": 0.01723,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.174e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.0177221,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783411200000,
+    "mark_price": 0.01780419,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.01808,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.863e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.01810155,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00013574,
+    "funding_time": 1783324800000,
+    "mark_price": 0.01782,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783296000000,
+    "mark_price": 0.01851,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.016e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.01831,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.71e-06,
+    "funding_time": 1783238400001,
+    "mark_price": 0.01835453,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.121e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.01841427,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.865e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.01858233,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.879e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.01830579,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.01859422,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.01846,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.01853,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.01e-06,
+    "funding_time": 1783036800000,
+    "mark_price": 0.01795,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.01791,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.215e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.01792089,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017094,
+    "funding_time": 1782950400000,
+    "mark_price": 0.01773,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.935e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.01795627,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.455e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.0175,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.01785,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.644e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.01817,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.01908,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.726e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.01912,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.044e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.01756,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.445e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.0173,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00022054,
+    "funding_time": 1782691200006,
+    "mark_price": 0.01745,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023483,
+    "funding_time": 1782662400000,
+    "mark_price": 0.01753569,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00020435,
+    "funding_time": 1782633600013,
+    "mark_price": 0.01771,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00034488,
+    "funding_time": 1782604800000,
+    "mark_price": 0.01763501,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002072,
+    "funding_time": 1782576000009,
+    "mark_price": 0.01804486,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0001362,
+    "funding_time": 1782547200000,
+    "mark_price": 0.01803498,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.605e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.01796,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010509,
+    "funding_time": 1782489600000,
+    "mark_price": 0.01813,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.862e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.01802,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00017931,
+    "funding_time": 1782432000010,
+    "mark_price": 0.01793031,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00036616,
+    "funding_time": 1782403200000,
+    "mark_price": 0.01780141,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9e-06,
+    "funding_time": 1782374400000,
+    "mark_price": 0.01889,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.078e-05,
+    "funding_time": 1782345600000,
+    "mark_price": 0.01904,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.546e-05,
+    "funding_time": 1782316800003,
+    "mark_price": 0.01922,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.284e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.01962341,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.473e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.0195,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.407e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.01912137,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.55e-06,
+    "funding_time": 1782201600005,
+    "mark_price": 0.01916,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049572,
+    "funding_time": 1782172800003,
+    "mark_price": 0.01995,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00045253,
+    "funding_time": 1782144000002,
+    "mark_price": 0.02041,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00021253,
+    "funding_time": 1782115200000,
+    "mark_price": 0.02094848,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026759,
+    "funding_time": 1782086400000,
+    "mark_price": 0.02065207,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00026306,
+    "funding_time": 1782057600000,
+    "mark_price": 0.02142896,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016127,
+    "funding_time": 1782028800000,
+    "mark_price": 0.02147505,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002602,
+    "funding_time": 1782000000000,
+    "mark_price": 0.02171476,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00019444,
+    "funding_time": 1781971200001,
+    "mark_price": 0.02179,
+    "symbol": "CHZUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002735,
+    "funding_time": 1781942400000,
+    "mark_price": 0.02173,
+    "symbol": "CHZUSDT"
+  }
+]

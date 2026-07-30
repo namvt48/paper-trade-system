@@ -1,0 +1,1255 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784520000000,
+    "mark_price": 0.4202,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.4058,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784491200004,
+    "mark_price": 0.41031822,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.4133,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784462400000,
+    "mark_price": 0.423,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.42211155,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.000105,
+    "funding_time": 1784433600000,
+    "mark_price": 0.42545473,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00011746,
+    "funding_time": 1784419200003,
+    "mark_price": 0.4272,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010134,
+    "funding_time": 1784404800004,
+    "mark_price": 0.42964142,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012817,
+    "funding_time": 1784390400001,
+    "mark_price": 0.44551605,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00021515,
+    "funding_time": 1784376000002,
+    "mark_price": 0.45520707,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023401,
+    "funding_time": 1784361600000,
+    "mark_price": 0.4465,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.632e-05,
+    "funding_time": 1784347200000,
+    "mark_price": 0.4354,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00010505,
+    "funding_time": 1784332800000,
+    "mark_price": 0.4552,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.616e-05,
+    "funding_time": 1784318400000,
+    "mark_price": 0.4262,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.653e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.42750717,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.925e-05,
+    "funding_time": 1784289600004,
+    "mark_price": 0.42329769,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.3959237,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784260800000,
+    "mark_price": 0.4062,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.94e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.4192,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784232000002,
+    "mark_price": 0.4181823,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.4341,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.819e-05,
+    "funding_time": 1784203200001,
+    "mark_price": 0.4267,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.147e-05,
+    "funding_time": 1784188800003,
+    "mark_price": 0.43012299,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.547e-05,
+    "funding_time": 1784174400003,
+    "mark_price": 0.4365,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.827e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.42962145,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784145600002,
+    "mark_price": 0.4381,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784131200000,
+    "mark_price": 0.4271213,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784116800003,
+    "mark_price": 0.39495867,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.3885,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784088000003,
+    "mark_price": 0.39574636,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.4070801,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1784059200000,
+    "mark_price": 0.39069951,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.804e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.4159,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00020067,
+    "funding_time": 1784030400001,
+    "mark_price": 0.4224,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00026649,
+    "funding_time": 1784016000002,
+    "mark_price": 0.4221,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016089,
+    "funding_time": 1784001600000,
+    "mark_price": 0.42385742,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.985e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.41328273,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016117,
+    "funding_time": 1783972800000,
+    "mark_price": 0.4306,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014799,
+    "funding_time": 1783958400004,
+    "mark_price": 0.43501602,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783944000000,
+    "mark_price": 0.3937,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783929600001,
+    "mark_price": 0.40023862,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783915200000,
+    "mark_price": 0.40027433,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.3969,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783886400002,
+    "mark_price": 0.3992,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.39955645,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783857600000,
+    "mark_price": 0.4095,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783843200003,
+    "mark_price": 0.40558238,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783828800000,
+    "mark_price": 0.38181841,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783814400000,
+    "mark_price": 0.36718472,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783800000000,
+    "mark_price": 0.373,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783785600000,
+    "mark_price": 0.3658,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783771200008,
+    "mark_price": 0.38560354,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783756800000,
+    "mark_price": 0.38534409,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783742400000,
+    "mark_price": 0.3754,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783728000000,
+    "mark_price": 0.3996,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783713600000,
+    "mark_price": 0.4111,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783699200005,
+    "mark_price": 0.4137,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783684800002,
+    "mark_price": 0.4214,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783670400005,
+    "mark_price": 0.4230338,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783656000000,
+    "mark_price": 0.46817938,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00010621,
+    "funding_time": 1783641600000,
+    "mark_price": 0.4422,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00015201,
+    "funding_time": 1783627200000,
+    "mark_price": 0.42638745,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00029046,
+    "funding_time": 1783612800001,
+    "mark_price": 0.41220711,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00049949,
+    "funding_time": 1783598400002,
+    "mark_price": 0.42111751,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783584000001,
+    "mark_price": 0.47612262,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011201,
+    "funding_time": 1783569600002,
+    "mark_price": 0.41826495,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002165,
+    "funding_time": 1783555200000,
+    "mark_price": 0.40605396,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783540800006,
+    "mark_price": 0.41432637,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.225e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.45553233,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783512000005,
+    "mark_price": 0.52213969,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016968,
+    "funding_time": 1783497600000,
+    "mark_price": 0.487,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783483200003,
+    "mark_price": 0.40057492,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.3946,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.635e-05,
+    "funding_time": 1783454400000,
+    "mark_price": 0.3938,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.392e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.3522061,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.023e-05,
+    "funding_time": 1783425600010,
+    "mark_price": 0.33193617,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.32628745,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783396800000,
+    "mark_price": 0.33209724,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783382400000,
+    "mark_price": 0.3131,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783368000003,
+    "mark_price": 0.29928607,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.27171844,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783339200002,
+    "mark_price": 0.2615,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783324800000,
+    "mark_price": 0.26506911,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783310400000,
+    "mark_price": 0.2498,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.761e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.241816,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783281600000,
+    "mark_price": 0.24206088,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.32e-05,
+    "funding_time": 1783267200000,
+    "mark_price": 0.2407,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783252800000,
+    "mark_price": 0.24225043,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783238400001,
+    "mark_price": 0.24151386,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783224000002,
+    "mark_price": 0.2451,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.2472,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783195200000,
+    "mark_price": 0.2563,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.26056167,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783166400000,
+    "mark_price": 0.2557,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783152000000,
+    "mark_price": 0.2581,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783137600006,
+    "mark_price": 0.25961754,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783123200000,
+    "mark_price": 0.26233046,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783108800001,
+    "mark_price": 0.26202017,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783094400000,
+    "mark_price": 0.26426638,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783080000002,
+    "mark_price": 0.263,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783065600007,
+    "mark_price": 0.26847812,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783051200000,
+    "mark_price": 0.268,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783036800000,
+    "mark_price": 0.27025036,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.06e-06,
+    "funding_time": 1783022400008,
+    "mark_price": 0.2633,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1783008000000,
+    "mark_price": 0.2633673,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782993600005,
+    "mark_price": 0.2578,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782979200000,
+    "mark_price": 0.26277141,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782964800003,
+    "mark_price": 0.26707633,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -5.985e-05,
+    "funding_time": 1782950400000,
+    "mark_price": 0.2581,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00074801,
+    "funding_time": 1782936000000,
+    "mark_price": 0.25218252,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782921600000,
+    "mark_price": 0.2595,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782907200000,
+    "mark_price": 0.26226851,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.26815179,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782878400001,
+    "mark_price": 0.2729227,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782864000000,
+    "mark_price": 0.28500164,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782849600003,
+    "mark_price": 0.27807644,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.2824,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782820800002,
+    "mark_price": 0.28140526,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782806400000,
+    "mark_price": 0.28980561,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782792000000,
+    "mark_price": 0.28492801,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782777600000,
+    "mark_price": 0.28671262,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782763200000,
+    "mark_price": 0.28923919,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782748800004,
+    "mark_price": 0.2866,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.289e-05,
+    "funding_time": 1782734400001,
+    "mark_price": 0.28511908,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.28994634,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.35e-06,
+    "funding_time": 1782705600000,
+    "mark_price": 0.2768,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00023297,
+    "funding_time": 1782691200006,
+    "mark_price": 0.2782,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00028402,
+    "funding_time": 1782676800003,
+    "mark_price": 0.2831525,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782662400000,
+    "mark_price": 0.2903,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782648000008,
+    "mark_price": 0.29595737,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.2999,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.013e-05,
+    "funding_time": 1782619200002,
+    "mark_price": 0.2947,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.2987,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782590400000,
+    "mark_price": 0.30295949,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.313,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782561600001,
+    "mark_price": 0.30034461,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782547200000,
+    "mark_price": 0.28904958,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782532800000,
+    "mark_price": 0.3009,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.3039,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782504000000,
+    "mark_price": 0.3053,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.30096259,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782475200004,
+    "mark_price": 0.3009795,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.3165,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.72e-06,
+    "funding_time": 1782446400001,
+    "mark_price": 0.3045,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.3235,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782417600011,
+    "mark_price": 0.32376536,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.3271,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782388800006,
+    "mark_price": 0.3526,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.3673,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782360000008,
+    "mark_price": 0.37146333,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012316,
+    "funding_time": 1782345600000,
+    "mark_price": 0.3753617,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782331200006,
+    "mark_price": 0.3613937,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002055,
+    "funding_time": 1782316800003,
+    "mark_price": 0.3769,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00016816,
+    "funding_time": 1782302400005,
+    "mark_price": 0.3969,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0002513,
+    "funding_time": 1782288000005,
+    "mark_price": 0.4013,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.38984683,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00023727,
+    "funding_time": 1782244800000,
+    "mark_price": 0.3847563,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00012352,
+    "funding_time": 1782230400002,
+    "mark_price": 0.3857,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782216000000,
+    "mark_price": 0.36459574,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.926e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.38138275,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.607e-05,
+    "funding_time": 1782187200000,
+    "mark_price": 0.38300101,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.38420114,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00014643,
+    "funding_time": 1782158400000,
+    "mark_price": 0.38648112,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.454e-05,
+    "funding_time": 1782144000002,
+    "mark_price": 0.38400739,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.917e-05,
+    "funding_time": 1782129600000,
+    "mark_price": 0.3815,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1782115200000,
+    "mark_price": 0.37923722,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.825e-05,
+    "funding_time": 1782100800000,
+    "mark_price": 0.3885,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.984e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.3912,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001905,
+    "funding_time": 1782072000004,
+    "mark_price": 0.41035187,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.293e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.38406425,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.224e-05,
+    "funding_time": 1782043200001,
+    "mark_price": 0.39088202,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001103,
+    "funding_time": 1782028800000,
+    "mark_price": 0.3988,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.00017928,
+    "funding_time": 1782014400000,
+    "mark_price": 0.39293425,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.246e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.3957,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.663e-05,
+    "funding_time": 1781985600000,
+    "mark_price": 0.39715431,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5e-05,
+    "funding_time": 1781971200001,
+    "mark_price": 0.4051,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.818e-05,
+    "funding_time": 1781956800001,
+    "mark_price": 0.40984214,
+    "symbol": "EDGEUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.675e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.40131454,
+    "symbol": "EDGEUSDT"
+  }
+]

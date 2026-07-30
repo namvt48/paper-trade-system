@@ -8,7 +8,7 @@ Factor trend lõi — **một tín hiệu chạy ở bốn khung**. Long coin c�
 | signal | `cs_zscore(ts_zscore(close_t180, D))`, D = 30 ngày tính theo bar |
 | định cỡ | trọng số độ lớn từng coin (winsor-cont, không rank) — xem [overview](overview.md) |
 | universe | top-180 theo thanh khoản trượt (`_t180`) |
-| exec_lag | 1 bar · vol-target 10%/năm · max_lev 3 · trung hòa đô-la gross 1 |
+| sizing | vol-target 10%/năm · max_lev 3 · trung hòa đô-la gross 1 |
 | hướng | **long z cao (uptrend), short z thấp** (momentum) — KHÔNG phải hướng contrarian trong doc cũ |
 
 ## Tín hiệu & vào lệnh long/short

@@ -1,0 +1,632 @@
+[
+  {
+    "exchange": "binance",
+    "funding_rate": 8.527e-05,
+    "funding_time": 1784505600000,
+    "mark_price": 0.16366802,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -9.174e-05,
+    "funding_time": 1784476800001,
+    "mark_price": 0.164,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.6e-05,
+    "funding_time": 1784448000000,
+    "mark_price": 0.1649,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -8.084e-05,
+    "funding_time": 1784419200003,
+    "mark_price": 0.16525,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.766e-05,
+    "funding_time": 1784390400001,
+    "mark_price": 0.16504054,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.709e-05,
+    "funding_time": 1784361600000,
+    "mark_price": 0.1645,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.86e-06,
+    "funding_time": 1784332800000,
+    "mark_price": 0.16465,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.176e-05,
+    "funding_time": 1784304000004,
+    "mark_price": 0.16542148,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.495e-05,
+    "funding_time": 1784275200010,
+    "mark_price": 0.1634,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.182e-05,
+    "funding_time": 1784246400000,
+    "mark_price": 0.1672,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.485e-05,
+    "funding_time": 1784217600002,
+    "mark_price": 0.1679,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784188800003,
+    "mark_price": 0.16803514,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 7.521e-05,
+    "funding_time": 1784160000000,
+    "mark_price": 0.16847802,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1784131200000,
+    "mark_price": 0.1694,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.784e-05,
+    "funding_time": 1784102400002,
+    "mark_price": 0.16775,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.448e-05,
+    "funding_time": 1784073600005,
+    "mark_price": 0.1687,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.971e-05,
+    "funding_time": 1784044800001,
+    "mark_price": 0.16841337,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -7.312e-05,
+    "funding_time": 1784016000002,
+    "mark_price": 0.1649,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.669e-05,
+    "funding_time": 1783987200000,
+    "mark_price": 0.16615876,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.66e-05,
+    "funding_time": 1783958400004,
+    "mark_price": 0.16501,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783929600001,
+    "mark_price": 0.1661,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 9.011e-05,
+    "funding_time": 1783900800000,
+    "mark_price": 0.16895,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.207e-05,
+    "funding_time": 1783872000000,
+    "mark_price": 0.173,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783843200003,
+    "mark_price": 0.17615,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783814400000,
+    "mark_price": 0.1715,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783785600000,
+    "mark_price": 0.1745,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783756800000,
+    "mark_price": 0.17253,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783728000000,
+    "mark_price": 0.1718,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783699200005,
+    "mark_price": 0.1713,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783670400005,
+    "mark_price": 0.1708,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783641600000,
+    "mark_price": 0.1691,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783612800001,
+    "mark_price": 0.1713,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783584000001,
+    "mark_price": 0.17083703,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.864e-05,
+    "funding_time": 1783555200000,
+    "mark_price": 0.16684054,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 2.573e-05,
+    "funding_time": 1783526400000,
+    "mark_price": 0.16426216,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.0002261,
+    "funding_time": 1783497600000,
+    "mark_price": 0.1623,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -2.099e-05,
+    "funding_time": 1783468800000,
+    "mark_price": 0.1646,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.889e-05,
+    "funding_time": 1783440000000,
+    "mark_price": 0.1679,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.103e-05,
+    "funding_time": 1783411200000,
+    "mark_price": 0.16590144,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783382400000,
+    "mark_price": 0.1712,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.397e-05,
+    "funding_time": 1783353600000,
+    "mark_price": 0.17083423,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783324800000,
+    "mark_price": 0.16939865,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.955e-05,
+    "funding_time": 1783296000000,
+    "mark_price": 0.1726,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783267200000,
+    "mark_price": 0.1705,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783238400001,
+    "mark_price": 0.16974469,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.595e-05,
+    "funding_time": 1783209600003,
+    "mark_price": 0.17312883,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 6.95e-05,
+    "funding_time": 1783180800007,
+    "mark_price": 0.1743,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783152000000,
+    "mark_price": 0.17136486,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783123200000,
+    "mark_price": 0.17354613,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783094400000,
+    "mark_price": 0.1703,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783065600007,
+    "mark_price": 0.1684,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783036800000,
+    "mark_price": 0.1665,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1783008000000,
+    "mark_price": 0.1663,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782979200000,
+    "mark_price": 0.1645,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782950400000,
+    "mark_price": 0.1652,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782921600000,
+    "mark_price": 0.16584054,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.151e-05,
+    "funding_time": 1782892800000,
+    "mark_price": 0.1616,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782864000000,
+    "mark_price": 0.16104126,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.362e-05,
+    "funding_time": 1782835200005,
+    "mark_price": 0.16122189,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782806400000,
+    "mark_price": 0.1623,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782777600000,
+    "mark_price": 0.1668,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782748800004,
+    "mark_price": 0.16630172,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.814e-05,
+    "funding_time": 1782720000013,
+    "mark_price": 0.1677,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.571e-05,
+    "funding_time": 1782691200006,
+    "mark_price": 0.1653,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782662400000,
+    "mark_price": 0.1662,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.687e-05,
+    "funding_time": 1782633600013,
+    "mark_price": 0.168,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.904e-05,
+    "funding_time": 1782604800000,
+    "mark_price": 0.16763856,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.271e-05,
+    "funding_time": 1782576000009,
+    "mark_price": 0.1712,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782547200000,
+    "mark_price": 0.1712,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.891e-05,
+    "funding_time": 1782518400000,
+    "mark_price": 0.1696,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.669e-05,
+    "funding_time": 1782489600000,
+    "mark_price": 0.16869757,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.416e-05,
+    "funding_time": 1782460800002,
+    "mark_price": 0.1659,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -6.054e-05,
+    "funding_time": 1782432000010,
+    "mark_price": 0.1645,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.726e-05,
+    "funding_time": 1782403200000,
+    "mark_price": 0.1656,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.12e-05,
+    "funding_time": 1782374400000,
+    "mark_price": 0.17465,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00016456,
+    "funding_time": 1782345600000,
+    "mark_price": 0.1719,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00032941,
+    "funding_time": 1782316800003,
+    "mark_price": 0.167,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -1.073e-05,
+    "funding_time": 1782288000005,
+    "mark_price": 0.1752,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.753e-05,
+    "funding_time": 1782259200005,
+    "mark_price": 0.17748387,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -3.692e-05,
+    "funding_time": 1782230400002,
+    "mark_price": 0.1778,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -4.053e-05,
+    "funding_time": 1782201600005,
+    "mark_price": 0.17671009,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.067e-05,
+    "funding_time": 1782172800003,
+    "mark_price": 0.17970009,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 3.47e-06,
+    "funding_time": 1782144000002,
+    "mark_price": 0.18334595,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782115200000,
+    "mark_price": 0.17915,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 1.804e-05,
+    "funding_time": 1782086400000,
+    "mark_price": 0.1772,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 8.434e-05,
+    "funding_time": 1782057600000,
+    "mark_price": 0.18344667,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 0.0001,
+    "funding_time": 1782028800000,
+    "mark_price": 0.1833,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 5.949e-05,
+    "funding_time": 1782000000000,
+    "mark_price": 0.18364161,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": -0.00011377,
+    "funding_time": 1781971200001,
+    "mark_price": 0.1818,
+    "symbol": "STXUSDT"
+  },
+  {
+    "exchange": "binance",
+    "funding_rate": 4.911e-05,
+    "funding_time": 1781942400000,
+    "mark_price": 0.1809,
+    "symbol": "STXUSDT"
+  }
+]
