@@ -73,6 +73,11 @@ class TickerPriceCache:
         quote = self.get_quote(symbol)
         return quote.price if quote is not None else None
 
+    def get_last_price(self, symbol: str) -> float | None:
+        """Return the latest observed price without execution-staleness filtering."""
+        item = self._prices.get(symbol)
+        return item[0] if item is not None else None
+
     def get_quote(self, symbol: str) -> PriceQuote | None:
         item = self._prices.get(symbol)
         if item is None:

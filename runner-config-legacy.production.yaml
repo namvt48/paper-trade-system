@@ -44,12 +44,12 @@ alphas:
   - alpha_id: alpha-1-v5b
     strategy: legacy_standalone
     version: "legacy"
-    enabled: true
+    enabled: false
     params: {alpha_dir: alpha-1-v5b, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
   - alpha_id: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct
     strategy: legacy_standalone
     version: "legacy"
-    enabled: true
+    enabled: false
     params: {alpha_dir: alpha-1-v5b-2-8pct-reverse-blacklist-reverse-2-8pct, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
   - alpha_id: alpha-1-v5b-reverse-blacklist-base-reverse
     strategy: legacy_standalone

@@ -73,7 +73,7 @@ def _to_int(data: dict, key: str, default: int = 1) -> int:
     val = data.get(key)
     if val is None or val == "":
         return default
-    return int(val)
+    return int(float(val))
 
 
 def parse_signal(data: dict):

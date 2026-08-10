@@ -24,6 +24,7 @@ TIMEFRAME_MS: Final = {
 
 INCIDENT_SCHEDULES: Final = (
     AlphaSchedule(AlphaId("1d-kertrend"), "1d", 1),
+    AlphaSchedule(AlphaId("1d-trend60cmf"), "1d", 1, "2026-07-31"),
     AlphaSchedule(AlphaId("1d-vwaprev"), "1d", 1),
     AlphaSchedule(AlphaId("1d-iamp"), "1d", 1),
     AlphaSchedule(AlphaId("1d-chmom"), "1d", 1, "2026-07-17"),

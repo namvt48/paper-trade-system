@@ -30,6 +30,9 @@ runner:
 modules:
   - runner.strategies.cross_sectional
   - runner.strategies.xau_m30
+  - runner.strategies.suplo_xau
+  - runner.strategies.supertrend_xau_v2
+  - runner.strategies.suplo_atr1_5
 
 alphas:
   # XAU M30 alpha bundle — active paper-trade strategies.
@@ -37,36 +40,65 @@ alphas:
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 4, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+    params: {preset: 4, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
   - alpha_id: xau-m30-alpha-5
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 5, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+    params: {preset: 5, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
   - alpha_id: xau-m30-alpha-6
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 6, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+    params: {preset: 6, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
   - alpha_id: xau-m30-alpha-10
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 10, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: true}
+    params: {preset: 10, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: true}
   - alpha_id: xau-m30-alpha-11
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 11, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+    params: {preset: 11, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
   - alpha_id: xau-m30-alpha-12
     strategy: xau_m30
     version: "1"
     enabled: true
-    params: {preset: 12, symbol: XAUUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+    params: {preset: 12, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
+  # Suplo XAU bundle — Supertrend baseline + dynamic trailing TP (M30 built from M15).
+  - alpha_id: suplo-xau-5
+    strategy: suplo_xau
+    version: "1"
+    enabled: true
+    params: {preset: 5, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York, trade_weekends: true}
+  - alpha_id: suplo-xau-10
+    strategy: suplo_xau
+    version: "1"
+    enabled: true
+    params: {preset: 10, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York, trade_weekends: true}
+  # Supertrend XAU V2 bundle — Supertrend 15m + 1m-simulated trailing TP.
+  - alpha_id: supertrend-xau-v2-5pct
+    strategy: supertrend_xau_v2
+    version: "1"
+    enabled: true
+    params: {preset: 5, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York}
+  - alpha_id: supertrend-xau-v2-10pct
+    strategy: supertrend_xau_v2
+    version: "1"
+    enabled: true
+    params: {preset: 10, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York}
+  # Suplo ATR1_5 — Supertrend 15m entry + trailing TP 5% (1m), trailing only
+  # activates once peak profit >= 1.0 * ATR(10) captured at entry.
+  - alpha_id: suplo-atr1-5
+    strategy: suplo_atr1_5
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, retrace_pct: 0.05, atr_multiplier: 1.0}
   - alpha_id: 15m-blend-close
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close/spec.json,
@@ -80,7 +112,7 @@ alphas:
   - alpha_id: 15m-blend-close-b
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-b/spec.json,
@@ -122,7 +154,7 @@ alphas:
   - alpha_id: 1h-decay-close
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close/spec.json,
@@ -137,7 +169,7 @@ alphas:
   - alpha_id: 15m-blend-close-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-36h/spec.json,
@@ -151,7 +183,7 @@ alphas:
   - alpha_id: 15m-blend-close-b-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-b-36h/spec.json,
@@ -165,7 +197,7 @@ alphas:
   - alpha_id: 1h-decay-close-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close-36h/spec.json,
@@ -179,7 +211,7 @@ alphas:
   - alpha_id: 1h-decay-vwap-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-vwap-36h/spec.json,
@@ -249,7 +281,7 @@ alphas:
   - alpha_id: 15m-blend-close-2-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-2-v3/spec.json,
@@ -319,7 +351,7 @@ alphas:
   - alpha_id: 1h-decay-close-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close-v3/spec.json,
@@ -333,7 +365,7 @@ alphas:
   - alpha_id: 4h-trend-close-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 4h-trend-close-v3/spec.json,
@@ -348,7 +380,7 @@ alphas:
   - alpha_id: 4h-trend-z
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 4h-trend-z/spec.json,
@@ -362,7 +394,7 @@ alphas:
   - alpha_id: 15m-breakout
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-breakout/spec.json,
@@ -376,7 +408,7 @@ alphas:
   - alpha_id: 1h-trend-breakout
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-trend-breakout/spec.json,
@@ -418,7 +450,7 @@ alphas:
   - alpha_id: songthanv8
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: songthanv8/spec.json,
@@ -432,7 +464,7 @@ alphas:
   - alpha_id: songthanv11
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: songthanv11/spec.json,
@@ -476,7 +508,7 @@ alphas:
   - alpha_id: 1d-kertrend
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1d-kertrend/spec.json,
@@ -560,3 +592,89 @@ alphas:
         offset_candle_sec: 5.0,
         exchange: binance,
       }
+  # ── Portfolio Manager book-only sleeve copies ──
+  - alpha_id: 15m-blend-close-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-blend-close-sleeve/spec.json, blacklist_file: 15m-blend-close-sleeve/blacklist.txt, warmup_bars: 5760, retain_bars: 5760, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 15m-blend-close-2-v3-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-blend-close-2-v3-sleeve/spec.json, blacklist_file: 15m-blend-close-2-v3-sleeve/blacklist.txt, warmup_bars: 5760, retain_bars: 5760, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 15m-blend-close-36h-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-blend-close-36h-sleeve/spec.json, blacklist_file: 15m-blend-close-36h-sleeve/blacklist.txt, warmup_bars: 5760, retain_bars: 5760, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 15m-blend-close-b-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-blend-close-b-sleeve/spec.json, blacklist_file: 15m-blend-close-b-sleeve/blacklist.txt, warmup_bars: 3842, retain_bars: 3842, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 15m-blend-close-b-36h-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-blend-close-b-36h-sleeve/spec.json, blacklist_file: 15m-blend-close-b-36h-sleeve/blacklist.txt, warmup_bars: 3842, retain_bars: 3842, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 15m-breakout-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 15m-breakout-sleeve/spec.json, blacklist_file: 15m-breakout-sleeve/blacklist.txt, warmup_bars: 2880, retain_bars: 2880, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-blend-close-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-blend-close-sleeve/spec.json, blacklist_file: 1h-blend-close-sleeve/blacklist.txt, warmup_bars: 961, retain_bars: 961, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-blend-close-c-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-blend-close-c-sleeve/spec.json, blacklist_file: 1h-blend-close-c-sleeve/blacklist.txt, warmup_bars: 2280, retain_bars: 2280, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-decay-close-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-decay-close-sleeve/spec.json, blacklist_file: 1h-decay-close-sleeve/blacklist.txt, warmup_bars: 3119, retain_bars: 3119, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-decay-close-36h-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-decay-close-36h-sleeve/spec.json, blacklist_file: 1h-decay-close-36h-sleeve/blacklist.txt, warmup_bars: 3119, retain_bars: 3119, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-decay-close-v3-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-decay-close-v3-sleeve/spec.json, blacklist_file: 1h-decay-close-v3-sleeve/blacklist.txt, warmup_bars: 3119, retain_bars: 3119, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-decay-vwap-36h-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-decay-vwap-36h-sleeve/spec.json, blacklist_file: 1h-decay-vwap-36h-sleeve/blacklist.txt, warmup_bars: 3120, retain_bars: 3120, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-trend-breakout-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-trend-breakout-sleeve/spec.json, blacklist_file: 1h-trend-breakout-sleeve/blacklist.txt, warmup_bars: 2880, retain_bars: 2880, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 1h-trend-skew-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1h-trend-skew-sleeve/spec.json, blacklist_file: 1h-trend-skew-sleeve/blacklist.txt, warmup_bars: 2880, retain_bars: 2880, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 4h-amihud-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 4h-amihud-sleeve/spec.json, blacklist_file: 4h-amihud-sleeve/blacklist.txt, warmup_bars: 181, retain_bars: 181, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 4h-trend-close-v3-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 4h-trend-close-v3-sleeve/spec.json, blacklist_file: 4h-trend-close-v3-sleeve/blacklist.txt, warmup_bars: 540, retain_bars: 540, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+  - alpha_id: 4h-trend-z-sleeve
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 4h-trend-z-sleeve/spec.json, blacklist_file: 4h-trend-z-sleeve/blacklist.txt, warmup_bars: 180, retain_bars: 180, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}

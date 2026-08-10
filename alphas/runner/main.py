@@ -69,7 +69,9 @@ def _tf_to_1m_multiplier(tf: str) -> int:
     return 1
 
 
-def _parquet_restore_plan(requirements: dict[tuple[str, str], int]) -> tuple[set[str], dict[str, int], dict[tuple[str, str], int]]:
+def _parquet_restore_plan(
+    requirements: dict[tuple[str, str], int],
+) -> tuple[set[str], dict[str, int], dict[tuple[str, str], int]]:
     symbols: set[str] = set()
     tail_rows_by_symbol: dict[str, int] = {}
     for (symbol, tf), bars in requirements.items():
@@ -118,7 +120,9 @@ def setup_logging() -> None:
     _LOG_QUEUE_HANDLER = queue_handler
     _LOG_QUEUE_LISTENER = listener
 
-    logging.basicConfig(level=level, handlers=[queue_handler], format="%(message)s", force=True)
+    logging.basicConfig(
+        level=level, handlers=[queue_handler], format="%(message)s", force=True
+    )
 
 
 atexit.register(shutdown_logging)
@@ -144,8 +148,13 @@ async def _noop_backend(requirements):
 # time (e.g. 2026-07-16: 5 daily alphas produced zero events for 12+
 # hours), not a single slow scan.
 _STALE_TF_MS: dict[str, int] = {
-    "1m": 60_000, "5m": 300_000, "15m": 900_000, "30m": 1_800_000,
-    "1h": 3_600_000, "4h": 14_400_000, "1d": 86_400_000,
+    "1m": 60_000,
+    "5m": 300_000,
+    "15m": 900_000,
+    "30m": 1_800_000,
+    "1h": 3_600_000,
+    "4h": 14_400_000,
+    "1d": 86_400_000,
 }
 _STALE_CANDLES = 2
 
@@ -161,7 +170,9 @@ def _is_alpha_stale(strategy, metrics: RunnerMetrics, now: float) -> bool:
     # Metrics/health introspection must never crash the runner over an
     # incomplete strategy-like object (e.g. a test double) -- losing
     # observability is exactly the failure mode this exists to prevent.
-    alpha_id = getattr(strategy.ctx, "alpha_id", None) or getattr(strategy, "alpha_id", None)
+    alpha_id = getattr(strategy.ctx, "alpha_id", None) or getattr(
+        strategy, "alpha_id", None
+    )
     last_ts = metrics.last_event_ts_by_alpha.get(alpha_id)
     if last_ts is None:
         return False  # never had a chance to process an event yet (e.g. just started)
@@ -178,21 +189,30 @@ def runner_metrics_snapshot(
 ) -> dict:
     snapshot = metrics.snapshot()
     now = time.time()
-    snapshot.update({
-        "runner_id": cfg.runner_id,
-        "signal_stream": cfg.signal_stream,
-        "shadow_mode": cfg.shadow_mode,
-        "strategies_active": sum(1 for s in strategies if s.ctx.state.ready and s.ctx.state.lease_valid),
-        "strategies_suspended": sum(1 for s in strategies if not s.ctx.state.ready or not s.ctx.state.lease_valid),
-        "lease_owner": {},
-        "last_event_age_sec": {
-            aid: now - ts for aid, ts in metrics.last_event_ts_by_alpha.items()
-        },
-        "stale_alphas": [
-            getattr(s.ctx, "alpha_id", None) or getattr(s, "alpha_id", None)
-            for s in strategies if _is_alpha_stale(s, metrics, now)
-        ],
-    })
+    snapshot.update(
+        {
+            "runner_id": cfg.runner_id,
+            "signal_stream": cfg.signal_stream,
+            "shadow_mode": cfg.shadow_mode,
+            "strategies_active": sum(
+                1 for s in strategies if s.ctx.state.ready and s.ctx.state.lease_valid
+            ),
+            "strategies_suspended": sum(
+                1
+                for s in strategies
+                if not s.ctx.state.ready or not s.ctx.state.lease_valid
+            ),
+            "lease_owner": {},
+            "last_event_age_sec": {
+                aid: now - ts for aid, ts in metrics.last_event_ts_by_alpha.items()
+            },
+            "stale_alphas": [
+                getattr(s.ctx, "alpha_id", None) or getattr(s, "alpha_id", None)
+                for s in strategies
+                if _is_alpha_stale(s, metrics, now)
+            ],
+        }
+    )
     if lease is not None:
         for strategy in strategies:
             try:
@@ -230,7 +250,11 @@ async def renew_strategy_leases(
         for strategy in strategies:
             alpha_id = strategy.ctx.alpha_id
             try:
-                ok = lease.renew(alpha_id) if lease.is_valid(alpha_id) else lease.acquire(alpha_id)
+                ok = (
+                    lease.renew(alpha_id)
+                    if lease.is_valid(alpha_id)
+                    else lease.acquire(alpha_id)
+                )
             except Exception:
                 ok = False
             strategy.ctx.state.lease_valid = bool(ok)
@@ -248,7 +272,10 @@ def refresh_strategy_readiness(strategy, max_age_sec: float | None = None) -> No
     ready = True
     for tf in strategy.get_warmup_tfs():
         bars = int(strategy.get_warmup_bars(tf))
-        ready = strategy.ctx.update_readiness(symbols, tf, bars, max_age_sec=max_age_sec) and ready
+        ready = (
+            strategy.ctx.update_readiness(symbols, tf, bars, max_age_sec=max_age_sec)
+            and ready
+        )
     strategy.ctx.state.ready = ready
 
 
@@ -306,7 +333,9 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
         timings["on_candle_ms"] = _duration_ms(started)
 
         started = time.perf_counter()
-        should_scan = strategy.should_scan_after_event(event.kind, event.symbol, event.tf)
+        should_scan = strategy.should_scan_after_event(
+            event.kind, event.symbol, event.tf
+        )
         timings["should_scan_ms"] = _duration_ms(started)
 
         if should_scan:
@@ -319,7 +348,9 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
 
     if event.kind == "price_alert" and event.symbol:
         payload = event.payload or {}
-        price = float(payload.get("price", payload.get("bid", payload.get("ask", 0.0))) or 0.0)
+        price = float(
+            payload.get("price", payload.get("bid", payload.get("ask", 0.0))) or 0.0
+        )
         side = str(payload.get("side", ""))
         started = time.perf_counter()
         await strategy.on_price_alert(event.symbol, price, side)
@@ -350,7 +381,9 @@ async def handle_strategy_event(strategy, event: DataEvent) -> dict:
 
 
 async def run_strategy_event_loop(
-    strategy, queue: asyncio.Queue[DataEvent], stop_event: asyncio.Event,
+    strategy,
+    queue: asyncio.Queue[DataEvent],
+    stop_event: asyncio.Event,
     metrics: RunnerMetrics | None = None,
     scan_semaphore: asyncio.Semaphore | None = None,
 ) -> None:
@@ -380,13 +413,14 @@ async def run_strategy_event_loop(
                 # within one (tf, universe), this bounds arrival *rate*
                 # across all of them). No-op when no semaphore is passed
                 # (existing callers/tests keep today's behavior).
-                async with (scan_semaphore or contextlib.nullcontext()):
+                async with scan_semaphore or contextlib.nullcontext():
                     semaphore_wait_ms = _duration_ms(semaphore_wait_started)
                     if waiter_registered and metrics is not None:
                         metrics.scan_wait_finished()
                         waiter_registered = False
                     timings = await asyncio.wait_for(
-                        handle_strategy_event(strategy, event), timeout=event_timeout_sec,
+                        handle_strategy_event(strategy, event),
+                        timeout=event_timeout_sec,
                     )
             except asyncio.TimeoutError:
                 if metrics is not None:
@@ -395,8 +429,12 @@ async def run_strategy_event_loop(
                     "[STRATEGY] scan timeout alpha=%s event=%s channel=%s tf=%s "
                     "elapsed_sec=%.1f threshold_sec=%.1f -- abandoning this event, "
                     "moving on to the next one",
-                    strategy.alpha_id, event.kind, event.channel, event.tf or "-",
-                    _duration_ms(started) / 1000.0, event_timeout_sec,
+                    strategy.alpha_id,
+                    event.kind,
+                    event.channel,
+                    event.tf or "-",
+                    _duration_ms(started) / 1000.0,
+                    event_timeout_sec,
                     extra={"alpha_id": strategy.alpha_id},
                 )
                 continue
@@ -473,7 +511,9 @@ async def periodic_gap_check(
     interval_sec: float = 300.0,
     stop_event: asyncio.Event | None = None,
 ) -> None:
-    last_warning_by_tf: dict[str, tuple[int, tuple[tuple[str, int, tuple[tuple[int, int], ...]], ...]]] = {}
+    last_warning_by_tf: dict[
+        str, tuple[int, tuple[tuple[str, int, tuple[tuple[int, int], ...]], ...]]
+    ] = {}
     while stop_event is None or not stop_event.is_set():
         if stop_event:
             try:
@@ -497,20 +537,23 @@ async def periodic_gap_check(
                 )
                 warning_key = (len(gapped), sample)
                 sample_text = ", ".join(
-                    f"{symbol}:{gap_count}"
-                    for symbol, gap_count, _missing in sample
+                    f"{symbol}:{gap_count}" for symbol, gap_count, _missing in sample
                 )
                 if last_warning_by_tf.get(tf) == warning_key:
                     logger.debug(
                         "[GAP-CHECK] repeated %d symbols have %s gaps (sample=%s)",
-                        len(gapped), tf, sample_text,
+                        len(gapped),
+                        tf,
+                        sample_text,
                     )
                     continue
                 else:
                     last_warning_by_tf[tf] = warning_key
                 logger.warning(
                     "[GAP-CHECK] %d symbols have %s gaps (sample=%s)",
-                    len(gapped), tf, sample_text,
+                    len(gapped),
+                    tf,
+                    sample_text,
                 )
                 continue
             last_warning_by_tf.pop(tf, None)
@@ -593,7 +636,9 @@ async def run(
             socket_connect_timeout=cfg.mds_redis_socket_timeout_sec,
         )
         lease = LeaseManager(redis_client, cfg.runner_id, cfg.lease_ttl_sec)
-        dispatcher = SignalDispatcher(redis_client, cfg.signal_stream, lease, metrics=metrics)
+        dispatcher = SignalDispatcher(
+            redis_client, cfg.signal_stream, lease, metrics=metrics
+        )
         pubsub = SharedPubSubManager(mds_client, cache, cfg.data_queue_maxsize)
         warmup_backend = MDSWarmupBackend(
             mds_client,
@@ -606,8 +651,13 @@ async def run(
     # --- Read configs from Redis and claim alphas ---
     if dry_run:
         claimed_configs = [
-            {"alpha_id": a.alpha_id, "strategy": a.strategy, "version": a.version,
-             "params": a.params, "tf_set": _tf_set_from_strategy(registry, a)}
+            {
+                "alpha_id": a.alpha_id,
+                "strategy": a.strategy,
+                "version": a.version,
+                "params": a.params,
+                "tf_set": _tf_set_from_strategy(registry, a),
+            }
             for a in cfg.alphas
         ]
     else:
@@ -618,27 +668,38 @@ async def run(
         if not all_configs:
             logger.info("[RUNNER] No alpha configs in Redis, falling back to YAML")
             all_configs = [
-                {"alpha_id": a.alpha_id, "strategy": a.strategy, "version": a.version,
-                 "params": a.params, "tf_set": _tf_set_from_strategy(registry, a)}
+                {
+                    "alpha_id": a.alpha_id,
+                    "strategy": a.strategy,
+                    "version": a.version,
+                    "params": a.params,
+                    "tf_set": _tf_set_from_strategy(registry, a),
+                }
                 for a in cfg.alphas
             ]
         else:
             all_configs = [
-                c for c in all_configs
-                if c.get("alpha_id") in allowed_alpha_ids
+                c for c in all_configs if c.get("alpha_id") in allowed_alpha_ids
             ]
             if not all_configs:
                 logger.info(
                     "[RUNNER] Redis configs exist but none match this runner config; falling back to YAML"
                 )
                 all_configs = [
-                    {"alpha_id": a.alpha_id, "strategy": a.strategy, "version": a.version,
-                     "params": a.params, "tf_set": _tf_set_from_strategy(registry, a)}
+                    {
+                        "alpha_id": a.alpha_id,
+                        "strategy": a.strategy,
+                        "version": a.version,
+                        "params": a.params,
+                        "tf_set": _tf_set_from_strategy(registry, a),
+                    }
                     for a in cfg.alphas
                 ]
 
         claimed_configs = claim_alpha_groups(
-            redis_client, cfg.runner_id, all_configs,
+            redis_client,
+            cfg.runner_id,
+            all_configs,
             max_alphas_per_runner=cfg.max_alphas_per_runner,
             ttl_sec=cfg.lease_ttl_sec,
         )
@@ -680,7 +741,8 @@ async def run(
                 panel_feature_cache=panel_feature_cache,
             )
             strategy = registry.create(
-                alpha_cfg["strategy"], alpha_id,
+                alpha_cfg["strategy"],
+                alpha_id,
                 alpha_cfg.get("version", "1"),
                 alpha_cfg.get("params", {}),
                 ctx,
@@ -695,8 +757,12 @@ async def run(
                 extra={"alpha_id": alpha_id},
             )
             if pubsub is not None:
-                for channel in _translate_channels(strategy.get_required_channels_instance(), cfg.mds_exchange):
-                    strategy_queues[alpha_id] = await pubsub.subscribe(channel, alpha_id)
+                for channel in _translate_channels(
+                    strategy.get_required_channels_instance(), cfg.mds_exchange
+                ):
+                    strategy_queues[alpha_id] = await pubsub.subscribe(
+                        channel, alpha_id
+                    )
 
         logger.info(
             "[RUNNER] Strategies initialized started=%d skipped=%d skipped_ids=%s",
@@ -729,15 +795,20 @@ async def run(
         parquet_restored = 0
         if not dry_run and cfg.runner_cache_dir:
             from runner.data_layer.parquet_restore import restore_from_parquet
+
             claimed_tfs = set()
             for c in claimed_configs:
                 claimed_tfs.update(c.get("tf_set", []))
             requirement_tfs = {tf for _symbol, tf in requirements}
             tfs_to_rollup = sorted(requirement_tfs - {"1m"})
-            restore_symbols, tail_rows_by_symbol, restore_requirements = _parquet_restore_plan(requirements)
+            restore_symbols, tail_rows_by_symbol, restore_requirements = (
+                _parquet_restore_plan(requirements)
+            )
             needs_1m = "1m" in requirement_tfs
             parquet_restored = restore_from_parquet(
-                cfg.runner_cache_dir, cfg.mds_exchange, cache,
+                cfg.runner_cache_dir,
+                cfg.mds_exchange,
+                cache,
                 tfs_to_rollup=tfs_to_rollup if tfs_to_rollup else None,
                 symbols=restore_symbols,
                 tail_rows_by_symbol=tail_rows_by_symbol,
@@ -745,16 +816,24 @@ async def run(
                 requirements=restore_requirements,
             )
             if parquet_restored > 0:
-                logger.info("[RUNNER] Parquet restored %d candles — MDS warmup will fill delta only", parquet_restored)
+                logger.info(
+                    "[RUNNER] Parquet restored %d candles — MDS warmup will fill delta only",
+                    parquet_restored,
+                )
         elif not dry_run and not cfg.runner_cache_dir:
-            logger.info("[RUNNER] No parquet cache dir configured, skipping parquet restore")
+            logger.info(
+                "[RUNNER] No parquet cache dir configured, skipping parquet restore"
+            )
 
         if keep_running and not dry_run and lease is not None:
             renew_task = asyncio.create_task(
-                renew_strategy_leases(lease, strategies, cfg.lease_renew_interval_sec, stop_event)
+                renew_strategy_leases(
+                    lease, strategies, cfg.lease_renew_interval_sec, stop_event
+                )
             )
         if not dry_run:
             from runner.data_layer.mds_ready import MDSReadyWatcher
+
             ready_watcher = MDSReadyWatcher(mds_client, cfg.mds_exchange)
             logger.info("[RUNNER-WARMUP] Starting synced warmup")
             max_staleness = None
@@ -768,12 +847,20 @@ async def run(
                 max_staleness_sec=max_staleness,
             )
             if not warmup_ok:
-                logger.warning("[RUNNER-WARMUP] Synced warmup incomplete — some strategies may start STALE")
+                logger.warning(
+                    "[RUNNER-WARMUP] Synced warmup incomplete — some strategies may start STALE"
+                )
         for strategy in strategies:
-            strategy.ctx.state.ready = warmup.strategy_ready(strategy, cfg.warmup_min_symbol_coverage)
+            strategy.ctx.state.ready = warmup.strategy_ready(
+                strategy, cfg.warmup_min_symbol_coverage
+            )
             strategy.ctx.excluded_symbols = warmup.excluded_symbols
         if pubsub is not None:
-            pubsub.set_reconnect_handler(warmup, cfg.warmup.reconnect_staleness_candles)
+            pubsub.set_reconnect_handler(
+                warmup,
+                cfg.warmup.reconnect_staleness_candles,
+                trading_session=cfg.trading_session,
+            )
             pubsub._metrics = metrics
         ready_count = sum(1 for strategy in strategies if strategy.ctx.state.ready)
         logger.info(
@@ -826,12 +913,16 @@ async def run(
         if keep_running and not dry_run:
             install_stop_signal_handlers(stop_event)
             metrics_server = MetricsServer(
-                lambda: runner_metrics_snapshot(metrics, cfg, strategies, lease, cache, panel_feature_cache),
+                lambda: runner_metrics_snapshot(
+                    metrics, cfg, strategies, lease, cache, panel_feature_cache
+                ),
                 host=metrics_host,
                 port=metrics_port,
             )
             await metrics_server.start()
-            logger.info("[RUNNER] Metrics server ready on %s:%s", metrics_host, metrics_port)
+            logger.info(
+                "[RUNNER] Metrics server ready on %s:%s", metrics_host, metrics_port
+            )
             pubsub_task = asyncio.create_task(pubsub.run(stop_event))
             for strategy in strategies:
                 queue = strategy_queues.get(strategy.ctx.alpha_id)
@@ -839,20 +930,34 @@ async def run(
                     continue
                 aid = strategy.ctx.alpha_id
                 alpha_tasks.setdefault(aid, [])
-                evt_task = asyncio.create_task(run_strategy_event_loop(strategy, queue, stop_event, metrics, scan_semaphore))
-                mng_task = asyncio.create_task(run_strategy_manage_loop(strategy, stop_event))
+                evt_task = asyncio.create_task(
+                    run_strategy_event_loop(
+                        strategy, queue, stop_event, metrics, scan_semaphore
+                    )
+                )
+                mng_task = asyncio.create_task(
+                    run_strategy_manage_loop(strategy, stop_event)
+                )
                 strategy_tasks.extend([evt_task, mng_task])
                 alpha_tasks[aid].extend([evt_task, mng_task])
-            strategy_tasks.append(asyncio.create_task(periodic_gap_check(cache, strategies, stop_event=stop_event)))
+            strategy_tasks.append(
+                asyncio.create_task(
+                    periodic_gap_check(cache, strategies, stop_event=stop_event)
+                )
+            )
 
             # Periodic claim task
             from runner.periodic_claim import run_periodic_claim
 
             async def _on_new_alphas(new_configs):
-                new_configs = [c for c in new_configs if c["alpha_id"] not in owned_leases]
+                new_configs = [
+                    c for c in new_configs if c["alpha_id"] not in owned_leases
+                ]
                 if not new_configs:
                     return
-                logger.info("[RUNNER] Periodic claim found %d new alphas", len(new_configs))
+                logger.info(
+                    "[RUNNER] Periodic claim found %d new alphas", len(new_configs)
+                )
                 for alpha_cfg in new_configs:
                     alpha_id = alpha_cfg["alpha_id"]
                     ctx = StrategyContext(
@@ -867,7 +972,8 @@ async def run(
                         panel_feature_cache=panel_feature_cache,
                     )
                     strategy = registry.create(
-                        alpha_cfg["strategy"], alpha_id,
+                        alpha_cfg["strategy"],
+                        alpha_id,
                         alpha_cfg.get("version", "1"),
                         alpha_cfg.get("params", {}),
                         ctx,
@@ -884,27 +990,43 @@ async def run(
                     )
                     alpha_tasks.setdefault(alpha_id, [])
                     q = None
-                    for channel in _translate_channels(strategy.get_required_channels_instance(), cfg.mds_exchange):
+                    for channel in _translate_channels(
+                        strategy.get_required_channels_instance(), cfg.mds_exchange
+                    ):
                         q = await pubsub.subscribe(channel, alpha_id)
                     if q is not None:
-                        evt_task = asyncio.create_task(run_strategy_event_loop(strategy, q, stop_event, metrics, scan_semaphore))
-                        mng_task = asyncio.create_task(run_strategy_manage_loop(strategy, stop_event))
+                        evt_task = asyncio.create_task(
+                            run_strategy_event_loop(
+                                strategy, q, stop_event, metrics, scan_semaphore
+                            )
+                        )
+                        mng_task = asyncio.create_task(
+                            run_strategy_manage_loop(strategy, stop_event)
+                        )
                         strategy_tasks.extend([evt_task, mng_task])
                         alpha_tasks[alpha_id].extend([evt_task, mng_task])
                     refresh_strategy_readiness(strategy)
-                logger.info("[RUNNER] New alphas started: %s", [c["alpha_id"] for c in new_configs])
-
-            strategy_tasks.append(asyncio.create_task(
-                run_periodic_claim(
-                    redis_client, cfg.runner_id,
-                    cfg.max_alphas_per_runner, cfg.lease_ttl_sec,
-                    cfg.claim_interval_sec, stop_event,
-                    on_new_alphas=_on_new_alphas,
-                    retry_delay_sec=cfg.claim_retry_delay_sec,
-                    currently_owned_fn=lambda: list(owned_leases),
-                    allowed_alpha_ids=allowed_alpha_ids,
+                logger.info(
+                    "[RUNNER] New alphas started: %s",
+                    [c["alpha_id"] for c in new_configs],
                 )
-            ))
+
+            strategy_tasks.append(
+                asyncio.create_task(
+                    run_periodic_claim(
+                        redis_client,
+                        cfg.runner_id,
+                        cfg.max_alphas_per_runner,
+                        cfg.lease_ttl_sec,
+                        cfg.claim_interval_sec,
+                        stop_event,
+                        on_new_alphas=_on_new_alphas,
+                        retry_delay_sec=cfg.claim_retry_delay_sec,
+                        currently_owned_fn=lambda: list(owned_leases),
+                        allowed_alpha_ids=allowed_alpha_ids,
+                    )
+                )
+            )
 
             # Config listener task
             from runner.config_listener import run_config_listener
@@ -936,18 +1058,21 @@ async def run(
                             if not t.done():
                                 t.cancel()
 
-            strategy_tasks.append(asyncio.create_task(
-                run_config_listener(
-                    redis_client, cfg.runner_id,
-                    currently_owned_fn=lambda: list(owned_leases),
-                    on_disabled=_on_disabled,
-                    on_new_alphas=_on_new_alphas,
-                    stop_event=stop_event,
-                    max_alphas_per_runner=cfg.max_alphas_per_runner,
-                    ttl_sec=cfg.lease_ttl_sec,
-                    allowed_alpha_ids=allowed_alpha_ids,
+            strategy_tasks.append(
+                asyncio.create_task(
+                    run_config_listener(
+                        redis_client,
+                        cfg.runner_id,
+                        currently_owned_fn=lambda: list(owned_leases),
+                        on_disabled=_on_disabled,
+                        on_new_alphas=_on_new_alphas,
+                        stop_event=stop_event,
+                        max_alphas_per_runner=cfg.max_alphas_per_runner,
+                        ttl_sec=cfg.lease_ttl_sec,
+                        allowed_alpha_ids=allowed_alpha_ids,
+                    )
                 )
-            ))
+            )
             logger.info("[RUNNER] Event loops started tasks=%d", len(strategy_tasks))
             try:
                 await stop_event.wait()
@@ -988,8 +1113,14 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", default=os.getenv("RUNNER_CONFIG"))
     parser.add_argument("--dry-run", action="store_true")
-    parser.add_argument("--metrics-host", default=os.getenv("RUNNER_METRICS_HOST", "0.0.0.0"))
-    parser.add_argument("--metrics-port", type=int, default=int(os.getenv("RUNNER_METRICS_PORT", "9091")))
+    parser.add_argument(
+        "--metrics-host", default=os.getenv("RUNNER_METRICS_HOST", "0.0.0.0")
+    )
+    parser.add_argument(
+        "--metrics-port",
+        type=int,
+        default=int(os.getenv("RUNNER_METRICS_PORT", "9091")),
+    )
     args = parser.parse_args()
     if not args.config:
         parser.error("--config or RUNNER_CONFIG is required")

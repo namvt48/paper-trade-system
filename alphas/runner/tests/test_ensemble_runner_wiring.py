@@ -178,7 +178,7 @@ def test_new_alpha_fully_constructs_via_real_runner_config(alpha_id):
     # real, etc.), without needing live Redis/MDS.
     alphas_root = Path(__file__).resolve().parents[2]
     runner_config_path = alphas_root.parent / "runner-config.yaml"
-    cfg = load_runner_config(str(runner_config_path))
+    cfg = load_runner_config(str(runner_config_path), include_disabled=True)
     entry = next(a for a in cfg.alphas if a.alpha_id == alpha_id)
 
     ctx = StrategyContext(

@@ -11,11 +11,24 @@ from runner.data_layer.cache import SharedCandleCache
 
 logger = logging.getLogger(__name__)
 
-SCHEMA_COLUMNS = ("open_time", "close_time", "open", "high", "low", "close", "volume", "confirmed")
+SCHEMA_COLUMNS = (
+    "open_time",
+    "close_time",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume",
+    "confirmed",
+)
 
 TF_MS = {
-    "1m": 60_000, "5m": 300_000, "15m": 900_000,
-    "30m": 1_800_000, "1h": 3_600_000, "4h": 14_400_000,
+    "1m": 60_000,
+    "5m": 300_000,
+    "15m": 900_000,
+    "30m": 1_800_000,
+    "1h": 3_600_000,
+    "4h": 14_400_000,
     "1d": 86_400_000,
 }
 
@@ -68,11 +81,13 @@ def read_parquet_candles(
 
     result = [by_open_time[t] for t in sorted(by_open_time)]
     if tail_rows is not None and tail_rows > 0:
-        return result[-int(tail_rows):]
+        return result[-int(tail_rows) :]
     return result
 
 
-def get_latest_open_time(cache_dir: str, exchange: str, symbol: str, *, tf: str = "1m") -> int | None:
+def get_latest_open_time(
+    cache_dir: str, exchange: str, symbol: str, *, tf: str = "1m"
+) -> int | None:
     candles = read_parquet_candles(cache_dir, exchange, symbol, tf=tf)
     if not candles:
         return None
@@ -90,7 +105,11 @@ def _detect_source_tf_ms(candles: list[dict]) -> int | None:
             continue
     if len(times) < 2:
         return None
-    diffs = [times[i + 1] - times[i] for i in range(len(times) - 1) if times[i + 1] > times[i]]
+    diffs = [
+        times[i + 1] - times[i]
+        for i in range(len(times) - 1)
+        if times[i + 1] > times[i]
+    ]
     if not diffs:
         return None
     min_diff = min(diffs)
@@ -126,15 +145,17 @@ def _rollup_candles(candles: list[dict], target_tf: str) -> list[dict]:
         expected_times = [bar_start + i * source_tf_ms for i in range(expected_parts)]
         if actual_times != expected_times:
             continue
-        rolled.append({
-            "open_time": bar_start,
-            "close_time": bar_start + tf_ms - 1,
-            "open": bucket[0]["open"],
-            "high": max(float(c["high"]) for c in bucket),
-            "low": min(float(c["low"]) for c in bucket),
-            "close": bucket[-1]["close"],
-            "volume": sum(float(c["volume"]) for c in bucket),
-        })
+        rolled.append(
+            {
+                "open_time": bar_start,
+                "close_time": bar_start + tf_ms - 1,
+                "open": bucket[0]["open"],
+                "high": max(float(c["high"]) for c in bucket),
+                "low": min(float(c["low"]) for c in bucket),
+                "close": bucket[-1]["close"],
+                "volume": sum(float(c["volume"]) for c in bucket),
+            }
+        )
     return rolled
 
 
@@ -149,7 +170,9 @@ def _discover_available_tfs(cache_dir: str, exchange: str) -> list[str]:
     return available
 
 
-def _discover_symbols(cache_dir: str, exchange: str, available_tfs: list[str] | None = None) -> list[str]:
+def _discover_symbols(
+    cache_dir: str, exchange: str, available_tfs: list[str] | None = None
+) -> list[str]:
     tfs = available_tfs or _discover_available_tfs(cache_dir, exchange)
     if not tfs:
         return []
@@ -158,7 +181,8 @@ def _discover_symbols(cache_dir: str, exchange: str, available_tfs: list[str] | 
     if not os.path.isdir(primary_dir):
         return []
     return sorted(
-        d for d in os.listdir(primary_dir)
+        d
+        for d in os.listdir(primary_dir)
         if os.path.isdir(os.path.join(primary_dir, d))
     )
 
@@ -175,41 +199,53 @@ def restore_from_parquet(
 ) -> int:
     available_tfs = _discover_available_tfs(cache_dir, exchange)
     if not available_tfs:
-        logger.warning("[PARQUET-RESTORE] No parquet cache found at %s/%s, falling back to MDS warmup", cache_dir, exchange)
+        logger.warning(
+            "[PARQUET-RESTORE] No parquet cache found at %s/%s, falling back to MDS warmup",
+            cache_dir,
+            exchange,
+        )
         return 0
 
     primary_tf = available_tfs[0]
     primary_dir = os.path.join(cache_dir, exchange, primary_tf)
     available_symbols = [
-        d for d in os.listdir(primary_dir)
+        d
+        for d in os.listdir(primary_dir)
         if os.path.isdir(os.path.join(primary_dir, d))
     ]
     if symbols is None:
         restore_symbols = available_symbols
     else:
         requested = {str(symbol) for symbol in symbols}
-        restore_symbols = [symbol for symbol in available_symbols if symbol in requested]
+        restore_symbols = [
+            symbol for symbol in available_symbols if symbol in requested
+        ]
 
     rollup_tfs = [tf for tf in (tfs_to_rollup or []) if tf != "1m"]
-    needs_1m = "1m" in available_tfs and any(
-        tf in available_tfs for tf in ["1m"]
-    ) or not rollup_tfs
+    needs_1m = (
+        "1m" in available_tfs
+        and any(tf in available_tfs for tf in ["1m"])
+        or not rollup_tfs
+    )
     rollup_only = bool(rollup_tfs and clear_unrequired_1m_after_rollup)
 
-    direct_tfs = []
-    fallback_tfs = []
-    if rollup_only:
-        for tf in rollup_tfs:
-            if tf in available_tfs:
-                direct_tfs.append(tf)
-            else:
-                fallback_tfs.append(tf)
+    # Directly-restorable TFs are the ones with their own parquet directory.
+    # When 1m is also required (needs_1m) but the 1m parquet dir is empty (MDS
+    # does not persist 1m), the old code only restored via the 1m -> rollup
+    # path and restored ZERO candles for the larger TFs, forcing a slow MDS
+    # warmup for every symbol. Always restore the larger TFs directly from
+    # their own parquet; 1m is only used as a rollup source when it actually
+    # has data.
+    direct_tfs = [tf for tf in rollup_tfs if tf in available_tfs]
+    fallback_tfs = [tf for tf in rollup_tfs if tf not in available_tfs]
 
     intermediate_tfs = []
     if not rollup_only and rollup_tfs:
         for tf in available_tfs:
-            if tf != "1m" and tf not in rollup_tfs and TF_MS.get(tf, 0) < max(
-                TF_MS.get(rt, 0) for rt in rollup_tfs
+            if (
+                tf != "1m"
+                and tf not in rollup_tfs
+                and TF_MS.get(tf, 0) < max(TF_MS.get(rt, 0) for rt in rollup_tfs)
             ):
                 intermediate_tfs.append(tf)
 
@@ -217,20 +253,34 @@ def restore_from_parquet(
 
     if direct_tfs:
         total_restored += _restore_direct_tfs(
-            cache_dir, exchange, cache, restore_symbols, direct_tfs,
-            tail_rows_by_symbol, requirements=requirements,
+            cache_dir,
+            exchange,
+            cache,
+            restore_symbols,
+            direct_tfs,
+            tail_rows_by_symbol,
+            requirements=requirements,
         )
 
     if fallback_tfs:
         total_restored += _restore_via_1m_rollup(
-            cache_dir, exchange, cache, restore_symbols, fallback_tfs,
+            cache_dir,
+            exchange,
+            cache,
+            restore_symbols,
+            fallback_tfs,
             tail_rows_by_symbol,
         )
 
     if intermediate_tfs:
         total_restored += _restore_direct_tfs(
-            cache_dir, exchange, cache, restore_symbols, intermediate_tfs,
-            tail_rows_by_symbol, requirements=requirements,
+            cache_dir,
+            exchange,
+            cache,
+            restore_symbols,
+            intermediate_tfs,
+            tail_rows_by_symbol,
+            requirements=requirements,
         )
 
     if not rollup_only:
@@ -239,7 +289,9 @@ def restore_from_parquet(
                 tail_rows = None
                 if tail_rows_by_symbol is not None:
                     tail_rows = tail_rows_by_symbol.get(symbol)
-                candles = read_parquet_candles(cache_dir, exchange, symbol, tf="1m", tail_rows=tail_rows)
+                candles = read_parquet_candles(
+                    cache_dir, exchange, symbol, tf="1m", tail_rows=tail_rows
+                )
                 before = cache.get_bar_count(symbol, "1m")
                 for candle in candles:
                     cache.upsert_candle(symbol, "1m", candle)
@@ -247,26 +299,36 @@ def restore_from_parquet(
                 added = after - before
                 total_restored += added
                 if added > 0:
-                    logger.debug("[PARQUET-RESTORE] %s 1m: %d candles restored", symbol, added)
-                if added > 0 and rollup_tfs:
+                    logger.debug(
+                        "[PARQUET-RESTORE] %s 1m: %d candles restored", symbol, added
+                    )
+                if added > 0 and fallback_tfs:
                     from runner.data_layer.rollup import rollup_from_1m
-                    for tf in rollup_tfs:
+
+                    for tf in fallback_tfs:
                         rollup_from_1m(cache, tf, [symbol])
                     if clear_unrequired_1m_after_rollup:
-                        cache.trim_tf_to_requirements("1m", remove_unrequired=True, symbols=[symbol])
+                        cache.trim_tf_to_requirements(
+                            "1m", remove_unrequired=True, symbols=[symbol]
+                        )
         else:
             if rollup_tfs:
                 from runner.data_layer.rollup import rollup_to_tf
+
                 for tf in rollup_tfs:
                     count = rollup_to_tf(cache, tf, restore_symbols)
                     total_restored += count
                     if count > 0:
-                        logger.debug("[PARQUET-RESTORE] Rollup to %s: %d bars", tf, count)
+                        logger.debug(
+                            "[PARQUET-RESTORE] Rollup to %s: %d bars", tf, count
+                        )
 
     logger.info(
         "[PARQUET-RESTORE] Restored %d candles across %d symbols (direct=%s fallback=%s intermediate=%s) from %s",
-        total_restored, len(restore_symbols),
-        ",".join(direct_tfs) or "-", ",".join(fallback_tfs) or "-",
+        total_restored,
+        len(restore_symbols),
+        ",".join(direct_tfs) or "-",
+        ",".join(fallback_tfs) or "-",
         ",".join(intermediate_tfs) or "-",
         cache_dir,
     )
@@ -289,8 +351,7 @@ def _restore_direct_tfs(
         if not os.path.isdir(tf_dir):
             continue
         available = [
-            d for d in os.listdir(tf_dir)
-            if os.path.isdir(os.path.join(tf_dir, d))
+            d for d in os.listdir(tf_dir) if os.path.isdir(os.path.join(tf_dir, d))
         ]
         symbols_in_tf = {s for s in available if s in restore_set}
 
@@ -306,7 +367,9 @@ def _restore_direct_tfs(
                 if raw is not None and tf_minutes > 1:
                     tail_rows = max(1, raw // tf_minutes) + 10
 
-            candles = read_parquet_candles(cache_dir, exchange, symbol, tf=tf, tail_rows=tail_rows)
+            candles = read_parquet_candles(
+                cache_dir, exchange, symbol, tf=tf, tail_rows=tail_rows
+            )
             if not candles:
                 continue
             before = cache.get_bar_count(symbol, tf)
@@ -315,7 +378,12 @@ def _restore_direct_tfs(
             added = cache.get_bar_count(symbol, tf) - before
             total_restored += added
             if added > 0:
-                logger.debug("[PARQUET-RESTORE] %s %s direct: %d candles restored", symbol, tf, added)
+                logger.debug(
+                    "[PARQUET-RESTORE] %s %s direct: %d candles restored",
+                    symbol,
+                    tf,
+                    added,
+                )
 
     return total_restored
 
@@ -341,7 +409,9 @@ def _restore_via_1m_rollup(
                 raw = tail_rows_by_symbol.get(symbol)
                 if raw is not None and source_minutes > 1:
                     tail_rows = max(1, raw // source_minutes) + 10
-            candles = read_parquet_candles(cache_dir, exchange, symbol, tf=source, tail_rows=tail_rows)
+            candles = read_parquet_candles(
+                cache_dir, exchange, symbol, tf=source, tail_rows=tail_rows
+            )
             if not candles:
                 continue
             before = cache.get_bar_count(symbol, tf)
@@ -350,7 +420,11 @@ def _restore_via_1m_rollup(
             added_for_symbol += cache.get_bar_count(symbol, tf) - before
         total_restored += added_for_symbol
         if added_for_symbol > 0:
-            logger.debug("[PARQUET-RESTORE] %s rollup: %d candles restored", symbol, added_for_symbol)
+            logger.debug(
+                "[PARQUET-RESTORE] %s rollup: %d candles restored",
+                symbol,
+                added_for_symbol,
+            )
 
     return total_restored
 

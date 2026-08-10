@@ -283,3 +283,53 @@ def test_rollup_from_1m_skips_gapped_bucket():
     total = rollup_from_1m(cache, "5m", ["BTCUSDT"])
     assert total == 0
     assert cache.get_bar_count("BTCUSDT", "5m") == 0
+
+
+def _write_tf_parquet(cache_dir: str, exchange: str, tf: str, symbol: str, candles: list[dict]) -> None:
+    symbol_dir = os.path.join(str(cache_dir), exchange, tf, symbol)
+    os.makedirs(symbol_dir, exist_ok=True)
+    _write_parquet(os.path.join(symbol_dir, "base.parquet"), candles)
+
+
+def _tf_candles(tf_ms: int, count: int = 5) -> list[dict]:
+    return [
+        {
+            "open_time": 1000 + i * tf_ms,
+            "close_time": 1000 + i * tf_ms + tf_ms - 1,
+            "open": float(i * 10),
+            "high": float(i * 10 + 5),
+            "low": float(i * 10 - 2),
+            "close": float(i * 10 + 1),
+            "volume": float(i * 100),
+            "confirmed": True,
+        }
+        for i in range(count)
+    ]
+
+
+def test_restore_direct_tfs_when_1m_required_but_empty(tmp_path):
+    # Regression: when an alpha requires 1m (needs_1m=True) but the 1m parquet
+    # dir is EMPTY (MDS does not persist 1m), the larger TFs (15m/5m) must
+    # still be restored directly from their own parquet. Previously the
+    # needs_1m path only restored via the 1m -> rollup route and returned 0
+    # candles, forcing a slow MDS warmup for every symbol.
+    cache_dir = tmp_path
+    _write_tf_parquet(cache_dir, "binance", "15m", "BTCUSDT", _tf_candles(900_000))
+    _write_tf_parquet(cache_dir, "binance", "5m", "BTCUSDT", _tf_candles(300_000))
+    # 1m dir exists but holds no parquet files.
+    os.makedirs(os.path.join(str(cache_dir), "binance", "1m", "BTCUSDT"), exist_ok=True)
+
+    cache = SharedCandleCache(data_max_candles_floor=200)
+    restored = restore_from_parquet(
+        str(cache_dir),
+        "binance",
+        cache,
+        tfs_to_rollup=["5m", "15m"],
+        symbols={"BTCUSDT"},
+        requirements={("BTCUSDT", "5m"): 5, ("BTCUSDT", "15m"): 5},
+    )
+
+    assert restored == 10
+    assert cache.get_bar_count("BTCUSDT", "5m") == 5
+    assert cache.get_bar_count("BTCUSDT", "15m") == 5
+    assert cache.get_bar_count("BTCUSDT", "1m") == 0

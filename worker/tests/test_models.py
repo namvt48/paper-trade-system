@@ -1,5 +1,12 @@
 import pytest
-from app.models import parse_signal, OpenSignal, ModifySignal, CloseSignal, SignalType, RegisterColumnsSignal
+from app.models import (
+    parse_signal,
+    OpenSignal,
+    ModifySignal,
+    CloseSignal,
+    SignalType,
+    RegisterColumnsSignal,
+)
 
 
 def test_parse_open_signal(sample_open_signal):
@@ -32,6 +39,28 @@ def test_parse_open_signal_optional_fields():
     assert signal.tp is None
     assert signal.sl is None
     assert signal.leverage == 1
+
+
+def test_parse_open_signal_accepts_float_leverage_string():
+    # xau_m30 alphas emit leverage as "10.0"; int("10.0") used to raise
+    # ValueError and drop the signal before execution (worker parse error).
+    data = {
+        "type": "OPEN",
+        "alpha_id": "xau-m30-alpha-10",
+        "signal_id": "sig-float-lev",
+        "symbol": "XAUUSDT",
+        "side": "LONG",
+        "entry": "4075.72",
+        "qty": "2.618",
+        "tp": "4099.59",
+        "sl": "4066.17",
+        "leverage": "10.0",
+        "metadata": "{}",
+        "timestamp": "2026-08-03T06:00:00Z",
+    }
+    signal = parse_signal(data)
+    assert isinstance(signal, OpenSignal)
+    assert signal.leverage == 10
 
 
 def test_parse_modify_signal(sample_modify_signal):
@@ -84,4 +113,7 @@ def test_parse_register_columns_signal():
     signal = parse_signal(data)
     assert isinstance(signal, RegisterColumnsSignal)
     assert signal.alpha_id == "alpha-1-v5b"
-    assert signal.columns == '[{"key": "atr", "label": "ATR", "type": "number", "decimals": 6}]'
+    assert (
+        signal.columns
+        == '[{"key": "atr", "label": "ATR", "type": "number", "decimals": 6}]'
+    )

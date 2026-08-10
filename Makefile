@@ -44,7 +44,9 @@ help:
 	@echo "  make audit-whitelist Report whitelist.txt symbols no longer TRADING on Binance (FIX=1 to auto-remove)"
 	@echo "  make health          Check core, stream, DB, and runner"
 	@echo "  make package         Build deploy zip at $(ZIP_PATH)"
-	@echo "  make deploy          Upload, start core + runner on SERVER=$(SERVER)"
+	@echo "  make deploy          FULL deploy: core + all runners (only when worker/redis/web changed)"
+	@echo "  make deploy-runner RUNNER=alpha-runner   Rebuild + restart ONLY one runner; core + other runners untouched"
+	@echo "  make deploy-runner-config                Config-only sync to Redis; NO restart (config listener picks up live)"
 	@echo "  make deploy-legacy-runner Upload/start only alpha-runner-legacy; leave core + existing runner running"
 	@echo "  make deploy-core     Upload and start only Redis + worker; do not start alphas"
 	@echo "  make deploy-alpha-deregister ALPHA=<name>   Stop + remove from DB and .env on SERVER"
@@ -95,33 +97,36 @@ shell:
 # ─── Alpha runner / shadow rollout ───────────────────────────────────────────
 
 runner-build:
-	$(COMPOSE) --profile runner build alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner build alpha-runner alpha-runner-legacy alpha-runner-tcbs
 
 runner-up: prepare
-	$(COMPOSE) --profile runner up -d --build alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner up -d --build alpha-runner alpha-runner-legacy alpha-runner-tcbs
 
 runner-down:
-	$(COMPOSE) --profile runner stop alpha-runner alpha-runner-legacy
-	$(COMPOSE) --profile runner rm -f alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner stop alpha-runner alpha-runner-legacy alpha-runner-tcbs
+	$(COMPOSE) --profile runner rm -f alpha-runner alpha-runner-legacy alpha-runner-tcbs
 
 runner-scale: prepare
 	@[ -n "$(N)" ] || (echo "Usage: make runner-scale N=<replicas>"; exit 1)
 	$(COMPOSE) --profile runner up -d --build --scale alpha-runner=$(N) alpha-runner
 
 runner-logs:
-	$(COMPOSE) --profile runner logs -f alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner logs -f alpha-runner alpha-runner-legacy alpha-runner-tcbs
 
 runner-health:
-	$(COMPOSE) --profile runner ps alpha-runner alpha-runner-legacy
+	$(COMPOSE) --profile runner ps alpha-runner alpha-runner-legacy alpha-runner-tcbs
 	@$(COMPOSE) --profile runner exec -T alpha-runner true
 	@$(COMPOSE) --profile runner exec -T alpha-runner python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/health' % os.getenv('RUNNER_METRICS_PORT','9091'), timeout=3).read(); print('alpha-runner metrics OK')" 2>/dev/null || echo "alpha-runner running; metrics not ready yet"
 	@$(COMPOSE) --profile runner exec -T alpha-runner-legacy true
 	@$(COMPOSE) --profile runner exec -T alpha-runner-legacy python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/health' % os.getenv('RUNNER_METRICS_PORT','9092'), timeout=3).read(); print('alpha-runner-legacy metrics OK')" 2>/dev/null || echo "alpha-runner-legacy running; metrics not ready yet"
+	@$(COMPOSE) --profile runner exec -T alpha-runner-tcbs true
+	@$(COMPOSE) --profile runner exec -T alpha-runner-tcbs python -c "import os,urllib.request; urllib.request.urlopen('http://127.0.0.1:%s/health' % os.getenv('RUNNER_METRICS_PORT','9093'), timeout=3).read(); print('alpha-runner-tcbs metrics OK')" 2>/dev/null || echo "alpha-runner-tcbs running; metrics not ready yet"
 
 # --- Multi-runner targets ---
 runner-sync-config: ## Sync runner-config.yaml → Redis
 	docker compose --profile runner run --rm alpha-runner python -m runner.config_sync --config /config/runner-config.yaml --redis-url redis://paper-redis:6379
 	docker compose --profile runner run --rm alpha-runner-legacy python -m runner.config_sync --config /config/runner-config.yaml --redis-url redis://paper-redis:6379 --no-prune
+	docker compose --profile runner run --rm alpha-runner-tcbs python -m runner.config_sync --config /config/runner-config.yaml --redis-url redis://paper-redis:6379 --no-prune
 
 runner-status: ## Show alpha → runner assignment map
 	docker compose --profile runner run --rm alpha-runner python -m runner.status
@@ -253,9 +258,16 @@ package:
 	@zip -sf $(ZIP_PATH) | grep "\.env" && echo "✓ .env files included" || true
 
 # ─── Deploy ──────────────────────────────────────────────────────────────────
+# Prefer the narrow targets over `deploy` when possible:
+#   - Only alpha config changed (params/enabled, code already deployed)  -> deploy-runner-config
+#   - Only runner strategy code changed                                  -> deploy-runner
+#   - Only core (worker/redis/web) changed                               -> deploy-core
+#   - Everything changed / full reset                                    -> deploy
+# `deploy` stops core + ALL runners and re-warms every alpha (~15-20 min).
+# The narrow targets leave unrelated containers running with zero downtime.
 
 deploy: package
-	@echo "→ Uploading to $(SERVER)..."
+	@echo "→ Full deploy to $(SERVER) — core + all runners (use deploy-runner/deploy-runner-config/deploy-core for narrow updates)..."
 	scp $(ZIP_PATH) $(SERVER):/tmp/
 	ssh $(SERVER) '\
 		set -e; \
@@ -302,7 +314,10 @@ deploy: package
 		make runner-health; \
 		echo "[10/10] Status"; \
 		make health; \
-		docker compose --profile runner logs --tail=80 alpha-runner alpha-runner-legacy; \
+		docker compose --profile runner logs --tail=80 alpha-runner alpha-runner-legacy alpha-runner-tcbs; \
+		echo "[11/11] Pruning dangling images + build cache..."; \
+		docker image prune -f; \
+		docker builder prune -f; \
 		echo "Dashboard → http://$(SERVER_HOST):8096 (../trading-frontend/)"; \
 	'
 
@@ -373,6 +388,59 @@ deploy-legacy-runner: package
 		docker compose --profile runner logs --tail=80 alpha-runner-legacy; \
 	'
 
+# Rebuild + restart ONLY one runner container. Core (redis/worker/web) and the
+# other runner containers keep running with zero downtime. Use when runner
+# strategy code changed. Config-only changes (no code change) should use
+# deploy-runner-config instead, which avoids even the runner restart.
+# Usage: make deploy-runner [RUNNER=alpha-runner]
+RUNNER ?= alpha-runner
+
+deploy-runner: package
+	@echo "→ Uploading runner update to $(SERVER) (RUNNER=$(RUNNER))..."
+	scp $(ZIP_PATH) $(SERVER):/tmp/
+	ssh $(SERVER) '\
+		set -e; \
+		echo "[1/6] Extracting files..."; \
+		mkdir -p $(REMOTE_DIR); \
+		unzip -o /tmp/$(ZIP_NAME).zip -d /root/ > /dev/null; \
+		cd $(REMOTE_DIR); \
+		echo "[2/6] Preparing dirs..."; \
+		make prepare; \
+		echo "[3/6] Building $(RUNNER) only (core untouched)..."; \
+		docker compose --profile runner build $(RUNNER); \
+		echo "[4/6] Recreating $(RUNNER) only (no deps, no core restart)..."; \
+		docker compose --profile runner up -d --no-deps --force-recreate $(RUNNER); \
+		echo "[5/6] Syncing runner config to Redis..."; \
+		make runner-sync-config; \
+		echo "[6/6] Status"; \
+		docker compose --profile runner ps $(RUNNER); \
+		docker compose --profile runner logs --tail=60 $(RUNNER); \
+	'
+
+# Deploy ONLY the alpha configuration to Redis, without rebuilding or
+# restarting any runner. The running runners subscribe to runner:config:updated
+# and drop newly-disabled alphas live (config listener). Works for toggling
+# enabled flags of alpha ids already present in that runner's config at startup.
+# LIMITATIONS (need deploy-runner instead):
+#   - a BRAND-NEW alpha id is filtered by the startup allowed_alpha_ids
+#   - param changes do NOT apply live to already-running strategies
+# Uploads just the runner config YAML files (not the full package).
+deploy-runner-config:
+	@echo "→ Uploading runner config only to $(SERVER)..."
+	scp runner-config.yaml runner-config.production.yaml runner-config-legacy.yaml runner-config-legacy.production.yaml runner-config-tcbs.yaml runner-config-tcbs.production.yaml $(SERVER):/tmp/ 2>/dev/null || true
+	ssh $(SERVER) '\
+		set -e; \
+		echo "[1/3] Installing config files..."; \
+		mkdir -p $(REMOTE_DIR); \
+		for f in /tmp/runner-config.yaml /tmp/runner-config.production.yaml /tmp/runner-config-legacy.yaml /tmp/runner-config-legacy.production.yaml /tmp/runner-config-tcbs.yaml /tmp/runner-config-tcbs.production.yaml; do \
+			[ -f $$f ] && cp $$f $(REMOTE_DIR)/ && echo "  installed $$(basename $$f)"; \
+		done; \
+		cd $(REMOTE_DIR); \
+		echo "[2/3] Syncing runner config to Redis (no restart)..."; \
+		make runner-sync-config; \
+		echo "[3/3] Config synced. Runners pick up changes via config listener."; \
+	'
+
 # Stop a single alpha on the server and remove it from REGISTERED_ALPHAS + DB.
 # Deletes open positions, the registry row, and alpha_columns. Trade history is kept.
 # Usage: make deploy-alpha-deregister ALPHA=wilder
@@ -401,8 +469,10 @@ deploy-logs:
 deploy-ps:
 	ssh $(SERVER) 'cd $(REMOTE_DIR) && docker compose --profile runner ps && make runner-status || true'
 
+# Safe cleanup: dangling images (from --build) + build cache only.
+# Does NOT use -a (would remove images of other stacks) and NEVER -v (volumes).
 deploy-prune:
-	ssh $(SERVER) 'docker system prune -af'
+	ssh $(SERVER) 'docker image prune -f && docker builder prune -f'
 
 # ─── Trade history ───────────────────────────────────────────────────────────
 #  Usage:

@@ -1,0 +1,23 @@
+{
+  "alpha_id": "4h-trend-close-v3-sleeve",
+  "timeframe": "4h",
+  "signal": "zscore",
+  "params": {
+    "field": "close",
+    "window": 540
+  },
+  "universe_size": 180,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 12,
+  "vol_lookback": 30,
+  "ppy": 2190,
+  "long_threshold": null,
+  "short_threshold": null,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0,
+  "construction": "winsor_cont",
+  "winsor_k": 3.0,
+  "publish_at_midnight_utc": true,
+  "book_only": true
+}

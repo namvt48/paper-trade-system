@@ -205,13 +205,25 @@ async def test_get_symbols_with_open_positions(db):
     await db.register_alpha("alpha-a")
     await db.register_alpha("alpha-b")
     await db.create_position(
-        position_id="pos-001", alpha_id="alpha-a", signal_id="sig-001",
-        symbol="BTCUSDT", side="LONG", entry_price=95000.0, qty=0.01,
-        tp=97000.0, sl=94000.0, opened_at="2026-05-22T10:00:00Z",
+        position_id="pos-001",
+        alpha_id="alpha-a",
+        signal_id="sig-001",
+        symbol="BTCUSDT",
+        side="LONG",
+        entry_price=95000.0,
+        qty=0.01,
+        tp=97000.0,
+        sl=94000.0,
+        opened_at="2026-05-22T10:00:00Z",
     )
     await db.create_position(
-        position_id="pos-002", alpha_id="alpha-b", signal_id="sig-002",
-        symbol="ETHUSDT", side="SHORT", entry_price=3000.0, qty=0.1,
+        position_id="pos-002",
+        alpha_id="alpha-b",
+        signal_id="sig-002",
+        symbol="ETHUSDT",
+        side="SHORT",
+        entry_price=3000.0,
+        qty=0.1,
         opened_at="2026-05-22T10:00:00Z",
     )
     symbols = await db.get_symbols_with_open_positions()
@@ -266,13 +278,19 @@ async def test_register_alpha_columns(db):
 @pytest.mark.asyncio
 async def test_register_alpha_columns_replaces_existing(db):
     await db.register_alpha("test-alpha")
-    await db.register_alpha_columns("test-alpha", [
-        {"key": "atr", "label": "ATR", "type": "number", "decimals": 6},
-    ])
-    await db.register_alpha_columns("test-alpha", [
-        {"key": "vol_spike", "label": "Vol Spike", "type": "number", "decimals": 2},
-        {"key": "btc_adx", "label": "BTC ADX", "type": "number", "decimals": 2},
-    ])
+    await db.register_alpha_columns(
+        "test-alpha",
+        [
+            {"key": "atr", "label": "ATR", "type": "number", "decimals": 6},
+        ],
+    )
+    await db.register_alpha_columns(
+        "test-alpha",
+        [
+            {"key": "vol_spike", "label": "Vol Spike", "type": "number", "decimals": 2},
+            {"key": "btc_adx", "label": "BTC ADX", "type": "number", "decimals": 2},
+        ],
+    )
     result = await db.get_alpha_columns("test-alpha")
     assert len(result) == 2
     assert result[0]["column_key"] == "vol_spike"
@@ -287,6 +305,7 @@ async def test_get_alpha_columns_empty(db):
 
 # --- merge_trade_metadata ---
 
+
 def test_merge_trade_metadata_open_only():
     result = merge_trade_metadata('{"atr": 0.001, "poc": 0.5}', None)
     parsed = json.loads(result)
@@ -296,7 +315,9 @@ def test_merge_trade_metadata_open_only():
 
 
 def test_merge_trade_metadata_with_close():
-    close_meta = json.dumps({"close_model": "price_alert_side_aware", "trigger_price": 0.058865})
+    close_meta = json.dumps(
+        {"close_model": "price_alert_side_aware", "trigger_price": 0.058865}
+    )
     result = merge_trade_metadata('{"atr": 0.001}', close_meta)
     parsed = json.loads(result)
     assert parsed["atr"] == 0.001
@@ -337,7 +358,9 @@ async def test_close_position_preserves_open_metadata(db):
         opened_at="2026-05-22T10:00:00Z",
         metadata='{"atr": 0.001, "poc": 0.5}',
     )
-    close_meta = json.dumps({"close_model": "price_alert_side_aware", "trigger_price": 94000.0})
+    close_meta = json.dumps(
+        {"close_model": "price_alert_side_aware", "trigger_price": 94000.0}
+    )
     await db.close_position(
         position_id="pos-meta-01",
         exit_price=94000.0,
@@ -379,3 +402,42 @@ async def test_close_position_no_close_metadata(db):
     meta = json.loads(trade["metadata"])
     assert meta["atr"] == 0.002
     assert "close" not in meta
+
+
+def test_active_session_seconds_within_single_session():
+    from datetime import datetime
+    from app.db import active_session_seconds
+
+    opened = datetime.fromisoformat("2026-07-22T02:00:00+00:00")  # 09:00 VN
+    closed = datetime.fromisoformat("2026-07-22T03:00:00+00:00")  # 10:00 VN
+    assert active_session_seconds(opened, closed) == 3600.0
+
+
+def test_active_session_seconds_excludes_lunch_break():
+    from datetime import datetime
+    from app.db import active_session_seconds
+
+    opened = datetime.fromisoformat("2026-07-22T02:00:00+00:00")  # 09:00 VN
+    closed = datetime.fromisoformat("2026-07-22T08:00:00+00:00")  # 15:00 VN
+    # In-session: 09:00-11:30 (2.5h) + 13:00-14:45 (1.75h) = 4.25h
+    assert abs(active_session_seconds(opened, closed) - 4.25 * 3600.0) < 1e-6
+
+
+def test_active_session_seconds_excludes_weekend():
+    from datetime import datetime
+    from app.db import active_session_seconds
+
+    opened = datetime.fromisoformat("2026-07-24T06:00:00+00:00")  # Fri 13:00 VN
+    closed = datetime.fromisoformat("2026-07-27T01:30:00+00:00")  # Mon 08:30 VN
+    # Fri afternoon session only: 13:00-14:45 = 1.75h; Monday 08:30 VN is
+    # before the 08:45 open so it contributes nothing.
+    assert abs(active_session_seconds(opened, closed) - 1.75 * 3600.0) < 1e-6
+
+
+def test_active_session_seconds_closed_before_opened():
+    from datetime import datetime
+    from app.db import active_session_seconds
+
+    opened = datetime.fromisoformat("2026-07-22T03:00:00+00:00")
+    closed = datetime.fromisoformat("2026-07-22T02:00:00+00:00")
+    assert active_session_seconds(opened, closed) == 0.0

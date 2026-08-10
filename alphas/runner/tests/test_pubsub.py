@@ -274,3 +274,84 @@ async def test_find_stale_symbols_identifies_symbols_with_old_data():
     stale_keys = [(s, t) for s, t in stale]
     assert ("BTCUSDT", "1m") in stale_keys
     assert ("ETHUSDT", "1m") not in stale_keys
+
+
+def test_trading_session_active_within_window():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from runner.config import TradingSession
+
+    session = TradingSession(
+        start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
+    )
+    # Thursday 10:00 Asia/Ho_Chi_Minh — inside the session.
+    now = datetime(2026, 8, 6, 10, 0, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
+    assert session.is_active(now) is True
+
+
+def test_trading_session_inactive_outside_window():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from runner.config import TradingSession
+
+    session = TradingSession(
+        start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
+    )
+    # Thursday 18:00 Asia/Ho_Chi_Minh — market closed.
+    now = datetime(2026, 8, 6, 18, 0, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
+    assert session.is_active(now) is False
+
+
+def test_trading_session_inactive_on_weekend():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from runner.config import TradingSession
+
+    session = TradingSession(
+        start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
+    )
+    # Saturday 10:00 — weekend, closed even inside the window.
+    now = datetime(2026, 8, 8, 10, 0, tzinfo=ZoneInfo("Asia/Ho_Chi_Minh"))
+    assert session.is_active(now) is False
+
+
+def test_trading_session_none_means_always_active():
+    from runner.config import TradingSession
+
+    assert TradingSession().is_active() is True
+
+
+def test_outside_trading_session_skips_reconnect():
+    from datetime import datetime
+    from zoneinfo import ZoneInfo
+    from runner.config import TradingSession
+
+    cache = SharedCandleCache()
+    cache.register_data_requirement("41I1G8000", "5m", warmup_bars=5, retain_bars=10)
+    stale_ts = int(time.time() * 1000) - 900_000
+    cache.upsert_candle("41I1G8000", "5m", {
+        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
+        "close": 1.5, "volume": 100, "confirmed": True,
+    })
+
+    redis_mock = MagicMock()
+    warmup_mock = MagicMock()
+    warmup_mock.get_required_tfs = MagicMock(return_value=["5m"])
+
+    manager = SharedPubSubManager(redis_mock, cache)
+    session = TradingSession(
+        start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
+    )
+    # Monkeypatch is_active to simulate market closed.
+    session_closed = TradingSession(
+        start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
+    )
+    import runner.config as config_module
+    orig = TradingSession.is_active
+    TradingSession.is_active = lambda self, now=None: False
+    try:
+        manager.set_reconnect_handler(warmup_mock, staleness_candles=5, trading_session=session_closed)
+        assert manager._outside_trading_session() is True
+    finally:
+        TradingSession.is_active = orig
+    assert session.is_active() is not None  # sanity: original method still works

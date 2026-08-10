@@ -1,9 +1,57 @@
 import aiosqlite
 import json
 import uuid
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 from contextlib import asynccontextmanager
 from typing import Optional
+
+# VN derivative sessions (Asia/Ho_Chi_Minh, UTC+7, no DST). Session start/end
+# expressed in UTC minutes of day: 08:45-11:30 and 13:00-14:45 VN.
+_SESSION_WINDOWS_UTC = ((1 * 60 + 45, 4 * 60 + 30), (6 * 60, 7 * 60 + 45))
+
+
+def active_session_seconds(opened: datetime, closed: datetime) -> float:
+    """Seconds between opened and closed that fall inside VN trading sessions.
+
+    Excludes lunch break (11:30-13:00 VN), after-hours, and weekends, so a
+    position held overnight counts only the in-session time.
+    """
+    if closed <= opened:
+        return 0.0
+    total = 0.0
+    cursor = opened
+    while cursor < closed:
+        day_utc_minutes = cursor.hour * 60 + cursor.minute
+        if cursor.weekday() >= 5:
+            cursor = _next_weekday_midnight(cursor)
+            continue
+        for start, end in _SESSION_WINDOWS_UTC:
+            if day_utc_minutes < end and day_utc_minutes >= start:
+                segment_start = cursor
+                segment_end = min(
+                    closed,
+                    cursor.replace(
+                        hour=end // 60, minute=end % 60, second=0, microsecond=0
+                    ),
+                )
+                if segment_end > segment_start:
+                    total += (segment_end - segment_start).total_seconds()
+                cursor = segment_end
+                break
+        else:
+            cursor = _next_session_start(cursor)
+    return total
+
+
+def _next_weekday_midnight(instant: datetime) -> datetime:
+    days = (7 - instant.weekday()) % 7 or 7
+    nxt = instant.replace(hour=0, minute=0, second=0, microsecond=0)
+    return nxt + timedelta(days=days)
+
+
+def _next_session_start(instant: datetime) -> datetime:
+    nxt = instant.replace(second=0, microsecond=0)
+    return nxt + timedelta(minutes=1)
 
 
 def merge_trade_metadata(open_metadata: str | None, close_metadata: str | None) -> str:
@@ -393,7 +441,7 @@ class Database:
 
         opened = datetime.fromisoformat(pos["opened_at"].replace("Z", "+00:00"))
         closed = datetime.fromisoformat(closed_at.replace("Z", "+00:00"))
-        duration_hours = (closed - opened).total_seconds() / 3600.0
+        duration_hours = active_session_seconds(opened, closed) / 3600.0
 
         trade_metadata = merge_trade_metadata(pos.get("metadata"), close_metadata)
         trade_id = pos["position_id"] if fully_closed else str(uuid.uuid4())
@@ -519,7 +567,7 @@ class Database:
                 )
                 closed_at = str(event["timestamp"])
                 closed = datetime.fromisoformat(closed_at.replace("Z", "+00:00"))
-                duration_hours = (closed - opened).total_seconds() / 3600.0
+                duration_hours = active_session_seconds(opened, closed) / 3600.0
                 close_metadata = json.dumps(
                     {
                         "virtual": True,

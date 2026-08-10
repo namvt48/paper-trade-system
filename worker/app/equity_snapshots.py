@@ -73,7 +73,7 @@ class EquitySnapshotCollector:
         db,
         ticker_cache,
         snapshot_db_path: str,
-        interval_sec: float = 300.0,
+        interval_sec: float = 60.0,
         alphas_dir: str = "alphas",
         redis_client=None,
     ) -> None:
@@ -129,6 +129,10 @@ class EquitySnapshotCollector:
 
     def _get_price(self, symbol: str) -> Optional[float]:
         live = self._ticker_cache.get_price(symbol)
+        if live is None:
+            get_last_price = getattr(self._ticker_cache, "get_last_price", None)
+            if callable(get_last_price):
+                live = get_last_price(symbol)
         if live is not None:
             self._last_prices.update(symbol, live)
             return live
@@ -159,10 +163,10 @@ class EquitySnapshotCollector:
         rows = await cursor.fetchall()
         return {row[0]: row[1] for row in rows}
 
-    async def _get_shadow_pnl_by_alpha(self) -> dict[str, dict[str, float]]:
+    async def _get_shadow_pnl_by_alpha(self) -> dict[str, dict[str, Any]]:
         if self._redis_client is None:
             return {}
-        result: dict[str, dict[str, float]] = {}
+        result: dict[str, dict[str, Any]] = {}
         try:
             for key in await self._redis_client.keys("shadow:pnl:*"):
                 raw = await self._redis_client.get(key)
@@ -172,17 +176,57 @@ class EquitySnapshotCollector:
                 alpha_id = str(payload.get("alpha_id") or str(key).rsplit(":", 1)[-1])
                 equity = float(payload.get("equity", 1.0))
                 capital = float(payload.get("capital", 10000.0))
+                raw_prices = payload.get("prices")
+                prices: dict[str, float] = {}
+                if isinstance(raw_prices, dict):
+                    for symbol, value in raw_prices.items():
+                        try:
+                            price = float(value)
+                        except (TypeError, ValueError):
+                            continue
+                        if price > 0:
+                            prices[str(symbol)] = price
                 if equity > 0 and capital > 0:
-                    result[alpha_id] = {"balance": capital * equity, "capital": capital}
+                    result[alpha_id] = {
+                        "balance": capital * equity,
+                        "capital": capital,
+                        "prices": prices,
+                    }
         except Exception:
             logger.exception("[EQUITY-SNAPSHOT] shadow-PnL read failed")
         return result
+
+    def _mark_shadow_balance(
+        self,
+        values: dict[str, Any],
+        positions: list[dict[str, Any]],
+    ) -> tuple[float, list[str]]:
+        """Mark a persisted shadow NAV from its anchor prices to live ticker prices."""
+        anchor_balance = float(values["balance"])
+        anchor_prices = values.get("prices")
+        if not positions or not isinstance(anchor_prices, dict):
+            return anchor_balance, []
+
+        pnl_delta = 0.0
+        missing_prices: list[str] = []
+        for position in positions:
+            symbol = str(position["symbol"])
+            anchor_price = anchor_prices.get(symbol)
+            live_price = self._get_price(symbol)
+            if anchor_price is None or live_price is None:
+                missing_prices.append(symbol)
+                continue
+            pnl_delta += self._compute_position_pnl(
+                position, live_price
+            ) - self._compute_position_pnl(position, float(anchor_price))
+        return anchor_balance + pnl_delta, missing_prices
 
     async def snapshot_once(self) -> None:
         if self._snap_conn is None:
             return
 
         positions = await self._db.get_all_open_positions()
+        virtual_positions = await self._db.get_virtual_positions()
         realized = await self._get_realized_pnl_by_alpha()
         virtual_realized = await self._get_virtual_realized_pnl_by_alpha()
         shadow = await self._get_shadow_pnl_by_alpha()
@@ -200,6 +244,10 @@ class EquitySnapshotCollector:
             pnl = self._compute_position_pnl(pos, price)
             alpha_id = pos["alpha_id"]
             unrealized_by_alpha[alpha_id] = unrealized_by_alpha.get(alpha_id, 0.0) + pnl
+
+        virtual_positions_by_alpha: dict[str, list[dict[str, Any]]] = {}
+        for position in virtual_positions:
+            virtual_positions_by_alpha.setdefault(position["alpha_id"], []).append(position)
 
         if missing_prices:
             logger.warning(
@@ -234,16 +282,24 @@ class EquitySnapshotCollector:
                 (ts, alpha_id, balance, unreal, real),
             )
 
-        # Shadow sleeves have no worker positions/trades. Their rows are
-        # standalone 100%-basis NAV, intentionally excluded from TOTAL_KEY.
-        # realized_pnl comes from closed virtual trades (virtual_trades.pnl,
-        # written on each VIRTUAL_CLOSE) -- the rest of the balance move
-        # since capital is the still-open sleeve's unrealized_pnl. Previously
-        # this hardcoded realized_pnl=0.0 and dumped everything into
-        # unrealized_pnl, so the dashboard's realized column stayed empty
-        # for every sleeve despite virtual_trades already having the data.
+        # Shadow sleeves are standalone 100%-basis NAV, intentionally excluded
+        # from TOTAL_KEY. The runner persists a canonical NAV and the prices at
+        # which it was marked. Between strategy candles, move that anchor by the
+        # open virtual positions' PnL delta at live ticker prices. This preserves
+        # all realized PnL and historical cost carry embedded in the runner NAV
+        # while keeping unrealized PnL and the equity curve live.
         for alpha_id, values in sorted(shadow.items()):
-            balance = values["balance"]
+            balance, missing_shadow_prices = self._mark_shadow_balance(
+                values,
+                virtual_positions_by_alpha.get(alpha_id, []),
+            )
+            if missing_shadow_prices:
+                logger.warning(
+                    "[EQUITY-SNAPSHOT] shadow mark missing %d prices for %s: %s",
+                    len(missing_shadow_prices),
+                    alpha_id,
+                    ", ".join(sorted(set(missing_shadow_prices))[:10]),
+                )
             capital = values["capital"]
             real = virtual_realized.get(alpha_id, 0.0)
             unreal = balance - capital - real

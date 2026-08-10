@@ -38,7 +38,7 @@ services:
       - EXECUTION_MIN_ADVERSE_BPS=${EXECUTION_MIN_ADVERSE_BPS:-0}
       - EXECUTION_SECOND_QUOTE_TIMEOUT_MS=${EXECUTION_SECOND_QUOTE_TIMEOUT_MS:-200}
       - ENABLE_EQUITY_SNAPSHOT=${ENABLE_EQUITY_SNAPSHOT:-true}
-      - EQUITY_SNAPSHOT_INTERVAL_SEC=${EQUITY_SNAPSHOT_INTERVAL_SEC:-300}
+      - EQUITY_SNAPSHOT_INTERVAL_SEC=${EQUITY_SNAPSHOT_INTERVAL_SEC:-60}
       - EQUITY_SNAPSHOT_DB_PATH=/app/data/equity-snapshots.db
       - ALPHAS_DIR=/app/alphas
     networks:
@@ -115,6 +115,36 @@ services:
       - runner
     deploy:
       replicas: ${LEGACY_RUNNER_REPLICAS:-1}
+
+  alpha-runner-tcbs:
+    build:
+      context: ./
+      dockerfile: alphas/runner/Dockerfile
+    environment:
+      REDIS_URL: ${REDIS_URL:-redis://paper-redis:6379}
+      MDS_REDIS_URL: ${MDS_REDIS_URL:-redis://mds-redis:6379}
+      MDS_EXCHANGE: tcbs
+      RUNNER_ID: paper-runner-tcbs
+      RUNNER_CONFIG: /config/runner-config.yaml
+      RUNNER_METRICS_HOST: 0.0.0.0
+      RUNNER_METRICS_PORT: 9093
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
+      MAX_ALPHAS_PER_RUNNER: 4
+      RUNNER_COMPUTE_WORKERS: 4
+      CLAIM_INTERVAL_SEC: ${TCBS_CLAIM_INTERVAL_SEC:-30}
+      RUNNER_CACHE_DIR: ${RUNNER_CACHE_DIR:-/data/cache}
+    volumes:
+      - ${TCBS_RUNNER_CONFIG_FILE:-./runner-config-tcbs.yaml}:/config/runner-config.yaml:ro
+      - ../market-data-service/historical_cache:${RUNNER_CACHE_DIR:-/data/cache}:ro
+    depends_on:
+      - worker
+    networks:
+      - redis-net
+    restart: unless-stopped
+    profiles:
+      - runner
+    deploy:
+      replicas: 1
 
   pm-live:
     build:

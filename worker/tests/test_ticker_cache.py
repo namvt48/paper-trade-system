@@ -28,6 +28,7 @@ def test_ticker_price_cache_rejects_stale_and_non_positive_prices():
 
     now[0] += 3.0
     assert cache.get_price("BTCUSDT") is None
+    assert cache.get_last_price("BTCUSDT") == 95000.0
 
 
 def test_ticker_quote_is_not_executable():

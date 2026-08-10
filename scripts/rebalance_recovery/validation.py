@@ -47,7 +47,7 @@ def validate_candidates(
     checks = (
         _integrity_check(candidate_main, "main.integrity"),
         _integrity_check(candidate_equity, "equity.integrity"),
-        _excluded_alpha_check(baseline_main, candidate_main),
+        _excluded_alpha_check(baseline_main, candidate_main, points),
         _cycle_check(ledger, points),
         _ledger_signal_check(candidate_main, ledger),
         _duplicate_position_check(candidate_main),
@@ -87,8 +87,18 @@ def _integrity_check(path: Path, name: str) -> ValidationCheck:
     return ValidationCheck(name=name, passed=result == "ok", evidence=str(result))
 
 
-def _excluded_alpha_check(baseline: Path, candidate: Path) -> ValidationCheck:
-    """Prove the excluded alpha's rows are byte-logically unchanged."""
+def _excluded_alpha_check(
+    baseline: Path,
+    candidate: Path,
+    points: tuple[RecoveryPoint, ...],
+) -> ValidationCheck:
+    """Protect trend60cmf unless the explicit recovery scope includes it."""
+    if any(point.alpha_id == EXCLUDED_ALPHA for point in points):
+        return ValidationCheck(
+            name="scope.1d-trend60cmf",
+            passed=True,
+            evidence="explicitly included in recovery points",
+        )
     before = _alpha_digest(baseline, str(EXCLUDED_ALPHA))
     after = _alpha_digest(candidate, str(EXCLUDED_ALPHA))
     return ValidationCheck(

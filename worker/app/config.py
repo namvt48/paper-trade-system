@@ -48,7 +48,7 @@ class Settings(BaseSettings):
 
     # Equity snapshot collector (live equity curve)
     ENABLE_EQUITY_SNAPSHOT: bool = True
-    EQUITY_SNAPSHOT_INTERVAL_SEC: float = 300.0
+    EQUITY_SNAPSHOT_INTERVAL_SEC: float = 60.0
     EQUITY_SNAPSHOT_DB_PATH: str = "data/equity-snapshots.db"
     ALPHAS_DIR: str = "alphas"
 

@@ -7,7 +7,10 @@ from collections import defaultdict
 from dataclasses import dataclass
 
 import redis.asyncio as aioredis
-from redis.exceptions import ConnectionError as RedisConnectionError, TimeoutError as RedisTimeoutError
+from redis.exceptions import (
+    ConnectionError as RedisConnectionError,
+    TimeoutError as RedisTimeoutError,
+)
 
 from base.json_utils import loads as json_loads
 from runner.data_layer.cache import SharedCandleCache
@@ -32,7 +35,9 @@ class DataEvent:
 
 
 class SharedPubSubManager:
-    def __init__(self, redis_client, cache: SharedCandleCache, queue_maxsize: int = 1000):
+    def __init__(
+        self, redis_client, cache: SharedCandleCache, queue_maxsize: int = 1000
+    ):
         self._sync_redis = redis_client
         self._async_redis: aioredis.Redis | None = None
         self.pubsub: aioredis.client.PubSub | None = None
@@ -47,11 +52,16 @@ class SharedPubSubManager:
         self._dropped: dict[str, int] = defaultdict(int)
         self._warmup_manager = None
         self._reconnect_staleness_candles: int = 5
+        self._trading_session = None
         self._last_message_time: float = time.monotonic()
         self._stale_check_interval: float = 30.0
         self._metrics = None
         self._redis_url: str | None = None
-        if not self._inline and hasattr(redis_client, "connection_pool") and hasattr(redis_client.connection_pool, "connection_kwargs"):
+        if (
+            not self._inline
+            and hasattr(redis_client, "connection_pool")
+            and hasattr(redis_client.connection_pool, "connection_kwargs")
+        ):
             kwargs = redis_client.connection_pool.connection_kwargs
             host = kwargs.get("host", "localhost")
             port = kwargs.get("port", 6379)
@@ -71,19 +81,39 @@ class SharedPubSubManager:
         self,
         warmup_manager,
         staleness_candles: int = 5,
+        trading_session=None,
     ) -> None:
         self._warmup_manager = warmup_manager
         self._reconnect_staleness_candles = staleness_candles
+        self._trading_session = trading_session
+
+    def _outside_trading_session(self) -> bool:
+        session = getattr(self, "_trading_session", None)
+        if session is None:
+            return False
+        try:
+            return not session.is_active()
+        except Exception:
+            return False
 
     async def subscribe(self, channel: str, strategy_id: str) -> asyncio.Queue:
-        queue = self._queues.setdefault(strategy_id, asyncio.Queue(maxsize=self.queue_maxsize))
-        if strategy_id not in self._subscribers[channel] and not self._subscribers[channel]:
+        queue = self._queues.setdefault(
+            strategy_id, asyncio.Queue(maxsize=self.queue_maxsize)
+        )
+        if (
+            strategy_id not in self._subscribers[channel]
+            and not self._subscribers[channel]
+        ):
             if self._inline:
                 self.pubsub.subscribe(channel)
             else:
                 ps = await self._ensure_async_pubsub()
                 await ps.subscribe(channel)
-            logger.info("[PUBSUB] Subscribed to channel=%s for strategy=%s", channel, strategy_id)
+            logger.info(
+                "[PUBSUB] Subscribed to channel=%s for strategy=%s",
+                channel,
+                strategy_id,
+            )
         self._subscribers[channel].add(strategy_id)
         self._strategy_channels[strategy_id].add(channel)
         return queue
@@ -122,20 +152,35 @@ class SharedPubSubManager:
                 queue.put_nowait(event)
             except asyncio.QueueFull:
                 self._dropped[strategy_id] += 1
-                if self._dropped[strategy_id] <= 3 or self._dropped[strategy_id] % 100 == 0:
-                    logger.warning("[PUBSUB] Queue full for strategy=%s, dropped total=%d", strategy_id, self._dropped[strategy_id])
+                if (
+                    self._dropped[strategy_id] <= 3
+                    or self._dropped[strategy_id] % 100 == 0
+                ):
+                    logger.warning(
+                        "[PUBSUB] Queue full for strategy=%s, dropped total=%d",
+                        strategy_id,
+                        self._dropped[strategy_id],
+                    )
         return event
 
     async def run(self, stop_event: asyncio.Event, poll_timeout: float = 1.0) -> None:
         self._last_message_time = time.monotonic()
         last_stale_check = time.monotonic()
         last_liveness_log = time.monotonic()
-        logger.info("[PUBSUB] Run loop started, subscribed channels: %s", list(self._subscribers.keys()))
+        logger.info(
+            "[PUBSUB] Run loop started, subscribed channels: %s",
+            list(self._subscribers.keys()),
+        )
 
         while not stop_event.is_set():
             try:
                 message = await self._get_message(poll_timeout)
-            except (RedisConnectionError, RedisTimeoutError, OSError, ConnectionResetError) as exc:
+            except (
+                RedisConnectionError,
+                RedisTimeoutError,
+                OSError,
+                ConnectionResetError,
+            ) as exc:
                 logger.warning("[PUBSUB] Connection error, retrying in 2s: %s", exc)
                 if self._metrics:
                     self._metrics.inc("pubsub_connection_error_total")
@@ -155,21 +200,35 @@ class SharedPubSubManager:
             now = time.monotonic()
             if now - last_liveness_log >= 60.0:
                 last_liveness_log = now
-                logger.info("[PUBSUB] Run loop alive, channels=%d last_msg_ago=%.0fs", len(self._subscribers), now - self._last_message_time)
+                logger.info(
+                    "[PUBSUB] Run loop alive, channels=%d last_msg_ago=%.0fs",
+                    len(self._subscribers),
+                    now - self._last_message_time,
+                )
 
             if not message:
                 now = time.monotonic()
-                if (now - last_stale_check >= self._stale_check_interval
-                        and self._warmup_manager):
+                if (
+                    now - last_stale_check >= self._stale_check_interval
+                    and self._warmup_manager
+                ):
                     last_stale_check = now
                     if self._metrics:
                         self._metrics.inc("stale_check_total")
+                    if self._outside_trading_session():
+                        continue
                     try:
-                        if self._is_data_stale(self._warmup_manager, self._reconnect_staleness_candles):
-                            logger.warning("[PUBSUB] Data stale during periodic check — triggering reconnect warmup")
+                        if self._is_data_stale(
+                            self._warmup_manager, self._reconnect_staleness_candles
+                        ):
+                            logger.warning(
+                                "[PUBSUB] Data stale during periodic check — triggering reconnect warmup"
+                            )
                             await self._on_reconnect()
                     except Exception as exc:
-                        logger.exception("[PUBSUB] Stale check/reconnect error: %s", exc)
+                        logger.exception(
+                            "[PUBSUB] Stale check/reconnect error: %s", exc
+                        )
                 await asyncio.sleep(min(float(poll_timeout), 0.1))
                 continue
 
@@ -184,11 +243,17 @@ class SharedPubSubManager:
                 channel = channel.decode("utf-8")
             if isinstance(data, bytes):
                 data = data.decode("utf-8")
-            logger.debug("[PUBSUB] Received message on channel=%s data_len=%d", channel, len(str(data)))
+            logger.debug(
+                "[PUBSUB] Received message on channel=%s data_len=%d",
+                channel,
+                len(str(data)),
+            )
             try:
                 await self.handle_message(str(channel), data)
             except Exception as exc:
-                logger.exception("[PUBSUB] Error handling message on %s: %s", channel, exc)
+                logger.exception(
+                    "[PUBSUB] Error handling message on %s: %s", channel, exc
+                )
 
     async def unsubscribe_strategy(self, strategy_id: str) -> None:
         for channel in list(self._strategy_channels.get(strategy_id, set())):
@@ -227,7 +292,9 @@ class SharedPubSubManager:
                 return True
         return False
 
-    def _find_stale_symbols(self, warmup_manager, staleness_candles: int) -> list[tuple[str, str]]:
+    def _find_stale_symbols(
+        self, warmup_manager, staleness_candles: int
+    ) -> list[tuple[str, str]]:
         stale = []
         now_ms = int(time.time() * 1000)
         excluded = getattr(warmup_manager, "excluded_symbols", set())
@@ -245,11 +312,22 @@ class SharedPubSubManager:
                     stale.append((symbol, tf))
         return stale
 
-    async def _on_reconnect(self, warmup_manager=None, staleness_candles: int | None = None) -> None:
+    async def _on_reconnect(
+        self, warmup_manager=None, staleness_candles: int | None = None
+    ) -> None:
+        if self._outside_trading_session():
+            logger.info("[PUBSUB] Skipping reconnect warmup — outside trading session")
+            return
         wm = warmup_manager or self._warmup_manager
-        sc = staleness_candles if staleness_candles is not None else self._reconnect_staleness_candles
+        sc = (
+            staleness_candles
+            if staleness_candles is not None
+            else self._reconnect_staleness_candles
+        )
         if wm is None:
-            logger.warning("[PUBSUB] Reconnected but no warmup_manager set — skipping reconnect warmup")
+            logger.warning(
+                "[PUBSUB] Reconnected but no warmup_manager set — skipping reconnect warmup"
+            )
             return
 
         logger.warning("[PUBSUB] Data stale — checking per-symbol freshness")
@@ -262,10 +340,13 @@ class SharedPubSubManager:
         if self._metrics:
             self._metrics.inc("stale_detected_total")
 
-        logger.warning("[PUBSUB] %d symbols have stale data — re-reading from snapshots", len(stale_symbols))
+        logger.warning(
+            "[PUBSUB] %d symbols have stale data — re-reading from snapshots",
+            len(stale_symbols),
+        )
 
         if wm.snapshot_reader:
-            for (symbol, tf) in stale_symbols:
+            for symbol, tf in stale_symbols:
                 bars = wm._requirements.get((symbol, tf), 0)
                 candles = wm.snapshot_reader.load(symbol, tf, bars)
                 if candles:
@@ -275,7 +356,9 @@ class SharedPubSubManager:
                         self.cache.upsert_candle(symbol, tf, candle)
 
         if self._is_data_stale(wm, sc):
-            logger.warning("[PUBSUB] Still stale after snapshot re-read — triggering full warmup")
+            logger.warning(
+                "[PUBSUB] Still stale after snapshot re-read — triggering full warmup"
+            )
             if self._metrics:
                 self._metrics.inc("reconnect_full_warmup_total")
             await wm.run_synced_warmup()
@@ -292,7 +375,9 @@ class SharedPubSubManager:
 
     async def _get_message(self, timeout: float):
         if self._inline:
-            return self.pubsub.get_message(ignore_subscribe_messages=True, timeout=timeout)
+            return self.pubsub.get_message(
+                ignore_subscribe_messages=True, timeout=timeout
+            )
         ps = await self._ensure_async_pubsub()
         try:
             result = await asyncio.wait_for(
@@ -306,7 +391,9 @@ class SharedPubSubManager:
             await self._reset_pubsub()
             return None
         except Exception as exc:
-            logger.warning("[PUBSUB] Unexpected error in get_message: %s — resetting", exc)
+            logger.warning(
+                "[PUBSUB] Unexpected error in get_message: %s — resetting", exc
+            )
             await self._reset_pubsub()
             return None
         return result
@@ -321,7 +408,9 @@ class SharedPubSubManager:
             except Exception:
                 pass
         try:
-            self._async_redis = aioredis.from_url(self._redis_url or "redis://localhost:6379/0", decode_responses=False)
+            self._async_redis = aioredis.from_url(
+                self._redis_url or "redis://localhost:6379/0", decode_responses=False
+            )
             self.pubsub = self._async_redis.pubsub()
             for channel in self._subscribers:
                 await self.pubsub.subscribe(channel)

@@ -200,6 +200,19 @@ def test_explicit_close_builds_36h_points_at_the_same_wall_clock() -> None:
         assert int(point.candle_open_ms) == int(close_at.timestamp() * 1_000) - timeframe_ms
 
 
+def test_explicit_close_can_recover_trend60cmf_from_its_activation_day() -> None:
+    close_at = datetime(2026, 7, 31, 0, 0, tzinfo=timezone.utc)
+
+    points = build_close_points(close_at, ["1d-trend60cmf"])
+
+    assert len(points) == 1
+    assert points[0].alpha_id == EXCLUDED_ALPHA
+    assert points[0].timeframe == "1d"
+    assert points[0].event_at == datetime(
+        2026, 7, 31, 0, 0, 5, tzinfo=timezone.utc
+    )
+
+
 def test_candidate_build_never_mutates_source_database(tmp_path: Path) -> None:
     source = tmp_path / "source.db"
     candidate = tmp_path / "candidate.db"

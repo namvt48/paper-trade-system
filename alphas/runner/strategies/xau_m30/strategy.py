@@ -124,17 +124,22 @@ class XauM30RunnerStrategy(Strategy):
         self.symbol = str(params.get("symbol", "XAUUSDT")).upper()
         self.exchange = str(params.get("exchange", "binance"))
         self.capital = float(params.get("capital", 10_000.0))
-        self.risk_pct = float(params.get("risk_pct", 0.0025))
+        self.risk_pct = float(params.get("risk_pct", 0.01))
         self.fee_pct = float(params.get("fee_pct", 0.0005))
         self.leverage = float(params.get("leverage", 10.0))
         self.m15_warmup_bars = int(params.get("warmup_bars", 320))
         self.h4_warmup_bars = int(params.get("h4_warmup_bars", 80))
         self.retain_bars = int(params.get("retain_bars", self.m15_warmup_bars))
+        self.timestamp_semantics = str(
+            params.get("timestamp_semantics", "open")
+        ).lower()
+        if self.timestamp_semantics not in {"open", "close"}:
+            raise ValueError("timestamp_semantics must be 'open' or 'close'")
         self.timezone = ZoneInfo(
             str(params.get("session_timezone", "America/New_York"))
         )
-        # Alpha 11/12 explicitly trade the NY weekday session.  The other four
-        # presets have no session rule in their source logic and may run 24/7.
+        # Session behavior follows PRESETS; Alpha 4/5/6/11/12 are session-gated,
+        # while Alpha 10 trades without a session gate.
         self.trade_weekends = bool(
             params.get("trade_weekends", not self.preset.session_gated)
         )
@@ -144,7 +149,11 @@ class XauM30RunnerStrategy(Strategy):
 
     @classmethod
     def get_required_channels(cls, params: dict) -> list[str]:
-        return ["kline:15m", "kline:4h"]
+        preset_number = int(params.get("preset", 0))
+        channels = ["kline:15m"]
+        if PRESETS.get(preset_number, Preset(0, 0, 0, False, False, False)).macro_gated:
+            channels.append("kline:4h")
+        return channels
 
     def get_required_channels_instance(self) -> list[str]:
         return self.__class__.get_required_channels(self.params)
@@ -153,7 +162,7 @@ class XauM30RunnerStrategy(Strategy):
         return [self.symbol]
 
     def get_warmup_tfs(self) -> list[str]:
-        return ["15m", "4h"]
+        return ["15m", "4h"] if self.preset.macro_gated else ["15m"]
 
     def get_warmup_bars(self, tf: str) -> int:
         return self.h4_warmup_bars if tf == "4h" else self.m15_warmup_bars
@@ -163,6 +172,20 @@ class XauM30RunnerStrategy(Strategy):
 
     async def _shared_panel_bundle(self):
         return None
+
+    @staticmethod
+    def _timestamp_ms(value: int) -> int:
+        """Normalize Unix seconds/milliseconds to milliseconds."""
+        value = int(value)
+        return value * 1000 if abs(value) < 1_000_000_000_000 else value
+
+    def _bar_open_ms(self, value: int, timeframe_ms: int) -> int:
+        value_ms = self._timestamp_ms(value)
+        if self.timestamp_semantics == "close":
+            # Some APIs use the exact boundary, others use boundary - 1 ms.
+            close_boundary = value_ms + 1 if value_ms % 1000 == 999 else value_ms
+            value_ms = close_boundary - timeframe_ms
+        return value_ms
 
     def should_scan_after_event(
         self, kind: str, symbol: str | None = None, tf: str | None = None
@@ -175,9 +198,12 @@ class XauM30RunnerStrategy(Strategy):
         ):
             return False
         latest = self.ctx.cache.get_latest_timestamp(self.symbol, "15m")
-        if latest is None or latest % M30_MS != M15_MS:
+        if latest is None:
             return False
-        m30_open = latest - M15_MS
+        latest_open = self._bar_open_ms(latest, M15_MS)
+        if latest_open % M30_MS != M15_MS:
+            return False
+        m30_open = latest_open - M15_MS
         if self._last_m30_open is not None and m30_open <= self._last_m30_open:
             return False
         self._pending_m30_open = m30_open
@@ -240,9 +266,20 @@ class XauM30RunnerStrategy(Strategy):
             return {}
         result: dict[str, dict[str, Any]] = {}
         for key, value in source.items():
+            runtime = value.get("strategy_runtime", {}) if isinstance(value, dict) else {}
+            owner_alpha = value.get("alpha_id") if isinstance(value, dict) else None
+            owner_version = value.get("version") if isinstance(value, dict) else None
+            owner_preset = value.get("preset") if isinstance(value, dict) else None
+            if isinstance(runtime, dict):
+                owner_alpha = owner_alpha or runtime.get("alpha_id")
+                owner_version = owner_version or runtime.get("version")
+                owner_preset = owner_preset or runtime.get("preset")
             if (
                 isinstance(value, dict)
                 and str(value.get("symbol", "")).upper() == self.symbol
+                and str(owner_alpha or "") == self.alpha_id
+                and str(owner_version or "") == self.version
+                and str(owner_preset or "") == str(self.preset.number)
             ):
                 position_id = str(value.get("position_id") or key)
                 value = dict(value)
@@ -266,7 +303,7 @@ class XauM30RunnerStrategy(Strategy):
             self.symbol, "15m", self.get_retain_bars("15m")
         )
         bars = {
-            time: (op, high, low, close)
+            self._bar_open_ms(time, M15_MS): (op, high, low, close)
             for time, op, high, low, close in zip(
                 snapshot.times,
                 snapshot.opens,
@@ -302,7 +339,7 @@ class XauM30RunnerStrategy(Strategy):
             self.symbol, "4h", self.get_retain_bars("4h")
         )
         rows = [
-            (time, op, high, low, close)
+            (self._bar_open_ms(time, H4_MS), op, high, low, close)
             for time, op, high, low, close in zip(
                 snapshot.times,
                 snapshot.opens,
@@ -310,7 +347,7 @@ class XauM30RunnerStrategy(Strategy):
                 snapshot.lows,
                 snapshot.closes,
             )
-            if time + H4_MS <= m30_close
+            if self._bar_open_ms(time, H4_MS) + H4_MS <= m30_close
         ]
         return CandleSeries(
             tuple(row[1] for row in rows),
@@ -542,13 +579,16 @@ class XauM30RunnerStrategy(Strategy):
                 position["breakeven"] = True
 
     async def _open_if_allowed(self, side: Side, series: CandleSeries) -> None:
+        # max_positions is a per-strategy total-position cap, matching the
+        # local backtest engine.  Do not count LONG and SHORT independently;
+        # otherwise a max_positions=1 strategy could hedge with two positions.
+        if len(self._positions) >= self.preset.max_positions:
+            return
         same_side = [
             position
             for position in self._positions.values()
             if position.get("side") == side
         ]
-        if len(same_side) >= self.preset.max_positions:
-            return
         atr = _atr(series)[-1]
         entry = series.closes[-1]
         if any(
@@ -591,6 +631,9 @@ class XauM30RunnerStrategy(Strategy):
         position = {
             "position_id": position_id,
             "symbol": self.symbol,
+            "alpha_id": self.alpha_id,
+            "version": self.version,
+            "preset": self.preset.number,
             "side": side,
             "entry": entry,
             "qty": qty,

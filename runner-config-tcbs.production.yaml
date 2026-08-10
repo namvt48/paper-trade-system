@@ -1,0 +1,59 @@
+runner:
+  runner_id: paper-runner-tcbs
+  redis_url: redis://paper-redis:6379
+  mds_redis_url: redis://mds-redis:6379
+  mds_exchange: tcbs
+  signal_stream: paper-signals
+  shadow_mode: false
+  warmup_min_symbol_coverage: 1.0
+  compute_workers: 4
+  data_queue_maxsize: 200
+  strategy_event_drop_warn_threshold: 10
+  lease_ttl_sec: 20
+  lease_renew_interval_sec: 5
+  max_alphas_per_runner: 4
+  claim_interval_sec: 30
+  warmup:
+    max_concurrent_mds_requests: 1
+    max_mds_requests_per_minute: 4
+    max_symbols_per_mds_request: 1
+    request_timeout_sec: 15
+    response_cache_ttl_sec: 60
+    mds_ready_timeout_sec: 5
+    min_warmup_coverage_pct: 1.0
+    sync_tolerance_candles: 1
+    reconnect_staleness_candles: 5
+    parquet_max_staleness_sec: 21600
+  cache:
+    min_retain_bars: 0
+  trading_session:
+    start: "08:45"
+    end: "14:25"
+    timezone: Asia/Ho_Chi_Minh
+    trade_weekends: false
+
+modules:
+  - runner.strategies.vn30_tcbs
+
+alphas:
+  - alpha_id: vn30-alpha-19
+    strategy: vn30_tcbs
+    version: "1"
+    enabled: true
+    params: {preset: 19, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 182, retain_bars: 256, window: 60, window1: 10, window2: 40, threshold: 90.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25"}
+  - alpha_id: vn30-alpha-21
+    strategy: vn30_tcbs
+    version: "1"
+    enabled: true
+    params: {preset: 21, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 14, retain_bars: 64, period: 14, sigma: 8.0, threshold_bps: 25.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25"}
+  # ── reverse variants (LONG↔SHORT swapped) ──
+  - alpha_id: vn30-alpha-19-reverse
+    strategy: vn30_tcbs
+    version: "1"
+    enabled: true
+    params: {preset: 19, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 182, retain_bars: 256, window: 60, window1: 10, window2: 40, threshold: 90.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25", reverse: true}
+  - alpha_id: vn30-alpha-21-reverse
+    strategy: vn30_tcbs
+    version: "1"
+    enabled: true
+    params: {preset: 21, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 14, retain_bars: 64, period: 14, sigma: 8.0, threshold_bps: 25.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25", reverse: true}

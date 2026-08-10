@@ -20,8 +20,14 @@ from app.equity_snapshots import EquitySnapshotCollector
 
 
 class _FakeTickerCache:
+    def __init__(self, prices: dict[str, float] | None = None) -> None:
+        self.prices = dict(prices or {})
+
     def get_price(self, symbol):
-        return None
+        return self.prices.get(symbol)
+
+    def set_price(self, symbol: str, price: float) -> None:
+        self.prices[symbol] = price
 
 
 class _FakeAsyncRedis:
@@ -154,3 +160,72 @@ async def test_shadow_snapshot_splits_realized_and_still_open_unrealized(db, tmp
     assert balance == pytest.approx(10800.0)
     assert realized_pnl == pytest.approx(500.0)
     assert unrealized_pnl == pytest.approx(300.0)
+
+
+@pytest.mark.asyncio
+async def test_shadow_snapshot_marks_open_virtual_positions_to_live_price(db, tmp_path):
+    opened = {
+        "ledger_mode": "virtual",
+        "type": "VIRTUAL_OPEN",
+        "event_id": "open-live-mark",
+        "position_id": "pos-live-mark",
+        "alpha_id": "test-sleeve",
+        "symbol": "BTCUSDT",
+        "side": "LONG",
+        "price": 90.0,
+        "qty": 10.0,
+        "weight": 0.09,
+        "exchange": "binance",
+        "timeframe": "1h",
+        "timestamp": "2026-07-27T00:00:00+00:00",
+        "candle_open_ms": 1_000,
+        "metadata": {"virtual": True},
+    }
+    from app.virtual_trade_ledger import process_virtual_trade_message
+
+    await process_virtual_trade_message({"payload": json.dumps(opened)}, db)
+
+    # The runner's persisted shadow NAV was marked at BTC=100 and already
+    # contains $200 of total unrealized/cost carry. The collector must preserve
+    # that anchor, then add only the open position's move after the anchor.
+    redis_client = _FakeAsyncRedis(
+        {
+            "shadow:pnl:test-sleeve": json.dumps(
+                {
+                    "alpha_id": "test-sleeve",
+                    "equity": 1.02,
+                    "capital": 10000.0,
+                    "prices": {"BTCUSDT": 100.0},
+                }
+            )
+        }
+    )
+    ticker = _FakeTickerCache({"BTCUSDT": 110.0})
+    collector = EquitySnapshotCollector(
+        db=db,
+        ticker_cache=ticker,
+        snapshot_db_path=str(tmp_path / "equity-snapshots.db"),
+        alphas_dir=str(tmp_path / "no-alphas-here"),
+        redis_client=redis_client,
+    )
+    await collector.init()
+
+    await collector.snapshot_once()
+    ticker.set_price("BTCUSDT", 120.0)
+    await collector.snapshot_once()
+
+    cursor = await collector._snap_conn.execute(
+        """
+        SELECT balance, unrealized_pnl, realized_pnl
+        FROM equity_snapshots
+        WHERE alpha_id=?
+        ORDER BY id
+        """,
+        ("test-sleeve",),
+    )
+    rows = await cursor.fetchall()
+    await collector.close()
+
+    assert [row["balance"] for row in rows] == pytest.approx([10300.0, 10400.0])
+    assert [row["unrealized_pnl"] for row in rows] == pytest.approx([300.0, 400.0])
+    assert [row["realized_pnl"] for row in rows] == pytest.approx([0.0, 0.0])
