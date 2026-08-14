@@ -15,10 +15,48 @@ POSITIONS_KEY_PREFIX = "runner:positions:"
 
 @dataclass
 class PriceAlertProxy:
+    """Drives MDS price-alert registration for the symbols a strategy holds.
+
+    The runner-side strategy calls ``sync()`` with the symbols it currently has
+    open positions on. This proxy publishes the MDS ``price_alert:subscribe``
+    registration (so MDS starts publishing ticks for those symbols) and exposes
+    the concrete ``price_alert:{exchange}:{symbol}`` channels the runner must
+    subscribe to in order to receive those ticks. The runner's event loop
+    performs the actual (async) pubsub subscribe/unsubscribe from
+    ``active_prefixed_channels()``.
+    """
+
     symbols: set[str]
+    alpha_id: str = ""
+    exchange: str = ""
+    mds_client: object | None = None
 
     def sync(self, symbols: set[str]) -> None:
         self.symbols = set(symbols)
+        if self.mds_client is None or not self.exchange:
+            return
+        channel = f"price_alert:subscribe:{self.exchange}"
+        payload = {
+            "consumer_id": self.alpha_id,
+            "action": "sync",
+            "symbols": sorted(self.symbols),
+        }
+        try:
+            self.mds_client.publish(channel, json.dumps(payload))
+        except Exception as exc:
+            logger.warning(
+                "[PRICE-ALERT] Registration publish failed for %s: %s",
+                self.alpha_id,
+                exc,
+                extra={"alpha_id": self.alpha_id},
+            )
+
+    def active_prefixed_channels(self) -> set[str]:
+        return (
+            {f"price_alert:{self.exchange}:{symbol}" for symbol in self.symbols}
+            if self.exchange
+            else set()
+        )
 
 
 @dataclass
@@ -59,7 +97,9 @@ class StrategyContext:
         max_age_sec: float | None = None,
     ) -> bool:
         loaded, _total, pct = self.cache.coverage(symbols, tf, bars, max_age_sec)
-        required = max(1, int(len(symbols) * self.warmup_min_symbol_coverage + 0.999999))
+        required = max(
+            1, int(len(symbols) * self.warmup_min_symbol_coverage + 0.999999)
+        )
         self.state.ready = loaded >= required
         return self.state.ready
 

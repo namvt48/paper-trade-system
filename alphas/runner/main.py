@@ -28,7 +28,7 @@ from runner.metrics_http import MetricsServer
 from runner.reconcile.state import StrategyRuntimeState
 from runner.shared_panel_feature_cache import SharedPanelFeatureCache
 from runner.signal.dispatcher import SignalDispatcher
-from runner.strategy.context import StrategyContext
+from runner.strategy.context import PriceAlertProxy, StrategyContext
 from runner.strategy.registry import StrategyRegistry
 
 
@@ -505,6 +505,48 @@ async def run_strategy_manage_loop(
             continue
 
 
+async def run_price_alert_reconcile_loop(
+    strategies,
+    pubsub,
+    stop_event: asyncio.Event,
+    interval_sec: float = 5.0,
+) -> None:
+    """Keep runner-side price_alert: subscriptions in sync with held positions.
+
+    Each strategy's ``ctx.price_alerts`` proxy records the symbols it has open
+    positions on (via ``sync``). This loop subscribes the runner to the concrete
+    ``price_alert:{exchange}:{symbol}`` channels MDS publishes ticks on, and
+    unsubscribes channels the strategy no longer needs. The strategy's own
+    ``manage_positions``/``_persist_positions`` already publish the MDS
+    registration through the proxy; this loop only owns the pubsub subscribe side.
+    """
+    if pubsub is None:
+        return
+    subscribed: dict[str, set[str]] = {}
+    while not stop_event.is_set():
+        try:
+            for strategy in strategies:
+                proxy = getattr(strategy.ctx, "price_alerts", None)
+                if proxy is None:
+                    continue
+                desired = proxy.active_prefixed_channels()
+                alpha_id = strategy.alpha_id
+                current = subscribed.get(alpha_id, set())
+                for channel in desired - current:
+                    await pubsub.subscribe(channel, alpha_id)
+                for channel in current - desired:
+                    await pubsub.unsubscribe(channel, alpha_id)
+                subscribed[alpha_id] = desired
+        except Exception:
+            logger.exception(
+                "[RUNNER] Price-alert reconcile error",
+            )
+        try:
+            await asyncio.wait_for(stop_event.wait(), timeout=interval_sec)
+        except asyncio.TimeoutError:
+            continue
+
+
 async def periodic_gap_check(
     cache: SharedCandleCache,
     strategies,
@@ -739,6 +781,12 @@ async def run(
                 redis_client=redis_client,
                 mds_redis_client=mds_client,
                 panel_feature_cache=panel_feature_cache,
+                price_alerts=PriceAlertProxy(
+                    symbols=set(),
+                    alpha_id=alpha_id,
+                    exchange=cfg.mds_exchange,
+                    mds_client=mds_client,
+                ),
             )
             strategy = registry.create(
                 alpha_cfg["strategy"],
@@ -782,6 +830,7 @@ async def run(
             max_symbols_per_mds_request=cfg.warmup.max_symbols_per_mds_request,
             request_timeout_sec=cfg.warmup.request_timeout_sec,
             response_cache_ttl_sec=cfg.warmup.response_cache_ttl_sec,
+            skip_gap_check=(cfg.mds_exchange == "tcbs"),
         )
         requirements = warmup.collect_requirements(strategies)
         logger.info(
@@ -942,6 +991,11 @@ async def run(
                 alpha_tasks[aid].extend([evt_task, mng_task])
             strategy_tasks.append(
                 asyncio.create_task(
+                    run_price_alert_reconcile_loop(strategies, pubsub, stop_event)
+                )
+            )
+            strategy_tasks.append(
+                asyncio.create_task(
                     periodic_gap_check(cache, strategies, stop_event=stop_event)
                 )
             )
@@ -970,6 +1024,12 @@ async def run(
                         redis_client=redis_client,
                         mds_redis_client=mds_client,
                         panel_feature_cache=panel_feature_cache,
+                        price_alerts=PriceAlertProxy(
+                            symbols=set(),
+                            alpha_id=alpha_id,
+                            exchange=cfg.mds_exchange,
+                            mds_client=mds_client,
+                        ),
                     )
                     strategy = registry.create(
                         alpha_cfg["strategy"],
@@ -981,6 +1041,14 @@ async def run(
                     strategies.append(strategy)
                     started.append(alpha_id)
                     owned_leases.append(alpha_id)
+                    # A freshly claimed/enabled alpha must not inherit a stale
+                    # last-event timestamp from before it was disabled — /health
+                    # would otherwise 503 the whole runner as "stale" even
+                    # though the alpha is simply waiting for its next candle
+                    # (e.g. a 1h-only alpha re-enabled right after its hourly
+                    # candle closed). Reset so it is "not started" until the
+                    # first event is processed.
+                    metrics.reset_alpha_event(alpha_id)
                     logger.info(
                         "[RUNNER] Strategy initialized alpha=%s strategy=%s version=%s",
                         alpha_id,

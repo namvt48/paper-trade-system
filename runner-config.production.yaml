@@ -33,6 +33,12 @@ modules:
   - runner.strategies.suplo_xau
   - runner.strategies.supertrend_xau_v2
   - runner.strategies.suplo_atr1_5
+  - runner.strategies.suplo_xau_v3_stepwise
+  - runner.strategies.xau_v3_mfe_atr
+  - runner.strategies.supertrend_adx_tp
+  - runner.strategies.supertrend_adx_ema13_tp
+  - runner.strategies.smooth_chan
+  - runner.strategies.bollinger_meanrev
 
 alphas:
   # XAU M30 alpha bundle — active paper-trade strategies.
@@ -66,28 +72,6 @@ alphas:
     version: "1"
     enabled: true
     params: {preset: 12, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, h4_warmup_bars: 80, retain_bars: 320, capital: 10000.0, risk_pct: 0.0025, fee_pct: 0.0005, leverage: 10.0, session_timezone: America/New_York, trade_weekends: false}
-  # Suplo XAU bundle — Supertrend baseline + dynamic trailing TP (M30 built from M15).
-  - alpha_id: suplo-xau-5
-    strategy: suplo_xau
-    version: "1"
-    enabled: true
-    params: {preset: 5, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York, trade_weekends: true}
-  - alpha_id: suplo-xau-10
-    strategy: suplo_xau
-    version: "1"
-    enabled: true
-    params: {preset: 10, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York, trade_weekends: true}
-  # Supertrend XAU V2 bundle — Supertrend 15m + 1m-simulated trailing TP.
-  - alpha_id: supertrend-xau-v2-5pct
-    strategy: supertrend_xau_v2
-    version: "1"
-    enabled: true
-    params: {preset: 5, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York}
-  - alpha_id: supertrend-xau-v2-10pct
-    strategy: supertrend_xau_v2
-    version: "1"
-    enabled: true
-    params: {preset: 10, symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, session_timezone: America/New_York}
   # Suplo ATR1_5 — Supertrend 15m entry + trailing TP 5% (1m), trailing only
   # activates once peak profit >= 1.0 * ATR(10) captured at entry.
   - alpha_id: suplo-atr1-5
@@ -95,6 +79,68 @@ alphas:
     version: "1"
     enabled: true
     params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, retrace_pct: 0.05, atr_multiplier: 1.0}
+  # Suplo XAU V3 Stepwise — Supertrend(3,10) 15m entry + 1m Stepwise Dynamic
+  # Trailing r(P) from 15m ATR. Signals on 1m candle close; fills at 1m close.
+  - alpha_id: suplo-xau-v3-stepwise
+    strategy: suplo_xau_v3_stepwise
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # XAU V3 MFE ATR — Supertrend(3,10) 15m entry + 1m MFE ATR Distance Trailing.
+  # Signals on 1m candle close; fills at 1m close.
+  - alpha_id: xau-v3-mfe-atr
+    strategy: xau_v3_mfe_atr
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Supertrend ADX TP — Supertrend(3,10) 15m entries + one ADX lower-peak TP
+  # per trend cycle. Trades PAXGUSDT.
+  - alpha_id: supertrend-adx-tp
+    strategy: supertrend_adx_tp
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Supertrend ADX EMA13 TP — Supertrend(3,10) 15m entries + ADX 4/2 lower-peak
+  # weakness armed, closed only on adverse EMA13 close confirmation. PAXGUSDT.
+  - alpha_id: supertrend-adx-ema13-tp
+    strategy: supertrend_adx_ema13_tp
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Smooth Chan bundle — Supertrend + smooth adaptive chandelier (H3 built from 1h).
+  - alpha_id: smooth-chan-3to2-15
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "3h", factor: 2.5, atr_period: 10, chan_start: 3.0, chan_min: 2.0, scale_pct: 0.15, be_pct: 0.02, warmup_bars: 1440, retain_bars: 1440, min_bars: 30, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  - alpha_id: smooth-chan-3to15-20
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "3h", factor: 2.5, atr_period: 10, chan_start: 3.0, chan_min: 1.5, scale_pct: 0.20, be_pct: 0.02, warmup_bars: 1440, retain_bars: 1440, min_bars: 30, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  - alpha_id: smooth-chan-3to2-8
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "3h", factor: 2.5, atr_period: 10, chan_start: 3.0, chan_min: 2.0, scale_pct: 0.08, be_pct: 0.02, warmup_bars: 1440, retain_bars: 1440, min_bars: 30, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Smooth Chan M15 — backtest_m15.py f=8, Chan 8→2 over 10%, BE off. ~0.7 trades/day.
+  - alpha_id: smooth-chan-m15-f8
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "15m", factor: 8.0, atr_period: 10, chan_start: 8.0, chan_min: 2.0, scale_pct: 0.10, be_pct: 0.0, warmup_bars: 1440, retain_bars: 1440, min_bars: 80, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Exit Lab baseline — pure Supertrend(3,10) flip-only on 1h (exit_lab A0).
+  - alpha_id: exit-lab-baseline
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "1h", factor: 3.0, atr_period: 10, chan_start: 3.0, chan_min: 3.0, scale_pct: 0.15, be_pct: 0.02, flip_only: true, warmup_bars: 320, retain_bars: 320, min_bars: 80, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  # Supertrend H1 Gold — pine/h1_strategy_lab f4 chi 4→2 over 15% on 1h.
+  - alpha_id: supertrend-h1-gold
+    strategy: smooth_chan
+    version: "1"
+    enabled: true
+    params: {symbol: PAXGUSDT, exchange: binance, tf: "1h", factor: 4.0, atr_period: 10, chan_start: 4.0, chan_min: 2.0, scale_pct: 0.15, be_pct: 0.02, warmup_bars: 320, retain_bars: 320, min_bars: 80, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
   - alpha_id: 15m-blend-close
     strategy: cross_sectional
     version: "1"
@@ -678,3 +724,25 @@ alphas:
     version: "1"
     enabled: true
     params: {spec_file: 4h-trend-z-sleeve/spec.json, blacklist_file: 4h-trend-z-sleeve/blacklist.txt, warmup_bars: 180, retain_bars: 180, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance, book_only: true}
+
+  # Bollinger Mean-Reversion Z-score (1d) — Long+Short flip per symbol.
+  - alpha_id: bollinger-meanrev-avax
+    strategy: bollinger_meanrev
+    version: "1"
+    enabled: true
+    params: {symbol: AVAXUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  - alpha_id: bollinger-meanrev-ada
+    strategy: bollinger_meanrev
+    version: "1"
+    enabled: true
+    params: {symbol: ADAUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  - alpha_id: bollinger-meanrev-doge
+    strategy: bollinger_meanrev
+    version: "1"
+    enabled: true
+    params: {symbol: DOGEUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
+  - alpha_id: bollinger-meanrev-dot
+    strategy: bollinger_meanrev
+    version: "1"
+    enabled: true
+    params: {symbol: DOTUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}

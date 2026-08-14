@@ -54,6 +54,18 @@ def _next_session_start(instant: datetime) -> datetime:
     return nxt + timedelta(minutes=1)
 
 
+def trade_duration_hours(opened: datetime, closed: datetime, exchange: str) -> float:
+    """Holding time in hours.
+
+    VN derivatives (tcbs) count only active VN sessions; every other exchange
+    (crypto, etc.) uses plain wall-clock time so a position held outside VN
+    trading windows is not misreported as 0 duration.
+    """
+    if exchange and exchange.lower() == "tcbs":
+        return active_session_seconds(opened, closed) / 3600.0
+    return max((closed - opened).total_seconds(), 0.0) / 3600.0
+
+
 def merge_trade_metadata(open_metadata: str | None, close_metadata: str | None) -> str:
     """Merge open and close metadata keeping open keys at top level.
 
@@ -441,7 +453,7 @@ class Database:
 
         opened = datetime.fromisoformat(pos["opened_at"].replace("Z", "+00:00"))
         closed = datetime.fromisoformat(closed_at.replace("Z", "+00:00"))
-        duration_hours = active_session_seconds(opened, closed) / 3600.0
+        duration_hours = trade_duration_hours(opened, closed, exchange)
 
         trade_metadata = merge_trade_metadata(pos.get("metadata"), close_metadata)
         trade_id = pos["position_id"] if fully_closed else str(uuid.uuid4())
@@ -567,7 +579,8 @@ class Database:
                 )
                 closed_at = str(event["timestamp"])
                 closed = datetime.fromisoformat(closed_at.replace("Z", "+00:00"))
-                duration_hours = active_session_seconds(opened, closed) / 3600.0
+                exchange = str(position.get("exchange") or "binance")
+                duration_hours = trade_duration_hours(opened, closed, exchange)
                 close_metadata = json.dumps(
                     {
                         "virtual": True,

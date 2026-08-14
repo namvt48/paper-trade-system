@@ -75,6 +75,20 @@ class RunnerMetrics:
     def mark_event_processed(self, alpha_id: str, now: float) -> None:
         self.last_event_ts_by_alpha[alpha_id] = float(now)
 
+    def reset_alpha_event(self, alpha_id: str) -> None:
+        """Forget an alpha's last-event timestamp.
+
+        Called when an alpha is (re)claimed/enabled. A freshly-enabled alpha
+        with no processed event yet must not be reported stale just because a
+        stale timestamp survives from before it was disabled — otherwise the
+        /health ``stale_alphas`` check 503s a runner whose alpha is only
+        waiting for its next candle (e.g. a 1h-only alpha re-enabled just
+        after its hourly candle closed). ``_is_alpha_stale`` treats a missing
+        timestamp as "not started" (not stale), which is the correct state
+        until the first event is processed.
+        """
+        self.last_event_ts_by_alpha.pop(alpha_id, None)
+
     def scan_wait_started(self) -> None:
         """Track one event waiting for admission to the shared scan pool."""
         self.scan_waiters_current += 1

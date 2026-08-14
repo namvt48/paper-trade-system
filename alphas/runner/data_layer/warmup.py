@@ -175,11 +175,20 @@ class WarmupManager:
         response_cache_ttl_sec: float = 300.0,
         now_func: Callable[[], float] | None = None,
         sleep_func: Callable[[float], Awaitable[None]] | None = None,
+        skip_gap_check: bool = False,
     ):
         self.cache = cache
         self.backend = backend
         self.snapshot_reader = snapshot_reader
         self.exchange = exchange
+        # Some exchanges (e.g. TCBS / VN30 futures) trade in fixed daily
+        # sessions with a lunch break, overnight close, and weekend pause, so
+        # their candle series legitimately contains gaps between sessions.
+        # For those, ``verify_no_gaps`` must not gate warmup readiness —
+        # otherwise the runner never considers a complete snapshot warm enough
+        # and keeps falling back to MDS warmup requests forever (which TCBS
+        # cannot serve, since it has no historical kline API).
+        self.skip_gap_check = bool(skip_gap_check)
         self.metrics = metrics or RunnerMetrics()
         self.request_timeout_sec = float(request_timeout_sec)
         self.response_cache_ttl_sec = float(response_cache_ttl_sec)
@@ -527,7 +536,7 @@ class WarmupManager:
         ok = self.cache.has_required_bars(symbol, tf, bars)
         if ok and max_age_sec is not None:
             ok = self.cache.has_fresh_data(symbol, tf, bars, max_age_sec)
-        if ok:
+        if ok and not self.skip_gap_check:
             ok = self.cache.verify_no_gaps(symbol, tf).is_clean
         return ok
 

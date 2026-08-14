@@ -441,3 +441,34 @@ def test_active_session_seconds_closed_before_opened():
     opened = datetime.fromisoformat("2026-07-22T03:00:00+00:00")
     closed = datetime.fromisoformat("2026-07-22T02:00:00+00:00")
     assert active_session_seconds(opened, closed) == 0.0
+
+
+def test_trade_duration_hours_non_tcbs_uses_wall_clock():
+    from datetime import datetime
+    from app.db import trade_duration_hours
+
+    # Held entirely outside VN sessions (overnight crypto): active_session_seconds
+    # would return 0, but a non-tcbs exchange must report wall-clock time.
+    opened = datetime.fromisoformat("2026-07-22T20:00:00+00:00")  # 03:00 VN next day
+    closed = datetime.fromisoformat("2026-07-23T02:00:00+00:00")  # 09:00 VN
+    assert trade_duration_hours(opened, closed, "binance") == 6.0
+    assert trade_duration_hours(opened, closed, "bybit") == 6.0
+
+
+def test_trade_duration_hours_tcbs_uses_vn_sessions():
+    from datetime import datetime
+    from app.db import trade_duration_hours
+
+    # Overnight on VN30: only the in-session portions count, not wall-clock.
+    opened = datetime.fromisoformat("2026-07-22T02:00:00+00:00")  # Fri 09:00 VN
+    closed = datetime.fromisoformat("2026-07-22T08:00:00+00:00")  # Fri 15:00 VN
+    assert abs(trade_duration_hours(opened, closed, "tcbs") - 4.25) < 1e-6
+
+
+def test_trade_duration_hours_closed_before_opened():
+    from datetime import datetime
+    from app.db import trade_duration_hours
+
+    opened = datetime.fromisoformat("2026-07-22T03:00:00+00:00")
+    closed = datetime.fromisoformat("2026-07-22T02:00:00+00:00")
+    assert trade_duration_hours(opened, closed, "binance") == 0.0

@@ -181,6 +181,71 @@ async def test_gapped_cache_marks_strategy_unready():
     assert manager.strategy_ready(strategy, 0.90) is True
 
 
+def _seed_gapped_cache(cache):
+    """Load enough bars for warmup but with a gap between sessions.
+
+    Mimics a session-based exchange (e.g. TCBS/VN30): bar count is satisfied
+    but verify_no_gaps reports a gap (lunch break / overnight close).
+    """
+    cache.register_data_requirement("VNINDEX", "5m", warmup_bars=3, retain_bars=10)
+    for candle in [
+        *_candles(2, tf="5m"),
+        {
+            "open_time": 1_000_000 + 3 * TF_MS["5m"],
+            "open": 1,
+            "high": 2,
+            "low": 0,
+            "close": 1,
+            "volume": 1,
+        },
+    ]:
+        cache.upsert_candle("VNINDEX", "5m", candle)
+
+
+@pytest.mark.asyncio
+async def test_skip_gap_check_accepts_complete_snapshot_with_session_gaps():
+    """skip_gap_check=True must not let verify_no_gaps gate warmup readiness.
+
+    Regression for TCBS/VN30: a complete fresh snapshot with legitimate
+    session gaps must count as warm, otherwise the runner falls back to MDS
+    warmup requests forever (0/1) because TCBS has no historical kline API.
+    """
+    calls = []
+
+    async def backend(reqs):
+        calls.append(reqs)
+        return {}
+
+    cache = SharedCandleCache()
+    _seed_gapped_cache(cache)
+    assert not cache.verify_no_gaps("VNINDEX", "5m").is_clean
+
+    manager = WarmupManager(cache, backend, snapshot_reader=SnapshotStub({}), skip_gap_check=True)
+
+    loaded = await manager.request_warmup({("VNINDEX", "5m"): 3})
+
+    # With skip_gap_check the gapped-but-complete cache is already warm, so
+    # request_warmup has nothing to fetch and never touches the MDS backend.
+    assert loaded == set()
+    assert calls == []  # no MDS fallback request
+
+    strategy = StrategyStub(["VNINDEX"], tf="5m", bars=3)
+    assert manager.strategy_ready(strategy, 0.90) is True
+
+
+@pytest.mark.asyncio
+async def test_skip_gap_check_default_still_requires_clean_series():
+    """Without skip_gap_check the gapped cache must remain unready (default)."""
+    cache = SharedCandleCache()
+    _seed_gapped_cache(cache)
+    assert not cache.verify_no_gaps("VNINDEX", "5m").is_clean
+
+    manager = WarmupManager(cache, lambda reqs: None)
+    strategy = StrategyStub(["VNINDEX"], tf="5m", bars=3)
+
+    assert manager.strategy_ready(strategy, 0.90) is False
+
+
 @pytest.mark.asyncio
 async def test_snapshot_hit_path_sends_zero_mds_requests():
     calls = 0

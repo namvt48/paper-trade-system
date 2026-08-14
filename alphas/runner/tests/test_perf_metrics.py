@@ -91,3 +91,20 @@ def test_panel_cache_exposes_bounded_build_and_selection_latency() -> None:
     assert latency["selection_compute_sec"]["p95"] == 0.25
     assert latency["panel_build_sec"]["p95"] == 0.5
     assert latency["panel_build_by_group_sec"]["15m:universe-a"]["p95"] == 0.5
+
+
+def test_reset_alpha_event_forgets_last_event_timestamp() -> None:
+    """A re-claimed alpha must not inherit a stale last-event timestamp,
+    otherwise /health flags it stale before it processes its next candle."""
+    metrics = RunnerMetrics()
+    metrics.mark_event_processed("alpha-1h", 1000.0)
+    assert metrics.last_event_ts_by_alpha["alpha-1h"] == 1000.0
+
+    metrics.reset_alpha_event("alpha-1h")
+    assert "alpha-1h" not in metrics.last_event_ts_by_alpha
+
+
+def test_reset_alpha_event_missing_alpha_is_noop() -> None:
+    metrics = RunnerMetrics()
+    metrics.reset_alpha_event("never-seen")
+    assert metrics.last_event_ts_by_alpha == {}
