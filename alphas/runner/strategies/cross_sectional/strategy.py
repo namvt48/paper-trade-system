@@ -237,10 +237,25 @@ class CrossSectionalRunnerStrategy(Strategy):
                     gap_candles,
                 )
                 self._warmup_complete = False
-        # Always check coverage — scanning before enough symbols have the new
-        # candle produces a panel whose latest timestamp equals the previous
-        # bar, causing scan() to early-return without emitting signals.
+        # Coverage gate: scanning before enough symbols have the new candle
+        # produces a panel whose latest timestamp equals the previous bar,
+        # causing scan() to early-return without emitting signals. When
+        # positions are held this gate must NOT block: symbols that have no
+        # data at this bar still need to be CLOSEd (user mandate, 2026-08-21
+        # incident: partial data froze the whole rebalance and orphaned
+        # positions stayed open for days). scan() itself no-ops those calls
+        # on non-rebalance bars, so this only races the close forward.
         coverage = self._candle_coverage(candle_open_ms)
+        if self._open_positions:
+            logger.debug(
+                "[%s] should_scan: %d held positions, skipping coverage gate (coverage=%.2f)",
+                self.alpha_id,
+                len(self._open_positions),
+                coverage,
+                extra={"alpha_id": self.alpha_id},
+            )
+            self._warmup_complete = True
+            return True
         if coverage < self.scan_min_symbol_coverage:
             logger.debug(
                 "[%s] should_scan SKIP: symbol=%s coverage=%.2f < %.2f",
@@ -254,20 +269,29 @@ class CrossSectionalRunnerStrategy(Strategy):
         return True
 
     async def scan(self) -> None:
-        if not self.ctx.state.ready:
+        # Readiness normally gates the whole scan. Exception (2026-08-21):
+        # a strategy holding positions must be allowed through on a rebalance
+        # bar even when full-universe readiness is False, so symbols without
+        # data at that bar get closed instead of frozen open for days. The
+        # tightened gate below re-checks per bar.
+        if not self.ctx.state.ready and not self._open_positions:
             return
         bundle = await self._shared_panel_bundle()
         if bundle is None:
             return
         panel = bundle.panel
         latest = bundle.latest
+        tf_ms = self._tf_to_ms(self.spec.timeframe)
         # Fallback: panel build (snapshot + build_panel) may not include the
         # newest candle if not all symbols have it yet. Use the actual latest
         # timestamp from the per-symbol cache to avoid stale early-return.
+        # Cap the override at 2 bars: a single far-ahead outlier symbol (bad
+        # data / a symbol whose cache jumped ahead) must not advance `latest`
+        # and trigger a premature rebalance + close-all on a stale panel.
         cache_latest = self._latest_cached_timestamp(
             self.spec.timeframe, tuple(self._symbols)
         )
-        if cache_latest > latest:
+        if latest < cache_latest <= latest + 2 * tf_ms:
             latest = cache_latest
         if latest <= self._last_processed_candle:
             return
@@ -278,7 +302,6 @@ class CrossSectionalRunnerStrategy(Strategy):
         }
         self._record_portfolio_return(prices)
 
-        tf_ms = self._tf_to_ms(self.spec.timeframe)
         if self.spec.publish_at_midnight_utc:
             if not is_midnight_close_utc(latest, tf_ms):
                 logger.debug(
@@ -678,6 +701,49 @@ class CrossSectionalRunnerStrategy(Strategy):
             return 0.0
         return min(self.spec.max_leverage, self.spec.target_vol / rv)
 
+    def _closest_exit_price(
+        self, symbol: str, prices: dict[str, float], pos: dict
+    ) -> float:
+        """Resolve the fill reference for a CLOSE from the NEAREST price cache.
+
+        Prefix order (nearest first): (1) the current panel close -- already
+        forward-filled, so it reflects the most recent bar the symbol has;
+        (2) the last close in the shared candle cache (fresh even when the
+        panel build dropped the symbol this bar); (3) the most recently
+        observed price from a prior scan; (4) the entry price as a last
+        resort. The worker additionally re-prices from its live ticker cache
+        when one is available (<=staleness), so this only governs the fill
+        reference when the worker has no fresh tick either.
+        """
+        for candidate in (
+            prices.get(symbol),
+            self._last_cached_close(symbol),
+            getattr(self, "_last_prices", {}).get(symbol),
+            pos.get("entry") or pos.get("entry_price"),
+        ):
+            if candidate is not None:
+                try:
+                    value = float(candidate)
+                except (TypeError, ValueError):
+                    continue
+                if value > 0:
+                    return value
+        return float(pos.get("entry") or pos.get("entry_price") or 0.0)
+
+    def _last_cached_close(self, symbol: str) -> float | None:
+        """Most recent per-symbol close in the shared candle cache, if any."""
+        try:
+            closes = self.ctx.cache.get_closes(symbol, self.spec.timeframe, 1)
+        except Exception:
+            return None
+        if not closes:
+            return None
+        try:
+            value = float(closes[-1])
+        except (TypeError, ValueError, IndexError):
+            return None
+        return value if value > 0 else None
+
     async def _apply_selection(
         self, selection: Selection, prices: dict[str, float], candle_open_ms: int
     ) -> None:
@@ -718,13 +784,37 @@ class CrossSectionalRunnerStrategy(Strategy):
                     )
             self.ctx.clear_positions()
             return
+        # H1 (2026-08-21 incident): re-adopt positions the worker DB still
+        # owns but this runner lost on a previous boot (boot-time snapshot
+        # read failed/empty -> reconcile found nothing -> every close-loop
+        # pass skipped them, so they sat open for days with no TP/SL exit).
+        # Merge authoritative positions not already tracked in-memory so the
+        # close loop below closes them. Exit price resolves by fallback ladder
+        # (per user mandate: symbols without data at rebalance MUST be closed,
+        # and the fill reference MUST be the nearest price cache, not the
+        # stale entry price).
+        authoritative = self.ctx.load_authoritative_positions()
+        if authoritative:
+            for position_id, pos in authoritative.items():
+                symbol = str(pos.get("symbol", ""))
+                if not symbol or symbol in self._open_positions:
+                    continue
+                logger.warning(
+                    "[%s] _apply_selection: ADOPTED orphaned authoritative "
+                    "position %s (%s) -> will CLOSE this rebalance",
+                    self.alpha_id,
+                    position_id,
+                    symbol,
+                    extra={"alpha_id": self.alpha_id},
+                )
+                self._open_positions[symbol] = dict(pos)
         for symbol, pos in list(self._open_positions.items()):
             await self.ctx.emit_signal(
                 "CLOSE",
                 symbol=symbol,
                 tf=self.spec.timeframe,
                 position_id=pos["position_id"],
-                exit_price=prices.get(symbol, pos["entry"]),
+                exit_price=self._closest_exit_price(symbol, prices, pos),
                 reason="REBALANCE",
                 signal_candle_open_ms=candle_open_ms,
             )

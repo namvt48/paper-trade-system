@@ -301,7 +301,11 @@ def _payload_int(payload: dict | None, key: str) -> int | None:
 # and never processed another, including the next day's candle close,
 # until the whole runner was restarted. Thresholds per .agents/PLAN.md.
 _EVENT_TIMEOUT_SEC: dict[str, float] = {
-    "1d": 120.0,
+    # 2026-08-21: 120s was too tight for a 197-symbol 1d rebalance (panel
+    # build + selection on the shared thread pool); slow-but-healthy scans
+    # were abandoned by the watchdog and the day's rebalance was skipped,
+    # leaving positions open past their 24h cadence. Ceiling raised to 300s.
+    "1d": 300.0,
     "4h": 120.0,
     "1h": 90.0,
     "15m": 60.0,
