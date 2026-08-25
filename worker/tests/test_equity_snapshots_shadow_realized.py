@@ -229,3 +229,78 @@ async def test_shadow_snapshot_marks_open_virtual_positions_to_live_price(db, tm
     assert [row["balance"] for row in rows] == pytest.approx([10300.0, 10400.0])
     assert [row["unrealized_pnl"] for row in rows] == pytest.approx([300.0, 400.0])
     assert [row["realized_pnl"] for row in rows] == pytest.approx([0.0, 0.0])
+
+
+async def _open_real_position(
+    db, alpha_id, symbol, side, entry, qty, fee_pct=0.0
+):
+    await db._conn.execute(
+        "INSERT OR IGNORE INTO alphas (alpha_id, display_name, created_at, status) "
+        "VALUES (?, ?, ?, 'active')",
+        (alpha_id, alpha_id, "2026-08-01T00:00:00+00:00"),
+    )
+    await db._conn.execute(
+        "INSERT INTO positions (position_id, alpha_id, signal_id, symbol, side, "
+        "entry_price, qty, tp, sl, leverage, opened_at, metadata, exchange, fee_pct) "
+        "VALUES (?, ?, ?, ?, ?, ?, ?, NULL, NULL, 1, ?, '{}', 'binance', ?)",
+        (
+            f"pos-{symbol}",
+            alpha_id,
+            f"sig-{symbol}",
+            symbol,
+            side,
+            entry,
+            qty,
+            "2026-08-01T00:00:00+00:00",
+            fee_pct,
+        ),
+    )
+    await db._conn.commit()
+
+
+@pytest.mark.asyncio
+async def test_cold_start_does_not_collapse_equity_to_capital(db, tmp_path):
+    """Regression: on worker restart the ticker price cache is cold (all
+    in-memory), so every held position's price returned None and unrealized
+    collapsed to 0 -> balance snapped to bare capital. That draws false
+    vertical right-angle drops on the equity curve (e.g. 1d-iamp: 10371 ->
+    10000 -> 10364 at each restart). Last-known mark prices persisted to disk
+    must keep the first post-restart snapshot marked at the last price.
+    """
+    await _open_real_position(db, "test-ledger", "BTCUSDT", "LONG", entry=100.0, qty=1.0)
+
+    snap_path = str(tmp_path / "equity-snapshots.db")
+
+    # Run 1: live ticker prices BTCUSDT=110 -> unrealized (110-100)*1 = 10,
+    # balance 10010.
+    live = _FakeTickerCache({"BTCUSDT": 110.0})
+    collector = EquitySnapshotCollector(
+        db=db,
+        ticker_cache=live,
+        snapshot_db_path=snap_path,
+        alphas_dir=str(tmp_path / "no-alphas-here"),
+    )
+    await collector.init()
+    await collector.snapshot_once()
+    await collector.close()
+
+    # Run 2: simulated worker restart. New collector, EMPTY ticker cache (cold).
+    # Must still mark BTCUSDT at the persisted 110 -> balance 10010, NOT 10000.
+    restarted = EquitySnapshotCollector(
+        db=db,
+        ticker_cache=_FakeTickerCache(),
+        snapshot_db_path=snap_path,
+        alphas_dir=str(tmp_path / "no-alphas-here"),
+    )
+    await restarted.init()
+    await restarted.snapshot_once()
+
+    cursor = await restarted._snap_conn.execute(
+        "SELECT balance, unrealized_pnl FROM equity_snapshots WHERE alpha_id=? ORDER BY id",
+        ("test-ledger",),
+    )
+    rows = await cursor.fetchall()
+    await restarted.close()
+
+    assert [row["balance"] for row in rows] == pytest.approx([10010.0, 10010.0])
+    assert [row["unrealized_pnl"] for row in rows] == pytest.approx([10.0, 10.0])

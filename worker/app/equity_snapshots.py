@@ -84,6 +84,12 @@ class EquitySnapshotCollector:
         self._alphas_dir = alphas_dir
         self._redis_client = redis_client
         self._last_prices = LastPriceCache()
+        # Durable last-known mark prices, reloaded on init so a cold start
+        # (worker restart) can still mark open positions instead of collapsing
+        # equity to bare capital. _persisted_prices mirrors what is on disk;
+        # _dirty_symbols tracks marks that changed since the last flush.
+        self._persisted_prices: dict[str, float] = {}
+        self._dirty_symbols: set[str] = set()
         self._snap_conn: Optional[aiosqlite.Connection] = None
 
     async def init(self) -> None:
@@ -107,6 +113,11 @@ class EquitySnapshotCollector:
                 ON equity_snapshots(alpha_id, timestamp);
             CREATE INDEX IF NOT EXISTS idx_equity_snapshots_time
                 ON equity_snapshots(timestamp);
+            CREATE TABLE IF NOT EXISTS last_mark_prices (
+                symbol TEXT PRIMARY KEY,
+                price REAL NOT NULL,
+                updated_at TEXT NOT NULL
+            );
             """
         )
         for col in ("unrealized_pnl", "realized_pnl"):
@@ -116,6 +127,22 @@ class EquitySnapshotCollector:
                 )
             except aiosqlite.OperationalError:
                 pass
+        # Warm the in-memory price cache from the durable mark store so the
+        # first snapshot after a restart still prices held positions. Without
+        # this, every held position's price returns None while caches are cold
+        # and unrealized collapses to 0 -> balance snaps to bare capital,
+        # drawing a false vertical drop-flat-spike on the equity curve.
+        try:
+            cursor = await self._snap_conn.execute(
+                "SELECT symbol, price FROM last_mark_prices"
+            )
+            for row in await cursor.fetchall():
+                price = float(row["price"])
+                symbol = str(row["symbol"])
+                self._last_prices.update(symbol, price)
+                self._persisted_prices[symbol] = price
+        except aiosqlite.Error:
+            logger.exception("[EQUITY-SNAPSHOT] failed to load last_mark_prices")
         await self._snap_conn.commit()
         logger.info(
             "[EQUITY-SNAPSHOT] initialised db=%s interval=%.0fs",
@@ -135,6 +162,8 @@ class EquitySnapshotCollector:
                 live = get_last_price(symbol)
         if live is not None:
             self._last_prices.update(symbol, live)
+            if self._persisted_prices.get(symbol) != live:
+                self._dirty_symbols.add(symbol)
             return live
         return self._last_prices.get(symbol)
 
@@ -312,6 +341,23 @@ class EquitySnapshotCollector:
             "INSERT INTO equity_snapshots (timestamp, alpha_id, balance, unrealized_pnl, realized_pnl) VALUES (?, ?, ?, ?, ?)",
             (ts, TOTAL_KEY, total_balance, total_unrealized, total_realized),
         )
+
+        # Persist observed/live mark prices so a future restart can warm its
+        # price cache and keep marking held positions instead of zeroing pnl.
+        if self._dirty_symbols:
+            mark_ts = datetime.now(timezone.utc).isoformat()
+            for symbol in sorted(self._dirty_symbols):
+                price = self._last_prices.get(symbol)
+                if price is None:
+                    continue
+                await self._snap_conn.execute(
+                    "INSERT INTO last_mark_prices (symbol, price, updated_at) VALUES (?, ?, ?) "
+                    "ON CONFLICT(symbol) DO UPDATE SET price=excluded.price, updated_at=excluded.updated_at",
+                    (symbol, price, mark_ts),
+                )
+                self._persisted_prices[symbol] = price
+            self._dirty_symbols.clear()
+
         await self._snap_conn.commit()
 
     async def run(self) -> None:
