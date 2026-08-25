@@ -64,6 +64,7 @@ class CrossSectionalRunnerStrategy(Strategy):
         self._open_positions: dict[str, dict[str, Any]] = (
             self.reconcile_open_positions()
         )
+        self._sync_price_alerts()
         self._portfolio_returns: list[float] = []
         # Peak-equity / current-drawdown tracking, driving the ensemble
         # overlay's drawdown_throttle step (see cross_alpha/overlay.py).
@@ -783,6 +784,7 @@ class CrossSectionalRunnerStrategy(Strategy):
                         extra={"alpha_id": self.alpha_id},
                     )
             self.ctx.clear_positions()
+            self._sync_price_alerts()
             return
         # H1 (2026-08-21 incident): re-adopt positions the worker DB still
         # owns but this runner lost on a previous boot (boot-time snapshot
@@ -839,6 +841,7 @@ class CrossSectionalRunnerStrategy(Strategy):
                 extra={"alpha_id": self.alpha_id},
             )
             self.ctx.save_positions(self._open_positions)
+            self._sync_price_alerts()
             return
 
         # Pre-filter to symbols with valid prices and a live MDS tradable status,
@@ -921,6 +924,28 @@ class CrossSectionalRunnerStrategy(Strategy):
                 self._open_positions.pop(symbol, None)
 
         self.ctx.save_positions(self._open_positions)
+        self._sync_price_alerts()
+
+    def _sync_price_alerts(self) -> None:
+        """Register held symbols with MDS so it publishes price_alert ticks.
+
+        MDS publishes ``price_alert:{exchange}:{symbol}`` only for symbols it has
+        been asked to via ``price_alert:subscribe:{exchange}``. Engine-based
+        alphas do this in ``_refresh_price_alert_subscriptions``; the runner-side
+        strategy must do it through ``ctx.price_alerts.sync``, or the dashboard
+        tick cache never receives ticks and mark price / pnl% / roe% render "—"
+        for every position held by this strategy.
+        """
+        if self.ctx.price_alerts is None:
+            return
+        try:
+            self.ctx.price_alerts.sync(set(self._open_positions.keys()))
+        except Exception:
+            logger.exception(
+                "[%s] _sync_price_alerts failed",
+                self.alpha_id,
+                extra={"alpha_id": self.alpha_id},
+            )
 
     def _publish_target_book(
         self, selection: Selection, prices: dict[str, float], candle_open_ms: int
