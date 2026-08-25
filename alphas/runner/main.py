@@ -522,7 +522,11 @@ async def run_price_alert_reconcile_loop(
     ``price_alert:{exchange}:{symbol}`` channels MDS publishes ticks on, and
     unsubscribes channels the strategy no longer needs. The strategy's own
     ``manage_positions``/``_persist_positions`` already publish the MDS
-    registration through the proxy; this loop only owns the pubsub subscribe side.
+    registration through the proxy; this loop additionally re-publishes the
+    registration so MDS keeps the consumer alive: MDS prunes consumers whose
+    registration key expired (TTL 60s), which would silently stop tick
+    publication for symbols the strategy still holds (2026-08-25 incident,
+    1d-iamp mark price / pnl% / roe% rendered "—" in the dashboard).
     """
     if pubsub is None:
         return
@@ -541,6 +545,10 @@ async def run_price_alert_reconcile_loop(
                 for channel in current - desired:
                     await pubsub.unsubscribe(channel, alpha_id)
                 subscribed[alpha_id] = desired
+                # Refresh MDS consumer registration so the 60s TTL never
+                # expires while positions are held (see docstring).
+                if proxy.symbols:
+                    proxy.sync(proxy.symbols)
         except Exception:
             logger.exception(
                 "[RUNNER] Price-alert reconcile error",
