@@ -25,3 +25,7 @@ alphas/logs/
 docs/alphas-2/datacryp/
 
 docs/
+reports/
+.playwright-mcp/
+recovery/
+logs

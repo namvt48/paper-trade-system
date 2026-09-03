@@ -1,28 +1,32 @@
-"""Bollinger mean-reversion Z-score strategy (LONG-ONLY) on 1d candles.
+"""Bollinger Mean-Reversion Z-score LONG+SHORT flip strategy (1d candles).
 
-Reference spec (Bollinger Mean-Reversion, Z < -2):
+Faithful port of the Pine ``Boll MeanRev L+S Flip`` reference spec:
 
-    ma20 = close.rolling(20).mean()     # 20-period SMA
-    sd20 = close.rolling(20).std()      # 20-period sample std dev
-    lower = ma20 - 2 * sd20             # lower Bollinger band
+    length = 20                      # BB period (SMA / stdev window)
+    basis  = sma(close, length)
+    dev    = stdev(close, length)    # sample stdev, matches ta.stdev()
+    zScore = (close - basis) / dev
+    prevZ  = z-score of the PREVIOUS bar close (nz-guarded to 0)
 
-Daily-close zones (evaluated on the closed 1d prefix; fills at next open):
+Zone is derived from the just-closed bar's ``prevZ`` (evaluated on the closed
+1d prefix, fills at the next bar open):
 
-    price < lower        -> zone "BUY"     (Z < -2, buy dips)
-    price > ma20         -> zone "SELL"    (price back above MA, take profit)
-    lower <= price <= ma -> zone "BETWEEN" (no fresh signal, hold if long)
+    prevZ < -2.0            -> BUY zone    (z==1)
+    prevZ >  0.0            -> SELL zone   (z==-1)
+    -2.0 <= prevZ <= 0.0    -> BETWEEN     (z==0)
 
 Position transition on each new 1d bar (closed prefix determines the zone):
 
-    no position + BUY     -> open LONG
-    no position + SELL    -> stay flat     (no short)
-    no position + BETWEEN -> stay flat
-    LONG + SELL           -> close LONG    (take profit)
-    LONG + BUY            -> hold LONG     (already in)
-    LONG + BETWEEN        -> hold LONG     (wait for recovery)
+    flat + BUY     -> open LONG
+    flat + SELL    -> open SHORT
+    LONG + SELL    -> close LONG (FLIP) + open SHORT
+    SHORT + BUY    -> close SHORT (FLIP) + open LONG
+    SHORT + BETWEEN-> close SHORT (CASH)
+    LONG + BETWEEN -> hold LONG
+    bar year < start_year and in a position -> close all (OOR)
 
 Runner plumbing, position sizing, persistence and signal execution mirror the
-existing single-symbol runner strategies (e.g. supertrend_adx_tp).
+existing single-symbol runner strategies (bollinger_meanrev / supertrend_adx_tp).
 """
 
 from __future__ import annotations
@@ -32,12 +36,13 @@ import math
 import statistics
 import uuid
 from dataclasses import dataclass
+from datetime import datetime, timezone
 from typing import Any
 
 from runner.strategy.base import Strategy
 
 D1_MS = 24 * 60 * 60 * 1000
-POSITION_NAMESPACE = uuid.UUID("9c4e1d2f-6b8a-4e5f-9c3d-2a7b8f1e5d4c")
+POSITION_NAMESPACE = uuid.UUID("7a1e8c3f-2b6d-4e9a-8f5c-1d3a6b9c2e7f")
 
 ZONE_BUY = "BUY"
 ZONE_SELL = "SELL"
@@ -54,6 +59,11 @@ class CandleSeries:
 
 
 def _zscore(closes: tuple[float, ...], period: int = 20) -> float | None:
+    """Z-score of the last close over a trailing window (sample stdev).
+
+    Matches Pine ``(close - sma(close, length)) / stdev(close, length)`` where
+    ``stdev`` is the sample standard deviation (``len - 1`` denominator).
+    """
     if len(closes) < period or period < 2:
         return None
     window = list(closes[-period:])
@@ -69,6 +79,11 @@ def _zscore(closes: tuple[float, ...], period: int = 20) -> float | None:
 
 
 def _zone_from_closes(closes: tuple[float, ...], period: int = 20) -> str | None:
+    """Map the most recent closed-bar z-score to a BUY / SELL / BETWEEN zone.
+
+    ``closes`` here is the CLOSED prefix (last close is the just-closed bar), so
+    the returned zone corresponds to Pine ``prevZ``.
+    """
     if len(closes) < period:
         return None
     z = _zscore(closes, period)
@@ -81,13 +96,14 @@ def _zone_from_closes(closes: tuple[float, ...], period: int = 20) -> str | None
     return ZONE_BETWEEN
 
 
-class BollingerMeanRevRunnerStrategy(Strategy):
-    """Long-only dip-buy on 1d Bollinger lower-band Z-score mean reversion."""
+class BollingerMeanRevLsRunnerStrategy(Strategy):
+    """Long+short flip on 1d Bollinger lower/upper-band Z-score mean reversion."""
 
     def __init__(self, alpha_id: str, version: str, params: dict, ctx) -> None:
         super().__init__(alpha_id, version, params, ctx)
         self.bb_period = int(params.get("bb_period", 20))
-        self.z_entry = float(params.get("z_entry", -2.0))
+        self.z_entry_buy = float(params.get("z_entry_buy", -2.0))
+        self.z_entry_sell = float(params.get("z_entry_sell", 0.0))
         if self.bb_period < 2:
             raise ValueError("bb_period must be >= 2")
         self.symbol = str(params.get("symbol", "PAXGUSDT")).upper()
@@ -96,6 +112,7 @@ class BollingerMeanRevRunnerStrategy(Strategy):
         self.leverage = float(params.get("leverage", 10.0))
         self.position_fraction = float(params.get("position_fraction", 1.0))
         self.fee_pct = float(params.get("fee_pct", 0.00035))
+        self.start_year = int(params.get("start_year", 2024))
         self.d1_warmup_bars = int(params.get("warmup_bars", 60))
         self.retain_bars = int(params.get("retain_bars", self.d1_warmup_bars))
         self.min_d1_bars = int(params.get("min_d1_bars", self.bb_period + 4))
@@ -222,6 +239,10 @@ class BollingerMeanRevRunnerStrategy(Strategy):
             times,
         )
 
+    @staticmethod
+    def _bar_year(open_ms: int) -> int:
+        return datetime.fromtimestamp(open_ms / 1000, tz=timezone.utc).year
+
     async def _scan_1d(self, candle_open_ms: int) -> None:
         series = self._series("1d", self.get_retain_bars("1d"))
         if (
@@ -244,21 +265,50 @@ class BollingerMeanRevRunnerStrategy(Strategy):
 
         position = self._existing_position()
 
-        if position is None:
-            # Flat: only open LONG on BUY zone. SELL and BETWEEN = stay flat.
-            if zone == ZONE_BUY:
-                await self._open_long(execution_price, candle_open_ms)
+        # Out-of-range guard: mirror Pine's `if not inRange ... close_all("OOR")`.
+        in_range = self._bar_year(candle_open_ms) >= self.start_year
+        if not in_range:
+            if position is not None:
+                await self._close_position(
+                    position, "OOR", execution_price, candle_open_ms
+                )
             return
 
-        # Holding LONG:
-        if zone == ZONE_SELL:
-            # Price recovered above MA -> take profit
-            await self._close_position(
-                position, "TAKE_PROFIT", execution_price, candle_open_ms
-            )
-        # BETWEEN and BUY -> hold (wait for recovery)
+        # ---- flat + zone -> open raw position in that direction ----
+        if position is None:
+            if zone == ZONE_BUY:
+                await self._open_position("LONG", execution_price, candle_open_ms)
+            elif zone == ZONE_SELL:
+                await self._open_position("SHORT", execution_price, candle_open_ms)
+            return
 
-    async def _open_long(self, entry: float, candle_open_ms: int) -> None:
+        # ---- holding a position ----
+        side = str(position.get("side", "")).upper()
+        if side == "LONG":
+            # LONG + SELL zone -> flip to SHORT
+            if zone == ZONE_SELL:
+                await self._close_position(
+                    position, "FLIP", execution_price, candle_open_ms
+                )
+                await self._open_position("SHORT", execution_price, candle_open_ms)
+            # LONG + BUY/BETWEEN -> hold
+        elif side == "SHORT":
+            # SHORT + BUY zone -> flip to LONG
+            if zone == ZONE_BUY:
+                await self._close_position(
+                    position, "FLIP", execution_price, candle_open_ms
+                )
+                await self._open_position("LONG", execution_price, candle_open_ms)
+            # SHORT + BETWEEN zone -> close to cash
+            elif zone == ZONE_BETWEEN:
+                await self._close_position(
+                    position, "CASH", execution_price, candle_open_ms
+                )
+            # SHORT + SELL zone -> hold
+
+    async def _open_position(
+        self, side: str, entry: float, candle_open_ms: int
+    ) -> None:
         if self._existing_position() is not None:
             return
         qty = (
@@ -272,7 +322,7 @@ class BollingerMeanRevRunnerStrategy(Strategy):
         position_id = str(
             uuid.uuid5(
                 POSITION_NAMESPACE,
-                f"{self.alpha_id}|{self.version}|boll|{candle_open_ms}|LONG",
+                f"{self.alpha_id}|{self.version}|boll_ls|{candle_open_ms}|{side}",
             )
         )
         position = {
@@ -280,19 +330,21 @@ class BollingerMeanRevRunnerStrategy(Strategy):
             "symbol": self.symbol,
             "alpha_id": self.alpha_id,
             "version": self.version,
-            "side": "LONG",
+            "side": side,
             "entry": entry,
             "qty": qty,
             "tp": None,
             "sl": None,
             "entry_candle_open_ms": candle_open_ms,
-            "z_entry": self.z_entry,
+            "z_entry_buy": self.z_entry_buy,
+            "z_entry_sell": self.z_entry_sell,
             "bb_period": self.bb_period,
         }
         metadata = {
-            "strategy_type": "bollinger_meanrev_longonly",
+            "strategy_type": "bollinger_meanrev_ls",
             "bb_period": self.bb_period,
-            "z_entry": self.z_entry,
+            "z_entry_buy": self.z_entry_buy,
+            "z_entry_sell": self.z_entry_sell,
             "strategy_runtime": position,
             "allow_duplicate_position": False,
         }
@@ -300,7 +352,7 @@ class BollingerMeanRevRunnerStrategy(Strategy):
             "OPEN",
             position_id=position_id,
             symbol=self.symbol,
-            side="LONG",
+            side=side,
             entry=entry,
             qty=qty,
             tp=None,
@@ -329,7 +381,7 @@ class BollingerMeanRevRunnerStrategy(Strategy):
             exit_price=exit_price,
             metadata=json.dumps(
                 {
-                    "source": "bollinger_meanrev_longonly",
+                    "source": "bollinger_meanrev_ls",
                     "ref_is_executable": True,
                     "signal_candle_open_ms": candle_open_ms,
                 },

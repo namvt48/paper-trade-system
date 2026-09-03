@@ -497,6 +497,95 @@ async def test_breakeven_exit_after_be_armed(monkeypatch) -> None:
 
 
 @pytest.mark.asyncio
+async def test_be_armed_and_triggered_same_bar_does_not_exit(monkeypatch) -> None:
+    import runner.strategies.smooth_chan.strategy as mod
+
+    # BE arming and BE trigger in the SAME bar must NOT exit: the position was
+    # not BE-active at bar start, so the trigger is deferred to a later bar.
+    # Closed bar: high breaks entry*1.02 (arm) AND low dips to entry (would
+    # trigger if active) in the same bar.
+    OHLC = _rising() + [
+        (2000.0, 2060.0, 2000.0, 2040.0),  # last CLOSED bar: arms BE + dips to entry
+        (2600.0, 2601.0, 2600.0, 2600.0),  # new-open execution bar
+    ]
+    series = _series(OHLC)
+    ctx = SimpleNamespace(
+        emit_signal=AsyncMock(return_value={"ok": True}),
+        load_authoritative_positions=lambda: None,
+        load_positions=lambda: None,
+        state=SimpleNamespace(ready=True),
+        price_alerts=None,
+        cache=_cache_with(series),
+    )
+    strategy = _strategy(ctx)
+    strategy._last_dir = UPTREND
+    strategy._last_eff_open = series.times[-1] - H1_MS
+    strategy._positions = {"p1": _position("LONG", 2000.0, 10.0, 2000.0, be=False)}
+    monkeypatch.setattr(
+        mod,
+        "compute_supertrend_multi",
+        lambda highs, lows, closes, factor, atr_period: (
+            [UPTREND] * len(closes),
+            [10.0] * len(closes),
+        ),
+    )
+    await strategy._scan_eff(series.times[-1])
+
+    assert ctx.emit_signal.await_count == 0
+    assert len(strategy._positions) == 1
+    assert strategy._positions["p1"]["be"] is True  # armed for a future bar
+
+
+@pytest.mark.asyncio
+async def test_chandelier_uses_watermark_before_current_bar_high(monkeypatch) -> None:
+    import runner.strategies.smooth_chan.strategy as mod
+
+    # The chandelier must use the watermark as of the PREVIOUS closed bars, not
+    # the current bar's high. Setup: wm=2050, entry=2000, entry_atr=10, profit
+    # 2.5% -> chan_mult ~2.83 -> stop ~2021.7 > entry. Current closed bar high
+    # (2100) would RAISE wm to 2100 -> tightening stop to ~2082; if the current
+    # bar's own low (2050) were tested against that tighter stop it would NOT
+    # exit. With the pre-bar watermark the stop is ~2021.7, so low 2050 does not
+    # exit either. To prove ordering, use a low that breaks the OLD stop but not
+    # the high-raised stop: low = 2025.
+    OHLC = _rising() + [
+        (2000.0, 2100.0, 2025.0, 2050.0),  # last CLOSED bar: high raises wm, low 2025
+        (2600.0, 2601.0, 2600.0, 2600.0),  # new-open execution bar
+    ]
+    series = _series(OHLC)
+    ctx = SimpleNamespace(
+        emit_signal=AsyncMock(return_value={"ok": True}),
+        load_authoritative_positions=lambda: None,
+        load_positions=lambda: None,
+        state=SimpleNamespace(ready=True),
+        price_alerts=None,
+        cache=_cache_with(series),
+    )
+    strategy = _strategy(ctx)
+    strategy._last_dir = UPTREND
+    strategy._last_eff_open = series.times[-1] - H1_MS
+    strategy._positions = {"p1": _position("LONG", 2000.0, 10.0, 2050.0)}
+    monkeypatch.setattr(
+        mod,
+        "compute_supertrend_multi",
+        lambda highs, lows, closes, factor, atr_period: (
+            [UPTREND] * len(closes),
+            [10.0] * len(closes),
+        ),
+    )
+    # Sanity: pre-bar stop = 2050 - (3 - (3-2)*(0.025/0.15))*10 ~= 2021.7.
+    await strategy._scan_eff(series.times[-1])
+
+    # Old behavior (watermark updated first): wm=2100, ratio=1, chan_mult=2.0,
+    # stop=2080 > low 2025 -> CH exit. New behavior: stop uses pre-bar wm 2050
+    # (~2021.7) < low 2025 -> NO chandelier exit; watermark is then raised to
+    # 2100 for future bars.
+    assert ctx.emit_signal.await_count == 0
+    assert len(strategy._positions) == 1
+    assert strategy._positions["p1"]["wm"] == pytest.approx(2100.0)
+
+
+@pytest.mark.asyncio
 async def test_flip_only_mode_never_uses_chan_or_be(monkeypatch) -> None:
     import runner.strategies.smooth_chan.strategy as mod
 

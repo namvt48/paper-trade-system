@@ -7,7 +7,7 @@ runner:
   shadow_mode: false
   warmup_min_symbol_coverage: 0.95
   compute_workers: 8
-  data_queue_maxsize: 5000
+  data_queue_maxsize: 1000
   strategy_event_drop_warn_threshold: 100
   lease_ttl_sec: 20
   lease_renew_interval_sec: 5
@@ -40,7 +40,6 @@ modules:
   - runner.strategies.smooth_chan
   - runner.strategies.bollinger_meanrev
   - runner.strategies.bollinger_meanrev_ls
-  - runner.strategies.top10_vote_combo
 
 alphas:
   # XAU M30 alpha bundle — active paper-trade strategies.
@@ -146,7 +145,7 @@ alphas:
   - alpha_id: 15m-blend-close
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close/spec.json,
@@ -160,7 +159,7 @@ alphas:
   - alpha_id: 15m-blend-close-b
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-b/spec.json,
@@ -202,7 +201,7 @@ alphas:
   - alpha_id: 1h-decay-close
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close/spec.json,
@@ -217,7 +216,7 @@ alphas:
   - alpha_id: 15m-blend-close-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-36h/spec.json,
@@ -231,7 +230,7 @@ alphas:
   - alpha_id: 15m-blend-close-b-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-b-36h/spec.json,
@@ -245,7 +244,7 @@ alphas:
   - alpha_id: 1h-decay-close-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close-36h/spec.json,
@@ -259,7 +258,7 @@ alphas:
   - alpha_id: 1h-decay-vwap-36h
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-vwap-36h/spec.json,
@@ -315,7 +314,7 @@ alphas:
   - alpha_id: 15m-blend-close-v2
     strategy: cross_sectional
     version: "2"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-v2/spec.json,
@@ -329,7 +328,7 @@ alphas:
   - alpha_id: 15m-blend-close-2-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-2-v3/spec.json,
@@ -343,7 +342,7 @@ alphas:
   - alpha_id: 15m-blend-close-b-v2
     strategy: cross_sectional
     version: "2"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-b-v2/spec.json,
@@ -357,7 +356,7 @@ alphas:
   - alpha_id: 15m-blend-close-c-v2
     strategy: cross_sectional
     version: "2"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-blend-close-c-v2/spec.json,
@@ -371,7 +370,7 @@ alphas:
   - alpha_id: 15m-trend-close-v2
     strategy: cross_sectional
     version: "2"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-trend-close-v2/spec.json,
@@ -385,7 +384,7 @@ alphas:
   - alpha_id: 15m-trend-vwap-v2
     strategy: cross_sectional
     version: "2"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-trend-vwap-v2/spec.json,
@@ -399,7 +398,7 @@ alphas:
   - alpha_id: 1h-decay-close-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-decay-close-v3/spec.json,
@@ -413,7 +412,7 @@ alphas:
   - alpha_id: 4h-trend-close-v3
     strategy: cross_sectional
     version: "3"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 4h-trend-close-v3/spec.json,
@@ -428,7 +427,7 @@ alphas:
   - alpha_id: 4h-trend-z
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 4h-trend-z/spec.json,
@@ -442,7 +441,7 @@ alphas:
   - alpha_id: 15m-breakout
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 15m-breakout/spec.json,
@@ -456,7 +455,7 @@ alphas:
   - alpha_id: 1h-trend-breakout
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1h-trend-breakout/spec.json,
@@ -498,7 +497,7 @@ alphas:
   - alpha_id: songthanv8
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: songthanv8/spec.json,
@@ -512,7 +511,7 @@ alphas:
   - alpha_id: songthanv11
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: songthanv11/spec.json,
@@ -556,7 +555,7 @@ alphas:
   - alpha_id: 1d-kertrend
     strategy: cross_sectional
     version: "1"
-    enabled: true
+    enabled: false
     params:
       {
         spec_file: 1d-kertrend/spec.json,
@@ -729,22 +728,22 @@ alphas:
 
   # Bollinger Mean-Reversion Z-score (1d) — Long+Short flip per symbol.
   - alpha_id: bollinger-meanrev-avax
-    strategy: bollinger_meanrev_ls
+    strategy: bollinger_meanrev
     version: "1"
     enabled: true
     params: {symbol: AVAXUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
   - alpha_id: bollinger-meanrev-ada
-    strategy: bollinger_meanrev_ls
+    strategy: bollinger_meanrev
     version: "1"
     enabled: true
     params: {symbol: ADAUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
   - alpha_id: bollinger-meanrev-doge
-    strategy: bollinger_meanrev_ls
+    strategy: bollinger_meanrev
     version: "1"
     enabled: true
     params: {symbol: DOGEUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
   - alpha_id: bollinger-meanrev-dot
-    strategy: bollinger_meanrev_ls
+    strategy: bollinger_meanrev
     version: "1"
     enabled: true
     params: {symbol: DOTUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
@@ -760,22 +759,3 @@ alphas:
     version: "1"
     enabled: true
     params: {symbol: APTUSDT, exchange: binance, warmup_bars: 60, retain_bars: 60, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
-
-  # ── 1d VWAP reversion cross-sectional (dynamic top-K) ──
-  - alpha_id: 1d-vwaprev-w50-top15-p20
-    strategy: cross_sectional
-    version: "1"
-    enabled: true
-    params: {spec_file: 1d-vwaprev-w50-top15-p20/spec.json, whitelist_file: 1d-vwaprev-w50-top15-p20/whitelist.txt, blacklist_file: 1d-vwaprev-w50-top15-p20/blacklist.txt, warmup_bars: 60, retain_bars: 60, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
-  - alpha_id: 1d-vwaprev-w80-top25-p15
-    strategy: cross_sectional
-    version: "1"
-    enabled: true
-    params: {spec_file: 1d-vwaprev-w80-top25-p15/spec.json, whitelist_file: 1d-vwaprev-w80-top25-p15/whitelist.txt, blacklist_file: 1d-vwaprev-w80-top25-p15/blacklist.txt, warmup_bars: 60, retain_bars: 60, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
-
-  # ── Top-10 vote combination (54-symbol universe) ──
-  - alpha_id: top10-vote-combo
-    strategy: top10_vote_combo
-    version: "1"
-    enabled: true
-    params: {whitelist_file: top10-vote-combo/whitelist.txt, warmup_bars: 140, retain_bars: 140, capital: 10000.0, leverage: 1.0, fee_pct: 0.0007, exchange: binance}

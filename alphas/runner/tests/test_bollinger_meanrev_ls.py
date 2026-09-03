@@ -1,21 +1,24 @@
-"""Correctness coverage for the bollinger_meanrev runner strategy (LONG-ONLY).
+"""Correctness coverage for the bollinger_meanrev_ls runner strategy (L+S flip).
 
-Reference spec (Bollinger Mean-Reversion, Z < -2):
+Reference spec (Pine ``Boll MeanRev L+S Flip``):
 
-    ma20  = close.rolling(20).mean()
-    sd20  = close.rolling(20).std()
-    lower = ma20 - 2 * sd20   # lower Bollinger band
+    length = 20                          # BB / SMA / stdev window
+    basis  = sma(close, length)
+    dev    = stdev(close, length)        # sample stdev
+    prevZ  = z-score of the previous bar close (nz-guarded to 0 when dev=0)
 
 Semantics:
-  - Zones computed from the closed 1d prefix: Z < -2 -> BUY (price below the
-    lower band, buy dips), Z > 0 -> SELL (price back above MA, take profit),
-    else BETWEEN (no fresh signal).
-  - No position + BUY     -> open LONG.
-  - No position + SELL    -> stay flat (no short side).
-  - No position + BETWEEN -> stay flat.
-  - LONG + SELL           -> close LONG (take profit, reason TAKE_PROFIT).
-  - LONG + BUY            -> hold LONG (already in, wait for recovery).
-  - LONG + BETWEEN        -> hold LONG (wait for recovery).
+  - Zone is derived from the closed 1d prefix ``closes[:-1]`` (this is ``prevZ``):
+      prevZ < -2.0               -> BUY   (zone==1)
+      prevZ >  0.0               -> SELL  (zone==-1)
+      -2.0 <= prevZ <= 0.0       -> BETWEEN (zone==0)
+  - Flat + BUY     -> open LONG.
+  - Flat + SELL    -> open SHORT.
+  - LONG + SELL    -> close LONG (FLIP) + open SHORT.
+  - SHORT + BUY    -> close SHORT (FLIP) + open LONG.
+  - SHORT + BETWEEN-> close SHORT (CASH).
+  - LONG + BETWEEN -> hold LONG.
+  - bar year < start_year and in position -> close all (OOR).
 
 The closed prefix is ``closes[:-1]``; the trigger close is therefore the
 second-to-last bar and the last bar's open is the executable fill price.
@@ -28,12 +31,12 @@ from unittest.mock import AsyncMock
 
 import pytest
 
-from runner.strategies.bollinger_meanrev.strategy import (
+from runner.strategies.bollinger_meanrev_ls.strategy import (
     D1_MS,
     ZONE_BETWEEN,
     ZONE_BUY,
     ZONE_SELL,
-    BollingerMeanRevRunnerStrategy,
+    BollingerMeanRevLsRunnerStrategy,
     _zscore,
     _zone_from_closes,
 )
@@ -45,7 +48,6 @@ _BASE_MS = 1_786_000_000_000  # realistic ms epoch > 1e12 (not treated as second
 
 
 def test_zscore_below_minus_two_for_last_close_below_lower_band() -> None:
-    # 19 closes at 100, last close at 50 -> far below the lower band (Z << -2).
     closes = tuple([100.0] * 19 + [50.0])
     z = _zscore(closes, period=20)
     assert z is not None
@@ -126,21 +128,23 @@ def _scan_task(strategy, closes):
     return strategy._scan_1d(_BASE_MS + (len(closes) - 1) * D1_MS)
 
 
-def _strategy(ctx=None) -> BollingerMeanRevRunnerStrategy:
-    strategy = object.__new__(BollingerMeanRevRunnerStrategy)
+def _strategy(ctx=None) -> BollingerMeanRevLsRunnerStrategy:
+    strategy = object.__new__(BollingerMeanRevLsRunnerStrategy)
     strategy.bb_period = 20
-    strategy.z_entry = -2.0
-    strategy.symbol = "AVAXUSDT"
+    strategy.z_entry_buy = -2.0
+    strategy.z_entry_sell = 0.0
+    strategy.symbol = "FILUSDT"
     strategy.exchange = "binance"
     strategy.capital = 10_000.0
     strategy.leverage = 10.0
     strategy.position_fraction = 1.0
     strategy.fee_pct = 0.0005
+    strategy.start_year = 2024
     strategy.d1_warmup_bars = 60
     strategy.retain_bars = 60
     strategy.min_d1_bars = 24
     strategy.timestamp_semantics = "open"
-    strategy.alpha_id = "bollinger-meanrev-avax"
+    strategy.alpha_id = "bollinger-meanrev-ls-fil"
     strategy.version = "1"
     strategy._last_1d_open = None
     strategy._pending_1d_open = None
@@ -155,14 +159,29 @@ def ctx_for(closes, emit, opens: tuple[float, ...] | None = None) -> SimpleNames
     return _make_ctx(closes, emit, opens)
 
 
-def strategy_with_long(ctx) -> BollingerMeanRevRunnerStrategy:
+def strategy_with_long(ctx) -> BollingerMeanRevLsRunnerStrategy:
     strategy = _strategy(ctx)
     strategy.ctx = ctx
     strategy._positions = {
         "p1": {
             "position_id": "p1",
-            "symbol": "AVAXUSDT",
+            "symbol": "FILUSDT",
             "side": "LONG",
+            "entry": 100.0,
+            "qty": 1.0,
+        }
+    }
+    return strategy
+
+
+def strategy_with_short(ctx) -> BollingerMeanRevLsRunnerStrategy:
+    strategy = _strategy(ctx)
+    strategy.ctx = ctx
+    strategy._positions = {
+        "p1": {
+            "position_id": "p1",
+            "symbol": "FILUSDT",
+            "side": "SHORT",
             "entry": 100.0,
             "qty": 1.0,
         }
@@ -175,14 +194,14 @@ def ctx_signals(strategy) -> list[tuple]:
 
 
 def test_requests_1d_channel() -> None:
-    assert BollingerMeanRevRunnerStrategy.get_required_channels(
-        {"symbol": "AVAXUSDT"}
+    assert BollingerMeanRevLsRunnerStrategy.get_required_channels(
+        {"symbol": "FILUSDT"}
     ) == ["kline:1d"]
 
 
 def test_warmup_tfs_and_bars() -> None:
     strategy = _strategy()
-    assert strategy.get_warmup_symbols() == ["AVAXUSDT"]
+    assert strategy.get_warmup_symbols() == ["FILUSDT"]
     assert strategy.get_warmup_tfs() == ["1d"]
     assert strategy.get_warmup_bars("1d") == 60
 
@@ -190,15 +209,17 @@ def test_warmup_tfs_and_bars() -> None:
 def test_registry_registers_strategy() -> None:
     from runner.strategy.registry import StrategyRegistry
 
-    from runner.strategies.bollinger_meanrev import register
+    from runner.strategies.bollinger_meanrev_ls import register
 
     registry = StrategyRegistry()
     register(registry)
-    assert "bollinger_meanrev" in registry.names()
-    assert registry.get_class("bollinger_meanrev") is BollingerMeanRevRunnerStrategy
+    assert "bollinger_meanrev_ls" in registry.names()
+    assert (
+        registry.get_class("bollinger_meanrev_ls") is BollingerMeanRevLsRunnerStrategy
+    )
 
 
-# ------------------------------------------------------------- entry on BUY zone
+# ------------------------------------------------------------- entry on flat
 
 
 @pytest.mark.asyncio
@@ -214,13 +235,15 @@ async def test_no_position_buy_zone_opens_long() -> None:
 
 
 @pytest.mark.asyncio
-async def test_no_position_sell_zone_stays_flat() -> None:
-    closes = tuple([100.0] * 38 + [150.0, 148.0])  # [...,150] spike -> SELL, no short
+async def test_no_position_sell_zone_opens_short() -> None:
+    closes = tuple([100.0] * 38 + [150.0, 148.0])  # [...,150] spike -> SELL -> SHORT
     strategy = _strategy(ctx_for(closes, AsyncMock(return_value={"ok": True})))
     await _scan_task(strategy, closes)
 
-    assert ctx_signals(strategy) == []
-    assert strategy._positions == {}
+    assert ctx_signals(strategy)[0][0] == "OPEN"
+    assert ctx_signals(strategy)[0][1]["side"] == "SHORT"
+    assert ctx_signals(strategy)[0][1]["entry"] == 148.0
+    assert len(strategy._positions) == 1
 
 
 @pytest.mark.asyncio
@@ -237,15 +260,16 @@ async def test_no_position_between_zone_stays_flat() -> None:
 
 
 @pytest.mark.asyncio
-async def test_long_closed_on_sell_zone_take_profit() -> None:
+async def test_long_flips_to_short_on_sell_zone() -> None:
     closes = tuple([100.0] * 38 + [150.0, 148.0])  # recovery above MA -> SELL
     strategy = strategy_with_long(ctx_for(closes, AsyncMock(return_value={"ok": True})))
     await _scan_task(strategy, closes)
 
     calls = ctx_signals(strategy)
-    assert [c[0] for c in calls] == ["CLOSE"]
-    assert calls[0][1]["reason"] == "TAKE_PROFIT"
-    assert strategy._positions == {}
+    assert [c[0] for c in calls] == ["CLOSE", "OPEN"]
+    assert calls[0][1]["reason"] == "FLIP"
+    assert calls[1][1]["side"] == "SHORT"
+    assert len(strategy._positions) == 1
 
 
 @pytest.mark.asyncio
@@ -268,10 +292,72 @@ async def test_long_held_in_between_zone() -> None:
     assert len(strategy._positions) == 1
 
 
+# ------------------------------------------------------------- holding SHORT rules
+
+
 @pytest.mark.asyncio
-async def test_never_opens_short_while_flat() -> None:
-    # SELL zone with no position must NOT open a short.
-    closes = tuple([100.0] * 38 + [150.0, 148.0])
-    strategy = _strategy(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+async def test_short_flips_to_long_on_buy_zone() -> None:
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # oversold -> BUY zone
+    strategy = strategy_with_short(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}))
+    )
     await _scan_task(strategy, closes)
-    assert all(c[1].get("side") != "SHORT" for c in ctx_signals(strategy))
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE", "OPEN"]
+    assert calls[0][1]["reason"] == "FLIP"
+    assert calls[1][1]["side"] == "LONG"
+    assert len(strategy._positions) == 1
+
+
+@pytest.mark.asyncio
+async def test_short_closed_to_cash_on_between_zone() -> None:
+    closes = tuple([100.0] * 40)  # close exactly at mean -> BETWEEN
+    strategy = strategy_with_short(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}))
+    )
+    await _scan_task(strategy, closes)
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE"]
+    assert calls[0][1]["reason"] == "CASH"
+    assert strategy._positions == {}
+
+
+@pytest.mark.asyncio
+async def test_short_held_in_sell_zone() -> None:
+    closes = tuple([100.0] * 38 + [150.0, 148.0])  # SELL zone -> hold short
+    strategy = strategy_with_short(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}))
+    )
+    await _scan_task(strategy, closes)
+
+    assert ctx_signals(strategy) == []
+    assert len(strategy._positions) == 1
+
+
+# ------------------------------------------------------------- out-of-range guard
+
+
+@pytest.mark.asyncio
+async def test_out_of_range_closes_all() -> None:
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # BUY zone
+    strategy = strategy_with_long(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.start_year = 1_000_000  # every bar year < start_year -> OOR
+    await _scan_task(strategy, closes)
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE"]
+    assert calls[0][1]["reason"] == "OOR"
+    assert strategy._positions == {}
+
+
+@pytest.mark.asyncio
+async def test_out_of_range_flat_stays_flat() -> None:
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # BUY zone
+    strategy = _strategy(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.start_year = 1_000_000
+    await _scan_task(strategy, closes)
+
+    assert ctx_signals(strategy) == []
+    assert strategy._positions == {}

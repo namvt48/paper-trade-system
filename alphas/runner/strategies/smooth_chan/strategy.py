@@ -442,16 +442,19 @@ class SmoothChanRunnerStrategy(Strategy):
         wm = float(position.get("wm") or entry)
         high = closed.highs[-1]
         low = closed.lows[-1]
+        be_was_active = bool(position.get("be"))
 
-        if side == "LONG":
-            if high > wm:
-                wm = high
-            profit_pct = (wm - entry) / entry if entry else 0.0
-        else:
-            if low < wm:
-                wm = low
-            profit_pct = (entry - wm) / entry if entry else 0.0
-        position["wm"] = wm
+        if entry_atr <= 0 and not self.flip_only:
+            import logging
+            logging.getLogger(self.alpha_id).warning(
+                "entry_atr=%.4f for %s — chandelier/BE disabled. "
+                "Position may lack entry_atr field.",
+                entry_atr, position.get("position_id", "?"),
+            )
+
+        profit_pct = (
+            (wm - entry) / entry if side == "LONG" else (entry - wm) / entry
+        ) if entry else 0.0
 
         ratio = (
             min(1.0, max(0.0, profit_pct / self.scale_pct))
@@ -494,7 +497,7 @@ class SmoothChanRunnerStrategy(Strategy):
             if side == "LONG":
                 if high > entry * (1 + self.be_pct):
                     position["be"] = True
-                if position.get("be") and low <= entry:
+                if be_was_active and low <= entry:
                     await self._close_position(
                         position, "BE", execution_price, closed.times[-1]
                     )
@@ -502,11 +505,17 @@ class SmoothChanRunnerStrategy(Strategy):
             else:
                 if low < entry * (1 - self.be_pct):
                     position["be"] = True
-                if position.get("be") and high >= entry:
+                if be_was_active and high >= entry:
                     await self._close_position(
                         position, "BE", execution_price, closed.times[-1]
                     )
                     return True
+
+        if side == "LONG" and high > wm:
+            position["wm"] = high
+        elif side == "SHORT" and low < wm:
+            position["wm"] = low
+
         return False
 
     # ------------------------------------------------------------- signal management
@@ -515,6 +524,13 @@ class SmoothChanRunnerStrategy(Strategy):
         self, side: str, entry: float, eff_open_ms: int, entry_atr: float
     ) -> None:
         if self._existing_position() is not None:
+            return
+        if not math.isfinite(entry_atr) or entry_atr <= 0:
+            import logging
+            logging.getLogger(self.alpha_id).warning(
+                "Skipping entry: entry_atr=%.4f (NaN or zero), no valid stops possible",
+                entry_atr,
+            )
             return
         qty = (
             math.floor(

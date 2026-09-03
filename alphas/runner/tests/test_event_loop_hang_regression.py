@@ -16,11 +16,13 @@ These tests reproduce the mechanism at unit-test speed (no real redis,
 no real threads) and must fail on the current code (RED) before the
 fix (U2 async+timeout funding reads, U4 watchdog) lands.
 """
+
 from __future__ import annotations
 
 import asyncio
 import contextlib
 import json
+from types import SimpleNamespace
 
 import pytest
 
@@ -51,7 +53,7 @@ class FakePipeline:
         for key, start, end in self._calls:
             values = self._lists.get(key, [])
             end_idx = len(values) - 1 if end == -1 else end
-            out.append(values[start:end_idx + 1])
+            out.append(values[start : end_idx + 1])
         return out
 
 
@@ -70,7 +72,7 @@ class FakeRedisWithPipeline:
         self.lrange_call_count += 1
         values = self.lists.get(key, [])
         end_idx = len(values) - 1 if end == -1 else end
-        return values[start:end_idx + 1]
+        return values[start : end_idx + 1]
 
     def pipeline(self, transaction=False):
         return FakePipeline(self.lists)
@@ -109,7 +111,9 @@ class OnceThenHangStrategy(Strategy):
 
 
 @pytest.mark.asyncio
-async def test_event_loop_recovers_and_processes_next_candle_after_scan_hangs(monkeypatch):
+async def test_event_loop_recovers_and_processes_next_candle_after_scan_hangs(
+    monkeypatch,
+):
     """A strategy whose scan() hangs on one event must not silence the
     alpha forever: the loop must eventually time out that event and go
     on to process the strategy's *next* event (e.g. the following day's
@@ -125,16 +129,22 @@ async def test_event_loop_recovers_and_processes_next_candle_after_scan_hangs(mo
     """
     monkeypatch.setattr(runner_main, "_DEFAULT_EVENT_TIMEOUT_SEC", 0.2)
 
-    ctx = StrategyContext("1d-test", "1", SharedCandleCache(), None, StrategyRuntimeState(ready=True))
+    ctx = StrategyContext(
+        "1d-test", "1", SharedCandleCache(), None, StrategyRuntimeState(ready=True)
+    )
     strategy = OnceThenHangStrategy(alpha_id="1d-test", version="1", params={}, ctx=ctx)
 
     queue: asyncio.Queue = asyncio.Queue()
     stop = asyncio.Event()
-    task = asyncio.create_task(runner_main.run_strategy_event_loop(strategy, queue, stop))
+    task = asyncio.create_task(
+        runner_main.run_strategy_event_loop(strategy, queue, stop)
+    )
 
     try:
         # Event 1: universe refresh / candle close that hangs inside scan().
-        await queue.put(DataEvent("symbols:binance", "symbols", "", "", {"symbols": []}))
+        await queue.put(
+            DataEvent("symbols:binance", "symbols", "", "", {"symbols": []})
+        )
         await asyncio.sleep(0.05)  # let the loop pick it up and start hanging
         assert strategy.scan_calls == 1
 
@@ -169,21 +179,24 @@ def test_funding_snapshot_load_many_batches_into_a_single_round_trip():
     symbols = [f"SYM{i}USDT" for i in range(180)]
     for symbol in symbols:
         redis.lists[f"funding_snapshot:binance:{symbol}"] = [
-            json.dumps({"symbol": symbol, "funding_time": 1_000, "funding_rate": 0.0001}),
+            json.dumps(
+                {"symbol": symbol, "funding_time": 1_000, "funding_rate": 0.0001}
+            ),
         ]
     reader = FundingSnapshotReader(redis, "binance")
 
     result = reader.load_many(symbols)
 
     assert redis.lrange_call_count == 0, (
-        "load_many must batch via pipeline, not fall back to one lrange "
-        "call per symbol"
+        "load_many must batch via pipeline, not fall back to one lrange call per symbol"
     )
     assert len(result) == 180
     assert result["SYM0USDT"][0]["funding_rate"] == 0.0001
 
 
-def test_mds_redis_client_is_constructed_with_a_bounded_socket_timeout(monkeypatch, tmp_path):
+def test_mds_redis_client_is_constructed_with_a_bounded_socket_timeout(
+    monkeypatch, tmp_path
+):
     """The 2026-07-16 incident's root cause was an mds-redis connection
     with no socket timeout: a stalled read blocked its thread forever,
     permanently shrinking the runner's shared compute pool by one every
@@ -229,4 +242,117 @@ def test_mds_redis_client_is_constructed_with_a_bounded_socket_timeout(monkeypat
     assert mds_calls, "mds_client was never constructed via redis.from_url"
     _, kwargs = mds_calls[0]
     assert kwargs.get("socket_timeout"), "mds_client must have a bounded socket_timeout"
-    assert kwargs.get("socket_connect_timeout"), "mds_client must have a bounded socket_connect_timeout"
+    assert kwargs.get("socket_connect_timeout"), (
+        "mds_client must have a bounded socket_connect_timeout"
+    )
+
+
+@pytest.mark.asyncio
+async def test_loop_abandons_event_when_admission_semaphore_is_saturated(monkeypatch):
+    """A strategy whose queue sits behind a fully-held admission semaphore
+    (a universe refresh fans out to every alpha's queue at once and can
+    park every permit) must abandon the event after the same deadline as
+    the handler, instead of parking its loop forever on the semaphore
+    acquire.
+
+    Before the 2026-08-30 fix, the `async with scan_semaphore` had no
+    timeout: the loop waited indefinitely, silently stopped draining its
+    queue, and dropped every later event -- including the next daily
+    close (the 1d-iamp queue never drained from 15:00Z and its 00:00:37Z
+    close was dropped, so the 30/08 basket was never computed).
+    """
+    monkeypatch.setattr(runner_main, "_DEFAULT_EVENT_TIMEOUT_SEC", 0.2)
+
+    ctx = StrategyContext(
+        "1d-test", "1", SharedCandleCache(), None, StrategyRuntimeState(ready=True)
+    )
+    strategy = OnceThenHangStrategy(alpha_id="1d-test", version="1", params={}, ctx=ctx)
+
+    sem = asyncio.Semaphore(1)
+    await sem.acquire()  # exhaust the only permit; nobody will release it
+
+    queue: asyncio.Queue = asyncio.Queue()
+    stop = asyncio.Event()
+    task = asyncio.create_task(
+        runner_main.run_strategy_event_loop(strategy, queue, stop, scan_semaphore=sem)
+    )
+
+    try:
+        # Non-critical event behind a saturated semaphore: the loop must
+        # drop it after the bounded admission wait and go back to waiting
+        # for queue items, NOT stay parked on the acquire forever.
+        await queue.put(
+            DataEvent("symbols:binance", "symbols", "", "", {"symbols": []})
+        )
+        await asyncio.sleep(0.5)
+        assert strategy.scan_calls == 0, (
+            "event must be abandoned after the bounded admission wait, "
+            "not processed while the semaphore is exhausted"
+        )
+
+        # The loop must still be alive: once a permit is released, the
+        # next event is processed -- and the abandoned event must NOT be
+        # processed afterwards. Give the old code room to show its bug:
+        # it processes the abandoned event (1) AND then the new one (2);
+        # the fixed code stays at 1.
+        sem.release()
+        await queue.put(
+            DataEvent("symbols:binance", "symbols", "", "", {"symbols": []})
+        )
+        deadline = asyncio.get_event_loop().time() + 2.0
+        while strategy.scan_calls < 1 and asyncio.get_event_loop().time() < deadline:
+            await asyncio.sleep(0.05)
+        await asyncio.sleep(0.4)
+        assert strategy.scan_calls == 1, (
+            "the loop must process the post-release event and must not "
+            "double-process the abandoned one (got %d scan calls)" % strategy.scan_calls
+        )
+    finally:
+        stop.set()
+        task.cancel()
+        await asyncio.gather(task, return_exceptions=True)
+
+
+@pytest.mark.asyncio
+async def test_loop_processes_critical_kline_even_when_semaphore_is_saturated(
+    monkeypatch,
+):
+    """A kline on the strategy's own timeframe is its rebalance trigger
+    (the midnight-UTC close for 1d alphas). When the admission semaphore
+    is saturated past the deadline, the event must still be processed
+    without admission control -- dropping it would silently skip that
+    day's rebalance (2026-08-30 incident).
+    """
+    monkeypatch.setattr(runner_main, "_DEFAULT_EVENT_TIMEOUT_SEC", 0.2)
+    # kline events on tf=1d would otherwise get the real 300s timeout
+    # (_EVENT_TIMEOUT_SEC["1d"]), making the test wait forever.
+    monkeypatch.setattr(runner_main, "_EVENT_TIMEOUT_SEC", {"1d": 0.2})
+
+    ctx = StrategyContext(
+        "1d-test", "1", SharedCandleCache(), None, StrategyRuntimeState(ready=True)
+    )
+    strategy = OnceThenHangStrategy(alpha_id="1d-test", version="1", params={}, ctx=ctx)
+    strategy.spec = SimpleNamespace(timeframe="1d")
+
+    sem = asyncio.Semaphore(1)
+    await sem.acquire()  # exhaust the only permit; nobody will release it
+
+    queue: asyncio.Queue = asyncio.Queue()
+    stop = asyncio.Event()
+    task = asyncio.create_task(
+        runner_main.run_strategy_event_loop(strategy, queue, stop, scan_semaphore=sem)
+    )
+
+    try:
+        await queue.put(DataEvent("kline:binance:1d", "kline", "BTCUSDT", "1d", {}))
+        deadline = asyncio.get_event_loop().time() + 1.0
+        while strategy.scan_calls < 1 and asyncio.get_event_loop().time() < deadline:
+            await asyncio.sleep(0.05)
+        assert strategy.scan_calls == 1, (
+            "own-timeframe kline must be processed even while the "
+            "admission semaphore is exhausted (rebalance trigger)"
+        )
+    finally:
+        stop.set()
+        task.cancel()
+        await asyncio.gather(task, return_exceptions=True)

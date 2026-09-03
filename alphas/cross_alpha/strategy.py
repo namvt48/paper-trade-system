@@ -6,15 +6,39 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
-from cross_alpha.overlay import beta_neutralize, drawdown_throttle, per_coin_cap, risk_parity
+from cross_alpha.overlay import (
+    beta_neutralize,
+    drawdown_throttle,
+    per_coin_cap,
+    risk_parity,
+)
 from cross_alpha.spec import AlphaSpec
 from indicators.pandas.ts_ops import (
-    ts_mean, ts_std, ts_zscore, ts_skew, ts_momentum, decay_linear,
-    ts_range_location, ts_range_location_close, ts_ema, kaufman_er as _kaufman_er_lib,
-    cmf as _cmf_lib, ts_vwap as _ts_vwap_lib, ideal_amp as _ideal_amp_lib,
+    ts_mean,
+    ts_std,
+    ts_zscore,
+    ts_skew,
+    ts_momentum,
+    decay_linear,
+    ts_range_location,
+    ts_range_location_close,
+    ts_ema,
+    kaufman_er as _kaufman_er_lib,
+    cmf as _cmf_lib,
+    ts_vwap as _ts_vwap_lib,
+    ideal_amp as _ideal_amp_lib,
 )
-from indicators.pandas.cs_ops import cs_zscore as _cs_zscore_lib, cs_winsorize as _cs_winsorize_lib, cs_scale as _cs_scale_lib
-from indicators.pandas.element_ops import abs as _abs_lib, neg as _neg_lib, add as _add_lib, div as _div_lib
+from indicators.pandas.cs_ops import (
+    cs_zscore as _cs_zscore_lib,
+    cs_winsorize as _cs_winsorize_lib,
+    cs_scale as _cs_scale_lib,
+)
+from indicators.pandas.element_ops import (
+    abs as _abs_lib,
+    neg as _neg_lib,
+    add as _add_lib,
+    div as _div_lib,
+)
 
 
 @dataclass
@@ -34,7 +58,11 @@ FeatureKey = tuple[Any, ...]
 class CrossAlphaComputeContext:
     """Per-panel cache shared by alpha specs evaluated on the same candle."""
 
-    def __init__(self, panel: dict[str, pd.DataFrame], metrics: dict[str, int | float] | None = None):
+    def __init__(
+        self,
+        panel: dict[str, pd.DataFrame],
+        metrics: dict[str, int | float] | None = None,
+    ):
         self.panel = panel
         self.metrics = metrics
         self._raw_returns: pd.DataFrame | None = None
@@ -51,7 +79,11 @@ class CrossAlphaComputeContext:
     def liquidity_rank(self) -> pd.DataFrame:
         if self._liquidity_rank is None:
             dollar_volume = self.panel["close"] * self.panel["volume"]
-            self._liquidity_rank = dollar_volume.rolling(30, min_periods=1).mean().rank(axis=1, ascending=False)
+            self._liquidity_rank = (
+                dollar_volume.rolling(30, min_periods=1)
+                .mean()
+                .rank(axis=1, ascending=False)
+            )
         return self._liquidity_rank
 
     def mask_key(self, spec: AlphaSpec) -> FeatureKey:
@@ -59,12 +91,16 @@ class CrossAlphaComputeContext:
             return ("dynamic_top_k", int(spec.universe_size))
         return ("all",)
 
-    def masked_fields(self, spec: AlphaSpec) -> tuple[dict[str, pd.DataFrame], FeatureKey]:
+    def masked_fields(
+        self, spec: AlphaSpec
+    ) -> tuple[dict[str, pd.DataFrame], FeatureKey]:
         key = self.mask_key(spec)
         if key not in self._masked_fields:
             if spec.universe_mode == "dynamic_top_k":
                 mask = self.liquidity_rank() <= int(spec.universe_size)
-                self._masked_fields[key] = {name: value.where(mask) for name, value in self.panel.items()}
+                self._masked_fields[key] = {
+                    name: value.where(mask) for name, value in self.panel.items()
+                }
             else:
                 self._masked_fields[key] = self.panel
         return self._masked_fields[key], key
@@ -83,7 +119,9 @@ class CrossAlphaComputeContext:
         ``compute_signal_details`` raises KeyError('funding_zscore')."""
         self._masked_fields.clear()
 
-    def returns(self, spec: AlphaSpec, fields: dict[str, pd.DataFrame], mask_key: FeatureKey) -> tuple[pd.DataFrame, FeatureKey]:
+    def returns(
+        self, spec: AlphaSpec, fields: dict[str, pd.DataFrame], mask_key: FeatureKey
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("returns", mask_key)
         if key not in self._returns:
             raw = self.raw_returns()
@@ -93,10 +131,14 @@ class CrossAlphaComputeContext:
                 self._returns[key] = raw
         return self._returns[key], key
 
-    def field(self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, name: str) -> tuple[pd.DataFrame, FeatureKey]:
+    def field(
+        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, name: str
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         return fields[name], ("field", mask_key, name)
 
-    def ts_mean(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_mean(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_mean", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -105,7 +147,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_std(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_std(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_std", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -114,7 +158,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_zscore(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_zscore(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_zscore", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -123,7 +169,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_skew(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_skew(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_skew", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -132,7 +180,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_momentum(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_momentum(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_momentum", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -141,7 +191,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def decay_linear(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def decay_linear(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("decay_linear", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -150,7 +202,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_ema(self, source_key: FeatureKey, x: pd.DataFrame, span: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_ema(
+        self, source_key: FeatureKey, x: pd.DataFrame, span: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_ema", source_key, int(span))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -159,7 +213,9 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def kaufman_er(self, source_key: FeatureKey, x: pd.DataFrame, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def kaufman_er(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("kaufman_er", source_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -168,52 +224,80 @@ class CrossAlphaComputeContext:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def cmf(self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def cmf(
+        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("cmf", mask_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
-            self._features[key] = _cmf_lib(fields["high"], fields["low"], fields["close"], fields["volume"], int(d))
+            self._features[key] = _cmf_lib(
+                fields["high"], fields["low"], fields["close"], fields["volume"], int(d)
+            )
         else:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def ts_vwap(self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, d: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def ts_vwap(
+        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ts_vwap", mask_key, int(d))
         if key not in self._features:
             self._inc("feature_cache_misses")
-            self._features[key] = _ts_vwap_lib(fields["high"], fields["low"], fields["close"], fields["volume"], int(d))
+            self._features[key] = _ts_vwap_lib(
+                fields["high"], fields["low"], fields["close"], fields["volume"], int(d)
+            )
         else:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
     def ideal_amp(
-        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int, k_frac: float,
+        self,
+        fields: dict[str, pd.DataFrame],
+        mask_key: FeatureKey,
+        window: int,
+        k_frac: float,
     ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("ideal_amp", mask_key, int(window), float(k_frac))
         if key not in self._features:
             self._inc("feature_cache_misses")
-            self._features[key] = _ideal_amp_lib(fields["high"], fields["low"], fields["close"], int(window), float(k_frac))
+            self._features[key] = _ideal_amp_lib(
+                fields["high"],
+                fields["low"],
+                fields["close"],
+                int(window),
+                float(k_frac),
+            )
         else:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def cs_zscore(self, source_key: FeatureKey, x: pd.DataFrame) -> tuple[pd.DataFrame, FeatureKey]:
+    def cs_zscore(
+        self, source_key: FeatureKey, x: pd.DataFrame
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("cs_zscore", source_key)
         return _cs_zscore_lib(x), key
 
-    def cs_winsorize(self, source_key: FeatureKey, x: pd.DataFrame, k: float = 3.0) -> tuple[pd.DataFrame, FeatureKey]:
+    def cs_winsorize(
+        self, source_key: FeatureKey, x: pd.DataFrame, k: float = 3.0
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("cs_winsorize", source_key, float(k))
         return _cs_winsorize_lib(x, k), key
 
-    def cs_scale(self, source_key: FeatureKey, x: pd.DataFrame, a: float = 1.0) -> tuple[pd.DataFrame, FeatureKey]:
+    def cs_scale(
+        self, source_key: FeatureKey, x: pd.DataFrame, a: float = 1.0
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("cs_scale", source_key, float(a))
         return _cs_scale_lib(x, a), key
 
-    def neg(self, source_key: FeatureKey, x: pd.DataFrame) -> tuple[pd.DataFrame, FeatureKey]:
+    def neg(
+        self, source_key: FeatureKey, x: pd.DataFrame
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("neg", source_key)
         return _neg_lib(x), key
 
-    def abs(self, source_key: FeatureKey, x: pd.DataFrame) -> tuple[pd.DataFrame, FeatureKey]:
+    def abs(
+        self, source_key: FeatureKey, x: pd.DataFrame
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("abs", source_key)
         return _abs_lib(x), key
 
@@ -237,16 +321,22 @@ class CrossAlphaComputeContext:
         key = ("add", left_key, right_key)
         return _add_lib(left, right), key
 
-    def range_location(self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def range_location(
+        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("range_location", mask_key, int(window))
         if key not in self._features:
             self._inc("feature_cache_misses")
-            self._features[key] = ts_range_location(fields["close"], fields["low"], fields["high"], int(window))
+            self._features[key] = ts_range_location(
+                fields["close"], fields["low"], fields["high"], int(window)
+            )
         else:
             self._inc("feature_cache_hits")
         return self._features[key], key
 
-    def range_location_close(self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int) -> tuple[pd.DataFrame, FeatureKey]:
+    def range_location_close(
+        self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("range_location_close", mask_key, int(window))
         if key not in self._features:
             self._inc("feature_cache_misses")
@@ -261,9 +351,13 @@ class CrossAlphaComputeContext:
         self.metrics[name] = int(self.metrics.get(name, 0)) + 1
 
 
-def _masked_fields(panel: dict[str, pd.DataFrame], spec: AlphaSpec) -> dict[str, pd.DataFrame]:
+def _masked_fields(
+    panel: dict[str, pd.DataFrame], spec: AlphaSpec
+) -> dict[str, pd.DataFrame]:
     dollar_volume = panel["close"] * panel["volume"]
-    liq_rank = dollar_volume.rolling(30, min_periods=1).mean().rank(axis=1, ascending=False)
+    liq_rank = (
+        dollar_volume.rolling(30, min_periods=1).mean().rank(axis=1, ascending=False)
+    )
     mask = liq_rank <= spec.universe_size
     if spec.universe_mode == "dynamic_top_k":
         return {name: value.where(mask) for name, value in panel.items()}
@@ -286,7 +380,12 @@ def compute_signal_details(
     panel: dict[str, pd.DataFrame],
     spec: AlphaSpec,
     context: CrossAlphaComputeContext | None = None,
-) -> tuple[pd.DataFrame | None, pd.DataFrame | None, pd.DataFrame | None, dict[str, pd.DataFrame]]:
+) -> tuple[
+    pd.DataFrame | None,
+    pd.DataFrame | None,
+    pd.DataFrame | None,
+    dict[str, pd.DataFrame],
+]:
     ctx = context or CrossAlphaComputeContext(panel)
     fields, mask_key = ctx.masked_fields(spec)
     p = spec.params
@@ -311,13 +410,26 @@ def compute_signal_details(
         price_zscore, price_zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
         skew, skew_key = ctx.ts_skew(returns_key, returns, p["skew_window"])
         negative_skew, negative_skew_key = ctx.neg(skew_key, skew)
-        price_component, price_component_key = ctx.cs_zscore(price_zscore_key, price_zscore)
-        skew_component, skew_component_key = ctx.cs_zscore(negative_skew_key, negative_skew)
-        score, _ = ctx.add(price_component_key, price_component, skew_component_key, skew_component)
-        return score, None, None, {
-            "price_zscore": price_zscore, "price_component": price_component,
-            "negative_skew": negative_skew, "skew_component": skew_component,
-        }
+        price_component, price_component_key = ctx.cs_zscore(
+            price_zscore_key, price_zscore
+        )
+        skew_component, skew_component_key = ctx.cs_zscore(
+            negative_skew_key, negative_skew
+        )
+        score, _ = ctx.add(
+            price_component_key, price_component, skew_component_key, skew_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "price_zscore": price_zscore,
+                "price_component": price_component,
+                "negative_skew": negative_skew,
+                "skew_component": skew_component,
+            },
+        )
     if signal == "blend_momvol_skew":
         close, close_key = ctx.field(fields, mask_key, "close")
         momentum, momentum_key = ctx.ts_momentum(close_key, close, p["momentum_window"])
@@ -326,95 +438,203 @@ def compute_signal_details(
         skew, skew_key = ctx.ts_skew(returns_key, returns, p["skew_window"])
         negative_skew, negative_skew_key = ctx.neg(skew_key, skew)
         momvol_component, momvol_component_key = ctx.cs_zscore(momvol_key, momvol)
-        skew_component, skew_component_key = ctx.cs_zscore(negative_skew_key, negative_skew)
-        score, _ = ctx.add(momvol_component_key, momvol_component, skew_component_key, skew_component)
-        return score, None, None, {
-            "momentum_over_vol": momvol, "momvol_component": momvol_component,
-            "negative_skew": negative_skew, "skew_component": skew_component,
-        }
+        skew_component, skew_component_key = ctx.cs_zscore(
+            negative_skew_key, negative_skew
+        )
+        score, _ = ctx.add(
+            momvol_component_key, momvol_component, skew_component_key, skew_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "momentum_over_vol": momvol,
+                "momvol_component": momvol_component,
+                "negative_skew": negative_skew,
+                "skew_component": skew_component,
+            },
+        )
     if signal == "blend_zscore_meanret":
         close, close_key = ctx.field(fields, mask_key, "close")
         price_zscore, price_zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
-        mean_return, mean_return_key = ctx.ts_mean(returns_key, returns, p["mean_window"])
-        price_component, price_component_key = ctx.cs_zscore(price_zscore_key, price_zscore)
-        return_component, return_component_key = ctx.cs_zscore(mean_return_key, mean_return)
-        score, _ = ctx.add(price_component_key, price_component, return_component_key, return_component)
-        return score, None, None, {
-            "price_zscore": price_zscore, "price_component": price_component,
-            "mean_return": mean_return, "return_component": return_component,
-        }
+        mean_return, mean_return_key = ctx.ts_mean(
+            returns_key, returns, p["mean_window"]
+        )
+        price_component, price_component_key = ctx.cs_zscore(
+            price_zscore_key, price_zscore
+        )
+        return_component, return_component_key = ctx.cs_zscore(
+            mean_return_key, mean_return
+        )
+        score, _ = ctx.add(
+            price_component_key, price_component, return_component_key, return_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "price_zscore": price_zscore,
+                "price_component": price_component,
+                "mean_return": mean_return,
+                "return_component": return_component,
+            },
+        )
     if signal == "blend_zscore_momvol":
         close, close_key = ctx.field(fields, mask_key, "close")
         momentum, momentum_key = ctx.ts_momentum(close_key, close, p["momentum_window"])
         std, std_key = ctx.ts_std(returns_key, returns, p["std_window"])
         momvol, momvol_key = ctx.div(momentum_key, momentum, std_key, std)
         price_zscore, price_zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
-        price_component, price_component_key = ctx.cs_zscore(price_zscore_key, price_zscore)
+        price_component, price_component_key = ctx.cs_zscore(
+            price_zscore_key, price_zscore
+        )
         momvol_component, momvol_component_key = ctx.cs_zscore(momvol_key, momvol)
-        score, _ = ctx.add(price_component_key, price_component, momvol_component_key, momvol_component)
-        return score, None, None, {
-            "price_zscore": price_zscore, "price_component": price_component,
-            "momentum_over_vol": momvol, "momvol_component": momvol_component,
-        }
+        score, _ = ctx.add(
+            price_component_key, price_component, momvol_component_key, momvol_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "price_zscore": price_zscore,
+                "price_component": price_component,
+                "momentum_over_vol": momvol,
+                "momvol_component": momvol_component,
+            },
+        )
     if signal == "blend_zscore_decayz":
         close, close_key = ctx.field(fields, mask_key, "close")
         first, first_key = ctx.ts_zscore(close_key, close, p["first_z_window"])
-        second_zscore, second_zscore_key = ctx.ts_zscore(close_key, close, p["second_z_window"])
-        second, second_key = ctx.decay_linear(second_zscore_key, second_zscore, p["decay"])
+        second_zscore, second_zscore_key = ctx.ts_zscore(
+            close_key, close, p["second_z_window"]
+        )
+        second, second_key = ctx.decay_linear(
+            second_zscore_key, second_zscore, p["decay"]
+        )
         first_component, first_component_key = ctx.cs_zscore(first_key, first)
         second_component, second_component_key = ctx.cs_zscore(second_key, second)
-        score, _ = ctx.add(first_component_key, first_component, second_component_key, second_component)
-        return score, None, None, {
-            "first_zscore": first, "first_component": first_component,
-            "decay_zscore": second, "decay_component": second_component,
-        }
+        score, _ = ctx.add(
+            first_component_key, first_component, second_component_key, second_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "first_zscore": first,
+                "first_component": first_component,
+                "decay_zscore": second,
+                "decay_component": second_component,
+            },
+        )
     if signal == "blend_decayz_meanret":
         close, close_key = ctx.field(fields, mask_key, "close")
         zscore, zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
         first, first_key = ctx.decay_linear(zscore_key, zscore, p["decay"])
-        mean_return, mean_return_key = ctx.ts_mean(returns_key, returns, p["mean_window"])
+        mean_return, mean_return_key = ctx.ts_mean(
+            returns_key, returns, p["mean_window"]
+        )
         decay_component, decay_component_key = ctx.cs_zscore(first_key, first)
-        return_component, return_component_key = ctx.cs_zscore(mean_return_key, mean_return)
-        score, _ = ctx.add(decay_component_key, decay_component, return_component_key, return_component)
-        return score, None, None, {
-            "decay_zscore": first, "decay_component": decay_component,
-            "mean_return": mean_return, "return_component": return_component,
-        }
+        return_component, return_component_key = ctx.cs_zscore(
+            mean_return_key, mean_return
+        )
+        score, _ = ctx.add(
+            decay_component_key, decay_component, return_component_key, return_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "decay_zscore": first,
+                "decay_component": decay_component,
+                "mean_return": mean_return,
+                "return_component": return_component,
+            },
+        )
     if signal == "blend_meanret_range":
         location, location_key = ctx.range_location(fields, mask_key, p["range_window"])
-        mean_return, mean_return_key = ctx.ts_mean(returns_key, returns, p["mean_window"])
-        return_component, return_component_key = ctx.cs_zscore(mean_return_key, mean_return)
+        mean_return, mean_return_key = ctx.ts_mean(
+            returns_key, returns, p["mean_window"]
+        )
+        return_component, return_component_key = ctx.cs_zscore(
+            mean_return_key, mean_return
+        )
         range_component, range_component_key = ctx.cs_zscore(location_key, location)
-        score, _ = ctx.add(return_component_key, return_component, range_component_key, range_component)
-        return score, None, None, {
-            "mean_return": mean_return, "return_component": return_component,
-            "range_location": location, "range_component": range_component,
-        }
+        score, _ = ctx.add(
+            return_component_key, return_component, range_component_key, range_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "mean_return": mean_return,
+                "return_component": return_component,
+                "range_location": location,
+                "range_component": range_component,
+            },
+        )
     if signal == "blend_zscore_volume_zscore":
         close, close_key = ctx.field(fields, mask_key, "close")
         volume, volume_key = ctx.field(fields, mask_key, "volume")
-        close_zscore, close_zscore_key = ctx.ts_zscore(close_key, close, p["close_window"])
-        volume_zscore, volume_zscore_key = ctx.ts_zscore(volume_key, volume, p["volume_window"])
-        close_component, close_component_key = ctx.cs_zscore(close_zscore_key, close_zscore)
-        volume_component, volume_component_key = ctx.cs_zscore(volume_zscore_key, volume_zscore)
-        score, _ = ctx.add(close_component_key, close_component, volume_component_key, volume_component)
-        return score, None, None, {
-            "close_zscore": close_zscore, "close_component": close_component,
-            "volume_zscore": volume_zscore, "volume_component": volume_component,
-        }
+        close_zscore, close_zscore_key = ctx.ts_zscore(
+            close_key, close, p["close_window"]
+        )
+        volume_zscore, volume_zscore_key = ctx.ts_zscore(
+            volume_key, volume, p["volume_window"]
+        )
+        close_component, close_component_key = ctx.cs_zscore(
+            close_zscore_key, close_zscore
+        )
+        volume_component, volume_component_key = ctx.cs_zscore(
+            volume_zscore_key, volume_zscore
+        )
+        score, _ = ctx.add(
+            close_component_key, close_component, volume_component_key, volume_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "close_zscore": close_zscore,
+                "close_component": close_component,
+                "volume_zscore": volume_zscore,
+                "volume_component": volume_component,
+            },
+        )
     if signal == "blend_decayz_volume_zscore":
         close, close_key = ctx.field(fields, mask_key, "close")
         volume, volume_key = ctx.field(fields, mask_key, "volume")
-        close_zscore, close_zscore_key = ctx.ts_zscore(close_key, close, p["close_window"])
+        close_zscore, close_zscore_key = ctx.ts_zscore(
+            close_key, close, p["close_window"]
+        )
         first, first_key = ctx.decay_linear(close_zscore_key, close_zscore, p["decay"])
-        volume_zscore, volume_zscore_key = ctx.ts_zscore(volume_key, volume, p["volume_window"])
+        volume_zscore, volume_zscore_key = ctx.ts_zscore(
+            volume_key, volume, p["volume_window"]
+        )
         decay_component, decay_component_key = ctx.cs_zscore(first_key, first)
-        volume_component, volume_component_key = ctx.cs_zscore(volume_zscore_key, volume_zscore)
-        score, _ = ctx.add(decay_component_key, decay_component, volume_component_key, volume_component)
-        return score, None, None, {
-            "decay_zscore": first, "decay_component": decay_component,
-            "volume_zscore": volume_zscore, "volume_component": volume_component,
-        }
+        volume_component, volume_component_key = ctx.cs_zscore(
+            volume_zscore_key, volume_zscore
+        )
+        score, _ = ctx.add(
+            decay_component_key, decay_component, volume_component_key, volume_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "decay_zscore": first,
+                "decay_component": decay_component,
+                "volume_zscore": volume_zscore,
+                "volume_component": volume_component,
+            },
+        )
     if signal == "absolute_breakout":
         long_field, long_field_key = ctx.field(fields, mask_key, p["long_field"])
         short_field, short_field_key = ctx.field(fields, mask_key, p["short_field"])
@@ -422,9 +642,15 @@ def compute_signal_details(
         short_zscore, _ = ctx.ts_zscore(short_field_key, short_field, p["short_window"])
         long_condition = long_zscore > p["long_z"]
         short_condition = short_zscore < p["short_z"]
-        return None, long_condition, short_condition, {
-            "long_zscore": long_zscore, "short_zscore": short_zscore,
-        }
+        return (
+            None,
+            long_condition,
+            short_condition,
+            {
+                "long_zscore": long_zscore,
+                "short_zscore": short_zscore,
+            },
+        )
     if signal == "breakout":
         location, location_key = ctx.range_location_close(fields, mask_key, p["window"])
         return location, None, None, {"range_location_close": location}
@@ -434,20 +660,40 @@ def compute_signal_details(
     if signal == "blend_zscore_range":
         close, close_key = ctx.field(fields, mask_key, "close")
         price_zscore, price_zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
-        location, location_key = ctx.range_location_close(fields, mask_key, p["range_window"])
-        price_component, price_component_key = ctx.cs_zscore(price_zscore_key, price_zscore)
+        location, location_key = ctx.range_location_close(
+            fields, mask_key, p["range_window"]
+        )
+        price_component, price_component_key = ctx.cs_zscore(
+            price_zscore_key, price_zscore
+        )
         range_component, range_component_key = ctx.cs_zscore(location_key, location)
-        score, _ = ctx.add(price_component_key, price_component, range_component_key, range_component)
-        return score, None, None, {
-            "price_zscore": price_zscore, "price_component": price_component,
-            "range_location_close": location, "range_component": range_component,
-        }
+        score, _ = ctx.add(
+            price_component_key, price_component, range_component_key, range_component
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "price_zscore": price_zscore,
+                "price_component": price_component,
+                "range_location_close": location,
+                "range_component": range_component,
+            },
+        )
     if signal == "amihud":
         abs_returns, abs_returns_key = ctx.abs(returns_key, returns)
         quote_volume, quote_volume_key = ctx.field(fields, mask_key, "quote_volume")
-        illiq, illiq_key = ctx.div(abs_returns_key, abs_returns, quote_volume_key, quote_volume)
+        illiq, illiq_key = ctx.div(
+            abs_returns_key, abs_returns, quote_volume_key, quote_volume
+        )
         score, _ = ctx.ts_mean(illiq_key, illiq, p["window"])
-        return score, None, None, {"abs_returns": abs_returns, "illiquidity": illiq, "amihud": score}
+        return (
+            score,
+            None,
+            None,
+            {"abs_returns": abs_returns, "illiquidity": illiq, "amihud": score},
+        )
     if signal == "kaufman_trend":
         field, field_key = ctx.field(fields, mask_key, p["field"])
         er, er_key = ctx.kaufman_er(field_key, field, p["er_window"])
@@ -458,14 +704,31 @@ def compute_signal_details(
         price_zscore, price_zscore_key = ctx.ts_zscore(close_key, close, p["z_window"])
         cmf_value, cmf_key = ctx.cmf(fields, mask_key, p["cmf_window"])
         cmf_ema, cmf_ema_key = ctx.ts_ema(cmf_key, cmf_value, p["ema_span"])
-        price_component, price_component_key = ctx.cs_zscore(price_zscore_key, price_zscore)
+        price_component, price_component_key = ctx.cs_zscore(
+            price_zscore_key, price_zscore
+        )
         cmf_component, cmf_component_key = ctx.cs_zscore(cmf_ema_key, cmf_ema)
-        negative_cmf_component, negative_cmf_component_key = ctx.neg(cmf_component_key, cmf_component)
-        score, _ = ctx.add(price_component_key, price_component, negative_cmf_component_key, negative_cmf_component)
-        return score, None, None, {
-            "price_zscore": price_zscore, "price_component": price_component,
-            "cmf": cmf_value, "cmf_ema": cmf_ema, "cmf_component": cmf_component,
-        }
+        negative_cmf_component, negative_cmf_component_key = ctx.neg(
+            cmf_component_key, cmf_component
+        )
+        score, _ = ctx.add(
+            price_component_key,
+            price_component,
+            negative_cmf_component_key,
+            negative_cmf_component,
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "price_zscore": price_zscore,
+                "price_component": price_component,
+                "cmf": cmf_value,
+                "cmf_ema": cmf_ema,
+                "cmf_component": cmf_component,
+            },
+        )
     if signal == "vwap_reversion":
         close, close_key = ctx.field(fields, mask_key, "close")
         vwap, vwap_key = ctx.ts_vwap(fields, mask_key, p["vwap_window"])
@@ -473,7 +736,12 @@ def compute_signal_details(
         vwap_dev = ratio - 1.0
         vwap_dev_key: FeatureKey = ("vwap_dev", ratio_key)
         score, _ = ctx.ts_ema(vwap_dev_key, vwap_dev, p["ema_span"])
-        return score, None, None, {"vwap": vwap, "vwap_dev": vwap_dev, "vwap_reversion": score}
+        return (
+            score,
+            None,
+            None,
+            {"vwap": vwap, "vwap_dev": vwap_dev, "vwap_reversion": score},
+        )
     if signal == "carry_momentum":
         # funding_zscore is precomputed upstream (at funding's own native
         # settlement frequency, then reindexed onto this panel's daily index)
@@ -483,18 +751,43 @@ def compute_signal_details(
         # unit instead of settlements (~3x too long for funding_window=21).
         close, close_key = ctx.field(fields, mask_key, "close")
         momentum, momentum_key = ctx.ts_momentum(close_key, close, p["momentum_window"])
-        funding_zscore, funding_zscore_key = ctx.field(fields, mask_key, "funding_zscore")
-        funding_ema, funding_ema_key = ctx.ts_ema(funding_zscore_key, funding_zscore, p["ema_span"])
-        momentum_component, momentum_component_key = ctx.cs_zscore(momentum_key, momentum)
-        funding_component, funding_component_key = ctx.cs_zscore(funding_ema_key, funding_ema)
-        negative_funding_component, negative_funding_component_key = ctx.neg(funding_component_key, funding_component)
-        score, _ = ctx.add(momentum_component_key, momentum_component, negative_funding_component_key, negative_funding_component)
-        return score, None, None, {
-            "momentum": momentum, "momentum_component": momentum_component,
-            "funding_zscore": funding_zscore, "funding_ema": funding_ema, "funding_component": funding_component,
-        }
+        funding_zscore, funding_zscore_key = ctx.field(
+            fields, mask_key, "funding_zscore"
+        )
+        funding_ema, funding_ema_key = ctx.ts_ema(
+            funding_zscore_key, funding_zscore, p["ema_span"]
+        )
+        momentum_component, momentum_component_key = ctx.cs_zscore(
+            momentum_key, momentum
+        )
+        funding_component, funding_component_key = ctx.cs_zscore(
+            funding_ema_key, funding_ema
+        )
+        negative_funding_component, negative_funding_component_key = ctx.neg(
+            funding_component_key, funding_component
+        )
+        score, _ = ctx.add(
+            momentum_component_key,
+            momentum_component,
+            negative_funding_component_key,
+            negative_funding_component,
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "momentum": momentum,
+                "momentum_component": momentum_component,
+                "funding_zscore": funding_zscore,
+                "funding_ema": funding_ema,
+                "funding_component": funding_component,
+            },
+        )
     if signal == "ideal_amplitude":
-        amp, amp_key = ctx.ideal_amp(fields, mask_key, p["window"], p.get("k_frac", 0.25))
+        amp, amp_key = ctx.ideal_amp(
+            fields, mask_key, p["window"], p.get("k_frac", 0.25)
+        )
         score, _ = ctx.ts_ema(amp_key, amp, p["ema_span"])
         return score, None, None, {"ideal_amp": amp, "ideal_amplitude": score}
     raise ValueError(f"Unsupported signal: {signal}")
@@ -505,7 +798,9 @@ def compute_score(
     spec: AlphaSpec,
     context: CrossAlphaComputeContext | None = None,
 ) -> tuple[pd.DataFrame | None, pd.DataFrame | None, pd.DataFrame | None]:
-    score, long_condition, short_condition, _ = compute_signal_details(panel, spec, context=context)
+    score, long_condition, short_condition, _ = compute_signal_details(
+        panel, spec, context=context
+    )
     return score, long_condition, short_condition
 
 
@@ -522,14 +817,20 @@ def select_positions(
 
     if is_ensemble:
         if not member_specs:
-            raise ValueError(f"{spec.alpha_id}: signal=ensemble_mean requires member_specs")
-        from cross_alpha.ensemble import combine_members  # deferred: avoids strategy<->ensemble import cycle
+            raise ValueError(
+                f"{spec.alpha_id}: signal=ensemble_mean requires member_specs"
+            )
+        from cross_alpha.ensemble import (
+            combine_members,
+        )  # deferred: avoids strategy<->ensemble import cycle
 
         score = combine_members(panel, member_specs, spec.ema_smooth or 1, context=ctx)
         long_condition, short_condition = None, None
         components = {"ensemble_score": score}
     else:
-        score, long_condition, short_condition, components = compute_signal_details(panel, spec, context=ctx)
+        score, long_condition, short_condition, components = compute_signal_details(
+            panel, spec, context=ctx
+        )
     scores: dict[str, float] = {}
     ranks: dict[str, float] = {}
 
@@ -553,7 +854,10 @@ def select_positions(
         if "drawdown_throttle" in overlay_cfg:
             cfg = overlay_cfg["drawdown_throttle"] or {}
             w = drawdown_throttle(
-                w, current_drawdown, float(cfg.get("floor", -0.08)), float(cfg.get("factor", 1.0)),
+                w,
+                current_drawdown,
+                float(cfg.get("floor", -0.08)),
+                float(cfg.get("factor", 1.0)),
             )
 
         weights = {str(sym): float(val) for sym, val in w.items() if val != 0}
@@ -566,13 +870,42 @@ def select_positions(
             # Winsor-cont: weight ∝ cs_scale(cs_winsorize(cs_zscore(signal), k))
             # Sized by magnitude — stronger signal → bigger position, clipped at ±kσ.
             k = spec.winsor_k
-            zscored = latest.sub(latest.mean()).div(latest.std() if latest.std() != 0 else np.nan)
+            zscored = latest.sub(latest.mean()).div(
+                latest.std() if latest.std() != 0 else np.nan
+            )
             winsorized = zscored.clip(lower=-k, upper=k)
-            gross_abs = winsorized.abs().sum()
-            if gross_abs > 0:
-                scaled = winsorized / gross_abs
+            if spec.top_k is not None:
+                # Top-K + power sizing (docs/1d-vwaprev-w50-top15-p20 /
+                # docs/1d-vwaprev-w80-top25-p15): hold at most top_k symbols
+                # per side -- the LARGEST clipped z with z>0 for longs, the
+                # SMALLEST with z<0 for shorts -- sized by sign(z)*|z|^power_p
+                # then gross-normalized. std==0 above makes every z NaN, which
+                # dropna() turns into an empty selection.
+                eligible = winsorized.dropna()
+                long_pool = eligible[eligible > 0].nlargest(int(spec.top_k))
+                short_pool = eligible[eligible < 0].nsmallest(int(spec.top_k))
+                power = float(spec.power_p)
+                # sign(z)*|z|^p per side; the pools' indexes are disjoint, so
+                # subtract with fill unions them into one Series (+long, -short).
+                raw = (
+                    long_pool.abs()
+                    .pow(power)
+                    .subtract(
+                        short_pool.abs().pow(power),
+                        fill_value=0.0,
+                    )
+                )
+                gross_abs = raw.abs().sum()
+                if gross_abs > 0:
+                    scaled = raw / gross_abs
+                else:
+                    scaled = raw
             else:
-                scaled = winsorized
+                gross_abs = winsorized.abs().sum()
+                if gross_abs > 0:
+                    scaled = winsorized / gross_abs
+                else:
+                    scaled = winsorized
             scores = {str(k_): float(v) for k_, v in latest.items()}
             ranks = {str(k_): float(v) for k_, v in latest.rank(pct=True).items()}
             longs = sorted(str(s) for s, w in scaled.items() if w > 0)
@@ -594,17 +927,30 @@ def select_positions(
         latest_long = long_condition.iloc[-1].fillna(False)
         latest_short = short_condition.iloc[-1].fillna(False)
         longs = [str(symbol) for symbol, active in latest_long.items() if bool(active)]
-        shorts = [str(symbol) for symbol, active in latest_short.items() if bool(active)]
+        shorts = [
+            str(symbol) for symbol, active in latest_short.items() if bool(active)
+        ]
 
     if is_ensemble_overlay:
         pass  # weights/longs/shorts already final (overlay pipeline above);
         # no winsor_cont/rank construction or long==short trim applies here.
     elif spec.construction == "winsor_cont":
         if spec.universe_mode == "current_top_k":
-            liquidity = (panel["close"] * panel["volume"]).rolling(30, min_periods=1).mean().iloc[-1]
+            liquidity = (
+                (panel["close"] * panel["volume"])
+                .rolling(30, min_periods=1)
+                .mean()
+                .iloc[-1]
+            )
             liquidity_ranks = liquidity.rank(ascending=False)
-            eligible = set(liquidity_ranks[liquidity_ranks <= spec.universe_size].index.astype(str))
-            weights = {symbol: weight for symbol, weight in weights.items() if symbol in eligible}
+            eligible = set(
+                liquidity_ranks[liquidity_ranks <= spec.universe_size].index.astype(str)
+            )
+            weights = {
+                symbol: weight
+                for symbol, weight in weights.items()
+                if symbol in eligible
+            }
         longs = sorted(symbol for symbol, weight in weights.items() if weight > 0)
         shorts = sorted(symbol for symbol, weight in weights.items() if weight < 0)
         # Balance LONG = SHORT: trim the larger side down to the smaller,
@@ -614,11 +960,17 @@ def select_positions(
         if longs and shorts and len(longs) != len(shorts):
             _target = min(len(longs), len(shorts))
             if len(longs) > _target:
-                _drop = set(sorted(longs, key=lambda s: weights[s])[: len(longs) - _target])
+                _drop = set(
+                    sorted(longs, key=lambda s: weights[s])[: len(longs) - _target]
+                )
                 weights = {s: w for s, w in weights.items() if s not in _drop}
                 longs = sorted(s for s in longs if s not in _drop)
             else:
-                _drop = set(sorted(shorts, key=lambda s: abs(weights[s]))[: len(shorts) - _target])
+                _drop = set(
+                    sorted(shorts, key=lambda s: abs(weights[s]))[
+                        : len(shorts) - _target
+                    ]
+                )
                 weights = {s: w for s, w in weights.items() if s not in _drop}
                 shorts = sorted(s for s in shorts if s not in _drop)
             # Re-normalise so gross |weights| ≈ 1 (same scale as before trim).
@@ -630,9 +982,16 @@ def select_positions(
         longs = sorted(set(longs) - conflict)
         shorts = sorted(set(shorts) - conflict)
         if spec.universe_mode == "current_top_k":
-            liquidity = (panel["close"] * panel["volume"]).rolling(30, min_periods=1).mean().iloc[-1]
+            liquidity = (
+                (panel["close"] * panel["volume"])
+                .rolling(30, min_periods=1)
+                .mean()
+                .iloc[-1]
+            )
             liquidity_ranks = liquidity.rank(ascending=False)
-            eligible = set(liquidity_ranks[liquidity_ranks <= spec.universe_size].index.astype(str))
+            eligible = set(
+                liquidity_ranks[liquidity_ranks <= spec.universe_size].index.astype(str)
+            )
             longs = [symbol for symbol in longs if symbol in eligible]
             shorts = [symbol for symbol in shorts if symbol in eligible]
 
@@ -649,11 +1008,17 @@ def select_positions(
     for symbol in all_symbols:
         row: dict[str, Any] = {}
         for name, values in components.items():
-            value = values[symbol].iloc[-1] if symbol in values.columns and not values.empty else np.nan
+            value = (
+                values[symbol].iloc[-1]
+                if symbol in values.columns and not values.empty
+                else np.nan
+            )
             row[name] = _audit_value(value)
         row["score"] = _audit_value(scores.get(symbol))
         row["rank"] = _audit_value(ranks.get(symbol))
-        row["decision"] = "LONG" if symbol in longs else "SHORT" if symbol in shorts else "FLAT"
+        row["decision"] = (
+            "LONG" if symbol in longs else "SHORT" if symbol in shorts else "FLAT"
+        )
         row["target_weight"] = weights.get(symbol, 0.0)
         indicators[symbol] = row
 
@@ -673,14 +1038,18 @@ def select_positions(
     )
 
 
-def build_panel(snapshot: dict[str, dict[str, list[float] | list[int]]]) -> dict[str, pd.DataFrame]:
+def build_panel(
+    snapshot: dict[str, dict[str, list[float] | list[int]]],
+) -> dict[str, pd.DataFrame]:
     def make(field: str) -> pd.DataFrame:
         series = {}
         for symbol, row in snapshot.items():
             values = row[field]
             times = row["time"]
             if values and times and len(values) == len(times):
-                series[symbol] = pd.Series(values, index=pd.Index(times, dtype="int64"), dtype="float64")
+                series[symbol] = pd.Series(
+                    values, index=pd.Index(times, dtype="int64"), dtype="float64"
+                )
         return pd.DataFrame(series).sort_index()
 
     close = make("close")
@@ -690,7 +1059,14 @@ def build_panel(snapshot: dict[str, dict[str, list[float] | list[int]]]) -> dict
     # Current MDS does not expose quote volume. The proxy is explicit in
     # diagnostics and validators so VWAP alphas cannot be mistaken for exact.
     vwap = (high + low + close) / 3.0
-    return {"close": close, "high": high, "low": low, "volume": volume, "quote_volume": close * volume, "vwap": vwap}
+    return {
+        "close": close,
+        "high": high,
+        "low": low,
+        "volume": volume,
+        "quote_volume": close * volume,
+        "vwap": vwap,
+    }
 
 
 def build_funding_panel(snapshot: dict[str, list[dict] | None]) -> pd.DataFrame:
@@ -712,7 +1088,9 @@ def build_funding_panel(snapshot: dict[str, list[dict] | None]) -> pd.DataFrame:
             except (KeyError, TypeError, ValueError):
                 continue
         if times:
-            series[symbol] = pd.Series(values, index=pd.Index(times, dtype="int64"), dtype="float64")
+            series[symbol] = pd.Series(
+                values, index=pd.Index(times, dtype="int64"), dtype="float64"
+            )
     return pd.DataFrame(series).sort_index()
 
 

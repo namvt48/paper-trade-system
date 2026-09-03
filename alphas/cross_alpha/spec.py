@@ -51,6 +51,16 @@ class AlphaSpec:
     members: list[str] | None = None
     overlay: dict | None = None
     ema_smooth: int | None = None
+    # Top-K + power sizing for construction="winsor_cont" (ported from the
+    # standalone projects docs/1d-vwaprev-w50-top15-p20 and
+    # docs/1d-vwaprev-w80-top25-p15). When top_k is set, only the top_k
+    # symbols with the LARGEST (long side) / SMALLEST (short side) clipped
+    # z-score per side are held, sized by sign(z)*|z|^power_p instead of
+    # plain z. When top_k is None the classic full-cross-section winsor_cont
+    # behavior is kept exactly (production alphas like 15m-blend-close never
+    # set this field).
+    top_k: int | None = None
+    power_p: float = 1.0
 
     @classmethod
     def load(cls, path: str | Path) -> "AlphaSpec":
@@ -70,21 +80,36 @@ class AlphaSpec:
         if signal == "blend_zscore_skew":
             return max(int(p["z_window"]), int(p["skew_window"]) + 1)
         if signal == "blend_momvol_skew":
-            return max(int(p["momentum_window"]) + 1, int(p["std_window"]) + 1, int(p["skew_window"]) + 1)
+            return max(
+                int(p["momentum_window"]) + 1,
+                int(p["std_window"]) + 1,
+                int(p["skew_window"]) + 1,
+            )
         if signal == "blend_zscore_meanret":
             return max(int(p["z_window"]), int(p["mean_window"]) + 1)
         if signal == "blend_zscore_momvol":
-            return max(int(p["z_window"]), int(p["momentum_window"]) + 1, int(p["std_window"]) + 1)
+            return max(
+                int(p["z_window"]),
+                int(p["momentum_window"]) + 1,
+                int(p["std_window"]) + 1,
+            )
         if signal == "blend_zscore_decayz":
-            return max(int(p["first_z_window"]), int(p["second_z_window"]) + int(p["decay"]) - 1)
+            return max(
+                int(p["first_z_window"]),
+                int(p["second_z_window"]) + int(p["decay"]) - 1,
+            )
         if signal == "blend_decayz_meanret":
-            return max(int(p["z_window"]) + int(p["decay"]) - 1, int(p["mean_window"]) + 1)
+            return max(
+                int(p["z_window"]) + int(p["decay"]) - 1, int(p["mean_window"]) + 1
+            )
         if signal == "blend_meanret_range":
             return max(int(p["mean_window"]) + 1, int(p["range_window"]))
         if signal == "blend_zscore_volume_zscore":
             return max(int(p["close_window"]), int(p["volume_window"]))
         if signal == "blend_decayz_volume_zscore":
-            return max(int(p["close_window"]) + int(p["decay"]) - 1, int(p["volume_window"]))
+            return max(
+                int(p["close_window"]) + int(p["decay"]) - 1, int(p["volume_window"])
+            )
         if signal == "absolute_breakout":
             return max(int(p["long_window"]), int(p["short_window"]))
         if signal == "breakout":
@@ -98,7 +123,9 @@ class AlphaSpec:
         if signal == "kaufman_trend":
             return int(p["er_window"]) + int(p["ema_span"]) - 1
         if signal == "trend_cmf_blend":
-            return max(int(p["z_window"]), int(p["cmf_window"]) + int(p["ema_span"]) - 1)
+            return max(
+                int(p["z_window"]), int(p["cmf_window"]) + int(p["ema_span"]) - 1
+            )
         if signal == "vwap_reversion":
             return int(p["vwap_window"]) + int(p["ema_span"]) - 1
         if signal == "carry_momentum":

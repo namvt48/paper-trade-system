@@ -3,7 +3,6 @@ from __future__ import annotations
 import argparse
 import asyncio
 import atexit
-import contextlib
 import importlib
 import logging
 import os
@@ -407,25 +406,80 @@ async def run_strategy_event_loop(
             waiter_registered = metrics is not None and scan_semaphore is not None
             if waiter_registered and metrics is not None:
                 metrics.scan_wait_started()
+            # Distinguish klines on this strategy's own timeframe -- they
+            # are its rebalance trigger (e.g. the midnight-UTC close for
+            # 1d alphas). Dropping one silently skips that day's rebalance,
+            # so they must never be abandoned just because the admission
+            # semaphore is saturated (2026-08-30 incident: a stuck
+            # universe-refresh fan-out left the 1d-iamp queue undrained and
+            # its 00:00:37Z daily close was dropped; the 30/08 basket was
+            # never computed).
+            critical_event = bool(
+                event.kind == "kline"
+                and event.tf
+                and event.tf
+                == getattr(getattr(strategy, "spec", None), "timeframe", None)
+            )
+            semaphore = scan_semaphore
             try:
-                # A universe refresh fans out to every alpha's queue at
-                # once; without a ceiling here, all of them would call
-                # handle_strategy_event (and its asyncio.to_thread compute
-                # work) simultaneously, overwhelming the runner's small
-                # shared thread pool in one burst (2026-07-16 incident;
-                # single-flight above already collapses duplicate builds
-                # within one (tf, universe), this bounds arrival *rate*
-                # across all of them). No-op when no semaphore is passed
-                # (existing callers/tests keep today's behavior).
-                async with scan_semaphore or contextlib.nullcontext():
-                    semaphore_wait_ms = _duration_ms(semaphore_wait_started)
-                    if waiter_registered and metrics is not None:
-                        metrics.scan_wait_finished()
-                        waiter_registered = False
+                if semaphore is not None:
+                    # BOUNDED ADMISSION: the semaphore acquire is under the
+                    # same deadline as the handler. Previously the `async
+                    # with` had no timeout, so a strategy queued behind a
+                    # fully-held semaphore (a universe refresh fans out to
+                    # every alpha's queue at once and can park every permit
+                    # for the full event budget) waited forever and silently
+                    # stopped draining its queue, dropping every later event
+                    # including the next daily close. No-op when no
+                    # semaphore is passed (existing callers/tests keep
+                    # today's behavior).
+                    try:
+                        await asyncio.wait_for(
+                            semaphore.acquire(), timeout=event_timeout_sec
+                        )
+                    except asyncio.TimeoutError:
+                        if critical_event:
+                            logger.warning(
+                                "[STRATEGY] admission timeout alpha=%s event=%s "
+                                "channel=%s tf=%s -- semaphore saturated beyond "
+                                "%.1fs; processing critical kline WITHOUT admission "
+                                "control",
+                                strategy.alpha_id,
+                                event.kind,
+                                event.channel,
+                                event.tf or "-",
+                                event_timeout_sec,
+                                extra={"alpha_id": strategy.alpha_id},
+                            )
+                            semaphore = None
+                        else:
+                            if metrics is not None:
+                                metrics.inc_scan_timeout(strategy.alpha_id)
+                            logger.warning(
+                                "[STRATEGY] admission timeout alpha=%s event=%s "
+                                "channel=%s tf=%s elapsed_sec=%.1f threshold_sec=%.1f "
+                                "-- abandoning this event, moving on to the next one",
+                                strategy.alpha_id,
+                                event.kind,
+                                event.channel,
+                                event.tf or "-",
+                                _duration_ms(started) / 1000.0,
+                                event_timeout_sec,
+                                extra={"alpha_id": strategy.alpha_id},
+                            )
+                            continue
+                semaphore_wait_ms = _duration_ms(semaphore_wait_started)
+                if waiter_registered and metrics is not None:
+                    metrics.scan_wait_finished()
+                    waiter_registered = False
+                try:
                     timings = await asyncio.wait_for(
                         handle_strategy_event(strategy, event),
                         timeout=event_timeout_sec,
                     )
+                finally:
+                    if semaphore is not None:
+                        semaphore.release()
             except asyncio.TimeoutError:
                 if metrics is not None:
                     metrics.inc_scan_timeout(strategy.alpha_id)

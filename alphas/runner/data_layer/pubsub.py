@@ -50,6 +50,7 @@ class SharedPubSubManager:
         self._strategy_channels: dict[str, set[str]] = defaultdict(set)
         self._queues: dict[str, asyncio.Queue] = {}
         self._dropped: dict[str, int] = defaultdict(int)
+        self._evicted: dict[str, int] = defaultdict(int)
         self._warmup_manager = None
         self._reconnect_staleness_candles: int = 5
         self._trading_session = None
@@ -151,6 +152,41 @@ class SharedPubSubManager:
             try:
                 queue.put_nowait(event)
             except asyncio.QueueFull:
+                # 2026-08-30 hardening: never drop a kline trigger on a full
+                # queue — the 00:00 UTC 1d close was lost exactly this way
+                # during the post-warmup flood. Candle bodies are already
+                # cached above, so evicting the OLDEST queued event (stale
+                # price alert / older kline) loses no data; only the newest
+                # trigger matters.
+                if event.kind == "kline":
+                    try:
+                        queue.get_nowait()
+                    except asyncio.QueueEmpty:
+                        pass
+                    try:
+                        queue.put_nowait(event)
+                        self._evicted[strategy_id] += 1
+                        if (
+                            self._evicted[strategy_id] <= 3
+                            or self._evicted[strategy_id] % 100 == 0
+                        ):
+                            logger.warning(
+                                "[PUBSUB] Queue full for strategy=%s, evicted oldest to keep kline=%s/%s (evicted total=%d)",
+                                strategy_id,
+                                event.symbol,
+                                event.tf,
+                                self._evicted[strategy_id],
+                            )
+                        continue
+                    except asyncio.QueueFull:
+                        # Unreachable in the single-threaded event loop (no
+                        # await between get and put); fall through to keep
+                        # drop accounting honest if it ever happens.
+                        logger.error(
+                            "[PUBSUB] Kline eviction race for strategy=%s channel=%s",
+                            strategy_id,
+                            channel,
+                        )
                 self._dropped[strategy_id] += 1
                 if (
                     self._dropped[strategy_id] <= 3
@@ -264,6 +300,7 @@ class SharedPubSubManager:
             "active_channels": sorted(self._subscribers),
             "queue_sizes": {sid: q.qsize() for sid, q in self._queues.items()},
             "dropped_events": dict(self._dropped),
+            "evicted_events": dict(self._evicted),
         }
 
     def _is_data_stale(

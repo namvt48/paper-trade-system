@@ -41,13 +41,13 @@ class FakeRedis:
 
 def test_pubsub_initializes_last_message_time():
     manager = SharedPubSubManager(FakeRedis(), SharedCandleCache())
-    assert hasattr(manager, '_last_message_time')
+    assert hasattr(manager, "_last_message_time")
     assert isinstance(manager._last_message_time, float)
 
 
 def test_pubsub_initializes_stale_check_interval():
     manager = SharedPubSubManager(FakeRedis(), SharedCandleCache())
-    assert hasattr(manager, '_stale_check_interval')
+    assert hasattr(manager, "_stale_check_interval")
     assert manager._stale_check_interval == 30.0
 
 
@@ -66,18 +66,55 @@ async def test_pubsub_subscribes_once_for_shared_channel_and_unsubscribes_last()
 
 
 @pytest.mark.asyncio
-async def test_pubsub_updates_cache_even_when_queue_full_and_counts_drop():
+async def test_pubsub_kline_evicts_oldest_when_queue_full_and_is_delivered():
     manager = SharedPubSubManager(FakeRedis(), SharedCandleCache(), queue_maxsize=1)
     q = await manager.subscribe("kline:binance:15m", "a1")
     q.put_nowait(object())
 
-    await manager.handle_message("kline:binance:15m", json.dumps({
-        "symbol": "BTCUSDT", "tf": "15m", "open_time": 1000,
-        "open": 1, "high": 2, "low": 0, "close": 1.5, "volume": 10,
-    }))
+    await manager.handle_message(
+        "kline:binance:15m",
+        json.dumps(
+            {
+                "symbol": "BTCUSDT",
+                "tf": "15m",
+                "open_time": 1000,
+                "open": 1,
+                "high": 2,
+                "low": 0,
+                "close": 1.5,
+                "volume": 10,
+            }
+        ),
+    )
 
     assert manager.cache.get_closes("BTCUSDT", "15m") == (1.5,)
+    assert manager.stats()["dropped_events"] == {}
+    assert manager.stats()["evicted_events"]["a1"] == 1
+    delivered = await asyncio.wait_for(q.get(), timeout=1.0)
+    assert delivered.kind == "kline"
+    assert delivered.symbol == "BTCUSDT"
+
+
+@pytest.mark.asyncio
+async def test_pubsub_non_kline_still_dropped_when_queue_full():
+    manager = SharedPubSubManager(FakeRedis(), SharedCandleCache(), queue_maxsize=1)
+    q = await manager.subscribe("price_alert:binance:BTCUSDT", "a1")
+    q.put_nowait(object())
+
+    await manager.handle_message(
+        "price_alert:binance:BTCUSDT",
+        json.dumps(
+            {
+                "symbol": "BTCUSDT",
+                "tf": "",
+                "price": 65000,
+            }
+        ),
+    )
+
+    assert q.qsize() == 1  # placeholder untouched, nothing delivered
     assert manager.stats()["dropped_events"]["a1"] == 1
+    assert manager.stats().get("evicted_events", {}) == {}
 
 
 @pytest.mark.asyncio
@@ -85,14 +122,24 @@ async def test_pubsub_run_pumps_messages_into_strategy_queue_and_cache():
     redis = FakeRedis()
     manager = SharedPubSubManager(redis, SharedCandleCache())
     q = await manager.subscribe("kline:binance:15m", "a1")
-    redis.ps.messages.append({
-        "type": "message",
-        "channel": "kline:binance:15m",
-        "data": json.dumps({
-            "symbol": "BTCUSDT", "tf": "15m", "open_time": 1000,
-            "open": 1, "high": 2, "low": 0, "close": 1.5, "volume": 10,
-        }),
-    })
+    redis.ps.messages.append(
+        {
+            "type": "message",
+            "channel": "kline:binance:15m",
+            "data": json.dumps(
+                {
+                    "symbol": "BTCUSDT",
+                    "tf": "15m",
+                    "open_time": 1000,
+                    "open": 1,
+                    "high": 2,
+                    "low": 0,
+                    "close": 1.5,
+                    "volume": 10,
+                }
+            ),
+        }
+    )
     stop = asyncio.Event()
 
     task = asyncio.create_task(manager.run(stop, poll_timeout=0.001))
@@ -119,10 +166,19 @@ async def test_run_triggers_on_reconnect_when_data_stale_on_empty_polls():
     manager.set_reconnect_handler(warmup_mock, staleness_candles=1)
 
     stale_ts = int(time.time() * 1000) - 900_000
-    cache.upsert_candle("BTCUSDT", "1m", {
-        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "1m",
+        {
+            "open_time": stale_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     reconnect_called = False
 
@@ -153,10 +209,19 @@ async def test_is_data_stale_returns_true_when_data_old():
     manager = SharedPubSubManager(redis_mock, cache)
 
     stale_ts = int(time.time() * 1000) - 900_000 * 10
-    cache.upsert_candle("BTCUSDT", "15m", {
-        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "15m",
+        {
+            "open_time": stale_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     assert manager._is_data_stale(warmup_mock, staleness_candles=5) is True
 
@@ -173,10 +238,19 @@ async def test_is_data_stale_returns_false_when_data_fresh():
     manager = SharedPubSubManager(redis_mock, cache)
 
     fresh_ts = int(time.time() * 1000) - 100
-    cache.upsert_candle("BTCUSDT", "15m", {
-        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "15m",
+        {
+            "open_time": fresh_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     assert manager._is_data_stale(warmup_mock, staleness_candles=5) is False
 
@@ -193,10 +267,19 @@ async def test_is_data_stale_uses_tf_scaled_silence_threshold():
     manager = SharedPubSubManager(redis_mock, cache)
 
     fresh_ts = int(time.time() * 1000) - 100
-    cache.upsert_candle("BTCUSDT", "1m", {
-        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "1m",
+        {
+            "open_time": fresh_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     manager._last_message_time = time.monotonic() - 301
 
@@ -215,10 +298,19 @@ async def test_is_data_stale_does_not_mark_hourly_silent_for_60s():
     manager = SharedPubSubManager(redis_mock, cache)
 
     fresh_ts = int(time.time() * 1000) - 100
-    cache.upsert_candle("BTCUSDT", "1h", {
-        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "1h",
+        {
+            "open_time": fresh_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     manager._last_message_time = time.monotonic() - 61
 
@@ -237,10 +329,19 @@ async def test_is_data_stale_returns_false_when_messages_recent():
     manager = SharedPubSubManager(redis_mock, cache)
 
     fresh_ts = int(time.time() * 1000) - 100
-    cache.upsert_candle("BTCUSDT", "1m", {
-        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "1m",
+        {
+            "open_time": fresh_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     manager._last_message_time = time.monotonic() - 5
 
@@ -260,15 +361,33 @@ async def test_find_stale_symbols_identifies_symbols_with_old_data():
     manager = SharedPubSubManager(redis_mock, cache)
 
     stale_ts = int(time.time() * 1000) - 900_000
-    cache.upsert_candle("BTCUSDT", "1m", {
-        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "1m",
+        {
+            "open_time": stale_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
     fresh_ts = int(time.time() * 1000) - 100
-    cache.upsert_candle("ETHUSDT", "1m", {
-        "open_time": fresh_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "ETHUSDT",
+        "1m",
+        {
+            "open_time": fresh_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     stale = manager._find_stale_symbols(warmup_mock, staleness_candles=5)
     stale_keys = [(s, t) for s, t in stale]
@@ -329,10 +448,19 @@ def test_outside_trading_session_skips_reconnect():
     cache = SharedCandleCache()
     cache.register_data_requirement("41I1G8000", "5m", warmup_bars=5, retain_bars=10)
     stale_ts = int(time.time() * 1000) - 900_000
-    cache.upsert_candle("41I1G8000", "5m", {
-        "open_time": stale_ts, "open": 1, "high": 2, "low": 0.5,
-        "close": 1.5, "volume": 100, "confirmed": True,
-    })
+    cache.upsert_candle(
+        "41I1G8000",
+        "5m",
+        {
+            "open_time": stale_ts,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     redis_mock = MagicMock()
     warmup_mock = MagicMock()
@@ -347,10 +475,13 @@ def test_outside_trading_session_skips_reconnect():
         start="08:45", end="14:25", timezone="Asia/Ho_Chi_Minh", trade_weekends=False
     )
     import runner.config as config_module
+
     orig = TradingSession.is_active
     TradingSession.is_active = lambda self, now=None: False
     try:
-        manager.set_reconnect_handler(warmup_mock, staleness_candles=5, trading_session=session_closed)
+        manager.set_reconnect_handler(
+            warmup_mock, staleness_candles=5, trading_session=session_closed
+        )
         assert manager._outside_trading_session() is True
     finally:
         TradingSession.is_active = orig

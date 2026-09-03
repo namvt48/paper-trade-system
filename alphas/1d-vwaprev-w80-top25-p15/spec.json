@@ -1,0 +1,23 @@
+{
+  "alpha_id": "1d-vwaprev-w80-top25-p15",
+  "timeframe": "1d",
+  "signal": "vwap_reversion",
+  "params": {
+    "vwap_window": 20,
+    "ema_span": 1
+  },
+  "universe_size": 80,
+  "universe_mode": "dynamic_top_k",
+  "rebalance_bars": 1,
+  "vol_lookback": 30,
+  "ppy": 365,
+  "long_threshold": null,
+  "short_threshold": null,
+  "target_vol": 0.1,
+  "max_leverage": 3.0,
+  "fee_bps": 7.0,
+  "construction": "winsor_cont",
+  "winsor_k": 3.0,
+  "top_k": 25,
+  "power_p": 1.5
+}
