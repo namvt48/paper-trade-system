@@ -7,7 +7,7 @@ Groups:
 3. Weights -- sum(|w|) == 1 over traded symbols; abstained symbols get none.
 4. Signal shape -- CLOSE(REBALANCE) first, then OPENs with correct
    side/qty/leverage/fee/tf/metadata.
-5. Wiring -- channels, warmup symbols (54 from the whitelist file), warmup bars,
+5. Wiring -- channels, warmup symbols (43 from the whitelist file), warmup bars,
    coverage gate + held-position bypass (2026-08-21 incident fix).
 6. register() -- StrategyRegistry registration of "top10_vote_combo".
 7. No-data / insufficient-data paths -- no signals, no crash.
@@ -110,14 +110,41 @@ def test_factor_math_hand_computed_on_synthetic_panel() -> None:
             + F["ohlc_vol:body"][symbol]
         ).dropna()
         assert float((ident - 1.0).abs().max()) < 1e-12
-        # spread_ar last bar: rolling20 mean of |ret|/qv; only the last bar is
-        # nonzero -> ((1/21) / 110_000) / 20
-        assert F["liquidity:spread_ar"][symbol].iloc[-1] == pytest.approx(
-            (1 / 21) / 110_000 / 20
-        )
+        # spread_ar last bar: Roll spread estimator on constant returns == 0
+        # (single nonzero ret at the last bar -> lag-1 autocovariance 0)
+        assert F["liquidity:spread_ar"][symbol].iloc[-1] == pytest.approx(0.0)
         # Identical series -> beta == 1 -> residual == 0
         assert F["residual:residual_returns"][symbol].iloc[-1] == pytest.approx(
             0.0, abs=1e-12
+        )
+
+
+def test_spread_ar_roll_estimator_nonzero_on_alternating_returns() -> None:
+    """Alternating returns have negative lag-1 autocovariance -> Roll spread > 0.
+
+    Close prices alternate between a * (1+a) and a * (1-a), so every return is
+    exactly either +a or -a, and consecutive returns are perfectly
+    anti-correlated: cov(r_t, r_{t-1}) = -(20/19) * a^2 (sample cov, n=19).
+    Roll spread = 2 * sqrt(-cov) = 2a * sqrt(20/19).
+    """
+    n, a = 80, 0.01
+    closes = [100.0]
+    for t in range(1, n):
+        closes.append(closes[-1] * (1 + (a if t % 2 == 1 else -a)))
+    panel = {
+        "open": {s: closes for s in SYMBOLS},
+        "high": {s: closes for s in SYMBOLS},
+        "low": {s: closes for s in SYMBOLS},
+        "close": {s: closes for s in SYMBOLS},
+        "volume": {s: [1000.0] * n for s in SYMBOLS},
+        "quote_volume": {s: [c * 1000 for c in closes] for s in SYMBOLS},
+    }
+    P = {k: pd.DataFrame(v) for k, v in panel.items()}
+    F = compute_factors(P)
+    expected = 2 * a * math.sqrt(20 / 19)
+    for symbol in SYMBOLS:
+        assert F["liquidity:spread_ar"][symbol].iloc[-1] == pytest.approx(
+            expected, rel=1e-9
         )
 
 
@@ -487,7 +514,7 @@ def test_warmup_wiring_from_whitelist_file() -> None:
     strategy.retain_bars = DEFAULT_WARMUP_BARS
     strategy._symbols = strategy._load_universe()
 
-    assert len(strategy._symbols) == 54
+    assert len(strategy._symbols) == 43
     assert strategy._symbols == sorted(strategy._symbols)
     assert "BTCUSDT" in strategy._symbols  # required by the residual factor
     assert strategy.get_warmup_symbols() == strategy._symbols
@@ -571,6 +598,55 @@ def test_registry_registers_strategy() -> None:
 
 
 # ------------------------------------------------- group 7: no-data / full scan
+
+
+@pytest.mark.asyncio
+async def test_shared_panel_bundle_forwards_to_shared_cache() -> None:
+    """main.py's post-warmup loop calls _shared_panel_bundle on every ready
+    strategy; it must forward to the shared (tf, universe, bars) panel cache
+    and return the bundle as-is (its ``latest`` anchors _last_processed_candle
+    one bar back so the first scan waits for the next candle)."""
+    ctx = _make_ctx(_FakeCache({}))
+    cache = _FakeCache({})
+    bundle = SimpleNamespace(latest=1_786_000_000_000)
+    ctx.cache = cache
+    ctx.panel_feature_cache = SimpleNamespace(get_bundle=AsyncMock(return_value=bundle))
+    strategy = _bare_strategy(ctx)
+
+    result = await strategy._shared_panel_bundle()
+
+    assert result is bundle
+    kwargs = ctx.panel_feature_cache.get_bundle.call_args.kwargs
+    assert kwargs["tf"] == "1d"
+    assert tuple(kwargs["symbols"]) == tuple(strategy._symbols)
+    assert kwargs["bars"] == strategy.get_warmup_bars("1d")
+    # main.py contract: strategy._last_processed_candle = bundle.latest
+    strategy._last_processed_candle = result.latest
+    assert strategy._last_processed_candle == 1_786_000_000_000
+
+
+@pytest.mark.asyncio
+async def test_shared_panel_bundle_lazy_inits_feature_cache() -> None:
+    ctx = _make_ctx(_FakeCache({}))
+    ctx.panel_feature_cache = None  # strategy must create one itself
+    strategy = _bare_strategy(ctx)
+    bundle = SimpleNamespace(latest=7)
+    created = SimpleNamespace(get_bundle=AsyncMock(return_value=bundle))
+
+    # strategy.py does `from runner.shared_panel_feature_cache import
+    # SharedPanelFeatureCache`, so the name is bound in the strategy module;
+    # patch there, not in the source module.
+    import runner.strategies.top10_vote_combo.strategy as strat_mod
+
+    original = strat_mod.SharedPanelFeatureCache
+    try:
+        strat_mod.SharedPanelFeatureCache = lambda: created
+        result = await strategy._shared_panel_bundle()
+    finally:
+        strat_mod.SharedPanelFeatureCache = original
+
+    assert result is bundle
+    assert ctx.panel_feature_cache is created
 
 
 @pytest.mark.asyncio

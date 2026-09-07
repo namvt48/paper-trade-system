@@ -1,8 +1,8 @@
-"""Top-10 vote-combination cross-sectional alpha (1d candles, 54-symbol universe).
+"""Top-10 vote-combination cross-sectional alpha (1d candles, 43-symbol universe).
 
 Combination of 10 independent single-factor alphas. Each alpha z-scores one
 transformed factor across the fixed whitelist universe (the 3 curated pools,
-already collapsed into ONE 54-symbol whitelist -- pools are NOT re-introduced
+already collapsed into ONE 43-symbol whitelist -- pools are NOT re-introduced
 here) and casts a +/-1 vote per symbol. Symbols with a non-zero net vote are
 traded; sizing is proportional to |vote_sum|, normalized to gross 1 over the
 traded symbols.
@@ -47,6 +47,7 @@ from typing import Any
 import numpy as np
 import pandas as pd
 
+from runner.shared_panel_feature_cache import PanelBundle, SharedPanelFeatureCache
 from runner.strategy.base import Strategy
 
 logger = logging.getLogger(__name__)
@@ -139,15 +140,14 @@ def compute_factors(P: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     ``open / high / low / close / volume / quote_volume``.
     ``quote_volume`` is the ``close * volume`` proxy (see module docstring).
     """
-    O, H, L, C, V, QV = (
+    O, H, L, C, V = (
         P["open"],
         P["high"],
         P["low"],
         P["close"],
         P["volume"],
-        P["quote_volume"],
     )
-    ret = C.pct_change()
+    ret = C.pct_change(fill_method=None)
     hl = (H - L).replace(0, np.nan)
     oc_max = O.where(O > C, C)
     oc_min = O.where(O < C, C)
@@ -157,9 +157,12 @@ def compute_factors(P: dict[str, pd.DataFrame]) -> dict[str, pd.DataFrame]:
     F["ohlc_vol:upper_shadow"] = (H - oc_max) / hl
     F["ohlc_vol:body"] = (C - O).abs() / hl
     F["ohlc_vol:clv"] = ((C - L) - (H - C)) / hl
+    # Roll (1984) spread estimator: 2*sqrt(-cov(r_t, r_{t-1})) when negative.
     F["liquidity:spread_ar"] = (
-        (ret.abs() / QV.replace(0, np.nan)).rolling(20, min_periods=10).mean()
-    )
+        -ret.rolling(20, min_periods=10).apply(
+            lambda x: np.cov(x[:-1], x[1:])[0, 1] if len(x) > 2 else 0
+        )
+    ).clip(lower=0).apply(np.sqrt) * 2
 
     btc = ret.get("BTCUSDT", ret.mean(axis=1))
     cov = ret.rolling(60, min_periods=30).cov(btc)
@@ -346,6 +349,25 @@ class Top10VoteComboRunnerStrategy(Strategy):
 
     def get_retain_bars(self, tf: str) -> int:
         return max(self.warmup_bars, self.retain_bars)
+
+    async def _shared_panel_bundle(self) -> PanelBundle | None:
+        """Shared-panel anchor used by main.py's post-warmup sync.
+
+        main.py's warmup-completion loop calls this on every ready strategy
+        and sets ``_last_processed_candle = bundle.latest`` ("one bar back"),
+        so the first scan fires on the NEXT newly-completed candle. Mirrors
+        cross_sectional; this strategy builds its own snapshot-based panel in
+        ``scan`` via ``_collect_snapshots``, so the returned bundle is used
+        purely for its ``latest`` anchor.
+        """
+        if self.ctx.panel_feature_cache is None:
+            self.ctx.panel_feature_cache = SharedPanelFeatureCache()
+        return await self.ctx.panel_feature_cache.get_bundle(
+            self.ctx.cache,
+            tf=TF,
+            symbols=tuple(self._symbols),
+            bars=self.get_warmup_bars(TF),
+        )
 
     # ---------------------------------------------------------------- universe
 

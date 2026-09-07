@@ -27,17 +27,23 @@ from indicators.pandas.ts_ops import (
     cmf as _cmf_lib,
     ts_vwap as _ts_vwap_lib,
     ideal_amp as _ideal_amp_lib,
+    ts_delta,
+    ts_beta,
 )
 from indicators.pandas.cs_ops import (
     cs_zscore as _cs_zscore_lib,
     cs_winsorize as _cs_winsorize_lib,
     cs_scale as _cs_scale_lib,
+    cs_demean as _cs_demean_lib,
+    rank as _cs_rank_lib,
 )
 from indicators.pandas.element_ops import (
     abs as _abs_lib,
     neg as _neg_lib,
     add as _add_lib,
     div as _div_lib,
+    sub as _sub_lib,
+    mul as _mul_lib,
 )
 
 
@@ -320,6 +326,86 @@ class CrossAlphaComputeContext:
     ) -> tuple[pd.DataFrame, FeatureKey]:
         key = ("add", left_key, right_key)
         return _add_lib(left, right), key
+
+    def sub(
+        self,
+        left_key: FeatureKey,
+        left: pd.DataFrame,
+        right_key: FeatureKey,
+        right: pd.DataFrame,
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("sub", left_key, right_key)
+        return _sub_lib(left, right), key
+
+    def mul(
+        self,
+        left_key: FeatureKey,
+        left: pd.DataFrame,
+        right_key: FeatureKey,
+        right: pd.DataFrame,
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("mul", left_key, right_key)
+        return _mul_lib(left, right), key
+
+    def ts_delta(
+        self, source_key: FeatureKey, x: pd.DataFrame, d: int
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("ts_delta", source_key, int(d))
+        if key not in self._features:
+            self._inc("feature_cache_misses")
+            self._features[key] = ts_delta(x, int(d))
+        else:
+            self._inc("feature_cache_hits")
+        return self._features[key], key
+
+    def ts_beta(
+        self,
+        y_key: FeatureKey,
+        y: pd.DataFrame,
+        bench_key: FeatureKey,
+        bench: pd.DataFrame,
+        d: int,
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("ts_beta", y_key, bench_key, int(d))
+        if key not in self._features:
+            self._inc("feature_cache_misses")
+            self._features[key] = ts_beta(y, bench, int(d))
+        else:
+            self._inc("feature_cache_hits")
+        return self._features[key], key
+
+    def benchmark_frame(
+        self, source_key: FeatureKey, x: pd.DataFrame, benchmark: str = "BTCUSDT"
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        """Broadcast the benchmark RETURN series (``x[benchmark]``, falling back
+        to the cross-sectional mean row when the symbol is absent) into a
+        DataFrame with the same columns as ``x`` so element ops and ts_beta
+        align per-symbol. Cached under the source returns key."""
+        key = ("benchmark_frame", source_key, benchmark)
+        if key not in self._features:
+            self._inc("feature_cache_misses")
+            if benchmark in x.columns:
+                bench_series = x[benchmark]
+            else:
+                bench_series = x.mean(axis=1)
+            self._features[key] = pd.DataFrame(
+                {col: bench_series for col in x.columns}, index=x.index
+            )
+        else:
+            self._inc("feature_cache_hits")
+        return self._features[key], key
+
+    def cs_demean(
+        self, source_key: FeatureKey, x: pd.DataFrame
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("cs_demean", source_key)
+        return _cs_demean_lib(x), key
+
+    def rank(
+        self, source_key: FeatureKey, x: pd.DataFrame
+    ) -> tuple[pd.DataFrame, FeatureKey]:
+        key = ("rank", source_key)
+        return _cs_rank_lib(x), key
 
     def range_location(
         self, fields: dict[str, pd.DataFrame], mask_key: FeatureKey, window: int
@@ -790,6 +876,210 @@ def compute_signal_details(
         )
         score, _ = ctx.ts_ema(amp_key, amp, p["ema_span"])
         return score, None, None, {"ideal_amp": amp, "ideal_amplitude": score}
+    if signal == "demean_vol_times_std":
+        # cs_demean(volume) * ts_std(close, 20) — long coins with abnormally
+        # high volume and wide price swings (attention x volatility).
+        volume, volume_key = ctx.field(fields, mask_key, "volume")
+        demeaned_volume, demeaned_volume_key = ctx.cs_demean(volume_key, volume)
+        close, close_key = ctx.field(fields, mask_key, "close")
+        close_std, close_std_key = ctx.ts_std(close_key, close, p["std_window"])
+        score, _ = ctx.mul(
+            demeaned_volume_key, demeaned_volume, close_std_key, close_std
+        )
+        return (
+            score,
+            None,
+            None,
+            {
+                "demeaned_volume": demeaned_volume,
+                "close_std": close_std,
+                "demean_vol_times_std": score,
+            },
+        )
+    if signal == "kyle_lambda_zscore":
+        # mean(|ret|, 20) / mean(volume, 20), ts-z-scored over 120 bars —
+        # long coins with unusually high price impact (illiquidity premium).
+        abs_returns, abs_returns_key = ctx.abs(returns_key, returns)
+        mean_abs_ret, mean_abs_ret_key = ctx.ts_mean(
+            abs_returns_key, abs_returns, p["abs_window"]
+        )
+        volume, volume_key = ctx.field(fields, mask_key, "volume")
+        mean_volume, mean_volume_key = ctx.ts_mean(volume_key, volume, p["vol_window"])
+        kyle_lambda, kyle_lambda_key = ctx.div(
+            mean_abs_ret_key, mean_abs_ret, mean_volume_key, mean_volume
+        )
+        score, _ = ctx.ts_zscore(kyle_lambda_key, kyle_lambda, p["z_window"])
+        return (
+            score,
+            None,
+            None,
+            {
+                "mean_abs_ret": mean_abs_ret,
+                "mean_volume": mean_volume,
+                "kyle_lambda": kyle_lambda,
+                "kyle_lambda_zscore": score,
+            },
+        )
+    if signal == "momentum_minus_std":
+        # ts_momentum(close, 5) - ts_std(close, 20) — long coins with positive
+        # short-term momentum and low volatility.
+        close, close_key = ctx.field(fields, mask_key, "close")
+        momentum, momentum_key = ctx.ts_momentum(close_key, close, p["momentum_window"])
+        close_std, close_std_key = ctx.ts_std(close_key, close, p["std_window"])
+        score, _ = ctx.sub(momentum_key, momentum, close_std_key, close_std)
+        return (
+            score,
+            None,
+            None,
+            {
+                "momentum": momentum,
+                "close_std": close_std,
+                "momentum_minus_std": score,
+            },
+        )
+    if signal == "neg_std_close":
+        # -ts_std(close, 10) — short volatile coins, long stable coins
+        # (low-volatility premium).
+        close, close_key = ctx.field(fields, mask_key, "close")
+        close_std, close_std_key = ctx.ts_std(close_key, close, p["std_window"])
+        score, _ = ctx.neg(close_std_key, close_std)
+        return score, None, None, {"close_std": close_std, "neg_std_close": score}
+    if signal == "range_volatility":
+        # -ts_std(high - low, 10) — short coins with high intraday range
+        # volatility; long stable-range coins.
+        high, high_key = ctx.field(fields, mask_key, "high")
+        low, low_key = ctx.field(fields, mask_key, "low")
+        intraday_range, intraday_range_key = ctx.sub(high_key, high, low_key, low)
+        range_std, range_std_key = ctx.ts_std(
+            intraday_range_key, intraday_range, p["std_window"]
+        )
+        score, _ = ctx.neg(range_std_key, range_std)
+        return (
+            score,
+            None,
+            None,
+            {
+                "intraday_range": intraday_range,
+                "range_std": range_std,
+                "range_volatility": score,
+            },
+        )
+    if signal == "rank_close_minus_std":
+        # rank(close) - ts_std(close, 20) — long stable high-priced coins;
+        # short volatile low-priced coins.
+        close, close_key = ctx.field(fields, mask_key, "close")
+        ranked_close, ranked_close_key = ctx.rank(close_key, close)
+        close_std, close_std_key = ctx.ts_std(close_key, close, p["std_window"])
+        score, _ = ctx.sub(ranked_close_key, ranked_close, close_std_key, close_std)
+        return (
+            score,
+            None,
+            None,
+            {
+                "ranked_close": ranked_close,
+                "close_std": close_std,
+                "rank_close_minus_std": score,
+            },
+        )
+    if signal == "residual_vol_chg":
+        # residual_vol|chg60|- — beta-adjusted volatility, 60-bar change.
+        # beta = cov(ret, btc, 60) / var(btc, 60); resid = ret - beta * btc;
+        # residual_vol = ts_std(resid, 20); score = -(res_vol - res_vol.shift(60)).
+        bench, bench_key = ctx.benchmark_frame(returns_key, returns)
+        beta, beta_key = ctx.ts_beta(
+            returns_key, returns, bench_key, bench, p["beta_window"]
+        )
+        market_component, market_component_key = ctx.mul(
+            beta_key, beta, bench_key, bench
+        )
+        residual, residual_key = ctx.sub(
+            returns_key, returns, market_component_key, market_component
+        )
+        residual_vol, residual_vol_key = ctx.ts_std(
+            residual_key, residual, p["resid_window"]
+        )
+        res_vol_delta, res_vol_delta_key = ctx.ts_delta(
+            residual_vol_key, residual_vol, p["chg_window"]
+        )
+        score, _ = ctx.neg(res_vol_delta_key, res_vol_delta)
+        return (
+            score,
+            None,
+            None,
+            {
+                "beta": beta,
+                "residual": residual,
+                "residual_vol": residual_vol,
+                "residual_vol_chg": score,
+            },
+        )
+    if signal == "residual_vol_zscore":
+        # residual_vol|z120|- — beta-adjusted volatility, ts-z-scored 120 bars.
+        bench, bench_key = ctx.benchmark_frame(returns_key, returns)
+        beta, beta_key = ctx.ts_beta(
+            returns_key, returns, bench_key, bench, p["beta_window"]
+        )
+        market_component, market_component_key = ctx.mul(
+            beta_key, beta, bench_key, bench
+        )
+        residual, residual_key = ctx.sub(
+            returns_key, returns, market_component_key, market_component
+        )
+        residual_vol, residual_vol_key = ctx.ts_std(
+            residual_key, residual, p["resid_window"]
+        )
+        res_vol_zscore, res_vol_zscore_key = ctx.ts_zscore(
+            residual_vol_key, residual_vol, p["z_window"]
+        )
+        score, _ = ctx.neg(res_vol_zscore_key, res_vol_zscore)
+        return (
+            score,
+            None,
+            None,
+            {
+                "beta": beta,
+                "residual": residual,
+                "residual_vol": residual_vol,
+                "residual_vol_zscore": score,
+            },
+        )
+    if signal == "rvol_ratio_lvl":
+        # rvol_ratio|lvl|- — short coins with abnormal short-term volume
+        # spikes; long stable-volume coins. ratio = mean(vol,5)/mean(vol,60),
+        # negated (short vol spike).
+        volume, volume_key = ctx.field(fields, mask_key, "volume")
+        short_mean, short_mean_key = ctx.ts_mean(volume_key, volume, p["short_window"])
+        long_mean, long_mean_key = ctx.ts_mean(volume_key, volume, p["long_window"])
+        ratio, ratio_key = ctx.div(short_mean_key, short_mean, long_mean_key, long_mean)
+        score, _ = ctx.neg(ratio_key, ratio)
+        return (
+            score,
+            None,
+            None,
+            {
+                "vol_short_mean": short_mean,
+                "vol_long_mean": long_mean,
+                "rvol_ratio": ratio,
+                "rvol_ratio_lvl": score,
+            },
+        )
+    if signal == "std_minus_ema":
+        # ts_std(close, 20) - ts_ema(close, 20) — long coins where close
+        # volatility exceeds the EMA level.
+        close, close_key = ctx.field(fields, mask_key, "close")
+        close_std, close_std_key = ctx.ts_std(close_key, close, p["std_window"])
+        close_ema, close_ema_key = ctx.ts_ema(close_key, close, p["ema_span"])
+        score, _ = ctx.sub(close_std_key, close_std, close_ema_key, close_ema)
+        return (
+            score,
+            None,
+            None,
+            {
+                "close_std": close_std,
+                "close_ema": close_ema,
+                "std_minus_ema": score,
+            },
+        )
     raise ValueError(f"Unsupported signal: {signal}")
 
 
@@ -956,8 +1246,10 @@ def select_positions(
         # Balance LONG = SHORT: trim the larger side down to the smaller,
         # removing the weakest signals first (lowest |weight|).  Without this
         # winsor_cont produces unequal long/short counts, leaving an odd total
-        # and an unintended directional bias.
-        if longs and shorts and len(longs) != len(shorts):
+        # and an unintended directional bias.  Skipped for specs with
+        # balanced=False, which keep the full cross-section like the
+        # standalone backtest reference.
+        if spec.balanced and longs and shorts and len(longs) != len(shorts):
             _target = min(len(longs), len(shorts))
             if len(longs) > _target:
                 _drop = set(

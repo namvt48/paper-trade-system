@@ -41,7 +41,9 @@ def decay_linear(x: pd.DataFrame, d: int) -> pd.DataFrame:
     return result.where(valid_count >= min_periods)
 
 
-def ts_range_location(close: pd.DataFrame, low: pd.DataFrame, high: pd.DataFrame, d: int) -> pd.DataFrame:
+def ts_range_location(
+    close: pd.DataFrame, low: pd.DataFrame, high: pd.DataFrame, d: int
+) -> pd.DataFrame:
     lo = low.rolling(d, min_periods=1).min()
     hi = high.rolling(d, min_periods=1).max()
     return (close - lo) / (hi - lo).replace(0, np.nan)
@@ -66,17 +68,31 @@ def kaufman_er(x: pd.DataFrame, d: int) -> pd.DataFrame:
     return change / volatility.replace(0, np.nan)
 
 
-def cmf(high: pd.DataFrame, low: pd.DataFrame, close: pd.DataFrame, volume: pd.DataFrame, d: int) -> pd.DataFrame:
+def cmf(
+    high: pd.DataFrame,
+    low: pd.DataFrame,
+    close: pd.DataFrame,
+    volume: pd.DataFrame,
+    d: int,
+) -> pd.DataFrame:
     """Chaikin Money Flow: rolling sum of money-flow-volume divided by rolling
     sum of volume over d bars. Positive = buying pressure, negative = selling."""
-    money_flow_multiplier = ((close - low) - (high - close)) / (high - low).replace(0, np.nan)
+    money_flow_multiplier = ((close - low) - (high - close)) / (high - low).replace(
+        0, np.nan
+    )
     money_flow_volume = money_flow_multiplier * volume
     mfv_sum = money_flow_volume.rolling(d, min_periods=max(1, d // 2)).sum()
     volume_sum = volume.rolling(d, min_periods=max(1, d // 2)).sum()
     return mfv_sum / volume_sum.replace(0, np.nan)
 
 
-def ts_vwap(high: pd.DataFrame, low: pd.DataFrame, close: pd.DataFrame, volume: pd.DataFrame, d: int) -> pd.DataFrame:
+def ts_vwap(
+    high: pd.DataFrame,
+    low: pd.DataFrame,
+    close: pd.DataFrame,
+    volume: pd.DataFrame,
+    d: int,
+) -> pd.DataFrame:
     """Rolling dollar-volume-weighted average price over d bars, using
     typical price (H+L+C)/3 as the per-bar price."""
     typical = (high + low + close) / 3.0
@@ -85,7 +101,25 @@ def ts_vwap(high: pd.DataFrame, low: pd.DataFrame, close: pd.DataFrame, volume: 
     return pv_sum / v_sum.replace(0, np.nan)
 
 
-def _rolling_split_diff(values: np.ndarray, sortkey: np.ndarray, window: int, k_frac: float = 0.25) -> np.ndarray:
+def ts_delta(x: pd.DataFrame, d: int) -> pd.DataFrame:
+    return x - x.shift(d)
+
+
+def ts_beta(y: pd.DataFrame, bench: pd.DataFrame, d: int) -> pd.DataFrame:
+    """Rolling beta of each column of ``y`` against a benchmark RETURN panel
+    (each column = the same benchmark series, broadcast so that DataFrame
+    alignment works): cov(y_i, bench) / var(bench) over a trailing window of
+    ``d`` bars. Requires at least ``d // 2`` valid paired observations. A
+    constant benchmark window yields a zero-variance guard (NaN)."""
+    m = max(2, d // 2)
+    cov = y.rolling(d, min_periods=m).cov(bench)
+    var = bench.rolling(d, min_periods=m).var().replace(0, np.nan)
+    return cov.div(var, axis=0)
+
+
+def _rolling_split_diff(
+    values: np.ndarray, sortkey: np.ndarray, window: int, k_frac: float = 0.25
+) -> np.ndarray:
     """For each trailing window of length ``window``: mean(values on the
     top-k rows by sortkey) - mean(values on the bottom-k rows), k = int(k_frac
     * window) rows by COUNT (not a quantile threshold). Aligned to the right
@@ -101,12 +135,16 @@ def _rolling_split_diff(values: np.ndarray, sortkey: np.ndarray, window: int, k_
     order = np.argsort(sw, axis=1)
     low = np.take_along_axis(vw, order[:, :k], axis=1)
     high = np.take_along_axis(vw, order[:, -k:], axis=1)
-    out[window - 1:] = np.nanmean(high, axis=1) - np.nanmean(low, axis=1)
+    out[window - 1 :] = np.nanmean(high, axis=1) - np.nanmean(low, axis=1)
     return out
 
 
 def ideal_amp(
-    high: pd.DataFrame, low: pd.DataFrame, close: pd.DataFrame, window: int = 20, k_frac: float = 0.25,
+    high: pd.DataFrame,
+    low: pd.DataFrame,
+    close: pd.DataFrame,
+    window: int = 20,
+    k_frac: float = 0.25,
 ) -> pd.DataFrame:
     """理想振幅 (ideal amplitude): within a trailing window of ``window`` VALID
     bars (NaN bars are skipped entirely, not counted toward the window),
@@ -118,7 +156,9 @@ def ideal_amp(
     ``~/Desktop/datacryp/_scripts/_build_derived_v4.py::build_amplitude()``
     exactly (formula confirmed against ``docs/DATA_DICTIONARY.md``)."""
     amp = (high / low - 1.0).clip(upper=3.0)
-    result = pd.DataFrame(np.nan, index=close.index, columns=close.columns, dtype="float64")
+    result = pd.DataFrame(
+        np.nan, index=close.index, columns=close.columns, dtype="float64"
+    )
     for symbol in close.columns:
         a = amp[symbol].to_numpy()
         c = close[symbol].to_numpy()

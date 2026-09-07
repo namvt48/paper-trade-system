@@ -15,5 +15,13 @@ def add(left: pd.DataFrame, right: pd.DataFrame) -> pd.DataFrame:
     return left + right
 
 
+def sub(left: pd.DataFrame, right: pd.DataFrame) -> pd.DataFrame:
+    return left - right
+
+
+def mul(left: pd.DataFrame, right: pd.DataFrame) -> pd.DataFrame:
+    return left * right
+
+
 def div(left: pd.DataFrame, right: pd.DataFrame) -> pd.DataFrame:
     return left / right

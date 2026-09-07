@@ -23,6 +23,12 @@ class AlphaSpec:
     fee_bps: float = 7.0
     construction: str = "rank"  # "rank" | "winsor_cont"
     winsor_k: float = 3.0  # clip threshold for winsor_cont
+    # When True (default), the winsor_cont builder trims the larger side so
+    # LONG == SHORT counts and re-normalizes gross |weights| to 1.  Set False
+    # to keep the full cross-section like the standalone backtest reference
+    # (e.g. heavily long-skewed vol factors whose win rate came from holding
+    # nearly every coin on one side).
+    balanced: bool = True
     reverse: bool = False  # when True, swap LONG↔SHORT (negate all weights)
     # When True, signals publish only on the scan whose candle closes at a
     # 00:00 UTC day boundary (entries at ~00:00, never at other hours).
@@ -146,4 +152,42 @@ class AlphaSpec:
                 "required_bars (load each member's spec.json and take the max) -- not "
                 "computable from this spec's own params alone"
             )
+        if signal == "demean_vol_times_std":
+            return int(p["std_window"])
+        if signal == "kyle_lambda_zscore":
+            return (
+                max(int(p["abs_window"]) + 1, int(p["vol_window"]))
+                + int(p["z_window"])
+                - 1
+            )
+        if signal == "momentum_minus_std":
+            return max(int(p["momentum_window"]) + 1, int(p["std_window"]))
+        if signal == "neg_std_close":
+            return int(p["std_window"])
+        if signal == "range_volatility":
+            return int(p["std_window"])
+        if signal == "rank_close_minus_std":
+            return int(p["std_window"])
+        if signal == "residual_vol_chg":
+            return (
+                int(p["beta_window"])
+                + 1
+                + int(p["resid_window"])
+                - 1
+                + int(p["chg_window"])
+                - 1
+            )
+        if signal == "residual_vol_zscore":
+            return (
+                int(p["beta_window"])
+                + 1
+                + int(p["resid_window"])
+                - 1
+                + int(p["z_window"])
+                - 1
+            )
+        if signal == "rvol_ratio_lvl":
+            return int(p["long_window"])
+        if signal == "std_minus_ema":
+            return max(int(p["std_window"]), int(p["ema_span"]))
         raise ValueError(f"Unsupported signal: {signal}")

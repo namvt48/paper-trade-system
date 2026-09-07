@@ -11,7 +11,7 @@ runner:
   strategy_event_drop_warn_threshold: 100
   lease_ttl_sec: 1800
   lease_renew_interval_sec: 5
-  max_alphas_per_runner: 40
+  max_alphas_per_runner: 100
   claim_interval_sec: 3600
   warmup:
     max_concurrent_mds_requests: 3
@@ -32,8 +32,6 @@ modules:
   - runner.strategies.suplo_xau
   - runner.strategies.supertrend_xau_v2
   - runner.strategies.suplo_atr1_5
-  - runner.strategies.suplo_xau_v3_stepwise
-  - runner.strategies.xau_v3_mfe_atr
   - runner.strategies.supertrend_adx_tp
   - runner.strategies.supertrend_adx_ema13_tp
   - runner.strategies.smooth_chan
@@ -349,20 +347,6 @@ alphas:
     version: "1"
     enabled: true
     params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005, retrace_pct: 0.05, atr_multiplier: 1.0}
-  # Suplo XAU V3 Stepwise — Supertrend(3,10) 15m entry + 1m Stepwise Dynamic
-  # Trailing r(P) from 15m ATR. Signals on 1m candle close; fills at 1m close.
-  - alpha_id: suplo-xau-v3-stepwise
-    strategy: suplo_xau_v3_stepwise
-    version: "1"
-    enabled: true
-    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
-  # XAU V3 MFE ATR — Supertrend(3,10) 15m entry + 1m MFE ATR Distance Trailing.
-  # Signals on 1m candle close; fills at 1m close.
-  - alpha_id: xau-v3-mfe-atr
-    strategy: xau_v3_mfe_atr
-    version: "1"
-    enabled: true
-    params: {symbol: PAXGUSDT, exchange: binance, warmup_bars: 320, m1_warmup_bars: 60, retain_bars: 320, capital: 10000.0, leverage: 10.0, fee_pct: 0.0005}
   # Supertrend ADX TP — Supertrend(3,10) 15m entries + one ADX lower-peak TP
   # per trend cycle. Trades PAXGUSDT.
   - alpha_id: supertrend-adx-tp
@@ -457,6 +441,68 @@ alphas:
     version: "1"
     enabled: true
     params: {spec_file: 1d-vwaprev-w80-top25-p15/spec.json, whitelist_file: 1d-vwaprev-w80-top25-p15/whitelist.txt, blacklist_file: 1d-vwaprev-w80-top25-p15/blacklist.txt, warmup_bars: 60, retain_bars: 60, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-vwaprev-w30-top5-p10
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-vwaprev-w30-top5-p10/spec.json, whitelist_file: 1d-vwaprev-w30-top5-p10/whitelist.txt, blacklist_file: 1d-vwaprev-w30-top5-p10/blacklist.txt, warmup_bars: 60, retain_bars: 60, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-vwaprev-w40-top5-p10
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-vwaprev-w40-top5-p10/spec.json, whitelist_file: 1d-vwaprev-w40-top5-p10/whitelist.txt, blacklist_file: 1d-vwaprev-w40-top5-p10/blacklist.txt, warmup_bars: 60, retain_bars: 60, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+
+  # ── 1d alpha-decent cross-sectional family (10 alphas, backtest-verified) ──
+  - alpha_id: 1d-demean-vol-times-std
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-demean-vol-times-std/spec.json, whitelist_file: 1d-demean-vol-times-std/whitelist.txt, blacklist_file: 1d-demean-vol-times-std/blacklist.txt, warmup_bars: 21, retain_bars: 21, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-kyle-lambda-zscore
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-kyle-lambda-zscore/spec.json, whitelist_file: 1d-kyle-lambda-zscore/whitelist.txt, blacklist_file: 1d-kyle-lambda-zscore/blacklist.txt, warmup_bars: 141, retain_bars: 141, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-momentum-minus-std
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-momentum-minus-std/spec.json, whitelist_file: 1d-momentum-minus-std/whitelist.txt, blacklist_file: 1d-momentum-minus-std/blacklist.txt, warmup_bars: 21, retain_bars: 21, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-neg-std-close
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-neg-std-close/spec.json, whitelist_file: 1d-neg-std-close/whitelist.txt, blacklist_file: 1d-neg-std-close/blacklist.txt, warmup_bars: 11, retain_bars: 11, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-range-volatility
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-range-volatility/spec.json, whitelist_file: 1d-range-volatility/whitelist.txt, blacklist_file: 1d-range-volatility/blacklist.txt, warmup_bars: 11, retain_bars: 11, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-rank-close-minus-std
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-rank-close-minus-std/spec.json, whitelist_file: 1d-rank-close-minus-std/whitelist.txt, blacklist_file: 1d-rank-close-minus-std/blacklist.txt, warmup_bars: 21, retain_bars: 21, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-residual-vol-chg
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-residual-vol-chg/spec.json, whitelist_file: 1d-residual-vol-chg/whitelist.txt, blacklist_file: 1d-residual-vol-chg/blacklist.txt, warmup_bars: 141, retain_bars: 141, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-residual-vol-zscore
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-residual-vol-zscore/spec.json, whitelist_file: 1d-residual-vol-zscore/whitelist.txt, blacklist_file: 1d-residual-vol-zscore/blacklist.txt, warmup_bars: 201, retain_bars: 201, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-rvol-ratio-lvl
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-rvol-ratio-lvl/spec.json, whitelist_file: 1d-rvol-ratio-lvl/whitelist.txt, blacklist_file: 1d-rvol-ratio-lvl/blacklist.txt, warmup_bars: 61, retain_bars: 61, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
+  - alpha_id: 1d-std-minus-ema
+    strategy: cross_sectional
+    version: "1"
+    enabled: true
+    params: {spec_file: 1d-std-minus-ema/spec.json, whitelist_file: 1d-std-minus-ema/whitelist.txt, blacklist_file: 1d-std-minus-ema/blacklist.txt, warmup_bars: 21, retain_bars: 21, capital: 10000.0, offset_candle_sec: 5.0, exchange: binance}
 
   # ── Top-10 vote combination (54-symbol universe) ──
   - alpha_id: top10-vote-combo
