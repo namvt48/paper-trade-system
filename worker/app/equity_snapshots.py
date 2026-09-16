@@ -3,6 +3,7 @@ from __future__ import annotations
 import asyncio
 import json
 import logging
+import math
 import os
 from datetime import datetime, timezone
 from typing import Any, Optional
@@ -12,6 +13,23 @@ import aiosqlite
 logger = logging.getLogger(__name__)
 
 TOTAL_KEY = "__TOTAL__"
+
+
+def _has_finite_qty_entry(position: dict[str, Any]) -> bool:
+    """True when a position row carries a usable qty and entry_price.
+
+    SQLite coerces NaN to NULL, and a NULL qty used to raise TypeError in
+    _compute_position_pnl on every tick, killing the whole equity collector
+    (57h outage). Such rows are treated as a ZERO PnL contribution instead.
+    """
+    qty = position.get("qty")
+    entry_price = position.get("entry_price")
+    return (
+        isinstance(qty, (int, float))
+        and isinstance(entry_price, (int, float))
+        and math.isfinite(qty)
+        and math.isfinite(entry_price)
+    )
 
 
 def _parse_env_file(path: str) -> dict[str, str]:
@@ -169,6 +187,10 @@ class EquitySnapshotCollector:
 
     @staticmethod
     def _compute_position_pnl(position: dict[str, Any], current_price: float) -> float:
+        if not _has_finite_qty_entry(position):
+            # Unmarkable row (NULL/non-finite qty or entry_price): zero PnL
+            # contribution. Callers emit one aggregated warning per snapshot.
+            return 0.0
         direction = 1.0 if position["side"] == "LONG" else -1.0
         gross = (current_price - position["entry_price"]) * position["qty"] * direction
         fee = (
@@ -238,8 +260,12 @@ class EquitySnapshotCollector:
 
         pnl_delta = 0.0
         missing_prices: list[str] = []
+        unmarkable: list[str] = []
         for position in positions:
             symbol = str(position["symbol"])
+            if not _has_finite_qty_entry(position):
+                unmarkable.append(symbol)
+                continue
             anchor_price = anchor_prices.get(symbol)
             live_price = self._get_price(symbol)
             if anchor_price is None or live_price is None:
@@ -248,6 +274,13 @@ class EquitySnapshotCollector:
             pnl_delta += self._compute_position_pnl(
                 position, live_price
             ) - self._compute_position_pnl(position, float(anchor_price))
+        if unmarkable:
+            logger.warning(
+                "[EQUITY-SNAPSHOT] shadow mark skipped %d position(s) with "
+                "NULL/non-finite qty or entry_price: %s",
+                len(unmarkable),
+                ", ".join(sorted(set(unmarkable))[:10]),
+            )
         return anchor_balance + pnl_delta, missing_prices
 
     async def snapshot_once(self) -> None:
@@ -263,9 +296,13 @@ class EquitySnapshotCollector:
 
         unrealized_by_alpha: dict[str, float] = {}
         missing_prices: list[str] = []
+        unmarkable_positions: list[str] = []
 
         for pos in positions:
             symbol = pos["symbol"]
+            if not _has_finite_qty_entry(pos):
+                unmarkable_positions.append(str(symbol))
+                continue
             price = self._get_price(symbol)
             if price is None:
                 missing_prices.append(symbol)
@@ -276,13 +313,23 @@ class EquitySnapshotCollector:
 
         virtual_positions_by_alpha: dict[str, list[dict[str, Any]]] = {}
         for position in virtual_positions:
-            virtual_positions_by_alpha.setdefault(position["alpha_id"], []).append(position)
+            virtual_positions_by_alpha.setdefault(position["alpha_id"], []).append(
+                position
+            )
 
         if missing_prices:
             logger.warning(
                 "[EQUITY-SNAPSHOT] no price for %d symbols: %s",
                 len(missing_prices),
                 ", ".join(sorted(set(missing_prices))[:10]),
+            )
+
+        if unmarkable_positions:
+            logger.warning(
+                "[EQUITY-SNAPSHOT] skipped %d position(s) with NULL/non-finite "
+                "qty or entry_price (treated as zero PnL): %s",
+                len(unmarkable_positions),
+                ", ".join(sorted(set(unmarkable_positions))[:10]),
             )
 
         all_alphas = await self._db.get_all_alphas()

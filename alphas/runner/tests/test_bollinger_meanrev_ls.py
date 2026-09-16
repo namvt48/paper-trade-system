@@ -94,7 +94,9 @@ def test_zone_between_when_close_near_mean() -> None:
 
 
 def _cache_with(
-    closes: tuple[float, ...], opens: tuple[float, ...] | None = None
+    closes: tuple[float, ...],
+    opens: tuple[float, ...] | None = None,
+    tf_ms: int = D1_MS,
 ) -> SimpleNamespace:
     if opens is None:
         opens = closes
@@ -106,30 +108,33 @@ def _cache_with(
                 highs=closes,
                 lows=closes,
                 closes=closes,
-                times=tuple(_BASE_MS + i * D1_MS for i in range(len(closes))),
+                times=tuple(_BASE_MS + i * tf_ms for i in range(len(closes))),
             )
 
     return SimpleNamespace(snapshot=_Cache().snapshot)
 
 
-def _make_ctx(closes, emit, opens=None) -> SimpleNamespace:
+def _make_ctx(closes, emit, opens=None, tf_ms: int = D1_MS) -> SimpleNamespace:
     return SimpleNamespace(
         emit_signal=emit,
         load_authoritative_positions=lambda: None,
         load_positions=lambda: None,
         state=SimpleNamespace(ready=True),
         price_alerts=None,
-        cache=_cache_with(closes, opens),
+        cache=_cache_with(closes, opens, tf_ms),
     )
 
 
-def _scan_task(strategy, closes):
-    strategy._last_1d_open = _BASE_MS + (len(closes) - 2) * D1_MS
-    return strategy._scan_1d(_BASE_MS + (len(closes) - 1) * D1_MS)
+def _scan_task(strategy, closes, tf_ms: int = D1_MS):
+    strategy._last_bar_open = _BASE_MS + (len(closes) - 2) * tf_ms
+    return strategy._scan_tf(_BASE_MS + (len(closes) - 1) * tf_ms)
 
 
 def _strategy(ctx=None) -> BollingerMeanRevLsRunnerStrategy:
     strategy = object.__new__(BollingerMeanRevLsRunnerStrategy)
+    strategy.tf = "1d"
+    strategy.tf_ms = D1_MS
+    strategy.reverse = False
     strategy.bb_period = 20
     strategy.z_entry_buy = -2.0
     strategy.z_entry_sell = 0.0
@@ -140,14 +145,14 @@ def _strategy(ctx=None) -> BollingerMeanRevLsRunnerStrategy:
     strategy.position_fraction = 1.0
     strategy.fee_pct = 0.0005
     strategy.start_year = 2024
-    strategy.d1_warmup_bars = 60
+    strategy.tf_warmup_bars = 60
     strategy.retain_bars = 60
-    strategy.min_d1_bars = 24
+    strategy.min_tf_bars = 24
     strategy.timestamp_semantics = "open"
     strategy.alpha_id = "bollinger-meanrev-ls-fil"
     strategy.version = "1"
-    strategy._last_1d_open = None
-    strategy._pending_1d_open = None
+    strategy._last_bar_open = None
+    strategy._pending_bar_open = None
     strategy._positions = {}
     if ctx is None:
         ctx = _make_ctx(tuple([100.0] * 60), AsyncMock(return_value={"ok": True}))
@@ -155,8 +160,10 @@ def _strategy(ctx=None) -> BollingerMeanRevLsRunnerStrategy:
     return strategy
 
 
-def ctx_for(closes, emit, opens: tuple[float, ...] | None = None) -> SimpleNamespace:
-    return _make_ctx(closes, emit, opens)
+def ctx_for(
+    closes, emit, opens: tuple[float, ...] | None = None, tf_ms: int = D1_MS
+) -> SimpleNamespace:
+    return _make_ctx(closes, emit, opens, tf_ms)
 
 
 def strategy_with_long(ctx) -> BollingerMeanRevLsRunnerStrategy:
@@ -361,3 +368,136 @@ async def test_out_of_range_flat_stays_flat() -> None:
 
     assert ctx_signals(strategy) == []
     assert strategy._positions == {}
+
+
+# ------------------------------------------------------------------ tf param
+
+
+M15_MS = 900_000
+
+
+def _strategy_tf(ctx) -> BollingerMeanRevLsRunnerStrategy:
+    strategy = _strategy(ctx)
+    strategy.tf = "15m"
+    strategy.tf_ms = M15_MS
+    return strategy
+
+
+def test_requests_15m_channel_when_tf_param() -> None:
+    assert BollingerMeanRevLsRunnerStrategy.get_required_channels(
+        {"symbol": "OPUSDT", "tf": "15m"}
+    ) == ["kline:15m"]
+
+
+def test_warmup_tfs_follow_tf_param() -> None:
+    strategy = _strategy_tf(
+        _make_ctx(
+            tuple([100.0] * 60), AsyncMock(return_value={"ok": True}), tf_ms=M15_MS
+        )
+    )
+    assert strategy.get_warmup_symbols() == ["FILUSDT"]
+    assert strategy.get_warmup_tfs() == ["15m"]
+    assert strategy.get_warmup_bars("15m") == 60
+
+
+@pytest.mark.asyncio
+async def test_15m_scan_emits_with_tf_15m() -> None:
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # BUY zone -> LONG at 52
+    strategy = _strategy_tf(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}), tf_ms=M15_MS)
+    )
+    await _scan_task(strategy, closes, tf_ms=M15_MS)
+
+    signals = ctx_signals(strategy)
+    assert signals[0][0] == "OPEN"
+    assert signals[0][1]["tf"] == "15m"
+    assert signals[0][1]["side"] == "LONG"
+
+
+# ------------------------------------------------------------- reverse mode
+#
+# reverse=true mirrors the base transition table: flat+BUY->SHORT,
+# flat+SELL->LONG, SHORT+SELL->flip LONG, LONG+BUY->flip SHORT,
+# LONG+BETWEEN->CASH, SHORT+BETWEEN->hold.
+
+
+@pytest.mark.asyncio
+async def test_reverse_flat_buy_zone_opens_short() -> None:
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # BUY zone
+    strategy = _strategy(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    signals = ctx_signals(strategy)
+    assert signals[0][0] == "OPEN"
+    assert signals[0][1]["side"] == "SHORT"
+
+
+@pytest.mark.asyncio
+async def test_reverse_flat_sell_zone_opens_long() -> None:
+    closes = tuple([100.0] * 38 + [150.0, 148.0])  # SELL zone
+    strategy = _strategy(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    signals = ctx_signals(strategy)
+    assert signals[0][0] == "OPEN"
+    assert signals[0][1]["side"] == "LONG"
+
+
+@pytest.mark.asyncio
+async def test_reverse_holding_short_flips_long_on_sell_zone() -> None:
+    # Base: LONG+SELL -> flip SHORT. Mirror: SHORT+SELL -> flip LONG.
+    closes = tuple([100.0] * 38 + [150.0, 148.0])  # SELL zone
+    strategy = strategy_with_short(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}))
+    )
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE", "OPEN"]
+    assert calls[0][1]["reason"] == "FLIP"
+    assert calls[1][1]["side"] == "LONG"
+
+
+@pytest.mark.asyncio
+async def test_reverse_holding_long_flips_short_on_buy_zone() -> None:
+    # Base: SHORT+BUY -> flip LONG. Mirror: LONG+BUY -> flip SHORT.
+    closes = tuple([100.0] * 38 + [50.0, 52.0])  # BUY zone
+    strategy = strategy_with_long(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE", "OPEN"]
+    assert calls[0][1]["reason"] == "FLIP"
+    assert calls[1][1]["side"] == "SHORT"
+
+
+@pytest.mark.asyncio
+async def test_reverse_holding_long_cashes_on_between_zone() -> None:
+    # Base: SHORT+BETWEEN -> CASH. Mirror: LONG+BETWEEN -> CASH.
+    closes = tuple([100.0] * 40)
+    strategy = strategy_with_long(ctx_for(closes, AsyncMock(return_value={"ok": True})))
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    calls = ctx_signals(strategy)
+    assert [c[0] for c in calls] == ["CLOSE"]
+    assert calls[0][1]["reason"] == "CASH"
+    assert strategy._positions == {}
+
+
+@pytest.mark.asyncio
+async def test_reverse_holding_short_holds_on_between_zone() -> None:
+    # Base: LONG+BETWEEN -> hold. Mirror: SHORT+BETWEEN -> hold.
+    closes = tuple([100.0] * 40)
+    strategy = strategy_with_short(
+        ctx_for(closes, AsyncMock(return_value={"ok": True}))
+    )
+    strategy.reverse = True
+    await _scan_task(strategy, closes)
+
+    assert ctx_signals(strategy) == []
+    assert len(strategy._positions) == 1

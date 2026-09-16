@@ -18,7 +18,15 @@ from runner.metrics import RunnerMetrics
 
 
 class StrategyStub:
-    def __init__(self, symbols, tf="15m", bars=2, alpha_id="strategy", retain_bars=None, retain_buffer_bars=0):
+    def __init__(
+        self,
+        symbols,
+        tf="15m",
+        bars=2,
+        alpha_id="strategy",
+        retain_bars=None,
+        retain_buffer_bars=0,
+    ):
         self.symbols = symbols
         self.tf = tf
         self.bars = bars
@@ -26,11 +34,20 @@ class StrategyStub:
         self.retain_bars = retain_bars
         self.retain_buffer_bars = retain_buffer_bars
 
-    def get_warmup_symbols(self): return self.symbols
-    def get_warmup_tfs(self): return [self.tf]
-    def get_warmup_bars(self, tf): return self.bars
-    def get_retain_bars(self, tf): return self.bars if self.retain_bars is None else self.retain_bars
-    def get_retain_buffer_bars(self, tf): return self.retain_buffer_bars
+    def get_warmup_symbols(self):
+        return self.symbols
+
+    def get_warmup_tfs(self):
+        return [self.tf]
+
+    def get_warmup_bars(self, tf):
+        return self.bars
+
+    def get_retain_bars(self, tf):
+        return self.bars if self.retain_bars is None else self.retain_bars
+
+    def get_retain_buffer_bars(self, tf):
+        return self.retain_buffer_bars
 
 
 class SnapshotStub:
@@ -81,10 +98,12 @@ async def test_warmup_union_max_bars_and_buckets():
         return {(r.symbol, r.tf) for r in reqs}
 
     manager = WarmupManager(SharedCandleCache(), backend)
-    reqs = manager.collect_requirements([
-        StrategyStub(["BTCUSDT"], bars=100),
-        StrategyStub(["BTCUSDT"], bars=600),
-    ])
+    reqs = manager.collect_requirements(
+        [
+            StrategyStub(["BTCUSDT"], bars=100),
+            StrategyStub(["BTCUSDT"], bars=600),
+        ]
+    )
 
     assert reqs == {("BTCUSDT", "15m"): 600}
     assert bars_bucket(500) == "le_500"
@@ -170,14 +189,18 @@ async def test_gapped_cache_marks_strategy_unready():
 
     assert manager.strategy_ready(strategy, 0.90) is False
 
-    cache.upsert_candle("BTCUSDT", "15m", {
-        "open_time": 1_000_000 + 2 * TF_MS["15m"],
-        "open": 1,
-        "high": 2,
-        "low": 0,
-        "close": 1,
-        "volume": 1,
-    })
+    cache.upsert_candle(
+        "BTCUSDT",
+        "15m",
+        {
+            "open_time": 1_000_000 + 2 * TF_MS["15m"],
+            "open": 1,
+            "high": 2,
+            "low": 0,
+            "close": 1,
+            "volume": 1,
+        },
+    )
     assert manager.strategy_ready(strategy, 0.90) is True
 
 
@@ -220,7 +243,9 @@ async def test_skip_gap_check_accepts_complete_snapshot_with_session_gaps():
     _seed_gapped_cache(cache)
     assert not cache.verify_no_gaps("VNINDEX", "5m").is_clean
 
-    manager = WarmupManager(cache, backend, snapshot_reader=SnapshotStub({}), skip_gap_check=True)
+    manager = WarmupManager(
+        cache, backend, snapshot_reader=SnapshotStub({}), skip_gap_check=True
+    )
 
     loaded = await manager.request_warmup({("VNINDEX", "5m"): 3})
 
@@ -280,10 +305,12 @@ async def test_partial_snapshot_hit_sends_mds_only_for_missing_symbols():
     snapshot = SnapshotStub({("BTCUSDT", "15m"): _candles(3)})
     manager = WarmupManager(cache, backend, snapshot_reader=snapshot)
 
-    loaded = await manager.request_warmup({
-        ("BTCUSDT", "15m"): 3,
-        ("ETHUSDT", "15m"): 3,
-    })
+    loaded = await manager.request_warmup(
+        {
+            ("BTCUSDT", "15m"): 3,
+            ("ETHUSDT", "15m"): 3,
+        }
+    )
 
     assert loaded == {("BTCUSDT", "15m"), ("ETHUSDT", "15m")}
     assert len(calls) == 1
@@ -337,7 +364,9 @@ async def test_warmup_coalesces_identical_inflight_request():
     manager = WarmupManager(SharedCandleCache(), backend)
     reqs = {("BTCUSDT", "15m"): 2}
 
-    one, two = await asyncio.gather(manager.request_warmup(reqs), manager.request_warmup(reqs))
+    one, two = await asyncio.gather(
+        manager.request_warmup(reqs), manager.request_warmup(reqs)
+    )
 
     assert one == {("BTCUSDT", "15m")}
     assert two == {("BTCUSDT", "15m")}
@@ -346,11 +375,13 @@ async def test_warmup_coalesces_identical_inflight_request():
 
 def test_warmup_groups_missing_by_tf_and_bars_bucket_are_deterministic():
     manager = WarmupManager(SharedCandleCache(), lambda reqs: None)
-    grouped = manager.group_missing_by_bucket([
-        WarmupRequirement("ETHUSDT", "15m", 600),
-        WarmupRequirement("BTCUSDT", "15m", 100),
-        WarmupRequirement("SOLUSDT", "1h", 600),
-    ])
+    grouped = manager.group_missing_by_bucket(
+        [
+            WarmupRequirement("ETHUSDT", "15m", 600),
+            WarmupRequirement("BTCUSDT", "15m", 100),
+            WarmupRequirement("SOLUSDT", "1h", 600),
+        ]
+    )
 
     assert list(grouped) == [("15m", "le_2000"), ("15m", "le_500"), ("1h", "le_2000")]
     assert grouped[("15m", "le_500")] == (WarmupRequirement("BTCUSDT", "15m", 100),)
@@ -358,10 +389,12 @@ def test_warmup_groups_missing_by_tf_and_bars_bucket_are_deterministic():
 
 def test_same_symbol_tf_does_not_appear_in_two_mds_batches_after_max_dedupe():
     manager = WarmupManager(SharedCandleCache(), lambda reqs: None)
-    reqs = manager.collect_requirements([
-        StrategyStub(["BTCUSDT"], bars=400),
-        StrategyStub(["BTCUSDT"], bars=8641),
-    ])
+    reqs = manager.collect_requirements(
+        [
+            StrategyStub(["BTCUSDT"], bars=400),
+            StrategyStub(["BTCUSDT"], bars=8641),
+        ]
+    )
     grouped = manager.group_missing_by_bucket(manager.missing_requirements(reqs))
 
     assert reqs == {("BTCUSDT", "15m"): 8641}
@@ -382,13 +415,15 @@ async def test_warmup_chunks_large_mds_batches_by_symbol_limit():
         max_symbols_per_mds_request=2,
     )
 
-    loaded = await manager.request_warmup({
-        ("BTCUSDT", "15m"): 8641,
-        ("ETHUSDT", "15m"): 8641,
-        ("SOLUSDT", "15m"): 8641,
-        ("XRPUSDT", "15m"): 8641,
-        ("BNBUSDT", "15m"): 8641,
-    })
+    loaded = await manager.request_warmup(
+        {
+            ("BTCUSDT", "15m"): 8641,
+            ("ETHUSDT", "15m"): 8641,
+            ("SOLUSDT", "15m"): 8641,
+            ("XRPUSDT", "15m"): 8641,
+            ("BNBUSDT", "15m"): 8641,
+        }
+    )
 
     assert loaded == {
         ("BTCUSDT", "15m"),
@@ -404,11 +439,15 @@ def test_collect_requirements_aggregates_warmup_and_retention_separately():
     cache = SharedCandleCache()
     manager = WarmupManager(cache, lambda reqs: None)
 
-    reqs = manager.collect_requirements([
-        StrategyStub(["BTCUSDT"], bars=8000, retain_bars=8000),
-        StrategyStub(["BTCUSDT"], bars=1000, retain_bars=600, retain_buffer_bars=50),
-        StrategyStub(["ETHUSDT"], bars=500),
-    ])
+    reqs = manager.collect_requirements(
+        [
+            StrategyStub(["BTCUSDT"], bars=8000, retain_bars=8000),
+            StrategyStub(
+                ["BTCUSDT"], bars=1000, retain_bars=600, retain_buffer_bars=50
+            ),
+            StrategyStub(["ETHUSDT"], bars=500),
+        ]
+    )
 
     assert reqs == {
         ("BTCUSDT", "15m"): 8000,
@@ -565,10 +604,12 @@ async def test_partial_backend_result_keeps_received_candles_and_marks_partial()
     cache = SharedCandleCache()
     manager = WarmupManager(cache, backend, metrics=metrics)
 
-    loaded = await manager.request_warmup({
-        ("BTCUSDT", "15m"): 2,
-        ("ETHUSDT", "15m"): 2,
-    })
+    loaded = await manager.request_warmup(
+        {
+            ("BTCUSDT", "15m"): 2,
+            ("ETHUSDT", "15m"): 2,
+        }
+    )
 
     assert loaded == {("BTCUSDT", "15m")}
     assert cache.get_bar_count("BTCUSDT", "15m") == 2
@@ -595,21 +636,27 @@ class FakeRedis:
     def __init__(self):
         self.xadds = []
 
-    def xadd(self, stream, fields):
-        self.xadds.append((stream, fields))
+    def xadd(self, stream, fields, **kwargs):
+        self.xadds.append((stream, fields, kwargs))
 
     def xread(self, streams, count=None, block=None):
         response_stream = next(iter(streams))
-        _stream, request = self.xadds[-1]
+        _stream, request, _kwargs = self.xadds[-1]
         expected_stream = request["response_stream"]
         if response_stream != expected_stream:
             return []
         entries = []
         for index, symbol in enumerate(request["symbols"].split(","), start=1):
-            entries.append((
-                f"{index}-0",
-                {"symbol": symbol, "tf": request["tf"], "candles": json.dumps(_candles(int(request["bars"])))},
-            ))
+            entries.append(
+                (
+                    f"{index}-0",
+                    {
+                        "symbol": symbol,
+                        "tf": request["tf"],
+                        "candles": json.dumps(_candles(int(request["bars"]))),
+                    },
+                )
+            )
         return [(response_stream, entries[:count])]
 
 
@@ -631,6 +678,26 @@ def test_mds_request_contract_matches_existing_consumer_fields():
     assert fields["symbols"] == "BTCUSDT,ETHUSDT"
     assert json.loads(fields["symbols_json"]) == ["BTCUSDT", "ETHUSDT"]
     assert symbols == ["BTCUSDT", "ETHUSDT"]
+
+
+@pytest.mark.asyncio
+async def test_mds_request_xadd_bounds_request_stream():
+    # warmup:request:{exchange} grew unbounded (XLEN 5k+, TTL=-1); the XADD
+    # must carry an approximate maxlen trim.
+    redis = FakeRedis()
+    backend = MDSWarmupBackend(redis, "binance", "runner-1", timeout_sec=1.0)
+
+    await backend((WarmupRequirement("BTCUSDT", "15m", 2),))
+
+    stream, fields, kwargs = redis.xadds[-1]
+    assert stream == "warmup:request:binance"
+    assert kwargs.get("maxlen") is not None
+    assert kwargs["maxlen"] > 0
+    assert kwargs.get("approximate") is True
+    assert fields["symbols"] == "BTCUSDT"
+    assert fields["tf"] == "15m"
+    assert fields["bars"] == "2"
+    assert fields["response_stream"].startswith("warmup:response:runner-1:warmup:")
 
 
 @pytest.mark.asyncio
@@ -661,8 +728,32 @@ from runner.data_layer.mds_ready import ReadySignal
 async def test_verify_timestamp_sync_passes_when_within_tolerance():
     cache = SharedCandleCache()
     for i in range(10):
-        cache.upsert_candle("BTCUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
-        cache.upsert_candle("ETHUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+        cache.upsert_candle(
+            "BTCUSDT",
+            "15m",
+            {
+                "open_time": 1000 + i * 900_000,
+                "open": 1,
+                "high": 2,
+                "low": 0.5,
+                "close": 1.5,
+                "volume": 100,
+                "confirmed": True,
+            },
+        )
+        cache.upsert_candle(
+            "ETHUSDT",
+            "15m",
+            {
+                "open_time": 1000 + i * 900_000,
+                "open": 1,
+                "high": 2,
+                "low": 0.5,
+                "close": 1.5,
+                "volume": 100,
+                "confirmed": True,
+            },
+        )
 
     async def noop_backend(reqs):
         return set()
@@ -676,8 +767,32 @@ async def test_verify_timestamp_sync_passes_when_within_tolerance():
 async def test_verify_timestamp_sync_detects_skew():
     cache = SharedCandleCache()
     for i in range(10):
-        cache.upsert_candle("BTCUSDT", "15m", {"open_time": 1000 + i * 900_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
-    cache.upsert_candle("ETHUSDT", "15m", {"open_time": 1000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True})
+        cache.upsert_candle(
+            "BTCUSDT",
+            "15m",
+            {
+                "open_time": 1000 + i * 900_000,
+                "open": 1,
+                "high": 2,
+                "low": 0.5,
+                "close": 1.5,
+                "volume": 100,
+                "confirmed": True,
+            },
+        )
+    cache.upsert_candle(
+        "ETHUSDT",
+        "15m",
+        {
+            "open_time": 1000,
+            "open": 1,
+            "high": 2,
+            "low": 0.5,
+            "close": 1.5,
+            "volume": 100,
+            "confirmed": True,
+        },
+    )
 
     async def noop_backend(reqs):
         return set()
@@ -690,14 +805,19 @@ async def test_verify_timestamp_sync_detects_skew():
 @pytest.mark.asyncio
 async def test_classify_symbols_excludes_insufficient():
     cache = SharedCandleCache()
+
     async def noop_backend(reqs):
         return set()
 
     manager = WarmupManager(cache, noop_backend)
     signals = {
         "15m": ReadySignal(
-            tf="15m", exchange="binance", timestamp=0,
-            complete_count=2, partial_count=1, insufficient_count=1,
+            tf="15m",
+            exchange="binance",
+            timestamp=0,
+            complete_count=2,
+            partial_count=1,
+            insufficient_count=1,
             partial_symbols={"SOLUSDT": 0.71},
             insufficient_symbols=["NEWUSDT"],
         ),
@@ -711,14 +831,19 @@ async def test_classify_symbols_excludes_insufficient():
 @pytest.mark.asyncio
 async def test_classify_symbols_excludes_low_partial():
     cache = SharedCandleCache()
+
     async def noop_backend(reqs):
         return set()
 
     manager = WarmupManager(cache, noop_backend)
     signals = {
         "15m": ReadySignal(
-            tf="15m", exchange="binance", timestamp=0,
-            complete_count=2, partial_count=1, insufficient_count=0,
+            tf="15m",
+            exchange="binance",
+            timestamp=0,
+            complete_count=2,
+            partial_count=1,
+            insufficient_count=0,
             partial_symbols={"SOLUSDT": 0.40},
             insufficient_symbols=[],
         ),
@@ -745,18 +870,31 @@ async def test_run_synced_warmup_classifies_and_sets_baseline():
     async def backend(reqs):
         for r in reqs:
             for i in range(3):
-                cache.upsert_candle(r.symbol, r.tf, {
-                    "open_time": 1000 + i * 900_000, "open": 1, "high": 2,
-                    "low": 0.5, "close": 1.5, "volume": 100, "confirmed": True,
-                })
+                cache.upsert_candle(
+                    r.symbol,
+                    r.tf,
+                    {
+                        "open_time": 1000 + i * 900_000,
+                        "open": 1,
+                        "high": 2,
+                        "low": 0.5,
+                        "close": 1.5,
+                        "volume": 100,
+                        "confirmed": True,
+                    },
+                )
         return {(r.symbol, r.tf) for r in reqs}
 
     manager = WarmupManager(cache, backend)
 
     signals = {
         "15m": ReadySignal(
-            tf="15m", exchange="binance", timestamp=0,
-            complete_count=2, partial_count=0, insufficient_count=1,
+            tf="15m",
+            exchange="binance",
+            timestamp=0,
+            complete_count=2,
+            partial_count=0,
+            insufficient_count=1,
             partial_symbols={},
             insufficient_symbols=["NEWUSDT"],
         ),
@@ -782,8 +920,22 @@ async def test_run_synced_warmup_logs_gap_warnings():
     backend.handles_timeout = True
     backend.return_value = {
         ("BTCUSDT", "1m"): [
-            {"open_time": 60_000, "open": 1, "high": 2, "low": 0.5, "close": 1.5, "volume": 100},
-            {"open_time": 240_000, "open": 2, "high": 3, "low": 1.5, "close": 2.5, "volume": 200},
+            {
+                "open_time": 60_000,
+                "open": 1,
+                "high": 2,
+                "low": 0.5,
+                "close": 1.5,
+                "volume": 100,
+            },
+            {
+                "open_time": 240_000,
+                "open": 2,
+                "high": 3,
+                "low": 1.5,
+                "close": 2.5,
+                "volume": 200,
+            },
         ]
     }
 
@@ -798,7 +950,6 @@ async def test_run_synced_warmup_logs_gap_warnings():
         )
 
     gap_calls = [
-        call for call in mock_logger.warning.call_args_list
-        if "GAP-CHECK" in str(call)
+        call for call in mock_logger.warning.call_args_list if "GAP-CHECK" in str(call)
     ]
     assert len(gap_calls) > 0

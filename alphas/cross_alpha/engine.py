@@ -38,10 +38,19 @@ class CrossSectionalEngine(BaseEngine):
         self._strategy_leverage = 0.0
         self._last_pnl_publish: dict[str, float] = {}
         self._pnl_channel = f"pnl:{self.alpha_id}"
-        self.book_only = bool(getattr(self.spec, "book_only", False) or getattr(settings, "BOOK_ONLY", False))
+        self.book_only = bool(
+            getattr(self.spec, "book_only", False)
+            or getattr(settings, "BOOK_ONLY", False)
+        )
         self._book_revision = 0
-        self._book_store = TargetBookStore(signal_push._r) if self.book_only and signal_push._r is not None else None
-        self._columns_config_path = os.path.join(os.path.dirname(settings.SPEC_FILE), "config.toml")
+        self._book_store = (
+            TargetBookStore(signal_push._r)
+            if self.book_only and signal_push._r is not None
+            else None
+        )
+        self._columns_config_path = os.path.join(
+            os.path.dirname(settings.SPEC_FILE), "config.toml"
+        )
         # Peak-equity / drawdown tracking, driving the ensemble overlay's
         # drawdown_throttle step (see cross_alpha/overlay.py). Kept here
         # (stateful, per-alpha) rather than in strategy.py/overlay.py, which
@@ -70,7 +79,9 @@ class CrossSectionalEngine(BaseEngine):
 
     async def on_warmup_complete(self) -> None:
         """Bootstrap portfolio returns from historical candles so vol is estimated on first live candle."""
-        deadline = time.time() + float(getattr(self.settings, "INITIAL_DATA_TIMEOUT_SEC", 300.0))
+        deadline = time.time() + float(
+            getattr(self.settings, "INITIAL_DATA_TIMEOUT_SEC", 300.0)
+        )
         while not self.symbol_data and time.time() < deadline:
             await asyncio.sleep(1)
         if not self.symbol_data:
@@ -80,7 +91,8 @@ class CrossSectionalEngine(BaseEngine):
         if not snapshot:
             self._logger.warning(
                 "[%s] Vol bootstrap: no snapshot data (symbol_data=%d)",
-                self.alpha_id, len(self.symbol_data),
+                self.alpha_id,
+                len(self.symbol_data),
             )
             return
 
@@ -89,7 +101,10 @@ class CrossSectionalEngine(BaseEngine):
         n_bars = len(close_df)
         self._logger.info(
             "[%s] Vol bootstrap: symbol_data=%d snapshot=%d bars=%d",
-            self.alpha_id, len(self.symbol_data), len(snapshot), n_bars,
+            self.alpha_id,
+            len(self.symbol_data),
+            len(snapshot),
+            n_bars,
         )
         if n_bars < 3:
             return
@@ -99,7 +114,10 @@ class CrossSectionalEngine(BaseEngine):
         if replay_bars < 2:
             self._logger.info(
                 "[%s] Vol bootstrap skipped: %d replay bars (bars=%d, required=%d)",
-                self.alpha_id, replay_bars, n_bars, self.spec.required_bars,
+                self.alpha_id,
+                replay_bars,
+                n_bars,
+                self.spec.required_bars,
             )
             return
 
@@ -111,8 +129,10 @@ class CrossSectionalEngine(BaseEngine):
             sub_panel = {k: v.iloc[: i + 1] for k, v in panel.items()}
             try:
                 selection = select_positions(
-                    sub_panel, self.spec,
-                    member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+                    sub_panel,
+                    self.spec,
+                    member_specs=self._member_specs,
+                    current_drawdown=self._current_drawdown(),
                 )
             except Exception:
                 continue
@@ -143,7 +163,9 @@ class CrossSectionalEngine(BaseEngine):
 
         self._logger.info(
             "[%s] Vol bootstrap done: %d returns, leverage=%.4f (fixed=max_leverage)",
-            self.alpha_id, bootstrapped, self._strategy_leverage,
+            self.alpha_id,
+            bootstrapped,
+            self._strategy_leverage,
         )
 
     def on_position_reconciled(self, position: dict, mode: str) -> None:
@@ -181,17 +203,20 @@ class CrossSectionalEngine(BaseEngine):
             pnl_pct = (entry - price) / entry
         else:
             return
-        payload = json.dumps({
-            "alpha_id": self.alpha_id,
-            "symbol": symbol,
-            "side": pos_side,
-            "entry_price": entry,
-            "current_price": price,
-            "pnl_pct": round(pnl_pct, 6),
-            "weight": float(pos.get("weight", 0.0)),
-            "timestamp": int(now * 1000),
-        })
+        payload = json.dumps(
+            {
+                "alpha_id": self.alpha_id,
+                "symbol": symbol,
+                "side": pos_side,
+                "entry_price": entry,
+                "current_price": price,
+                "pnl_pct": round(pnl_pct, 6),
+                "weight": float(pos.get("weight", 0.0)),
+                "timestamp": int(now * 1000),
+            }
+        )
         from base import signal_push
+
         if signal_push._r is not None:
             try:
                 signal_push._r.publish(self._pnl_channel, payload)
@@ -207,7 +232,9 @@ class CrossSectionalEngine(BaseEngine):
             except asyncio.CancelledError:
                 break
             except Exception as exc:
-                logger.error("[%s] Scan failed: %s", self.spec.alpha_id, exc, exc_info=True)
+                logger.error(
+                    "[%s] Scan failed: %s", self.spec.alpha_id, exc, exc_info=True
+                )
                 await asyncio.sleep(1)
 
     async def _wait_until_next_candle_offset(self) -> None:
@@ -240,7 +267,11 @@ class CrossSectionalEngine(BaseEngine):
         if latest <= self._last_processed_candle:
             return
 
-        prices = {symbol: float(row["close"][-1]) for symbol, row in snapshot.items() if row["close"]}
+        prices = {
+            symbol: float(row["close"][-1])
+            for symbol, row in snapshot.items()
+            if row["close"]
+        }
         self._record_portfolio_return(prices)
 
         tf_ms = self._tf_to_ms(self.spec.timeframe)
@@ -248,7 +279,8 @@ class CrossSectionalEngine(BaseEngine):
             if not is_midnight_close_utc(latest, tf_ms):
                 self._logger.debug(
                     "[%s] scan SKIP: waiting for 00:00 UTC close (candle_open=%d)",
-                    self.config.ALPHA_ID, latest,
+                    self.config.ALPHA_ID,
+                    latest,
                 )
                 self._last_prices = prices
                 self._last_processed_candle = latest
@@ -266,40 +298,54 @@ class CrossSectionalEngine(BaseEngine):
         close_df = panel["close"]
         self._logger.info(
             "[DIAG] panel shape=%s symbols=%d total_nan_close=%d rows_with_all_nan=%d",
-            close_df.shape, len(close_df.columns), int(close_df.isna().sum().sum()),
+            close_df.shape,
+            len(close_df.columns),
+            int(close_df.isna().sum().sum()),
             int((close_df.notna().sum(axis=1) == 0).sum()),
         )
         if close_df.shape[0] > 1920:
             row_neg1921 = close_df.iloc[-1921]
             self._logger.info(
                 "[DIAG] row[-1921] valid=%d/%d sample_nan=%s",
-                int(row_neg1921.notna().sum()), len(row_neg1921),
+                int(row_neg1921.notna().sum()),
+                len(row_neg1921),
                 sorted(row_neg1921[row_neg1921.isna()].index.tolist())[:5],
             )
 
         selection = select_positions(
-            panel, self.spec,
-            member_specs=self._member_specs, current_drawdown=self._current_drawdown(),
+            panel,
+            self.spec,
+            member_specs=self._member_specs,
+            current_drawdown=self._current_drawdown(),
         )
         self._logger.info(
             "[SIGNAL_AUDIT] %s",
-            json.dumps({
-                "alpha_id": self.spec.alpha_id,
-                "timeframe": self.spec.timeframe,
-                "signal_candle_open_ms": latest,
-                "is_rebalance": is_rebalance,
-                "signal": self.spec.signal,
-                "params": self.spec.params,
-                "long_threshold": self.spec.long_threshold,
-                "short_threshold": self.spec.short_threshold,
-                "symbols": selection.indicators,
-            }, separators=(",", ":"), allow_nan=False),
+            json.dumps(
+                {
+                    "alpha_id": self.spec.alpha_id,
+                    "timeframe": self.spec.timeframe,
+                    "signal_candle_open_ms": latest,
+                    "is_rebalance": is_rebalance,
+                    "signal": self.spec.signal,
+                    "params": self.spec.params,
+                    "long_threshold": self.spec.long_threshold,
+                    "short_threshold": self.spec.short_threshold,
+                    "symbols": selection.indicators,
+                },
+                separators=(",", ":"),
+                allow_nan=False,
+            ),
         )
         self._apply_selection(selection, prices, latest)
         self._logger.info(
             "[%s] Decision applied at %d: long=%d short=%d gross=%.3f net=%.6f rebalance=%s",
-            self.spec.alpha_id, latest, len(selection.longs), len(selection.shorts),
-            selection.diagnostics["gross"], selection.diagnostics["net"], is_rebalance,
+            self.spec.alpha_id,
+            latest,
+            len(selection.longs),
+            len(selection.shorts),
+            selection.diagnostics["gross"],
+            selection.diagnostics["net"],
+            is_rebalance,
         )
 
         self._last_prices = prices
@@ -317,8 +363,10 @@ class CrossSectionalEngine(BaseEngine):
         ret = gross - self._pending_cost
         self._portfolio_returns.append(ret)
         self._pending_cost = 0.0
-        self._portfolio_returns = self._portfolio_returns[-max(self.spec.vol_lookback * 2, 10):]
-        self._equity *= (1.0 + ret)
+        self._portfolio_returns = self._portfolio_returns[
+            -max(self.spec.vol_lookback * 2, 10) :
+        ]
+        self._equity *= 1.0 + ret
         if self._equity > self._peak_equity:
             self._peak_equity = self._equity
 
@@ -329,7 +377,7 @@ class CrossSectionalEngine(BaseEngine):
 
     def _vol_target_leverage(self) -> float:
         minimum = max(2, self.spec.vol_lookback // 2)
-        values = self._portfolio_returns[-self.spec.vol_lookback:]
+        values = self._portfolio_returns[-self.spec.vol_lookback :]
         if len(values) < minimum:
             return self._strategy_leverage
         mean = sum(values) / len(values)
@@ -339,7 +387,9 @@ class CrossSectionalEngine(BaseEngine):
             return 0.0
         return min(self.spec.max_leverage, self.spec.target_vol / rv)
 
-    def _apply_selection(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+    def _apply_selection(
+        self, selection: Selection, prices: dict[str, float], candle_open_ms: int
+    ) -> None:
         if self.book_only:
             self._base_weights = dict(selection.weights)
             self._publish_target_book(selection, prices, candle_open_ms)
@@ -349,11 +399,21 @@ class CrossSectionalEngine(BaseEngine):
         # Quantity modification is not supported by the paper worker. Closing and
         # reopening the rebalance basket preserves target quantities and sides.
         for symbol, pos in list(self._open_positions.items()):
-            self.push_signal("CLOSE", position_id=pos["position_id"], exit_price=prices.get(symbol, pos["entry"]), reason="REBALANCE")
+            self.push_signal(
+                "CLOSE",
+                position_id=pos["position_id"],
+                exit_price=prices.get(symbol, pos["entry"]),
+                reason="REBALANCE",
+            )
             self._open_positions.pop(symbol, None)
 
         symbols = set(self._base_weights) | set(selection.weights)
-        turnover = sum(abs(selection.weights.get(symbol, 0.0) - self._base_weights.get(symbol, 0.0)) for symbol in symbols)
+        turnover = sum(
+            abs(
+                selection.weights.get(symbol, 0.0) - self._base_weights.get(symbol, 0.0)
+            )
+            for symbol in symbols
+        )
         self._pending_cost = turnover * self.spec.fee_bps / 10_000
         self._strategy_leverage = self._vol_target_leverage()
         self._base_weights = dict(selection.weights)
@@ -368,6 +428,16 @@ class CrossSectionalEngine(BaseEngine):
                 continue
             price = prices.get(symbol)
             if not price or price <= 0:
+                continue
+            if not math.isfinite(weight):
+                # NaN weight -> NaN qty ("nan" in the OPEN payload, NULL in
+                # SQLite, equity-collector TypeError). Skip the symbol.
+                logger.warning(
+                    "[%s] skipping %s: non-finite weight %r",
+                    self.alpha_id,
+                    symbol,
+                    weight,
+                )
                 continue
             side = "LONG" if weight > 0 else "SHORT"
             notional = self.settings.CAPITAL * abs(weight) * self._strategy_leverage
@@ -393,20 +463,26 @@ class CrossSectionalEngine(BaseEngine):
                 position_id=position_id,
                 exchange=self.settings.EXCHANGE,
                 fee_pct=self.spec.fee_bps / 10_000,
-                metadata=json.dumps({
-                    "score": selection.scores.get(symbol),
-                    "rank": selection.ranks.get(symbol),
-                    "weight": weight,
-                    "strategy_leverage": self._strategy_leverage,
-                    **selection.diagnostics,
-                }),
+                metadata=json.dumps(
+                    {
+                        "score": selection.scores.get(symbol),
+                        "rank": selection.ranks.get(symbol),
+                        "weight": weight,
+                        "strategy_leverage": self._strategy_leverage,
+                        **selection.diagnostics,
+                    }
+                ),
                 timestamp=datetime.now(timezone.utc).isoformat(),
             )
         self.mark_positions_changed()
 
-    def _publish_target_book(self, selection: Selection, prices: dict[str, float], candle_open_ms: int) -> None:
+    def _publish_target_book(
+        self, selection: Selection, prices: dict[str, float], candle_open_ms: int
+    ) -> None:
         if self._book_store is None:
-            logger.error("[%s] BOOK_ONLY configured but Redis is unavailable", self.alpha_id)
+            logger.error(
+                "[%s] BOOK_ONLY configured but Redis is unavailable", self.alpha_id
+            )
             return
         self._book_revision += 1
         book = TargetBook.create(
@@ -419,7 +495,11 @@ class CrossSectionalEngine(BaseEngine):
                 "n_long": len(selection.longs),
                 "n_short": len(selection.shorts),
                 "book_only": True,
-                "prices": {symbol: float(prices[symbol]) for symbol in selection.weights if symbol in prices},
+                "prices": {
+                    symbol: float(prices[symbol])
+                    for symbol in selection.weights
+                    if symbol in prices
+                },
                 "diagnostics": selection.diagnostics,
             },
         )

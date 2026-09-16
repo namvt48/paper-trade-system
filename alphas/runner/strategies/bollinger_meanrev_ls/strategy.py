@@ -42,6 +42,17 @@ from typing import Any
 from runner.strategy.base import Strategy
 
 D1_MS = 24 * 60 * 60 * 1000
+_TF_MS = {
+    "1m": 60_000,
+    "3m": 180_000,
+    "5m": 300_000,
+    "15m": 900_000,
+    "30m": 1_800_000,
+    "1h": 3_600_000,
+    "2h": 7_200_000,
+    "4h": 14_400_000,
+    "1d": D1_MS,
+}
 POSITION_NAMESPACE = uuid.UUID("7a1e8c3f-2b6d-4e9a-8f5c-1d3a6b9c2e7f")
 
 ZONE_BUY = "BUY"
@@ -97,10 +108,22 @@ def _zone_from_closes(closes: tuple[float, ...], period: int = 20) -> str | None
 
 
 class BollingerMeanRevLsRunnerStrategy(Strategy):
-    """Long+short flip on 1d Bollinger lower/upper-band Z-score mean reversion."""
+    """Long+short flip on Bollinger lower/upper-band Z-score mean reversion.
+
+    Default timeframe ``1d`` (original behavior). ``params.tf`` runs the same
+    logic on another TF (e.g. ``15m``). ``params.reverse`` swaps every
+    LONG<->SHORT decision (exact mirror of the base transition table,
+    including the BETWEEN asymmetry: LONG+BETWEEN->hold becomes
+    SHORT+BETWEEN->hold, SHORT+BETWEEN->CASH becomes LONG+BETWEEN->CASH).
+    """
 
     def __init__(self, alpha_id: str, version: str, params: dict, ctx) -> None:
         super().__init__(alpha_id, version, params, ctx)
+        self.tf = str(params.get("tf", "1d"))
+        if self.tf not in _TF_MS:
+            raise ValueError(f"unsupported tf: {self.tf}")
+        self.tf_ms = _TF_MS[self.tf]
+        self.reverse = bool(params.get("reverse", False))
         self.bb_period = int(params.get("bb_period", 20))
         self.z_entry_buy = float(params.get("z_entry_buy", -2.0))
         self.z_entry_sell = float(params.get("z_entry_sell", 0.0))
@@ -113,21 +136,21 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
         self.position_fraction = float(params.get("position_fraction", 1.0))
         self.fee_pct = float(params.get("fee_pct", 0.00035))
         self.start_year = int(params.get("start_year", 2024))
-        self.d1_warmup_bars = int(params.get("warmup_bars", 60))
-        self.retain_bars = int(params.get("retain_bars", self.d1_warmup_bars))
-        self.min_d1_bars = int(params.get("min_d1_bars", self.bb_period + 4))
+        self.tf_warmup_bars = int(params.get("warmup_bars", 60))
+        self.retain_bars = int(params.get("retain_bars", self.tf_warmup_bars))
+        self.min_tf_bars = int(params.get("min_tf_bars", self.bb_period + 4))
         self.timestamp_semantics = str(
             params.get("timestamp_semantics", "open")
         ).lower()
         if self.timestamp_semantics not in {"open", "close"}:
             raise ValueError("timestamp_semantics must be 'open' or 'close'")
-        self._last_1d_open: int | None = None
-        self._pending_1d_open: int | None = None
+        self._last_bar_open: int | None = None
+        self._pending_bar_open: int | None = None
         self._positions: dict[str, dict[str, Any]] = self._load_positions()
 
     @classmethod
     def get_required_channels(cls, params: dict) -> list[str]:
-        return ["kline:1d"]
+        return [f"kline:{str(params.get('tf', '1d'))}"]
 
     def get_required_channels_instance(self) -> list[str]:
         return self.__class__.get_required_channels(self.params)
@@ -136,10 +159,10 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
         return [self.symbol]
 
     def get_warmup_tfs(self) -> list[str]:
-        return ["1d"]
+        return [self.tf]
 
     def get_warmup_bars(self, tf: str) -> int:
-        return self.d1_warmup_bars
+        return self.tf_warmup_bars
 
     def get_retain_bars(self, tf: str) -> int:
         return max(self.get_warmup_bars(tf), self.retain_bars)
@@ -167,18 +190,18 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
         latest = self.ctx.cache.get_latest_timestamp(self.symbol, tf)
         if latest is None:
             return False
-        if tf == "1d":
-            open_ms = self._bar_open_ms(latest, D1_MS)
-            if self._last_1d_open is not None and open_ms <= self._last_1d_open:
+        if tf == self.tf:
+            open_ms = self._bar_open_ms(latest, self.tf_ms)
+            if self._last_bar_open is not None and open_ms <= self._last_bar_open:
                 return False
-            self._pending_1d_open = open_ms
+            self._pending_bar_open = open_ms
             return True
         return False
 
     async def scan(self) -> None:
-        if self._pending_1d_open is not None:
-            await self._scan_1d(self._pending_1d_open)
-            self._pending_1d_open = None
+        if self._pending_bar_open is not None:
+            await self._scan_tf(self._pending_bar_open)
+            self._pending_bar_open = None
         self._persist_positions()
 
     async def manage_positions(self) -> None:
@@ -230,7 +253,7 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
 
     def _series(self, tf: str, bars: int) -> CandleSeries:
         snapshot = self.ctx.cache.snapshot(self.symbol, tf, bars)
-        times = tuple(self._bar_open_ms(t, D1_MS) for t in snapshot.times)
+        times = tuple(self._bar_open_ms(t, _TF_MS[tf]) for t in snapshot.times)
         return CandleSeries(
             tuple(snapshot.opens),
             tuple(snapshot.highs),
@@ -243,10 +266,10 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
     def _bar_year(open_ms: int) -> int:
         return datetime.fromtimestamp(open_ms / 1000, tz=timezone.utc).year
 
-    async def _scan_1d(self, candle_open_ms: int) -> None:
-        series = self._series("1d", self.get_retain_bars("1d"))
+    async def _scan_tf(self, candle_open_ms: int) -> None:
+        series = self._series(self.tf, self.get_retain_bars(self.tf))
         if (
-            len(series.closes) < self.min_d1_bars + 1
+            len(series.closes) < self.min_tf_bars + 1
             or not series.times
             or series.times[-1] != candle_open_ms
         ):
@@ -258,10 +281,10 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
         if zone is None:
             return
 
-        if self._last_1d_open is None:
-            self._last_1d_open = candle_open_ms
+        if self._last_bar_open is None:
+            self._last_bar_open = candle_open_ms
             return
-        self._last_1d_open = candle_open_ms
+        self._last_bar_open = candle_open_ms
 
         position = self._existing_position()
 
@@ -274,37 +297,42 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
                 )
             return
 
+        # reverse=true swaps every LONG<->SHORT decision below (exact mirror
+        # of the base transition table, BETWEEN asymmetry included).
+        long_side = "SHORT" if self.reverse else "LONG"
+        short_side = "LONG" if self.reverse else "SHORT"
+
         # ---- flat + zone -> open raw position in that direction ----
         if position is None:
             if zone == ZONE_BUY:
-                await self._open_position("LONG", execution_price, candle_open_ms)
+                await self._open_position(long_side, execution_price, candle_open_ms)
             elif zone == ZONE_SELL:
-                await self._open_position("SHORT", execution_price, candle_open_ms)
+                await self._open_position(short_side, execution_price, candle_open_ms)
             return
 
         # ---- holding a position ----
         side = str(position.get("side", "")).upper()
-        if side == "LONG":
-            # LONG + SELL zone -> flip to SHORT
+        if side == long_side:
+            # long_side + SELL zone -> flip to short_side
             if zone == ZONE_SELL:
                 await self._close_position(
                     position, "FLIP", execution_price, candle_open_ms
                 )
-                await self._open_position("SHORT", execution_price, candle_open_ms)
-            # LONG + BUY/BETWEEN -> hold
-        elif side == "SHORT":
-            # SHORT + BUY zone -> flip to LONG
+                await self._open_position(short_side, execution_price, candle_open_ms)
+            # long_side + BUY/BETWEEN -> hold
+        elif side == short_side:
+            # short_side + BUY zone -> flip to long_side
             if zone == ZONE_BUY:
                 await self._close_position(
                     position, "FLIP", execution_price, candle_open_ms
                 )
-                await self._open_position("LONG", execution_price, candle_open_ms)
-            # SHORT + BETWEEN zone -> close to cash
+                await self._open_position(long_side, execution_price, candle_open_ms)
+            # short_side + BETWEEN zone -> close to cash
             elif zone == ZONE_BETWEEN:
                 await self._close_position(
                     position, "CASH", execution_price, candle_open_ms
                 )
-            # SHORT + SELL zone -> hold
+            # short_side + SELL zone -> hold
 
     async def _open_position(
         self, side: str, entry: float, candle_open_ms: int
@@ -360,7 +388,7 @@ class BollingerMeanRevLsRunnerStrategy(Strategy):
             leverage=self.leverage,
             exchange=self.exchange,
             fee_pct=self.fee_pct,
-            tf="1d",
+            tf=self.tf,
             signal_candle_open_ms=candle_open_ms,
             metadata=json.dumps(metadata, sort_keys=True),
         )

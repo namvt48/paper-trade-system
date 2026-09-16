@@ -57,5 +57,5 @@ alphas:
   - alpha_id: short-btc-v1
     strategy: legacy_standalone
     version: "1"
-    enabled: true
+    enabled: false
     params: {alpha_dir: short-btc-v1, tf: 15m, htf: 1d, symbols: [BTCUSDT], warmup_bars: 500, retain_bars: 1000, htf_warmup_bars: 90, htf_retain_bars: 90, include_1m: false, scan_on_tfs: [15m], exchange: binance}

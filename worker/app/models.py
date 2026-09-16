@@ -1,3 +1,4 @@
+import math
 from dataclasses import dataclass, field
 from enum import Enum
 from typing import Optional
@@ -69,6 +70,25 @@ def _to_float(data: dict, key: str) -> Optional[float]:
     return float(val)
 
 
+def _to_finite_float(
+    data: dict, key: str, signal_type: str, ref: str
+) -> Optional[float]:
+    """Parse an optional float, rejecting NaN/inf instead of passing them through.
+
+    NaN is truthy, so the old ``_to_float(...) or 0.0`` guard never fired for
+    it: a NaN qty reached SQLite, which coerced it to NULL, and the equity
+    collector then died with a TypeError on every tick. Fail loud here at the
+    trust boundary instead.
+    """
+    raw = data.get(key)
+    val = _to_float(data, key)
+    if val is None:
+        return None
+    if not math.isfinite(val):
+        raise ValueError(f"{signal_type} has non-finite {key} for {ref}: {raw!r}")
+    return val
+
+
 def _to_int(data: dict, key: str, default: int = 1) -> int:
     val = data.get(key)
     if val is None or val == "":
@@ -84,14 +104,15 @@ def parse_signal(data: dict):
         raise ValueError(f"Unknown signal type: {signal_type}")
 
     if st == SignalType.OPEN:
+        symbol = data["symbol"]
         return OpenSignal(
             type=st,
             alpha_id=data["alpha_id"],
             signal_id=data["signal_id"],
-            symbol=data["symbol"],
+            symbol=symbol,
             side=data["side"],
-            entry=_to_float(data, "entry") or 0.0,
-            qty=_to_float(data, "qty") or 0.0,
+            entry=_to_finite_float(data, "entry", "OPEN", symbol) or 0.0,
+            qty=_to_finite_float(data, "qty", "OPEN", symbol) or 0.0,
             timestamp=data.get("timestamp", ""),
             tp=_to_float(data, "tp"),
             sl=_to_float(data, "sl"),
@@ -121,7 +142,7 @@ def parse_signal(data: dict):
             reason=data.get("reason", "SIGNAL"),
             timestamp=data.get("timestamp", ""),
             exit_price=_to_float(data, "exit_price"),
-            qty=_to_float(data, "qty"),
+            qty=_to_finite_float(data, "qty", "CLOSE", data.get("position_id", "")),
             metadata=data.get("metadata", "{}"),
         )
     elif st == SignalType.REGISTER_COLUMNS:

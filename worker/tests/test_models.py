@@ -103,6 +103,51 @@ def test_parse_unknown_type():
         parse_signal({"type": "UNKNOWN", "alpha_id": "x"})
 
 
+def _open_payload(**overrides):
+    data = {
+        "type": "OPEN",
+        "alpha_id": "cross-15m",
+        "signal_id": "sig-nan-001",
+        "symbol": "ZORAUSDT",
+        "side": "LONG",
+        "entry": "0.05",
+        "qty": "0.5",
+        "timestamp": "2026-09-10T00:00:00Z",
+    }
+    data.update(overrides)
+    return data
+
+
+def test_parse_open_signal_rejects_nan_qty():
+    # Regression: NaN is truthy, so `_to_float(...) or 0.0` let "nan" through;
+    # SQLite stored it as NULL and the equity collector died every tick.
+    with pytest.raises(ValueError, match="non-finite qty"):
+        parse_signal(_open_payload(qty="nan"))
+
+
+def test_parse_open_signal_rejects_inf_qty():
+    with pytest.raises(ValueError, match="non-finite qty"):
+        parse_signal(_open_payload(qty="inf"))
+
+
+def test_parse_open_signal_rejects_nan_entry():
+    with pytest.raises(ValueError, match="non-finite entry"):
+        parse_signal(_open_payload(entry="nan"))
+
+
+def test_parse_close_signal_rejects_nan_qty(sample_close_signal):
+    sample_close_signal["qty"] = "nan"
+    with pytest.raises(ValueError, match="non-finite qty"):
+        parse_signal(sample_close_signal)
+
+
+def test_parse_close_signal_missing_qty_stays_none(sample_close_signal):
+    sample_close_signal.pop("qty", None)
+    signal = parse_signal(sample_close_signal)
+    assert isinstance(signal, CloseSignal)
+    assert signal.qty is None
+
+
 def test_parse_register_columns_signal():
     data = {
         "type": "REGISTER_COLUMNS",

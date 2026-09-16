@@ -47,13 +47,3 @@ alphas:
     enabled: true
     params: {preset: 21, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 14, retain_bars: 64, period: 14, sigma: 8.0, threshold_bps: 25.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25"}
   # ── reverse variants (LONG↔SHORT swapped) ──
-  - alpha_id: vn30-alpha-19-reverse
-    strategy: vn30_tcbs
-    version: "1"
-    enabled: true
-    params: {preset: 19, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 182, retain_bars: 256, window: 60, window1: 10, window2: 40, threshold: 90.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25", reverse: true}
-  - alpha_id: vn30-alpha-21-reverse
-    strategy: vn30_tcbs
-    version: "1"
-    enabled: true
-    params: {preset: 21, symbol: 41I1G8000, exchange: tcbs, timeframe: 5m, warmup_bars: 14, retain_bars: 64, period: 14, sigma: 8.0, threshold_bps: 25.0, qty: 1.0, fee_pct: 0.0, leverage: 1, session_timezone: Asia/Ho_Chi_Minh, session_start: "08:45", force_flat_at: "14:25", reverse: true}

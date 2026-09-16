@@ -17,7 +17,7 @@ runner:
     max_concurrent_mds_requests: 3
     max_mds_requests_per_minute: 15
     max_symbols_per_mds_request: 30
-    request_timeout_sec: 300
+    request_timeout_sec: 600
     response_cache_ttl_sec: 300
     mds_ready_timeout_sec: 60
     min_warmup_coverage_pct: 0.80
@@ -54,7 +54,7 @@ alphas:
   - alpha_id: alpha-1-v5b-reverse-blacklist-base-reverse
     strategy: legacy_standalone
     version: "legacy"
-    enabled: true
+    enabled: false
     params: {alpha_dir: alpha-1-v5b-reverse-blacklist-base-reverse, tf: 15m, warmup_bars: 400, retain_bars: 1000, include_1m: true, retain_1m_bars: 1000, scan_on_tfs: [15m], exchange: binance}
   - alpha_id: alpha-2
     strategy: legacy_standalone
@@ -94,5 +94,5 @@ alphas:
   - alpha_id: short-btc-v1
     strategy: legacy_standalone
     version: "1"
-    enabled: true
+    enabled: false
     params: {alpha_dir: short-btc-v1, tf: 15m, htf: 1d, symbols: [BTCUSDT], warmup_bars: 500, retain_bars: 1000, htf_warmup_bars: 90, htf_retain_bars: 90, include_1m: false, scan_on_tfs: [15m], exchange: binance}
